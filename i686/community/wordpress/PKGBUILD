@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 99282 2013-10-26 17:20:31Z arodseth $
+# $Id: PKGBUILD 100864 2013-11-12 15:33:15Z arodseth $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Thomas Dziedzic <gostrc at gmail>
 # Contributor: Jose Valecillos <valecillosjg (at) gmail (dot) com>
@@ -6,7 +6,7 @@
 # Contributor: Christopher Rogers <slaxemulator.gmail.com>
 
 pkgname=wordpress
-pkgver=3.7
+pkgver=3.7.1
 pkgrel=1
 pkgdesc='Blog tool and publishing platform'
 arch=('any')
@@ -19,7 +19,7 @@ optdepends=('apache: Web server to run wordpress'
 options=('emptydirs')
 install="$pkgname.install"
 source=("http://wordpress.org/$pkgname-$pkgver.tar.gz")
-sha256sums=('94b8b7a7241ec0817defa1c35f738d777f01ac17a4e45ee325c0f1778504fd94')
+sha256sums=('6f6bae8759bf3e115cd85de4204b062aeaac63ceb030fc26a9c561474aa64dd4')
 
 package() {
   install -d "$pkgdir/usr/share/webapps"

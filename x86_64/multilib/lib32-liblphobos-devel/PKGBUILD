@@ -1,0 +1,42 @@
+# $Id: PKGBUILD 72029 2012-06-06 11:58:40Z svenstaro $
+# Maintainer: Mihails Strasuns <public@dicebot.lv>
+# Contributor: Sven-Hendrik Haase <sh@lutzhaase.com>
+pkgname=lib32-liblphobos-devel
+groups=('dlang' 'dlang-ldc')
+provides=("d-runtime" "d-stdlib")
+pkgver=20130604
+pkgrel=2
+pkgdesc="D standard library (libphobos) for LDC compiler (32-bit)"
+arch=('x86_64')
+url="https://github.com/ldc-developers/ldc"
+license=('BSD')
+depends=('ldc')
+makedepends=('git' 'llvm' 'libconfig' 'cmake')
+source=("git://github.com/ldc-developers/ldc.git")
+md5sums=("SKIP")
+options=("staticlibs")
+
+build() {
+    cd "$srcdir"/ldc
+
+    git submodule update --init --recursive
+
+    mkdir build && cd build
+    cmake \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DINCLUDE_INSTALL_DIR=/usr/include/dlang/ldc \
+    -DMULTILIB=ON \
+    ..
+    make
+}
+
+package() {
+	cd "$srcdir"/ldc
+
+    # We don't want anything but the 32-bit libs
+    install -D -m644 build/lib32/libphobos-ldc.a $pkgdir/usr/lib32/liblphobos.a
+    install -D -m644 build/lib32/libphobos-ldc-debug.a $pkgdir/usr/lib32/liblphobos-debug.a
+
+    install -Dm644 LICENSE $pkgdir/usr/share/licenses/$pkgname/LICENSE
+}
+
