@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 60402 2011-12-13 10:30:01Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+
+pkgname=perl-unicode-stringprep
+pkgver=1.104.0
+_pkgver=1.104
+pkgrel=1
+pkgdesc="Preparation of Internationalized Strings (RFC 3454)"
+arch=('any')
+url="http://search.cpan.org/dist/Unicode-Stringprep/"
+license=('GPL' 'PerlArtistic')
+depends=('perl')
+makedepends=('perl-test-nowarnings')
+provides=("perl-unicode-stringprep-bidi=$pkgver" "perl-unicode-stringprep-mapping=$pkgver"
+	  "perl-unicode-stringprep-prohibited=$pkgver" "perl-unicode-stringprep-unassigned=$pkgver")
+options=(!emptydirs)
+source=("http://search.cpan.org/CPAN/authors/id/C/CF/CFAERBER/Unicode-Stringprep-${_pkgver}.tar.gz")
+md5sums=('cd19b39c9d3dd7caf6db4b2bf3464a72')
+
+build() {
+  local _dir=$(find $srcdir -maxdepth 2 -type f -name 'Makefile.PL')
+  cd $(dirname "$_dir")
+  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+package() {
+  local _dir=$(find $srcdir -maxdepth 2 -type f -name 'Makefile.PL')
+  cd $(dirname "$_dir")
+  make install DESTDIR="${pkgdir}"
+  # remove perllocal.pod and .packlist
+  find ${pkgdir} -name perllocal.pod -delete
+  find ${pkgdir} -name .packlist -delete
+}

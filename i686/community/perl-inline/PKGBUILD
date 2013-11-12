@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 89913 2013-05-05 14:49:39Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: François Charette <firmicus ατ gmx δοτ net>
+
+pkgname=perl-inline
+pkgver=0.53
+pkgrel=1
+pkgdesc="Write Perl subroutines in other languages"
+arch=('any')
+url="http://search.cpan.org/dist/Inline"
+license=('GPL' 'PerlArtistic')
+depends=('perl>=5.10.0' 'perl-parse-recdescent>=1.8')
+options=('!emptydirs')
+source=(http://search.cpan.org/CPAN/authors/id/S/SI/SISYPHUS/Inline-$pkgver.tar.gz)
+md5sums=('7d0133546d2243e5dfcb1b5a75f9011e')
+
+build() {
+  cd  $srcdir/Inline-$pkgver
+  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+package() {
+  cd  $srcdir/Inline-$pkgver
+  make install DESTDIR=$pkgdir
+  find $pkgdir -name '.packlist' -delete
+  find $pkgdir -name '*.pod' -delete
+}

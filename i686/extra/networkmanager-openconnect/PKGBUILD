@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 198343 2013-10-30 14:17:28Z allan $
+# Maintainer: Ionut Biru <ibiru@archlinux.org>
+
+pkgname=networkmanager-openconnect
+pkgver=0.9.8.4
+pkgrel=1
+pkgdesc="NetworkManager VPN integration for openconnect"
+arch=('i686' 'x86_64')
+license=('GPL')
+url="http://www.gnome.org/projects/NetworkManager/"
+depends=("networkmanager>=${pkgver::5}" 'openconnect' 'libgnome-keyring' 'gtk3')
+makedepends=('intltool')
+optdepends=('network-manager-applet: GNOME frontends to NetWorkmanager')
+install=$pkgname.install
+source=(http://ftp.gnome.org/pub/GNOME/sources/NetworkManager-openconnect/0.9/NetworkManager-openconnect-${pkgver}.tar.xz)
+sha256sums=('99b4dc03da311026eaa4bee2ff3f141270e8ba4bf341762d4eeee7152be387b6')
+
+build() {
+  cd NetworkManager-openconnect-${pkgver}
+  ./configure --prefix=/usr \
+  	--sysconfdir=/etc \
+	--libexecdir=/usr/lib/networkmanager \
+	--disable-static
+  make
+}
+
+package() {
+  cd NetworkManager-openconnect-${pkgver}
+  make DESTDIR="${pkgdir}" install
+}

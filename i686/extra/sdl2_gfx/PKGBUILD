@@ -1,0 +1,30 @@
+# Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
+# Contributor: Jameson Pugh <imntreal@gmail.com>
+
+pkgname=sdl2_gfx
+epoch=1
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="SDL Graphic Primitives (Version 2)"
+arch=('i686' 'x86_64')
+url="http://www.ferzkopp.net/joomla/software-mainmenu-14/4-ferzkopps-linux-software/19-sdlgfx"
+license=('zlib')
+depends=('sdl2')
+makedepends=('svn')
+source=("http://www.ferzkopp.net/Software/SDL2_gfx/SDL2_gfx-${pkgver}.tar.gz")
+md5sums=('f008cc117cb901aec6bf5c2f0b11f7ea')
+
+build() {
+  cd "${srcdir}/SDL2_gfx-${pkgver}"
+
+  ./autogen.sh
+  ./configure --disable-static --prefix=/usr
+  make
+}
+
+package() {
+  cd "${srcdir}/SDL2_gfx-${pkgver}"
+  make DESTDIR="${pkgdir}/" install
+
+  install -Dm644 COPYING "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

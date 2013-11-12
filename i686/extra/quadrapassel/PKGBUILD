@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 199337 2013-11-11 11:09:38Z heftig $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: Jan de Groot <jgc@archlinux.org>
+
+pkgname=quadrapassel
+pkgver=3.10.2
+pkgrel=1
+pkgdesc="Fit falling blocks together (Tetris-like game for GNOME)"
+arch=('i686' 'x86_64')
+license=('GPL')
+depends=('desktop-file-utils' 'hicolor-icon-theme' 'clutter-gtk' 'libcanberra' 'librsvg')
+makedepends=('intltool' 'itstool' 'gobject-introspection')
+conflicts=('gnome-games')
+replaces=('gnome-games')
+options=('!emptydirs')
+install=quadrapassel.install
+url="https://live.gnome.org/Quadrapassel"
+groups=('gnome-extra')
+source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver:0:4}/$pkgname-$pkgver.tar.xz)
+sha256sums=('c944acc9d13e82ecef68456f4d8d9ddab15970e605f439d84860f7d57018183c')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+      --disable-schemas-compile
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

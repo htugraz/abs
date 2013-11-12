@@ -1,0 +1,40 @@
+# Contributer: Allan McRae <allan@archlinux.org>
+# Maintainer: Jelle van der Waa <jelle@vdwaa.nl>
+
+pkgbase=python-six
+pkgname=('python2-six' 'python-six')
+pkgver=1.4.1
+pkgrel=1
+pkgdesc="Python 2 and 3 compatibility utilities"
+arch=('any')
+url="http://pypi.python.org/pypi/six/"
+license=('MIT')
+makedepends=('python' 'python2')
+source=(http://pypi.python.org/packages/source/s/six/six-$pkgver.tar.gz)
+md5sums=('ec47fe6070a8a64c802363d2c2b1e2ee')
+
+build() {
+  cd $srcdir
+  cp -r six-$pkgver six2-$pkgver
+}
+
+check() {
+  cd $srcdir/six-$pkgver 
+  python3 setup.py check
+
+}
+
+package_python-six() {
+  depends=('python')
+  cd $srcdir/six-$pkgver 
+  python3 setup.py install --root "${pkgdir}" --optimize=1
+  install -Dm644 "${srcdir}/six-${pkgver}/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}
+
+package_python2-six() {
+  depends=('python2')
+  cd $srcdir/six2-$pkgver 
+  python2 setup.py install --root "${pkgdir}" --optimize=1
+  install -Dm644 "${srcdir}/six-${pkgver}/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}
+md5sums=('bdbb9e12d3336c198695aa4cf3a61d62')

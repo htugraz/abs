@@ -1,0 +1,45 @@
+# $Id: PKGBUILD 180331 2013-03-20 16:22:27Z eric $
+# Maintainer: Justin "juster" Davis <jrcd83@gmail.com>
+
+pkgname=perl-class-inspector
+pkgver=1.28
+pkgrel=1
+pkgdesc="Get information about a class and its structure"
+arch=(any)
+license=(PerlArtistic GPL)
+options=(!emptydirs)
+depends=('perl>=5.6.0')
+url=http://search.cpan.org/dist/Class-Inspector
+source=("http://search.cpan.org/CPAN/authors/id/A/AD/ADAMK/Class-Inspector-${pkgver}.tar.gz")
+md5sums=('7ab3ca22d3147236dddfb58f2366ad22')
+_distdir="${srcdir}/Class-Inspector-${pkgver}"
+
+build() {
+ export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
+      PERL_AUTOINSTALL=--skipdeps                            \
+      PERL_MM_OPT="INSTALLDIRS=vendor"     \
+      PERL_MB_OPT="--installdirs vendor" \
+      MODULEBUILDRC=/dev/null
+
+    cd "$_distdir"
+    /usr/bin/perl Makefile.PL
+    make
+}
+
+check() {
+export PERL_MM_USE_DEFAULT=1 PERL5LIB=""
+    cd "$_distdir"
+    make test
+
+}
+
+package() {
+    cd "$_distdir"
+    make DESTDIR="$pkgdir" install
+}
+
+# Local Variables:
+# mode: shell-script
+# sh-basic-offset: 2
+# End:
+# vim:set ts=2 sw=2 et:

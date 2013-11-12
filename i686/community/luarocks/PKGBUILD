@@ -1,0 +1,40 @@
+# $Id: PKGBUILD 100235 2013-11-02 07:13:10Z bpiotrowski $
+# Maintainer:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
+# Contributor: Chris Brannon <cmbrannon79@gmail.com>
+# Contributor: Geoffroy Carrier <geoffroy@archlinux.org>
+
+pkgname=luarocks
+pkgver=2.1.1
+pkgrel=1
+pkgdesc='Deployment and management system for Lua 5.1 modules'
+arch=('any')
+url='http://luarocks.org/'
+license=('custom')
+depends=('lua51' 'unzip' 'zip' 'curl')
+optdepends=('cvs: for fetching sources from CVS repositories'
+            'git: for fetching sources from git repositories'
+            'mercurial: for fetching sources from mercurial repositories'
+            'lua51-sec: HTTPS support'
+            'cmake: for building rocks that use the cmake build system')
+backup=('etc/luarocks/config-5.1.lua')
+options=('!makeflags')
+source=(http://luarocks.org/releases/$pkgname-$pkgver.tar.gz)
+md5sums=('911da64d6426340674ba478b40b26b4e')
+
+build() {
+  cd $pkgname-$pkgver
+
+  ./configure --prefix=/usr \
+              --sysconfdir=/etc/luarocks \
+              --with-lua-include=/usr/include/lua5.1/ \
+              --with-downloader=curl
+  make 
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make install DESTDIR="$pkgdir"
+  install -D COPYING "$pkgdir"/usr/share/licenses/$pkgname/LICENSE
+  ln -sf luarocks-admin-5.1 "$pkgdir"/usr/bin/luarocks-admin
+  ln -sf luarocks-5.1 "$pkgdir"/usr/bin/luarocks
+}

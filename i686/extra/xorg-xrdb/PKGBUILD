@@ -1,0 +1,27 @@
+# $Id: PKGBUILD 194310 2013-09-13 07:56:57Z andyrtr $
+# Maintainer: Jan de Groot <jgc@archlinux.org>
+
+pkgname=xorg-xrdb
+pkgver=1.1.0
+pkgrel=1
+pkgdesc="X server resource database utility"
+arch=('i686' 'x86_64')
+url="http://xorg.freedesktop.org/"
+license=('custom')
+depends=('libx11' 'libxmu' 'mcpp')
+makedepends=('xorg-util-macros')
+groups=('xorg-apps' 'xorg')
+source=(http://xorg.freedesktop.org/archive/individual/app/xrdb-${pkgver}.tar.bz2)
+sha256sums=('73827b6bbfc9d27ca287d95a1224c306d7053cd7b8156641698d7dc541ca565b')
+
+build() {
+  cd "${srcdir}/xrdb-${pkgver}"
+  ./configure --prefix=/usr --with-cpp=/usr/bin/mcpp
+  make
+}
+
+package() {
+  cd "${srcdir}/xrdb-${pkgver}"
+  make DESTDIR="${pkgdir}" install
+  install -Dm644 COPYING "${pkgdir}/usr/share/licenses/${pkgname}/COPYING"
+}

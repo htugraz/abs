@@ -1,0 +1,35 @@
+# $Id: PKGBUILD 99858 2013-10-31 02:07:43Z allan $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: Mateusz Herych <heniekk@gmail.com>
+# Contributor: Charles Lindsay <charles@chaoslizard.org>
+
+pkgname=libmirage
+pkgver=2.1.0
+pkgrel=2
+pkgdesc="CD-ROM image (B6T/C2D/CCD/CDI/CIF/CUE/ISO/MDS/MDX/NRG/TOC) access library"
+arch=(i686 x86_64)
+url="http://cdemu.sourceforge.net/"
+license=(GPL)
+depends=(glib2 libsndfile libsamplerate zlib bzip2 xz shared-mime-info)
+makedepends=(gtk-doc gobject-introspection cmake)
+install=libmirage.install
+source=(http://downloads.sourceforge.net/cdemu/$pkgname-$pkgver.tar.bz2)
+sha256sums=('fb30eea15b8c1fc55e194e1af55127fa3b3860a79fec0b6c60588cf9ae8d1ca9')
+
+prepare() {
+  mkdir build
+}
+
+build() {
+  cd build
+  cmake ../$pkgname-$pkgver \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib
+  make
+}
+
+package() {
+  cd build
+  make DESTDIR="$pkgdir" install
+}

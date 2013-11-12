@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 79161 2012-10-31 05:35:45Z bgyorgy $
+# Maintainer: Balló György <ballogyor+arch at gmail dot com>
+
+pkgname=tasque
+pkgver=0.1.12
+pkgrel=1
+pkgdesc="Easy quick task management app written in C Sharp"
+arch=('any')
+url="http://live.gnome.org/Tasque"
+license=('MIT')
+depends=('notify-sharp' 'sqlite' 'hicolor-icon-theme' 'xdg-utils')
+makedepends=('intltool')
+install=$pkgname.install
+source=(http://ftp.gnome.org/pub/GNOME/sources/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.xz)
+sha256sums=('db4d4a822cfa87ce8cf311189e17fa8fbda37e7c943874b6bf62c6a84b2d824d')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+              --disable-static --disable-appindicator
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  make DESTDIR="$pkgdir" install
+  install -Dm644 COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
+}

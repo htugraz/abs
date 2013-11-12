@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 193941 2013-09-07 07:14:52Z lcarlier $
+#Maintainer: Jan de Groot <jgc@archlinux.org>
+
+pkgname=xorg-util-macros
+pkgver=1.17.1
+pkgrel=1
+pkgdesc="X.Org Autotools macros"
+arch=(any)
+license=('custom')
+url="http://xorg.freedesktop.org/"
+source=(${url}/releases/individual/util/util-macros-${pkgver}.tar.bz2)
+sha256sums=('5e52654f2a0b04223cf28a9d7fd62cf288852e639ac13a75172fd47d0d6ac625')
+
+build() {
+  cd "${srcdir}/util-macros-${pkgver}"
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd "${srcdir}/util-macros-${pkgver}"
+  make DESTDIR="${pkgdir}" install
+
+  install -m755 -d "${pkgdir}/usr/lib"
+  mv "${pkgdir}/usr/share/pkgconfig" "${pkgdir}/usr/lib/"
+  install -m755 -d "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -m644 COPYING "${pkgdir}/usr/share/licenses/${pkgname}/"
+}

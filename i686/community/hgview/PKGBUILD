@@ -1,0 +1,37 @@
+# $Id: PKGBUILD 84382 2013-02-17 14:37:37Z aginiewicz $
+# Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
+# Contributor: TDY <tdy@gmx.com>
+
+pkgname=hgview
+pkgver=1.7.1
+pkgrel=1
+pkgdesc="A fast Mercurial log navigator"
+arch=('any')
+url="http://www.logilab.org/project/hgview/"
+license=('GPL')
+depends=('mercurial>=1.6')
+optdepends=('python2-qscintilla: for Qt interface'
+            'python2-docutils: for Qt interface'
+            'python2-urwid: for CLI interface'
+            'python2-pyinotify: for CLI interface'
+            'python2-pygments: for CLI interface')
+makedepends=('python2-pyqt' 'asciidoc' 'xmlto')
+source=(http://download.logilab.org/pub/$pkgname/$pkgname-$pkgver.tar.gz)
+md5sums=('b195e8a95c5dd0e281e06ac6000c728f')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  python2 setup.py build
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  python2 setup.py install --root="$pkgdir"/ --optimize=1
+
+  # fix man page placement
+  install -d "$pkgdir"/usr/share
+  mv "$pkgdir"/usr/man "$pkgdir"/usr/share/man
+}
+

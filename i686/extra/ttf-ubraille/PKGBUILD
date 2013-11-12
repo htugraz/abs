@@ -1,0 +1,23 @@
+# $Id: PKGBUILD 188510 2013-06-15 05:02:50Z bisson $
+# Maintainer: Gaetan Bisson <bisson@archlinux.org>
+# Contributor: Firmicus <francois.archlinux.org>
+# Contributor: Damir Perisa <damir.perisa@bluewin.ch>
+
+pkgname=ttf-ubraille
+pkgver=001.000
+pkgrel=7
+pkgdesc='Unicode Braillt font'
+url='http://yudit.org/download/fonts/UBraille/'
+arch=('any')
+license=('GPL')
+depends=('xorg-fonts-encodings' 'xorg-fonts-alias' 'xorg-font-utils' 'fontconfig')
+source=("http://yudit.org/download/fonts/UBraille/UBraille.ttf")
+sha1sums=('ad018068e0ca3bfb4683f224bebd0304518dece0')
+
+install=install
+
+package() {
+	cd ${srcdir}
+	install -d ${pkgdir}/usr/share/fonts/TTF
+	install -m644 *.ttf ${pkgdir}/usr/share/fonts/TTF/
+}

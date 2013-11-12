@@ -1,0 +1,29 @@
+# $Id: PKGBUILD 91053 2013-05-18 14:25:46Z jlichtblau $
+# Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+
+pkgname=man-pages-de
+pkgver=1.1
+pkgrel=1
+pkgdesc="German Linux man pages"
+arch=('any')
+url="https://alioth.debian.org/projects/manpages-de/"
+license=('custom')
+depends=('man-db')
+makedepends=('po4a')
+changelog=$pkgname.changelog
+options=('!emptydirs')
+source=(http://manpages-de.alioth.debian.org/downloads/manpages-de-$pkgver.tar.bz2)
+sha256sums=('552e800a757b5e2cf2cf183bc7612bd08357ca4f504e6a840ade4c09fc72b930')
+
+build() {
+  cd ${srcdir}/manpages-de-$pkgver
+
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd ${srcdir}/manpages-de-$pkgver
+
+  make DESTDIR=${pkgdir} install
+}

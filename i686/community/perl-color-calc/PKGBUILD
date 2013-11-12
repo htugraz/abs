@@ -1,0 +1,24 @@
+# $Id: PKGBUILD 76900 2012-10-02 06:42:34Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Charles Mauch <cmauch@gmail.com>
+
+pkgname=perl-color-calc
+pkgver=1.073
+pkgrel=1
+pkgdesc="Perl/CPAN Module Color::Calc : Simple calculations with RGB colors"
+arch=('any')
+url="http://search.cpan.org/dist/Color-Calc"
+license=("GPL" "PerlArtistic")
+depends=("perl-params-validate" "perl-graphics-colornames-www" "perl-graphics-colornames")
+makedepends=("perl-params-validate" "perl-graphics-colornames-www" "perl-graphics-colornames")
+source=("http://search.cpan.org/CPAN/authors/id/C/CF/CFAERBER/Color-Calc-$pkgver.tar.gz")
+md5sums=('85b74b99c6f7b3ea43898a7079a3fbb3')
+
+build() {
+  cd $srcdir/Color-Calc-$pkgver
+  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+  make
+  make pure_install doc_install DESTDIR=$pkgdir
+  find $pkgdir -name '.packlist' -delete
+  find $pkgdir -name '*.pod' -delete
+}

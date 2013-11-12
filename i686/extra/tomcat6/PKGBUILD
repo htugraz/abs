@@ -1,0 +1,134 @@
+# Maintainer: Guillaume ALAUX <guillaume@archlinux.org>
+pkgbase=tomcat6
+pkgname=('java-servlet2.5-tomcat' 'java-jsp2.1-tomcat' 'tomcat6')
+pkgver=6.0.37
+pkgrel=2
+arch=('any')
+url='http://tomcat.apache.org/'
+license=('APACHE')
+makedepends=('java-environment>=5' 'apache-ant>=1.6' 'java-commons-daemon')
+source=(http://archive.apache.org/dist/tomcat/tomcat-6/v${pkgver}/src/apache-tomcat-${pkgver}-src.tar.gz
+        http://archive.apache.org/dist/tomcat/tomcat-6/v${pkgver}/bin/apache-tomcat-${pkgver}.tar.gz
+        systemd_tomcat6.service
+        systemd_tmpfiles.d_tomcat6.conf
+        tomcat6.install)
+
+sha256sums=('665d72f375a9bf9ec5b8f9300c0af620948ff14d35b4c57c4297030ff6c1f281'
+            '3e91abc752bf2b6ca19df9c8644bccdd92ba837397a8c1a745d72f58d5301b00'
+            '8eab99cff8baa3e75d656c2f221f8b146e822d7e6962527d07a2f20cb8ccb404'
+            '07b9ff0686134b3256cda8b5253b91ba23f54b547640729e2382c3c12067ea80'
+            '53ec4e24b3c4eec9d5dd4ac6e84d5758de4f459031d630486812439cce74af21')
+
+_servletver=2.5
+_jspver=2.1
+
+#FIXME ant target 'download' should not be called
+build() {
+  cd "${srcdir}/apache-tomcat-${pkgver}-src"
+
+  . /etc/profile.d/apache-ant.sh
+
+  ant clean download deploy\
+    -Dbase.path=${srcdir}/DOWN_LIBS \
+    -Dcommons-daemon.jar=/usr/share/java/commons-daemon.jar \
+    -Dno.build.dbcp=true
+}
+
+#TODO add test "ant test"
+
+package_java-servlet2.5-tomcat() {
+  pkgdesc='Servlet 2.5 java library implementation by Apache Tomcat'
+  depends=('java-environment>=5')
+
+  cd "${srcdir}/apache-tomcat-${pkgver}-src/output/build/lib"
+
+  install -dm755 ${pkgdir}/usr/share/java/servlet${_servletver}-tomcat
+  install -m644 servlet-api.jar \
+                ${pkgdir}/usr/share/java/servlet${_servletver}-tomcat/servlet-api-${_servletver}.jar
+#  ln -s servlet${_servletver}-tomcat/servlet-api-${_servletver}.jar \
+#        ${pkgdir}/usr/share/java/servlet-api.jar
+}
+
+package_java-jsp2.1-tomcat() {
+  pkgdesc='JSP 2.1 java library implementation by Apache Tomcat'
+  depends=('java-environment>=5')
+
+  cd "${srcdir}/apache-tomcat-${pkgver}-src/output/build/lib"
+
+  install -dm755 ${pkgdir}/usr/share/java/jsp${_jspver}-tomcat
+  for j in el-api jsp-api; do
+    install -m644 ${j}.jar \
+                  ${pkgdir}/usr/share/java/jsp${_jspver}-tomcat/${j}-${_jspver}.jar
+#    ln -s jsp${_jspver}-tomcat/${j}-${_jspver}.jar ${pkgdir}/usr/share/java/${j}.jar
+  done
+}
+
+package_tomcat6() {
+  pkgdesc='Servlet-2.5/JSP-2.1 Container'
+  depends=('java-runtime>=5' 'java-jsvc'
+           "java-servlet2.5-tomcat=${pkgver}" "java-jsp2.1-tomcat=${pkgver}")
+  optdepends=('tomcat-native: to allow optimal performance in production environments')
+  backup=(etc/tomcat6/catalina.policy
+          etc/tomcat6/catalina.properties
+          etc/tomcat6/context.xml
+          etc/tomcat6/logging.properties
+          etc/tomcat6/server.xml
+          etc/tomcat6/tomcat-users.xml
+          etc/tomcat6/web.xml)
+  install=tomcat6.install
+
+  cd "${srcdir}/apache-tomcat-${pkgver}-src/output/build"
+
+  # Tomcat general files
+  install -dm755 ${pkgdir}/usr/share/{,java/}${pkgname}
+  # commons-daemon and tomcat-natives are packaged on their own
+  rm bin/{*.bat,commons-daemon*,tomcat-native.tar.gz}
+  cp -r bin ${pkgdir}/usr/share/${pkgname}
+
+  install -m644 lib/* ${pkgdir}/usr/share/java/${pkgname}
+
+  # Provided by previous packages
+  rm ${pkgdir}/usr/share/java/${pkgname}/servlet-api.jar
+  ln -s /usr/share/java/servlet${_servletver}-tomcat/servlet-api-${_servletver}.jar \
+        ${pkgdir}/usr/share/java/${pkgname}/servlet-api.jar
+
+  for j in el-api jsp-api; do
+    rm ${pkgdir}/usr/share/java/${pkgname}/${j}.jar
+    ln -s /usr/share/java/jsp${_jspver}-tomcat/${j}-${_jspver}.jar \
+          ${pkgdir}/usr/share/java/${pkgname}/${j}.jar
+  done
+
+  install -m644 "${srcdir}/apache-tomcat-${pkgver}/lib/tomcat-dbcp.jar" \
+                ${pkgdir}/usr/share/java/${pkgname}/tomcat-dbcp-${pkgver}.jar
+  ln -s tomcat-dbcp-${pkgver}.jar \
+        ${pkgdir}/usr/share/java/${pkgname}/tomcat-dbcp.jar
+
+  ln -s /usr/share/java/${pkgname} ${pkgdir}/usr/share/${pkgname}/lib
+
+  # 66=tomcat / 19=log
+  install -dm775 -o 66 -g 19 ${pkgdir}/var/log/${pkgname}
+  ln -s /var/log/${pkgname} ${pkgdir}/usr/share/${pkgname}/logs
+  touch ${pkgdir}/var/log/${pkgname}/catalina.{out,err}
+  chgrp 19 ${pkgdir}/var/log/${pkgname}/catalina.{out,err}
+
+  install -dm775 ${pkgdir}/etc/${pkgname}
+  install -g 66 -m640 conf/* ${pkgdir}/etc/${pkgname}
+  install -d -g66 -m775 ${pkgdir}/etc/${pkgname}/Catalina
+  ln -s /etc/${pkgname} ${pkgdir}/usr/share/${pkgname}/conf
+
+  install -dm775 ${pkgdir}/var/lib/${pkgname}
+  cp -r webapps ${pkgdir}/var/lib/${pkgname}
+  chown -R 66:66 ${pkgdir}/var/lib/${pkgname}
+  ln -s /var/lib/${pkgname}/webapps ${pkgdir}/usr/share/${pkgname}/webapps
+
+  install -dm1777 ${pkgdir}/var/tmp
+  install -dm755 -o 66 -g 66 ${pkgdir}/var/tmp/${pkgname}/{temp,work}
+  ln -s /var/tmp/${pkgname}/temp ${pkgdir}/usr/share/${pkgname}/temp
+  ln -s /var/tmp/${pkgname}/work ${pkgdir}/usr/share/${pkgname}/work
+
+  install -Dm644 ${srcdir}/systemd_tomcat6.service \
+                 ${pkgdir}/usr/lib/systemd/system/${pkgname}.service
+  install -Dm644 ${srcdir}/systemd_tmpfiles.d_tomcat6.conf \
+                 ${pkgdir}/usr/lib/tmpfiles.d/${pkgname}.conf
+}
+

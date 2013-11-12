@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 184801 2013-05-08 19:46:08Z bpiotrowski $
+# Maintainer: Ronald van Haren <ronald.archlinux.org>
+# Contributor: damir <damir.archlinux.org>
+
+pkgname=muparser
+pkgver=2.2.3
+pkgrel=1
+pkgdesc="A fast math parser library"
+arch=('i686' 'x86_64')
+url="http://muparser.sourceforge.net/"
+depends=('gcc-libs')
+license=('custom')
+options=('!makeflags')
+source=("http://downloads.sourceforge.net/$pkgname/${pkgname}_v${pkgver//./_}.zip")
+md5sums=('9de40ec1dab5bd2787ee344fce5846ad')
+
+build() {
+  cd $srcdir/${pkgname}_v${pkgver//./_}
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd $srcdir/${pkgname}_v${pkgver//./_}
+  make DESTDIR=$pkgdir install
+
+  # license
+  install -D -m644 License.txt \
+	$pkgdir/usr/share/licenses/${pkgname}/LICENSE
+}

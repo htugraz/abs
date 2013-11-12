@@ -1,0 +1,42 @@
+# $Id: PKGBUILD 89518 2013-04-29 16:43:32Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Geoffroy Carrier <geoffroy.carrier@koon.fr>
+# Contributer: Jason Chu <jchu@xentac.net>
+
+pkgname=gprolog
+pkgver=1.4.4
+pkgrel=1
+pkgdesc="GNU Prolog"
+arch=('i686' 'x86_64')
+url="http://www.gprolog.org/"
+depends=()
+license=('GPL')
+source=(ftp://ftp.gnu.org/gnu/gprolog/gprolog-$pkgver.tar.gz)
+md5sums=('37009da471e5217ff637ad1c516448c8')
+
+build() {
+   cd "$srcdir/gprolog-$pkgver/src"
+   ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
+   make
+}
+
+package() {
+   cd "$srcdir/gprolog-$pkgver/src"
+   make install \
+	INSTALL_DIR="$pkgdir"/usr/share/gprolog \
+	LINKS_DIR="$pkgdir"/usr/bin \
+	DOC_DIR="$pkgdir"/usr/share/gprolog/doc \
+	HTML_DIR="$pkgdir"/usr/share/gprolog/doc/Html \
+	EXAMPLES_DIR="$pkgdir"/usr/share/gprolog \
+	sysconfdir="$pkgdir"/etc \
+	localstatedir="$pkgdir"/var
+   cd "$pkgdir"/usr/bin
+   rm *
+   ln -s /usr/share/gprolog/bin/fd2c
+   ln -s /usr/share/gprolog/bin/gplc
+   ln -s /usr/share/gprolog/bin/gprolog
+   ln -s /usr/share/gprolog/bin/hexgplc
+   ln -s /usr/share/gprolog/bin/ma2asm
+   ln -s /usr/share/gprolog/bin/pl2wam
+   ln -s /usr/share/gprolog/bin/wam2ma
+}

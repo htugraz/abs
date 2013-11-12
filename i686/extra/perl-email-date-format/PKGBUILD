@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 192109 2013-08-06 01:11:21Z eric $
+# Maintainer:
+# Contributor: Sergej Pupykin <pupykin.s+aur@gmail.com>
+
+pkgname=perl-email-date-format
+pkgver=1.004
+pkgrel=1
+pkgdesc="produce RFC 2822 date strings"
+arch=('any')
+url="http://search.cpan.org/dist/Email-Date-Format"
+license=('GPL' 'PerlArtistic')
+depends=('perl')
+checkdepends=('perl-test-pod' 'perl-capture-tiny')
+options=('!emptydirs')
+source=("http://www.cpan.org/authors/id/R/RJ/RJBS/Email-Date-Format-$pkgver.tar.gz")
+md5sums=('c6b651d56996cd37f6e0251c5c3672ec')
+
+build() {
+  cd Email-Date-Format-$pkgver
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+check() {
+  cd Email-Date-Format-$pkgver
+  make test
+}
+
+package() {
+  cd Email-Date-Format-$pkgver
+  make DESTDIR="${pkgdir}" install
+}

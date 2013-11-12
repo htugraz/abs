@@ -1,0 +1,37 @@
+# $Id: PKGBUILD 98024 2013-10-04 08:12:31Z alucryd $
+# Maintainer: Maxime Gauduin <alucryd at gmail dot com>
+# Contributor : sebikul <sebikul@gmail.com>
+# Contributor : Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
+
+pkgname=geary
+pkgver=0.4.0
+pkgrel=1
+pkgdesc="A lightweight email client for the GNOME desktop"
+arch=('i686' 'x86_64')
+url="http://www.yorba.org/projects/geary/"
+license=('GPL3')
+depends=('desktop-file-utils' 'gmime' 'hicolor-icon-theme' 'libcanberra' 'libgee' 'libnotify' 'libunique3' 'webkitgtk3')
+makedepends=('cmake' 'gobject-introspection' 'intltool' 'vala')
+install="${pkgname}.install"
+source=("http://www.yorba.org/download/${pkgname}/${pkgver%.?}/${pkgname}-${pkgver}.tar.xz")
+sha256sums=('eb6418fe48ee2d25350999e6fc8fd23de15da5670569f4c2478f9435fe2a2ae1')
+
+build() {
+  cd ${pkgname}-${pkgver}
+
+  if [[ -d build ]]; then
+    rm -rf build
+  fi
+  mkdir build && cd build
+
+  cmake .. -DCMAKE_INSTALL_PREFIX='/usr' -D{DESKTOP_UPDATE,GSETTINGS_COMPILE{,_IN_PLACE},ICON_UPDATE}='OFF'
+  make
+}
+
+package() {
+  cd ${pkgname}-${pkgver}/build
+
+  make DESTDIR="${pkgdir}" install
+}
+
+# vim: ts=2 sw=2 et:

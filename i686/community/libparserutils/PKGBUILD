@@ -1,0 +1,35 @@
+# $Id: PKGBUILD 99637 2013-10-30 16:54:57Z arodseth $
+# Maintainer: Alexander Rødseth <rodseth@gmail.com>
+# Contributor: Brad Fanella <bradfanella@archlinux.us>
+# Contributor: Paulo Matias <matiasΘarchlinux-br·org>
+# Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
+
+pkgname=libparserutils
+pkgver=0.1.2
+pkgrel=2
+pkgdesc='Library for building efficient parsers'
+arch=('x86_64' 'i686')
+url='http://www.netsurf-browser.org/projects/libparserutils'
+license=('MIT')
+depends=('glibc')
+makedepends=('netsurf-buildsystem')
+source=("http://download.netsurf-browser.org/libs/releases/$pkgname-$pkgver-src.tar.gz")
+sha256sums=('0a21efd3882c19965f57161c4ecda85a363a71dbe090030dfa69f9aecd2160aa')
+
+build() {
+	cd "$pkgname-$pkgver"
+
+	sed 's:-Wall::' -i Makefile
+	make PREFIX=/usr COMPONENT_TYPE="lib-shared"
+	#make PREFIX=/usr COMPONENT_TYPE="lib-static"
+}
+
+package() {
+	cd "$pkgname-$pkgver"
+
+	make install PREFIX=/usr DESTDIR="$pkgdir" COMPONENT_TYPE="lib-shared" 
+	#make install PREFIX=/usr DESTDIR="$pkgdir" COMPONENT_TYPE="lib-static"
+	install -Dm644 COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
+}
+
+# vim:set ts=2 sw=2 et:

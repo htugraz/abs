@@ -1,0 +1,27 @@
+# $Id: PKGBUILD 154361 2012-03-27 10:59:07Z heftig $
+# Maintainer: Jan de Groot <jgc@archlinux.org>
+
+pkgname=gnome-doc-utils
+pkgver=0.20.10
+pkgrel=1
+pkgdesc="Documentation utilities for Gnome"
+arch=('any')
+license=('GPL' 'LGPL')
+depends=('libxslt' 'python2' 'docbook-xml' 'rarian')
+makedepends=('intltool')
+url="http://www.gnome.org"
+source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.xz)
+sha256sums=('cb0639ffa9550b6ddf3b62f3b1add92fb92ab4690d351f2353cffe668be8c4a6')
+
+build() {
+  cd "$pkgname-$pkgver"
+  PYTHON=/usr/bin/python2 ./configure --prefix=/usr \
+      --sysconfdir=/etc --mandir=/usr/share/man \
+      --localstatedir=/var --disable-scrollkeeper
+  make
+}
+
+package() {
+  cd "$pkgname-$pkgver"
+  make DESTDIR="$pkgdir" install
+}

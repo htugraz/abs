@@ -1,0 +1,15 @@
+post_install() {
+  if [ ! -e /usr/share/apache-ant/etc ]
+  then
+    ln -s /etc/apache-ant /usr/share/apache-ant/etc
+  fi
+
+  if [ -e /usr/share/apache-ant/etc/apache-ant ]
+  then
+    unlink /usr/share/apache-ant/etc/apache-ant
+  fi
+}
+
+post_upgrade() {
+  post_install
+}

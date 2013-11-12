@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 197960 2013-10-30 11:56:07Z allan $
+# Maintainer: Eric Bélanger <eric@archlinux.org>
+
+pkgname=freeciv
+pkgver=2.4.0
+pkgrel=1
+pkgdesc="A multiuser clone of the famous Microprose game of Civilization"
+arch=('i686' 'x86_64')
+url="http://www.freeciv.org/"
+license=('GPL')
+depends=('gtk2' 'sdl_mixer' 'hicolor-icon-theme' 'lua51' 'sqlite' 'curl' 'libltdl')
+backup=('etc/freeciv/database.lua')
+options=('!staticlibs')
+install=freeciv.install
+source=(http://downloads.sourceforge.net/sourceforge/${pkgname}/${pkgname}-${pkgver}.tar.bz2)
+sha1sums=('4a3537dc050bd69002794c832b74f5af972da25e')
+
+build() {
+  cd ${pkgname}-${pkgver}
+  ./configure --prefix=/usr --sysconfdir=/etc --enable-shared --enable-sys-lua \
+    --enable-client=gtk2 --enable-fcdb=sqlite3 --enable-aimodules
+  make
+}
+
+package() {
+  cd ${pkgname}-${pkgver}
+  make DESTDIR="${pkgdir}" install
+}

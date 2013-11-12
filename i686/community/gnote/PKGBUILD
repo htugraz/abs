@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 100334 2013-11-02 11:34:59Z ioni $
+# Maintainer:  Ionut Biru <ibiru@archlinux.org>
+# Contributor: uastasi <uastasi@archlinux.us>
+pkgname=gnote
+pkgver=3.10.1
+pkgrel=1
+pkgdesc="A note taking application."
+arch=('i686' 'x86_64')
+url="http://live.gnome.org/Gnote"
+license=('GPL3')
+depends=('gtkmm3' 'libxslt' 'hicolor-icon-theme' 'desktop-file-utils' 'dconf' 'libsecret')
+makedepends=('intltool' 'itstool' 'boost')
+install=gnote.install
+source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.xz)
+sha256sums=('8466343c43cb5fb223a7abfe43e6e963f64403f96a3c823f5a37474e83d5e1a0')
+
+build() {
+    cd $pkgname-$pkgver
+    ./configure --prefix=/usr \
+        --sysconfdir=/etc \
+        --localstatedir=/var \
+        --libexecdir=/usr/lib/gnote \
+        --disable-scrollkeeper \
+        --disable-schemas-compile \
+        --disable-static
+    make
+}
+
+package() {
+    cd $pkgname-$pkgver
+    make DESTDIR="$pkgdir" install
+}

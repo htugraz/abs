@@ -1,0 +1,36 @@
+# $Id: PKGBUILD 97316 2013-09-17 09:33:55Z bpiotrowski $
+# Maintainer:  Federico Cinelli <cinelli@aur.archlinux.org>
+# Contributor: Andrea Scarpino <andrea@archlinux.org>
+# Contributor: Mcder3 <mcder3[at]gmail[dot]com>
+# Contributor: MisterFred <mister.fred[at]free[dot]fr>
+
+pkgname=cantata
+pkgver=1.1.2
+pkgdesc="A KDE client for the music player daemon (MPD)"
+pkgrel=1
+arch=('i686' 'x86_64')
+url="http://kde-apps.org/content/show.php/Cantata?content=147733"
+license=('GPL')
+depends=('kdebase-runtime' 'taglib-extras' 'mpg123' 'libmtp' 'libcddb' 'libmusicbrainz5')
+makedepends=('cmake' 'automoc4')
+install="$pkgname.install"
+source=("http://cantata.googlecode.com/files/$pkgname-$pkgver.tar.bz2")
+md5sums=('628991865a505284a7ce56e117cd36cc')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+  mkdir build
+
+  cmake . \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DENABLE_PHONON=ON
+
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  
+  make DESTDIR="$pkgdir" PREFIX="/usr" install
+}

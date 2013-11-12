@@ -1,0 +1,36 @@
+# $Id: PKGBUILD 197958 2013-10-30 11:55:25Z allan $
+# Maintainer:
+# Contributor: Nikolay Rysev <mad.f3ka@gmail.com>
+
+pkgname=fprintd
+pkgver=0.5.1
+pkgrel=1
+pkgdesc="D-Bus service to access fingerprint readers"
+arch=(i686 x86_64)
+url="http://www.freedesktop.org/wiki/Software/fprint/fprintd"
+license=(GPL)
+depends=(libfprint dbus-glib polkit)
+makedepends=(intltool gtk-doc)
+groups=(fprint)
+_snap=V_${pkgver//./_}
+source=(http://people.freedesktop.org/~hadess/$pkgname-$pkgver.tar.xz
+        pod.patch)
+md5sums=('e9b40ab0298a50d28b6af728e2a40a1b'
+         '67736669f52d146b67607f35f7b9e36b')
+
+prepare() {
+  cd $pkgname-$pkgver
+  patch -Np1 -i ../pod.patch
+}
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib \
+    --disable-static
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" pammoddir="/usr/lib/security" install
+}

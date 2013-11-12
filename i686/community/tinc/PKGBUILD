@@ -1,0 +1,39 @@
+# $Id: PKGBUILD 99008 2013-10-22 08:58:32Z tredaelli $
+# Maintainer: Timothy Redaelli <timothy.redaelli@gmail.com>
+# Contributor: helios
+# Contributor: Lothar Gesslein
+# Contributor: Dominik George <nik@naturalnet.de>
+
+pkgname=tinc
+pkgver=1.0.23
+pkgrel=1
+pkgdesc="VPN (Virtual Private Network) daemon"
+arch=('i686' 'x86_64')
+url="http://www.tinc-vpn.org/"
+license=('GPL')
+depends=('lzo2' 'openssl')
+install=tinc.install
+source=(http://www.tinc-vpn.org/packages/tinc-$pkgver.tar.gz{,.sig}
+        tincd@.service)
+md5sums=('762c0d47bdf1b33a40b19165d9c2761f'
+         'SKIP'
+         '112327da32fdb56ab779fe004712235f')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --sbindir=/usr/bin
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  make DESTDIR="$pkgdir/" install
+  install -dm755 "$pkgdir"/usr/share/tinc/examples
+  tar xozvf doc/sample-config.tar.gz -C $pkgdir/usr/share/tinc/examples
+  find "$pkgdir"/usr/share/tinc/examples -type f -exec chmod 644 {} +
+  find "$pkgdir"/usr/share/tinc/examples -type d -exec chmod 755 {} +
+
+  install -Dm644 "$srcdir/tincd@.service" "$pkgdir/usr/lib/systemd/system/tincd@.service"
+}

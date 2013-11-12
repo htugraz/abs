@@ -1,0 +1,24 @@
+# $Id: PKGBUILD 198402 2013-10-30 14:39:13Z allan $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+
+pkgname=sbc
+pkgver=1.1
+pkgrel=1
+pkgdesc="Bluetooth Subband Codec (SBC) library"
+arch=('i686' 'x86_64')
+url="http://www.bluez.org/"
+license=('GPL' 'LGPL')
+depends=('glibc')
+source=(http://www.kernel.org/pub/linux/bluetooth/$pkgname-$pkgver.tar.xz)
+md5sums=('ecadadbfd4b1dfe7b98f446c69126b23')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr --disable-static --disable-tester
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

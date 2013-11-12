@@ -1,0 +1,26 @@
+# $Id: PKGBUILD 198044 2013-10-30 12:27:46Z allan $
+# Maintainer: Aaron Griffin <aaron@archlinux.org>
+
+pkgname=goffice
+pkgver=0.10.8
+pkgrel=1
+pkgdesc="A library of document-centric objects and utilities built on top of GLib and Gtk+"
+arch=('i686' 'x86_64')
+url="http://www.gnome.org"
+license=('GPL')
+makedepends=('pkgconfig' 'intltool' 'gtk-doc' 'gobject-introspection')
+depends=('librsvg' 'gtk3' 'libgsf' 'libspectre')
+source=(http://ftp.gnome.org/pub/gnome/sources/${pkgname}/${pkgver:0:4}/${pkgname}-${pkgver}.tar.xz)
+sha256sums=('11964b907b03dede6d8d8a1a4ae2d5727ffbe8d7bab5c92dec586acb616e807c')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  ./configure --prefix=/usr --sysconfdir=/etc \
+      --localstatedir=/var --disable-static --enable-introspection
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make DESTDIR="${pkgdir}" install
+}

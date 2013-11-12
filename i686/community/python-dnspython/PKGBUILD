@@ -1,0 +1,20 @@
+# $Id: PKGBUILD 78334 2012-10-17 14:23:37Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Mathijs Kadijk <maccain13@gmail.com>
+
+pkgname=python-dnspython
+pkgver=1.10.0
+pkgrel=2
+pkgdesc="A DNS toolkit for Python"
+arch=('any')
+url="http://www.dnspython.org"
+license=('BSD')
+depends=('python')
+source=(http://www.dnspython.org/kits3/$pkgver/dnspython3-$pkgver.tar.gz)
+md5sums=('17d0ec54f83df3e95846fc4e20224a96')
+
+build() {
+  cd $srcdir/dnspython3-$pkgver
+  python setup.py install --root=$pkgdir
+  install -D LICENSE $pkgdir/usr/share/licenses/$pkgname/LICENSE
+}

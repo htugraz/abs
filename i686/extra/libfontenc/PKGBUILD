@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 198157 2013-10-30 13:08:37Z allan $
+#Maintainer: Jan de Groot <jgc@archlinux.org>
+
+pkgname=libfontenc
+pkgver=1.1.2
+pkgrel=1
+pkgdesc="X11 font encoding library"
+arch=('i686' 'x86_64')
+url="http://xorg.freedesktop.org/"
+license=('custom')
+depends=('zlib')
+makedepends=('pkgconfig' 'xproto>=7.0.18')
+source=(${url}/releases/individual/lib/${pkgname}-${pkgver}.tar.bz2)
+sha256sums=('a9a4efed3359b2e80161bb66b65038fac145137fa134e71335264cbc23b02f62')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  ./configure --prefix=/usr --sysconfdir=/etc \
+      --localstatedir=/var --disable-static \
+      --with-encodingsdir=/usr/share/fonts/encodings      
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make DESTDIR="${pkgdir}" install
+  install -Dm644 COPYING "${pkgdir}/usr/share/licenses/${pkgname}/COPYING"
+}

@@ -1,0 +1,79 @@
+# $Id: PKGBUILD 168689 2012-10-14 05:36:46Z eric $
+# Maintainer: AndyRTR <andyrtr@archlinux.org>
+
+pkgname=hunspell-es
+pkgver=0.6
+pkgrel=1
+epoch=1
+pkgdesc="Spanish hunspell dictionaries"
+arch=(any)
+url="https://forja.rediris.es/projects/rla-es/"
+license=('LGPL3')
+makedepends=('hunspell')
+optdepends=('hunspell:	the spell checking libraries and apps')
+noextract=(es_ANY.oxt es_AR.oxt es_BO.oxt es_CL.oxt es_CO.oxt 
+           es_CR.oxt es_CU.oxt es_DO.oxt es_EC.oxt es_ES.oxt 
+           es_GT.oxt es_HN.oxt es_MX.oxt es_NI.oxt es_PA.oxt 
+           es_PE.oxt es_PR.oxt es_SV.oxt es_UY.oxt es_VE.oxt)
+source=('http://forja.rediris.es/frs/download.php/2618/es_ANY.oxt'
+        'http://forja.rediris.es/frs/download.php/2619/es_AR.oxt'
+        'http://forja.rediris.es/frs/download.php/2620/es_BO.oxt'
+        'http://forja.rediris.es/frs/download.php/2621/es_CL.oxt'
+        'http://forja.rediris.es/frs/download.php/2622/es_CO.oxt'
+        'http://forja.rediris.es/frs/download.php/2623/es_CR.oxt'
+        'http://forja.rediris.es/frs/download.php/2624/es_CU.oxt'
+        'http://forja.rediris.es/frs/download.php/2625/es_DO.oxt'
+        'http://forja.rediris.es/frs/download.php/2626/es_EC.oxt'
+        'http://forja.rediris.es/frs/download.php/2627/es_ES.oxt'
+        'http://forja.rediris.es/frs/download.php/2628/es_GT.oxt'
+        'http://forja.rediris.es/frs/download.php/2629/es_HN.oxt'
+        'http://forja.rediris.es/frs/download.php/2630/es_MX.oxt'
+        'http://forja.rediris.es/frs/download.php/2631/es_NI.oxt'
+        'http://forja.rediris.es/frs/download.php/2632/es_PA.oxt'
+        'http://forja.rediris.es/frs/download.php/2633/es_PE.oxt'
+        'http://forja.rediris.es/frs/download.php/2634/es_PR.oxt'
+        'http://forja.rediris.es/frs/download.php/2635/es_SV.oxt'
+        'http://forja.rediris.es/frs/download.php/2636/es_UY.oxt'
+        'http://forja.rediris.es/frs/download.php/2637/es_VE.oxt')
+md5sums=('9676e94487e4a09a1c7adb8e2357774d'
+         '15a2bbadfbdaed50a85cee048e0448e1'
+         'a946fa01accc85bba4ac4c8a65bda990'
+         '63156d580f93eb5eabe150a64e891180'
+         '2e598c9f6425144c6a74ef075df55536'
+         '023f3308e7f2bda68409eadf55cffc1a'
+         '8076fddccbfc8119afce7e63797a86f1'
+         'c0b96ecfe25b90eba9dfd455a44e876d'
+         'e40a866e0f4fa43d19c606be2c78a919'
+         '28776430bb77547fd70cf6db504bda63'
+         '5bba781582ffa42acfdd3c5dd3899add'
+         'cc4a81266f2aa06a3980d9999faef3dc'
+         'e237488413344febc567d41c716d1608'
+         'e5396b996777854860e1071953bf1159'
+         '3c77326ae63077d08bd167039831506d'
+         'a0fe867554ff50d79a92534e904204f4'
+         'b9e10ee9f910b4e983c088da31635cc4'
+         '17987e5ab82801d3b0a583bcc617cc25'
+         '8b511d64b06ddec5c8589cdc1f74a39c'
+         '2c0312e7100b6a5347f16fa33f1a29ba')
+
+package() {
+  cd "$srcdir"
+  for file in *.oxt; do
+    LANG=en_US.utf8 bsdtar -xf $file
+  done
+
+  install -dm755 "${pkgdir}/usr/share/hunspell"
+  install -m644 es_*.dic es_*.aff "$pkgdir/usr/share/hunspell"
+
+  # the symlinks
+  install -dm755 "${pkgdir}/usr/share/myspell/dicts"
+  pushd "$pkgdir/usr/share/myspell/dicts"
+    for file in "$pkgdir"/usr/share/hunspell/*; do
+      ln -sv /usr/share/hunspell/$(basename $file) .
+    done
+  popd
+  
+  # docs
+  install -dm755 "${pkgdir}/usr/share/doc/$pkgname"
+  install -m644 README.txt "$pkgdir/usr/share/doc/$pkgname"
+}

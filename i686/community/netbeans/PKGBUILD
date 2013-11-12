@@ -1,0 +1,45 @@
+# $Id: PKGBUILD 98757 2013-10-17 17:07:44Z arodseth $
+# Maintainer: Alexander Rødseth <rodseth@gmail.com>
+# Contributor: Timm Preetz <timm@preetz.us>
+# Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
+
+pkgname=netbeans
+pkgver=7.4
+_subpkgver=201310111528
+pkgrel=1
+pkgdesc='IDE for Java, HTML5, PHP, Groovy, C and C++'
+arch=('any')
+url='http://netbeans.org/'
+license=('CDDL')
+depends=('java-environment' 'ttf-font' 'libxtst' 'giflib')
+backup=('usr/share/netbeans/etc/netbeans.conf')
+makedepends=('gendesk' 'setconf')
+optdepends=('php: for developing programs in php'
+            'groovy: for developing programs in groovy'
+            'lib32-glibc')
+install='netbeans.install'
+options=('!strip')
+source=("http://dlc.sun.com.edgesuite.net/$pkgname/$pkgver/final/zip/$pkgname-$pkgver-$_subpkgver.zip")
+# http://dlc.sun.com.edgesuite.net/netbeans/7.4/final/zip/
+sha256sums=('bd9a7d1faab7c6a45c1b8d2e5ad11453c2ac767d2176836e65a5c7a62d7c365b')
+
+prepare() {
+  gendesk -f -n --pkgname "$pkgname" --pkgdesc "$pkgdesc"
+  setconf "$pkgname/bin/$pkgname" basedir "/usr/share/$pkgname"
+}
+
+package() {
+  cd "$pkgname"
+
+  mkdir -p "$pkgdir/usr/"{bin,share/applications}
+  cp -r "../$pkgname" "$pkgdir/usr/share/"
+  install -Dm644 "../$pkgname.desktop" \
+    "$pkgdir/usr/share/applications/$pkgname.desktop"
+  install -Dm644 "nb/$pkgname.png" "$pkgdir/usr/share/pixmaps/$pkgname.png"
+  install -Dm755 "bin/$pkgname" "$pkgdir/usr/bin/$pkgname"
+
+  # Cleanup (contains the file that is now placed in /usr/bin + .exe-files)
+  rm -r "$pkgdir/usr/share/$pkgname/bin"
+}
+
+# vim:set ts=2 sw=2 et:

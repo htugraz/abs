@@ -1,0 +1,29 @@
+# $Id: PKGBUILD 196360 2013-10-12 08:39:11Z andyrtr $
+# Maintainer: Andreas Radke <andyrtr@archlinux.org>
+# Maintainer: Jan de Groot <jgc@archlinux.org>
+
+pkgname=xorg-xauth
+pkgver=1.0.8
+pkgrel=1
+pkgdesc="X.Org authorization settings program"
+arch=(i686 x86_64)
+license=('custom')
+url="http://xorg.freedesktop.org/"
+depends=('libxmu')
+makedepends=('xorg-util-macros')
+groups=('xorg-apps' 'xorg')
+source=(${url}/releases/individual/app/xauth-${pkgver}.tar.bz2)
+sha256sums=('a8696ae7a50c699d5fb3a41408b60d98843d19ea46e9f09e391cb98c8f7fd4f7')
+
+build() {
+  cd "${srcdir}/xauth-${pkgver}"
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd "${srcdir}/xauth-${pkgver}"
+  make DESTDIR="${pkgdir}" install
+  install -d -m755 "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -m644 COPYING "${pkgdir}/usr/share/licenses/${pkgname}/"
+}

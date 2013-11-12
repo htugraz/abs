@@ -1,0 +1,11 @@
+# $Id: PKGBUILD 150991 2012-02-24 12:47:38Z allan $
+# Maintainer: Jan de Groot <jgc@archlinux.org>
+
+pkgname=xorg-xkb-utils
+pkgver=7.6
+pkgrel=2
+pkgdesc="Transition package depending on various X keyboard utilities"
+arch=('any')
+url="http://xorg.freedesktop.org/"
+license=('custom')
+depends=('xorg-xkbutils' 'xorg-xkbcomp' 'xorg-xkbevd' 'xorg-setxkbmap')

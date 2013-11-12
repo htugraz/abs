@@ -1,0 +1,31 @@
+# $Id: PKGBUILD 198200 2013-10-30 13:25:00Z allan $
+# Maintainer: Tobias Powalowski <tpowa@archlinux.org>
+
+pkgname=libmp3splt
+pkgver=0.9.0
+pkgrel=2
+pkgdesc="Library for splitting mp3 and ogg files without decoding"
+arch=('i686' 'x86_64')
+url="http://mp3splt.sourceforge.net"
+license=('GPL')
+depends=('flac' 'libmad' 'libvorbis' 'libid3tag' 'pcre' 'libltdl')
+makedepends=('libtool')
+source=("http://downloads.sourceforge.net/sourceforge/mp3splt/$pkgname-$pkgver.tar.gz")
+
+prepare() {
+  cd $srcdir/$pkgname-$pkgver
+  libtoolize --copy --force
+  ./autogen.sh
+}
+
+build() {
+   cd $srcdir/$pkgname-$pkgver
+  ./configure --prefix=/usr
+  make
+}
+
+package() { 
+  cd $srcdir/$pkgname-$pkgver
+  make DESTDIR=$pkgdir/ install
+}
+md5sums=('b9b9677ababf823e0739e5caff68aa86')

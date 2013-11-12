@@ -1,0 +1,22 @@
+# $Id: PKGBUILD 100456 2013-11-04 12:13:51Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Tim Lee <tl1234562004@yahoo.com>
+
+pkgname=tablelist
+pkgver=5.10
+pkgrel=1
+pkgdesc="A library for Tcl/Tk 8.0 or higher"
+arch=('any')
+url="http://www.nemethi.de"
+license=("custom")
+depends=('bash' 'tcl')
+source=(http://www.nemethi.de/tablelist/$pkgname$pkgver.tar.gz \
+        http://www.nemethi.de/tablelist/COPYRIGHT.txt )
+md5sums=('51c273f7685f43ac32e1159ae9a00ae9'
+         'aac87705f60cb5188c34838ce3e4925a')
+
+package() {
+  mkdir -p $pkgdir/usr/lib/tcl8.6
+  cp -a $srcdir/$pkgname$pkgver $pkgdir/usr/lib/tcl8.6/
+  install -D COPYRIGHT.txt $pkgdir/usr/share/licenses/$pkgname/COPYING
+}

@@ -1,0 +1,22 @@
+# $Id: PKGBUILD 90832 2013-05-14 12:25:30Z stativ $
+# Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
+# Contributor:  TDY <tdy@gmx.com>
+# Contributor: zhuqin <zhuqin83@gmail.com>
+
+pkgname=diffuse
+pkgver=0.4.7
+pkgrel=1
+pkgdesc="A graphical tool for merging and comparing text files"
+arch=('any')
+url="http://diffuse.sourceforge.net/"
+license=('GPL')
+depends=('pygtk')
+install=$pkgname.install
+source=(http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.bz2)
+md5sums=('1cbee487cdfdf37a0d1a94f2f57d89e5')
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  python2 install.py --prefix=/usr --destdir="$pkgdir"
+  sed -i 's|^#!.*|&2|' "$pkgdir"/usr/bin/diffuse 
+}

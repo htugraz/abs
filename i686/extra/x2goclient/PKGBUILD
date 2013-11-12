@@ -1,0 +1,29 @@
+# $Id: PKGBUILD 194273 2013-09-12 19:24:14Z andyrtr $
+# Maintainer: AndyRTR <andyrtr@archlinux.org>
+# Contributor: Gerhard Brauer <gerbra@archlinux.de>
+# Contributor: Richard Murri <admin@richardmurri.com>
+
+pkgname=x2goclient
+pkgver=4.0.1.1
+pkgrel=1
+pkgdesc="x2go qt4 client"
+arch=('i686' 'x86_64')
+license=('GPL')
+url="http://www.x2go.org"
+depends=('qt4' 'libldap' 'libcups' 'nxproxy' 'libssh' 'libxpm' 'hicolor-icon-theme' 'xdg-utils')
+makedepends=('man2html')
+install=x2goclient.install
+source=(http://code.x2go.org/releases/source/${pkgname}/${pkgname}-${pkgver}.tar.gz)
+md5sums=('13b6729acfd5c6a00441430ef6ab69d6')
+
+build() {
+  cd ${pkgname}-${pkgver}
+  sed -i "s:-o root -g root ::" Makefile
+  sed -i "s:lrelease:lrelease-qt4:g" Makefile
+  make PREFIX=/usr
+}
+
+package() {
+  cd ${pkgname}-${pkgver}
+  make PREFIX=/usr DESTDIR="$pkgdir" install
+}

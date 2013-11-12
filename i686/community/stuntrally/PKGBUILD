@@ -1,0 +1,37 @@
+# $Id$
+# Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
+# Contributor: Sven Schneider <archlinux.sandmann@googlemail.com>
+# Contributor: Jason Melton <jason.melton@gmail.com>
+
+pkgname=stuntrally
+pkgver=2.1
+pkgrel=1
+pkgdesc='Stunt Rally game with track editor, based on VDrift'
+arch=('x86_64' 'i686')
+license=('GPL3')
+url='http://code.google.com/p/vdrift-ogre'
+depends=('libvorbis' 'mygui' 'sdl2' 'enet' 'hicolor-icon-theme' 'libxcursor' 'stuntrally-data')
+makedepends=('cmake' 'boost')
+install=stuntrally.install
+source=("$pkgname-$pkgver.tar.gz::https://github.com/stuntrally/stuntrally/archive/${pkgver}.tar.gz")
+sha256sums=('d987e8c05ed1f3f54468e75e2c1f68a9a4c59ceefa7429130d4f800b28821ae0')
+
+build() {
+  cd "$srcdir/stuntrally-$pkgver/"
+
+  rm -rf build
+  mkdir build && cd build
+  cmake .. \
+    -DCMAKE_INSTALL_PREFIX="/usr" \
+    -DSHARE_INSTALL="share/stuntrally"
+  make
+}
+
+package() {
+  cd "$srcdir/stuntrally-$pkgver/build/"
+
+  make DESTDIR="$pkgdir" install
+  rm -rf "$pkgdir/usr/share/stuntrally/"
+}
+
+# vim:set ts=2 sw=2 et:

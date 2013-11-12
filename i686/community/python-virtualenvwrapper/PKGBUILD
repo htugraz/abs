@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 94983 2013-08-02 12:30:37Z foutrelis $
+# Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
+# Contributor: Sebastien Binet <binet@lblbox>
+
+pkgname=python-virtualenvwrapper
+pkgver=4.1.1
+pkgrel=1
+pkgdesc="Extensions to Ian Bicking's virtualenv tool"
+arch=('any')
+url="http://www.doughellmann.com/projects/virtualenvwrapper/"
+license=('MIT')
+depends=('python-virtualenv' 'python2-virtualenv' 'python-virtualenv-clone'
+         'python-stevedore')
+conflicts=('python2-virtualenvwrapper')
+replaces=('python2-virtualenvwrapper')
+source=(http://pypi.python.org/packages/source/v/virtualenvwrapper/virtualenvwrapper-$pkgver.tar.gz
+        LICENSE)
+sha256sums=('47ab05af0bc7f146bdd4a77a978e02a1f4e1db6a0546e836e2442fa0990d7d77'
+            '5c595d48f16a4cd468f08f467b52b6b2e5e43336961176988b7e4f60cf1b651f')
+
+package() {
+  cd "$srcdir/virtualenvwrapper-$pkgver"
+
+  python3 setup.py install --root="$pkgdir" -O1
+
+  install -Dm644 "$srcdir/LICENSE" \
+    "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
+
+# vim:set ts=2 sw=2 et:

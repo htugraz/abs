@@ -1,0 +1,20 @@
+# $Id: PKGBUILD 98540 2013-10-13 01:41:24Z cinelli $
+# Maintainer: Federico Cinelli <cinelli@aur.archlinux.org>
+
+pkgname=screenfetch
+pkgver=3.2.0
+pkgrel=1
+pkgdesc="a CLI Bash script to show system/theme info in screenshots"
+arch=('any')
+url="http://git.silverirc.com/cgit.cgi/screenfetch.git/"
+license=('GPL')
+depends=('bash' 'xorg-xdpyinfo')
+optdepends=('scrot: Screenshot support')
+source=("http://git.silverirc.com/cgit.cgi/screenfetch.git/snapshot/$pkgname-$pkgver.tar.bz2")
+md5sums=('6644dd7f3e8666f4986815ae796f25c9')
+
+package() {
+	cd "$srcdir/$pkgname-$pkgver"
+	install -d "$pkgdir/usr/bin"
+	install -Dm755 "screenfetch-dev" "$pkgdir/usr/bin/screenfetch"
+}

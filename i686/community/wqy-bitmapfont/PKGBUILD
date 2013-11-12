@@ -1,0 +1,35 @@
+# $Id: PKGBUILD 83823 2013-02-05 10:58:48Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: JJDaNiMoTh <jjdanimoth.aur@gmail.com>
+# Contributor: Tan Xiang <txcary@gmail.com>
+
+pkgname=wqy-bitmapfont
+pkgver=0.9.9
+pkgrel=11
+pkgdesc="A bitmapped Song Ti (serif) Chinese font"
+arch=('any')
+url="http://wenq.org/"
+license=('GPL' 'custom:"font embedding exception"')
+depends=('xorg-font-utils' 'fontconfig')
+install="wqy-bitmapfont.install"
+source=("http://downloads.sourceforge.net/wqy/wqy-bitmapfont-pcf-$pkgver-0.tar.gz"
+	"85-wqy-bitmapsong.conf.diff")
+md5sums=('76b9702fa7e6e4b9287bbeff927a1546'
+         'b472185e6bec801c2ccc65546802c2d0')
+
+package() {
+  cd $srcdir/wqy-bitmapfont
+
+  patch -p0 85-wqy-bitmapsong.conf <$srcdir/85-wqy-bitmapsong.conf.diff
+
+  mkdir -p  $pkgdir/usr/share/fonts/wenquanyi
+  cp *.pcf $pkgdir/usr/share/fonts/wenquanyi
+
+  mkdir -p $pkgdir/etc/fonts/conf.avail
+  mkdir -p $pkgdir/etc/fonts/conf.d
+  cp 85-wqy-bitmapsong.conf $pkgdir/etc/fonts/conf.avail
+  cd $pkgdir/etc/fonts/conf.d
+  ln -s ../conf.avail/85-wqy-bitmapsong.conf .
+
+  install -D -m0644 $srcdir/wqy-bitmapfont/COPYING $pkgdir/usr/share/licenses/wqy-bitmapfont/COPYING
+}

@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 198034 2013-10-30 12:24:02Z allan $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: Jan de Groot <jgc@archlinux.org>
+
+pkgname=gnome-tetravex
+pkgver=3.10.1
+pkgrel=1
+pkgdesc="Complete the puzzle by matching numbered tiles"
+arch=('i686' 'x86_64')
+license=('GPL')
+depends=('desktop-file-utils' 'hicolor-icon-theme' 'gtk3' 'librsvg')
+makedepends=('intltool' 'itstool' 'gobject-introspection')
+conflicts=('gnome-games')
+replaces=('gnome-games')
+options=('!emptydirs')
+install=gnome-tetravex.install
+url="https://live.gnome.org/Tetravex"
+groups=('gnome-extra')
+source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.xz)
+sha256sums=('8ea9503ae8252807eb2a9b33bb50bc7d3e7f65b11f8965dd5c2ab82f8a217162')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+      --disable-schemas-compile
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

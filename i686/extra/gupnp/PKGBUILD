@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 198637 2013-10-31 15:45:29Z heftig $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: György Balló <ballogy@freestart.hu>
+
+pkgname=gupnp
+pkgver=0.20.8
+pkgrel=1
+pkgdesc="An object-oriented UPNP framework"
+arch=(i686 x86_64)
+url="http://gupnp.org/"
+license=(LGPL)
+depends=(gssdp util-linux)
+makedepends=(gobject-introspection gtk-doc vala) 
+optdepends=('python2: gupnp-binding-tool')
+source=(http://ftp.gnome.org/pub/gnome/sources/${pkgname}/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz)
+sha256sums=('f70da127e0d35a7b8aecaf6f58b740bbb56836451be33d7aeb7979a5c131eac8')
+
+build() {
+  cd $pkgname-$pkgver
+  sed -i '1s|^#!.*python$|&2|' tools/gupnp-binding-tool
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+              --disable-static --with-context-manager=linux
+  make
+}
+
+check() {
+  cd $pkgname-$pkgver
+  make check
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

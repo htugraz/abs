@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 95246 2013-08-07 13:42:50Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Francois Charette <firmicus@gmx.net>
+
+pkgname=perl-time-duration
+epoch=1
+pkgver=1.1
+pkgrel=3
+pkgdesc="rounded or exact English expression of durations"
+arch=('any')
+url="http://search.cpan.org/dist/Time-Duration"
+license=('GPL' 'PerlArtistic')
+depends=('perl')
+makedepends=('perl-test-pod-coverage' 'perl-test-pod')
+options=('!emptydirs')
+source=(http://www.cpan.org/authors/id/A/AV/AVIF/Time-Duration-${pkgver}.tar.gz)
+md5sums=('120c16b3a31f5d24f17325295078fe6c')
+
+build() {
+  cd  $srcdir/Time-Duration-${pkgver}
+  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+package() {
+  cd  $srcdir/Time-Duration-${pkgver}
+  make install DESTDIR=$pkgdir
+  find $pkgdir -name '.packlist' -delete
+  find $pkgdir -name '*.pod' -delete
+}

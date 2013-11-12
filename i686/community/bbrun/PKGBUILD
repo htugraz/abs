@@ -1,0 +1,20 @@
+# $Id: PKGBUILD 65065 2012-02-20 02:40:27Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Sven Kauber <celeon@gmail.com>
+
+pkgname=bbrun
+pkgver=1.6
+pkgrel=4
+pkgdesc="A run - component for blackbox window manager"
+arch=(i686 x86_64)
+url="http://www.darkops.net/bbrun/"
+license=('GPL')
+depends=('gtk2' 'libxpm')
+source=(http://www.darkops.net/bbrun/$pkgname-$pkgver.tar.gz)
+md5sums=('820960e3d52ddf2d5cf7e4ba51821bfd')
+
+build() {
+  cd $srcdir/$pkgname-$pkgver/$pkgname
+  make LIBS="-lXpm `pkg-config --libs gtk+-2.0` -lX11 -lXext"
+  install -Dm755 bbrun $pkgdir/usr/bin/bbrun
+}

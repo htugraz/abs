@@ -1,0 +1,27 @@
+# $Id: PKGBUILD 196705 2013-10-16 15:56:51Z heftig $
+# Maintainer: Jan de Groot <jgc@archlinux.org>
+
+pkgname=gnome-devel-docs
+pkgver=3.10.1
+pkgrel=1
+pkgdesc="Developer documentation for GNOME"
+arch=(any)
+license=('FDL')
+depends=('yelp')
+makedepends=('yelp-tools')
+url="http://www.gnome.org"
+groups=('gnome-extra')
+source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver:0:4}/$pkgname-$pkgver.tar.xz)
+sha256sums=('ac542f310f0271297bb2434c9c879e62e4506b68e27bccd9d559d3ee7741097b')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr --sysconfdir=/etc \
+      --localstatedir=/var
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

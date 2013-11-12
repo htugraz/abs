@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 192107 2013-08-06 00:44:27Z eric $
+# Maintainer: 
+
+pkgname=perl-common-sense
+pkgver=3.72
+pkgrel=1
+pkgdesc="Implements some sane defaults for Perl programs"
+arch=('any')
+url="http://search.cpan.org/dist/common-sense"
+license=('PerlArtistic' 'GPL')
+depends=('perl')
+options=('!emptydirs')
+source=("http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/common-sense-$pkgver.tar.gz")
+md5sums=('9558981f345e6874c1b03d148a45953e')
+
+build() {
+  cd common-sense-$pkgver
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+check() {
+  cd common-sense-$pkgver
+  make test
+}
+
+package() {
+  cd common-sense-$pkgver
+  make DESTDIR="$pkgdir" install
+}

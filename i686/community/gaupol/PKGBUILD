@@ -1,0 +1,33 @@
+# $Id: PKGBUILD 98376 2013-10-09 07:48:50Z foutrelis $
+# Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
+# Contributor: Ionut Biru <ibiru@archlinux.org>
+# Contributor: Allan McRae <allan@archlinux.org>
+# Contributor: FJ <joostef@gmail.com>
+# Contributor: Sebastien Piccand <sebcactus gmail com>
+
+pkgname=gaupol
+pkgver=0.24.3
+pkgrel=1
+pkgdesc="An editor for text-based subtitles"
+arch=('any')
+url="http://home.gna.org/gaupol"
+license=('GPL')
+depends=('python-gobject' 'iso-codes' 'desktop-file-utils'
+         'hicolor-icon-theme')
+makedepends=('gettext' 'intltool')
+optdepends=('python-pyenchant: spell-checking'
+            'python-gtkspellcheck: inline spell-checking'
+            'python-chardet: character encoding auto-detection'
+            'mplayer: subtitle preview'
+            'vlc: subtitle preview')
+install=gaupol.install
+source=(http://download.gna.org/$pkgname/0.24/$pkgname-$pkgver.tar.xz)
+sha256sums=('e42b35d2027991b192af43f00b2e16b3915f3c4a605d12014ce81f1076f31d86')
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  python3 setup.py --without-iso-codes install --root="$pkgdir" -O1
+}
+
+# vim:set ts=2 sw=2 et:

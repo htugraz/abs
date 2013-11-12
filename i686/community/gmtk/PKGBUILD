@@ -1,0 +1,27 @@
+# $Id: PKGBUILD 99144 2013-10-25 02:20:05Z allan $
+# Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
+
+pkgname=gmtk
+pkgver=1.0.8
+pkgrel=2
+pkgdesc='Common functions for gnome-mplayer and gecko-mediaplayer.'
+arch=('i686' 'x86_64')
+url='http://gmtk.googlecode.com/'
+license=('GPL')
+depends=('glib2' 'gtk3' 'dconf')
+makedepends=('intltool' 'pkg-config')
+source=("http://gmtk.googlecode.com/files/${pkgname}-${pkgver}.tar.gz")
+md5sums=('ee8ab99f3ac2e0071c99a35e4847bba5')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+
+  export CPPFLAGS="$CPPFLAGS $(pkg-config --cflags gtk+-3.0)"
+  ./configure --prefix=/usr --sysconfdir=/etc --enable-gtk3
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make DESTDIR="${pkgdir}" install
+}

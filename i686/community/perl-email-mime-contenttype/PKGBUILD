@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 99472 2013-10-29 10:20:28Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Sergej Pupykin <pupykin.s+aur@gmail.com>
+
+pkgname=perl-email-mime-contenttype
+pkgver=1.017
+pkgrel=1
+pkgdesc="Parse a MIME Content-Type Header "
+arch=('any')
+url="http://search.cpan.org/dist/Email-MIME-ContentType"
+license=('GPL' 'PerlArtistic')
+depends=('perl')
+options=('!emptydirs')
+source=(http://www.cpan.org/authors/id/R/RJ/RJBS/Email-MIME-ContentType-$pkgver.tar.gz)
+md5sums=('b1e241f07b525c427774003274e363fd')
+
+build() {
+  cd  $srcdir/Email-MIME-ContentType-$pkgver
+  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+package() {
+  cd  $srcdir/Email-MIME-ContentType-$pkgver
+  make install DESTDIR=$pkgdir
+  find $pkgdir -name '.packlist' -delete
+  find $pkgdir -name '*.pod' -delete
+}

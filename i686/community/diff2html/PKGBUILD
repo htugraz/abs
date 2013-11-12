@@ -1,0 +1,19 @@
+# $Id: PKGBUILD 65122 2012-02-20 04:53:38Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+
+pkgname=diff2html
+pkgver=1.0.1
+pkgrel=4
+pkgdesc="diff to html"
+arch=(any)
+url="http://kafka.fr.free.fr/diff2html/"
+license=('GPL')
+depends=(python2)
+makedepends=()
+source=(http://kafka.fr.free.fr/diff2html/diff2html.bz2)
+md5sums=('e3aa3bd4fec0a93f5f97efcd210e232b')
+
+build() {
+  sed -i 's_#!/usr/bin/python_#!/usr/bin/python2_' $srcdir/$pkgname
+  install -D -m0755 $srcdir/$pkgname $pkgdir/usr/bin/$pkgname
+}

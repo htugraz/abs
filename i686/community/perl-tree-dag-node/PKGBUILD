@@ -1,0 +1,27 @@
+# $Id: PKGBUILD 99508 2013-10-29 10:25:17Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
+
+pkgname=perl-tree-dag-node
+pkgver=1.18
+pkgrel=1
+pkgdesc="base class for trees"
+arch=('any')
+url="http://search.cpan.org/dist/Tree-DAG_Node"
+license=('GPL' 'PerlArtistic')
+options=('!emptydirs')
+source=(http://www.cpan.org/authors/id/R/RS/RSAVAGE/Tree-DAG_Node-$pkgver.tgz)
+md5sums=('d336e9d3141154fe152271e2f504a57a')
+
+build() {
+  cd  $srcdir/Tree-DAG_Node-$pkgver
+  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+package() {
+  cd  $srcdir/Tree-DAG_Node-$pkgver
+  make install DESTDIR=$pkgdir
+  find $pkgdir -name '.packlist' -delete
+  find $pkgdir -name '*.pod' -delete
+}

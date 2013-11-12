@@ -1,0 +1,26 @@
+# $Id: PKGBUILD 198144 2013-10-30 13:03:26Z allan $
+# Maintainer: Jan de Groot <jgc@archlinux.org>
+# Contributor: Chaiwat Suttipongsakul <cwt114@gmail.com>
+
+pkgname=libdatrie
+pkgver=0.2.6
+pkgrel=1
+pkgdesc="Implementation of double-array structure for representing trie, as proposed by Junichi Aoe."
+url="http://linux.thai.net/projects/datrie"
+license=('LGPL')
+arch=('i686' 'x86_64')
+depends=('glibc')
+options=('!emptydirs')
+source=(http://linux.thai.net/pub/thailinux/software/libthai/${pkgname}-${pkgver}.tar.xz)
+md5sums=('e253eb2433045f6e224c7fa44f9796e1')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  ./configure --prefix=/usr --disable-static
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make DESTDIR="${pkgdir}" install
+}

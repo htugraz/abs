@@ -1,0 +1,22 @@
+# $Id: PKGBUILD 97009 2013-09-10 10:14:24Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Stefano Esposito <ragnarok@email.it>
+
+pkgname=emacs-python-mode
+pkgver=6.1.2
+pkgrel=1
+pkgdesc="Python mode for Emacs"
+url="https://launchpad.net/python-mode"
+license=("GPL")
+arch=('any')
+depends=('emacs')
+install=emacs-python-mode.install
+source=("http://launchpad.net/python-mode/trunk/$pkgver/+download/python-mode.el-$pkgver.tar.gz")
+md5sums=('6117a5c474da37d893c0d0bf4cc4b9a2')
+
+package() {
+  cd $srcdir/python-mode.el-$pkgver
+  install -dm755 $pkgdir/usr/share/emacs/site-lisp/
+  install -Dm644 *.el $pkgdir/usr/share/emacs/site-lisp/
+  rm -f $pkgdir/usr/share/emacs/site-lisp/pymacs.*
+}

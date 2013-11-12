@@ -1,0 +1,29 @@
+# $Id: PKGBUILD 197945 2013-10-30 11:50:17Z allan $
+# Maintainer: Tobias Powalowski <tpowa@archlinux.org>
+# Contributor: Christian Hesse <mail@eworm.de>
+
+pkgname=f2fs-tools
+pkgver=1.2.0
+pkgrel=1
+pkgdesc="Tools for Flash-Friendly File System (F2FS)"
+arch=('i686' 'x86_64')
+url="http://sourceforge.net/projects/f2fs-tools/"
+depends=('util-linux')
+license=('GPL')
+source=('http://git.kernel.org/cgit/linux/kernel/git/jaegeuk/f2fs-tools.git/snapshot/f2fs-tools-1.2.0.tar.gz')
+#source=("ftp://ftp.archlinux.org/other/packages/$pkgname/$pkgname-$pkgver.tar.bz2")
+md5sums=('d27ad7cd56f6001f7e1d508d85eef195')
+
+build() {
+	cd "${pkgname}-${pkgver}"
+
+	autoreconf -fi
+	./configure --prefix=/usr --sbindir=/usr/bin
+	make
+}
+
+package() {
+	cd "${pkgname}-${pkgver}"
+
+	make DESTDIR="${pkgdir}/" sbindir=/usr/bin install
+}

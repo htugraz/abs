@@ -1,0 +1,19 @@
+# $Id: PKGBUILD 86744 2013-03-21 20:57:09Z eric $
+# Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
+# Contributor: Grigorios Bouzakis <grbzks[at]gmail[dot]com>
+# Contributor: Patrick Leslie Polzer <polzer@gnu.org>
+# Contributor: Aaron 'venisonslurpee' Laursen <venisonslurpee@gmail.com>
+
+pkgname=zsh-lovers
+pkgver=0.8.3
+pkgrel=2
+pkgdesc="A collection of tips, tricks and examples for the Z shell."
+arch=('any')
+url='http://grml.org/zsh/#zshlovers'
+license=('GPL')
+source=("http://grml.org/zsh/${pkgname}.1")
+md5sums=('60c8be931150f3d12d04be834e61035c')
+
+package() {
+  install -Dm0644 "${srcdir}/${pkgname}.1" "${pkgdir}/usr/share/man/man1/${pkgname}.1"
+}

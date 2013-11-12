@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 198574 2013-10-30 15:42:05Z allan $
+# Maintainer: AndyRTR <andyrtr@archlinux.org>
+# Contributor: Tobias Kieslich <tobias (at) archlinux.org>
+
+pkgname=xfce4-wavelan-plugin
+pkgver=0.5.11
+pkgrel=1
+pkgdesc="Plugin to monitor wifi connectivity for the Xfce4 panel"
+arch=('i686' 'x86_64')
+license=('custom')
+url="http://goodies.xfce.org/projects/panel-plugins/xfce4-wavelan-plugin/"
+groups=('xfce4-goodies')
+depends=('xfce4-panel' 'net-tools')
+makedepends=('intltool')
+source=(http://archive.xfce.org/src/panel-plugins/${pkgname}/${pkgver%.*}/${pkgname}-${pkgver}.tar.bz2)
+md5sums=('50514bb286f1ed6761a1b36832bb7fe3')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+
+  ./configure --prefix=/usr \
+	--sysconfdir=/etc \
+	--libexecdir=/usr/lib \
+	--localstatedir=/var \
+	--disable-static \
+	--disable-debug
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make DESTDIR="${pkgdir}" install
+  install -Dm644 COPYING "${pkgdir}/usr/share/licenses/${pkgname}/COPYING"
+}

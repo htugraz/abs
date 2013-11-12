@@ -1,0 +1,33 @@
+# $Id: PKGBUILD 98346 2013-10-08 20:19:08Z schiv $
+# Maintainer: Ray Rashif <schiv@archlinux.org>
+# Contributor: Philipp Überbacher <hollunder at gmx dot at>
+
+pkgname=qtractor
+pkgver=0.5.11
+pkgrel=1
+pkgdesc="Audio/MIDI multitrack sequencer"
+arch=('i686' 'x86_64')
+url="http://qtractor.sourceforge.net/"
+license=('GPL')
+depends=('qt4' 'suil' 'lilv' 'libmad' 'liblo'
+         'rubberband' 'shared-mime-info')
+makedepends=('ladspa' 'dssi')
+[ "$CARCH" = "i686" ] && optdepends=('dssi-vst: win32 VST support')
+install=qtractor.install
+source=("http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.gz")
+md5sums=('97a07f55ea61747859b1fd6c284a0806')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  ./configure --prefix=/usr
+  make
+}
+
+package () {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  make DESTDIR="$pkgdir" install
+}
+
+# vim:set ts=2 sw=2 et:

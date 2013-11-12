@@ -1,0 +1,18 @@
+# Maintainer: Jelle van der Waa <jelle@vdwaa.nl>
+
+pkgname=pstreams
+pkgver=0.8.0
+pkgrel=1
+pkgdesc='C++ utility for simple IOStream-based Inter-Process Communication.'
+arch=('any')
+url='http://pstreams.sourceforge.net'
+license=('LGPL')
+source=("http://downloads.sourceforge.net/${pkgname}/${pkgname}-${pkgver}.tar.gz")
+md5sums=('1d1188f30581dcdbd62893b66c08fbc4')
+
+package() {
+  cd ${pkgname}-${pkgver}
+
+  install -D -m644 pstream.h \
+    ${pkgdir}/usr/include/pstreams/pstream.h
+}

@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 165081 2012-08-10 03:55:30Z bisson $
+
+# Maintainer: Gaetan Bisson <bisson@archlinux.org>
+# Contributor: Kemka Andrey <dr.andru@gmail.com>
+
+pkgname=libguess
+pkgver=1.1
+pkgrel=2
+pkgdesc='High-speed character set detection library'
+url='http://atheme.org/project/libguess'
+license=('custom')
+depends=('libmowgli')
+arch=('i686' 'x86_64')
+source=("http://distfiles.atheme.org/libguess-${pkgver}.tar.gz")
+sha1sums=('2760e63b71497506208f9d6269ec52f83bfc6f0b')
+
+build() {
+	cd "${srcdir}/${pkgname}-${pkgver}"
+	sed 's/libmowgli >= 0.9.50/libmowgli-2/g' -i configure
+	./configure --prefix=/usr
+	make
+}
+
+package() {
+	cd "${srcdir}/${pkgname}-${pkgver}"
+	make DESTDIR="${pkgdir}" install
+	install -D COPYING "${pkgdir}"/usr/share/licenses/libguess/COPYING
+}

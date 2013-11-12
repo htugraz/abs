@@ -1,0 +1,26 @@
+# $Id: PKGBUILD 70946 2012-05-20 11:16:16Z jlichtblau $
+# Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+# Contributor: Allan McRae <allan@archlinux.org>
+# Contributor: Nick Bolten <Shirakawasuna at gmail _dot_ com>
+
+pkgname=gprename
+pkgver=2.7
+pkgrel=3
+pkgdesc="A GTK2 batch renamer for files and directories"
+arch=('any')
+url="http://gprename.sourceforge.net/"
+license=('GPL3')
+depends=('gtk2-perl' 'perl-libintl-perl' 'perl-locale-gettext')
+source=(http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.bz2)
+sha256sums=('fa80ae7d4280d46ed01c4301711e713a787a209ff4e64b3f06142ec2c3317aa4')
+
+package() {
+  cd ${srcdir}/${pkgname}/trunk
+
+  sed '30s/install: uninstall/install:/' -i Makefile
+  make PREFIX=/usr DESTDIR=${pkgdir}/usr install
+
+#29940 fix
+  sed 's#/usr/local#/usr#' -i ${pkgdir}/usr/bin/$pkgname
+  sed 's#/usr/local#/usr#' -i ${pkgdir}/usr/share/applications/$pkgname*.*
+}

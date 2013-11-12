@@ -1,0 +1,26 @@
+# $Id: PKGBUILD 197633 2013-10-27 14:48:10Z giovanni $
+# Maintainer: Giovanni Scafora <giovanni@archlinux.org>
+# Contributor 03/08/04 <lefungus@altern.org>
+
+pkgname=libmatroska
+pkgver=1.4.1
+pkgrel=1
+pkgdesc="Matroska library"
+arch=('i686' 'x86_64')
+url="http://dl.matroska.org/downloads/libmatroska/"
+license=('LGPL')
+depends=('libebml')
+source=("http://dl.matroska.org/downloads/${pkgname}/${pkgname}-${pkgver}.tar.bz2")
+md5sums=('f61b2e5086f4bb9d24a43cc8af43a719')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}/make/linux"
+
+  make sharedlib
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}/make/linux"
+
+  make prefix="${pkgdir}/usr" install
+}

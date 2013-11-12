@@ -1,0 +1,38 @@
+# $Id: PKGBUILD 96722 2013-09-03 12:48:13Z bgyorgy $
+# Maintainer:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
+# Contributor: Angel Velasquez <angvp@archlinux.org>
+# Contributor: Juergen Hoetzel <juergen@archlinux.org>
+
+pkgname=lxde-common
+pkgver=0.5.5
+pkgrel=3
+pkgdesc='Common files of the LXDE Desktop'
+arch=('any')
+url='http://lxde.org/'
+license=('GPL2')
+groups=('lxde')
+backup=(etc/xdg/lxsession/LXDE/desktop.conf
+        etc/xdg/lxsession/LXDE/autostart)
+depends=('gtk-engines' 'lxde-icon-theme' 'lxsession')
+source=(http://downloads.sourceforge.net/lxde/${pkgname}-${pkgver}.tar.gz
+        startlxde.patch)
+md5sums=('e51a6b2a815a89fda1f497b509465a97'
+         '11aca3bcc2ea8fa2c03e72056a52d1fc')
+
+prepare() {
+    cd $srcdir/$pkgname-$pkgver
+    patch -Np0 -i $srcdir/startlxde.patch
+}
+
+build() {
+    cd $srcdir/$pkgname-$pkgver
+    ./configure --sysconfdir=/etc --prefix=/usr
+    make
+}
+
+package() {
+    cd $srcdir/$pkgname-$pkgver
+    make DESTDIR=$pkgdir install
+    install -Dm644 lxde-logout.desktop \
+      $pkgdir/usr/share/applications/lxde-logout.desktop
+}

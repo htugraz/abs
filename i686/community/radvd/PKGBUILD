@@ -1,0 +1,42 @@
+# $Id: PKGBUILD 98000 2013-10-02 23:02:19Z seblu $
+# Maintainer: Sébastien Luttringer
+# Contributor: Kaiting Chen <kaitocracy@gmail.com>
+# Contributor: Mark Smith <markzzzsmith@yahoo.com.au>
+
+pkgname=radvd
+pkgver=1.9.5
+pkgrel=1
+pkgdesc='IPv6 Router Advertisement Daemon'
+url='http://www.litech.org/radvd/'
+license=('custom')
+depends=('glibc' 'libdaemon')
+arch=('i686' 'x86_64')
+backup=('etc/radvd.conf')
+source=("http://www.litech.org/radvd/dist/$pkgname-$pkgver.tar.gz"
+        "$pkgname.service")
+sha1sums=('0e65206803ab2bcb4e6012a0d11ecdad4f64ce9c'
+          '2fdba3b0ed28c67dc1c04bfd1439fa4dece88bbc')
+build() {
+  cd ${pkgname}-${pkgver}
+  ./configure \
+    --prefix=/usr \
+    --sbindir=/usr/bin \
+    --sysconfdir=/etc \
+    --with-pidfile=/run/radvd.pid \
+    --mandir=/usr/share/man
+  make
+}
+
+package() {
+  cd ${pkgname}-${pkgver}
+  make DESTDIR="$pkgdir" install
+  # default config
+  install -D -m 644 radvd.conf.example "$pkgdir/etc/radvd.conf"
+  # license
+  install -D -m 644 COPYRIGHT "$pkgdir/usr/share/licenses/$pkgname/COPYRIGHT"
+  # systemd
+  install -D -m 644 ../$pkgname.service \
+    "$pkgdir/usr/lib/systemd/system/$pkgname.service"
+}
+
+# vim:set ts=2 sw=2 et:

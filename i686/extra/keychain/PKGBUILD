@@ -1,0 +1,24 @@
+# $Id: PKGBUILD 192308 2013-08-10 01:22:26Z eric $
+# Maintainer: Eric Bélanger <eric@archlinux.org>
+
+pkgname=keychain
+pkgver=2.7.1
+pkgrel=3
+pkgdesc="A front-end to ssh-agent, allowing one long-running ssh-agent process per system, rather than per login"
+arch=('any')
+url="http://www.funtoo.org/Keychain"
+license=('GPL2')
+depends=('sh')
+source=(http://www.funtoo.org/archive/keychain/${pkgname}-${pkgver}.tar.bz2)
+sha1sums=('e7ad7da374ba81e57792bb2695eb6c352f769de7')
+
+build() {
+  cd ${pkgname}-${pkgver}
+  make
+}
+
+package() {
+  cd ${pkgname}-${pkgver}
+  install -Dm755 keychain "${pkgdir}/usr/bin/keychain"
+  install -Dm644 keychain.1 "${pkgdir}/usr/share/man/man1/keychain.1"
+}

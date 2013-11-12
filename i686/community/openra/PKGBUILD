@@ -1,0 +1,45 @@
+# $Id: PKGBUILD 97756 2013-09-28 10:28:37Z svenstaro $
+# Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
+# Contributor: Matthew Bowra-Dean <matthew@ijw.co.nz>
+pkgname=openra
+pkgver=20130915
+pkgrel=2
+pkgdesc="An open-source implementation of the Red Alert engine using .NET/mono and OpenGL"
+arch=('any')
+url="http://open-ra.org"
+license=('GPL3')
+install=openra.install
+depends=('mono' 'openal' 'libgl' 'freetype2' 'sdl' 'hicolor-icon-theme' 'ttf-dejavu' 'gtk-update-icon-cache' 'desktop-file-utils')
+makedepends=('git' 'unzip')
+optdepends=('nvidia-cg-toolkit: for using the alternative Cg renderer')
+options=(!strip)
+source=("openra-$pkgver::https://github.com/OpenRA/OpenRA/tarball/release-$pkgver"
+        https://github.com/OpenRA/OpenRA/pull/3837.patch
+        https://github.com/OpenRA/OpenRA/pull/3842.patch)
+md5sums=('9284b6113a77978f446fa0bade7f9cd3'
+         '46ee544f4117c80cc400c03e1637f1f1'
+         '692b5533da51b589ab17e6de350ac6b8')
+
+build() {
+  cd OpenRA-OpenRA-*
+
+  patch -Np1 < $srcdir/3837.patch
+  patch -Np1 < $srcdir/3842.patch
+  make
+}
+
+package() {
+  cd OpenRA-OpenRA-*
+
+  mkdir -p "$pkgdir/usr/share/applications"
+  sed "s/{VERSION}/$pkgver/g" packaging/linux/openra.desktop > "$pkgdir/usr/share/applications/openra.desktop"
+
+  sed "/Version/s/{DEV_VERSION}/release-${pkgver}/" -i mods/{ra,cnc}/mod.yaml  
+
+  mkdir -p "$pkgdir/usr/share/icons/"
+  cp -r packaging/linux/hicolor "$pkgdir/usr/share/icons/"
+
+  make prefix=/usr DESTDIR="$pkgdir" install
+
+  find "$pkgdir" -iname \*.mdb -delete
+}

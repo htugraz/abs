@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 99443 2013-10-28 22:19:23Z seblu $
+# Maintainer: Sébastien Luttringer
+# Contributor: Alessandro Sagratini <ale_sagra at hotmail dot com>
+# Contributor: zlowly <zlowly@gmail.com>
+
+pkgname=perl-config-ini
+pkgver=0.021
+pkgrel=1
+pkgdesc='Perl/CPAN Module Config::INI - simple .ini-file format'
+arch=('any')
+license=('GPL' 'PerlArtistic')
+depends=('perl-io-string' 'perl-mixin-linewise' 'perl-capture-tiny')
+options=('!emptydirs')
+url='http://search.cpan.org/~rjbs/Config-INI/'
+source=("http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Config-INI-$pkgver.tar.gz")
+md5sums=('cc78f120031a5e536658222a06f9317f')
+
+build() {
+  cd Config-INI-$pkgver
+  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+check() {
+  cd Config-INI-$pkgver
+  make test
+}
+
+package() {
+  cd Config-INI-$pkgver
+  make install DESTDIR="$pkgdir"
+}
+
+# vim:set ts=2 sw=2 et:

@@ -1,0 +1,136 @@
+# Maintainer: Guillaume ALAUX <guillaume@archlinux.org>
+pkgbase=tomcat7
+pkgname=('java-servlet3.0-tomcat' 'java-jsp2.2-tomcat' 'tomcat7')
+pkgver=7.0.47
+pkgrel=1
+arch=('any')
+url='http://tomcat.apache.org/'
+license=('APACHE')
+makedepends=('java-environment' 'apache-ant>=1.8' 'java-commons-daemon' 'eclipse-ecj')
+source=(http://archive.apache.org/dist/tomcat/tomcat-7/v${pkgver}/src/apache-tomcat-${pkgver}-src.tar.gz
+        http://archive.apache.org/dist/tomcat/tomcat-7/v${pkgver}/bin/apache-tomcat-${pkgver}.tar.gz
+        systemd_tomcat7.service
+        systemd_tmpfiles.d_tomcat7.conf
+        tomcat7.install)
+
+sha256sums=('be7cad1c70b9db84e8b139a81312ecd80761f2e69edbd1d176d49e52f728bc99'
+            '46dc31b08c120ffc2e38dccc119b9df02662a9fb297fa3fc6d90902c2f86057a'
+            '6b3d9711319165c331b827cba40cb788c0d1ea60fd181a56b8da4ca41e2d2930'
+            '4bfeb2f4462547bf15cb2b72db545c0531c70f8640fa79344d520ceea6812a93'
+            '4db469bcbcfb043c63ce3db0412997552861ea0f9c09d8825808570ed75aa27b')
+
+_servletver=3.0
+_jspver=2.2
+
+build() {
+  cd "${srcdir}/apache-tomcat-${pkgver}-src"
+
+  . /etc/profile.d/apache-ant.sh
+
+  ant clean deploy \
+    -Dbase.path=${srcdir}/DOWN_LIBS \
+    -Dcommons-daemon.jar=/usr/share/java/commons-daemon.jar \
+    -Djdt.jar=/usr/share/java/eclipse-ecj.jar \
+    -Dno.build.dbcp=true
+}
+
+#TODO add test "ant test"
+
+package_java-servlet3.0-tomcat() {
+  pkgdesc='Servlet 3.0 java library implementation by Apache Tomcat'
+  depends=('java-environment>=5')
+
+  cd "${srcdir}/apache-tomcat-${pkgver}-src/output/build/lib"
+
+  install -dm755 ${pkgdir}/usr/share/java/servlet${_servletver}-tomcat
+  install -m644 servlet-api.jar \
+                ${pkgdir}/usr/share/java/servlet${_servletver}-tomcat/servlet-api-${_servletver}.jar
+  ln -s servlet${_servletver}-tomcat/servlet-api-${_servletver}.jar \
+        ${pkgdir}/usr/share/java/servlet-api.jar
+}
+
+package_java-jsp2.2-tomcat() {
+  pkgdesc='JSP 2.2 java library implementation by Apache Tomcat'
+  depends=('java-environment>=5')
+
+  cd "${srcdir}/apache-tomcat-${pkgver}-src/output/build/lib"
+
+  install -dm755 ${pkgdir}/usr/share/java/jsp${_jspver}-tomcat
+  for j in el-api jsp-api; do
+    install -m644 ${j}.jar \
+                  ${pkgdir}/usr/share/java/jsp${_jspver}-tomcat/${j}-${_jspver}.jar
+    ln -s jsp${_jspver}-tomcat/${j}-${_jspver}.jar ${pkgdir}/usr/share/java/${j}.jar
+  done
+}
+
+package_tomcat7() {
+  pkgdesc='Servlet-3.0/JSP-2.2 Container'
+  depends=('java-runtime>=6' 'java-jsvc' 'eclipse-ecj'
+           "java-servlet3.0-tomcat=${pkgver}" "java-jsp2.2-tomcat=${pkgver}")
+  optdepends=('tomcat-native: to allow optimal performance in production environments')
+  backup=(etc/tomcat7/catalina.policy
+          etc/tomcat7/catalina.properties
+          etc/tomcat7/context.xml
+          etc/tomcat7/logging.properties
+          etc/tomcat7/server.xml
+          etc/tomcat7/tomcat-users.xml
+          etc/tomcat7/web.xml)
+  install=tomcat7.install
+
+  cd "${srcdir}/apache-tomcat-${pkgver}-src/output/build"
+
+  # Tomcat general files
+  install -dm755 ${pkgdir}/usr/share/{,java/}${pkgname}
+  # commons-daemon and tomcat-natives are packaged on their own
+  rm bin/{*.bat,commons-daemon*,tomcat-native.tar.gz}
+  cp -r bin ${pkgdir}/usr/share/${pkgname}
+
+  # eclipse-ecj is packaged on its own
+  rm lib/eclipse-ecj.jar
+  install -m644 lib/* ${pkgdir}/usr/share/java/${pkgname}
+  ln -s ../eclipse-ecj.jar ${pkgdir}/usr/share/java/${pkgname}/eclipse-ecj.jar
+
+  # Provided by previous packages
+  rm ${pkgdir}/usr/share/java/${pkgname}/servlet-api.jar
+  ln -s /usr/share/java/servlet${_servletver}-tomcat/servlet-api-${_servletver}.jar \
+        ${pkgdir}/usr/share/java/${pkgname}/servlet-api.jar
+
+  for j in el-api jsp-api; do
+    rm ${pkgdir}/usr/share/java/${pkgname}/${j}.jar
+    ln -s /usr/share/java/jsp${_jspver}-tomcat/${j}-${_jspver}.jar \
+          ${pkgdir}/usr/share/java/${pkgname}/${j}.jar
+  done
+
+  install -m644 "${srcdir}/apache-tomcat-${pkgver}/lib/tomcat-dbcp.jar" \
+                ${pkgdir}/usr/share/java/${pkgname}/tomcat-dbcp-${pkgver}.jar
+  ln -s tomcat-dbcp-${pkgver}.jar \
+        ${pkgdir}/usr/share/java/${pkgname}/tomcat-dbcp.jar
+
+  ln -s /usr/share/java/${pkgname} ${pkgdir}/usr/share/${pkgname}/lib
+
+  # 71=tomcat7 / 19=log
+  install -dm775 -o 71 -g 19 ${pkgdir}/var/log/${pkgname}
+  ln -s /var/log/${pkgname} ${pkgdir}/usr/share/${pkgname}/logs
+  touch ${pkgdir}/var/log/${pkgname}/catalina.{out,err}
+  chgrp 19 ${pkgdir}/var/log/${pkgname}/catalina.{out,err}
+
+  install -dm775 ${pkgdir}/etc/${pkgname}
+  install -g 71 -m640 conf/* ${pkgdir}/etc/${pkgname}
+  install -d -g 71 -m775 ${pkgdir}/etc/${pkgname}/Catalina
+  ln -s /etc/${pkgname} ${pkgdir}/usr/share/${pkgname}/conf
+
+  install -dm775 ${pkgdir}/var/lib/${pkgname}
+  cp -r webapps ${pkgdir}/var/lib/${pkgname}
+  chown -R 71:71 ${pkgdir}/var/lib/${pkgname}
+  ln -s /var/lib/${pkgname}/webapps ${pkgdir}/usr/share/${pkgname}/webapps
+
+  install -dm1777 ${pkgdir}/var/tmp
+  install -dm775 -o 71 -g 71 ${pkgdir}/var/tmp/${pkgname}/{temp,work}
+  ln -s /var/tmp/${pkgname}/temp ${pkgdir}/usr/share/${pkgname}/temp
+  ln -s /var/tmp/${pkgname}/work ${pkgdir}/usr/share/${pkgname}/work
+
+  install -Dm644 ${srcdir}/systemd_tomcat7.service \
+                 ${pkgdir}/usr/lib/systemd/system/${pkgname}.service
+  install -Dm644 ${srcdir}/systemd_tmpfiles.d_tomcat7.conf \
+                 ${pkgdir}/usr/lib/tmpfiles.d/${pkgname}.conf
+}

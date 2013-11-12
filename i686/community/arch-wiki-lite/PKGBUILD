@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 99665 2013-10-30 21:19:03Z kkeen $
+# Maintainer: Kyle Keen <keenerd@gmail.com>
+pkgname=arch-wiki-lite
+pkgver=20131030
+_codever=20131030
+pkgrel=1
+pkgdesc="The wiki without html.  1/9 as big, easily searched and viewable on console."
+arch=('any')
+url="http://kmkeen.com/arch-wiki-lite/"
+_watch="http://www.archlinux.org/packages/community/any/arch-wiki-docs/"
+license=('GPL')
+depends=('bash' 'gzip')
+makedepends=('python2' 'arch-wiki-docs')
+optdepends=('arch-wiki-docs: for wiki-search-html')
+source=("http://kmkeen.com/$pkgname/$pkgname-$_codever.tar.gz")
+md5sums=('1f5e3960db3c45aafbfd96f3e9e90115')
+
+build() {
+  cd "$srcdir/$pkgname"
+  python2 wiki_lite.py
+}
+
+package() {
+  cd "$srcdir/$pkgname"
+  install -d "$pkgdir/usr/share/doc/arch-wiki/text/"
+  install -m 0644 wiki/* "$pkgdir/usr/share/doc/arch-wiki/text/"
+  install -Dm 0755 wiki-search      "$pkgdir/usr/bin/wiki-search"
+  install -Dm 0755 wiki-search-html "$pkgdir/usr/bin/wiki-search-html"
+}
+

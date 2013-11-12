@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 197861 2013-10-30 11:19:15Z allan $
+# Maintainer: Jan de Groot <jgc@archlinux.org>
+# Contributor: Andrea Scarpino <andrea@archlinux.org>
+# Contributor: Pierre Schmitz <pierre@archlinux.de>
+
+pkgname=apr
+pkgver=1.4.8
+pkgrel=2
+pkgdesc="The Apache Portable Runtime"
+arch=('i686' 'x86_64')
+url="http://apr.apache.org/"
+depends=('util-linux')
+license=('APACHE')
+source=(http://www.apache.org/dist/apr/apr-${pkgver}.tar.bz2)
+md5sums=('ce2ab01a0c3cdb71cf0a6326b8654f41')
+
+build() {
+  cd "${srcdir}/apr-${pkgver}"
+  ./configure --prefix=/usr --includedir=/usr/include/apr-1 \
+    --with-installbuilddir=/usr/share/apr-1/build \
+    --enable-nonportable-atomics \
+    --with-devrandom=/dev/urandom --disable-static
+  make
+}
+
+check() {
+  cd "${srcdir}/apr-${pkgver}"
+  make -j1 check
+}
+
+package() {
+  cd "${srcdir}/apr-${pkgver}"
+  make DESTDIR="${pkgdir}" install
+}

@@ -1,0 +1,29 @@
+# $Id: PKGBUILD 196650 2013-10-15 23:17:14Z heftig $
+# Maintainer : Ionut Biru <ibiru@archlinux.org>
+# Contributor: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+# Contributor: Adam Hani Schakaki (krzd) <krzd@krzd.net>
+
+pkgname=gsettings-desktop-schemas
+pkgver=3.10.1
+pkgrel=1
+pkgdesc="Shared GSettings schemas for the desktop"
+arch=(any)
+url="http://live.gnome.org/"
+license=(GPL)
+depends=(glib2)
+makedepends=(intltool gobject-introspection)
+install=$pkgname.install
+source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.xz)
+sha256sums=('452378c4960a145747ec69f8c6a874e5b7715454df3e2452d1ff1a0a82e76811')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+    --disable-schemas-compile
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

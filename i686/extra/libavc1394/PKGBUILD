@@ -1,0 +1,25 @@
+# $Id: PKGBUILD 198127 2013-10-30 12:57:09Z allan $
+# Maintainer: damir <damir@archlinux.org>
+# Contributor: Robert Emil Berge <robert@rebi.no>
+
+pkgname=libavc1394
+pkgver=0.5.4
+pkgrel=2
+pkgdesc="A library to control A/V devices using the 1394ta AV/C commands."
+arch=("i686" "x86_64")
+url="http://sourceforge.net/projects/libavc1394/"
+license=('LGPL')
+depends=('libraw1394')
+source=("http://downloads.sourceforge.net/sourceforge/libavc1394/${pkgname}-${pkgver}.tar.gz")
+md5sums=('caf0db059d8b8d35d6f08e6c0e1c7dfe')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  ./configure --prefix=/usr --mandir=/usr/share/man --disable-static
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make DESTDIR="${pkgdir}" install
+}

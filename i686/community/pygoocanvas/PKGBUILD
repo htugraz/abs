@@ -1,0 +1,27 @@
+# $Id: PKGBUILD 99967 2013-10-31 02:44:37Z allan $
+# Maintainer: Douglas Soares de Andrade <dsandrade@gmail.com>
+# Contributor: William Rea <sillywilly@gmail.com>
+
+pkgname=pygoocanvas
+pkgver=0.14.1
+pkgrel=5
+pkgdesc="GooCanvas python bindings"
+arch=('i686' 'x86_64')
+url="http://developer.berlios.de/projects/pygoocanvas"
+license=('LGPL')
+depends=('python2' 'goocanvas1' 'pygtk')
+makedepends=('pkgconfig')
+options=('docs')
+source=(http://ftp.gnome.org/pub/GNOME/sources/pygoocanvas/0.14/pygoocanvas-$pkgver.tar.bz2)
+md5sums=('e0e7b694af2f81a78b0838555d150252')
+
+build() {
+  cd "$srcdir/pygoocanvas-$pkgver"
+  ./configure --prefix=/usr --disable-docs
+  make
+}
+
+package() {
+   cd "$srcdir/pygoocanvas-$pkgver"
+  make DESTDIR="$pkgdir" install
+}

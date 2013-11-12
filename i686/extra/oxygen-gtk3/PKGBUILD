@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 193729 2013-08-29 13:11:38Z andrea $
+# Maintainer: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=oxygen-gtk3
+pkgver=1.2.0
+pkgrel=1
+pkgdesc="Port of the default KDE widget theme (Oxygen) to GTK3"
+arch=('i686' 'x86_64')
+url='https://projects.kde.org/projects/playground/artwork/oxygen-gtk/'
+license=('LGPL')
+depends=('gtk3')
+makedepends=('cmake')
+source=("http://download.kde.org/stable/${pkgname}/${pkgver}/src/${pkgname}-${pkgver}.tar.bz2")
+md5sums=('c89352459fa41bd35e64072e6bc89593')
+
+build() {
+  mkdir build
+  cd build
+  cmake ../${pkgname}-${pkgver} \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr
+  make
+}
+
+package() {
+  cd build
+  make DESTDIR="${pkgdir}" install
+}

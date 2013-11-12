@@ -1,0 +1,36 @@
+# $Id: PKGBUILD 194211 2013-09-10 14:40:23Z bpiotrowski $
+# Maintainer:
+# Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Jeff Mickey <jeff@archlinux.org>
+# Contributor: Michel Brabants <michel.brabants@euphonynet.be>
+
+pkgname=libzrtpcpp
+pkgver=2.3.4
+pkgrel=1
+pkgdesc="A C++ implementation of Phil Zimmermann's ZRTP specification"
+arch=('i686' 'x86_64')
+url='http://www.gnutelephony.org/index.php/GNU_ZRTP'
+license=('GPL3')
+depends=('ccrtp')
+makedepends=('cmake')
+source=(http://ftp.gnu.org/gnu/ccrtp/${pkgname}-${pkgver}.tar.gz{,.sig})
+md5sums=('3aac59472c5649736e24de30080e2efd'
+         'SKIP')
+
+prepare() {
+  sed 's/lib64/lib/g' -i ${pkgname}-${pkgver}/CMakeLists.txt
+}
+
+build() {
+  mkdir build
+  cd build
+  cmake ../${pkgname}-${pkgver} \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release
+  make
+}
+
+package() {
+  cd build
+  make DESTDIR="${pkgdir}" install
+}

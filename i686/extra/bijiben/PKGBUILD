@@ -1,0 +1,29 @@
+# $Id: PKGBUILD 199399 2013-11-11 22:34:22Z heftig $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+
+pkgname=bijiben
+pkgver=3.10.2
+pkgrel=1
+pkgdesc="Write out notes, every detail matters"
+arch=(i686 x86_64)
+url="https://live.gnome.org/Bijiben"
+license=(GPL)
+depends=(tracker clutter-gtk zeitgeist webkitgtk hicolor-icon-theme desktop-file-utils gnome-online-accounts)
+makedepends=(intltool itstool)
+options=(!emptydirs)
+groups=(gnome-extra)
+install=bijiben.install
+source=(http://ftp.gnome.org/pub/GNOME/sources/${pkgname}/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz)
+sha256sums=('81257f85218968b0ad386da6e1143586de478870ca74bb5387646a479999a7d4')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+    --libexecdir=/usr/lib/$pkgname --disable-update-mimedb
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

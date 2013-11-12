@@ -1,0 +1,42 @@
+# $Id: PKGBUILD 97537 2013-09-23 17:38:40Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: William Rea <sillywilly@gmail.com>
+# Contributor: Hans Janssen <hans@janserv.xs4all.nl>
+
+pkgname=flightgear
+pkgver=2.12.0
+pkgrel=1
+pkgdesc="An open-source, multi-platform flight simulator"
+arch=(i686 x86_64)
+depends=('simgear' 'libxmu' 'libxi' 'zlib' 'openscenegraph' 'subversion' 'libxrandr' 'glu')
+makedepends=('boost' 'cmake' 'mesa' 'sharutils')
+license=("GPL")
+url="http://www.flightgear.org"
+options=('!makeflags')
+#source=("$pkgname-$pkgver.tar.gz::https://gitorious.org/fg/flightgear/archive-tarball/release/$pkgver")
+#source=("ftp://ftp.de.flightgear.org/pub/fgfs/Source/flightgear-$pkgver.tar.bz2")
+source=("http://mirrors.ibiblio.org/pub/mirrors/flightgear/ftp/Source/flightgear-$pkgver.tar.bz2")
+md5sums=('23e2de5f311f4cbe94ec3386736ee8a5')
+
+build() {
+  cd $srcdir/flightgear-$pkgver
+  cmake \
+	-DCMAKE_INSTALL_PREFIX=/usr \
+	-DCMAKE_INSTALL_LIBDIR=lib \
+	-DFG_DATA_DIR:STRING="/usr/share/flightgear/data" .
+  uudecode -o package/flightgear.png package/flightgear.png.uue
+  make
+  sed -i 's|Exec=.*|Exec=fgfs --fg-root=/usr/share/flightgear/data|' package/flightgear.desktop
+}
+
+package() {
+  depends=(${depends[@]} 'flightgear-data')
+
+  cd $srcdir/flightgear-$pkgver
+  make DESTDIR=$pkgdir install
+
+  install -Dm0644 package/flightgear.desktop $pkgdir/usr/share/applications/flightgear.desktop
+  install -Dm0644 package/flightgear.ico $pkgdir/usr/share/icons/flightgear.ico
+  install -Dm0644 package/flightgear.png $pkgdir/usr/share/icons/flightgear.png
+  ln -sf flightgear $pkgdir/usr/share/FlightGear
+}

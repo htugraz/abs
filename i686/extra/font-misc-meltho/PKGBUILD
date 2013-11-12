@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 137960 2011-09-13 06:02:36Z allan $
+# Maintainer: Eric Belanger <eric@archlinux.org>
+# Contributor: Jan de Groot <jgc@archlinux.org>
+
+pkgname=font-misc-meltho
+pkgver=1.0.1
+pkgrel=2
+pkgdesc="X.org Misc Meltho fonts"
+arch=('any')
+url="http://xorg.freedesktop.org/"
+license=('custom')
+depends=('xorg-fonts-encodings' 'xorg-fonts-alias' 'xorg-font-utils' 'fontconfig')
+install=xfonts.install
+source=(http://xorg.freedesktop.org/releases/individual/font/${pkgname}-${pkgver}.tar.bz2)
+md5sums=('345f1a78312e30cd2c41d24ea3f3276f')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  ./configure --prefix=/usr \
+      --with-fontdir=/usr/share/fonts/OTF
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make DESTDIR="${pkgdir}" install
+  rm -f "${pkgdir}/usr/share/fonts"/*/fonts.*
+
+  install -Dm644 COPYING "${pkgdir}/usr/share/licenses/${pkgname}/COPYING"
+}

@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 198350 2013-10-30 14:20:00Z allan $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: Allan McRae <allan@archlinux.org>
+# Contributor: Jason Chu <jchu@xentac.net>
+
+pkgname=openal
+pkgver=1.15.1
+pkgrel=1
+pkgdesc="A cross-platform 3D audio library"
+arch=(i686 x86_64)
+url="http://www.openal.org/"
+license=(LGPL)
+depends=(glibc)
+makedepends=(alsa-lib sdl pkgconfig cmake libpulse)
+source=(http://kcat.strangesoft.net/openal-releases/openal-soft-$pkgver.tar.bz2)
+md5sums=('ea83dec3b9655a27d28e7bc7cae9cd71')
+
+build() {
+  cd $pkgname-soft-$pkgver/build
+  cmake -D CMAKE_INSTALL_PREFIX=/usr -D CMAKE_BUILD_TYPE=Release ..
+  make
+}
+
+package() {
+  cd $pkgname-soft-$pkgver
+  make -C build DESTDIR="$pkgdir/" install
+  install -t "$pkgdir/usr/share/openal" env-vars.txt hrtf.txt
+}

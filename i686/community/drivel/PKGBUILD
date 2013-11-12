@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 95309 2013-08-09 03:08:46Z bgyorgy $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Andrei "Garoth" Thorp <my-username at gmail dot com>
+# Contributor: Alexandr Nevskiy <kepkin@gmail.com>
+
+pkgname=drivel
+pkgver=3.0.5
+pkgrel=1
+pkgdesc="GTK client for working with online journals (blogs)"
+url="http://drivel.sourceforge.net/"
+arch=('i686' 'x86_64')
+license=('GPL')
+depends=('gnome-vfs' 'gtksourceview2' 'gtkspell' 'libsoup' 'desktop-file-utils')
+makedepends=('intltool' 'gnome-doc-utils')
+install=drivel.install
+source=(http://downloads.sourceforge.net/drivel/$pkgname-$pkgver.tar.gz)
+md5sums=('b7922ea0779e62f43a85dd6c5df3f931')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+  ./configure --prefix=/usr --sysconfdir=/etc \
+      --disable-desktop-update --disable-schemas-install \
+      --with-gconf-schema-file-dir=/usr/share/gconf/schemas
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  make DESTDIR="$pkgdir" install
+}

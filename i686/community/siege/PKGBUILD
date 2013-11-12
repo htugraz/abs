@@ -1,0 +1,31 @@
+# $Id: PKGBUILD 99986 2013-10-31 02:51:00Z allan $
+# Maintainer: Florian Pritz <flo@xinu.at>
+# Contributor: Sven Kauber <celeon@gmail.com>
+
+pkgname=siege
+pkgver=3.0.5
+pkgrel=1
+arch=('i686' 'x86_64')
+license=('GPL')
+pkgdesc="An http regression testing and benchmarking utility"
+url="http://www.joedog.org/JoeDog/Siege"
+depends=('openssl')
+source=("http://www.joedog.org/pub/siege/siege-${pkgver}.tar.gz")
+backup=(etc/siegerc etc/urls.txt)
+
+build() {
+  cd "${srcdir}/$pkgname-$pkgver"
+  ./configure --prefix=/usr --sysconfdir=/etc --mandir=/usr/share/man
+  make
+}
+
+package() {
+  cd "${srcdir}/$pkgname-$pkgver"
+
+  install -d -m755 "$pkgdir/etc"
+  install -d -m755 "$pkgdir/usr/share"
+  make DESTDIR="$pkgdir" install
+  sed -i 's/^# file =$/file = \/etc\/urls.txt/' "$pkgdir/etc/siegerc"
+}
+
+md5sums=('822cc4750a6162945ee91af98773bda4')

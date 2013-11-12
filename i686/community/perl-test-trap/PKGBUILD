@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 95477 2013-08-12 21:20:54Z eric $
+# Maintainer:
+
+pkgname=perl-test-trap
+pkgver=0.2.2
+pkgrel=2
+pkgdesc='Trap exit codes, exceptions, output, etc.'
+arch=('any')
+url="https://metacpan.org/release/Test-Trap"
+license=('PerlArtistic' 'GPL')
+depends=('perl' 'perl-data-dump' 'perl-test-tester')
+options=('!emptydirs')
+source=("http://search.cpan.org/CPAN/authors/id/E/EB/EBHANSSEN/Test-Trap-v$pkgver.tar.gz")
+sha1sums=('2342990b5a96e751cdcea839efcc79a2f2223f3e')
+
+build() {
+  cd Test-Trap-v$pkgver
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+check() {
+  cd Test-Trap-v$pkgver
+  make test
+}
+
+package() {
+  cd Test-Trap-v$pkgver
+  make DESTDIR="$pkgdir" install
+}

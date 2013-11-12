@@ -1,0 +1,24 @@
+# $Id: PKGBUILD 170189 2012-11-04 15:22:01Z dreisner $
+# Maintainer: Dave Reisner <d@falconindy.com>
+
+pkgname=burp
+pkgver=2
+pkgrel=1
+pkgdesc="A simple AUR uploader"
+arch=('i686' 'x86_64')
+url="http://github.com/falconindy/burp"
+license=('GPL')
+depends=('glibc' 'curl')
+makedepends=('perl')
+source=("https://github.com/downloads/falconindy/$pkgname/$pkgname-$pkgver.tar.gz"{,.sig})
+md5sums=('390436816f38d43b3ffb1079add4fa8e'
+         '2b16c8187c299d249446b251fe762aed')
+
+build() {
+  make -C "$pkgname-$pkgver"
+}
+
+package() {
+  make -C "$pkgname-$pkgver" PREFIX=/usr DESTDIR="$pkgdir" MANPREFIX=/usr/share/man install
+}
+

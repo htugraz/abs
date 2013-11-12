@@ -1,0 +1,43 @@
+# $Id: PKGBUILD 69989 2012-04-27 23:31:04Z svenstaro $
+# Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
+pkgname=speed-dreams-data
+_pkgname=speed-dreams
+pkgver=2.0.0
+_pkgver=2.0.0-r4687
+pkgrel=1
+pkgdesc="A racing simulator with rich graphics and physics (data files)"
+arch=('any')
+url="http://speed-dreams.sourceforge.net/"
+license=('GPL2')
+depends=()
+makedepends=('sdl' 'freealut' 'freeglut' 'libpng' 'libxmu' 'libxrandr' 'plib' 'libjpeg' 'zlib' 'enet' 'cmake' 'p7zip')
+source=("http://downloads.sourceforge.net/sourceforge/${_pkgname}/${_pkgname}-src-base-${_pkgver}.tar.xz"
+        "http://downloads.sourceforge.net/sourceforge/${_pkgname}/${_pkgname}-src-unmaintained-${_pkgver}.tar.xz"
+        "http://downloads.sourceforge.net/sourceforge/${_pkgname}/${_pkgname}-src-wip-cars-and-tracks-${_pkgver}.tar.xz"
+        "http://downloads.sourceforge.net/sourceforge/${_pkgname}/${_pkgname}-src-hq-cars-and-tracks-${_pkgver}.tar.xz"
+        "http://downloads.sourceforge.net/sourceforge/${_pkgname}/${_pkgname}-src-more-hq-cars-and-tracks-${_pkgver}.tar.xz")
+md5sums=('a6842887fc289ed6057be2ba9d2afaa2'
+         '8505c46aae6ce56a43353b8899d40ce4'
+         'edcc842291737dbb13a3083252bf51d4'
+         '57cf5c475491294ce1fb249e2dc0273b'
+         'c8ab7ef068fa3fbe67d2b3246b30ea8a')
+
+build() {
+  cmake . \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DSD_BINDIR=/usr/bin \
+    -DSD_DATADIR=/usr/share/speed-dreams-2 \
+    -DSD_LIBDIR=/usr/lib/speed-dreams-2 \
+    -DOPTION_OFFICIAL_ONLY=ON
+}
+
+package() {
+  make DESTDIR="${pkgdir}/" install
+
+  rm -r "${pkgdir}/usr/bin"
+  rm -r "${pkgdir}/usr/lib"
+  rm -r "${pkgdir}/usr/include"
+}
+
+# vim:set ts=2 sw=2 et:

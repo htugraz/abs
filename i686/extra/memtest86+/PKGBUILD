@@ -1,0 +1,16 @@
+# $Id: PKGBUILD 195966 2013-10-06 18:54:09Z eric $
+# Maintainer: Eric Bélanger <eric@archlinux.org>
+
+pkgname=memtest86+
+pkgver=5.01
+pkgrel=1
+pkgdesc="An advanced memory diagnostic tool"
+arch=('any')
+url="http://www.memtest.org"
+license=('GPL2')
+source=(http://www.memtest.org/download/${pkgver}/${pkgname}-${pkgver}.bin.gz)
+sha1sums=('acf4b99b435d4e99b8027221524e57d70b8cae47')
+
+package() {
+  install -D -m644 "${srcdir}/${pkgname}-${pkgver}.bin" "${pkgdir}/boot/memtest86+/memtest.bin"
+}

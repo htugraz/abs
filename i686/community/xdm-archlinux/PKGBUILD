@@ -1,0 +1,39 @@
+# $Id: PKGBUILD 79559 2012-11-07 13:15:38Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Truls Becken <becken@stud.ntnu.no>
+# Contributor: whompus
+
+pkgname=xdm-archlinux
+pkgver=0.4
+pkgrel=1
+pkgdesc="An XDM setup that looks better than the defaults"
+arch=(any)
+license=('GPL')
+url="http://xorg.freedesktop.org"
+depends=('xorg-xdm' 'bash'
+	 'xorg-xmessage' 'xorg-xclock' 'xorg-xsetroot' 'xorg-xwininfo' 'xorg-xkill')
+optdepends=('systemd-sysvcompat: if you use systemd')
+backup=(etc/X11/xdm/archlinux/Xsetup
+	etc/X11/xdm/archlinux/Xresources)
+install=xdm-archlinux.install
+source=(xdm-config
+	Xsetup
+	Xstartup
+	Xresources
+	buttons
+	arch.xpm.gz
+	xdm-archlinux.service)
+md5sums=('67408e20a533d32774aba6157e1101d1'
+         '03299fb4d54fa7724b34ab794f076c4e'
+         '1628c6cf77d5da2528265dbaf2eaacf4'
+         '9157c5c2eb36afaae1461c20a091ef2a'
+         'd483fffd98587d09c7a1f6f066f2f0e6'
+         '5cc5d8f639006a17dd175389bdcaf583'
+         'd80891baeb54cfac2d8a5d1713de606e')
+
+build() {
+  mkdir -p $pkgdir/etc/X11/xdm/archlinux
+  cp arch.xpm buttons xdm-config Xresources Xsetup Xstartup $pkgdir/etc/X11/xdm/archlinux
+  chmod 0755 $pkgdir/etc/X11/xdm/archlinux/{Xsetup,Xstartup,buttons}
+  install -Dm0644 $srcdir/xdm-archlinux.service $pkgdir/usr/lib/systemd/system/xdm-archlinux.service
+}

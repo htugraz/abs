@@ -1,0 +1,45 @@
+# $Id: PKGBUILD 99246 2013-10-26 12:09:33Z alucryd $
+# Maintainer: Maxime Gauduin <alucryd at gmail dot com>
+# Contributor: unikum <unikum dot pm at gmail.com>
+# Contributor: speed145a <jonathan at tagchapter dot com>
+
+pkgname=firewalld
+pkgver=0.3.7
+pkgrel=1
+pkgdesc="A firewall daemon with D-BUS interface providing a dynamic firewall"
+arch=('any')
+url="http://fedorahosted.org/firewalld"
+license=('GPL2')
+depends=('ebtables' 'gtk3' 'iptables' 'libnotify' 'networkmanager' 'python-slip')
+makedepends=('intltool' 'docbook-xsl')
+backup=('etc/conf.d/firewalld'
+        'etc/firewalld/firewalld.conf')
+install=${pkgname}.install
+source=("http://fedorahosted.org/released/${pkgname}/${pkgname}-${pkgver}.tar.bz2"
+        'firewalld-python3.patch'
+        'firewalld-paths.patch')
+sha256sums=('a6e448c34310b27d102dfa58eb3b9b28e70693e0de1008fac46e378b36dd9ed5'
+            'd123a881f995faebd2190fe7a51333c0426ee6e9085b788c5ba84a899d108b5e'
+            'e2f96a3fbd8e8b9168d49c9f39e76a69fff169e69f302d0c12e458ed698cabc6')
+
+prepare() {
+  cd "${srcdir}"/${pkgname}-${pkgver}
+
+  patch -Np1 -i "${srcdir}"/firewalld-python3.patch
+  patch -Np1 -i "${srcdir}"/firewalld-paths.patch
+}
+
+build() {
+  cd "${srcdir}"/${pkgname}-${pkgver}
+
+  ./configure --prefix='/usr' --sbindir='/usr/bin' --sysconfdir='/etc' --disable-schemas-compile
+  make
+}
+
+package() {
+  cd "${srcdir}"/${pkgname}-${pkgver}
+
+  make DESTDIR="${pkgdir}" install
+}
+
+# vim: ts=2 sw=2 et:

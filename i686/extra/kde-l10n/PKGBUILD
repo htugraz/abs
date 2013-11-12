@@ -1,0 +1,513 @@
+# $Id: PKGBUILD 198985 2013-11-05 20:29:14Z andrea $
+# Maintainer: Andrea Scarpino <andrea@archlinux.org>
+# Contributor: Pierre Schmitz <pierre@archlinux.de>
+
+pkgbase=kde-l10n
+pkgname=('kde-l10n-ar'
+         'kde-l10n-bg'
+         'kde-l10n-bs'
+         'kde-l10n-ca'
+         'kde-l10n-ca@valencia'
+         'kde-l10n-cs'
+         'kde-l10n-da'
+         'kde-l10n-de'
+         'kde-l10n-el'
+         'kde-l10n-en_gb'
+         'kde-l10n-es'
+         'kde-l10n-et'
+         'kde-l10n-eu'
+         'kde-l10n-fa'
+         'kde-l10n-fi'
+         'kde-l10n-fr'
+         'kde-l10n-ga'
+         'kde-l10n-gl'
+         'kde-l10n-he'
+         'kde-l10n-hi'
+         'kde-l10n-hr'
+         'kde-l10n-hu'
+         'kde-l10n-ia'
+         'kde-l10n-is'
+         'kde-l10n-it'
+         'kde-l10n-ja'
+         'kde-l10n-kk'
+         'kde-l10n-km'
+         'kde-l10n-ko'
+         'kde-l10n-lt'
+         'kde-l10n-lv'
+         'kde-l10n-mr'
+         'kde-l10n-nb'
+         'kde-l10n-nds'
+         'kde-l10n-nl'
+         'kde-l10n-nn'
+         'kde-l10n-pa'
+         'kde-l10n-pl'
+         'kde-l10n-pt'
+         'kde-l10n-pt_br'
+         'kde-l10n-ro'
+         'kde-l10n-ru'
+         'kde-l10n-sk'
+         'kde-l10n-sl'
+         'kde-l10n-sr'
+         'kde-l10n-sv'
+         'kde-l10n-tg'
+         'kde-l10n-tr'
+         'kde-l10n-ug'
+         'kde-l10n-uk'
+         'kde-l10n-vi'
+         'kde-l10n-wa'
+         'kde-l10n-zh_cn'
+         'kde-l10n-zh_tw')
+pkgver=4.11.3
+pkgrel=1
+arch=('any')
+url='http://www.kde.org/'
+license=('GPL')
+makedepends=('cmake' 'automoc4' 'kdelibs')
+options=('docs')
+source=("http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-ar-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-bg-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-bs-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-ca-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-ca@valencia-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-cs-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-da-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-de-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-el-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-en_GB-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-es-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-et-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-eu-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-fa-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-fi-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-fr-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-ga-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-gl-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-he-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-hi-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-hr-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-hu-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-ia-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-is-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-it-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-ja-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-kk-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-km-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-ko-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-lt-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-lv-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-mr-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-nb-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-nds-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-nl-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-nn-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-pa-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-pl-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-pt-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-pt_BR-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-ro-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-ru-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-sk-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-sl-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-sr-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-sv-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-tg-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-tr-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-ug-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-uk-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-vi-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-wa-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-zh_CN-${pkgver}.tar.xz"
+        "http://download.kde.org/stable/${pkgver}/src/${pkgbase}/${pkgbase}-zh_TW-${pkgver}.tar.xz")
+sha1sums=('2c4d6522ad73e5c2fe036ba285df187dee8c641d'
+         'a1f4608d38d512ff33be0f65395183cf886678f1'
+         '1f6fc4b24d3c67d200281550afee86e8aa39cfb0'
+         'c2c69554e5d21592815e6e1a620fb080a04e439f'
+         '0642cb54a6357b8e64cbaeec5550ddd95e644a22'
+         '680f9a07822656c1c7cc706aec7dd1fe84a6746e'
+         'e90a5acecdb52532ea1482adc7b4b34efbda27ff'
+         'af2265012e11ce66de83bb05117ec90f137a68d1'
+         '0be37cca5c0197f936646daf3c6700a9c49eee9a'
+         'd3e7fad04396a52bc5c0cee74d430cd5788e0dd8'
+         'e674ba17d82face312bade12317ad90281a6e7e6'
+         '3f32a32ca33f541aa80109d0182f642024801c58'
+         '0612bb922a376d59ee3129e186214e8e3b448750'
+         '1d70bceeadc1d362a88b61dbf602e046d6721553'
+         '4b74868bc59662e147152674d86f55bfe3dece77'
+         '46b4c61e16cafcfd100e8524232d81e3d0333659'
+         '9544a13f422dde2e75491a8239325be65258167a'
+         '88215d55aa90bcca3f4832c0db31c6ff30ef1904'
+         '7af5ad671eddf319190910a790cd8c6fbd9171df'
+         '270d852fc70503b8d2a523a3bf14e4ac428b730c'
+         '967e29aaae6a9c43e036d61b6482b0915f156e44'
+         '3fc75a266ffbfd1ea0e06150f6a3b256e22d67af'
+         '2b26322312e43d586987390ea6fce5df87cead19'
+         '091dad6ec10f6bbf57ba87ca6888253fb9e74611'
+         '619f436f7eecb58ffe46c2322750b2f04d70326e'
+         '3cc51a4cfe2765b5de8dccd0f060155efd35dcdf'
+         'ba4928151704f2568e7d9064061dae8fd04a28fd'
+         '710eeec4e3b1871db8e1dc8f7412221e8d2772a4'
+         'c3aa9d6e884471912b861d4cd2ce3242375d2ea3'
+         'd80c14b4fece341767028bc1df02984f26e6a8d0'
+         'cdd7787352073aee00fb464b2c5816df7e450a6f'
+         '8e5b5144c4c8058c5ceb747f401190a973e16e2c'
+         'a8bfbb898218015908c595710631774dd1217fce'
+         'ef37acec235ba2b253c16047290d069bd4303485'
+         '4b0184ec35eea2b5089e21c0baf35b33501de96c'
+         '4d1b6a8f63973377600cd3e2eac1c954547b9ab6'
+         '007609127d6b544ee8e9dcea19afe8d085533b30'
+         '49a74be0b4f9959870c4c1d14ae33b12218f9843'
+         '8d6c22b79ca73f7aec130dfa725a434f818c86c3'
+         '9478652486ef3a25f71f55b0d0f6abb66afd619e'
+         '6f02602a538f11942883e842b62301e27aa72fdc'
+         '65a4f9cab6cdb6941d32b45bd7629544795ff7dd'
+         '373ac31d236622f48a7e1b52e3cd402eeee6a869'
+         '1fc8b5bccea3458024255f113fa3956f543d7f60'
+         '8783dd552412592ce863f730d89f6366853ce01f'
+         '1dbacd9622e2690d12ecf611bdd24a38498f080e'
+         '3692eba0dc1c95de035344ac56d6124897294c3e'
+         '1ffd03a805e76195ff4b716a58044c44cbfb1efa'
+         '810c9d5090dd428a3e3a9bddc0dfb1b10d9cca20'
+         '1bca78fff22036de0fe6d8ece4c1b13203f1c671'
+         '6ab6c36422b57b9e08cde990e95999f02806de60'
+         'e808ff42d78a78e7024acea6563421fb0efb7322'
+         '462515ca08b2d2b30727011cee96934d269993e3'
+         '05effd3307dde5db859e2eac1a395e5a9d39109d')
+
+build() {
+  cd ${srcdir}
+
+  for lang in ar bg bs ca ca@valencia cs da de el en_GB es et eu fa fi fr ga gl he hi hr hu ia is it ja kk km ko lt lv mr nb nds nl nn pa pl pt pt_BR ro ru sk sl sr sv tg tr ug uk vi wa zh_CN zh_TW; do
+    mkdir -p build/${lang}
+    cd build/${lang}
+    cmake ${srcdir}/${pkgbase}-${lang}-${pkgver} \
+      -DCMAKE_BUILD_TYPE=Release \
+      -DCMAKE_INSTALL_PREFIX=/usr
+    make
+    cd ../..
+  done
+}
+
+package_kde-l10n-ar() {
+	pkgdesc=('Arabic Localization for KDE')
+	cd ${srcdir}/build/ar
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-bg() {
+	pkgdesc=('Bulgarian Localization for KDE')
+	cd ${srcdir}/build/bg
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-bs() {
+	pkgdesc=('Bosnian Localization for KDE')
+	cd ${srcdir}/build/bs
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-ca() {
+	pkgdesc=('Catalan Localization for KDE')
+	cd ${srcdir}/build/ca
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-ca@valencia() {
+	pkgdesc=('Catalan (Valencian) Localization for KDE')
+	cd ${srcdir}/build/ca@valencia
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-cs() {
+	pkgdesc=('Czech Localization for KDE')
+	cd ${srcdir}/build/cs
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-da() {
+	pkgdesc=('Danish Localization for KDE')
+	cd ${srcdir}/build/da
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-de() {
+	pkgdesc=('German Localization for KDE')
+	cd ${srcdir}/build/de
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-el() {
+	pkgdesc=('Greek Localization for KDE')
+	cd ${srcdir}/build/el
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-en_gb() {
+	pkgdesc=('British English Localization for KDE')
+	cd ${srcdir}/build/en_GB
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-es() {
+	pkgdesc=('Spanish Localization for KDE')
+	cd ${srcdir}/build/es
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-et() {
+	pkgdesc=('Estonian Localization for KDE')
+	cd ${srcdir}/build/et
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-eu() {
+	pkgdesc=('Basque Localization for KDE')
+	cd ${srcdir}/build/eu
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-fa() {
+	pkgdesc=('Farsi Localization for KDE')
+	cd ${srcdir}/build/fa
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-fi() {
+	pkgdesc=('Finnish Localization for KDE')
+	cd ${srcdir}/build/fi
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-fr() {
+	pkgdesc=('French Localization for KDE')
+	cd ${srcdir}/build/fr
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-ga() {
+	pkgdesc=('Irish Gaelic Localization for KDE')
+	cd ${srcdir}/build/ga
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-gl() {
+	pkgdesc=('Galician Localization for KDE')
+	cd ${srcdir}/build/gl
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-he() {
+	pkgdesc=('Hebrew Localization for KDE')
+	cd ${srcdir}/build/he
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-hi() {
+	pkgdesc=('Hindi Localization for KDE')
+	cd ${srcdir}/build/hi
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-hr() {
+	pkgdesc=('Croatian Localization for KDE')
+	cd ${srcdir}/build/hr
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-hu() {
+	pkgdesc=('Hungarian Localization for KDE')
+	cd ${srcdir}/build/hu
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-ia() {
+	pkgdesc=('Interlingua Localization for KDE')
+	cd ${srcdir}/build/ia
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-is() {
+	pkgdesc=('Icelandic Localization for KDE')
+	cd ${srcdir}/build/is
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-it() {
+	pkgdesc=('Italian Localization for KDE')
+	cd ${srcdir}/build/it
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-ja() {
+	pkgdesc=('Japanese Localization for KDE')
+	cd ${srcdir}/build/ja
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-kk() {
+	pkgdesc=('Kazakh Localization for KDE')
+	cd ${srcdir}/build/kk
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-km() {
+	pkgdesc=('Khmer Localization for KDE')
+	cd ${srcdir}/build/km
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-ko() {
+	pkgdesc=('Korean Localization for KDE')
+	cd ${srcdir}/build/ko
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-lt() {
+	pkgdesc=('Lithuanian Localization for KDE')
+	cd ${srcdir}/build/lt
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-lv() {
+	pkgdesc=('Latvian Localization for KDE')
+	cd ${srcdir}/build/lv
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-mr() {
+	pkgdesc=('Marathi Localization for KDE')
+	cd ${srcdir}/build/mr
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-nb() {
+	pkgdesc=('Norwegian Bokmal Localization for KDE')
+	cd ${srcdir}/build/nb
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-nds() {
+	pkgdesc=('Low Saxon Localization for KDE')
+	cd ${srcdir}/build/nds
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-nl() {
+	pkgdesc=('Dutch Localization for KDE')
+	cd ${srcdir}/build/nl
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-nn() {
+	pkgdesc=('Norwegian Nynorsk Localization for KDE')
+	cd ${srcdir}/build/nn
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-pa() {
+	pkgdesc=('Panjabi/Punjabi Localization for KDE')
+	cd ${srcdir}/build/pa
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-pl() {
+	pkgdesc=('Polish Localization for KDE')
+	cd ${srcdir}/build/pl
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-pt() {
+	pkgdesc=('Portuguese Localization for KDE')
+	cd ${srcdir}/build/pt
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-pt_br() {
+	pkgdesc=('Brazilian Portuguese Localization for KDE')
+	cd ${srcdir}/build/pt_BR
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-ro() {
+	pkgdesc=('Romanian Localization for KDE')
+	cd ${srcdir}/build/ro
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-ru() {
+	pkgdesc=('Russian Localization for KDE')
+	cd ${srcdir}/build/ru
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-sk() {
+	pkgdesc=('Slovak Localization for KDE')
+	cd ${srcdir}/build/sk
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-sl() {
+	pkgdesc=('Slovenian Localization for KDE')
+	cd ${srcdir}/build/sl
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-sr() {
+	pkgdesc=('Serbian Localization for KDE')
+	cd ${srcdir}/build/sr
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-sv() {
+	pkgdesc=('Swedish Localization for KDE')
+	cd ${srcdir}/build/sv
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-tg() {
+	pkgdesc=('Tajik Localization for KDE')
+	cd ${srcdir}/build/tg
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-tr() {
+	pkgdesc=('Turkish Localization for KDE')
+	cd ${srcdir}/build/tr
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-ug() {
+	pkgdesc=('Uyghur Localization for KDE')
+	cd ${srcdir}/build/ug
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-uk() {
+	pkgdesc=('Ukrainian Localization for KDE')
+	cd ${srcdir}/build/uk
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-vi() {
+	pkgdesc=('Vietnamese Localization for KDE')
+	cd ${srcdir}/build/vi
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-wa() {
+	pkgdesc=('Walloon Localization for KDE')
+	cd ${srcdir}/build/wa
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-zh_cn() {
+	pkgdesc=('Chinese Simplified Localization for KDE')
+	cd ${srcdir}/build/zh_CN
+	make DESTDIR=${pkgdir} install
+}
+
+package_kde-l10n-zh_tw() {
+	pkgdesc=('Chinese Traditional Localization for KDE')
+	cd ${srcdir}/build/zh_TW
+	make DESTDIR=${pkgdir} install
+}
+

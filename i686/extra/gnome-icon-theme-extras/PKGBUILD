@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 170976 2012-11-14 07:18:14Z heftig $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: Jan de Groot <jgc@archlinux.org>
+
+pkgname=gnome-icon-theme-extras
+pkgver=3.6.2
+pkgrel=1
+pkgdesc="GNOME icon theme, extra icons"
+arch=(any)
+depends=('gnome-icon-theme')
+makedepends=('intltool')
+url="http://www.gnome.org"
+license=('GPL')
+install=gnome-icon-theme-extras.install
+groups=('gnome')
+source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.xz)
+sha256sums=('93aaaadf40c85ebc42232a4d8e45ca507754b8e1271e797bbcdaded52bd03ec7')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}
