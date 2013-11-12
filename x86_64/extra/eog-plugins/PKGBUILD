@@ -1,0 +1,33 @@
+# $Id: PKGBUILD 197932 2013-10-30 11:45:30Z allan $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+
+pkgname=eog-plugins
+pkgver=3.10.1
+pkgrel=1
+pkgdesc="Plugins for Eye of Gnome"
+arch=('i686' 'x86_64')
+url="http://www.gnome.org/"
+license=('GPL2')
+depends=('eog' 'libchamplain' 'libgdata')
+makedepends=('intltool')
+install=eog-plugins.install
+source=(http://download.gnome.org/sources/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.xz)
+sha256sums=('d5b32c49dbf1e0b6cf56c9fdc6c19186c92e98d92b71aa98805491e2bb2f8e12')
+
+build() {
+  cd $pkgname-$pkgver
+  PYTHON=/usr/bin/python2 ./configure --prefix=/usr \
+    --sysconfdir=/etc --localstatedir=/var
+
+  # https://bugzilla.gnome.org/show_bug.cgi?id=655517
+  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}
+
+# vim:set ts=2 sw=2 et:

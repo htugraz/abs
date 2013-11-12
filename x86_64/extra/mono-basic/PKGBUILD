@@ -1,0 +1,33 @@
+# $Id: PKGBUILD 177067 2013-02-05 18:04:09Z eric $
+# Maintainer: Daniel Isenmann <daniel@archlinux.org>
+
+pkgname=mono-basic
+pkgver=2.10
+pkgrel=3
+pkgdesc="Mono Visual Basic.NET compiler"
+arch=('i686' 'x86_64')
+license=('GPL')
+url="http://www.mono-project.com/"
+depends=('mono>=2.10.1')
+makedepends=('pkgconfig')
+#source=(http://ftp.novell.com/pub/mono/sources/${pkgname}/${pkgname}-${pkgver}.tar.bz2)
+source=(http://download.mono-project.com/sources/${pkgname}/${pkgname}-${pkgver}.tar.bz2)
+md5sums=('b459890e5447419ab1a5ea43d9b8afe8')
+
+build() {
+  # get rid of that .wapi errors; thanks to brice
+  export MONO_SHARED_DIR="${srcdir}/weird"
+  mkdir -p "${MONO_SHARED_DIR}"
+
+  # build mono
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make DESTDIR="${pkgdir}" install
+}
+
+

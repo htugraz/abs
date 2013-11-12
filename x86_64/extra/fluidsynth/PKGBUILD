@@ -1,0 +1,40 @@
+# $Id: PKGBUILD 185445 2013-05-14 10:12:02Z schiv $
+# Maintainer: Ray Rashif <schiv@archlinux.org>
+# Contributor: damir <damir@archlinux.org>
+
+pkgname=fluidsynth
+pkgver=1.1.6
+pkgrel=2
+pkgdesc="A real-time software synthesizer based on the SoundFont 2 specifications"
+arch=('i686' 'x86_64')
+url="http://www.fluidsynth.org/"
+depends=('glib2' 'jack' 'libpulse')
+makedepends=('cmake' 'ladspa' 'doxygen')
+optdepends=('pulseaudio: PulseAudio sound support')
+license=('LGPL')
+install=$pkgname.install
+source=("http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.gz"
+        'fluidsynth.systemd')
+md5sums=('ae5aca6de824b4173667cbd3a310b263'
+         'e0406748a154409907df62292be32e8a')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  cmake . -DCMAKE_INSTALL_PREFIX=/usr \
+          -DCMAKE_BUILD_TYPE=Release \
+          -Denable-ladspa=ON \
+          -DLIB_SUFFIX=""
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  make DESTDIR="$pkgdir" install
+
+  install -Dm644 "$srcdir/$pkgname.systemd" \
+    "$pkgdir/usr/lib/systemd/system/$pkgname.service"
+}
+
+# vim:set ts=2 sw=2 et:

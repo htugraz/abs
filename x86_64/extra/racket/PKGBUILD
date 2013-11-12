@@ -1,0 +1,38 @@
+# $Id: PKGBUILD 197435 2013-10-25 22:16:33Z eric $
+# Maintainer: Eric Bélanger <eric@archlinux.org>
+
+pkgname=racket
+pkgver=5.3.6
+pkgrel=2
+pkgdesc="A programming language environment (formerly known as PLT Scheme) suitable for tasks ranging from scripting to application development"
+arch=('i686' 'x86_64')
+url="http://racket-lang.org/"
+license=('LGPL')
+depends=('gtk2' 'desktop-file-utils' 'hicolor-icon-theme')
+makedepends=('gsfonts' 'sqlite')
+options=('!strip')
+install=racket.install
+source=(http://download.racket-lang.org/installers/${pkgver}/racket/${pkgname}-${pkgver}-src-unix.tgz
+        drracket.desktop)
+sha1sums=('783485416359f4fc22da41c5a1a89103e7cb9d95'
+          'a20808f6b250225704856f82a544681a962a299d')
+
+build() {
+  cd ${pkgname}-${pkgver}/src
+  [ "$CARCH" == "x86_64" ] && export CFLAGS+=" -fPIC"
+  ./configure --prefix=/usr --enable-shared
+  make
+}
+
+package() {
+  cd ${pkgname}-${pkgver}/src
+  make DESTDIR="${pkgdir}" install
+
+  install -d "${pkgdir}"/usr/share/icons/hicolor/{16x16,32x32,48x48,256x256}/apps
+  ln -s /usr/lib/racket/collects/icons/plt-16x16.png "${pkgdir}/usr/share/icons/hicolor/16x16/apps/drracket.png"
+  ln -s /usr/lib/racket/collects/icons/plt-32x32.png "${pkgdir}/usr/share/icons/hicolor/32x32/apps/drracket.png"
+  ln -s /usr/lib/racket/collects/icons/plt-48x48.png "${pkgdir}/usr/share/icons/hicolor/48x48/apps/drracket.png"
+  ln -s /usr/lib/racket/collects/icons/plt-logo-red-diffuse.png "${pkgdir}/usr/share/icons/hicolor/256x256/apps/drracket.png"
+
+  install -D -m644 "${srcdir}/drracket.desktop" "${pkgdir}/usr/share/applications/drracket.desktop"
+}

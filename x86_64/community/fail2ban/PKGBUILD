@@ -1,0 +1,36 @@
+# $Id: PKGBUILD 92735 2013-06-14 06:38:56Z bpiotrowski $
+# Maintainer:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
+# Contributor: Geoffroy Carrier <geoffroy.carrier@koon.fr>
+# Contributor: michalzxc
+# Contributor: nbags <neilbags@gmail.com>
+
+pkgname=fail2ban
+pkgver=0.8.10
+pkgrel=1
+pkgdesc='Bans IPs after too many failed authentification attempts against common daemons'
+url='http://www.fail2ban.org/'
+license=('GPL')
+arch=('any')
+depends=('python2' 'iptables')
+backup=(etc/fail2ban/fail2ban.conf
+        etc/fail2ban/jail.conf)
+install=fail2ban.install
+source=(https://nodeload.github.com/$pkgname/$pkgname/legacy.tar.gz/$pkgver
+        service tmpfiles.conf)
+sha256sums=('7bed38372a24e35268d9c9ff5b272f7e88e91074f9bb24d5be5c70196f19e7be'
+            '1bce54ad435b7dd3547baceea050a1d66745010b28a4ded269f6707cebdc99b1'
+            'ce8922c4734a56c88f22ffa4f2ad5819d113c7d4e439b142c984816599ebc1f4')
+
+package() {
+  cd $pkgname-$pkgname-*
+  python2 setup.py install --root "$pkgdir"
+
+  install -Dm644 "$srcdir"/service "$pkgdir"/usr/lib/systemd/system/$pkgname.service
+  install -Dm644 "$srcdir"/tmpfiles.conf "$pkgdir"/usr/lib/tmpfiles.d/$pkgname.conf
+
+  # avoid conflict with filesystem>=2012.06
+  rm -r "$pkgdir"/var/run
+
+  # fix sendmail location
+  sed -i 's/sbin/bin/g' "$pkgdir"/etc/fail2ban/action.d/sendmail*.conf
+}

@@ -1,0 +1,31 @@
+# $Id: PKGBUILD 197413 2013-10-25 15:49:33Z heftig $
+# Maintainer: Jan de Groot <jgc@archlinux.org>
+
+pkgname=zenity
+pkgver=3.10.0
+pkgrel=1
+pkgdesc="Display graphical dialog boxes from shell scripts"
+arch=(i686 x86_64)
+license=(LGPL)
+depends=(gtk3 libnotify)
+makedepends=(intltool gtk-doc itstool docbook-xsl git gnome-common yelp-tools)
+url="http://www.gnome.org"
+source=(git://git.gnome.org/zenity#tag=ZENITY_3_10_0)
+sha256sums=('SKIP')
+
+prepare() {
+  cd $pkgname
+  git cherry-pick -n 80bc8ce643979fec201c4ebd5cd6405b6310357f
+}
+
+build() {
+  cd $pkgname
+  ./autogen.sh --prefix=/usr --sysconfdir=/etc \
+      --localstatedir=/var
+  make
+}
+
+package() {
+  cd $pkgname
+  make DESTDIR="${pkgdir}" install
+}

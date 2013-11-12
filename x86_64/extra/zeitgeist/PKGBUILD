@@ -1,0 +1,44 @@
+# $Id: PKGBUILD 198587 2013-10-30 15:47:57Z allan $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: Andrea Scarpino <andrea@archlinux.org>
+# Contributor: György Balló <ballogy@freestart.hu>
+
+pkgname=zeitgeist
+pkgver=0.9.14
+pkgrel=1
+pkgdesc="Service logging user activities and events"
+arch=(i686 x86_64)
+url="http://zeitgeist-project.com/"
+license=(GPL2 LGPL2.1)
+depends=(json-glib telepathy-glib gtk3)
+makedepends=(intltool gobject-introspection vala raptor python2-rdflib)
+provides=(zeitgeist-datahub)
+conflicts=(zeitgeist-datahub)
+replaces=(zeitgeist-datahub)
+source=("https://launchpad.net/$pkgname/${pkgver%.*}/$pkgver/+download/$pkgname-$pkgver.tar.xz")
+sha256sums=('769b5abfe67ef632414efa1d35a1462c5cd86c8792bb4635b4c3d93a5f15f061')
+
+prepare() {
+  cd $pkgname-$pkgver
+  sed -i 's/python -/$PYTHON -/' configure configure.ac
+}
+
+build() {
+  cd $pkgname-$pkgver
+  export PYTHON=/usr/bin/python2
+  autoreconf -fi
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+    --libexecdir=/usr/lib/$pkgname
+  make
+}
+
+check() {
+  cd $pkgname-$pkgver
+  # Log test fails in chroot, as we have no X and no proper dbus
+  make -k check || :
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

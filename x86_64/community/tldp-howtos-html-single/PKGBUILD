@@ -1,0 +1,21 @@
+# $Id: PKGBUILD 91970 2013-05-30 13:48:31Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
+
+pkgname=tldp-howtos-html-single
+pkgver=20130530
+pkgrel=1
+pkgdesc="HOWTO's from tldp.org (one html file per howto)"
+arch=('any')
+url="http://tldp.org/"
+license=("FDL")
+depends=()
+options=('docs')
+source=(http://www.ibiblio.org/pub/Linux/docs/HOWTO/other-formats/html_single/Linux-html-single-HOWTOs.tar.bz2)
+md5sums=('6fbe468eabf13ffe63bc222bdea0a06e')
+
+package() {
+    cd $srcdir
+    mkdir -p $pkgdir/usr/share/doc/howto/html-single
+    mv *.html $pkgdir/usr/share/doc/howto/html-single/
+}

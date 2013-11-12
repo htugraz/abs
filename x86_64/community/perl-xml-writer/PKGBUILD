@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 95132 2013-08-06 02:40:16Z eric $
+# Maintainer: Justin Davis <jrcd83@gmail.com>
+# Contributor: François Charette <firmicus ατ gmx δοτ net>
+
+pkgname=perl-xml-writer
+pkgver=0.623
+pkgrel=1
+pkgdesc="Module for writing XML documents"
+arch=('any')
+url="http://search.cpan.org/dist/XML-Writer"
+license=('custom')
+depends=('perl')
+options=('!emptydirs')
+source=(http://www.cpan.org/authors/id/J/JO/JOSEPHW/XML-Writer-$pkgver.tar.gz)
+md5sums=('5109b43ee8cb6c5bb12cb13dce7e80af')
+
+build() {
+  cd XML-Writer-$pkgver
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+check() {
+  cd XML-Writer-$pkgver
+  make test
+}
+
+package() {
+  cd  XML-Writer-$pkgver
+  make DESTDIR="${pkgdir}" install
+  install -D -m644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}

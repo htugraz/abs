@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 97718 2013-09-27 20:08:24Z bluewind $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: Nicky726 (Nicky726 <at> gmail <dot> com)
+# Contributor: Allan McRae (allan <at> archlinux <dot> org)
+# Contributor: Alexander 'bas' Brovikov (bas <at> it-core <dot> org)
+
+pkgname=wine_gecko
+pkgver=2.24
+pkgrel=1
+pkgdesc="Wine's built-in replacement for Microsoft's Internet Explorer"
+arch=(i686 x86_64)
+url="http://wiki.winehq.org/Gecko"
+license=(MPL)
+depends=('wine>=1.5.31')
+source=(http://downloads.sourceforge.net/project/wine/Wine%20Gecko/$pkgver/$pkgname-$pkgver-x86{,_64}.msi)
+md5sums=('766bb034172f7f0a97443951a02a0df8'
+         '1912fd191872c72d5f562283e44e8ab4')
+
+if [[ $CARCH == i686 ]]; then
+  # Strip x86_64 msi
+  source=(${source[0]})
+  md5sums=(${md5sums[0]})
+fi
+
+package() {
+  _geckodir="$pkgdir/usr/share/wine/gecko"
+
+  install -Dm644 $pkgname-$pkgver-x86.msi "$_geckodir/$pkgname-$pkgver-x86.msi"
+  if [[ $CARCH == x86_64 ]]; then
+    install -m644 $pkgname-$pkgver-x86_64.msi "$_geckodir/"
+  fi
+}

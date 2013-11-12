@@ -1,0 +1,33 @@
+# $Id: PKGBUILD 93287 2013-07-01 06:22:40Z andrea $
+# Maintainer: Peter Lewis <plewis@aur.archlinux.org>
+# Maintainer: Andrea Scarpino <andrea@archlinux.org>
+# Contributor: Panagiotis Papadopoulos <pano_90 AT gmx DOT net>
+
+pkgname=rekonq
+pkgver=2.3.2
+pkgrel=1
+pkgdesc='A WebKit based web browser for KDE'
+arch=('i686' 'x86_64')
+url='http://rekonq.kde.org/'
+license=('GPL')
+depends=('kdebase-keditbookmarks' 'qoauth')
+makedepends=('cmake' 'automoc4')
+optdepends=('kdebase-konqueror: search engines support'
+            'qca-ossl: to use the sync handler')
+install=${pkgname}.install
+source=("http://downloads.sourceforge.net/${pkgname}/${pkgname}-${pkgver}.tar.bz2")
+sha256sums=('9cfdb7e02a08ad4d2b5dd6e8bd1c85c11013f41a3186c8c5c22454093722bc74')
+
+build(){
+  mkdir build
+  cd build
+  cmake ../${pkgname}-${pkgver} \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr
+  make
+}
+
+package() {
+  cd build
+  make DESTDIR="${pkgdir}" install
+}

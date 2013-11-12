@@ -1,0 +1,36 @@
+# $Id: PKGBUILD 97287 2013-09-16 09:31:51Z foutrelis $
+# Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
+# Contributor: Javier 'Phrodo_00' Aravena <phrodo.00@gmail.com>
+
+pkgname=gbrainy
+pkgver=2.2.2
+pkgrel=1
+epoch=1
+pkgdesc="A brain teaser game and trainer to have fun and to keep your brain trained"
+arch=('any')
+url="http://live.gnome.org/gbrainy"
+license=('GPL2')
+depends=('gtk-sharp-2' 'mono-addins' 'librsvg' 'hicolor-icon-theme'
+         'desktop-file-utils')
+makedepends=('intltool' 'gettext' 'gnome-doc-utils')
+install=gbrainy.install
+source=(http://gent.softcatala.org/jmas/$pkgname/$pkgname-$pkgver.tar.gz)
+sha256sums=('e581cf88dae6dffd3ed39f39f00e1e5b3ff3bed3c9b6044dd93168e699bfea43')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  export MONO_SHARED_DIR="$srcdir"
+  ./configure \
+    --prefix=/usr \
+    --enable-addins
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  make DESTDIR="$pkgdir" install
+}
+
+# vim:set ts=2 sw=2 et:

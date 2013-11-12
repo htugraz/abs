@@ -1,0 +1,24 @@
+# $Id: PKGBUILD 56468 2011-10-07 10:07:14Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Francois Charette <firmicus@gmx.net>
+
+pkgname=perl-test-base
+pkgver=0.60
+pkgrel=1
+pkgdesc="A Data Driven Testing Framework"
+arch=('any')
+url="http://search.cpan.org/dist/Test-Base"
+license=('GPL' 'PerlArtistic')
+depends=('perl-spiffy>=0.30')
+options=('!emptydirs')
+source=(http://www.cpan.org/authors/id/I/IN/INGY/Test-Base-$pkgver.tar.gz)
+md5sums=('7d839807da66d69db32fc4b22994f9e4')
+
+build() {
+  cd  $srcdir/Test-Base-$pkgver
+  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+  make
+  make install DESTDIR=$pkgdir
+  find $pkgdir -name '.packlist' -delete
+  find $pkgdir -name '*.pod' -delete
+}

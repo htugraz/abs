@@ -1,0 +1,52 @@
+# $Id: PKGBUILD 96323 2013-08-25 16:45:10Z arodseth $
+# Maintainer: Alexander Rødseth <rodseth@gmail.com>
+# Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
+# Contributor: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+# Contributor: Jeff Mickey <j@codemac.net>
+# Contributor: Dusty Phillips <dusty@buchuki.com>
+
+pkgname=jedit
+pkgver=5.1.0
+pkgrel=2
+pkgdesc='Text editor for programmers, written in Java'
+arch=('any')
+url='http://www.jedit.org/'
+license=('GPL')
+depends=('sh' 'java-runtime' 'desktop-file-utils')
+makedepends=('gendesk')
+optdepends=('java-environment: for java development')
+options=('!emptydirs')
+install=$pkgname.install
+noextract=("${pkgname}${pkgver}install.jar")
+source=("http://downloads.sourceforge.net/$pkgname/${pkgname}${pkgver}install.jar"
+        'jedit.sh'
+        'jeditbg.sh'
+        'jedit.props')
+sha256sums=('96f229d91a1effd6b0da1aee209390d8a131bd68e0cf4cd274dca14245ba30d7'
+            'e908f2d4b15aab76e5e4633b71f25f7f25baa5b9e375d373e8729205700a57de'
+            'a1dd1b688f08c5c967861fe80df13cac201afa6dcfcecc9a289b2c3bec7c8915'
+            'cc8d34ab151255c97d78a08ffbc25f041fe8c8c0017094d5eef27e84f95e0c2e')
+
+prepare() {
+  gendesk -n --pkgname "$pkgname" --pkgdesc "$pkgdesc" --exec 'jeditbg %U' \
+    --name 'jEdit' --genericname 'Editor'
+}
+
+package() {
+  cd "$srcdir"
+  install -d "$pkgdir/usr/share/java/$pkgdir"
+  install -d "$pkgdir/usr/bin"
+  install -d "$pkgdir/usr/share/man/man1"
+  (java -jar "${pkgname}${pkgver}install.jar" auto \
+    "$pkgdir/usr/share/java/$pkgname/" \
+    unix-script="$pkgdir/usr/bin/" \
+    unix-man="$pkgdir/usr/share/man/man1/" 2>&1) > inst.log
+  install -Dm755 'jedit.sh' "$pkgdir/usr/bin/jedit"
+  install -Dm755 'jeditbg.sh' "$pkgdir/usr/bin/jeditbg"
+  install -Dm644 'jedit.props' "$pkgdir/usr/share/jedit/default.props"
+  install -Dm644 'jedit.desktop' "$pkgdir/usr/share/applications/jedit.desktop"
+  install -Dm644 "$pkgdir/usr/share/java/jedit/doc/jedit.png" \
+    "$pkgdir/usr/share/pixmaps/jedit.png"
+}
+
+# vim:set ts=2 sw=2 et:

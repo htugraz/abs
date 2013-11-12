@@ -1,0 +1,31 @@
+# $Id: PKGBUILD 82092 2013-01-07 23:11:37Z foutrelis $
+# Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
+# Contributor: Maximilian Köhl <linuxmaxi@googlemail.com>
+
+pkgname=('python-gtkspellcheck' 'python2-gtkspellcheck')
+pkgver=4.0.1
+pkgrel=1
+pkgdesc="Spell-checking library written in Python for Gtk based on Enchant"
+arch=('any')
+url="http://koehlma.github.com/projects/pygtkspellcheck.html"
+license=('GPL')
+makedepends=('python-pyenchant' 'python2-pyenchant' 'python-sphinx'
+             'python2-sphinx')
+source=(http://pypi.python.org/packages/source/p/pygtkspellcheck/pygtkspellcheck-$pkgver.tar.gz)
+sha256sums=('a00f562e3d64415627c3b461035f1ecbeb0fcd172914220f295d683990429511')
+
+package_python-gtkspellcheck() {
+  depends=('python-pyenchant')
+
+  cd "$srcdir/pygtkspellcheck-$pkgver"
+  python3 setup.py install --root="$pkgdir" -O1
+}
+
+package_python2-gtkspellcheck() {
+  depends=('python2-pyenchant')
+
+  cd "$srcdir/pygtkspellcheck-$pkgver"
+  python2 setup.py install --root="$pkgdir" -O1
+}
+
+# vim:set ts=2 sw=2 et:

@@ -1,0 +1,36 @@
+# $Id: PKGBUILD 199338 2013-11-11 11:09:59Z heftig $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Maintainer: Jan de Groot <jgc@archlinux.org>
+
+pkgname=tali
+pkgver=3.10.2
+pkgrel=1
+pkgdesc="Beat the odds in a poker-style dice game"
+arch=('i686' 'x86_64')
+license=('GPL')
+depends=('desktop-file-utils' 'hicolor-icon-theme' 'gtk3' 'librsvg')
+makedepends=('intltool' 'itstool' 'gobject-introspection')
+conflicts=('gnome-games')
+replaces=('gnome-games')
+options=('!emptydirs')
+install=tali.install
+url="https://live.gnome.org/Tali"
+groups=('gnome-extra')
+source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver:0:4}/$pkgname-$pkgver.tar.xz)
+sha256sums=('6a1c1f1dfe8591d3f74f2d46edae9172606581efbb6bbe04f43b2b908a24383b')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+      --disable-schemas-compile \
+      --with-scores-user=root --with-scores-group=games
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+
+  # Remove all scores, we generate them from postinstall
+  rm -rf "$pkgdir/var"
+}

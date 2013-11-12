@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 95124 2013-08-05 22:25:20Z eric $
+# Maintainer: 
+
+pkgname=perlbrew
+pkgver=0.66
+pkgrel=1
+pkgdesc='Manage perl installations in your $HOME'
+arch=('any')
+url="https://metacpan.org/release/App-perlbrew"
+license=('MIT')
+depends=('perl' 'perl-capture-tiny' 'perl-cpan-perl-releases' 'perl-devel-patchperl'
+         'perl-file-path-tiny' 'perl-local-lib')
+checkdepends=('perl-test-exception' 'perl-test-output' 'perl-test-spec' 
+              'perl-path-class' 'perl-io-all')
+options=('!emptydirs')
+source=("http://search.cpan.org/CPAN/authors/id/G/GU/GUGOD/App-perlbrew-$pkgver.tar.gz")
+sha1sums=('b512ec9f6c3b619dabbe4074cb15818edec52a8d')
+
+build() {
+  cd App-perlbrew-$pkgver
+  perl Makefile.PL INSTALLDIRS=vendor 
+  make
+}
+
+check() {
+  cd App-perlbrew-$pkgver
+  make test
+}
+
+package() {
+  cd App-perlbrew-$pkgver
+  make install DESTDIR="$pkgdir"
+  install -D -m 644 LICENSE "$pkgdir"/usr/share/licenses/perlbrew/LICENSE
+}

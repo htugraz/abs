@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 68011 2012-03-17 00:39:23Z giovanni $
+# Maintainer: Ray Rashif <schivmeister@gmail.com>
+# Contributor: Corrado Primier <bardo@aur.archlinux.org>
+# Contributor: rabyte <rabyte.at.pen.dot.tj>
+
+pkgname=timidity-freepats
+pkgver=20060219
+pkgrel=6
+pkgdesc="A free and open set of instrument patches for use with softsynths"
+arch=('any')
+url="http://freepats.zenvoid.org/"
+license=('GPL')
+depends=('timidity++')
+install=$pkgname.install
+source=("http://freepats.zenvoid.org/freepats-${pkgver}.tar.bz2"
+        'timidity-freepats.cfg')
+md5sums=('b947806304bc559a644a2c06deda8404' 
+         'f9b5efafc6339a173d95e06cf7870d64')
+
+package() {
+  install -d ${pkgdir}/usr/share/timidity/freepats/{Drum,Tone}_000/
+  install -m644 ${srcdir}/freepats/Drum_000/*.pat \
+      ${pkgdir}/usr/share/timidity/freepats/Drum_000/
+  install -m644 ${srcdir}/freepats/Drum_000/*.txt \
+      ${pkgdir}/usr/share/timidity/freepats/Drum_000/
+  install -m644 ${srcdir}/freepats/Tone_000/*.pat \
+      ${pkgdir}/usr/share/timidity/freepats/Tone_000/
+  install -m644 ${srcdir}/freepats/Tone_000/*.txt \
+      ${pkgdir}/usr/share/timidity/freepats/Tone_000/
+  install -Dm644 ${srcdir}/freepats/crude.cfg \
+      ${pkgdir}/etc/timidity++/freepats/freepats.cfg
+  install -m644 ${srcdir}/timidity-freepats.cfg \
+      ${pkgdir}/etc/timidity++/
+}

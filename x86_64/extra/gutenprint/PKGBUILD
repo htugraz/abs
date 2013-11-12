@@ -1,0 +1,50 @@
+# $Id: PKGBUILD 198094 2013-10-30 12:46:05Z allan $
+# Maintainer: Andreas Radke <andyrtr@archlinux.org>
+
+pkgname=gutenprint
+pkgver=5.2.9
+pkgrel=2
+pkgdesc="Top quality printer drivers for POSIX systems"
+arch=('i686' 'x86_64')
+license=('GPL')
+install=gutenprint.install
+#depends=('readline') # 'gnutls') # needs to be checked. build log says -Lgnutls but namcap doesn't detect it
+depends=('glibc')
+makedepends=('gimp' 'gtk2' 'cups' 'foomatic-db-engine' 'ghostscript')
+optdepends=('cups:		to use cups printer spooler(recommended)'
+            'foomatic-db-engine:	to use foomatic spooler'
+            'ghostscript:	adds postscript support for ijsgutenprint'
+            'gimp:		adds gutenprint plugin to gimp')
+source=(http://downloads.sourceforge.net/gimp-print/$pkgname-$pkgver.tar.bz2)
+url="http://gimp-print.sourceforge.net/"
+replaces=('gimp-print')
+options=('!emptydirs')
+md5sums=('aefbec27b96dd404d9ac9811e17d58ce')
+
+build() {
+  cd ${srcdir}/${pkgname}-${pkgver}
+  
+  # sbindir is not properly taken over there
+  sed -i "s:cups_sbindir=\"\/usr\/sbin\":cups_sbindir=\"\/usr\/bin\":g" m4/stp_cups.m4
+  sed -i  "s:cups_sbindir=\"\${cups_prefix}\/sbin\":cups_sbindir=\"\${cups_prefix}\/bin\":" m4/stp_cups.m4
+
+  sed -i "s:m4local:m4extra:" Makefile.am
+  autoreconf -vfi
+  
+  ./configure --prefix=/usr \
+    --sbindir=/usr/bin \
+    --enable-samples \
+	--enable-cups-ppds \
+	--enable-cups-ppds-at-top-level \
+	--disable-translated-cups-ppds \
+	--disable-globalized-cups-ppds \
+	--disable-static \
+	--disable-static-genppd
+  make
+}
+
+package() {
+  cd ${srcdir}/${pkgname}-${pkgver}
+  make DESTDIR=${pkgdir} install
+}
+

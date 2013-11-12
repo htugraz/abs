@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 198356 2013-10-30 14:22:17Z allan $
+# Maintainer: Tobias Powalowski <tpowa@archlinux.org>
+
+pkgname=openslp
+pkgver=1.2.1
+pkgrel=7
+pkgdesc="Open-source implementation of Service Location Protocol"
+arch=('i686' 'x86_64')
+url="http://www.openslp.org"
+license=('BSD')
+depends=('bash' 'openssl')
+backup=('etc/slp.conf' 'etc/slp.reg' 'etc/slp.spi')
+source=(http://downloads.sourceforge.net/sourceforge/${pkgname}/${pkgname}-${pkgver}.tar.gz
+        #https://github.com/lunar-linux/moonbase-other/commit/ae74b5873e639d50db0a563d2424114a530c01ae
+        openslp.service)
+md5sums=('ff9999d1b44017281dd00ed2c4d32330'
+         '90eea4426492287ebfc01b2056a3ef9d')
+
+build() {
+  cd ${srcdir}/${pkgname}-${pkgver}
+  ./configure --prefix=/usr \
+    --sbindir=/usr/bin \
+    --disable-static \
+    --enable-slpv1 \
+    --enable-slpv2-security # service would fail to start without this
+  make
+}
+
+package() {
+  cd ${srcdir}/${pkgname}-${pkgver}
+  make DESTDIR=${pkgdir} DOC_DIR=/usr/share/doc/openslp-${pkgver} install
+  install -D -m644 COPYING ${pkgdir}/usr/share/licenses/${pkgname}/LICENSE
+  install -D -m644 $srcdir/openslp.service ${pkgdir}/usr/lib/systemd/system/openslp.service
+}

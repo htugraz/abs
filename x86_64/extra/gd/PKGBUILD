@@ -1,0 +1,31 @@
+# $Id: PKGBUILD 197974 2013-10-30 12:01:24Z allan $
+# Maintainer: Eric Belanger <eric@archlinux.org>
+
+pkgname=gd
+pkgver=2.1.0
+pkgrel=2
+pkgdesc="Library for the dynamic creation of images by programmers"
+arch=('i686' 'x86_64')
+url="http://www.libgd.org/"
+license=('custom')
+depends=('libpng' 'fontconfig' 'libjpeg')
+optdepends=('perl: bdftogd script')
+source=(https://bitbucket.org/libgd/gd-libgd/downloads/libgd-${pkgver}.tar.xz)
+md5sums=('03588159bf4faab9079849c8d709acc6')
+
+build() {
+  cd libgd-${pkgver}
+  ./configure --prefix=/usr --without-xpm
+  make
+}
+
+check() {
+  cd libgd-${pkgver}
+  make check
+}
+
+package() {
+  cd libgd-${pkgver}
+  make DESTDIR="${pkgdir}" install
+  install -D -m644 COPYING "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}

@@ -1,0 +1,37 @@
+# $Id: PKGBUILD 99102 2013-10-24 12:51:25Z alucryd $
+# Maintainer: Maxime Gauduin <alucryd at gmail dot com>
+# Contributor : sebikul <sebikul@gmail.com>
+
+pkgname=sqlheavy
+pkgver=0.2.0.7ae6112
+pkgrel=1
+pkgdesc="GObject SQLite wrapper"
+arch=('i686' 'x86_64')
+url="https://code.google.com/p/sqlheavy/"
+license=('LGPL')
+depends=('gtk2' 'sqlite3')
+makedepends=('git' 'gobject-introspection' 'vala')
+source=('git://gitorious.org/sqlheavy/sqlheavy.git')
+sha256sums=('SKIP')
+
+pkgver() {
+  cd ${pkgname}
+
+  printf "0.2.0.%s" "$(git rev-parse --short HEAD)"
+}
+
+build() {
+  cd ${pkgname}
+
+  ./autogen.sh --prefix='/usr' --disable-static
+  make
+}
+
+package() {
+  cd ${pkgname}
+
+  make DESTDIR="${pkgdir}" install
+  rm -rf "${pkgdir}"/usr/share/man
+}
+
+# vim: ts=2 sw=2 et:

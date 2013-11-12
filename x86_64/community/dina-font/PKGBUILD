@@ -1,0 +1,52 @@
+# $Id: PKGBUILD 97182 2013-09-15 01:05:38Z kkeen $
+# Maintainer: Kyle Keen <keenerd@gmail.com>
+# Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
+# Contributor: Xilon <xilonmu@gmail.com>
+# Contributor: Stefan Husmann <stefan-husmann@t-online.de>
+
+pkgname=dina-font
+pkgver=2.92
+pkgrel=2
+pkgdesc="A monospace bitmap font, primarily aimed at programmers"
+arch=('any')
+url="http://www.donationcoder.com/Software/Jibz/Dina/index.html"
+license=('custom')
+depends=('xorg-fonts-encodings' 'xorg-fonts-alias' 'xorg-font-utils' 'fontconfig')
+makedepends=('xorg-bdftopcf')
+install=${pkgname}.install
+source=(http://www.donationcoder.com/Software/Jibz/Dina/downloads/Dina.zip)
+md5sums=('028424baac750e9fd0f54df03202e5d0')
+
+_ex_pt() {
+    _pt=${1%.bdf}
+    _pt=${_pt#*-}
+    echo $_pt
+}
+
+build() {
+    cd "$srcdir/BDF"
+
+    sed -i 's/microsoft-cp1252/ISO8859-1/' *.bdf
+
+    for i in Dina_i400-*.bdf; do
+        bdftopcf -t -o DinaItalic$(_ex_pt $i).pcf $i
+    done
+    for i in Dina_i700-*.bdf; do
+        bdftopcf -t -o DinaBoldItalic$(_ex_pt $i).pcf $i
+    done
+    for i in Dina_r400-*.bdf; do
+        bdftopcf -t -o DinaMedium$(_ex_pt $i).pcf $i
+    done
+    for i in Dina_r700-*.bdf; do
+        bdftopcf -t -o DinaBold$(_ex_pt $i).pcf $i
+    done
+    gzip *.pcf
+}
+
+package() {
+    cd "$srcdir/BDF"
+    for i in *.gz; do
+        install -Dm 644 $i "$pkgdir/usr/share/fonts/local/$i"
+    done
+    install -Dm644 "$srcdir/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

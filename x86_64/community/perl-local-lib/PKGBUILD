@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 99494 2013-10-29 10:23:00Z spupykin $
+# Maintainer: 
+
+pkgname=perl-local-lib
+pkgver=1.008023
+pkgrel=1
+pkgdesc="Create and use a local lib/ for perl modules with PERL5LIB"
+arch=('any')
+url="https://metacpan.org/release/local-lib"
+license=('PerlArtistic' 'GPL')
+depends=('perl')
+options=('!emptydirs')
+source=("http://search.cpan.org/CPAN/authors/id/E/ET/ETHER/local-lib-${pkgver}.tar.gz")
+md5sums=('64952fbab85c208024c05919a323cb4a')
+
+build() {
+  cd local-lib-${pkgver}
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+check() {
+  cd local-lib-${pkgver}
+  make test
+}
+
+package() {
+  cd local-lib-${pkgver}
+  make DESTDIR="$pkgdir" install
+}

@@ -1,0 +1,24 @@
+# $Id: PKGBUILD 99890 2013-10-31 02:18:38Z allan $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Buharev Vasilij <buharev.v.p@gmail.com>
+
+pkgname=libwww
+pkgver=5.4.0
+pkgrel=5
+pkgdesc="A general-purpose client side WEB API"
+arch=('i686' 'x86_64')
+url="http://www.w3.org/Library/"
+license=('W3C')
+depends=()
+makedepends=('gcc pkgconfig perl zlib openssl')
+source=(http://www.w3.org/Library/Distribution/w3c-$pkgname-$pkgver.tgz)
+md5sums=('c3734ca6caa405707e134cc8c6d7e422')
+
+build() {
+  cd "$srcdir/w3c-$pkgname-$pkgver"
+  [ -f Makefile ] || ./configure --prefix=/usr \
+	--with-md5 --with-zlib --with-expat --with-regex --with-ssl
+  sed -i 's#Examples##' Library/Makefile
+  make
+  make DESTDIR="$pkgdir" install
+}

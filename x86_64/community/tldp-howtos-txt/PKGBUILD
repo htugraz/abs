@@ -1,0 +1,22 @@
+# $Id: PKGBUILD 91972 2013-05-30 13:48:49Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
+
+pkgname=tldp-howtos-txt
+pkgver=20130530
+pkgrel=1
+pkgdesc="HOWTO's from tldp.org (one text file per howto)"
+arch=('any')
+url="http://tldp.org/"
+license=("FDL")
+depends=()
+options=('docs')
+source=(http://www.ibiblio.org/pub/Linux/docs/HOWTO/Linux-HOWTOs.tar.bz2)
+md5sums=('cf67d5e73f675638dcb45e9954cdd14b')
+
+package() {
+    cd $srcdir
+    mkdir -p $pkgdir/usr/share/doc/howto/txt
+    rm -f .htaccess Linux-HOWTOs.tar.bz2
+    mv * $pkgdir/usr/share/doc/howto/txt/
+}

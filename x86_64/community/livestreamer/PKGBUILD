@@ -1,0 +1,23 @@
+# $Id: PKGBUILD 98542 2013-10-13 04:16:07Z dwallace $
+# Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
+# Contributor: Christopher Rosell <chrippa@tanuki.se>
+pkgname=livestreamer
+pkgver=1.6.1
+pkgrel=1
+pkgdesc='CLI program that launches streams from various streaming services in a custom video player'
+arch=('any')
+url='https://github.com/chrippa/livestreamer'
+license=('BSD')
+depends=('python-requests' 'rtmpdump' 'python-setuptools')
+provides=('livestreamer')
+conflicts=('livestreamer-git')
+options=(!emptydirs)
+source=(http://pypi.python.org/packages/source/l/$pkgname/$pkgname-$pkgver.tar.gz)
+sha256sums=('6c33fb11f94e4bce6eeca1cc2d9ea622ef731c6be06b7caa2810f719c4514103')
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  python setup.py install --root="$pkgdir/" --optimize=1
+}
+
+# vim:set ts=2 sw=2 et:

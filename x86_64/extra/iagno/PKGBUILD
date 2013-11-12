@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 198106 2013-10-30 12:49:38Z allan $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: Jan de Groot <jgc@archlinux.org>
+
+pkgname=iagno
+pkgver=3.10.1
+pkgrel=1
+pkgdesc="Dominate the board in a classic version of Reversi"
+arch=('i686' 'x86_64')
+license=('GPL')
+depends=('hicolor-icon-theme' 'gtk3' 'libcanberra' 'librsvg')
+makedepends=('intltool' 'itstool' 'gobject-introspection')
+conflicts=('gnome-games')
+replaces=('gnome-games')
+options=('!emptydirs')
+install=iagno.install
+url="https://live.gnome.org/Iagno"
+groups=('gnome-extra')
+source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.xz)
+sha256sums=('abb4aee5fe6b2d668dbd4f5a06783419bebdfa8bbf8911262e4d217fed0be5f0')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+      --disable-schemas-compile
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

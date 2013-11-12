@@ -1,0 +1,26 @@
+# $Id: PKGBUILD 95174 2013-08-06 11:53:33Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Charles Mauch <cmauch@gmail.com>
+
+pkgname=perl-io-pager
+pkgver=0.31
+pkgrel=1
+pkgdesc="Perl/CPAN Module IO::Pager"
+arch=("any")
+url="http://search.cpan.org/dist/IO-Pager/"
+license=("GPL" "PerlArtistic")
+source=("http://www.cpan.org/authors/id/J/JP/JPIERCE/IO-Pager-$pkgver.tgz")
+md5sums=('727579dccdda96cfcadbba9def8af59f')
+
+build() {
+  cd $srcdir/IO-Pager-$pkgver
+  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+package() {
+  cd $srcdir/IO-Pager-$pkgver
+  make install DESTDIR=$pkgdir
+  find $pkgdir -name '.packlist' -delete
+  find $pkgdir -name '*.pod' -delete
+}

@@ -1,0 +1,73 @@
+# $Id: PKGBUILD 196298 2013-10-11 08:53:55Z juergen $
+# Contributor: John Proctor <jproctor@prium.net>
+# Contributor: Daniel White <daniel@whitehouse.id.au>
+# Maintainer: Juergen Hoetzel <juergen@archlinux.org>
+# Contributor: Leslie Polzer (skypher)
+
+pkgname=sbcl
+pkgver=1.1.12
+pkgrel=1
+pkgdesc="Steel Bank Common Lisp"
+url="http://www.sbcl.org/"
+arch=('i686' 'x86_64')
+license=('custom')
+depends=('glibc' 'zlib')
+provides=('common-lisp' 'cl-asdf')
+makedepends=('sbcl')
+install=sbcl.install
+source=("http://downloads.sourceforge.net/project/sbcl/sbcl/$pkgver/$pkgname-$pkgver-source.tar.bz2"
+  "arch-fixes.lisp")
+md5sums=('817e0606e4615e758c0bf3d381197711'
+         '7ac0c1936547f4278198b8bf7725204d')
+
+
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  export CFLAGS+=" -D_GNU_SOURCE -fno-omit-frame-pointer -DSBCL_HOME=/usr/lib/sbcl"
+  export GNUMAKE="make"
+
+  # build system uses LINKFLAGS and OS_LIBS to build LDFLAGS
+  export LINKFLAGS="$LDFLAGS"
+  unset LDFLAGS
+
+  # Make a multi-threaded SBCL, disable LARGEFILE
+  cat >customize-target-features.lisp <<EOF
+(lambda (features)
+  (flet ((enable (x) (pushnew x features))
+         (disable (x) (setf features (remove x features))))
+  (enable :sb-thread)
+  (enable :sb-core-compression)
+  (disable :largefile)))
+EOF
+
+  sh make.sh sbcl --prefix=/usr
+  make -C doc/manual info
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  # cannot have both SBCL_HOME and INSTALL_ROOT
+  SBCL_HOME="" INSTALL_ROOT="$pkgdir/usr" sh install.sh
+
+  src/runtime/sbcl --core output/sbcl.core --script "${srcdir}/arch-fixes.lisp"
+  mv sbcl-new.core "${pkgdir}/usr/lib/sbcl/sbcl.core"
+
+  # sources
+  mkdir -p "$pkgdir/usr/share/sbcl-source"
+  cp -R -t "$pkgdir/usr/share/sbcl-source" "$srcdir/$pkgname-$pkgver/"{src,contrib}
+
+  # license
+  install -D -m644 "$srcdir/$pkgname-$pkgver/COPYING" \
+                   "$pkgdir/usr/share/licenses/$pkgname/license.txt"
+
+  # drop unwanted files
+  find "$pkgdir" \( -name Makefile -o -name .cvsignore \) -delete
+  find "$pkgdir/usr/share/sbcl-source" -type f \
+    \( -name \*.fasl -o -name \*.o -o -name \*.log -o -name \*.so -o -name a.out \) -delete
+
+  rm "$pkgdir/usr/share/sbcl-source/src/runtime/sbcl"{,.nm}
+
+}

@@ -1,0 +1,23 @@
+# $Id: PKGBUILD 149350 2012-02-07 02:38:56Z eric $
+# Maintainer: Eric Bélanger <eric@archlinux.org>
+
+pkgname=ttf-cheapskate
+pkgver=2.0
+pkgrel=8
+pkgdesc="TTFonts collection from dustimo.com"
+arch=('any')
+url="http://dustismo.com/"
+license=('GPL')
+depends=('xorg-fonts-encodings' 'xorg-fonts-alias' 'xorg-font-utils' 'fontconfig')
+install=ttf.install
+source=(ftp://ftp.archlinux.org/other/ttf-cheapskate/ttf-dustin_20030517.orig.tar.gz)
+md5sums=('cb130e89d7cf0723550ccb432de3d0ef')
+
+package() {
+  cd "${srcdir}/ttf-dustin-20030517"
+  for file in *.zip; do
+    bsdtar -xf $file
+  done
+  install -d "${pkgdir}/usr/share/fonts/TTF"
+  install -m644 *.ttf "${pkgdir}/usr/share/fonts/TTF/"
+}

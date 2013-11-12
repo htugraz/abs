@@ -1,0 +1,46 @@
+# $Id: PKGBUILD 198243 2013-10-30 13:41:08Z allan $
+# Maintainer: Giovanni Scafora <giovanni@archlinux.org> 
+# Contributor: Biru Ionut <ionut@archlinux.ro>
+# Contributor: Eric Belanger <eric@archlinux.org>
+# Contributor: Aurelien Foret <orelien@chez.com>
+
+pkgname=libtar
+pkgver=1.2.20
+pkgrel=1
+pkgdesc="C library for manipulating POSIX tar files"
+arch=('i686' 'x86_64')
+url="http://repo.or.cz/w/libtar.git/"
+license=('BSD')
+depends=('zlib')
+source=("http://pkgbuild.com/~giovanni/${pkgname}/${pkgname}-${pkgver}.tar.gz"
+        'libtar-1.2.20-free.patch')
+md5sums=('32cd952ff74f1c78c06ffff5c0695b90'
+         '00c2d03a3c13e4b6bc6c3b30a4db9f64')
+
+prepare() {
+  cd "${srcdir}/${pkgname}"
+
+  patch -Np0 -i "${srcdir}/libtar-1.2.20-free.patch"
+  sed -i \
+      -e '/INSTALL_PROGRAM/s:-s::' {doc,lib{,tar}}/Makefile.in
+}
+
+build() {
+  cd "${srcdir}/${pkgname}"
+  export CFLAGS+=" -fPIC"
+
+  autoreconf -fi
+  ./configure --prefix=/usr \
+              --mandir=/usr/share/man \
+              --disable-static \
+              --disable-encap \
+              --disable-epkg-install
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}"
+
+  make DESTDIR="${pkgdir}" install
+  install -D -m644 COPYRIGHT "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}

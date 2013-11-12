@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 93672 2013-07-08 11:20:07Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Charles Mauch <cmauch@gmail.com>
+
+pkgname=perl-poe-component-ikc
+pkgver=0.2305
+pkgrel=1
+pkgdesc="Perl/CPAN Module POE::Component::IKC"
+arch=("any")
+url="http://search.cpan.org/dist/POE-Component-IKC/"
+license=("GPL" "PerlArtistic")
+makedepends=("perl-poe")
+depends=("perl-poe")
+source=("http://www.cpan.org/authors/id/G/GW/GWYN/POE-Component-IKC-$pkgver.tar.gz")
+md5sums=('b1b3a348e8d5f935d4a7995aea4139ee')
+
+build() {
+  cd $srcdir/POE-Component-IKC-$pkgver
+  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+package() {
+  cd $srcdir/POE-Component-IKC-$pkgver
+  make install DESTDIR=$pkgdir
+  find $pkgdir -name '.packlist' -delete
+  find $pkgdir -name '*.pod' -delete
+}

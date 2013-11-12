@@ -1,0 +1,31 @@
+# $Id: PKGBUILD 198362 2013-10-30 14:24:32Z allan $
+# Maintainer:
+# Contributor: Andrea Scarpino <andrea@archlinux.org>
+# Contributor: Jaroslaw Swierczynski <swiergot@aur.archlinux.org>
+# Contributor: William Rea <sillywilly@gmail.com>
+
+pkgname=ortp
+pkgver=0.22.0
+pkgrel=1
+pkgdesc="A Real-time Transport Protocol (RTP) library"
+arch=('i686' 'x86_64')
+url="http://www.linphone.org/index.php/eng/code_review/ortp"
+license=('GPL3')
+depends=('libzrtpcpp' 'libsrtp')
+source=("http://download-mirror.savannah.gnu.org/releases/linphone/${pkgname}/sources/${pkgname}-${pkgver}.tar.gz"{,.sig})
+sha1sums=('3f4712307ceba27c6498abd2090f411e02084dbd'
+          'SKIP')
+
+build() {
+  cd ${pkgname}-${pkgver}
+
+  ./configure --prefix=/usr \
+    --enable-zrtp \
+    --disable-strict
+  make
+}
+
+package() {
+  cd ${pkgname}-${pkgver}
+  make DESTDIR="${pkgdir}" install
+}

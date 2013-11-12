@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 196246 2013-10-09 16:03:44Z eric $
+# Maintainer: 
+
+pkgname=perl-file-desktopentry
+pkgver=0.08
+pkgrel=1
+pkgdesc='Object to handle .desktop files'
+arch=('any')
+license=('GPL' 'PerlArtistic')
+url="http://search.cpan.org/dist/File-DesktopEntry/"
+depends=('perl-file-basedir')
+options=('!emptydirs')
+source=(http://search.cpan.org/CPAN/authors/id/M/MI/MICHIELB/File-DesktopEntry-$pkgver.tar.gz)
+sha1sums=('c2bd78e84a009ccc90f03126b96166ebb0e4a6d7')
+
+build() {
+  cd File-DesktopEntry-$pkgver
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+check() {
+  cd File-DesktopEntry-$pkgver
+  make test
+}
+
+package() {
+  cd File-DesktopEntry-$pkgver
+  make DESTDIR="${pkgdir}" install
+}

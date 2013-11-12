@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 197888 2013-10-30 11:29:14Z allan $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+# Contributor: Jeremy Cowgar <jeremy@cowgar.com>
+
+pkgname=check
+pkgver=0.9.10
+pkgrel=1
+pkgdesc="A unit testing framework for C"
+arch=('i686' 'x86_64')
+url="http://check.sourceforge.net/"
+license=('LGPL')
+install=$pkgname.install
+source=(http://downloads.sourceforge.net/sourceforge/$pkgname/$pkgname-$pkgver.tar.gz)
+md5sums=('6d10a8efb9a683467b92b3bce97aeb30')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr --disable-static
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+
+  # get rid of the package's info directory,
+  # install-info adds entries for us at install-time
+  rm "$pkgdir/usr/share/info/dir"
+}

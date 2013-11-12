@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 186737 2013-05-30 22:20:23Z eric $
+# Maintainer: Justin Davis (juster) <jrcd83@gmail.com>
+
+pkgname=perl-net-server
+pkgver=2.007
+pkgrel=1
+pkgdesc='Extensible, general Perl server engine'
+arch=('any')
+url="https://metacpan.org/release/Net-Server"
+license=('PerlArtistic' 'GPL')
+depends=('perl')
+options=('!emptydirs')
+source=("http://search.cpan.org/CPAN/authors/id/R/RH/RHANDOM/Net-Server-$pkgver.tar.gz")
+md5sums=('b256c35a18caecc8fce9e6e1f2825658')
+
+build() {
+  cd Net-Server-$pkgver
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+check() {
+  cd Net-Server-$pkgver
+  make test
+}
+
+package() {
+  cd Net-Server-$pkgver
+  make install DESTDIR="$pkgdir"
+}

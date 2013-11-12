@@ -1,0 +1,54 @@
+# $Id: PKGBUILD 199037 2013-11-07 17:11:41Z schiv $
+# Maintainer: Ray Rashif <schiv@archlinux.org>
+# Contributor: Juergen Hoetzel <juergen@archlinux.org>
+# Contributor: see .contrib
+
+pkgname=snd
+pkgver=14.1
+pkgrel=2
+pkgdesc="An advanced sound editor"
+arch=('i686' 'x86_64')
+url="http://ccrma.stanford.edu/software/snd/"
+license=('custom')
+depends=('jack' 'gamin' 'gsl' 'fftw' 'gtk2' 'libmpc')
+makedepends=('ladspa' 'wavpack' 'flac' 'speex' 'gmp'
+             'timidity++' 'mpg123' 'vorbis-tools')
+optdepends=('wavpack' 'flac' 'speex' 'mpg123'
+            'timidity++' 'vorbis-tools')
+source=("ftp://ccrma-ftp.stanford.edu/pub/Lisp/$pkgname-$pkgver.tar.gz"
+        'type_error.patch')
+md5sums=('955ca19ca70ac0e4d03cd710516c0174'
+         '9bfea0dccdfb5da1ba81e721672b11cc')
+
+prepare() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  # fix incomplete type error
+  # see http://www.mail-archive.com/cmdist@ccrma.stanford.edu/msg04241.html
+  patch -Np1 -i "$srcdir/type_error.patch"
+}
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  LDFLAGS+=" -Wl,-z,noexecstack"
+
+  ./configure --prefix=/usr \
+              --with-alsa \
+              --with-jack \
+              --with-gtk \
+              --with-ladspa \
+              --with-gmp
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  make prefix="$pkgdir/usr" install
+
+  install -Dm644 COPYING \
+    "$pkgdir/usr/share/licenses/$pkgname/COPYING"
+}
+
+# vim:set ts=2 sw=2 et:

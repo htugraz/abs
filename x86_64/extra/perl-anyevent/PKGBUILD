@@ -1,0 +1,33 @@
+# $Id: PKGBUILD 197722 2013-10-29 00:57:05Z eric $
+# Maintainer:
+
+pkgname=perl-anyevent
+pkgver=7.05
+pkgrel=1
+epoch=4
+pkgdesc='The DBI of event loop programming'
+arch=('any')
+url="https://metacpan.org/release/AnyEvent"
+license=('PerlArtistic' 'GPL')
+depends=('perl-ev' 'perl-guard' 'perl-async-interrupt')
+optdepends=('perl-net-ssleay: TLS/SSL connections with AnyEvent::Handle'
+            'perl-json-xs: send or receive JSON with AnyEvent::Handle')
+options=('!emptydirs')
+source=("http://search.cpan.org/CPAN/authors/id/M/ML/MLEHMANN/AnyEvent-$pkgver.tar.gz")
+md5sums=('e329cb8549d2eedcacee56a962a7e3fe')
+
+build() {
+  cd AnyEvent-$pkgver
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+check() {
+  cd AnyEvent-$pkgver
+  make test
+}
+
+package() {
+  cd AnyEvent-$pkgver
+  make DESTDIR="$pkgdir" install
+}

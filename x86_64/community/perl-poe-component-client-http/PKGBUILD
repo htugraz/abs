@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 90914 2013-05-15 13:10:51Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Charles Mauch <cmauch@gmail.com>
+
+pkgname=perl-poe-component-client-http
+pkgver=0.948
+pkgrel=1
+pkgdesc="Perl/CPAN Module POE::Component::Client::HTTP : nonblockingparallel web requests engine"
+arch=(any)
+url="http://search.cpan.org/dist/POE-Component-Client-HTTP"
+license=("GPL" "PerlArtistic")
+makedepends=("perl-uri" "perl-poe-component-client-keepalive"   "perl-poe" )
+depends=("perl-uri" "perl-poe-component-client-keepalive"  "perl-poe" )
+source=("http://www.cpan.org/authors/id/R/RC/RCAPUTO/POE-Component-Client-HTTP-$pkgver.tar.gz")
+md5sums=('a83d96ea20030eae7b3db33ebd553fdf')
+
+build() {
+  cd $srcdir/POE-Component-Client-HTTP-$pkgver
+  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+package() {
+  cd $srcdir/POE-Component-Client-HTTP-$pkgver
+  make install DESTDIR=$pkgdir
+  find $pkgdir -name '.packlist' -delete
+  find $pkgdir -name '*.pod' -delete
+}

@@ -1,0 +1,29 @@
+# $Id: PKGBUILD 198836 2013-11-05 19:46:51Z andrea $
+# Maintainer: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=nepomuk-widgets
+pkgver=4.11.3
+pkgrel=1
+pkgdesc="The Library containing the Nepomuk Widgets"
+url="https://projects.kde.org/projects/kde/kdelibs/nepomuk-widgets"
+arch=('i686' 'x86_64')
+license=('GPL' 'LGPL' 'FDL')
+depends=('nepomuk-core')
+makedepends=('cmake' 'automoc4')
+source=("http://download.kde.org/stable/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
+sha1sums=('d43a410fd9ed02b52e8d4076e080a66a4b2c435a')
+
+build() {
+  mkdir build
+  cd build
+  cmake ../${pkgname}-${pkgver} \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DKDE4_BUILD_TESTS=OFF \
+    -DCMAKE_INSTALL_PREFIX=/usr
+  make
+}
+
+package() {
+  cd build
+  make DESTDIR="${pkgdir}" install
+}

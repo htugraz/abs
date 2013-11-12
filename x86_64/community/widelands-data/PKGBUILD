@@ -1,0 +1,39 @@
+# $Id: PKGBUILD 69892 2012-04-25 19:04:32Z svenstaro $
+# Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
+# Contributor: Arkham <arkham at archlinux dot us>
+# Contributor: Christoph Zeiler <rabyte*gmail>
+
+pkgname=widelands-data
+pkgver=17
+_realver=build17
+pkgrel=1
+pkgdesc="Widelands data files"
+arch=('any')
+url="http://widelands.org/"
+license=('GPL')
+makedepends=('cmake' 'boost' 'sdl_mixer' 'sdl_image' 'sdl_net' 'sdl_ttf' 'sdl_gfx' 'ggz-client-libs' 'lua' 'glew' 'python2')
+source=(http://launchpad.net/widelands/build16/$_realver/+download/widelands-$_realver-src.tar.bz2)
+md5sums=('bdc9bc0aa631af1aa7fb450507611a58')
+
+build() {
+    cd $srcdir/widelands-$_realver-src
+
+    sed -i "1 i #include <unistd.h>" src/main.cc
+
+    mkdir -p build/compile && cd build/compile
+
+    cmake ../.. -DCMAKE_BUILD_TYPE=Release \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DWL_INSTALL_PREFIX=/usr \
+        -DWL_INSTALL_DATADIR=share/widelands \
+        -DWL_INSTALL_BINDIR=bin
+    make
+}
+
+package() {
+    cd $srcdir/widelands-$_realver-src/build/compile
+
+    make DESTDIR="$pkgdir" install
+
+    rm -r "$pkgdir"/usr/{bin,share/widelands/{ChangeLog,COPYING,CREDITS,VERSION}}
+}

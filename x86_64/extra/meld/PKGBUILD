@@ -1,0 +1,38 @@
+# $Id: PKGBUILD 196774 2013-10-18 15:40:16Z bisson $
+# Maintainer: Gaetan Bisson <bisson@archlinux.org>
+# Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
+# Contributor: Douglas Soares de Andrade <douglas@archlinux.org>
+
+pkgname=meld
+pkgver=1.8.2
+pkgrel=1
+pkgdesc='Visual diff and merge tool'
+url='http://meldmerge.org/'
+license=('GPL')
+arch=('any')
+makedepends=('intltool' 'gnome-doc-utils')
+depends=('pygtk' 'hicolor-icon-theme' 'desktop-file-utils')
+optdepends=('pygtksourceview2: syntax highlighting'
+            'python2-dbus: open a new tab in an already running instance'
+            'python2-gconf: gnome integration')
+source=("http://ftp.gnome.org/pub/gnome/sources/${pkgname}/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
+sha1sums=('da6e4430ea3e56ec649b53f96c485de13a52627f')
+
+install=install
+options=('!emptydirs')
+
+prepare() {
+	cd "${pkgname}-${pkgver}"
+	sed -i 's/update-/#update-/' Makefile
+	sed -i 's/env python/env python2/' bin/meld
+}
+
+build() {
+	cd "${pkgname}-${pkgver}"
+	make PYTHON=/usr/bin/python2 prefix=/usr
+}
+
+package() {
+	cd "${pkgname}-${pkgver}"
+	make PYTHON=/usr/bin/python2 prefix=/usr DESTDIR="${pkgdir}" install
+}

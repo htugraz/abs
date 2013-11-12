@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 98879 2013-10-21 00:54:20Z seblu $
+# Maintainer: Sébastien Luttringer <seblu at seblu dot net>
+# Contributor: Bastien Dejean <nihilhill@gmail.com>
+
+pkgname=xcb-util-cursor
+pkgver=0.1.0
+pkgrel=4
+pkgdesc='XCB cursor library'
+arch=('i686' 'x86_64')
+url='http://cgit.freedesktop.org/xcb/util-cursor'
+license=('custom:MIT')
+depends=('libxcb' 'xcb-util-renderutil' 'xcb-util-image')
+source=("http://xcb.freedesktop.org/dist/xcb-util-cursor-$pkgver.tar.bz2")
+md5sums=('40e913aae6fb30a72d423e6bae9a93e9')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+  install -Dm644 COPYING "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
+
+# vim:set ts=2 sw=2 et:

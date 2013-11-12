@@ -1,0 +1,19 @@
+# $Id: PKGBUILD 98925 2013-10-21 12:22:00Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Pierre Bourdon <delroth@gmail.com>
+
+pkgname=buildbot-slave
+pkgver=0.8.8
+pkgrel=1
+pkgdesc="A system to automate the compile/test cycle required by most software projects (slave part)"
+arch=('any')
+url="http://buildbot.net/"
+license=("GPL")
+depends=("twisted>=10.2.0" "python2")
+source=(http://buildbot.googlecode.com/files/buildbot-slave-${pkgver/_/}.tar.gz)
+md5sums=('9854d1df35cb09a5320b30b76eefd9ba')
+
+package() {
+  cd $srcdir/$pkgname-${pkgver/_/}
+  python2 setup.py install --root=$pkgdir
+}

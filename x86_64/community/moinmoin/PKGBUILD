@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 86492 2013-03-18 11:54:41Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Samuel Mathieson <smathieson@gmail.com>
+
+pkgname=moinmoin
+_xpkgname=moin
+pkgver=1.9.7
+pkgrel=1
+pkgdesc="A python wiki clone"
+arch=(any)
+url="http://moinmo.in/"
+license=('GPL')
+depends=('python2')
+conflicts=('moin')
+install=moinmoin.install
+source=(http://static.moinmo.in/files/moin-$pkgver.tar.gz)
+md5sums=('cc2b00f6a27717c097d27da34e8d3249')
+
+build() {
+  cd $srcdir/${_xpkgname}-$pkgver
+
+  # python2 fix
+  for file in $(find . -name '*.py' -print) wiki/server/*; do
+    sed -i 's_^#!.*/usr/bin/python_#!/usr/bin/python2_' $file
+    sed -i 's_^#!.*/usr/bin/env.*python_#!/usr/bin/env python2_' $file
+  done
+
+  python2 setup.py build
+}
+
+package() {
+  cd $srcdir/${_xpkgname}-$pkgver
+  python2 setup.py install --root=$pkgdir --record=INSTALLED_FILES
+}

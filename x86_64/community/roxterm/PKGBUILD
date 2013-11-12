@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 92214 2013-06-02 21:00:23Z ttoepper $
+# Maintainer: Thorsten Töpper <atsutane-tu@freethoughts.de>
+# Contributor: Alexander Fehr <pizzapunk gmail com>
+
+pkgname=roxterm
+pkgver=2.7.2
+pkgrel=1
+pkgdesc='Tabbed, VTE-based terminal emulator'
+arch=('i686' 'x86_64')
+url='http://roxterm.sourceforge.net/'
+license=('GPL3')
+depends=('dbus-glib' 'vte3' 'hicolor-icon-theme')
+makedepends=('docbook-xsl' 'xmlto' 'po4a' 'python2' 'python2-lockfile' 'imagemagick' 'librsvg')
+install=roxterm.install
+source=("http://downloads.sourceforge.net/roxterm/roxterm-$pkgver.tar.bz2")
+md5sums=('8ef80f9a5e0aea659b1f9cd6de9869b4')
+sha1sums=('fa32ceeb19a097d5fb8a54c24cb7a6f1b957e74d')
+
+
+build() {
+  cd "${srcdir}/roxterm-${pkgver}"
+
+  python2 mscript.py configure --prefix='/usr'
+  python2 mscript.py build
+}
+
+package() {
+  cd "${srcdir}/roxterm-${pkgver}"
+  python2 mscript.py install --destdir="${pkgdir}"
+}
+
+# vim:set ts=2 sw=2 et:

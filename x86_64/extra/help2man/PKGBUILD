@@ -1,0 +1,31 @@
+# $Id: PKGBUILD 190025 2013-07-13 02:56:23Z giovanni $
+# Maintainer: Giovanni Scafora <giovanni@archlinux.org>
+# Contributor: Paul Mattal <paul@mattal.com>
+
+pkgname=help2man
+pkgver=1.43.3
+pkgrel=1
+pkgdesc="Conversion tool to create man files"
+arch=('i686' 'x86_64')
+url="http://www.gnu.org/software/help2man/"
+license=('GPL')
+depends=('perl-locale-gettext')
+install=help2man.install
+source=("http://ftp.gnu.org/gnu/${pkgname}/${pkgname}-${pkgver}.tar.gz")
+md5sums=('a84868db7c139238df8add5d86a0b54f')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+
+  ./configure --prefix=/usr \
+              --mandir=/usr/share/man \
+	      --infodir=/usr/share/info \
+	      --libdir=/usr/lib
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+
+  make DESTDIR="${pkgdir}" install
+}

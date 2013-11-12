@@ -1,0 +1,31 @@
+# $Id: PKGBUILD 199304 2013-11-09 22:09:32Z bisson $
+# Maintainer: Gaetan Bisson <bisson@archlinux.org>
+# Contributor: Angel Velasquez <angvp@archlinux.org>
+# Contributor: Andrea Scarpino <andrea@archlinux.org>
+# Contributor: Alexander Fehr <pizzapunk gmail com>
+# Contributor: Link Dupont <link@subpop.net>
+
+pkgname=mpc
+pkgver=0.25
+pkgrel=1
+pkgdesc='Minimalist command line interface to MPD'
+url='http://www.musicpd.org/clients/mpc/'
+license=('GPL2')
+arch=('i686' 'x86_64')
+depends=('libmpdclient')
+source=("http://www.musicpd.org/download/${pkgname}/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz"{,.sig})
+sha1sums=('c649cd19e4195749ca7da309c10acd53ac139b49' 'SKIP')
+
+options=('!emptydirs')
+
+build() {
+	cd "${srcdir}/${pkgname}-${pkgver}"
+	./configure --prefix=/usr 
+	make 
+}
+
+package() {
+	cd "${srcdir}/${pkgname}-${pkgver}"
+	make DESTDIR="${pkgdir}" install 
+	install -Dm644 doc/mpc-completion.bash "${pkgdir}/usr/share/bash-completion/completions/mpc" 
+}

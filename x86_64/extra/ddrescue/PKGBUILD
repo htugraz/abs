@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 191219 2013-07-21 14:09:43Z schiv $
+# Maintainer: Ray Rashif <schiv@archlinux.org>
+# Contributor: Pierre Schmitz <pierre@archlinux.de>
+# Contributor: Paul Mattal <paul@archlinux.org>
+
+pkgname=ddrescue
+pkgver=1.17
+pkgrel=1
+pkgdesc="GNU data recovery tool"
+arch=('i686' 'x86_64')
+url="http://www.gnu.org/software/ddrescue/ddrescue.html"
+license=('GPL3')
+depends=('gcc-libs')
+install=$pkgname.install
+source=("http://ftp.gnu.org/gnu/$pkgname/$pkgname-$pkgver.tar.lz"
+        "http://ftp.gnu.org/gnu/$pkgname/$pkgname-$pkgver.tar.lz.sig")
+md5sums=('564469370fe70cd9ac280b15e1addc50'
+         'SKIP')
+
+build() {
+  cd "$srcdir"/$pkgname-$pkgver
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd "$srcdir"/$pkgname-$pkgver
+  make DESTDIR="$pkgdir" install install-man
+  rm "$pkgdir"/usr/share/info/dir
+}

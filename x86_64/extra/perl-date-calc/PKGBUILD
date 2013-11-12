@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 150368 2012-02-17 09:04:07Z allan $
+# Maintainer: Kevin Piche <kevin@archlinux.org>
+# Contributor: K. Piche <kpiche@rogers.com>
+
+pkgname=perl-date-calc
+_realname=Date-Calc
+pkgver=6.3
+pkgrel=2
+pkgdesc="Perl module for Gregorian calendar date calculations"
+arch=(any)
+license=('PerlArtistic')
+url="http://search.cpan.org/dist/${_realname}/"
+depends=('perl-bit-vector' 'perl>=5.10.0')
+options=(!emptydirs)
+source=(http://search.cpan.org/CPAN/authors/id/S/ST/STBEY/${_realname}-${pkgver}.tar.gz)
+md5sums=('9b64555b7051c1beb6b61daead2d01b3')
+
+build() {
+  cd ${srcdir}/${_realname}-${pkgver}
+  # install module in vendor directories.
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+package() {
+  cd ${srcdir}/${_realname}-${pkgver}
+  make install DESTDIR=${pkgdir}
+}

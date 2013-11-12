@@ -1,0 +1,39 @@
+# $Id: PKGBUILD 192491 2013-08-13 08:44:20Z juergen $
+# Contributor: John Proctor <jproctor@prium.net>
+# Maintainer: juergen <juergen@archlinux.org>
+
+pkgname=ecl
+pkgver=13.5.1
+pkgrel=1
+pkgdesc="Embeddable Common Lisp"
+arch=('i686' 'x86_64')
+url="http://sourceforge.net/projects/ecls/"
+license=('LGPL')
+depends=('bash' 'gmp')
+makedepends=('texinfo')
+provides=('common-lisp' 'cl-asdf')
+options=('!makeflags')
+source=(http://downloads.sourceforge.net/project/ecls/ecls/13.5/ecl-${pkgver}.tgz)
+md5sums=('f6bb59d9383c51fc94e1c7ca5cf1c586')
+
+build() {
+  cd $srcdir/$pkgname-$pkgver
+  sed -i 's|-Wl,--rpath,~A|-Wl,--rpath,/usr/lib/ecl|' src/configure 
+  ./configure \
+    --build=$CHOST \
+    --prefix=/usr \
+    --with-tcp \
+    --with-clos-streams \
+    --enable-shared \
+    --enable-boehm=included \
+    --with-system-gmp \
+    --without-x \
+    --enable-threads \
+    --without-clx
+
+  make
+}
+
+package() {
+  make -C $srcdir/$pkgname-$pkgver DESTDIR=$pkgdir install
+}

@@ -1,0 +1,15 @@
+# $Id: PKGBUILD 100464 2013-11-04 15:32:39Z mtorromeo $
+# Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
+
+pkgname=lessc
+pkgver=1.5.0
+pkgrel=1
+pkgdesc="A standalone compiler for the LESS CSS language."
+arch=('any')
+url="http://lesscss.org/"
+license=('Apache')
+depends=('nodejs')
+
+package() {
+    npm install -g --user root --prefix "$pkgdir/usr" less@$pkgver
+}

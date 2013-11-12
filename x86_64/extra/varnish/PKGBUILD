@@ -1,0 +1,44 @@
+# $Id: PKGBUILD 198475 2013-10-30 15:05:30Z allan $
+# Maintainer: Dave Reisner <dreisner@archlinux.org>
+# Contributor: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+# Contributor: Douglas Soares de Andrade
+# Contributor: Roberto Alsina <ralsina@kde.org>
+
+pkgname=varnish
+pkgver=3.0.4
+pkgrel=2
+pkgdesc="High-performance HTTP accelerator"
+arch=('i686' 'x86_64')
+url="http://www.varnish-cache.org/"
+license=('BSD')
+depends=('gcc' 'libedit' 'pcre')
+backup=('etc/varnish/default.vcl')
+install=$pkgname.install
+source=("http://repo.varnish-cache.org/source/$pkgname-$pkgver.tar.gz"
+        varnish-vcl-reload
+        varnish.service)
+md5sums=('a130ce9c3504b9603a46542635e18701'
+         '03196dee7fc68e75069393d52c370762'
+         'a59b17d8e3066abcf3dd7755a2212dd4')
+
+build() {
+  cd "$pkgname-$pkgver"
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var/lib \
+    --sbindir=/usr/bin
+
+  make
+}
+
+package() {
+  make -C "$pkgname-$pkgver" DESTDIR="$pkgdir" install
+
+  install -m755 "$srcdir/varnish-vcl-reload" "$pkgdir/usr/bin"
+  install -Dm644 "$srcdir/$pkgname.service" "$pkgdir/usr/lib/systemd/system/$pkgname.service"
+
+  # license
+  install -Dm644 "$pkgname-$pkgver/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

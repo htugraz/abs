@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 189995 2013-07-12 18:31:12Z eric $
+# Maintainer: damir <damir@archlinux.org>
+# Maintainer/Contributor: Francois Charette <firmicus@gmx.net>
+
+pkgname=perl-xml-twig
+pkgver=3.44
+pkgrel=1
+pkgdesc="A module for easy processing of XML"
+arch=('any')
+url="http://search.cpan.org/dist/XML-Twig/"
+license=('GPL' 'PerlArtistic')
+depends=('perl-xml-parser' 'perl-text-iconv' 'perl')
+checkdepends=('perl-libwww' 'perl-test-pod' 'perl-xml-simple' 'perl-html-tree')
+options=('!emptydirs')
+source=("http://www.cpan.org/authors/id/M/MI/MIROD/XML-Twig-${pkgver}.tar.gz")
+sha1sums=('76760e94f799bbeed40de17e72420f8837dc4c73')
+
+build() {
+  cd XML-Twig-${pkgver}
+  perl Makefile.PL -y INSTALLDIRS=vendor
+  make
+}
+
+check() {
+  cd XML-Twig-${pkgver}
+#  make test
+}
+
+package() {
+  cd XML-Twig-${pkgver}
+  make DESTDIR="${pkgdir}" install
+}

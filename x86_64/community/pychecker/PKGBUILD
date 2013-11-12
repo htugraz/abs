@@ -1,0 +1,29 @@
+# $Id: PKGBUILD 94448 2013-07-25 10:10:35Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+#Maintainer: Ben Mazer <blm@groknil.org>
+
+pkgname=pychecker
+pkgver=0.8.19
+pkgrel=3
+pkgdesc="Python code checker"
+arch=('any')
+url="http://pychecker.sourceforge.net"
+license=('custom')
+depends=('python2')
+source=(http://downloads.sourceforge.net/sourceforge/$pkgname/$pkgname-$pkgver.tar.gz)
+md5sums=('c37182863dfb09209d6ba4f38fce9d2b')
+
+prepare() {
+  cd $srcdir/$pkgname-$pkgver
+  chmod 0644 ChangeLog
+}
+
+package() {
+  cd $srcdir/$pkgname-$pkgver
+  python2 setup.py install --root=$pkgdir
+  sed -i "s:$pkgdir::" $pkgdir/usr/bin/pychecker
+  install -D -m 644 COPYRIGHT $pkgdir/usr/share/licenses/$pkgname/COPYRIGHT
+  sed -i -e "s|#![ ]*/usr/bin/python$|#!/usr/bin/python2|" \
+         -e "s|#![ ]*/usr/bin/env python$|#!/usr/bin/env python2|" \
+         $(find $pkgdir -name '*.py')
+}

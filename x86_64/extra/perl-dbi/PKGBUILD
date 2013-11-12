@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 197736 2013-10-29 01:54:29Z eric $
+# Maintainer:
+
+pkgname=perl-dbi
+pkgver=1.630
+pkgrel=1
+pkgdesc="Database independent interface for Perl"
+arch=('i686' 'x86_64')
+url="http://search.cpan.org/dist/DBI/"
+license=('GPL' 'PerlArtistic')
+depends=('perl')
+options=('!emptydirs')
+source=(http://www.cpan.org/authors/id/T/TI/TIMB/DBI-${pkgver}.tar.gz)
+md5sums=('306020fe7b54a53773f54ad581af8c54')
+
+build() {
+  cd DBI-${pkgver}
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+check() {
+  cd DBI-${pkgver}
+  make test
+}
+
+package() {
+  cd DBI-${pkgver}
+  make DESTDIR="${pkgdir}" install
+}

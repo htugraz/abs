@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 86708 2013-03-21 10:54:08Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: François Charette <firmicus ατ gmx δοτ net>
+
+pkgname=perl-spiffy
+pkgver=0.31
+pkgrel=1
+pkgdesc="Spiffy Perl Interface Framework For You"
+arch=('any')
+url="http://search.cpan.org/dist/Spiffy"
+license=('GPL' 'PerlArtistic')
+depends=('perl>=5.10.0')
+options=('!emptydirs')
+source=(http://www.cpan.org/authors/id/I/IN/INGY/Spiffy-$pkgver.tar.gz)
+md5sums=('53cfd4e915715e6dac912469af3d71a0')
+
+build() {
+  cd  $srcdir/Spiffy-$pkgver
+  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+package() {
+  cd  $srcdir/Spiffy-$pkgver
+  make install DESTDIR=$pkgdir
+  find $pkgdir -name '.packlist' -delete
+  find $pkgdir -name '*.pod' -delete
+}

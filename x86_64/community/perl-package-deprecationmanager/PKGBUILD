@@ -1,0 +1,40 @@
+# $Id: PKGBUILD 94477 2013-07-25 17:54:42Z jsteel $
+# Maintainer: Jonathan Steel <jsteel@aur.archlinux.org>
+# Contributor: Justin Davis (juster) <jrcd83@gmail.com>
+
+pkgname=perl-package-deprecationmanager
+pkgver=0.13
+pkgrel=2
+pkgdesc="Manage deprecation warnings for your distribution"
+arch=('any')
+license=('Artistic2.0')
+options=('!emptydirs')
+depends=('perl-list-moreutils' 'perl-params-util' 'perl-sub-install')
+checkdepends=('perl-test-fatal' 'perl-test-requires')
+url="https://metacpan.org/release/Package-DeprecationManager"
+source=(http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/Package-DeprecationManager-$pkgver.tar.gz)
+md5sums=('f81ae3c0f9bcac048eb4bff348b79f67')
+
+build()
+(
+  cd "$srcdir/Package-DeprecationManager-$pkgver"
+  export PERL_MM_USE_DEFAULT=1 PERL_AUTOINSTALL=--skipdeps
+  unset PERL5LIB PERL_MM_OPT
+  /usr/bin/perl Makefile.PL
+  make
+)
+
+check()
+(
+  cd "$srcdir/Package-DeprecationManager-$pkgver"
+  export PERL_MM_USE_DEFAULT=1
+  unset PERL5LIB
+  make test
+)
+
+package()
+(
+  cd "$srcdir/Package-DeprecationManager-$pkgver"
+  make install INSTALLDIRS=vendor DESTDIR="$pkgdir"
+  find "$pkgdir" -name .packlist -o -name perllocal.pod -delete
+)

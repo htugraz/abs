@@ -1,0 +1,36 @@
+# $Id: PKGBUILD 98026 2013-10-04 08:55:46Z aginiewicz $
+# Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
+# Contributor: Julien MISCHKOWITZ <wain@archlinux.fr>
+# Contributor: Panagiotis Papadopoulos pano_90 (AT) gmx (DOT) net
+
+pkgname=languagetool
+pkgver=2.3
+pkgrel=1
+pkgdesc="An open source language checker"
+arch=('any')
+url="http://www.languagetool.org" 
+license=("LGPL")
+depends=('java-runtime-headless>=7')
+makedepends=('unzip')
+optdepends=('java-runtime: needed for the GUI version'
+            'libxtst: needed for the GUI version'
+            'gtk2: needed for the GUI version')
+install=$pkgname.install
+source=($pkgname-$pkgver.zip::"http://www.languagetool.org/download/LanguageTool-stable.zip?$pkgver" "$pkgname.sh")
+noextract=($pkgname-$pkgver.zip)
+md5sums=('9add48ed802d46d6ad358a2ebfbdefcf'
+         '9d3c008ad6c0e150a29ea0be8e32a7fe')
+
+package() {
+  cd "$srcdir"
+  install -d "$pkgdir"/usr/{bin,share/java/$pkgname}
+  unzip -q $pkgname-$pkgver.zip -d "$pkgdir"/usr/share
+  cd "$pkgdir"/usr/share/
+  mv LanguageTool-$pkgver $pkgname
+  cd $pkgname
+  mv *.jar "$pkgdir"/usr/share/java/$pkgname
+  mv libs/*.jar "$pkgdir"/usr/share/java/$pkgname
+  rm -rf libs
+  install -m755 "$srcdir"/$pkgname.sh "$pkgdir"/usr/bin/$pkgname
+}
+

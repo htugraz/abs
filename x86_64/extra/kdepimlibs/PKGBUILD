@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 198820 2013-11-05 19:40:54Z andrea $
+# Maintainer: Andrea Scarpino <andrea@archlinux.org>
+# Contributor: Pierre Schmitz <pierre@archlinux.de>
+
+pkgname=kdepimlibs
+pkgver=4.11.3
+pkgrel=1
+pkgdesc="KDE PIM Libraries"
+arch=('i686' 'x86_64')
+url='https://projects.kde.org/projects/kde/kdepimlibs'
+license=('GPL' 'LGPL')
+depends=('nepomuk-core' 'gpgme' 'akonadi' 'libical' 'prison' 'qjson')
+makedepends=('cmake' 'automoc4' 'boost' 'cyrus-sasl')
+install='kdepimlibs.install'
+source=("http://download.kde.org/stable/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
+sha1sums=('ca131d0e1d24dd2c03e40de8b7d482abe4eba755')
+
+build() {
+  mkdir build
+  cd build
+  cmake ../${pkgname}-${pkgver} \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DKDE4_BUILD_TESTS=OFF \
+    -DCMAKE_SKIP_RPATH=ON \
+    -DCMAKE_INSTALL_PREFIX=/usr
+  make
+}
+
+package() {
+  cd build
+  make DESTDIR="${pkgdir}" install
+}

@@ -1,0 +1,43 @@
+# $Id: PKGBUILD 193564 2013-08-24 05:33:50Z bisson $
+# Maintainer: Gaetan Bisson <bisson@archlinux.org>
+# Contributor: Andreas Radke <andyrtr@archlinux.org>
+# Contributor: damir <damir@archlinux.org>
+
+pkgname=gcin
+pkgver=2.8.1
+pkgrel=1
+pkgdesc='Input method server supporting various input methods'
+url='http://hyperrate.com/dir.php?eid=67'
+license=('LGPL')
+arch=('i686' 'x86_64')
+depends=('gtk2' 'libxtst')
+makedepends=('qt4' 'gtk3' 'anthy' 'libchewing')
+optdepends=('qt4: support for qt4 input method'
+            'gtk3: support for gtk3 input method'
+            'anthy: support for anthy input method'
+            'libchewing: support for chewing input method')
+source=("http://www.csie.nctu.edu.tw/~cp76/gcin/download/${pkgname}-${pkgver}.tar.xz")
+sha1sums=('fc7323f1e0558675a94e91de2166c484c72d464d')
+
+install=install
+
+prepare() {
+	cd "${srcdir}/${pkgname}-${pkgver}"
+	sed 's/lib64/lib/g' -i configure
+	sed '/include suffixes-rule/a \
+		CFLAGS+='"${CFLAGS}"' \
+		LDFLAGS+='"${LDFLAGS}"' \
+		OPTFLAGS=' \
+		-i Makefile
+}
+
+build() {
+	cd "${srcdir}/${pkgname}-${pkgver}"
+	./configure --prefix=/usr --use_i18n=Y
+	make
+}
+
+package() {
+	cd "${srcdir}/${pkgname}-${pkgver}"
+	make DESTDIR="${pkgdir}" install
+}

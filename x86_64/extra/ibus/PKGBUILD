@@ -1,0 +1,35 @@
+# $Id: PKGBUILD 198107 2013-10-30 12:49:58Z allan $
+# Maintainer:
+
+pkgname=ibus
+pkgver=1.5.4
+pkgrel=1
+pkgdesc="Next Generation Input Bus for Linux"
+arch=('i686' 'x86_64')
+url="http://ibus.googlecode.com"
+license=('LGPL')
+depends=('hicolor-icon-theme' 'gtk2' 'gtk3' 'python2-gobject' 'libnotify')
+makedepends=('gobject-introspection' 'vala' 'dconf' 'gconf' 'iso-codes' 'intltool')
+install=ibus.install
+source=(http://ibus.googlecode.com/files/${pkgname}-${pkgver}.tar.gz)
+sha1sums=('2ce4b4d728a4685fd77360d0097b0e568f920c7b')
+
+build() {
+  cd ${pkgname}-${pkgver}
+  export PYTHON=python2
+  ./configure \
+    --prefix=/usr \
+    --libexecdir=/usr/lib/ibus \
+    --sysconfdir=/etc \
+    --disable-gconf \
+    --enable-dconf \
+    --disable-memconf \
+    --enable-ui \
+    --enable-python-library
+  make
+}
+
+package() {
+  cd ${pkgname}-${pkgver}
+  make DESTDIR="${pkgdir}" install
+}

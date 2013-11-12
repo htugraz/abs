@@ -1,0 +1,29 @@
+# Maintainer: Jan de Groot <jgc@archlinux.org>
+# Contributor: André Klitzing <aklitzing@online.de>
+
+pkgname=exempi
+pkgver=2.2.1
+pkgrel=2
+pkgdesc="A library to parse XMP metadata"
+arch=(i686 x86_64)
+url="http://libopenraw.freedesktop.org/wiki/Exempi"
+license=('custom:BSD')
+depends=('gcc-libs' 'expat' 'zlib')
+makedepends=('boost')
+source=(http://libopenraw.freedesktop.org/download/$pkgname-$pkgver.tar.bz2{,.asc})
+md5sums=('0f8e5832299224684a65847eedf8d1e4'
+         'SKIP')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr --disable-static
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+  install -d "$pkgdir/usr/share/licenses/$pkgname"
+  install -m644 "$srcdir/$pkgname-$pkgver/COPYING" \
+  	"$pkgdir/usr/share/licenses/$pkgname"
+}

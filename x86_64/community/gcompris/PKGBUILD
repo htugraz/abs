@@ -1,0 +1,39 @@
+# $Id: PKGBUILD 100632 2013-11-06 16:42:49Z foutrelis $
+# Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
+# Contributor: Daniel Isenmann <daniel.isenmann [at] gmx.de>
+
+pkgname=gcompris
+pkgver=13.11
+pkgrel=1
+pkgdesc="Educational software suite comprising of numerous activities for children aged 2 to 10"
+arch=('i686' 'x86_64')
+url="http://gcompris.net/"
+license=('GPL3')
+depends=('pygtk' 'librsvg' 'python2-pysqlite' 'gstreamer0.10-base-plugins')
+optdepends=('gnucap: for computer simulation within the electricity activity'
+            'tuxpaint: for the painting activity')
+makedepends=('texinfo' 'texi2html' 'intltool' 'gettext')
+source=(http://downloads.sourceforge.net/project/$pkgname/$pkgver/$pkgname-$pkgver.tar.bz2)
+sha256sums=('418dad2c8f0fc90e16e97ab67b6700e3af5f33ae05d83f28f3b1117183f88c57')
+
+prepare() {
+  cd $pkgname-$pkgver
+
+  sed -i 's/"$GNUCHESS"/"gcompris-gnuchess"/' configure
+}
+
+build() {
+  cd $pkgname-$pkgver
+
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  depends+=("gcompris-data=$pkgver-$pkgrel")
+
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install-exec
+}
+
+# vim:set ts=2 sw=2 et:

@@ -1,0 +1,42 @@
+# $Id: PKGBUILD 98577 2013-10-14 07:45:54Z alucryd $
+# Maintainer: Maxime Gauduin <alucryd@gmail.com>
+# Contributor: Adrian Sampson <adrian@radbox.org>
+
+pkgname=beets
+pkgver=1.3.1
+pkgrel=1
+pkgdesc="Flexible music library manager and tagger"
+arch=('any')
+url="http://beets.radbox.org/"
+license=('MIT')
+depends=('mutagen' 'python2-munkres' 'python2-musicbrainzngs' 'python2-setuptools' 'python2-unidecode' 'python2-yaml')
+optdepends=('gstreamer0.10-python: BPD audio player plugin'
+            'python2-flask: Web interface'
+            'python2-pyacoustid: Acoustic fingerprinting'
+            'python2-pylast: Lastgenre plugin')
+source=("http://pypi.python.org/packages/source/b/${pkgname}/${pkgname}-${pkgver}.tar.gz")
+sha256sums=('62ff54ad0f5cb224df2a9bed84d1281f27dd956cafe916b09318776a4b3ca308')
+
+build() {
+  cd ${pkgname}-${pkgver}
+
+  python2 setup.py build
+}
+
+package() {
+  cd ${pkgname}-${pkgver}
+
+  python2 setup.py install --root="${pkgdir}" --optimize='1'
+
+# Manpages
+  install -dm 755 "${pkgdir}"/usr/share/man/man{1,5}
+  install -m 644 man/beet.1 "${pkgdir}"/usr/share/man/man1/beet.1
+  install -m 644 man/beetsconfig.5 "${pkgdir}"/usr/share/man/man5/beetsconfig.5
+  gzip -9 "${pkgdir}"/usr/share/man/man{1/beet.1,5/beetsconfig.5}
+
+# License
+  install -dm 755 "${pkgdir}"/usr/share/licenses/${pkgname}
+  install -m 644 {,"${pkgdir}"/usr/share/licenses/${pkgname}/}LICENSE
+}
+
+# vim: ts=2 sw=2 et:

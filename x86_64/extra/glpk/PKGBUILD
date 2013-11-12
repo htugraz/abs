@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 197996 2013-10-30 12:09:46Z allan $
+# Maintainer: Ronald van Haren <ronald.archlinux.org>
+# Contributor: bzklrm <bzklrm@gmail.com>
+# Additional contributors Senjin, Xavier, dundee
+
+pkgname=glpk
+pkgver=4.52
+pkgrel=1
+pkgdesc="GNU Linear Programming Kit : solve LP, MIP and other problems."
+arch=('i686' 'x86_64')
+url="http://www.gnu.org/software/glpk/glpk.html"
+license=('GPL')
+depends=('glibc')
+source=(http://ftp.gnu.org/gnu/glpk/${pkgname}-${pkgver}.tar.gz{,.sig})
+sha1sums=('44b30b0de777a0a07e00615ac6791af180ff4d2c'
+          'SKIP')
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+
+  ./configure --prefix=/usr
+
+  if [ "$CARCH" == "x86_64" ]; then
+    make CFLAGS="$CFLAGS -fPIC"  
+  else
+    make
+  fi
+}
+
+package(){
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make DESTDIR="${pkgdir}" install
+  install -Dm644 doc/glpk.pdf "${pkgdir}/usr/share/doc/glpk/glpk.pdf"
+  install -Dm644 doc/gmpl.pdf "${pkgdir}/usr/share/doc/glpk/gmpl.pdf"
+}

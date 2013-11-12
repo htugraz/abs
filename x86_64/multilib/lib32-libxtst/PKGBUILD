@@ -1,0 +1,38 @@
+# $Id: PKGBUILD 92105 2013-05-31 14:53:05Z lcarlier $
+# Contributor: Jan de Groot <jgc@archlinux.org>
+
+_pkgbasename=libxtst
+pkgname=lib32-$_pkgbasename
+pkgver=1.2.2
+pkgrel=1
+pkgdesc="X11 Testing -- Resource extension library (32-bit)"
+arch=(x86_64)
+url="http://xorg.freedesktop.org/"
+license=('custom')
+depends=('lib32-libxext' 'lib32-libxi' 'lib32-libxfixes' $_pkgbasename)
+makedepends=('gcc-multilib' 'xorg-util-macros')
+options=('!libtool')
+source=(${url}/releases/individual/lib/libXtst-${pkgver}.tar.bz2)
+sha256sums=('ef0a7ffd577e5f1a25b1663b375679529663a1880151beaa73e9186c8309f6d9')
+
+build() {
+  cd "${srcdir}/libXtst-${pkgver}"
+
+  export CC="gcc -m32"
+  export PKG_CONFIG_PATH="/usr/lib32/pkgconfig"
+
+  ./configure --prefix=/usr --disable-static \
+    --libdir=/usr/lib32
+  make
+}
+
+package() {
+  cd "${srcdir}/libXtst-${pkgver}"
+
+  make DESTDIR="${pkgdir}" install
+
+  rm -rf "${pkgdir}"/usr/{include,share}
+
+  mkdir -p "$pkgdir/usr/share/licenses"
+  ln -s $_pkgbasename "$pkgdir/usr/share/licenses/$pkgname"
+}

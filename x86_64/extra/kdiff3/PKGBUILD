@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 168298 2012-10-08 05:04:03Z eric $
+# Maintainer: Eric Bélanger <eric@archlinux.org>
+
+pkgname=kdiff3
+pkgver=0.9.97
+pkgrel=2
+pkgdesc="A KDE file comparator/merge tool"
+arch=('i686' 'x86_64')
+url="http://kdiff3.sourceforge.net/"
+license=('GPL')
+depends=('kdebase-runtime')
+makedepends=('cmake' 'automoc4' 'kdebase-lib' 'docbook-xml')
+optdepends=('kdebase-lib: for the plugin')
+install=kdiff3.install
+source=(http://downloads.sourceforge.net/sourceforge/kdiff3/${pkgname}-${pkgver}.tar.gz
+        kdiff3-relative-path.patch)
+sha1sums=('1f2828c4b287b905bac64992b46a3e9231319547'
+          'b5359dcec2ebb8221a232ecc2ea9982b290172e5')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  patch -p2 -i "${srcdir}/kdiff3-relative-path.patch"
+  mkdir release
+  cd release
+  cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}/release"
+  make DESTDIR="${pkgdir}" install
+}

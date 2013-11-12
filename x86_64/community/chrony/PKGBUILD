@@ -1,0 +1,48 @@
+# $Id: PKGBUILD 99445 2013-10-29 00:06:24Z thestinger $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Daniel Micay <danielmicay@gmail.com>
+# Contributor: Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
+# Contributor: Patrick Leslie Polzer <leslie.polzer@gmx.net>
+# Contributor: cdhotfire <cdhotfire@gmail.com>
+# Contributor: Shinlun Hsieh <yngwiexx@yahoo.com.tw>
+# Contributor: Elisamuel Resto <ryuji@simplysam.us>
+
+pkgname=chrony
+pkgver=1.29
+pkgrel=2
+pkgdesc='Lightweight NTP client and server'
+arch=('i686' 'x86_64')
+url="http://chrony.tuxfamily.org/"
+options=(strip emptydirs)
+license=('GPL')
+depends=('readline' 'libcap')
+backup=('etc/chrony.conf')
+source=(http://download.tuxfamily.org/chrony/${pkgname}-${pkgver}.tar.gz
+        service)
+sha256sums=('c685f072ba0663ab026a7f56870ab2c246bd97ca4629dd2e1899617bd16ad39b'
+            'bef4305fa7e5828e1a1fd43aa8e631f22f21902f6cdc2d3b5b41a57bd9a175dc')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+
+  install -Dm0644 "$srcdir/$pkgname-$pkgver/examples/chrony.conf.example" "$pkgdir/etc/chrony.conf"
+
+  echo -e "\n# Enable kernel RTC sync\nrtcsync" >> "$pkgdir/etc/chrony.conf"
+
+  sed -i '/^! rtconutc$/ s/^! //' "$pkgdir/etc/chrony.conf"
+
+  mv "$pkgdir/usr/sbin/chronyd" "$pkgdir/usr/bin"
+  rmdir "$pkgdir/usr/sbin"
+
+  install -Dm644 "$srcdir/service" "$pkgdir/usr/lib/systemd/system/chrony.service"
+
+  install -dm755 "$pkgdir/usr/lib/systemd/ntp-units.d"
+  echo "$pkgname.service" > "$pkgdir/usr/lib/systemd/ntp-units.d/$pkgname.list"
+}

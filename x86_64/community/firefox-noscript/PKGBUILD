@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 100784 2013-11-10 20:06:27Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+
+pkgname=firefox-noscript
+pkgver=2.6.8.5
+pkgrel=1
+pkgdesc="plugin for firefox which disables script"
+arch=('any')
+url="http://noscript.net/"
+license=('GPL2')
+depends=()
+makedepends=('unzip')
+source=(https://secure.informaction.com/download/releases/noscript-$pkgver.xpi)
+md5sums=('cef9d5060b1c1931028e802a251a820d')
+
+package() {
+#  _ffver=`pacman -Q firefox | cut -f2 -d\ | cut -f1 -d-`
+#  depends=("firefox>=${_ffver}" "firefox<=${_ffver/0/99}")
+  depends=("firefox")
+
+  cd $srcdir
+  local emid=$(sed -n -e '/<\?em:id>\?/!d; s/.*\([\"{].*[}\"]\).*/\1/; s/\"//g; p; q' install.rdf)
+  local dstdir=$pkgdir/usr/lib/firefox/browser/extensions/${emid}
+  install -d $dstdir
+#  sed -i 's#<em:maxVersion>.*</em:maxVersion>#<em:maxVersion>7.*</em:maxVersion>#' install.rdf
+  cp -R * $dstdir
+  rm $dstdir/noscript-$pkgver.xpi
+}

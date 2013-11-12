@@ -1,0 +1,33 @@
+# $Id: PKGBUILD 198092 2013-10-30 12:45:19Z allan $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: Thijs Vermeir <thijsvermeir@gmail.com>
+# Contributor: Denis Zawada <deno@rootnode.net>
+
+pkgname=gupnp-av
+pkgver=0.12.3
+pkgrel=1
+pkgdesc="Library to ease handling and implementation of UPnP A/V profiles"
+arch=(i686 x86_64)
+url="http://gupnp.org/"
+license=(LGPL)
+depends=(gupnp)
+makedepends=(gobject-introspection gtk-doc vala)
+source=(http://ftp.gnome.org/pub/gnome/sources/${pkgname}/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz)
+sha256sums=('fa37325ee8aa22909131eedff871b61ccd183b66c7770c147a0d4c34b83bbf02')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+              --disable-static
+  make
+}
+
+check() {
+  cd $pkgname-$pkgver
+  make check
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

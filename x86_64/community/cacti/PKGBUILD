@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 97068 2013-09-12 10:10:36Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: tuxbubling <tuxbubling@jabber.fr>
+
+pkgname=cacti
+pkgver=0.8.8_b
+pkgrel=3
+pkgdesc="complete network graphing solution designed to harness the power of RRDTool's data storage and graphing functionality"
+arch=(any)
+url="http://www.cacti.net"
+license=('GPL')
+depends=('rrdtool' 'mariadb' 'php' 'php-gd' 'net-snmp' 'xorg-fonts-100dpi')
+backup=('etc/webapps/cacti/.htaccess')
+install=cacti.install
+source=("http://www.cacti.net/downloads/$pkgname-${pkgver/_/}.tar.gz"
+	"FS#36838.patch::https://bugs.archlinux.org/task/36838?getfile=10962")
+md5sums=('acb40deae073ca22e5c01a8e3ba389fb'
+         '23b87b88285efb9c9e16472879fa2a3b')
+
+prepare() {
+  cd $srcdir/$pkgname-${pkgver/_/}
+  patch -p0 <"$srcdir/FS#36838.patch"
+}
+
+package() {
+  mkdir -p $pkgdir/usr/share/webapps/cacti $pkgdir/etc/webapps/cacti
+  mv $srcdir/$pkgname-${pkgver/_/}/* $pkgdir/usr/share/webapps/cacti
+  echo "deny from all" >> $pkgdir/etc/webapps/cacti/.htaccess
+  mv $pkgdir/usr/share/webapps/cacti/include/config.php $pkgdir/etc/webapps/cacti
+  ln -s /etc/webapps/cacti/.htaccess $pkgdir/usr/share/webapps/cacti/.htaccess
+  ln -s /etc/webapps/cacti/config.php $pkgdir/usr/share/webapps/cacti/include/config.php
+}

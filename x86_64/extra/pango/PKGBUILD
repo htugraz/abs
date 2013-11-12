@@ -1,0 +1,29 @@
+# $Id: PKGBUILD 199375 2013-11-11 18:06:12Z heftig $ 
+# Maintainer: Jan de Groot <jgc@archlinux.org>
+
+pkgname=pango
+pkgver=1.36.1
+pkgrel=1
+pkgdesc="A library for layout and rendering of text"
+arch=('i686' 'x86_64')
+license=('LGPL')
+depends=('libthai' 'cairo' 'libxft' 'harfbuzz')
+makedepends=('harfbuzz' 'fontconfig' 'cairo' 'libxft' 'libthai' 'gobject-introspection')
+install=pango.install
+source=(http://download.gnome.org/sources/${pkgname}/${pkgver:0:4}/${pkgname}-${pkgver}.tar.xz)
+url="http://www.pango.org/"
+sha256sums=('42e4b51cdc99e6878a9ea2a5ef2b31b79c1033f8518726df738a3c54c90e59f8')
+
+build() {
+  cd ${pkgname}-${pkgver}
+
+  ./configure --prefix=/usr --sysconfdir=/etc \
+      --localstatedir=/var --with-included-modules=basic-fc
+  make
+}
+
+package() {
+  cd ${pkgname}-${pkgver}
+  make -j1 DESTDIR="${pkgdir}" install
+  install -m755 -d "${pkgdir}/etc/pango"
+}

@@ -1,0 +1,39 @@
+# Contributor: Geoffroy Carrier <geoffroy.carrier@koon.fr>
+# Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
+# Maintainer: schuay <jakob.gruber@gmail.com>
+
+pkgname=puzzles
+pkgver=9893
+pkgrel=1
+pkgdesc="Simon Tatham's Portable Puzzle Collection"
+arch=('i686' 'x86_64')
+url="http://www.chiark.greenend.org.uk/~sgtatham/puzzles/"
+license=('MIT')
+makedepends=('pkgconfig' 'subversion')
+depends=('gtk2')
+source=("svn://svn.tartarus.org/sgt/puzzles#revision=$pkgver")
+md5sums=("SKIP")
+
+build() {
+    cd ${srcdir}/${pkgname}
+
+    ./mkfiles.pl
+    
+    sed -i 's|\$(gamesdir)|\$(bindir)|' Makefile.gtk
+
+    make -f Makefile.gtk prefix=/usr
+}
+
+package() {
+    cd ${srcdir}/${pkgname}
+
+    install -d ${pkgdir}/usr/{bin,share/licenses/${pkgname}}
+    install -Dm644 LICENCE ${pkgdir}/usr/share/licenses/${pkgname}/
+
+    make -f Makefile.gtk prefix=/usr DESTDIR=${pkgdir} install
+
+    #fix FS#14600
+    mv ${pkgdir}/usr/bin/net ${pkgdir}/usr/bin/puzzles-net
+    mv ${pkgdir}/usr/bin/cube ${pkgdir}/usr/bin/puzzles-cube
+    mv ${pkgdir}/usr/bin/blackbox ${pkgdir}/usr/bin/puzzles-blackbox
+}

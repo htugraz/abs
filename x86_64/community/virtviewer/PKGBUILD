@@ -1,0 +1,26 @@
+# $Id: PKGBUILD 95330 2013-08-09 16:10:52Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Jonathan Wiersma <archaur at jonw dot org>
+
+pkgname=virtviewer
+pkgver=0.5.7
+pkgrel=1
+pkgdesc="A lightweight interface for interacting with the graphical display of virtualized guest OS."
+depends=('gtk-vnc' 'libglade>=2.6.0' 'libvirt' 'spice-gtk3')
+makedepends=('intltool')
+url="http://virt-manager.et.redhat.com"
+arch=('i686' 'x86_64')
+license=('GPL')
+source=("http://virt-manager.et.redhat.com/download/sources/virt-viewer/virt-viewer-$pkgver.tar.gz")
+md5sums=('c0d6d2de66e61df6c2ad339625c58a2a')
+
+build() {
+  cd $srcdir/virt-viewer-$pkgver
+  ./configure --prefix=/usr --with-gtk=3.0
+  make
+}
+
+package() {
+  cd $srcdir/virt-viewer-$pkgver
+  make DESTDIR=$pkgdir install
+}

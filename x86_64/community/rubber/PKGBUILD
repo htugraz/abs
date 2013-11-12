@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 69190 2012-04-10 02:21:50Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Baptiste Grenier <baptiste@bapt.name>
+
+pkgname=rubber
+pkgver=1.1
+pkgrel=8
+pkgdesc="A wrapper for LaTeX and friends"
+arch=('any')
+url="http://iml.univ-mrs.fr/~beffara/soft/rubber/"
+license=('GPL')
+depends=('python2')
+makedepends=('texinfo')
+source=("http://launchpad.net/rubber/trunk/$pkgver/+download/rubber-$pkgver.tar.gz"
+	"rubber-1.1-spaces.patch::http://live.gnome.org/Gedit/LaTeXPlugin/FAQ?action=AttachFile&do=get&target=rubber-1.1-spaces.patch"
+	"md5tohashlib.patch")
+md5sums=('8087cdb498f51f91c2427c7d0b253189'
+         '743f644122ba27c783748ac33510e4e8'
+         '5478bafce24f09501d8c8d6075492a77')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  patch -N -i "${srcdir}/rubber-1.1-spaces.patch" "${srcdir}/${pkgname}-${pkgver}/src/rules/latex/__init__.py"
+  patch -N -i "${srcdir}/md5tohashlib.patch" "${srcdir}/${pkgname}-${pkgver}/src/util.py"
+  ./configure --prefix=/usr --mandir="${pkgdir}/usr/share/man" --infodir="${pkgdir}/usr/share/info"
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make prefix="${pkgdir}/usr" install
+  mkdir -p $pkgdir/usr/share/bash-completion/completions/
+  echo "complete -f -X '!*.tex' rubber" >$pkgdir/usr/share/bash-completion/completions/rubber
+}

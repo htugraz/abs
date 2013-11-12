@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 59826 2011-11-30 20:47:00Z giovanni $
+# Maintainer: Giovanni Scafora <giovanni@archlinux.org>
+# Contributor: Matthew Sharpe <matt.sharpe@gmail.com>
+
+pkgname=nvdock
+pkgver=1.02
+pkgrel=4
+pkgdesc="A tray icon for easy launching of the NVIDIA control panel"
+arch=('i686' 'x86_64')
+url="http://www.opsat.net/user/bob/projects/nvdock"
+license=('BSD')
+depends=('gtk2')
+makedepends=('glib')
+source=("http://bobmajdakjr.googlecode.com/files/${pkgname}-${pkgver}.tar.bz2")
+md5sums=('e18c4eeff936dc3b671fd8b5a9bb5145')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+
+  install -D -m755 build/nvdock "${pkgdir}/usr/bin/nvdock"
+  install -D -m644 data/nvdock.png "${pkgdir}/usr/share/pixmaps/nvdock.png"
+  install -D -m644 data/nvdock.desktop "${pkgdir}/usr/share/applications/nvdock.desktop"
+
+  # Install license
+  install -D COPYING "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}

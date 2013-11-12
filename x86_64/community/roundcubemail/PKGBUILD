@@ -1,0 +1,40 @@
+# $Id: PKGBUILD 99015 2013-10-22 09:14:23Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+
+pkgname=roundcubemail
+pkgver=0.9.5
+pkgrel=1
+pkgdesc="A PHP web-based mail client"
+arch=('any')
+url="http://www.roundcube.net"
+license=('GPL')
+depends=('php')
+optdepends=('python2')
+backup=('etc/webapps/roundcubemail/.htaccess'
+	'etc/webapps/roundcubemail/apache.conf')
+install=roundcubemail.install
+options=('!strip')
+source=(http://downloads.sourceforge.net/sourceforge/roundcubemail/roundcubemail-${pkgver/rc/-rc}.tar.gz
+	apache.conf)
+md5sums=('757f6ab3306d4abf8da6664ae65138d7'
+         '88d8ef3ae01ec84cc09b35bcb100dccb')
+
+package() {
+  mkdir -p ${pkgdir}/etc/webapps/roundcubemail
+  mkdir -p ${pkgdir}/usr/share/webapps
+  mkdir -p ${pkgdir}/var/log
+  cd ${pkgdir}/usr/share/webapps
+  cp -ra ${srcdir}/roundcubemail-${pkgver/rc/-rc} roundcubemail
+  cd roundcubemail
+
+  mv .htaccess $pkgdir/etc/webapps/roundcubemail/
+  ln -s /etc/webapps/roundcubemail/.htaccess .htaccess
+
+  mv config $pkgdir/etc/webapps/roundcubemail/
+  ln -s /etc/webapps/roundcubemail/config config
+
+  mv logs $pkgdir/var/log/roundcubemail
+  ln -s /var/log/roundcubemail logs
+
+  install -Dm0644 $srcdir/apache.conf $pkgdir/etc/webapps/roundcubemail/apache.conf
+}

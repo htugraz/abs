@@ -1,0 +1,22 @@
+# $Id: PKGBUILD 95802 2013-08-16 23:06:28Z foutrelis $
+# Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
+# Contributor: Diogo Ferreira <diogo@underdev.org>
+
+pkgname=cloc
+pkgver=1.60
+pkgrel=1
+pkgdesc="Count Lines of Code"
+arch=('any')
+url="http://cloc.sourceforge.net/"
+license=('GPL')
+depends=('perl')
+source=(http://downloads.sourceforge.net/project/$pkgname/$pkgname/v$pkgver/$pkgname-$pkgver.pl)
+sha256sums=('4aa870bef104fd2b8f03c667ef8be2cd671cdf59f46c72046c43ed14e222a05c')
+
+package() {
+  cd "$srcdir"
+
+  install -D $pkgname-$pkgver.pl "$pkgdir/usr/bin/$pkgname"
+}
+
+# vim:set ts=2 sw=2 et:

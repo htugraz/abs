@@ -1,0 +1,54 @@
+# $Id: PKGBUILD 198068 2013-10-30 12:36:23Z allan $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+
+pkgbase=gstreamer-vaapi
+pkgname=(gst-vaapi gstreamer0.10-vaapi)
+pkgver=0.5.6
+pkgrel=1
+pkgdesc="GStreamer Multimedia Framework VA Plugins"
+arch=(i686 x86_64)
+license=(LGPL)
+url="http://www.freedesktop.org/software/vaapi/releases/gstreamer-vaapi/"
+makedepends=(gst-plugins-base gst-plugins-bad gstreamer0.10-base-plugins gstreamer0.10-bad-plugins libva
+             libxrandr)
+options=(!emptydirs)
+
+source=($url/$pkgbase-${pkgver}.tar.bz2)
+sha1sums=('884a47cc4916f441bec160235927556a79c7ea09')
+
+prepare() {
+  cd $pkgbase-$pkgver
+  mkdir build-1.0 build-0.10
+}
+
+build() {
+  cd $pkgbase-$pkgver/build-1.0
+  ../configure --prefix=/usr --disable-static --with-gstreamer-api=1.0
+  make
+
+  cd ../build-0.10
+  ../configure --prefix=/usr --disable-static --with-gstreamer-api=0.10 --disable-wayland
+  make
+}
+
+check() {
+  cd $pkgbase-$pkgver/build-1.0
+  make check
+
+  cd ../build-0.10
+  make check
+}
+
+package_gst-vaapi() {
+  depends=(gst-plugins-base gst-plugins-bad libva libxrandr)
+
+  cd $pkgbase-$pkgver/build-1.0
+  make DESTDIR="$pkgdir" install
+}
+
+package_gstreamer0.10-vaapi() {
+  depends=(gstreamer0.10-base-plugins gstreamer0.10-bad-plugins libva libxrandr)
+
+  cd $pkgbase-$pkgver/build-0.10
+  make DESTDIR="$pkgdir" install
+}

@@ -1,0 +1,35 @@
+# $Id: PKGBUILD 100695 2013-11-08 16:15:50Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: wizzomafizzo <wizzomafizzo@gmail.com>
+# Contributor: Benjamin Andresen <benny@klapmuetz.org>
+
+pkgname=phppgadmin
+pkgver=5.1
+pkgrel=2
+pkgdesc="A web-based administration tool for PostgreSQL. It is perfect for PostgreSQL DBAs, newbies and hosting services."
+arch=('any')
+url="http://sourceforge.net/projects/phppgadmin"
+license=('GPL')
+depends=('php' 'php-pgsql')
+backup=('etc/webapps/phppgadmin/config.inc.php')
+source=(http://downloads.sourceforge.net/sourceforge/$pkgname/phpPgAdmin-$pkgver.tar.gz)
+md5sums=('554c94f5b38a1c6e8327ec3aa4cc6538')
+
+package() {
+  _instdir=$pkgdir/usr/share/webapps/phppgadmin
+  mkdir -p ${_instdir} $pkgdir/etc/webapps/phppgadmin
+  cd ${_instdir}
+  cp -ra $srcdir/phpPgAdmin-$pkgver/* .
+  cp ./conf/config.inc.php-dist $pkgdir/etc/webapps/phppgadmin/config.inc.php
+  rm -f ${_instdir}/conf/config.inc.php
+  ln -s /etc/webapps/phppgadmin/config.inc.php ${_instdir}/conf/config.inc.php
+  cat >$pkgdir/etc/webapps/phppgadmin/apache.example.conf <<EOF
+	Alias /phppgadmin "/usr/share/webapps/phppgadmin"
+	<Directory "/usr/share/webapps/phppgadmin">
+		AllowOverride All
+		Options FollowSymlinks
+		Order allow,deny
+		Allow from all
+	</Directory>
+EOF
+}

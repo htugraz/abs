@@ -1,0 +1,24 @@
+# $Id: PKGBUILD 100146 2013-11-01 20:23:04Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Tino Reichardt <milky-archlinux@mcmilk.de>
+
+pkgname=dietlibc
+pkgver=0.33
+pkgrel=2
+pkgdesc="a libc optimized for small size"
+arch=('i686' 'x86_64')
+url="http://www.fefe.de/dietlibc/"
+license=("GPL")
+#source=(http://www.kernel.org/pub/linux/libs/dietlibc/$pkgname-$pkgver.tar.bz2)
+source=("http://www.fefe.de/dietlibc/dietlibc-$pkgver.tar.bz2")
+md5sums=('9d541b9a6623b04ec12e5248b82db7c0')
+
+build() {
+  cd $srcdir/$pkgname-$pkgver
+  make
+}
+
+package() {
+  cd $srcdir/$pkgname-$pkgver
+  make DESTDIR=$pkgdir install
+}

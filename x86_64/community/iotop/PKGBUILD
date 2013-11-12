@@ -1,0 +1,25 @@
+# $Id: PKGBUILD 93045 2013-06-23 10:14:58Z thomas $
+# Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+
+pkgname=iotop
+pkgver=0.6
+pkgrel=2
+pkgdesc='View I/O usage of processes'
+arch=('any')
+url='http://guichaz.free.fr/iotop/'
+license=('GPL')
+depends=('python2')
+changelog=$pkgname.changelog
+source=(http://guichaz.free.fr/$pkgname/files/$pkgname-$pkgver.tar.bz2)
+sha256sums=('3adea2a24eda49bbbaeb4e6ed2042355b441dbd7161e883067a02bfc8dcef75b')
+
+package() {
+  cd ${srcdir}/$pkgname-$pkgver
+
+  python2 setup.py install --prefix=/usr --root=${pkgdir} --optimize=1
+
+#FS#33906 fix
+  chmod 644 ${pkgdir}/usr/share/man/man8/iotop.8
+
+  mv ${pkgdir}/usr/sbin ${pkgdir}/usr/bin
+}

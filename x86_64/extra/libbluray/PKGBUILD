@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 198685 2013-11-02 07:22:33Z bpiotrowski $
+# Maintainer:  Ionut Biru <ibiru@archlinux.org>
+# Maintainer:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
+# Contributor: Andrew Cook <ariscop@gmail.com>
+
+pkgname=libbluray
+pkgver=0.4.0
+pkgrel=1
+pkgdesc='Library to access Blu-Ray disks for video playback'
+arch=('i686' 'x86_64')
+url='http://www.videolan.org/developers/libbluray.html'
+license=('LGPL2.1')
+depends=('libxml2' 'freetype2')
+source=(ftp://ftp.videolan.org/pub/videolan/$pkgname/$pkgver/$pkgname-$pkgver.tar.bz2)
+sha256sums=('63a3218d69f179f4834ef3b48bfa95268ad62c302ff38bfc052e2fc6916ae3f8')
+
+build() {
+  cd $pkgname-$pkgver
+
+  ./configure --prefix=/usr \
+    --disable-static
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}
+
+# vim:set ts=2 sw=2 et:

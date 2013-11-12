@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 100722 2013-11-09 15:11:22Z faidoc $
+# Maintainer: Alexandre Filgueira <alexfilgueira@cinnarch.com>
+# Contributor: Adam Hani Schakaki <adam@schakaki.net>
+# Contributor: Ner0
+
+pkgname=muffin
+pkgver=2.0.4
+pkgrel=1
+pkgdesc="Cinnamon window manager based on Mutter"
+arch=('i686' 'x86_64')
+url="https://github.com/linuxmint/muffin"
+license=('GPL')
+depends=('clutter' 'gobject-introspection' 'cinnamon-desktop' 'libcanberra'
+         'startup-notification' 'zenity' 'dconf')
+makedepends=('intltool' 'gnome-doc-utils' 'gnome-common')
+options=('!emptydirs')
+install=$pkgname.install
+source=("$pkgname-$pkgver.tar.gz::https://github.com/linuxmint/muffin/archive/$pkgver.tar.gz")
+sha256sums=('d719e1dc958f1789e4f03d01d0ceebb84e972dd24158c229e213514c7e41d2fb')
+
+build() {
+  cd ${pkgname}-${pkgver}
+
+  PYTHON=python2 ./autogen.sh --prefix=/usr --sysconfdir=/etc --libexecdir=/usr/lib/muffin \
+  				 			 --localstatedir=/var --disable-static --disable-schemas-compile
+  make
+}
+
+package() {
+  cd ${pkgname}-${pkgver}
+  make DESTDIR="$pkgdir/" install
+}
+
+# vim:set ts=2 sw=2 et:

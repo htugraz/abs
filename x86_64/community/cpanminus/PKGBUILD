@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 97503 2013-09-23 00:34:22Z eric $
+# Maintainer: 
+
+pkgname=cpanminus
+pkgver=1.7001
+pkgrel=1
+pkgdesc='Get, unpack, build and install modules from CPAN'
+arch=('any')
+url="https://metacpan.org/release/App-cpanminus"
+license=('PerlArtistic' 'GPL')
+depends=('perl')
+options=('!emptydirs')
+source=("http://search.cpan.org/CPAN/authors/id/M/MI/MIYAGAWA/App-cpanminus-$pkgver.tar.gz")
+sha1sums=('cb14e078ae9addb6c8d9fb1e13ef4c032ce12d4d')
+
+build() {
+  cd App-cpanminus-$pkgver
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+check() {
+  cd App-cpanminus-$pkgver
+  make test
+}
+
+package() {
+  cd App-cpanminus-$pkgver
+  make DESTDIR="$pkgdir" install
+}

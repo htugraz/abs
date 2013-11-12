@@ -1,0 +1,68 @@
+# $Id: PKGBUILD 100769 2013-11-10 13:31:47Z arodseth $
+# Maintainer: Alexander Rødseth <rodseth@gmail.com>
+
+pkgbase=grails
+pkgname=('grails' 'grails-docs')
+pkgver=2.3.2
+pkgrel=1
+pkgdesc='Groovy on rails, web framework'
+arch=('any')
+url='http://grails.org/'
+license=('APACHE')
+makedepends=('setconf' 'apache-ant' 'unzip')
+optdepends=('groovy: the groovy programming language'
+            'grails-docs: documentation for grails')
+options=('!emptydirs')
+noextract=("${pkgname[1]}-$pkgver.zip")
+source=("http://dist.springframework.org.s3.amazonaws.com/release/GRAILS/${pkgname[0]}-$pkgver.zip"
+        "http://dist.springframework.org.s3.amazonaws.com/release/GRAILS/${pkgname[1]}-$pkgver.zip"
+        "$pkgbase.sh")
+sha256sums=('c4cd9b0465b184e0f6fc06b4dfe89f87c4bec53072815c60074d9c4e39c70fe1'
+            'c038c82265084004e6278e10b446b262cdf0b481383df8e4ff71975671d0fc9f'
+            '5b9b76115640a31c728fb6951a1ee9ed0c7da7bbb558e0f1fe22f383c05633f0')
+
+prepare() {
+  cd "${pkgname[0]}-$pkgver"
+
+  # configure paths
+  setconf bin/grails DIRNAME /usr/share/grails
+  setconf bin/grails-debug DIRNAME /usr/share/grails
+}
+
+package_grails() {
+  depends=('java-environment' 'junit' 'bash' 'sh')
+  cd "$pkgname-$pkgver"
+
+  mkdir -p "$pkgdir/usr/share/pixmaps/"
+  cp -r "$srcdir/$pkgname-$pkgver" "$pkgdir/usr/share/$pkgname"
+
+  # wrapper scripts
+  install -Dm755 bin/startGrails \
+    "$pkgdir/usr/share/$pkgname/startGrails"
+  install -Dm755 "../$pkgname.sh" \
+    "$pkgdir/usr/bin/$pkgname"
+  install -Dm755 "../$pkgname.sh" \
+    "$pkgdir/usr/share/$pkgname/bin/$pkgname"
+
+  # icons
+  cp media/icons/*.png "$pkgdir/usr/share/pixmaps/"
+  
+  # profile.d script
+  echo 'export GRAILS_HOME=/usr/share/grails' > "$pkgname.sh"
+  install -Dm755 "$pkgname.sh" "$pkgdir/etc/profile.d/$pkgname.sh"
+
+  # clean up
+  cd "$pkgdir/usr/share/$pkgname"
+  rm -rf doc INSTALL LICENSE README
+  find "$pkgdir/usr/share" -name "*.bat" -exec rm {} \;
+}
+
+package_grails-docs() {
+  pkgdesc='Documentation for Grails'
+
+  install -d "$pkgdir/usr/share/doc" "$pkgdir/usr/share/grails"
+  unzip "grails-docs-$pkgver.zip" -d "$pkgdir/usr/share/doc/grails-$pkgver"
+  ln -s "/usr/share/doc/grails-$pkgver" "$pkgdir/usr/share/grails/doc"
+}
+
+# vim:set ts=2 sw=2 et:

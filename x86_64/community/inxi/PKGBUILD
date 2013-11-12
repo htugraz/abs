@@ -1,0 +1,19 @@
+# $Id: PKGBUILD 98316 2013-10-08 13:03:14Z bluewind $
+# Maintainer: Florian Pritz <f-p@gmx.at>
+pkgname=inxi
+pkgver=1.9.16
+pkgrel=1
+pkgdesc="script to get system information"
+arch=('any')
+url="http://inxi.org"
+license=('GPL')
+source=(ftp://ftp.archlinux.org/other/community/$pkgname/$pkgname-$pkgver.tar.gz)
+md5sums=('51ad63f632be97c4066d3faeba44baf9')
+
+package() {
+  cd "$srcdir"
+  install -D -m755 inxi "$pkgdir/usr/bin/inxi"
+  install -D -m755 inxi.1.gz "$pkgdir/usr/share/man/man1/inxi.1.gz"
+}
+
+# vim:set ts=2 sw=2 et:

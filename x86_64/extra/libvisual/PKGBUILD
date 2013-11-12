@@ -1,0 +1,24 @@
+# $Id: PKGBUILD 198260 2013-10-30 13:47:18Z allan $
+# Maintainer: 
+
+pkgname=libvisual
+pkgver=0.4.0
+pkgrel=4
+pkgdesc="Abstraction library that comes between applications and audio visualisation plugins"
+arch=('i686' 'x86_64')
+url="http://sourceforge.net/projects/libvisual/"
+license=('LGPL')
+source=("http://downloads.sourceforge.net/sourceforge/libvisual/libvisual-${pkgver}.tar.gz")
+md5sums=('f4e78547c79ea8a8ad111cf8b85011bb')
+
+build()
+{
+  cd ${srcdir}/${pkgname}-${pkgver}
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd ${srcdir}/${pkgname}-${pkgver}
+  make DESTDIR=${pkgdir} install
+}

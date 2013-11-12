@@ -1,0 +1,20 @@
+# $Id: PKGBUILD 95637 2013-08-15 09:46:45Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Martin -dadexter- Lefebvre <dadexter@gmail.com>
+
+pkgname=linux-howtos
+pkgver=20120707
+pkgrel=1
+pkgdesc="Documentation on many tasks relating to Linux setup and operation"
+arch=('any')
+url="http://www.tldp.org/"
+license=('FDL')
+options=('docs')
+source=("http://www.slackware.at/data/slackware-current/slackware/f/$pkgname-$pkgver-noarch-1.txz")
+md5sums=('6c3368843c328f061866588672488649')
+
+package(){
+  cd "${srcdir}"
+  install -d "${pkgdir}"/usr/share/linux-howtos
+  cp -r usr/doc/Linux-HOWTOs/* "${pkgdir}"/usr/share/linux-howtos
+}

@@ -1,0 +1,25 @@
+# $Id: PKGBUILD 80720 2012-12-01 03:51:59Z eric $
+# Maintainer: Eric Belanger <eric@archlinux.org>
+
+pkgname=auctex
+pkgver=11.87
+pkgrel=1
+pkgdesc="An extensible package for writing and formatting TeX files in Emacs"
+arch=('any') 
+url="http://www.gnu.org/software/auctex/"
+license=('GPL3')
+depends=('emacs' 'ghostscript' 'texlive-core')
+install=auctex.install
+source=(http://ftp.gnu.org/pub/gnu/auctex/${pkgname}-${pkgver}.tar.gz)
+sha1sums=('0be92c7d8f89d57346fe07f05a1a045ffd11cd71')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  ./configure --prefix=/usr --localstatedir=/var
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make -j1 DESTDIR="${pkgdir}" install
+}

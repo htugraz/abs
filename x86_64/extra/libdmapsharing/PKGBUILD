@@ -1,0 +1,25 @@
+# $Id: PKGBUILD 198147 2013-10-30 13:04:44Z allan $
+#Maintainer: Ionut Biru <ibiru@archlinux.org>
+
+pkgname=libdmapsharing
+pkgver=2.9.23
+pkgrel=1
+pkgdesc="A library that implements the DMAP family of protocols"
+arch=('i686' 'x86_64')
+url="http://www.flyn.org/projects/libdmapsharing/index.html"
+license=('LGPL2.1')
+depends=('libsoup' 'avahi' 'gst-plugins-base-libs' 'gdk-pixbuf2')
+source=(http://www.flyn.org/projects/libdmapsharing/$pkgname-$pkgver.tar.gz)
+md5sums=('7e6bb71f614392e340cac782586072a7')
+
+build() {
+  cd $pkgname-$pkgver
+
+  ./configure --prefix=/usr --with-mdns=avahi
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

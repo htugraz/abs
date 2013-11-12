@@ -1,0 +1,24 @@
+# $Id: PKGBUILD 75079 2012-08-13 13:50:26Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Charles Mauch <cmauch@gmail.com>
+
+pkgname=perl-poe-component-client-keepalive
+pkgver=0.271
+pkgrel=1
+pkgdesc="Perl/CPAN Module POE::Component::Client::Keepalive"
+arch=(any)
+url="http://search.cpan.org/dist/POE-Component-Client-Keepalive"
+license=("GPL" "PerlArtistic")
+makedepends=("perl-poe-component-client-dns" "perl-poe")
+depends=("perl-poe-component-client-dns" "perl-poe")
+source=("http://search.cpan.org/CPAN/authors/id/R/RC/RCAPUTO/POE-Component-Client-Keepalive-$pkgver.tar.gz")
+md5sums=('a1f45a7ecf93f26af6ff992eb510fb38')
+
+build() {
+  cd $srcdir/POE-Component-Client-Keepalive-$pkgver
+  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+  make
+  make install DESTDIR=$pkgdir
+  find $pkgdir -name '.packlist' -delete
+  find $pkgdir -name '*.pod' -delete
+}

@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 69181 2012-04-10 00:13:08Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+#Maintainer: David Campbell <davekong@archlinux.us>
+#Contributor: Cilyan Olowen <gaknar@gmail.com>
+#Contributor: Frederik M.J.V. <freqmod VED iskrembilen Dott kom>
+
+pkgname=python2-tempita
+pkgver=0.5.1
+pkgrel=1
+pkgdesc="A lightweight unicode templating language"
+arch=('any')
+url="http://pythonpaste.org/tempita/"
+license=('custom:MIT')
+depends=('python2')
+makedepends=('python2-distribute')
+source=(http://pypi.python.org/packages/source/T/Tempita/Tempita-${pkgver}.tar.gz
+	$pkgname-license.txt::http://pythonpaste.org/tempita/_sources/license.txt)
+md5sums=('f75bdfeabd2f3755f1ff32d582a574a4'
+         'c66b85ddcd09296abff87601467724fd')
+
+build() {
+  cd $srcdir/Tempita-${pkgver}
+  python2 setup.py install --root=$pkgdir --optimize=1
+  install -Dm644 $srcdir/$pkgname-license.txt $pkgdir/usr/share/licenses/$pkgname/license.txt
+  sed -i -e "s|#![ ]*/usr/bin/python$|#!/usr/bin/python2|" \
+	-e "s|#![ ]*/usr/bin/env python$|#!/usr/bin/env python2|" \
+	$(find $pkgdir -name '*.py')
+}

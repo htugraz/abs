@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 197740 2013-10-29 02:03:08Z eric $
+# Maintainer:
+# Contributor: Dale Blount <dale@archlinux.org>
+# Contributor: Francois Charette <francois.archlinux.org>
+
+pkgname=perl-netaddr-ip
+pkgver=4.071
+pkgrel=1
+pkgdesc="Perl module to manage IP addresses and subnets"
+arch=('i686' 'x86_64')
+url="http://search.cpan.org/dist/NetAddr-IP/"
+license=('PerlArtistic' 'GPL')
+depends=('perl')
+options=('!emptydirs')
+source=(http://search.cpan.org/CPAN/authors/id/M/MI/MIKER/NetAddr-IP-${pkgver}.tar.gz)
+md5sums=('f0da45422022fdf1ccfa90b8068d782b')
+
+build() {
+  cd NetAddr-IP-${pkgver}
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+check() {
+  cd NetAddr-IP-${pkgver}
+  make test
+}
+
+package() {
+  cd NetAddr-IP-${pkgver}
+  make DESTDIR="${pkgdir}" install
+}

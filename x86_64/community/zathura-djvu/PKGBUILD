@@ -1,0 +1,26 @@
+# $Id: PKGBUILD 91452 2013-05-22 23:23:11Z dwallace $
+# Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: karnath <karnathtorjian@gmail.com>
+
+pkgname=zathura-djvu
+pkgver=0.2.3
+pkgrel=1
+pkgdesc="Adds DjVu support to zathura by using the djvulibre library"
+arch=('i686' 'x86_64')
+url="https://pwmt.org/projects/zathura/plugins/zathura-djvu/"
+license=('custom')
+depends=('djvulibre' 'zathura')
+install="$pkgname.install"
+source=("https://pwmt.org/projects/zathura/plugins/download/zathura-djvu-$pkgver.tar.gz")
+md5sums=('a472f706d6f6384d8bc2750141a84fc6')
+
+build(){
+  make -C "${srcdir}/$pkgname-$pkgver"
+}
+
+package(){
+  make -C "${srcdir}/$pkgname-$pkgver" DESTDIR="$pkgdir" install
+  install -Dm0644 "${srcdir}/$pkgname-$pkgver/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
+

@@ -1,0 +1,41 @@
+# $Id: PKGBUILD 94066 2013-07-13 15:26:38Z jsteel $
+# Maintainer: Jonathan Steel <jsteel@aur.archlinux.org>
+# Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Justin Davis <jrcd83@gmail.com>
+
+pkgname='perl-test-requires'
+pkgver='0.07'
+pkgrel='1'
+pkgdesc="Checks to see if the module can be loaded"
+arch=('any')
+license=('PerlArtistic' 'GPL')
+options=('!emptydirs')
+depends=('perl')
+url='http://search.cpan.org/dist/Test-Requires'
+source=("http://search.cpan.org/CPAN/authors/id/T/TO/TOKUHIROM/Test-Requires-$pkgver.tar.gz")
+md5sums=('20bdd194fd0cf59eb0cc9349a68dbaa6')
+
+build() {
+  cd "$srcdir"/Test-Requires-$pkgver
+
+  export PERL_MM_USE_DEFAULT=1 PERL5LIB=""                 \
+    PERL_AUTOINSTALL="--skipdeps"                          \
+    PERL_MM_OPT="INSTALLDIRS=vendor" DESTDIR='$pkgdir'     \
+    PERL_MB_OPT="--installdirs vendor --destdir '$pkgdir'" \
+    MODULEBUILDRC=/dev/null
+
+  perl Build.PL
+  perl Build
+}
+
+check() {
+  cd "$srcdir"/Test-Requires-$pkgver
+
+  perl Build test
+}
+
+package() {
+  cd "$srcdir"/Test-Requires-$pkgver
+
+  perl Build install
+}

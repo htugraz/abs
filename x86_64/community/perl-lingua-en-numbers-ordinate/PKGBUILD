@@ -1,0 +1,25 @@
+# $Id: PKGBUILD 65879 2012-02-22 13:16:53Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Allan McRae <mcrae_allan@hotmail.com>
+# Contributor: François Charette <firmicus ατ gmx δοτ net>
+
+pkgname=perl-lingua-en-numbers-ordinate
+pkgver=1.02
+pkgrel=4
+pkgdesc="Go from cardinal (53) to ordinal (53rd)"
+arch=('any')
+url="http://search.cpan.org/dist/Lingua-EN-Numbers-Ordinate"
+license=('GPL' 'PerlArtistic')
+depends=('perl>=5.10.0')
+options=('!emptydirs')
+source=(http://www.cpan.org/authors/id/S/SB/SBURKE/Lingua-EN-Numbers-Ordinate-$pkgver.tar.gz)
+md5sums=('e92078fafd9108a137972c4e9bae9e99')
+
+build() {
+  cd  $srcdir/Lingua-EN-Numbers-Ordinate-$pkgver
+  PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+  make
+  make install DESTDIR=$pkgdir
+  find $pkgdir -name '.packlist' -delete
+  find $pkgdir -name '*.pod' -delete
+}

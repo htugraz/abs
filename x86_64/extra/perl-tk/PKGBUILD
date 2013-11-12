@@ -1,0 +1,41 @@
+# $Id: PKGBUILD 189257 2013-07-01 18:23:51Z eric $
+# Maintainer:
+# Contributor: François Charette <francois ατ archlinux δοτ org>
+# Contributor: Jason Chu <jchu@xentac.net>
+# Contributor: Juergen Hoetzel <juergen@archlinux.org>
+
+pkgname=perl-tk
+pkgver=804.031
+pkgrel=1
+pkgdesc="A graphical user interface toolkit for Perl"
+arch=('i686' 'x86_64')
+url="http://search.cpan.org/dist/Tk"
+license=('PerlArtistic' 'GPL' 'custom')
+depends=('libpng' 'libjpeg' 'tk' 'perl')
+options=('!emptydirs')
+replaces=('perltk')
+provides=('perltk')
+source=(http://www.cpan.org/authors/id/S/SR/SREZIC/Tk-${pkgver}.tar.gz)
+md5sums=('57a8afd0563184c17a6470d1ee957f35')
+
+build() {
+  cd Tk-$pkgver
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+#check() {
+#  cd Tk-$pkgver
+#  make test
+#}
+
+package() {
+  cd Tk-$pkgver
+  make install DESTDIR="$pkgdir"
+
+  # license
+  install -D -m644 pTk/license.terms \
+                   "${pkgdir}/usr/share/licenses/${pkgname}/tk.license"
+  install -D -m644 pTk/Tix.license \
+                   "${pkgdir}/usr/share/licenses/${pkgname}/tix.license"
+}

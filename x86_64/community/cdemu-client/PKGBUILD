@@ -1,0 +1,47 @@
+# $Id: PKGBUILD 92547 2013-06-08 00:41:21Z heftig $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: Mateusz Herych <heniekk@gmail.com>
+# Contributor: Charles Lindsay <charles@chaoslizard.org>
+
+pkgname=cdemu-client
+pkgver=2.1.0
+pkgrel=1
+pkgdesc="Simple command-line client for controlling cdemu-daemon"
+arch=(any)
+url="http://cdemu.sourceforge.net/"
+license=(GPL)
+depends=(python2 dbus-python cdemu-daemon desktop-file-utils)
+makedepends=(intltool cmake)
+conflicts=('cdemu')
+install=cdemu-client.install
+source=("http://downloads.sourceforge.net/cdemu/$pkgname-$pkgver.tar.bz2")
+sha256sums=('9bd0448368b5e51eb2acfe420f612f67e3b3d4aae4aa80fa36ce130fa0a10c9f')
+
+prepare() {
+  mkdir build
+  cd $pkgname-$pkgver
+
+  # python2 fix
+  sed -i '1s|^#!.*python$|&2|' src/cdemu
+
+  # fix text domain
+  sed -i '/^project /s/cdemu/&-client/' CMakeLists.txt
+
+  # bash completion dir change
+  sed -i CMakeLists.txt -e "s|\
+DESTINATION \${CMAKE_INSTALL_SYSCONFDIR}/bash_completion.d|\
+DESTINATION \${CMAKE_INSTALL_DATADIR}/bash-completion/completions|"
+}
+
+build() {
+  cd build
+  cmake ../$pkgname-$pkgver \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr
+  make
+}
+
+package() {
+  cd build
+  make DESTDIR="$pkgdir" install
+}
