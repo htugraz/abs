@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 90095 2013-05-06 19:39:43Z foutrelis $
+# $Id: PKGBUILD 100933 2013-11-13 12:48:38Z heftig $
 # Contributor: Bjorn Lindeijer <bjorn lindeijer nl>
 # Maintainer: Mateusz Herych <heniekk@gmail.com>
 
 pkgname=tmw
 pkgver=0.6.1
-pkgrel=2
+pkgrel=3
 pkgdesc="The Mana World (TMW) is a serious effort to create an innovative free and open source MMORPG."
 arch=('i686' 'x86_64')
 url="http://themanaworld.org"

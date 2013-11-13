@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 97626 2013-09-25 23:46:52Z dwallace $
+# $Id: PKGBUILD 100963 2013-11-13 21:56:12Z dwallace $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 
 pkgname=lib32-flashplugin
 _licensefile='PlatformClients_PC_WWEULA_Combined_20100108_1657.pdf'
-pkgver=11.2.202.310
+pkgver=11.2.202.327
 pkgrel=1
 license=('custom')
 pkgdesc='Adobe Flash Player for 32-bit Mozilla-based browsers'
@@ -13,7 +13,7 @@ depends=('mozilla-common' 'lib32-libxt' 'lib32-gtk2' 'lib32-nss' 'lib32-curl' 'l
 #optdepends=('lib32-libvdpau: video hardware decoding for supporting players')
 options=(!strip)
 source=("http://fpdownload.macromedia.com/get/flashplayer/pdc/$pkgver/install_flash_player_11_linux.i386.tar.gz")
-md5sums=('26ca132fa0e20f78c5d80e0c33fa6d81')
+md5sums=('808b0a7f4789fb0c96dd172785a50aa9')
 
 package() {
   install -Dm644 "${srcdir}/libflashplayer.so" "${pkgdir}/usr/lib32/mozilla/plugins/libflashplayer.so"

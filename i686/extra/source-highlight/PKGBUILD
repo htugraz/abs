@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198436 2013-10-30 14:51:45Z allan $
+# $Id: PKGBUILD 199515 2013-11-13 21:12:16Z andrea $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Douglas Soares de Andrade <douglas@archlinux.org>
 
 pkgname=source-highlight
 pkgver=3.1.7
-pkgrel=6
+pkgrel=8
 pkgdesc="Convert source code to syntax highlighted document"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/src-highlite/"
@@ -16,7 +16,7 @@ source=("ftp://ftp.gnu.org/gnu/src-highlite/${pkgname}-${pkgver}.tar.gz")
 md5sums=('0ff81588d3536b4c4e571122ba940595')
 
 build() {
-  cd "${srcdir}/${pkgname}-${pkgver}"
+  cd ${pkgname}-${pkgver}
 
   ./configure --prefix=/usr \
               --sysconfdir=/etc \
@@ -25,7 +25,10 @@ build() {
 }
 
 package() {
-  cd "${srcdir}/${pkgname}-${pkgver}"
+  cd ${pkgname}-${pkgver}
 
   make prefix="${pkgdir}/usr" bash_completiondir="${pkgdir}/usr/share/bash-completion/completions" install
+
+  # PKGBUILD syntax highlighting
+  echo -e "\npkgbuild = sh.lang" >> "${pkgdir}"/usr/share/${pkgname}/lang.map
 }

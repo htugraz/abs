@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 98879 2013-10-21 00:54:20Z seblu $
+# $Id: PKGBUILD 100959 2013-11-13 21:01:51Z seblu $
 # Maintainer: Sébastien Luttringer <seblu at seblu dot net>
 # Contributor: Bastien Dejean <nihilhill@gmail.com>
 
 pkgname=xcb-util-cursor
-pkgver=0.1.0
-pkgrel=4
+pkgver=0.1.1
+pkgrel=1
 pkgdesc='XCB cursor library'
 arch=('i686' 'x86_64')
 url='http://cgit.freedesktop.org/xcb/util-cursor'
 license=('custom:MIT')
 depends=('libxcb' 'xcb-util-renderutil' 'xcb-util-image')
 source=("http://xcb.freedesktop.org/dist/xcb-util-cursor-$pkgver.tar.bz2")
-md5sums=('40e913aae6fb30a72d423e6bae9a93e9')
+md5sums=('568712eaa340f18b357d3748300c1795')
 
 build() {
   cd $pkgname-$pkgver
