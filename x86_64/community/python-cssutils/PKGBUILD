@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 96113 2013-08-20 06:32:48Z lcarlier $
+# $Id: PKGBUILD 101016 2013-11-14 22:55:29Z jelle $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Simon Sapin <simon dot sapin at exyr dot org>
 # Contributor: Michal Marek <reqamst at gmail dot com>
@@ -8,7 +8,7 @@
 pkgbase=python-cssutils
 pkgname=('python2-cssutils' 'python-cssutils')
 pkgver=0.9.10
-pkgrel=2
+pkgrel=4
 pkgdesc="A CSS Cascading Style Sheets library for Python"
 arch=('any')
 url="http://cthedot.de/cssutils/"
@@ -22,6 +22,13 @@ build() {
 
   # Create python2 build dir
   cp -a cssutils-${pkgver} cssutils-py2-${pkgver}
+
+  # Use #!/usr/bin/python3 
+  cd cssutils-${pkgver}/src
+  find . -maxdepth 2 -mindepth 1 -type f -iname '*.py' -exec sed -i 's/env python/python3/' '{}' \;
+
+  cd "${srcdir}/cssutils-py2-${pkgver}"
+  find . -maxdepth 2 -mindepth 1 -type f -iname '*.py' -exec sed -i -e 's:#!/usr/bin/env python:#!/usr/bin/env python2:g' '{}' \;
 }
 
 package_python2-cssutils() {
@@ -31,8 +38,6 @@ package_python2-cssutils() {
 
   python2 setup.py install --root="${pkgdir}/" --optimize=1
 
-  sed -i -e "s:#!/usr/bin/env python:#!/usr/bin/env python2:g" \
-             $(find "${pkgdir}" -name '*.py')
 
   # Don't install tests (FS#27567)
   rm -rf "${pkgdir}/usr/lib/python2.7/site-packages/tests"
@@ -50,16 +55,11 @@ package_python-cssutils() {
 
   # Don't install tests (FS#27567)
   rm -rf "${pkgdir}/usr/lib/python3.3/site-packages/tests"
-
-  # Use #!/usr/bin/python3 
-  cd $pkgdir/usr/lib/python3.3/site-packages/cssutils
-  find . -maxdepth 2 -mindepth 1 -type f -iname '*.py' -exec sed -i 's/env python/python3/' '{}' \;
-
 }
 
-#check() {
-#  cd "${srcdir}/cssutils-${pkgver}"
-#  # Currently broken..
-##  python3 setup.py test
-##  python2 setup.py test
-#}
+check() {
+  cd "${srcdir}/cssutils-${pkgver}"
+  # Currently broken..
+#  python3 setup.py test
+#  python2 setup.py test
+}

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 97316 2013-09-17 09:33:55Z bpiotrowski $
+# $Id: PKGBUILD 100971 2013-11-14 03:02:37Z cinelli $
 # Maintainer:  Federico Cinelli <cinelli@aur.archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Mcder3 <mcder3[at]gmail[dot]com>
@@ -7,11 +7,12 @@
 pkgname=cantata
 pkgver=1.1.2
 pkgdesc="A KDE client for the music player daemon (MPD)"
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url="http://kde-apps.org/content/show.php/Cantata?content=147733"
 license=('GPL')
 depends=('kdebase-runtime' 'taglib-extras' 'mpg123' 'libmtp' 'libcddb' 'libmusicbrainz5')
+optdepends=('perl-uri: dynamic playlist')
 makedepends=('cmake' 'automoc4')
 install="$pkgname.install"
 source=("http://cantata.googlecode.com/files/$pkgname-$pkgver.tar.bz2")
