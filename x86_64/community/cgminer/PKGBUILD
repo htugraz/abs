@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 100832 2013-11-11 15:57:07Z fyan $
+# $Id: PKGBUILD 101081 2013-11-16 07:42:59Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: monson <holymonson@gmail.com>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 # Contributor: David Manouchehri <david@davidmanouchehri.com>
 
 pkgname=cgminer
-pkgver=3.8.1
+pkgver=3.8.2
 #_pkgver=3.6.6
 _pkgver=$pkgver
-pkgrel=2
+pkgrel=1
 pkgdesc="Multi-threaded multi-pool GPU, FPGA and ASIC miner for bitcoin and derivative coins"
 url='http://forum.bitcoin.org/index.php?topic=28402.0'
 license=('GPL3')
