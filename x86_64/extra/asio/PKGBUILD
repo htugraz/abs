@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 190033 2013-07-13 12:40:05Z svenstaro $
+# $Id: PKGBUILD 199844 2013-11-17 09:57:22Z giovanni $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Aaron Griffin <aaron@archlinux.org>
 
 pkgname=asio
-pkgver=1.4.8
-pkgrel=3
+pkgver=1.10.1
+pkgrel=1
 pkgdesc="Cross-platform C++ library for ASynchronous network I/O"
 arch=('i686' 'x86_64')
 url="http://asio.sourceforge.net"
 license=('custom')
 depends=('boost')
-source=("http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.bz2")
-md5sums=('bc2ca8ea37892870d194421154df122f')
+source=("http://downloads.sourceforge.net/${pkgname}/${pkgname}-${pkgver}.tar.bz2")
+md5sums=('4d508c9947404fee40945375b8a5fd32')
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"

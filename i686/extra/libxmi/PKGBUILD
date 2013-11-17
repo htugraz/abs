@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198288 2013-10-30 13:57:15Z allan $
+# $Id: PKGBUILD 199824 2013-11-17 07:48:18Z allan $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Tobias Kieslich [tobias.justdreams.de]
 
 pkgname=libxmi
 pkgver=1.2
-pkgrel=5
+pkgrel=6
 pkgdesc="A library for rasterizing 2-D vector graphics"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/libxmi/libxmi.html"

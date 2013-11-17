@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 196619 2013-10-15 19:42:35Z ronald $
+# $Id: PKGBUILD 199814 2013-11-17 05:38:51Z allan $
 # Maintainer: Ronald van Haren <ronald@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
@@ -92,6 +92,7 @@ package_kipi-plugins() {
               'opencv: Remove Red Eyes plugin'
               'imagemagick: Video SlideShow plugin'
               'qt-gstreamer: Video SlideShow plugin')
+  options=('staticlibs')
   install=kipi-plugins.install
 
   cd build/extra/kipi-plugins

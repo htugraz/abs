@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 197009 2013-10-21 12:41:49Z jgc $
+# $Id: PKGBUILD 199861 2013-11-17 12:53:54Z bpiotrowski $
 # Maintainer: Jan de Groot <jan@archlinux.org>
 # Contributor: Tom K <tomk@runbox.com>
 pkgname=opal
 pkgver=3.10.11
-pkgrel=1
+pkgrel=2
 pkgdesc="Open Phone Abstraction Library"
 arch=(i686 x86_64)
 url="http://www.opalvoip.org"

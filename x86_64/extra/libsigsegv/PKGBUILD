@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198236 2013-10-30 13:38:33Z allan $
+# $Id: PKGBUILD 199822 2013-11-17 07:46:24Z allan $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Johannes Weiner <hannes@saeurebad.de>
 
 pkgname=libsigsegv
 pkgver=2.10
-pkgrel=1
+pkgrel=2
 arch=('x86_64' 'i686')
 pkgdesc="Page fault detection library"
 url="http://www.gnu.org/software/libsigsegv/"

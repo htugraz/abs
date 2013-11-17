@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 197996 2013-10-30 12:09:46Z allan $
+# $Id: PKGBUILD 199812 2013-11-17 05:33:51Z allan $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: bzklrm <bzklrm@gmail.com>
 # Additional contributors Senjin, Xavier, dundee
 
 pkgname=glpk
 pkgver=4.52
-pkgrel=1
+pkgrel=2
 pkgdesc="GNU Linear Programming Kit : solve LP, MIP and other problems."
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/glpk/glpk.html"

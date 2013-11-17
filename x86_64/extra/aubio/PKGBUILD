@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 197869 2013-10-30 11:22:11Z allan $
+# $Id: PKGBUILD 199836 2013-11-17 08:28:12Z allan $
 # Maintainer: Tobias Kieslich tobias [funnychar] archlinux org
 # Contributor: Peter Baldwin <bald_pete@hotmail.com>
 # Contributor: Shinlun Hsieh <yngwiexx@yahoo.com.tw>
 
 pkgname=aubio
 pkgver=0.3.2
-pkgrel=5
+pkgrel=6
 pkgdesc="A library for audio labelling"
 arch=('i686' 'x86_64')
 url="http://aubio.org/"
@@ -19,7 +19,7 @@ md5sums=('ffc3e5e4880fec67064f043252263a44'
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
 
-  patch -Np1 -i $srcdir/aubio-linking.patch
+  patch -p1 -i $srcdir/aubio-linking.patch
 
   ./configure --prefix=/usr
   make

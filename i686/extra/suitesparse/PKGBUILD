@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 185110 2013-05-11 08:04:24Z ronald $
+# $Id: PKGBUILD 199830 2013-11-17 07:57:13Z allan $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 
 pkgname=suitesparse
@@ -13,6 +13,7 @@ replaces=('umfpack')
 depends=('blas' 'lapack')
 makedepends=('gcc-fortran')
 license=('GPL')
+options=('staticlibs')
 source=(http://www.cise.ufl.edu/research/sparse/SuiteSparse/SuiteSparse-$pkgver.tar.gz)
 sha1sums=('ea6688bd6f6adf81e2e5aacdc71d7dcf9a5d208d')
 

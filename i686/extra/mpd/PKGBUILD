@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 199513 2013-11-13 20:44:05Z bisson $
+# $Id: PKGBUILD 199871 2013-11-17 18:29:35Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=mpd
 pkgver=0.18.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Flexible, powerful, server-side application for playing music'
 url='http://www.musicpd.org/'
 license=('GPL')
@@ -51,6 +51,7 @@ package() {
 	install -Dm644 ../conf "${pkgdir}"/etc/mpd.conf
 	install -Dm644 ../tmpfiles.d "${pkgdir}"/usr/lib/tmpfiles.d/mpd.conf
 	install -d -g 45 -o 45 "${pkgdir}"/var/lib/mpd/playlists
-	install -d "${pkgdir}"/usr/lib/systemd/user
-	ln -s ../system/mpd.service "${pkgdir}"/usr/lib/systemd/user/mpd.service
+
+	install -Dm644 "${pkgdir}"/usr/lib/systemd/{system,user}/mpd.service
+	sed '/WantedBy=/c WantedBy=default.target' -i "${pkgdir}"/usr/lib/systemd/user/mpd.service
 }

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198755 2013-11-03 09:14:05Z andrea $
+# $Id: PKGBUILD 199820 2013-11-17 07:17:05Z allan $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=libindi
 pkgver=0.9.6
-pkgrel=5
+pkgrel=6
 pkgdesc="A distributed control protocol designed to operate astronomical instrumentation"
 url="http://www.indilib.org/index.php?title=Main_Page"
 license=('GPL2')
