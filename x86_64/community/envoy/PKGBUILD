@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 101104 2013-11-17 09:51:50Z cinelli $
+# $Id: PKGBUILD 101179 2013-11-18 17:42:55Z eric $
 # Maintainer: Federico Cinelli <cinelli@aur.archlinux.org>
 
 pkgname=envoy
@@ -28,6 +28,6 @@ build() {
 
 package() {
   make -C "$pkgname-$pkgver" DESTDIR="$pkgdir" install
-}/
+}
 
 # vim: ft=sh syn=sh et
