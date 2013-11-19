@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 98740 2013-10-17 14:01:47Z andyrtr $
+# $Id: PKGBUILD 101191 2013-11-19 11:01:21Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Vesa Kaihlavirta <vegai@iki.fi>
 # Contributor: Sebastian Sareyko <public@nooms.de>
 
 pkgname=gnustep-gui
 pkgver=0.23.1
-pkgrel=4
+pkgrel=5
 pkgdesc="The GNUstep GUI class library"
 arch=('i686' 'x86_64')
 url="http://www.gnustep.org/"
 license=('LGPL')
-depends=('gnustep-back' 'libungif' 'aspell' 'gcc-libs' 'libcups' 'audiofile' 'libsndfile' 'giflib' 'libao')
+depends=('gnustep-back' 'aspell' 'gcc-libs' 'libcups' 'audiofile' 'libsndfile' 'giflib' 'libao')
 makedepends=('gcc-objc' 'gnustep-base' 'gnustep-make')
 conflicts=('gnustep-gui-svn')
 groups=('gnustep-core')
