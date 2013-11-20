@@ -1,19 +1,20 @@
-# $Id: PKGBUILD 64911 2012-02-18 20:21:56Z jelle $
+# $Id: PKGBUILD 101226 2013-11-20 07:48:32Z jelle $
 # Contributor: Tom Killian <tom@archlinux.org>
 # Contributor: Nikos Kouremenos (zeppelin) kourem at gmail dot com
 # Maintainer: Stefan Husmann <stefan-husmann@t-online.de>
 
 pkgname=autocutsel
-pkgver=0.9.0
-pkgrel=7
+pkgver=0.9.1
+pkgrel=1
 pkgdesc="synchronizes the two copy/paste buffers mainly used by X applications"
 arch=('i686' 'x86_64')
 depends=('libxaw')
-source=(http://lepton.fr/tools/$pkgname/$pkgname-$pkgver.tar.gz)
-md5sums=('ba4a6f632cb4815ae4e5c3027c24cfc5')
-url="http://lepton.fr/tools/autocutsel/"
+source=(https://github.com/sigmike/autocutsel/releases/download/$pkgver/autocutsel-$pkgver.tar.gz)
+url="http://www.nongnu.org/autocutsel/"
 install=autocutsel.install
 license=('GPL')
+md5sums=('7bf76b1ea7a15592f05d02b4c086d4cd')
+
 build() {
   cd $srcdir/$pkgname-$pkgver
   ./configure --prefix=/usr

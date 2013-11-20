@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 198456 2013-10-30 14:59:04Z allan $
+# $Id: PKGBUILD 199955 2013-11-20 10:57:59Z allan $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor: François Charette <francois.archlinux.org>
 # Contributor: Damir Perisa <damir.archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=thinkfinger
 pkgver=0.3
-pkgrel=7
+pkgrel=8
 pkgdesc="A driver for the SGS Thomson Microelectronics fingerprint reader found in most IBM/Lenovo ThinkPads"
 url="http://thinkfinger.sourceforge.net/"
 arch=('i686' 'x86_64')

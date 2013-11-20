@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198377 2013-10-30 14:30:08Z allan $
+# $Id: PKGBUILD 199959 2013-11-20 11:08:50Z allan $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=psiconv
 pkgver=0.9.8
-pkgrel=13
+pkgrel=14
 pkgdesc="Converts Psion 5(MX) files to more commonly used file formats"
 arch=('i686' 'x86_64')
 url="http://software.frodo.looijaard.name/psiconv/"
