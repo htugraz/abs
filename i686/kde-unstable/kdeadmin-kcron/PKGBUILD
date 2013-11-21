@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 199581 2013-11-15 09:53:53Z andrea $
+# Maintainer: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=kdeadmin-kcron
+pkgver=4.11.90
+pkgrel=1
+pkgdesc='Configure and schedule tasks'
+url='http://userbase.kde.org/KCron'
+arch=('i686' 'x86_64')
+license=('GPL' 'LGPL' 'FDL')
+groups=('kde' 'kdeadmin')
+depends=('kdebase-runtime')
+makedepends=('cmake' 'automoc4')
+source=("http://download.kde.org/unstable/${pkgver}/src/kcron-${pkgver}.tar.xz")
+sha1sums=('ae63b9b12736af6e080c5ad9388fa04ef2819214')
+
+build() {
+  mkdir build
+  cd build
+  cmake ../kcron-${pkgver} \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DKDE4_BUILD_TESTS=OFF \
+    -DCMAKE_INSTALL_PREFIX=/usr
+  make
+}
+
+package() {
+  cd build
+  make DESTDIR=$pkgdir install
+}

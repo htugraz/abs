@@ -1,0 +1,31 @@
+# $Id: PKGBUILD 199706 2013-11-15 10:23:00Z andrea $
+# Maintainer: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=kdeutils-sweeper
+pkgver=4.11.90
+pkgrel=1
+pkgdesc='System Cleaner'
+url='http://kde.org/applications/utilities/sweeper'
+arch=('i686' 'x86_64')
+license=('GPL' 'LGPL' 'FDL')
+depends=('kdebase-runtime')
+makedepends=('cmake' 'automoc4')
+groups=('kde' 'kdeutils')
+source=("http://download.kde.org/unstable/${pkgver}/src/sweeper-${pkgver}.tar.xz")
+sha1sums=('21ae3b4a8828455297373f9a14b97715113365c6')
+
+build() {
+  cd "${srcdir}"
+  mkdir build
+  cd build
+  cmake ../sweeper-${pkgver} \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DKDE4_BUILD_TESTS=OFF \
+    -DCMAKE_INSTALL_PREFIX=/usr
+  make
+}
+
+package() {
+  cd $srcdir/build
+  make DESTDIR=$pkgdir install
+}

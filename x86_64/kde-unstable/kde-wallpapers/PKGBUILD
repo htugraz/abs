@@ -1,0 +1,24 @@
+# $Id: PKGBUILD 199708 2013-11-15 10:23:18Z andrea $
+# Maintainer: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=kde-wallpapers
+pkgver=4.11.90
+pkgrel=1
+pkgdesc="A set of wallpapers for KDE"
+arch=('any')
+url='http://www.kde.org'
+license=('GPL' 'LGPL' 'FDL')
+groups=('kde' 'kde-meta' 'kdebase')
+makedepends=('kdelibs' 'cmake' 'automoc4')
+source=("http://download.kde.org/unstable/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
+sha1sums=('dbd2c0e58101f8938766674109ada3462f57131e')
+
+package() {
+  mkdir build
+  cd build
+  cmake ../${pkgname}-${pkgver} \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DKDE4_BUILD_TESTS=OFF \
+    -DCMAKE_INSTALL_PREFIX=/usr
+  make DESTDIR="${pkgdir}" install
+}

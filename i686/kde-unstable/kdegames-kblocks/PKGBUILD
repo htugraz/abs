@@ -1,0 +1,31 @@
+# $Id: PKGBUILD 199617 2013-11-15 10:00:58Z andrea $
+# Maintainer: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=kdegames-kblocks
+pkgver=4.11.90
+pkgrel=1
+pkgdesc="The classic falling blocks game"
+url="http://kde.org/applications/games/kblocks/"
+arch=('i686' 'x86_64')
+license=('GPL' 'LGPL' 'FDL')
+groups=('kde' 'kdegames')
+depends=('kdebase-runtime' 'libkdegames')
+makedepends=('cmake' 'automoc4')
+install=${pkgname}.install
+source=("http://download.kde.org/unstable/${pkgver}/src/kblocks-${pkgver}.tar.xz")
+sha1sums=('5f86f18db53acd5e268e615adb5949014f2136fe')
+
+build() {
+  mkdir build
+  cd build
+  cmake ../kblocks-${pkgver} \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DKDE4_BUILD_TESTS=OFF \
+    -DCMAKE_INSTALL_PREFIX=/usr
+  make
+}
+
+package() {
+  cd build
+  make DESTDIR="${pkgdir}" install
+}

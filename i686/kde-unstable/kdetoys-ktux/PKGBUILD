@@ -1,0 +1,31 @@
+# $Id: PKGBUILD 199693 2013-11-15 10:20:20Z andrea $
+# Maintainer: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=kdetoys-ktux
+pkgver=4.11.90
+pkgrel=1
+pkgdesc='A Tux-in-a-spaceship screen saver'
+url='https://projects.kde.org/projects/kde/kdetoys/ktux'
+arch=('i686' 'x86_64')
+license=('GPL' 'LGPL' 'FDL')
+groups=('kde' 'kdetoys')
+depends=('kdebase-workspace')
+makedepends=('cmake' 'automoc4')
+install=${pkgname}.install
+source=("http://download.kde.org/unstable/${pkgver}/src/ktux-${pkgver}.tar.xz")
+sha1sums=('951e9d049ecacfa3f84ba867206edf494f7ddfcd')
+
+build() {
+  mkdir build
+  cd build
+  cmake ../ktux-${pkgver} \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DKDE4_BUILD_TESTS=OFF \
+    -DCMAKE_INSTALL_PREFIX=/usr
+  make
+}
+
+package() {
+  cd build
+  make DESTDIR=$pkgdir install
+}

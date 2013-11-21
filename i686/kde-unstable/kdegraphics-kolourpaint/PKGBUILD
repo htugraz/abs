@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 199653 2013-11-15 10:10:20Z andrea $
+# Maintainer: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=kdegraphics-kolourpaint
+pkgver=4.11.90
+pkgrel=1
+pkgdesc="Paint Program"
+url="http://kde.org/applications/graphics/kolourpaint/"
+arch=('i686' 'x86_64')
+license=('GPL' 'LGPL' 'FDL')
+groups=('kde' 'kdegraphics')
+depends=('kdebase-runtime' 'qimageblitz')
+makedepends=('cmake' 'automoc4')
+install=${pkgname}.install
+source=("http://download.kde.org/unstable/${pkgver}/src/kolourpaint-${pkgver}.tar.xz")
+sha1sums=('9d96c692a7bc6210f3234d02930ad064b09e77bb')
+
+build() {
+  cd "${srcdir}"
+  mkdir build
+  cd build
+  cmake ../kolourpaint-${pkgver} \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DKDE4_BUILD_TESTS=OFF \
+    -DCMAKE_INSTALL_PREFIX=/usr
+  make
+}
+
+package() {
+  cd "${srcdir}"/build
+  make DESTDIR="${pkgdir}" install
+}

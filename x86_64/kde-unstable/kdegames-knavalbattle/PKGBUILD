@@ -1,0 +1,31 @@
+# $Id: PKGBUILD 199631 2013-11-15 10:04:41Z andrea $
+# Maintainer: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=kdegames-knavalbattle
+pkgver=4.11.90
+pkgrel=1
+pkgdesc="A ship sinking game"
+url="http://kde.org/applications/games/knavalbattle/"
+arch=('i686' 'x86_64')
+license=('GPL' 'LGPL' 'FDL')
+groups=('kde' 'kdegames')
+depends=('kdebase-runtime' 'libkdegames')
+makedepends=('cmake' 'automoc4')
+install=${pkgname}.install
+source=("http://download.kde.org/unstable/${pkgver}/src/knavalbattle-${pkgver}.tar.xz")
+sha1sums=('d21f1c2b61484f39bb6fa736943dd6e34a59b54b')
+
+build() {
+  mkdir build
+  cd build
+  cmake ../knavalbattle-${pkgver} \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DKDE4_BUILD_TESTS=OFF \
+    -DCMAKE_INSTALL_PREFIX=/usr
+  make
+}
+
+package() {
+  cd build
+  make DESTDIR="${pkgdir}" install
+}
