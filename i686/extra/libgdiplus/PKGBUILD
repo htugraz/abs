@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198162 2013-10-30 13:10:21Z allan $
+# $Id: PKGBUILD 200003 2013-11-21 01:30:41Z allan $
 # Maintainer: Daniel Isenmann <daniel@archlinux.org>
 
 pkgname=libgdiplus
 pkgver=2.10.9
-pkgrel=2
+pkgrel=3
 pkgdesc="An Open Source Implementation of the GDI+ API"
 arch=(i686 x86_64)
 license=('MPL' 'LGPL')
@@ -26,6 +26,7 @@ prepare() {
 
   sed -i -e 's/-L\${libjpeg_prefix}\/lib -ljpeg/-ljpeg/' configure
 }
+
 build() {
   cd ${pkgname}-${pkgver}
   ./configure --prefix=/usr --with-cairo=system
