@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 199700 2013-11-15 10:21:42Z andrea $
+# $Id: PKGBUILD 200199 2013-11-22 09:28:02Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-kgpg
-pkgver=4.11.90
+pkgver=4.11.95
 pkgrel=1
 pkgdesc='A GnuPG frontend'
 url='http://kde.org/applications/utilities/kgpg/'
@@ -13,7 +13,7 @@ makedepends=('cmake' 'automoc4')
 groups=('kde' 'kdeutils')
 install=${pkgname}.install
 source=("http://download.kde.org/unstable/${pkgver}/src/kgpg-${pkgver}.tar.xz")
-sha1sums=('abe959da38f860ade45ef1145ff8956e9079815b')
+sha1sums=('42247322f4c67d1380e0317065be35b83306f3f0')
 
 build() {
   cd "${srcdir}"

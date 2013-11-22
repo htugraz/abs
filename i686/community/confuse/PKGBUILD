@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 99717 2013-10-30 23:13:11Z allan $
+# $Id: PKGBUILD 101339 2013-11-22 22:46:04Z ttoepper $
 # Contributor : Ionut Biru <ibiru@archlinux.org>
 # Contributor: Roman Kyrylych <roman@archlinux.org>
 # Contributor: Alexander Mieland (dma147) <dma147@linux-stats.org>
@@ -6,7 +6,7 @@
 
 pkgname=confuse
 pkgver=2.7
-pkgrel=2
+pkgrel=3
 pkgdesc="C-library for parsing configuration files"
 arch=('i686' 'x86_64')
 url="http://www.nongnu.org/confuse"
