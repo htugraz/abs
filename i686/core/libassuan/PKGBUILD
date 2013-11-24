@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 197818 2013-10-30 11:04:17Z allan $
+# Maintainer: Tobias Powalowski <tpowa@archlinux.org>
+
+pkgname=libassuan
+pkgver=2.1.1
+pkgrel=1
+pkgdesc="A IPC library used by some GnuPG related software"
+arch=('i686' 'x86_64')
+license=('GPL')
+url="http://www.gnupg.org/related_software/libassuan"
+depends=('libgpg-error')
+source=(ftp://ftp.gnupg.org/gcrypt/$pkgname/$pkgname-$pkgver.tar.bz2)
+install=libassuan.install
+md5sums=('757243cc4a71b30ed8d8dbe784035d36')
+
+build() {
+  cd ${srcdir}/${pkgname}-${pkgver}
+  ./configure --prefix=/usr
+  make
+}
+
+check() {
+  cd ${srcdir}/${pkgname}-${pkgver}
+  make check
+}
+
+package() {
+  cd ${srcdir}/${pkgname}-${pkgver}
+  make DESTDIR=${pkgdir} install
+}
