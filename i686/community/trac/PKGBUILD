@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 97122 2013-09-13 09:21:14Z spupykin $
+# $Id: PKGBUILD 101402 2013-11-24 20:39:42Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Rubin Simons <rubin@xs4all.nl>
 
 pkgname=trac
 pkgver=1.0.1
-pkgrel=5
+pkgrel=6
 pkgdesc="Trac Integrated SCM & Project Management using Apache & Subversion."
 arch=('any')
 url="http://trac.edgewall.org/"
 license=('BSD')
-depends=(python2 python2-genshi python2-babel)
-makedepends=(clearsilver python2-setuptools)
+depends=(python2 python2-genshi python2-babel python2-setuptools)
+makedepends=(clearsilver)
 install=trac.install
 backup=("etc/conf.d/tracd.conf")
 source=(http://ftp.edgewall.com/pub/trac/Trac-$pkgver.tar.gz
