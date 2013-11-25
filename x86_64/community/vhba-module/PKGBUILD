@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 100989 2013-11-14 11:13:02Z tpowa $
+# $Id: PKGBUILD 101445 2013-11-25 19:20:44Z heftig $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 # Contributor: Charles Lindsay <charles@chaoslizard.org>
@@ -17,7 +17,7 @@ options=(!makeflags)
 install=$pkgname.install
 source=("http://downloads.sourceforge.net/cdemu/$pkgname-$pkgver.tar.bz2"
         '60-vhba.rules')
-md5sums=('92a681e4665aa85a8335d00395a61697'
+md5sums=('660df41d08b1fd86baad1f16a0264438'
          '4dc37dc348b5a2c83585829bde790dcc')
 
 build() {
