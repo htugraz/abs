@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 101321 2013-11-22 17:20:23Z spupykin $
+# $Id: PKGBUILD 101468 2013-11-26 09:20:09Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Jan-Erik Rediger <badboy at archlinux dot us>
 # Contributor: nofxx <x@<nick>.com>
 
 pkgname=redis
-pkgver=2.8.0
+pkgver=2.8.1
 pkgrel=1
 pkgdesc="Advanced key-value store"
 arch=('i686' 'x86_64')
@@ -19,7 +19,7 @@ source=("http://download.redis.io/releases/redis-$pkgver.tar.gz"
 	"redis.service"
 	"redis.logrotate"
 	"redis.tmpfiles.d")
-md5sums=('f239c707996a5ff6243afe02c94e1fe2'
+md5sums=('4a29ec68346f1dee9b2f2075df295b3d'
          '5320aa6d0f31aadc1d6202ca40425aea'
          '9e2d75b7a9dc421122d673fe520ef17f'
          'dd9ab8022b4d963b2e5899170dfff490')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 100874 2013-11-12 18:14:01Z bpiotrowski $
+# $Id: PKGBUILD 101510 2013-11-26 19:25:39Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
 # Contributor: Eivind Uggedal <eivind@uggedal.com>
 
 pkgname=mpv
 pkgver=0.2.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Video player based on MPlayer/mplayer2'
 arch=('i686' 'x86_64')
 license=('GPL')
@@ -12,7 +12,7 @@ url='http://mpv.io'
 depends=(
          'portaudio' 'ffmpeg' 'lcms2' 'libdvdread' 'libcdio-paranoia' 'libxinerama'
          'libquvi' 'mpg123' 'libxv' 'libxkbcommon' 'libva' 'lirc-utils'
-         'desktop-file-utils' 'hicolor-icon-theme' 'xdg-utils' 'lua51'
+         'desktop-file-utils' 'hicolor-icon-theme' 'xdg-utils' 'lua'
         )
 makedepends=('mesa' 'python-docutils')
 options=(!emptydirs)

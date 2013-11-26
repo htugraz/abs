@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 94034 2013-07-13 12:34:24Z svenstaro $
+# $Id: PKGBUILD 101492 2013-11-26 13:40:36Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Andrew Belitsky <belitsky.a@gmail.com>
 pkgbase=mygui
 pkgname=('mygui' 'mygui-docs')
 pkgver=3.2.0
-pkgrel=6
+pkgrel=7
 pkgdesc="A multilayer and overlappable GUI System for OGRE"
 arch=('i686' 'x86_64')
 url="http://mygui.info/"
