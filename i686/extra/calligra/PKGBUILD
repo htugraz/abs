@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 196740 2013-10-17 14:02:44Z andyrtr $
+# $Id: PKGBUILD 200395 2013-11-27 20:54:34Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Ronald van Haren <ronald.archlinux.org>
 
@@ -17,7 +17,7 @@ pkgname=('calligra-braindump'
          'calligra-sheets'
          'calligra-stage'
          'calligra-words')
-pkgver=2.7.4
+pkgver=2.7.5
 pkgrel=1
 arch=('i686' 'x86_64')
 url='http://www.calligra-suite.org/'
@@ -28,7 +28,7 @@ makedepends=('cmake' 'automoc4' 'boost' 'kdepimlibs' 'eigen2' 'kdeedu-marble'
              'openjpeg' 'kdegraphics-okular' 'pstoedit' 'vc')
 groups=('calligra')
 source=("http://download.kde.org/stable/${pkgbase}-${pkgver}/${pkgbase}-${pkgver}.tar.xz")
-md5sums=('0a9368b4a134eaf7c9834d21097e5016')
+md5sums=('05d1d0bac970d6dc68ffabc12fca2eb7')
 
 prepare() {
   mkdir build
