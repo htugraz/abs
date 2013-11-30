@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 97242 2013-09-15 18:37:06Z seblu $
+# $Id: PKGBUILD 101742 2013-11-30 16:24:02Z seblu $
 # Maintainer: Sébastien Luttringer
 # Contributor: SpepS <dreamspepser at yahoo dot it>
 # Contributor: Laszlo Papp <djszapi at archlinux us>
@@ -6,7 +6,7 @@
 
 pkgbase=penlight
 pkgname=('lua-penlight')
-pkgver=1.3.0
+pkgver=1.3.1
 pkgrel=1
 pkgdesc='Lua libraries focusing on input data handling'
 arch=('any')
@@ -14,7 +14,7 @@ url='https://github.com/stevedonovan/penlight'
 license=('custom')
 depends=('lua' 'lua-filesystem')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/stevedonovan/penlight/archive/$pkgver.tar.gz")
-md5sums=('7add43a98a940fb066b873c1298c4489')
+md5sums=('831f8ce7d3d5c872d129ad5db54a8424')
 
 check() {
   cd Penlight-$pkgver
