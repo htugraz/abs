@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 101610 2013-11-29 07:04:19Z schuay $
+# $Id: PKGBUILD 101800 2013-12-01 11:51:12Z schuay $
 # Maintainer: schuay <jakob.gruber@gmail.com>
 # Contributor: Jonathan Conder <jonno dot conder at gmail dot com>
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
@@ -13,13 +13,12 @@
 
 pkgname=desmume
 pkgver=0.9.10
-pkgrel=1
+pkgrel=2
 pkgdesc="Nintendo DS emulator"
 arch=('i686' 'x86_64')
 url="http://desmume.org/"
 license=('GPL')
-depends=('agg' 'gtkglext' 'libglade' 'desktop-file-utils' 'libpcap'
-         'soundtouch' 'alsa-lib' 'zziplib' 'glu')
+depends=('desktop-file-utils' 'libpcap' 'soundtouch' 'alsa-lib' 'glu' 'sdl' 'gtk2' 'zziplib')
 makedepends=('intltool' 'mesa')
 install=desmume.install
 source=("http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.tar"

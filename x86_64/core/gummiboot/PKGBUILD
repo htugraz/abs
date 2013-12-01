@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 195490 2013-10-01 11:32:33Z tomegun $
+# $Id: PKGBUILD 200670 2013-12-01 13:36:03Z tpowa $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Keshav P R <(the.ridikulus.rat) (aatt) (gemmaeiil) (ddoott) (ccoomm)>
 # Contributor:  Mantas Mikulėnas <grawity@gmail.com>
 
 pkgname="gummiboot"
-pkgver="38"
+pkgver="39"
 pkgrel="1"
 pkgdesc="Simple text-mode UEFI Boot Manager"
 url="http://freedesktop.org/wiki/Software/gummiboot"
