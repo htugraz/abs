@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 92994 2013-06-21 13:00:51Z kkeen $
+# $Id: PKGBUILD 101979 2013-12-03 09:00:37Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Kevin Piche <kevin@archlinux.org>
 # Contributor: Roberto Carvajal <roberto@archlinux.org>
 
 pkgname=multitail
-pkgver=5.2.13
+pkgver=6.0
 pkgrel=1
 pkgdesc="Lets you view one or multiple files like the original tail program"
 arch=('i686' 'x86_64')
@@ -13,10 +13,12 @@ url="http://www.vanheusden.com/multitail"
 depends=('ncurses')
 backup=('etc/multitail.conf')
 source=("${url}/${pkgname}-${pkgver}.tgz")
-md5sums=('71a774b6d6bb430672c8a9252baac6e6')
+md5sums=('fb8efc547d389257021885fe5402255c')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"
+  sed -i 's|ncursesw/panel.h|panel.h|' mt.h
+  sed -i 's|ncursesw/ncurses.h|ncurses.h|' mt.h
   make
 }
 

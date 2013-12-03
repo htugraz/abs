@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 200699 2013-12-02 16:36:26Z bpiotrowski $
+# $Id: PKGBUILD 200743 2013-12-03 19:35:30Z giovanni $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: xduugu <xduugu@gmx.com>
 
 pkgbase=mkvtoolnix
 pkgname=('mkvtoolnix-cli' 'mkvtoolnix-gtk')
-pkgver=6.5.0
-pkgrel=2
+pkgver=6.6.0
+pkgrel=3
 arch=('i686' 'x86_64')
 license=('GPL')
 url="http://www.bunkus.org/videotools/mkvtoolnix/index.html"
 makedepends=('libmatroska' 'flac' 'libvorbis' 'file' 'wxgtk'
              'boost-libs' 'lzo2' 'xdg-utils' 'boost' 'ruby')
 source=("http://www.bunkus.org/videotools/${pkgbase}/sources/${pkgbase}-${pkgver}.tar.xz")
-md5sums=('e2d8d539b8cb9249b6c398690bc61c78')
+md5sums=('1e952a3196b0c43150801eeaecba68ed')
 
 build() {
   cd "${srcdir}/${pkgbase}-${pkgver}"
