@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 99988 2013-10-31 02:51:42Z allan $
+# Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+# Contributor: Geoffroy Carrier <geoffroy.carrier@koon.fr>
+
+pkgname=sleuthkit
+pkgver=4.1.2
+pkgrel=1
+pkgdesc='File system and media management forensic analysis tools'
+arch=('i686' 'x86_64')
+url='http://www.sleuthkit.org/sleuthkit'
+license=('GPL2' 'CPL' 'custom:"IBM Public Licence"')
+depends=('perl')
+changelog=$pkgname.changelog
+source=(http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.gz)
+sha256sums=('58253b35c016083558fb581308f4a3baf884229de89eb84ddbfb977ed56600d3')
+
+build() {
+  cd ${pkgname}-${pkgver}
+
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd ${pkgname}-${pkgver}
+
+  make DESTDIR=${pkgdir} install
+
+  # licenses
+  install -d ${pkgdir}/usr/share/licenses/${pkgname}
+  install -Dm0644 licenses/* ${pkgdir}/usr/share/licenses/${pkgname}
+}

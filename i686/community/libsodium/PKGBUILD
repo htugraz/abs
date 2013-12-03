@@ -1,0 +1,37 @@
+# $Id: PKGBUILD 100860 2013-11-12 10:28:49Z fyan $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
+# Contributor: namelessjon <jonathan.stott@gmail.com>
+# Contributor: Alessio Sergi <asergi at archlinux dot us>
+
+pkgname=libsodium
+pkgver=0.4.5
+pkgrel=2
+pkgdesc="P(ortable|ackageable) NaCl-based crypto library"
+arch=('i686' 'x86_64')
+url="https://github.com/jedisct1/libsodium"
+license=('custom:ISC')
+depends=('glibc')
+source=(http://download.dnscrypt.org/$pkgname/releases/$pkgname-${pkgver}.tar.gz)
+
+build() {
+  cd "$pkgname-$pkgver"
+  ./configure --prefix=/usr
+  make
+}
+
+check() {
+  cd "$pkgname-$pkgver"
+  make check
+}
+
+package() {
+  cd "$pkgname-$pkgver"
+  make DESTDIR="$pkgdir" install
+
+  # install license
+  install -d -m 755 "$pkgdir/usr/share/licenses/$pkgname"
+  install -m 644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
+
+# vim:set ts=2 sw=2 et:
+sha512sums=('6105bb91982e040420312f042bb71547f0208ed9b2928b1740a68134b82dd4566f18c0761b8959a85d13b6770edbd977d989bc74eabc9bfa5e0000f5ab5c7b32')

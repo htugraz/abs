@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 99870 2013-10-31 02:11:43Z allan $
+# Maintainer: Gaetan Bisson <bisson@archlinux.org>
+
+pkgname=liboping
+pkgver=1.6.2
+pkgrel=1
+pkgdesc='C library to generate ICMP echo requests, better known as "ping packets"'
+url='http://verplant.org/liboping/'
+arch=('i686' 'x86_64')
+license=('GPL')
+depends=('libcap')
+makedepends=('ncurses')
+optdepends=('perl: perl bindings'
+            'ncurses: noping CLI tool')
+source=("${url}files/${pkgname}-${pkgver}.tar.gz")
+sha256sums=('1b3203e5f13b35a6f7ff163c26e4f42284a625fa30d3bdbfdafb6cccb1f33803')
+
+install=install
+
+build() {
+	cd "${srcdir}/${pkgname}-${pkgver}"
+
+	# setting capabilities/setuid is futile in fakeroot
+	# (we do that in the install script)
+	sed -i 's/ install-exec-hook//g' src/Makefile.in
+
+	./configure --prefix=/usr --enable-static=no
+	make
+}
+
+package() {
+	cd "${srcdir}/${pkgname}-${pkgver}"
+	make DESTDIR="${pkgdir}" install
+}

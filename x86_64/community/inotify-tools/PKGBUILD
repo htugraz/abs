@@ -1,0 +1,26 @@
+# $Id: PKGBUILD 100108 2013-11-01 17:15:48Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Alessandro Sagratini
+
+pkgname=inotify-tools
+pkgver=3.14
+pkgrel=3
+pkgdesc="inotify-tools is a C library and a set of command-line programs for Linux providing a simple interface to inotify."
+arch=('i686' 'x86_64')
+url="http://inotify-tools.sourceforge.net/"
+license=('GPL')
+depends=(glibc)
+makedepends=('gcc' 'make')
+source=(http://github.com/downloads/rvoicilas/inotify-tools/inotify-tools-$pkgver.tar.gz)
+md5sums=('b43d95a0fa8c45f8bab3aec9672cf30c')
+
+build() {
+  cd $srcdir/$pkgname-$pkgver
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd $srcdir/$pkgname-$pkgver
+  make DESTDIR=$pkgdir install
+}

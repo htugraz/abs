@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 88586 2013-04-20 15:35:54Z dwallace $
+# Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
+# Contributor: feuri
+
+pkgname=dunst
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="a dmenu-ish notification system "
+arch=('i686' 'x86_64')
+url="http://knopwob.github.com/dunst"
+license=(MIT)
+depends=(libxinerama libxss libxdg-basedir pango)
+optdepends=("libnotify: notify-send"
+            "dbus: start dunst on demand")
+makedepends=(libnotify dbus 'perl')
+provides=(notification-daemon)
+source=("${pkgname}-${pkgver}.tar.bz2::http://www.knopwob.org/public/dunst-release/$pkgname-$pkgver.tar.bz2")
+
+build() {
+	make -C "$srcdir/$pkgname-$pkgver" X11INC=/usr/include/X11 X11LIB=/usr/lib/X11
+}
+
+package() {
+	make -C "$pkgname-$pkgver" DESTDIR="${pkgdir}" PREFIX=/usr install
+	install -Dm644 "${srcdir}/$pkgname-$pkgver/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}
+# vim:set ts=2 sw=2 et:
+md5sums=('bb5fee3cdf6ee30f7e11b7edd35e6723')

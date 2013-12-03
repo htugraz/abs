@@ -1,0 +1,37 @@
+# $Id: PKGBUILD 100022 2013-10-31 03:03:33Z allan $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
+# Contributor: archtux <antonio dot arias99999 at gmail dot com>
+
+pkgname=xnoise
+pkgver=0.2.19
+pkgrel=1
+pkgdesc="Media player with a slick GUI, great speed and lots of features."
+arch=('i686' 'x86_64')
+url="http://www.xnoise-media-player.com/"
+license=('GPL2')
+depends=('desktop-file-utils' 'gnome-icon-theme' 'gst-plugins-base-libs' 'gst-plugins-good' 'gtk3' 'libsoup' 'sqlite' 'libtaginfo' 'librsvg' 'vala')
+optdepends=('gst-plugins-base: Basic media codecs'
+            'gst-plugins-bad: Extra media codecs'
+            'gst-plugins-ugly: Extra media codecs'
+	    'gst-libav: Extra media codecs'
+	    'gvfs: Needed for fetching album art')
+makedepends=('gettext' 'intltool')
+install=$pkgname.install
+source=("https://bitbucket.org/shuerhaaken/xnoise/downloads/$pkgname-$pkgver.tar.gz")
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  make DESTDIR="$pkgdir" install
+  
+  # Remove obsolete files
+  rm -rf "$pkgdir/usr/include" "$pkgdir/usr/share/vala"
+}
+
+sha512sums=('3c3a735d005704342d2c27c36738b91f850e2630b431edfc1def5d26f836dc0df1ef752ca8d1eec3e90702eb27f78e46970a147a64c2156fbe53c8471eb978cb')

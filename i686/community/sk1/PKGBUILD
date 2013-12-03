@@ -1,0 +1,27 @@
+# $Id: PKGBUILD 99085 2013-10-24 10:25:28Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: ConnorBehan <connor.behan@gmail.com>
+
+pkgname=sk1
+pkgver=0.9.1
+pkgrel=13
+pkgdesc="Fork of skencil with improved CMYK support"
+arch=(i686 x86_64)
+url="http://sk1project.org/modules.php?name=Products&product=sk1"
+depends=('tcl' 'tk' 'python2-lcms' 'python2-pillow' 'zenity' 'sk1libs' 'sk1sdk')
+license=('GPL' 'LGPL')
+source=(https://sk1.googlecode.com/files/sk1-${pkgver}pre2_rev1383.tar.gz
+	build-fix.patch)
+md5sums=('ce8a98e99e133b215b7ed67d6b0e0113'
+         'b22c3c7b6a979c0a4e59ecaa2bd2182b')
+
+prepare() {
+  cd $srcdir/sk1-${pkgver}pre2
+  sed -i 's_#! /usr/bin/python_#! /usr/bin/python2_' src/{__init__.py,sk1}
+  patch -p1 <$srcdir/build-fix.patch
+}
+
+package() {
+  cd $srcdir/sk1-${pkgver}pre2
+  python2 setup.py install --prefix=/usr --root=$pkgdir
+}

@@ -1,0 +1,82 @@
+# $Id: PKGBUILD 88793 2013-04-22 10:31:24Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Eugen Zagorodniy e dot zagorodniy at gmail dot com
+# Contributor: aunoor
+
+pkgname=notion
+pkgver=20130422
+pkgrel=1
+pkgdesc="Tabbed tiling, window manager. Fork of Ion3"
+url="http://sourceforge.net/projects/notion/"
+arch=('i686' 'x86_64')
+license=('custom:LGPL')
+depends=('glib2' 'gettext' 'lua' 'libxext' 'libsm')
+optdepends=('libxinerama' 'libxrandr')
+makedepends=('git' 'pkgconfig' 'libxinerama' 'libxrandr'
+	     'rubber' 'latex2html' 'texlive-htmlxml' 'texlive-latexextra')
+provides=('libtu' 'libextl')
+changelog=ChangleLog
+source=("git://notion.git.sourceforge.net/gitroot/notion/notion"
+	"git://notion.git.sourceforge.net/gitroot/notion/libtu"
+	"git://notion.git.sourceforge.net/gitroot/notion/libextl"
+	"git://notion.git.sourceforge.net/gitroot/notion/notion-doc"
+	"git://notion.git.sourceforge.net/gitroot/notion/mod_xinerama"
+	"git://notion.git.sourceforge.net/gitroot/notion/mod_xkbevents"
+	"git://notion.git.sourceforge.net/gitroot/notion/mod_xrandr"
+	"git://notion.git.sourceforge.net/gitroot/notion/mod_notionflux"
+	"git://notion.git.sourceforge.net/gitroot/notion/contrib")
+md5sums=('SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP')
+
+build() {
+  cd ${srcdir}
+
+  for i in libextl libtu mod_xinerama mod_xkbevents mod_xrandr mod_notionflux notion-doc; do
+    cp -r  ${srcdir}/$i ${srcdir}/notion/
+  done
+
+  # build notion
+  cd ${srcdir}/notion
+  msg "Starting make..."
+  sed -e 's/^\(PREFIX=\).*$/\1\/usr/' \
+	-e 's/^\(ETCDIR=\).*$/\1\/etc\/notion/' \
+	-e 's/^\(LUA_DIR=\).*$/\1\/usr/' \
+	-e 's/^\(X11_PREFIX=\).*/\1\/usr/' \
+	-i system-autodetect.mk
+  make INCLUDES=-I${srcdir}/notion
+
+  # build doc and modules
+  for i in mod_xinerama mod_xkbevents mod_xrandr; do
+    (cd $i && make -j1 TOPDIR=.. all)
+  done
+
+  (cd notion-doc && make -j1 TOPDIR=.. all)
+}
+
+package() {
+  cd ${srcdir}/notion
+
+  # notion
+  make PREFIX=${pkgdir}/usr ETCDIR=${pkgdir}/etc/notion install
+
+  # modules
+  for i in mod_xinerama mod_xkbevents mod_xrandr notion-doc; do
+    (cd $i && make  PREFIX=${pkgdir}/usr ETCDIR=${pkgdir}/etc/notion TOPDIR=.. install)
+  done
+  cp ${srcdir}/mod_xinerama/*.lua $pkgdir/etc/notion/
+  cp ${srcdir}/mod_xkbevents/*.lua $pkgdir/etc/notion/
+
+  # contrib
+  mkdir -p $pkgdir/usr/share/notion/contrib
+  cp -a ${srcdir}/contrib/* $pkgdir/usr/share/notion/contrib
+
+  # license
+  install -Dm0644 LICENSE ${pkgdir}/usr/share/licenses/notion/LICENSE
+}

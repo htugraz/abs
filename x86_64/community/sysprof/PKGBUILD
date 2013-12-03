@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 79392 2012-11-04 01:05:10Z ebelanger $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Geoffroy Carrier <geoffroy.carrier@aur.archlinux.org>
+# Previous Contributor: Eric Belanger <belanger@astro.umontreal.ca>
+# Previous Contributor: aeolist <aeolist@hotmail.com>
+
+pkgname=sysprof
+pkgver=1.2.0
+pkgrel=1
+pkgdesc="A sampling CPU profiler that uses a Linux kernel module to profile the entire system"
+arch=('i686' 'x86_64')
+url="http://www.daimi.au.dk/~sandmann/sysprof/"
+license=("GPL")
+source=(http://www.daimi.au.dk/~sandmann/$pkgname/$pkgname-$pkgver.tar.gz)
+depends=('libglade' 'binutils')
+makedepends=('libglade' 'binutils' 'linux-headers')
+md5sums=('a81808d847732f8dafb59d26ec2eebbf')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+  ./configure --prefix=/usr --sysconfdir=/etc
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  make DESTDIR="$pkgdir" install
+}

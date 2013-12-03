@@ -1,0 +1,26 @@
+# $Id: PKGBUILD 100166 2013-11-01 20:47:35Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: mickael9 <mickael9 at gmail dot com>
+
+pkgname=gpsim
+pkgver=0.27.0
+pkgrel=2
+pkgdesc="A full-featured software simulator for Microchip PIC microcontrollers"
+arch=(i686 x86_64)
+url="http://gpsim.sourceforge.net/"
+license=(GPL)
+depends=('gtk2+extra' 'popt')
+makedepends=('gtk2+extra' 'gputils')
+source=(http://downloads.sourceforge.net/${pkgname}/${pkgname}-${pkgver}.tar.gz)
+md5sums=('b3ded17f1c8c6134f2381d6e6925b231')
+
+build() {
+  cd ${srcdir}/${pkgname}-${pkgver}
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd ${srcdir}/${pkgname}-${pkgver}
+  make DESTDIR=${pkgdir} install
+}

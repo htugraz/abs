@@ -1,0 +1,89 @@
+# $Id: PKGBUILD 101487 2013-11-26 13:01:15Z svenstaro $
+# Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
+pkgbase=ogre
+pkgname=('ogre' 'ogre-docs')
+pkgver=1.9.0
+pkgrel=1
+pkgdesc='Scene-oriented, flexible 3D engine written in C++'
+arch=('i686' 'x86_64')
+url='http://www.ogre3d.org'
+license=('custom:MIT')
+depends=('boost-libs' 'freeimage' 'freetype2' 'libxaw' 'libxrandr' 
+         'nvidia-cg-toolkit' 'zziplib' 'ois' 'glu' 'gcc-go' 'tinyxml')
+makedepends=('boost' 'cmake' 'doxygen' 'graphviz' 'ttf-dejavu' 'mesa' 'mercurial')
+install=ogre.install
+source=("hg+ssh://hg@bitbucket.org/sinbad/ogre#tag=v${pkgver//./-}"
+        freetype.patch)
+md5sums=('SKIP'
+         '73af39f59c302b76bee600fc5127af9a')
+
+build() {
+  cd ogre
+
+  patch -Np1 < $srcdir/freetype.patch
+
+  # get a clean build dir
+  [[ -d build ]] && rm -rf build
+  mkdir build && cd build
+
+  # generate CMake Makefile
+  cmake .. \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DOGRE_INSTALL_SAMPLES=TRUE \
+    -DOGRE_INSTALL_DOCS=TRUE \
+    -DOGRE_INSTALL_SAMPLES_SOURCE=TRUE \
+    -DCMAKE_BUILD_TYPE=Release # set =Debug for debugging version
+
+  # compile
+  make
+
+  # generate docs
+  make OgreDoc
+}
+
+package_ogre() {
+  optdepends=('cppunit: unit testing'
+              'intel-tbb: better threading support'
+              'poco: portability'
+              'boost: for developing using ogre'
+              'ogre-docs: documentation')
+
+  cd ogre/build
+
+  # install the bugger
+  make DESTDIR=${pkgdir} install
+
+  # fix up samples
+  install -dm775 -o root -g users ${pkgdir}/opt/OGRE/samples/
+  mv ${pkgdir}/usr/share/OGRE/*.cfg ${pkgdir}/opt/OGRE/samples/
+  mv ${pkgdir}/usr/bin/SampleBrowser ${pkgdir}/opt/OGRE/samples/
+
+  # make sample launcher
+  echo "#!/bin/bash" > ${pkgdir}/usr/bin/OgreSampleBrowser
+  echo "cd /opt/OGRE/samples && ./SampleBrowser" >> ${pkgdir}/usr/bin/OgreSampleBrowser
+  chmod +x ${pkgdir}/usr/bin/OgreSampleBrowser
+  
+  # install license
+  install -Dm644 ../Docs/License.html ${pkgdir}/usr/share/licenses/${pkgname}/license.html
+
+  # move docs out of this package
+  mv ${pkgdir}/usr/share/OGRE/docs ${srcdir}/docs
+}
+
+package_ogre-docs() {
+  pkgdesc="Documentation for ogre"
+  depends=()
+
+  cd ogre/build
+
+  # move docs into this package
+  install -dm755 ${pkgdir}/usr/share/doc
+  mv ${srcdir}/docs ${pkgdir}/usr/share/doc/OGRE/
+
+  # symlink for docs
+  install -dm755 ${pkgdir}/usr/share/OGRE/
+  cd ${pkgdir}/usr/share
+  ln -s doc/OGRE/ OGRE/docs
+}
+
+# vim:set ts=2 sw=2 et:

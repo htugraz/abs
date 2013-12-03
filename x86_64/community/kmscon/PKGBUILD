@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 100312 2013-11-02 08:59:03Z thestinger $
+# Maintainer: Daniel Micay <danielmicay@gmail.com>
+# Contributor: David Herrmann <dh.herrmann@googlemail.com>
+pkgname=kmscon
+pkgver=8
+pkgrel=1
+pkgdesc='Terminal emulator based on Kernel Mode Setting (KMS)'
+arch=(i686 x86_64)
+url='https://github.com/dvdhrm/kmscon'
+license=('MIT')
+depends=(systemd libdrm mesa libegl libgbm libgles pango libxkbcommon xkeyboard-config libtsm)
+makedepends=(git libxslt docbook-xsl linux-api-headers)
+source=(git://github.com/dvdhrm/kmscon#tag=kmscon-$pkgver)
+md5sums=(SKIP)
+
+build() {
+  cd $pkgname
+  ./autogen.sh --prefix=/usr --disable-wlterm
+  make
+}
+
+package() {
+  cd $pkgname
+  make DESTDIR="$pkgdir/" install
+  mkdir -p "$pkgdir/usr/share/licenses/$pkgname" "$pkgdir/usr/lib/systemd/system"
+  cp COPYING "$pkgdir/usr/share/licenses/$pkgname/"
+  cp docs/kmscon{,vt@}.service "$pkgdir/usr/lib/systemd/system/"
+}

@@ -1,0 +1,27 @@
+# $Id: PKGBUILD 98175 2013-10-07 01:47:21Z fyan $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
+# Contributor: Josh VanderLinden <arch@cloudlery.com>
+# Contributor: Nicolas Storme <nicolas@atelier-web.com>
+
+pkgname=goaccess
+pkgver=0.6.1
+pkgrel=1
+pkgdesc="An open source real-time web log analyzer and interactive viewer"
+arch=('i686' 'x86_64')
+url="http://goaccess.prosoftcorp.com"
+license=('GPL')
+depends=('ncurses' 'geoip' 'glib2')
+source=(http://prdownloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.gz)
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+  ./configure --enable-geoip
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  make prefix="$pkgdir/usr" install
+}
+
+sha512sums=('67712e4af16c6e039ca46f6f8d8302a58be1e0cfd0c76930068c03a9989c35b58b61f7b1e6a9e79cbb978c8f492b80782b8c7b894abc2e067f0a520e2981f98b')

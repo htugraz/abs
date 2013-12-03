@@ -1,0 +1,29 @@
+# $Id: PKGBUILD 99079 2013-10-24 09:22:03Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: PyroPeter <abi1789@googlemail.com>
+# Contributor: BlackEagle <ike.devolder@scarlet.be>
+# Contributor: chochem <chochem@gmail.com>
+
+pkgname=xmlstarlet
+pkgver=1.5.0
+pkgrel=1
+pkgdesc="A set of tools to transform, query, validate, and edit XML documents"
+arch=('i686' 'x86_64')
+url="http://xmlstar.sourceforge.net/"
+license=('MIT')
+depends=('libxslt')
+source=("xmlstarlet-$pkgver.tar.gz::http://sourceforge.net/projects/xmlstar/files/xmlstarlet/$pkgver/xmlstarlet-$pkgver.tar.gz/download")
+md5sums=('0c6db295d0cf9ff0d439edb755b7e8f6')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+  LIBXSLT_PREFIX=/usr LIBXML_PREFIX=/usr ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  make DESTDIR="${pkgdir}" install
+  install -Dm0644 Copyright $pkgdir/usr/share/licenses/$pkgname/COPYING
+  ln -s xml ${pkgdir}/usr/bin/xmlstarlet
+}

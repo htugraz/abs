@@ -1,0 +1,50 @@
+# $Id: PKGBUILD 97618 2013-09-25 18:19:34Z bpiotrowski $
+# Maintainer:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
+# Contributor: Blue Peppers <bluepeppers@archlinux.us>
+# Contributor: Stefan Husmann< stefan-husmann@t-online.de>
+
+pkgname=tint2
+pkgver=0.11
+pkgrel=6
+pkgdesc='Basic, good-looking task manager for WMs'
+arch=('i686' 'x86_64')
+url="http://code.google.com/p/tint2/"
+license=('GPL2')
+conflicts=('ttm-svn' 'tint')
+replaces=('tint')
+depends=('gtk2' 'imlib2')
+optdepends=('pygtk: for tint2wizard')
+makedepends=('pygtk' 'cmake')
+provides=('tint')
+source=(http://tint2.googlecode.com/files/tint2-$pkgver.tar.bz2
+        add-power-now-support.patch
+        fix_defunct_processes.patch
+        middle_click_on_clock.patch)
+md5sums=('6fc5731e7425125fa84a2add5cef4bff'
+         '6cfcad028f1bd2f69812167f5395f890'
+         'b3d052ac5ada81c56e36133b1ecdee8c'
+         'f7918d29a87422aab6fb9d922867d8f8')
+
+prepare() {
+  cd $pkgname-$pkgver
+
+  patch -Np0 -i ../add-power-now-support.patch
+  patch -Np0 -i ../fix_defunct_processes.patch
+  patch -Np0 -i ../middle_click_on_clock.patch
+
+  # python2 fix
+  sed -i 's_#!/usr/bin/env python_#!/usr/bin/env python2_' src/tint2conf/tintwizard.py
+  sed -i 's_python _python2 _' src/tint2conf/main.c
+}
+
+build() {
+  cd $pkgname-$pkgver
+
+  cmake -DCMAKE_INSTALL_PREFIX=/usr .
+  make 
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

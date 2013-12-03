@@ -1,0 +1,44 @@
+# $Id: PKGBUILD 99199 2013-10-25 12:58:18Z giovanni $
+# Maintainer: Maxime Gauduin <alucryd@gmail.com>
+# Contributor: kozec <kozec@kozec.com>
+# Contributor: Limao Luo <luolimao+AUR@gmail.com>
+
+pkgname=aegisub
+pkgver=3.0.4
+pkgrel=5
+pkgdesc="A general-purpose subtitle editor with ASS/SSA support"
+arch=('i686' 'x86_64')
+url="http://www.aegisub.org"
+license=('GPL' 'BSD')
+depends=('desktop-file-utils' 'ffms2' 'fftw' 'hicolor-icon-theme' 'hunspell' 'lua51' 'wxgtk2.9')
+makedepends=('mesa')
+install="${pkgname}.install"
+source=("http://ftp.aegisub.org/pub/releases/${pkgname}-${pkgver}.tar.xz"
+        'wxgtk2.9.5.patch')
+sha256sums=('7d5d8b94da02278b3327f24dd546c0c897c4b369bd2da9e094dc60371422019a'
+            '8aed8aaf4773e4a315f9336d3ea4af2c46b9e84c4e651c202e0a70a6cd9e499c')
+
+prepare() {
+  cd ${pkgname}/${pkgname}
+
+  patch -Np2 -i ../../wxgtk2.9.5.patch
+}
+
+build() {
+  cd ${pkgname}/${pkgname}
+
+  ./configure --prefix='/usr' --without-{portaudio,openal,oss} --with-wxdir='/usr/include/wx-2.9' --with-wx-config='/usr/bin/wx-config-2.9'
+  make
+}
+
+package() {
+  cd ${pkgname}/${pkgname}
+
+  make DESTDIR="${pkgdir}" install
+
+# License
+  install -dm 755 "${pkgdir}"/usr/share/licenses/aegisub
+  install -m 644 LICENCE "${pkgdir}"/usr/share/licenses/aegisub/LICENSE
+}
+
+# vim: ts=2 sw=2 et:

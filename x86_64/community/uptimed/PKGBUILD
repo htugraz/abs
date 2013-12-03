@@ -1,0 +1,45 @@
+# $Id: PKGBUILD 100011 2013-10-31 02:59:26Z allan $
+# Maintainer:  Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
+# Contributor: Tom Killian <tomk@runbox.com>
+# Contributor: Tom Newsom <Jeepster@gmx.co.uk>
+
+pkgname=uptimed
+pkgver=0.3.17
+pkgrel=5
+pkgdesc="A system uptime record daemon"
+arch=(i686 x86_64)
+url="http://podgorny.cz/uptimed/"
+license=('GPL')
+depends=('glibc' 'bash')
+backup=(etc/uptimed.conf)
+install=$pkgname.install
+source=(http://podgorny.cz/$pkgname/releases/$pkgname-$pkgver.tar.bz2
+        service)
+md5sums=('528b62c33454b33537c3bf2366977bdb'
+         '6d1e97b9c54d622edc0bd607acbf3c10')
+
+build() {
+  cd $srcdir/$pkgname-$pkgver
+
+  # Change log path to Arch standard
+  for M in `ls M*`; do
+    sed -i "s|/var/spool/uptimed|/var/log/uptimed|" $M
+  done
+  sed -i 's|spool|log|' libuptimed/urec.h
+  sed -i 's|AM_CONFIG_HEADER|AC_CONFIG_HEADER|g' configure.ac
+
+  autoreconf -i
+  libtoolize --force
+
+  ./configure --prefix=/usr --sysconfdir=/etc --sbindir=/usr/bin
+  make
+}
+
+package() {
+  cd $srcdir/$pkgname-$pkgver
+  make install DESTDIR=$pkgdir
+
+  mv $pkgdir/etc/uptimed.conf-dist $pkgdir/etc/uptimed.conf
+  install -Dm644 $srcdir/service $pkgdir/usr/lib/systemd/system/uptimed.service
+}

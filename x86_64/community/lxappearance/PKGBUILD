@@ -1,0 +1,29 @@
+#$Id: PKGBUILD 101232 2013-11-20 09:52:30Z bpiotrowski $
+# Maintainer: Bartłomiej Piotrowski <barthalion@gmail.com>
+# Contributor: Angel Velasquez <angvp@archlinux.org>  
+# Contributor: Geoffroy Carrier <geoffroy.carrier@koon.fr>
+
+pkgname=lxappearance
+pkgver=0.5.3
+pkgrel=2
+pkgdesc='Feature-rich GTK+ theme switcher of the LXDE Desktop'
+arch=('i686' 'x86_64')
+license=('GPL2')
+url='http://lxde.org/'
+groups=('lxde')
+depends=('gtk2' 'dbus-glib')
+makedepends=('intltool')
+source=(http://downloads.sourceforge.net/sourceforge/lxde/${pkgname}-${pkgver}.tar.gz)
+md5sums=('9dfdc9bd45519d51b9df2ad6650c36f5')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --sysconfdir=/etc --prefix=/usr \
+    --enable-dbus
+  make 
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install 
+}

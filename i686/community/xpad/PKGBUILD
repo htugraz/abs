@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 100460 2013-11-04 12:14:25Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Kevin Piche <kevin@archlinux.org>
+# Contributor: Ben <contrasutra@myrealbox.com>
+
+pkgname=xpad
+pkgver=4.2
+pkgrel=1
+pkgdesc="Stickies-like notes program"
+arch=(i686 x86_64)
+depends=('gtk2' 'libsm' 'librsvg')
+makedepends=('intltool')
+url="http://mterry.name/xpad/"
+license=('GPL')
+install=xpad.install
+source=(http://launchpad.net/xpad/trunk/$pkgver/+download/xpad-$pkgver.tar.bz2
+	xpad-gtk-2.20.patch)
+md5sums=('85583f8f68ad61ec282ea1332fe76480'
+         '6a3d2952b469d65ec333714991ba8284')
+
+build() {
+  cd $srcdir/$pkgname-$pkgver
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd $srcdir/$pkgname-$pkgver
+  make DESTDIR=$pkgdir install
+}

@@ -1,0 +1,11 @@
+[Unit]
+Description=Chrony Network Time Daemon
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/chronyd
+PIDFile=/var/run/chronyd.pid
+
+[Install]
+WantedBy=multi-user.target

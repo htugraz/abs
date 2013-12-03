@@ -1,0 +1,26 @@
+# $Id: PKGBUILD 83563 2013-02-03 07:12:01Z giovanni $
+# Maintainer: Giovanni Scafora <giovanni@archlinux.org>
+# Contributor: GaoShichao <xgdgsc@gmail.com>
+
+pkgname=fuse-exfat
+pkgver=1.0.1
+pkgrel=1
+pkgdesc="Free exFAT file system implementation"
+arch=('i686' 'x86_64')
+url="http://code.google.com/p/exfat/"
+license=('GPL3')
+depends=('fuse')
+makedepends=('scons')
+optdepends=('exfat-utils: utilities for exFAT file system'
+            'util-linux: to mount exFAT volumes automatically')
+source=("http://exfat.googlecode.com/files/${pkgname}-${pkgver}.tar.gz")
+md5sums=('7988a5111841593231f20af22153362d')
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+
+  scons CCFLAGS="${CFLAGS}" LINKFLAGS="${LDFLAGS} " install DESTDIR="${pkgdir}/usr/bin"
+
+  # Install man page
+  install -Dm444 fuse/mount.exfat-fuse.8 "${pkgdir}/usr/share/man/man8/mount.exfat-fuse.8"
+} 

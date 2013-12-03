@@ -1,0 +1,54 @@
+# $Id: PKGBUILD 101859 2013-12-02 12:39:29Z bpiotrowski $
+# Maintainer:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
+# Contributor: Eivind Uggedal <eivind@uggedal.com>
+
+pkgname=mpv
+pkgver=0.2.4
+pkgrel=1
+pkgdesc='Video player based on MPlayer/mplayer2'
+arch=('i686' 'x86_64')
+license=('GPL')
+url='http://mpv.io'
+depends=(
+         'portaudio' 'ffmpeg' 'lcms2' 'libdvdread' 'libcdio-paranoia' 'libxinerama'
+         'libquvi' 'mpg123' 'libxv' 'libxkbcommon' 'libva' 'lirc-utils'
+         'desktop-file-utils' 'hicolor-icon-theme' 'xdg-utils' 'lua'
+        )
+makedepends=('mesa' 'python-docutils')
+options=(!emptydirs)
+install=mpv.install
+source=(https://github.com/mpv-player/$pkgname/archive/v$pkgver.tar.gz)
+md5sums=('465e99ed24478f3a2afe5ae1c4fdd7f4')
+
+build() {
+  unset CFLAGS
+  unset LDFLAGS
+
+  cd $pkgname-$pkgver
+
+  ./configure --prefix=/usr \
+    --confdir=/etc/mpv \
+    --disable-lircc \
+    --disable-joystick \
+    --disable-radio \
+    --disable-radio-capture \
+    --disable-radio-v4l2 \
+    --disable-rpath \
+    --disable-libbs2b \
+    --disable-direct3d \
+    --disable-corevideo \
+    --disable-cocoa \
+    --disable-coreaudio
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make -j1 DESTDIR="$pkgdir" install
+
+  install -d "$pkgdir"/usr/share/doc/mpv/examples
+  install -m644 etc/{input,example,encoding-example-profiles}.conf \
+    "$pkgdir"/usr/share/doc/mpv/examples
+  install -m644 DOCS/{encoding.rst,tech-overview.txt} \
+    "$pkgdir"/usr/share/doc/mpv
+}
