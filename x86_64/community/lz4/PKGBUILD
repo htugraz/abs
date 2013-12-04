@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 100408 2013-11-03 17:44:50Z seblu $
+# $Id: PKGBUILD 102089 2013-12-04 21:52:14Z seblu $
 # Maintainer: Sébastien Luttringer
 
 # Contacted by mail, author use svn commit as release version.
 # He only push tested release code into svn and support using revision as version
 
 pkgname=lz4
-pkgver=108
-pkgrel=1
+pkgver=109
+pkgrel=2
 pkgdesc='Very fast lossless compression algorithm'
 arch=('i686' 'x86_64')
 url='https://code.google.com/p/lz4/'
-license=('BSD' 'GPL2')
+license=('GPL2')
 makedepends=('svn')
 depends=('glibc')
 source=("$pkgname::svn+http://lz4.googlecode.com/svn/trunk/#revision=$pkgver")
@@ -25,7 +25,7 @@ package() {
   cd $pkgname
   install -Dm755 lz4 "$pkgdir/usr/bin/lz4"
   install -Dm755 lz4c "$pkgdir/usr/bin/lz4c"
-  install -Dm644 cmake/pack/release_COPYING.txt "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  install -Dm644 lz4.1 "$pkgdir/usr/share/man/man1/lz4.1"
 }
 
 # vim:set ts=2 sw=2 et:

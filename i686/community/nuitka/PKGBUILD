@@ -1,15 +1,16 @@
-# $Id: PKGBUILD 101989 2013-12-03 14:55:17Z arodseth $
+# $Id: PKGBUILD 102036 2013-12-04 12:37:26Z arodseth $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Panagiotis Mavrogiorgos (pmav99) <> (gmail)
 
 _name=Nuitka
 pkgname=nuitka
 pkgver=0.4.7
-pkgrel=1
+pkgrel=2
 pkgdesc='Python to native compiler'
 arch=('any')
 url='http://www.nuitka.net/'
 license=('APACHE')
+makedepends=('scons')
 depends=('python2')
 options=('!emptydirs')
 source=("http://nuitka.net/releases/$_name-$pkgver.tar.gz")
