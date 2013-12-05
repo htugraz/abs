@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 100202 2013-11-01 21:13:53Z spupykin $
+# $Id: PKGBUILD 102144 2013-12-05 21:13:52Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andreas Wagner <Andreas dot Wagner at em dot uni-frankfurt dot de>
 
 pkgname=liblockfile
 pkgver=1.08_4
 _basever=1.08
-pkgrel=3
+pkgrel=4
 pkgdesc="a library with NFS-safe locking functions"
 arch=('i686' 'x86_64')
 license=('GPL')
@@ -22,7 +22,7 @@ build() {
   for p in `cat ../debian/patches/series` ; do
     patch -p1 < ../debian/patches/$p
   done
-  ./configure --prefix=/usr --mandir=/usr/share/man
+  LDCONFIG=/usr/bin/true ./configure --enable-shared --prefix=/usr --mandir=/usr/share/man
   make
 }
 
