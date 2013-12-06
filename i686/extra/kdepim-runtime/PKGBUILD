@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198824 2013-11-05 19:44:04Z andrea $
+# $Id: PKGBUILD 200882 2013-12-06 12:16:16Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=kdepim-runtime
-pkgver=4.11.3
+pkgver=4.11.4
 pkgrel=1
 pkgdesc='Extends the functionality of kdepim'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('kdebase-runtime' 'libkgapi' 'libkolab' 'libkfbapi')
 makedepends=('cmake' 'automoc4' 'boost')
 install="${pkgname}.install"
 source=("http://download.kde.org/stable/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
-sha1sums=('168455654655bd302c668ca91f18fab47fa6cd3c')
+sha1sums=('202f6c9d0631c6297d4fd6b0b46167bab34a9b34')
 
 prepare() {
   mkdir build

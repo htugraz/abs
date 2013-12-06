@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 198928 2013-11-05 20:08:10Z andrea $
+# $Id: PKGBUILD 201096 2013-12-06 12:32:51Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-ksaneplugin
-pkgver=4.11.3
+pkgver=4.11.4
 pkgrel=1
 pkgdesc="A scan plugin that implements the scanning"
 url="https://projects.kde.org/projects/kde/kdegraphics/ksaneplugin"
@@ -13,7 +13,7 @@ makedepends=('cmake' 'automoc4')
 replaces=('kdegraphics-libs')
 conflicts=('kdegraphics-libs')
 source=("http://download.kde.org/stable/${pkgver}/src/ksaneplugin-${pkgver}.tar.xz")
-sha1sums=('f6ec3a98fe99e38cfa6dbfd56837b344ca27b956')
+sha1sums=('8b6dce0057d37a057aa8b32d75464e2d0dfa4324')
 
 build() {
   cd "${srcdir}"

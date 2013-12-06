@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 198825 2013-11-05 19:44:15Z andrea $
+# $Id: PKGBUILD 200884 2013-12-06 12:16:24Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdebindings-smokegen
-pkgver=4.11.3
+pkgver=4.11.4
 pkgrel=1
 pkgdesc="A general purpose C++ parser with a plugin infrastructure"
 url="https://projects.kde.org/projects/kde/kdebindings/smoke/smokegen"
@@ -12,7 +12,7 @@ depends=('kdebase-runtime')
 makedepends=('cmake' 'automoc4')
 conflicts=('kdebindings-smoke')
 source=("http://download.kde.org/stable/${pkgver}/src/smokegen-${pkgver}.tar.xz")
-sha1sums=('ceb0385627c199384351d5c649ae384e5c5dcc02')
+sha1sums=('fe838306771119b460ac78badb09c455a8a8c3cd')
 
 build() {
   cd "${srcdir}"
