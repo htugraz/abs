@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 100481 2013-11-05 02:40:41Z fyan $
+# $Id: PKGBUILD 102260 2013-12-07 10:36:45Z bpiotrowski $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
@@ -7,7 +7,7 @@
 
 pkgname=mongodb
 pkgver=2.4.8
-pkgrel=1
+pkgrel=2
 pkgdesc='A high-performance, open source, schema-free document-oriented database'
 arch=('i686' 'x86_64')
 url='http://www.mongodb.org'

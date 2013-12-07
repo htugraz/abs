@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198223 2013-10-30 13:33:34Z allan $
+# $Id: PKGBUILD 201261 2013-12-07 10:35:00Z bpiotrowski $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgbase=libpst
 pkgname=('libpst' 'libpst-docs')
 pkgver=0.6.58
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url="http://www.five-ten-sg.com/libpst/"
 license=('GPL')

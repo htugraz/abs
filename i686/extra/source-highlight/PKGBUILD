@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 199515 2013-11-13 21:12:16Z andrea $
+# $Id: PKGBUILD 201266 2013-12-07 10:35:06Z bpiotrowski $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Douglas Soares de Andrade <douglas@archlinux.org>
 
 pkgname=source-highlight
 pkgver=3.1.7
-pkgrel=8
+pkgrel=9
 pkgdesc="Convert source code to syntax highlighted document"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/src-highlite/"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 94043 2013-07-13 12:36:03Z svenstaro $
+# $Id: PKGBUILD 102271 2013-12-07 10:36:58Z bpiotrowski $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 # Contributor: Bartłomiej Piotrowski <barthalion@gmail.com>
@@ -8,8 +8,8 @@
 pkgname=pokerth
 _realname=PokerTH
 pkgver=1.0.1
-pkgrel=2
-pkgdesc="Poker game written in C++/QT4"
+pkgrel=3
+pkgdesc="Poker game written in C++/Qt4"
 arch=('i686' 'x86_64')
 url="http://www.pokerth.net/"
 license=('GPL' 'custom')

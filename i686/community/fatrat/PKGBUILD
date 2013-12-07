@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 100647 2013-11-07 11:59:11Z stativ $
+# $Id: PKGBUILD 102246 2013-12-07 10:36:30Z bpiotrowski $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname=fatrat
 pkgver=1.2.0_beta2
-pkgrel=10
+pkgrel=11
 pkgdesc="Qt4 based download manager with support for HTTP, FTP, SFTP, BitTorrent, rapidshare and more"
 arch=('i686' 'x86_64')
 url="http://fatrat.dolezel.info/"

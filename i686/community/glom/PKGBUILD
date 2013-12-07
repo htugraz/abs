@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 100847 2013-11-11 19:56:27Z jlichtblau $
+# $Id: PKGBUILD 102249 2013-12-07 10:36:33Z bpiotrowski $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Roman Kyrylych <Roman.Kyrylych@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=glom
 pkgver=1.24.2
-pkgrel=1
+pkgrel=2
 pkgdesc="An easy-to-use database designer and user interface"
 arch=('i686' 'x86_64')
 url="http://www.glom.org/"

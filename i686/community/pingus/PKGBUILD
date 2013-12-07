@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 94040 2013-07-13 12:35:34Z svenstaro $
+# $Id: PKGBUILD 102268 2013-12-07 10:36:53Z bpiotrowski $
 # Maintainer: Eric Belanger <eric@archlinux.org>
 
 pkgname=pingus
 pkgver=0.7.6
-pkgrel=9
+pkgrel=10
 pkgdesc="A Lemmings clone, i.e. a level-based puzzle game."
 arch=('i686' 'x86_64')
 url="http://pingus.seul.org"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 190045 2013-07-13 12:41:55Z svenstaro $
+# $Id: PKGBUILD 201264 2013-12-07 10:35:03Z bpiotrowski $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Jason Chu <jason@archlinux.org>
 
 pkgname=lyx
 pkgver=2.0.6
-pkgrel=3
+pkgrel=4
 pkgdesc="An advanced WYSIWYM document processor & LaTeX front-end"
 arch=('i686' 'x86_64')
 url="http://www.lyx.org"

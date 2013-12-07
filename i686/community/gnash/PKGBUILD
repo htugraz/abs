@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 99769 2013-10-30 23:36:07Z allan $
+# $Id: PKGBUILD 102250 2013-12-07 10:36:34Z bpiotrowski $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=gnash
 pkgname=(gnash-common gnash-gtk)
 pkgver=0.8.10
-pkgrel=10
+pkgrel=11
 arch=(i686 x86_64)
 url="http://www.gnu.org/software/gnash/"
 license=(GPL3)

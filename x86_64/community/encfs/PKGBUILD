@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 99736 2013-10-30 23:24:04Z allan $
+# $Id: PKGBUILD 102245 2013-12-07 10:36:29Z bpiotrowski $
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Jaroslaw Swierczynski <swiergot@aur.archlinux.org>
 # Contributor: Sven Kauber, <celeon@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=encfs
 pkgver=1.7.4
-pkgrel=11
+pkgrel=12
 pkgdesc='Encrypted filesystem in user-space'
 arch=('i686' 'x86_64')
 url='http://www.arg0.net/encfs'
@@ -28,5 +28,5 @@ build(){
 package() {
   cd ${pkgname}-${pkgver}
 
-  make DESTDIR=${pkgdir} install
+  make DESTDIR="${pkgdir}" install
 }
