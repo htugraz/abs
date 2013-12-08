@@ -1,23 +1,31 @@
-# $Id: PKGBUILD 101119 2013-11-17 18:33:07Z arcanis $
+# $Id: PKGBUILD 102314 2013-12-08 08:51:17Z arcanis $
 # Maintainer: Evgeniy Alekseev <arcanis.arch at gmail dot com>
 # Contributor: Tom <reztho at archlinux dot us>
 
 pkgname=pdfsam
 pkgver=2.2.2e
-pkgrel=2
+pkgrel=3
 pkgdesc="A free open source tool to split and merge pdf documents"
 arch=('any')
 url="http://www.pdfsam.org/"
 license=('GPL')
 depends=('java-environment' 'sh')
-makedepends=('apache-ant' 'libarchive')
-source=("http://downloads.sourceforge.net/project/${pkgname}/${pkgname}-enhanced/${pkgver}/${pkgname}-${pkgver}-out-src.zip"
-        "${pkgname}.desktop")
-md5sums=('d0ac4747ad1d6678e89706c4726890ee'
-         'a068594a157dd85f3f1f811cab44250b')
+makedepends=('apache-ant' 'desktop-file-utils' 'gendesk' 'libarchive')
+source=("http://downloads.sourceforge.net/project/${pkgname}/${pkgname}-enhanced/${pkgver}/${pkgname}-${pkgver}-out-src.zip")
+install=${pkgname}.install
+md5sums=('d0ac4747ad1d6678e89706c4726890ee')
 
 _branchdir=pdfsam-maine
 _builddir=${pkgname}-${pkgver/_/-}/build
+
+prepare() {
+  # create *.desktop file
+  gendesk -n \
+          --pkgname="${pkgname}" \
+          --pkgdesc="${pkgdesk}" \
+          --name="PDFsam" \
+          --categories="Office"
+}
 
 build() {
   # Now we unzip all the zips

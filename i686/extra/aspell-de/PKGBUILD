@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 197171 2013-10-23 13:51:59Z pierre $
+# $Id: PKGBUILD 201292 2013-12-08 08:42:55Z pierre $
 # Maintainer:
 # Contributor: Simo Leone <simo@archlinux.org>
 # Contributor: Tobias Kieslich <tobias@justdreams.de>
 
 pkgname=aspell-de
-pkgver=20120607
-pkgrel=2
+pkgver=20131206
+pkgrel=1
 pkgdesc="German dictionary for aspell"
 arch=('i686' 'x86_64')
 url="http://j3e.de/ispell/igerman98/index.html"
 license=('GPL2')
 depends=('aspell')
 source=("http://j3e.de/ispell/igerman98/dict/igerman98-${pkgver}.tar.bz2")
-md5sums=('9433d0ccd7db3c7681037980ece3f710')
+md5sums=('9b6c0c6615d2e099cd85a209d9f1fdbb')
 
 build() {
   cd "${srcdir}/igerman98-${pkgver}"
