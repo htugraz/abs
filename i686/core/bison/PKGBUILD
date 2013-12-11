@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 199806 2013-11-16 22:54:58Z allan $
+# $Id: PKGBUILD 201434 2013-12-11 15:08:40Z allan $
 # Maintainer: Allan McRae <allan@archlinux.org>
 # Contributor: Eric Belanger <eric@archlinux.org>
 
 pkgname=bison
-pkgver=3.0.1
+pkgver=3.0.2
 pkgrel=1
 pkgdesc="The GNU general-purpose parser generator"
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ groups=('base-devel')
 options=('staticlibs')
 install=bison.install
 source=(ftp://ftp.gnu.org/gnu/bison/${pkgname}-${pkgver}.tar.xz{,.sig})
-md5sums=('032a7b7b9f1a6e278ccde73f82cec5c2'
+md5sums=('146be9ff9fbd27497f0bf2286a5a2082'
          'SKIP')
 
 build() {
