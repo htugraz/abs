@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 101794 2013-12-01 10:13:27Z andyrtr $
+# $Id: PKGBUILD 102499 2013-12-12 12:55:01Z foutrelis $
 # Maintainer: Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Sébastien Luttringer
@@ -6,7 +6,7 @@
 pkgbase=virtualbox-modules-lts
 pkgname=('virtualbox-host-modules-lts' 'virtualbox-guest-modules-lts')
 pkgver=4.3.4
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 url='http://virtualbox.org'
 license=('GPL')
@@ -63,3 +63,4 @@ package_virtualbox-guest-modules-lts(){
 }
 
 # vim:set ts=2 sw=2 et:
+md5sums=()
