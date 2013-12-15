@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 199325 2013-11-11 03:44:42Z allan $
+# $Id: PKGBUILD 201557 2013-12-15 06:41:32Z allan $
 # Maintainer: Allan McRae <allan@archlinux.org>
 
 # toolchain build order: linux-api-headers->glibc->binutils->gcc->binutils->glibc
@@ -8,7 +8,7 @@
 
 pkgname=glibc
 pkgver=2.18
-pkgrel=10
+pkgrel=11
 pkgdesc="GNU C Library"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/libc"
