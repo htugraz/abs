@@ -1,21 +1,21 @@
-# $Id: PKGBUILD 67746 2012-03-14 10:14:38Z giovanni $
+# $Id: PKGBUILD 102663 2013-12-17 12:06:27Z bgyorgy $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Ronald van Haren <ronald.archlinux.org>
 
 pkgname=pyneighborhood
 pkgver=0.5.4
-pkgrel=2
+pkgrel=3
 pkgdesc="A GTK+ 2 rewrite of the well-known LinNeighborhood tool"
 license=('GPL')
 url="https://launchpad.net/pyneighborhood"
 source=("http://launchpad.net/pyneighborhood/0.5/${pkgver}/+download/${pkgname}-${pkgver}.tar.bz2")
 depends=('pygtk' 'smbclient')
-install=pyneighborhood.install
+optdepends=('gksu: mount/unmount Samba shares')
 arch=('any')
 options=('!emptydirs')
 sha1sums=('b0d899230ed0212aa50c17f406b0ee7e3d6ac17a')
 
-build() {
+prepare() {
   cd ${srcdir}/${pkgname}-${pkgver}
 
   # python2 fix
