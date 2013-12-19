@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 202070 2013-12-18 17:32:14Z andrea $
+# $Id: PKGBUILD 202215 2013-12-19 17:06:42Z fyan $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-kstars
 pkgver=4.12.0
-pkgrel=1
+pkgrel=3
 pkgdesc="Desktop Planetarium"
 url="http://kde.org/applications/education/kstars/"
 arch=('i686' 'x86_64')

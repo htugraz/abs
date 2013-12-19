@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 198394 2013-10-30 14:36:18Z allan $
+# $Id: PKGBUILD 202202 2013-12-19 10:41:19Z bpiotrowski $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor: Andreas Radke <andyrtr@archlinux.org>
 # Contributor: eric <eric@archlinux.org>
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 
 pkgname=raptor
-pkgver=2.0.10
-pkgrel=3
+pkgver=2.0.12
+pkgrel=1
 pkgdesc="A C library that parses RDF/XML/N-Triples into RDF triples"
 arch=('i686' 'x86_64')
 url="http://librdf.org/raptor"
@@ -32,4 +32,4 @@ package() {
   cd "${srcdir}"/raptor2-${pkgver}
   make prefix="${pkgdir}"/usr install
 }
-md5sums=('d9b0314eb835551adb48af037dcfd46e')
+md5sums=('a015a7fcc2cbdd38ee1450a5eb526ab5')
