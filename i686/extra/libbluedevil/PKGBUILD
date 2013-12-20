@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 200402 2013-11-28 07:43:48Z andrea $
+# $Id: PKGBUILD 202231 2013-12-20 12:50:11Z andrea $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libbluedevil
-pkgver=2.0.gita46446f
+pkgver=2.0.git202.fbf414a
 pkgrel=1
 pkgdesc='A Qt4 wrapper for bluez used in the new KDE bluetooth stack'
 arch=('i686' 'x86_64')
@@ -16,7 +16,7 @@ md5sums=('SKIP')
 
 pkgver() {
   cd ${pkgname}
-  echo "2.0.git$(git log --pretty=format:'%h' -n 1)"
+  printf "2.0.git%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
 prepare() {

@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 200408 2013-11-28 10:58:29Z andrea $
+# $Id: PKGBUILD 202233 2013-12-20 13:16:23Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=bluedevil
-pkgver=2.0.git1354.df662c3
+pkgver=2.0.git1381.f02fd99
 pkgrel=1
 pkgdesc='KDE bluetooth framework'
 arch=('i686' 'x86_64')

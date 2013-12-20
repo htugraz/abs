@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 102742 2013-12-18 18:08:48Z mtorromeo $
+# $Id: PKGBUILD 102806 2013-12-20 13:45:23Z mtorromeo $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Contributor: Marcello "mererghost" Rocha <https://github.com/mereghost>
 # Refactored by Blaž "Speed" Hrastnik <https://github.com/archSeer>
 
 pkgname=elasticsearch
 pkgver=0.90.8
-pkgrel=1
+pkgrel=2
 pkgdesc="Distributed RESTful search engine built on top of Lucene"
 arch=('i686' 'x86_64')
 url="http://www.elasticsearch.org/"
@@ -36,7 +36,7 @@ prepare() {
 
   sed 's|$ES_HOME/lib|/usr/lib/elasticsearch|g' -i bin/elasticsearch.in.sh
 
-  echo 'JAVA_OPTS="$JAVA_OPTS -Des.path.conf=/etc/elasticsearch"' >> bin/elasticsearch.in.sh
+  echo -e '\nJAVA_OPTS="$JAVA_OPTS -Des.path.conf=/etc/elasticsearch"' >> bin/elasticsearch.in.sh
 
   sed -e 's/# \(path\.conf: \).*$/\1\/etc\/elasticsearch/' \
     -e '0,/# \(path\.data: \).*$/s//\1\/var\/lib\/elasticsearch/' \
