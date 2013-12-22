@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 201102 2013-12-06 12:33:14Z svenstaro $
+# $Id: PKGBUILD 202566 2013-12-22 12:49:08Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-svgpart
-pkgver=4.11.4
+pkgver=4.12.0
 pkgrel=1
 pkgdesc="A KPart for viewing SVGs"
 url="https://projects.kde.org/projects/kde/kdegraphics/svgpart"
@@ -13,7 +13,7 @@ makedepends=('cmake' 'automoc4')
 replaces=('kdegraphics-libs')
 conflicts=('kdegraphics-libs')
 source=("http://download.kde.org/stable/${pkgver}/src/svgpart-${pkgver}.tar.xz")
-sha1sums=('436c473f228638f2d34833e9b39679c7bf750cdb')
+sha1sums=('dd58aade7943c99904e753934986fdd901f960ff')
 
 build() {
   cd "${srcdir}"

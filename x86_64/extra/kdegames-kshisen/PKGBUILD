@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 201062 2013-12-06 12:30:29Z svenstaro $
+# $Id: PKGBUILD 202546 2013-12-22 12:48:36Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kshisen
-pkgver=4.11.4
+pkgver=4.12.0
 pkgrel=1
 pkgdesc="A solitaire-like game played using the standard set of Mahjong tiles"
 url="http://kde.org/applications/games/kshisen/"
@@ -13,7 +13,7 @@ depends=('kdebase-runtime' 'libkdegames' 'libkmahjongg')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/${pkgver}/src/kshisen-${pkgver}.tar.xz")
-sha1sums=('b5bec09787263208b82ae9d4e943b030a8586119')
+sha1sums=('a027c93ff933ba5928fe539409b09cfcc50c9a6d')
 
 build() {
   mkdir build

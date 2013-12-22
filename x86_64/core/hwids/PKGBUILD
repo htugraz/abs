@@ -1,7 +1,7 @@
-# $Id: PKGBUILD 188423 2013-06-13 21:55:29Z tomegun $
+# $Id: PKGBUILD 202440 2013-12-21 23:13:16Z tomegun $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 pkgname=hwids
-pkgver=20130607
+pkgver=20130915.1
 pkgrel=1
 pkgdesc="hardware identification databases"
 makedepends=('git')
