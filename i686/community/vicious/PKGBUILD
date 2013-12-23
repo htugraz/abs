@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 91795 2013-05-27 22:50:23Z seblu $
+# $Id: PKGBUILD 102866 2013-12-23 01:12:46Z seblu $
 # Maintainer: Sébastien Luttringer
 
 pkgname=vicious
-pkgver=2.1.1
+pkgver=2.1.2
 pkgrel=1
 pkgdesc='Widgets for the Awesome window manager'
 arch=('any')
@@ -16,7 +16,7 @@ optdepends=(
   'curl: for widget types accessing network resources'
 )
 source=("http://git.sysphere.org/vicious/snapshot/vicious-$pkgver.tar.xz")
-md5sums=('88c43e28338b16cd63ef2a2f0ae9ca48')
+md5sums=('bfcecdb646051cc5d45a86f9116c582c')
 
 package() {
   cd $pkgname-$pkgver

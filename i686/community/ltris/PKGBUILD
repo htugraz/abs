@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 100353 2013-11-02 15:51:58Z jlichtblau $
+# $Id: PKGBUILD 102906 2013-12-23 20:47:06Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Eric Belanger <eric@archlinux.org>
 # Contributor: SmackleFunky <smacklefunky@optusnet.com.au>
 
 pkgname=ltris
 pkgver=1.0.19
-pkgrel=1
+pkgrel=2
 pkgdesc="A tetris clone where you have a bowl with blocks falling down"
 arch=('i686' 'x86_64')
 url="http://lgames.sourceforge.net/index.php?project=LTris"
@@ -31,4 +31,6 @@ package() {
 
   install -d ${pkgdir}/usr/share/pixmaps
   install -m644 icons/ltris{16,32,48}.xpm ${pkgdir}/usr/share/pixmaps
+#FS#37951 fix  
+  chmod 775 ${pkgdir}/var/games  
 }

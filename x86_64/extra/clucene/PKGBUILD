@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 190036 2013-07-13 12:40:33Z svenstaro $
+# $Id: PKGBUILD 202663 2013-12-23 19:43:23Z andyrtr $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Contributor: Alexander Rødseth
 # Contributor: Alois Nespor <alois.nespor@gmail.com>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 pkgname=clucene
 pkgver=2.3.3.4
-pkgrel=7
+pkgrel=8
 pkgdesc="C++ port of the high-performance text search engine Lucene"
 arch=('x86_64' 'i686')
 url="http://clucene.sourceforge.net/"
@@ -74,5 +74,8 @@ build() {
 package() {
   cd $srcdir/$pkgname-core-$pkgver
   make DESTDIR="$pkgdir" install -C build
-  rm -rf $pkgdir/usr/lib/CLuceneConfig.cmake
+  rm -rfv $pkgdir/usr/lib/CLuceneConfig.cmake
+  
+  cd $pkgdir/usr/include//CLucene
+  ln -s /usr/lib/CLucene/clucene-config.h .
 }

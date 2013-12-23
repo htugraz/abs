@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 100684 2013-11-08 09:32:46Z spupykin $
+# $Id: PKGBUILD 102891 2013-12-23 14:32:02Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: robb_force <robb_force@holybuffalo.net>
 # Maintainer: JJDaNiMoTh <jjdanimoth@gmail.com>
@@ -7,7 +7,7 @@ pkgname=sdlmame
 pkgver=0.151.u0
 _patchlevel=`echo $pkgver | cut -f2 -du`
 _basever=`echo $pkgver | cut -f1,2 -d.`
-pkgrel=1
+pkgrel=2
 pkgdesc="A port of the popular Multiple Arcade Machine Emulator using SDL with OpenGL support."
 url="http://mamedev.org/"
 license=('custom:MAME License')
@@ -26,7 +26,7 @@ source=("mame${_basever/./}s.zip::http://mamedev.org/downloader.php?file=release
 	"extras.tar.gz"
 	${_patches})
 md5sums=('b1dec00c2c77ada2d670f5392de39d62'
-         'e11a7d26704a9e2cff223b9b867d6a05'
+         '3c35b4a0806a82f3210df1683337655e'
          '420b61240bf5ae11615ba7c6100ee00d')
 
 build() {
