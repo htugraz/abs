@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 101228 2013-11-20 09:06:39Z bpiotrowski $
+# $Id: PKGBUILD 102927 2013-12-24 08:43:25Z bpiotrowski $
 # Maintainer: Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
 # Maintainer: Sébastien Luttringer
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=nginx
 pkgver=1.4.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Lightweight HTTP server and IMAP/POP3 proxy server'
 arch=('i686' 'x86_64')
 url='http://nginx.org'
@@ -41,7 +41,7 @@ build() {
         --user=http \
         --group=http \
         --http-log-path=/var/log/nginx/access.log \
-        --error-log-path=/var/log/nginx/error.log \
+        --error-log-path=stderr \
         --http-client-body-temp-path=/var/lib/nginx/client-body \
         --http-proxy-temp-path=/var/lib/nginx/proxy \
         --http-fastcgi-temp-path=/var/lib/nginx/fastcgi \

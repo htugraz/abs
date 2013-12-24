@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 201627 2013-12-17 06:14:39Z eric $
+# $Id: PKGBUILD 202681 2013-12-24 12:59:42Z andyrtr $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=nvidia-304xx-lts
 pkgver=304.117
 _extramodules=extramodules-3.10-lts
-pkgrel=1
+pkgrel=2
 pkgdesc="NVIDIA drivers for linux-lts, 304xx legacy branch"
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"
-depends=('linux-lts>=3.10.24' "nvidia-304xx-utils=${pkgver}")
-makedepends=('linux-lts-headers>=3.10.24')
+depends=('linux-lts>=3.10.25' "nvidia-304xx-utils=${pkgver}")
+makedepends=('linux-lts-headers>=3.10.25')
 conflicts=('nvidia-lts' 'nvidia-96xx-lts' 'nvidia-173xx-lts')
 provides=('nvidia-304xx')
 license=('custom')
