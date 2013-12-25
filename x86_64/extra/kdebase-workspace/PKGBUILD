@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 200909 2013-12-06 12:18:05Z svenstaro $
+# $Id: PKGBUILD 202712 2013-12-25 21:25:47Z andyrtr $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=kdebase-workspace
 _pkgname=kde-workspace
 pkgver=4.11.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Provides the interface and basic tools for the KDE workspace"
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/kde-workspace'

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 99993 2013-10-31 02:53:24Z allan $
+# $Id: PKGBUILD 103031 2013-12-25 17:28:10Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Sven Pfleiderer <pfleidi@roothausen.de>
 
 pkgname=stfl
 pkgver=0.22
-pkgrel=1
+pkgrel=2
 pkgdesc="Library implementing a curses-based widget set for text terminals"
 arch=('i686' 'x86_64')
 url="http://clifford.at/stfl/"
@@ -18,16 +18,16 @@ sha256sums=('2dddafd331e61ad04baf1251ccecb3a69feaf99880dd75155be8423c1cc55418'
             'c7d7c787bcd287a776aad3b26e6a90a3b121c281125c34c7c35a87f36dcdc453')
 
 build() {
-  cd ${srcdir}/$pkgname-$pkgver
+  cd "${srcdir}/$pkgname-$pkgver"
 
-  patch -Np1 -i ${srcdir}/$pkgname-archlinux.patch
+  patch -Np1 -i "${srcdir}"/$pkgname-archlinux.patch
 
   make prefix=/usr Makefile.deps
   make prefix=/usr
 }
 
 package() {
-  cd ${srcdir}/$pkgname-$pkgver
+  cd "${srcdir}"/$pkgname-$pkgver
 
-  make prefix=/usr DESTDIR=${pkgdir} install
+  make prefix=/usr DESTDIR="${pkgdir}" install
 }

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 99988 2013-10-31 02:51:42Z allan $
+# $Id: PKGBUILD 103040 2013-12-25 17:43:09Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Geoffroy Carrier <geoffroy.carrier@koon.fr>
 
 pkgname=sleuthkit
 pkgver=4.1.2
-pkgrel=1
+pkgrel=2
 pkgdesc='File system and media management forensic analysis tools'
 arch=('i686' 'x86_64')
 url='http://www.sleuthkit.org/sleuthkit'
