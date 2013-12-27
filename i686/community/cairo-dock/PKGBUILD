@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 99668 2013-10-30 22:32:44Z alucryd $
+# $Id: PKGBUILD 103144 2013-12-27 15:18:35Z alucryd $
 # Maintainer: Maxime Gauduin <alucryd at gmail dot com>
 # Contributor: Tofe <chris dot chapuis at gmail dot com>
 # Contributor: erm67 <erm67 at yahoo dot it>
 
 pkgname=cairo-dock
 pkgver=3.3.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Light eye-candy fully themable animated dock'
 arch=('i686' 'x86_64')
 url="https://launchpad.net/${pkgname}-core"
 license=('GPL')
-depends=('curl' 'dbus-glib' 'gtk3' 'librsvg')
+depends=('curl' 'dbus-glib' 'glu' 'gtk3' 'librsvg')
 makedepends=('cmake')
 optdepends=('cairo-dock-plugins: Plugins for Cairo-Dock')
 source=("${url}/${pkgver%.?}/${pkgver}/+download/${pkgname}-${pkgver}.tar.gz")

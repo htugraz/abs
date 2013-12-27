@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 201626 2013-12-17 06:14:38Z eric $
+# $Id: PKGBUILD 202767 2013-12-27 12:41:09Z foutrelis $
 # Maintainer : Thomas Baechler <thomas@archlinux.org>
 
 pkgname=nvidia-304xx
 pkgver=304.117
 _extramodules=extramodules-3.12-ARCH
-pkgrel=1
+pkgrel=2
 pkgdesc="NVIDIA drivers for linux, 304xx legacy branch"
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"

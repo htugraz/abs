@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 95028 2013-08-03 22:28:51Z svenstaro $
+# $Id: PKGBUILD 103137 2013-12-27 11:10:36Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 
 pkgname=csfml
 pkgver=2.1
-pkgrel=1
+pkgrel=2
 pkgdesc='C bindings for sfml'
 arch=('i686' 'x86_64')
 url='http://www.sfml-dev.org/'
 license=('zlib')
-depends=("sfml=${pkgver}")
+depends=("sfml")
 makedepends=('cmake' 'doxygen')
 source=("${pkgname}-${pkgver}::https://github.com/LaurentGomila/CSFML/archive/${pkgver}.tar.gz")
 md5sums=('960085220e6978c720a62b02cc4a2ec4')
