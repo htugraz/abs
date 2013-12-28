@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 198323 2013-10-30 14:10:06Z allan $
+# $Id: PKGBUILD 202884 2013-12-28 22:44:05Z bpiotrowski $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=modemmanager
 _realname=ModemManager
 pkgver=1.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Mobile broadband modem management service"
 arch=(i686 x86_64)
 url="http://www.freedesktop.org/wiki/Software/ModemManager/"

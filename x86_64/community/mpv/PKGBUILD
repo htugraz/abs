@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 102925 2013-12-24 08:38:45Z bpiotrowski $
+# $Id: PKGBUILD 103161 2013-12-28 10:21:00Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
 # Contributor: Eivind Uggedal <eivind@uggedal.com>
 
 pkgname=mpv
 pkgver=0.2.4
-pkgrel=3
+pkgrel=4
 pkgdesc='Video player based on MPlayer/mplayer2'
 arch=('i686' 'x86_64')
 license=('GPL')
@@ -15,7 +15,7 @@ depends=(
          'desktop-file-utils' 'hicolor-icon-theme' 'xdg-utils' 'lua'
         )
 makedepends=('mesa' 'python-docutils')
-options=(!emptydirs)
+options=('!emptydirs' '!buildflags')
 install=mpv.install
 source=(https://github.com/mpv-player/$pkgname/archive/v$pkgver.tar.gz)
 md5sums=('465e99ed24478f3a2afe5ae1c4fdd7f4')

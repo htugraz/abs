@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 199746 2013-11-15 13:10:29Z ronald $
+# $Id: PKGBUILD 202851 2013-12-28 15:22:33Z juergen $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Damir Perisa <damir@archlinux.org>
 
 pkgname=maxima
 pkgver=5.31.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A sophisticated computer algebra system"
 arch=('i686' 'x86_64')
 license=('GPL')
 url="http://maxima.sourceforge.net"
-depends=('sbcl=1.1.12' 'texinfo' 'sh')
+depends=('sbcl=1.1.14' 'texinfo' 'sh')
 makedepends=('python2')
 optdepends=('gnuplot: plotting capabilities' 'rlwrap: readline support via /usr/bin/rmaxima' 'tk: graphical xmaxima interface')
 # needs rebuild when bash changes version
