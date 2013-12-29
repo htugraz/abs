@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 199368 2013-11-11 17:43:06Z heftig $
+# $Id: PKGBUILD 202974 2013-12-29 17:17:32Z bpiotrowski $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gst-plugins-bad
 pkgver=1.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="GStreamer Multimedia Framework Bad Plugins"
 arch=('i686' 'x86_64')
 license=('LGPL')
 url="http://gstreamer.freedesktop.org/"
-depends=('mjpegtools' 'gst-plugins-base-libs' 'curl' 'chromaprint' 'libmms' 'faad2' 'mpg123' 'faac' 'celt' 'libdca' 'soundtouch' 'spandsp' 'libdvdnav' 'libmodplug' 'libgme' 'opus' 'wayland' 'neon' 'libofa' 'fluidsynth' 'openjpeg' 'libwebp' 'libsrtp' 'gnutls')
+depends=('mjpegtools' 'gst-plugins-base-libs' 'curl' 'chromaprint' 'libmms' 'faad2' 'mpg123' 'faac' 'celt' 'libdca' 'soundtouch' 'spandsp' 'libdvdnav' 'libmodplug' 'libgme' 'opus' 'wayland' 'neon' 'libofa' 'fluidsynth' 'openjpeg' 'libwebp' 'libsrtp' 'gnutls' 'wildmidi')
 makedepends=('schroedinger' 'libexif' 'libdvdread' 'libvdpau' 'libmpeg2' 'python' 'valgrind' 'wildmidi'
              'gobject-introspection')
 options=(!emptydirs)
