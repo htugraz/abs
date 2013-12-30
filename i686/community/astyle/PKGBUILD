@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 92315 2013-06-03 21:55:18Z lfleischer $
+# $Id: PKGBUILD 103213 2013-12-30 12:53:05Z lfleischer $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 # Contributor: Thomas Mader <thezema@gmail.com>
@@ -6,7 +6,7 @@
 # Contributor: tardo <tardo@nagi-fanboi.net>
 
 pkgname=astyle
-pkgver=2.03
+pkgver=2.04
 pkgrel=1
 pkgdesc='A free, fast and small automatic formatter for C, C++, C#, and Java source code.'
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ url='http://sourceforge.net/projects/astyle/'
 license=('LGPL')
 depends=('gcc-libs')
 source=("http://downloads.sourceforge.net/sourceforge/astyle/${pkgname}_${pkgver}_linux.tar.gz")
-md5sums=('ba84eaa8564155babd4ba1458d4eaa11')
+md5sums=('30b1193a758b0909d06e7ee8dd9627f6')
 
 build() {
   cd "$srcdir/$pkgname/build/gcc"

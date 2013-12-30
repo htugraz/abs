@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 101249 2013-11-20 14:18:57Z tredaelli $
+# $Id: PKGBUILD 103228 2013-12-30 16:46:29Z tredaelli $
 # Maintainer: Timothy Redaelli <timothy.redaelli@gmail.com>
 # Contributor: Kirill "reflexing" Churin <reflexing@reflexing.ru>
 # Contributor: Andrej Gelenberg <andrej.gelenberg@udo.edu>
 
 pkgname=keepass
 pkgver=2.24
-pkgrel=2
+pkgrel=3
 pkgdesc='A easy-to-use password manager for Windows, Linux, Mac OS X and mobile devices.'
 arch=('any')
 url='http://keepass.info/'

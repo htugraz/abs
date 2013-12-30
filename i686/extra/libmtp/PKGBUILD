@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 202987 2013-12-30 08:44:52Z foutrelis $
+# $Id: PKGBUILD 202983 2013-12-30 08:41:18Z foutrelis $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor: damir <damir@archlinux.org>
 # Contributor: Kevin Edmonds <edmondskevin@hotmail.com>
 
 pkgname=libmtp
 pkgver=1.1.6
-pkgrel=6
+pkgrel=5
 pkgdesc="Library implementation of the Media Transfer Protocol"
 arch=("i686" "x86_64")
 url="http://libmtp.sourceforge.net"

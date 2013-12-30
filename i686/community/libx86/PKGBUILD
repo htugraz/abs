@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 55525 2011-09-14 07:30:42Z andrea $
+# $Id: PKGBUILD 103236 2013-12-30 17:06:11Z lfleischer $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Eric Belanger <eric@archlinux.org>
 # Contributor: tardo <tardo@nagi-fanboi.net>
@@ -6,7 +6,7 @@
 
 pkgname=libx86
 pkgver=1.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Provides an lrmi interface that works on x86, am64 and alpha"
 arch=('i686' 'x86_64')
 url="http://www.codon.org.uk/~mjg59/libx86/"
