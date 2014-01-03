@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 187056 2013-06-03 11:16:27Z allan $
+# $Id: PKGBUILD 203066 2014-01-03 09:19:21Z bpiotrowski $
 # Maintainer: Daniel Isenmann <daniel @archlinux.org>
 
 pkgbase=dhcp
@@ -7,7 +7,7 @@ pkgname=('dhcp' 'dhclient')
 # separate patch levels with a period to maintain proper versioning.
 pkgver=4.2.5.p1
 _pkgver=4.2.5-P1
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 license=('custom:isc-dhcp')
 url="https://www.isc.org/software/dhcp"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 99991 2013-10-31 02:52:44Z allan $
+# $Id: PKGBUILD 103328 2014-01-03 10:53:51Z bpiotrowski $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Judd <jvinet@zeroflux.org>
 
 pkgname=sqlite2
 pkgver=2.8.17
-pkgrel=5
+pkgrel=6
 pkgdesc="A C library that implements an SQL database engine"
 arch=('i686' 'x86_64')
 url="http://www.sqlite.org/"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 70925 2012-05-19 18:43:17Z spupykin $
+# $Id: PKGBUILD 103334 2014-01-03 11:08:04Z bpiotrowski $
 # Maintainer: Eric Belanger <eric@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
@@ -11,6 +11,7 @@ url="http://plib.sourceforge.net/"
 license=('custom:LGPL')
 makedepends=('mesa' 'libxi' 'libxmu')
 source=(http://plib.sourceforge.net/dist/$pkgname-$pkgver.tar.gz)
+options=('staticlibs')
 md5sums=('47a6fbf63668c1eed631024038b2ea90')
 sha1sums=('c2cf7e3e1e58f7b63dae4bb21e4fa82c3e4d4cfc')
 

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 99832 2013-10-31 01:58:40Z allan $
+# $Id: PKGBUILD 103322 2014-01-03 10:52:59Z bpiotrowski $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Roman Kyrylych <roman@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=libesmtp
 pkgver=1.0.6
-pkgrel=2
+pkgrel=3
 pkgdesc='A library to manage posting mail to a preconfigured MTA.'
 arch=('i686' 'x86_64')
 url='http://www.stafford.uklinux.net/libesmtp/'

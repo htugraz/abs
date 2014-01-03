@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 192492 2013-08-13 08:49:58Z juergen $
+# $Id: PKGBUILD 203068 2014-01-03 09:30:10Z bpiotrowski $
 # Contributor: John Proctor <jproctor@prium.net>
 # Maintainer: juergen <juergen@archlinux.org>
 
 pkgname=ecl
 pkgver=13.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Embeddable Common Lisp"
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/ecls/"

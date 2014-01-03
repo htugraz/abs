@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 102626 2013-12-16 21:55:05Z arodseth $
+# $Id: PKGBUILD 103349 2014-01-03 20:02:33Z arodseth $
 # Maintainer: Lukas Fleischer <archlinux@cryptocrack.de>
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Vesa Kaihlavirta <vesa@archlinux.org>
@@ -9,11 +9,11 @@
 pkgbase=erlang
 pkgname=('erlang' 'erlang-unixodbc')
 pkgver=R16B03
-pkgrel=2
+pkgrel=3
 arch=('x86_64' 'i686')
 url='http://www.erlang.org/'
 license=('custom')
-makedepends=('perl' 'mesa' 'lksctp-tools' 'unixodbc' 'wxgtk' 'wxgtk2.9')
+makedepends=('perl' 'mesa' 'lksctp-tools' 'unixodbc' 'wxgtk' 'wxgtk2.9' 'glu')
 options=('staticlibs')
 source=("http://www.erlang.org/download/otp_src_${pkgver/_/-}.tar.gz"
         "http://www.erlang.org/download/otp_doc_man_${pkgver/_/-}.tar.gz"

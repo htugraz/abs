@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 197949 2013-10-30 11:51:49Z allan $
+# $Id: PKGBUILD 203079 2014-01-03 18:03:13Z bpiotrowski $
 # Maintainer: Vesa Kaihlavirta <vegai@iki.fi>
 # Contributor: Michael Baehr <usemike@spamblocked.com>
 
 pkgname=ffcall
 pkgver=1.10
-pkgrel=4
+pkgrel=6
 pkgdesc="C library for implementing foreign function calls in embedded interpreters"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/libffcall/"
 license=('GPL2')
-options=('!makeflags')
+options=('!makeflags' 'staticlibs')
 source=(http://www.haible.de/bruno/gnu/${pkgname}-${pkgver}.tar.gz)
 md5sums=('2db95007e901f3bc2ae7e5a9fe9ebea4')
 

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 99834 2013-10-31 01:59:20Z allan $
+# $Id: PKGBUILD 103324 2014-01-03 10:53:10Z bpiotrowski $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Thomas Haider <t.haider@vcnc.org>
 
 pkgname=libev
 pkgver=4.15
-pkgrel=1
+pkgrel=2
 pkgdesc="A full-featured and high-performance event loop"
 arch=('i686' 'x86_64')
 url="http://software.schmorp.de/pkg/libev.html"
