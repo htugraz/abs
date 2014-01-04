@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 201267 2013-12-07 10:35:07Z bpiotrowski $
+# $Id: PKGBUILD 203179 2014-01-04 22:17:15Z andyrtr $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Contributor: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 
 pkgbase=vigra
 pkgname=('vigra' 'vigra-doc')
-pkgver=1.9.0
-pkgrel=8
+pkgver=1.10.0
+pkgrel=1
 arch=('i686' 'x86_64')
 url="http://hci.iwr.uni-heidelberg.de/vigra/"
 license=('custom:MIT')
@@ -13,8 +13,8 @@ makedepends=(# runtime deps
              'libpng' 'libtiff' 'openexr' 'gcc-libs' 'sh' 'hdf5' 'fftw'
 	         # additional makedeps
              'cmake' 'python2-nose' 'doxygen' 'python2-sphinx' 'boost' 'python2-numpy')
-source=(http://kogs-www.informatik.uni-hamburg.de/~koethe/vigra/${pkgname}-${pkgver}-src.tar.gz)
-md5sums=('b6155afe1ea967917d2be16d98a85404')
+source=(https://github.com/ukoethe/vigra/releases/download/Version-${pkgver//./-}/${pkgname}-${pkgver}-src-with-docu.tar.gz)
+md5sums=('85e2968e4ee5f9541b5dd8b3fb9cc433')
 
 build() {
   cd "${srcdir}"/${pkgbase}-${pkgver}
@@ -26,10 +26,10 @@ build() {
   make
 }
 
-check() {
-  cd "${srcdir}"/${pkgname}-${pkgver}
-  make -k check || /bin/true # i686 fails
-}
+#check() {
+#  cd "${srcdir}"/${pkgname}-${pkgver}
+#  make -j1 -k check #|| /bin/true # i686 fails
+#}
 
 package_vigra() {
   pkgdesc="Computer vision library"
