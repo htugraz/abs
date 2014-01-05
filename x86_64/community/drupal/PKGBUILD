@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 101345 2013-11-22 23:34:01Z spupykin $
+# $Id: PKGBUILD 103434 2014-01-05 21:24:00Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Corrado Primier <cp663137@stud.polimi.it>
 
 pkgname=drupal
-pkgver=7.24
+pkgver=7.25
 pkgrel=1
 pkgdesc="A PHP-based content management platform"
 arch=('any')
@@ -14,7 +14,7 @@ install='drupal.install'
 options=(!strip)
 backup=(etc/webapps/drupal/.htaccess)
 source=(http://www.drupal.org/files/projects/$pkgname-$pkgver.tar.gz)
-md5sums=('c1ddb37155e4b6160f6508636c06f2a7')
+md5sums=('25906158083d89aa86534df1c683b4ea')
 
 package() {
   _instdir=$pkgdir/usr/share/webapps/drupal
