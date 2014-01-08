@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 103256 2013-12-31 14:35:11Z bpiotrowski $
+# $Id: PKGBUILD 103626 2014-01-08 12:24:48Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
 # Contributor: [vEX] <niechift.dot.vex.at.gmail.dot.com>
@@ -10,7 +10,7 @@ _prefix=/usr
 pkgname=xbmc
 pkgver=12.3
 _codename=Frodo
-pkgrel=4
+pkgrel=5
 pkgdesc="A software media player and entertainment hub for digital media"
 arch=('i686' 'x86_64')
 url="http://xbmc.org"

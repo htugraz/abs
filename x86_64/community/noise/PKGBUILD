@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 99111 2013-10-24 13:13:25Z alucryd $
+# $Id: PKGBUILD 103644 2014-01-08 17:47:17Z alucryd $
 # Maintainer: Maxime Gauduin <alucryd at gmail dot com>
 
 pkgname=noise
 pkgver=0.2.4
-pkgrel=2
+pkgrel=3
 pkgdesc="Simple, fast, and good looking music player"
 arch=('i686' 'x86_64')
 url="https://launchpad.net/noise"
