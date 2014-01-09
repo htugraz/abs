@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 103299 2014-01-02 22:41:35Z spupykin $
+# $Id: PKGBUILD 103683 2014-01-09 13:30:06Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Jens Pranaitis <jens@jenux.homelinux.org>
 
@@ -9,7 +9,7 @@ pkgdesc="Utilities for rescue and embedded systems"
 arch=("i686" "x86_64")
 url="http://www.busybox.net"
 license=('GPL')
-makedepends=("make" "gcc" "sed" "ncurses" "glibc-static")
+makedepends=("make" "gcc" "sed" "ncurses")
 source=($url/downloads/$pkgname-$pkgver.tar.bz2
 	config)
 install=busybox.install
