@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 103606 2014-01-08 10:35:42Z spupykin $
+# $Id: PKGBUILD 103703 2014-01-10 10:25:27Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: gh0stwizard <vitaliy.tokarev_AT_gmail.com>
 # Contributor: slubman <slubman@slubman.net>
 
 pkgname=tkabber
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Tkabber is an open source Jabber client, written in Tcl/Tk."
 arch=(any)
 url="http://tkabber.jabber.ru/"
 license=("GPL")
-depends=('tcl' 'tk' 'bwidget' 'tcllib')
+depends=('tcl' 'tk' 'bwidget' 'tcllib' 'tls')
 source=(http://files.jabber.ru/tkabber/tkabber-$pkgver.tar.xz
 	http://files.jabber.ru/tkabber/tkabber-plugins-$pkgver.tar.xz)
 md5sums=('c82f0b93e1f221b1a91aa87d75cd7d0a'

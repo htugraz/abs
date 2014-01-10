@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 201512 2013-12-13 19:06:31Z ronald $
+# $Id: PKGBUILD 203437 2014-01-10 21:05:24Z ronald $
 # Maintainer: Ronald van Haren <ronald@archlinux.org>
 # Contributor: Enlightenment Developers <enlightenment-devel@enlightenment.org>
 
 pkgname=emotion_generic_players
 pkgver=1.8.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Enlightenment Foundation Libraries"
 arch=('i686' 'x86_64')
 url="http://www.enlightenment.org"
