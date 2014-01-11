@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 101328 2013-11-22 17:36:49Z spupykin $
+# $Id: PKGBUILD 103797 2014-01-11 20:08:30Z eric $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: hydro <hydro@freenet.de>
 
 pkgname=mediainfo-gui
 pkgver=0.7.65
-pkgrel=1
+pkgrel=5
 pkgdesc="GUI for mediainfo"
 arch=('i686' 'x86_64')
 url="http://mediainfo.sourceforge.net"
 license=('GPL')
-depends=('libmediainfo' 'wxgtk')
+depends=('libmediainfo' 'wxgtk' 'libsm')
 makedepends=('libtool' 'automake' 'autoconf')
 install=mediainfo-gui.install
 source=(http://downloads.sourceforge.net/mediainfo/mediainfo_${pkgver}.tar.bz2)

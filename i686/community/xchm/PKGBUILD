@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 102193 2013-12-06 12:52:51Z giovanni $
+# $Id: PKGBUILD 103807 2014-01-11 20:08:41Z eric $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 
 pkgname=xchm
 pkgver=1.23
-pkgrel=1
+pkgrel=2
 pkgdesc="A cross-platform GUI front-end to chmlib"
 arch=('i686' 'x86_64')
 url="http://xchm.sourceforge.net/"
 license=('GPL')
-depends=('chmlib' 'wxgtk' 'desktop-file-utils')
+depends=('chmlib' 'wxgtk2.8' 'desktop-file-utils')
 install=xchm.install
 source=("http://downloads.sourceforge.net/sourceforge/xchm/${pkgname}-${pkgver}.tar.gz"
         'xchm.desktop'
@@ -21,7 +21,8 @@ build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
 
   export CXXFLAGS="${CXXFLAGS} -fno-strict-aliasing"
-  ./configure --prefix=/usr
+  #export WX_CONFIG_PATH=/usr/bin/wx-config-2.8
+  ./configure --prefix=/usr --with-wx-config=wx-config-2.8
   make
 }
 

@@ -1,26 +1,30 @@
-# $Id: PKGBUILD 78209 2012-10-17 10:25:09Z allan $
+# $Id: PKGBUILD 103750 2014-01-11 10:44:14Z bgyorgy $
 # Maintainer: Allan McRae <allan@archlinux.org>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 
 pkgname=pychess
 pkgver=0.10.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Chess client for the GNOME desktop"
 arch=('any')
 url="http://pychess.org/"
 license=('GPL')
-depends=('python2-pysqlite' 'gnome-icon-theme' 'python2-rsvg'
-         'pygtksourceview2' 'gstreamer0.10-python')
+depends=('gnome-icon-theme' 'python2-rsvg' 'pygtksourceview2' 'gstreamer0.10-python'
+         'desktop-file-utils')
 install=pychess.install
 source=(http://pychess.googlecode.com/files/pychess-$pkgver.tar.gz)
 md5sums=('ee1893071823b3d41ecdb1ef314fb8ba')
 
-package() {
+prepare() {
   cd $srcdir/pychess-$pkgver
 
   sed -i "s|#!/usr/bin/python$|#!/usr/bin/python2|" lib/pychess/Players/PyChess.py
   sed -i "/vm binname/s|python|python2|" lib/pychess/Players/engineNest.py
   sed -i "/binname ==/s|python|python2|" lib/pychess/widgets/newGameDialog.py
+}
+
+package() {
+  cd $srcdir/pychess-$pkgver
 
   python2 setup.py install --prefix=/usr --root=$pkgdir
 }

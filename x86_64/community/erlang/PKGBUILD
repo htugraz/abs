@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 103465 2014-01-06 12:41:09Z arodseth $
+# $Id: PKGBUILD 103793 2014-01-11 20:08:27Z eric $
 # Maintainer: Lukas Fleischer <archlinux@cryptocrack.de>
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Vesa Kaihlavirta <vesa@archlinux.org>
@@ -9,7 +9,7 @@
 pkgbase=erlang
 pkgname=('erlang' 'erlang-unixodbc')
 pkgver=R16B03
-pkgrel=4
+pkgrel=5
 arch=('x86_64' 'i686')
 url='http://www.erlang.org/'
 license=('custom')
@@ -35,7 +35,7 @@ build() {
 
 package_erlang() {
   pkgdesc='General-purpose concurrent functional programming language developed by Ericsson'
-  depends=('ncurses' 'glu' 'wxgtk' 'wxgtk2.9' 'openssl')
+  depends=('ncurses' 'glu' 'wxgtk' 'openssl')
   optdepends=('erlang-unixodbc: database support'
               'java-environment: for Java support'
               'lksctp-tools: for SCTP support')

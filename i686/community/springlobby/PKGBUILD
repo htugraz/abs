@@ -1,15 +1,16 @@
-# $Id: PKGBUILD 102280 2013-12-07 10:37:12Z bpiotrowski $
+# $Id: PKGBUILD 103804 2014-01-11 20:08:38Z eric $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: DuGi <dugi@irc.pl>
 
 pkgname=springlobby
 pkgver=0.180
-pkgrel=1
+pkgrel=2
 pkgdesc="A free cross-platform lobby client for the Spring RTS project."
 arch=('i686' 'x86_64')
 url="http://springlobby.info/"
 license=('GPL2')
-depends=('hicolor-icon-theme' 'wxgtk' 'curl' 'libtorrent-rasterbar' 'boost-libs' 'alure')
+depends=('hicolor-icon-theme' 'wxgtk' 'curl' 'libtorrent-rasterbar' 'boost-libs'
+         'alure' 'libsm')
 optdepends=('sdl' 'sdl_sound' 'sdl_mixer') 
 makedepends=('boost' 'asio' 'cmake')
 install=springlobby.install

@@ -1,16 +1,15 @@
-# $Id: PKGBUILD 98923 2013-10-21 12:21:47Z spupykin $
+# $Id: PKGBUILD 103740 2014-01-11 02:53:12Z bgyorgy $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=buildbot
 pkgver=0.8.8
-pkgrel=1
+pkgrel=2
 pkgdesc="A system to automate the compile/test cycle required by most software projects"
 arch=('any')
 url="http://buildbot.net"
 license=("GPL")
-depends=('twisted' 'python2-jinja' 'python2-simplejson' 'python2-pysqlite'
-	 'python2-migrate' 'python2-dateutil')
+depends=('twisted' 'python2-jinja' 'python2-migrate' 'python2-dateutil')
 source=(http://buildbot.googlecode.com/files/buildbot-${pkgver/_/}.tar.gz)
 md5sums=('472f512584bbb18cc677ca2ec3b3a905')
 

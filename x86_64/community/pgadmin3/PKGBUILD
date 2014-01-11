@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 99091 2013-10-24 10:41:34Z spupykin $
+# $Id: PKGBUILD 103799 2014-01-11 20:08:32Z eric $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Douglas Soares de Andrade <dsa@aur.archlinux.org>
 # Contributor: Benjamin Andresen <benny@klapmuetz.org>
@@ -6,7 +6,7 @@
 
 pkgname=pgadmin3
 pkgver=1.18.1
-pkgrel=3
+pkgrel=7
 pkgdesc="Comprehensive design and management interface for PostgreSQL"
 arch=('i686' 'x86_64')
 url="http://www.pgadmin.org"
@@ -22,7 +22,7 @@ build() {
   convert pgadmin3-${pkgver}/pgadmin/include/images/pgAdmin3.ico pgadmin3.png
 
   cd "pgadmin3-${pkgver}"
-  [ -f Makefile ] || ./configure --prefix=/usr
+  [ -f Makefile ] || ./configure --prefix=/usr --with-wx-version=3.0
   make
 }
 
