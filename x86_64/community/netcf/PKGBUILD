@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 99926 2013-10-31 02:30:50Z allan $
+# $Id: PKGBUILD 103922 2014-01-13 17:16:55Z andyrtr $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Aurélien Wailly <aurelien.wailly@gmail.com>
 
 pkgname=netcf
 pkgver=0.2.3
-pkgrel=2
+pkgrel=3
 pkgdesc="A library for configuring network interfaces"
 arch=('i686' 'x86_64')
 license=('LGPL')

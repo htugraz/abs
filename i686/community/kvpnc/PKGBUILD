@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 91108 2013-05-19 18:46:49Z dreisner $
+# $Id: PKGBUILD 103918 2014-01-13 17:16:50Z andyrtr $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Danial Olsen <do@meyl.fo>
 
 pkgname=kvpnc
 pkgver=0.9.6a
-pkgrel=4
+pkgrel=5
 pkgdesc="A KDE Desktop Environment frontend for various vpn clients"
 arch=(i686 x86_64)
 url="http://home.gna.org/kvpnc/"

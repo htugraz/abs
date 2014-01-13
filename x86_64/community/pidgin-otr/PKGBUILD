@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 79622 2012-11-09 00:24:37Z ebelanger $
+# $Id: PKGBUILD 103924 2014-01-13 17:16:58Z andyrtr $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve>
 # Contributor: Allan McRae <allan@archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=pidgin-otr
 pkgver=4.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Off-the-Record Messaging plugin for Pidgin.'
 arch=('i686' 'x86_64')
 license=('GPL')

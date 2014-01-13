@@ -1,0 +1,50 @@
+# $Id: PKGBUILD 103945 2014-01-13 20:32:05Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Antonio Rojas <nqn1976 @ gmail.com>
+# Based on owncloud-git PKGBUILD by Alexander Ovsyannikov
+
+pkgname=owncloud
+pkgver=6.0.0.a
+_pkgver=6.0.0a
+pkgrel=3
+pkgdesc="A cloud server to store your files centrally on a hardware controlled by you"
+arch=('any')
+url="http://owncloud.org/"
+license=('GPL')
+depends=('php-gd' 'php-intl')
+optdepends=('php-apache: to use the Apache web server'
+	    'php-sqlite: to use the SQLite database backend'
+	    'php-pgsql: to use the PostgreSQL database backend'
+	    'mariadb: to use the MySQL database backend'
+	    'smbclient: to mount SAMBA shares'
+	    'php-mcrypt'
+	    'php-imagick: file preview'
+	    'ffmpeg: file preview'
+	    'libreoffice-common: file preview')
+makedepends=()
+options=('!strip')
+source=("http://download.owncloud.org/community/$pkgname-${_pkgver}.tar.bz2"{,.asc}
+	'apache.example.conf')
+backup=('etc/webapps/owncloud/apache.example.conf')
+md5sums=('63c2913aa8382f695d7ade5ad11e51b2'
+         'SKIP'
+         '2c33ca1019379fa0878d5a1a87d9374d')
+
+package() {
+  # install license
+  install -d ${pkgdir}/usr/share/licenses/${pkgname}
+  cp ${srcdir}/${pkgname}/COPYING-* ${pkgdir}/usr/share/licenses/${pkgname}
+
+  # install project
+  install -d ${pkgdir}/usr/share/webapps/
+  cp -a ${srcdir}/${pkgname} ${pkgdir}/usr/share/webapps/
+
+  # install apache config file
+  install -d  ${pkgdir}/etc/webapps/${pkgname}
+  install -m 644 ${srcdir}/apache.example.conf  ${pkgdir}/etc/webapps/${pkgname}
+
+  # move config to /etc
+  mv ${pkgdir}/usr/share/webapps/owncloud/config ${pkgdir}/etc/webapps/${pkgname}/config
+  chown -R http:http ${pkgdir}/etc/webapps/${pkgname}/config
+  ln -s /etc/webapps/${pkgname}/config ${pkgdir}/usr/share/webapps/owncloud/config
+}

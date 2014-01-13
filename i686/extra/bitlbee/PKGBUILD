@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 200604 2013-11-29 19:18:39Z dreisner $
+# $Id: PKGBUILD 203568 2014-01-13 17:11:58Z andyrtr $
 
 # Contributor: FUBAR <mrfubar@gmail.com>
 # Contributor: simo <simo@archlinux.org>
@@ -9,7 +9,7 @@
 
 pkgname=bitlbee
 pkgver=3.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Brings instant messaging (XMPP, MSN, Yahoo!, AIM, ICQ, Twitter) to IRC'
 url='http://www.bitlbee.org/'
 license=('GPL')

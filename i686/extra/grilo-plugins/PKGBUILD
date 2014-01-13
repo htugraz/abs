@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198052 2013-10-30 12:30:49Z allan $
+# $Id: PKGBUILD 203575 2014-01-13 17:12:06Z andyrtr $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=grilo-plugins
 pkgver=0.2.9
-pkgrel=2
+pkgrel=3
 pkgdesc="Plugins for Grilo"
 url="http://www.gnome.org"
 arch=(i686 x86_64)

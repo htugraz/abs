@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 203458 2014-01-11 02:11:21Z fyan $
+# $Id: PKGBUILD 203532 2014-01-13 02:05:53Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgbase=ibus
 pkgname=(ibus libibus)
 pkgver=1.5.4
-pkgrel=3
+pkgrel=4
 pkgdesc="Next Generation Input Bus for Linux"
 arch=('i686' 'x86_64')
 url="http://ibus.googlecode.com"
@@ -31,7 +31,7 @@ build() {
 }
 
 package_ibus() {
-  depends+=("libibus=$pkgver" 'python2-gobject')
+  depends+=("libibus=$pkgver" 'python2-gobject' 'iso-codes')
   install=ibus.install
 
   cd ${pkgbase}-${pkgver}

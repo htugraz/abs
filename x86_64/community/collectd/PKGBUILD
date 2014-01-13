@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 99715 2013-10-30 23:12:24Z allan $
+# $Id: PKGBUILD 103909 2014-01-13 17:16:40Z andyrtr $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Gerhard Brauer <gerhard.brauer@web.de>
 
 pkgname=collectd
 pkgver=5.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Daemon which collects system performance statistics periodically'
 url='http://collectd.org/'
 arch=('i686' 'x86_64')
@@ -61,7 +61,6 @@ build() {
 		--sysconfdir=/etc \
 		--localstatedir=/var \
 		--sbindir=/usr/bin \
-		--disable-static \
 		--with-python=/usr/bin/python2
 	make all
 }

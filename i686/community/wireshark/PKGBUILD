@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 102796 2013-12-20 11:11:34Z tredaelli $
+# $Id: PKGBUILD 103931 2014-01-13 17:17:08Z andyrtr $
 # Maintainer: Timothy Redaelli <timothy.redaelli@gmail.com>
 # Contributor: Guillaume ALAUX <guillaume@archlinux.org>
 # Contributor: Florian Pritz <bluewind at jabber dot ccc dot de>
 pkgname=('wireshark-cli' 'wireshark-gtk')
 pkgbase=wireshark
 pkgver=1.10.5
-pkgrel=1
+pkgrel=3
 arch=('i686' 'x86_64')
 license=('GPL2')
 makedepends=('gtk3' 'krb5' 'libpcap' 'bash' 'gnutls' 'portaudio'

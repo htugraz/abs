@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 200806 2013-12-05 19:33:54Z andyrtr $
+# $Id: PKGBUILD 203624 2014-01-13 17:13:03Z andyrtr $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xf86-video-mga
 pkgver=1.6.3
-pkgrel=1
+pkgrel=2
 pkgdesc="X.org mga video driver"
 arch=(i686 x86_64)
 url="http://xorg.freedesktop.org/"
 license=('custom')
 depends=('glibc')
-makedepends=('xorg-server-devel' 'X-ABI-VIDEODRV_VERSION=14' 'resourceproto' 'scrnsaverproto')
-conflicts=('xorg-server<1.14.0' 'X-ABI-VIDEODRV_VERSION<14' 'X-ABI-VIDEODRV_VERSION>=15')
+makedepends=('xorg-server-devel' 'X-ABI-VIDEODRV_VERSION=15')
+conflicts=('xorg-server<1.15.0' 'X-ABI-VIDEODRV_VERSION<15' 'X-ABI-VIDEODRV_VERSION>=16')
 optdepends=('mga-dri: DRI1 support from community repo')
 groups=('xorg-drivers' 'xorg')
 source=(${url}/releases/individual/driver/${pkgname}-${pkgver}.tar.bz2)

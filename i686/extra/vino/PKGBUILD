@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 196510 2013-10-14 15:43:19Z heftig $
+# $Id: PKGBUILD 203593 2014-01-13 17:12:26Z andyrtr $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=vino
 pkgver=3.10.1
-pkgrel=1
+pkgrel=2
 pkgdesc="a VNC server for the GNOME desktop"
 arch=(i686 x86_64)
 license=(GPL)

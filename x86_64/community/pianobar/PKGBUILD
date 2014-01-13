@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 98105 2013-10-06 00:35:49Z dwallace $
+# $Id: PKGBUILD 103923 2014-01-13 17:16:56Z andyrtr $
 # Maintainer: Daniel Wallace < danielwallace at gtmanfred dot com>
 # Contributor: Mitch Bigelow <ipha00@gmail.com>
 # Contributor: Patrick Palka <patrick@parcs.ath.cx>
 
 pkgname=pianobar
 pkgver=2013.09.15
-pkgrel=1
+pkgrel=2
 pkgdesc="console-based frontend for Pandora"
 url="http://6xq.net/0017"
 arch=('i686' 'x86_64')

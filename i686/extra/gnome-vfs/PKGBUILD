@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198037 2013-10-30 12:25:08Z allan $
+# $Id: PKGBUILD 203574 2014-01-13 17:12:05Z andyrtr $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-vfs
 pkgver=2.24.4
-pkgrel=7
+pkgrel=8
 pkgdesc="The GNOME Virtual File System"
 arch=(i686 x86_64)
 license=('LGPL')

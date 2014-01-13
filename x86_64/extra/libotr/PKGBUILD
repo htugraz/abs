@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 203477 2014-01-11 10:56:47Z andrea $
+# $Id: PKGBUILD 203583 2014-01-13 17:12:14Z andyrtr $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 # Contributor: Bug <Bug2000@gmail.com>
 
 pkgname=libotr
 pkgver=4.0.0
-pkgrel=4
+pkgrel=5
 pkgdesc='Off-the-Record Messaging Library and Toolkit'
 url='http://www.cypherpunks.ca/otr/'
 license=('GPL' 'LGPL')

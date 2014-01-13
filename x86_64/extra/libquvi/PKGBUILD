@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 199434 2013-11-12 17:02:09Z heftig $
+# $Id: PKGBUILD 203585 2014-01-13 17:12:16Z andyrtr $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 
 pkgname=libquvi
 pkgver=0.9.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Library for parsing video download links.'
 arch=('i686' 'x86_64')
 url='http://quvi.sourceforge.net/'

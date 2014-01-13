@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 185907 2013-05-19 18:45:48Z dreisner $
+# $Id: PKGBUILD 203595 2014-01-13 17:12:30Z andyrtr $
 # Maintainer: Dave Reisner <dreisner@archlinux.org>
 # Contributor: Thomas Baechler <thomas@archlinux.org>
 
@@ -6,7 +6,7 @@ pkgname=vpnc
 _vpncver=0.5.3
 _git=d2c5a77f3f0ea6ad80fc59158127d63ede81a6cb
 pkgver=$_vpncver.svn527
-pkgrel=1
+pkgrel=2
 pkgdesc="VPN client for cisco3000 VPN Concentrators"
 url="http://www.unix-ag.uni-kl.de/~massar/vpnc/"
 license=('GPL')

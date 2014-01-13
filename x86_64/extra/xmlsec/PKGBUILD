@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 198582 2013-10-30 15:44:58Z allan $
+# $Id: PKGBUILD 203598 2014-01-13 17:12:34Z andyrtr $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 # Contributor: Hussam Al-Tayeb <ht990332@gmail.com>
 
 pkgname=xmlsec
 pkgver=1.2.19
-pkgrel=1
+pkgrel=2
 pkgdesc="XML Security Library is a C library based on LibXML2"
 license=('custom')
 arch=(i686 x86_64)

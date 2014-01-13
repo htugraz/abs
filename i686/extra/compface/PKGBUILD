@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 197085 2013-10-21 18:34:54Z andyrtr $
+# $Id: PKGBUILD 203536 2014-01-13 10:41:27Z andyrtr $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Contributor: simo <simo@archlinux.org> 
 # Contributor: Manolis Tzanidakis
 
 pkgname=compface
 pkgver=1.5.2
-pkgrel=4
+pkgrel=5
 pkgdesc="Utils & libs to convert from/to X-Face format."
 arch=('i686' 'x86_64')
 url="http://ftp.xemacs.org/pub/xemacs/aux/"
@@ -26,7 +26,7 @@ prepare() {
 build() {
   cd $pkgname-$pkgver
   CFLAGS="$CFLAGS -fPIC"
-  ./configure --prefix=/usr
+  ./configure --prefix=/usr --mandir=/usr/share
   make
 }
 

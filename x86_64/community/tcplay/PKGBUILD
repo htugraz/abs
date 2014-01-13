@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 102520 2013-12-12 22:28:07Z tredaelli $
+# $Id: PKGBUILD 103928 2014-01-13 17:17:02Z andyrtr $
 # Maintainer: Timothy Redaelli <timothy.redaelli@gmail.com>
 # Contributor: Thomas Weißschuh <thomas t-8ch de>
 # Contributor: James Reed <supplantr at archlinux dot info>
 
 pkgname=tcplay
 pkgver=1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Free and simple TrueCrypt implementation based on dm-crypt."
 arch=('i686' 'x86_64')
 url="https://github.com/bwalex/tc-play"
