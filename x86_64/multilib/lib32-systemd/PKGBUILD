@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 98022 2013-10-04 05:44:18Z lcarlier $
+# $Id: PKGBUILD 103970 2014-01-14 11:03:24Z lcarlier $
 # Maintainer: Dave Reisner <dreisner@archlinux.org>
 # Maintainer: Tom Gundersen <teg@jklm.no>
 
 pkgname=lib32-systemd
 _pkgbasename=systemd
 pkgver=208
-pkgrel=1
+pkgrel=2
 pkgdesc="system and service manager (32-bit)"
 arch=('x86_64')
 url="http://www.freedesktop.org/wiki/Software/systemd"

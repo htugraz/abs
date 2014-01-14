@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 103614 2014-01-08 10:54:54Z spupykin $
+# $Id: PKGBUILD 103989 2014-01-14 14:25:20Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=xmms2
 pkgver=0.8DrO_o
-pkgrel=21
+pkgrel=22
 pkgdesc="complete rewrite of the popular music player"
 arch=('i686' 'x86_64')
 url="http://xmms2.org/"
