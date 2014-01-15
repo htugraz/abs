@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 202589 2013-12-22 12:49:51Z andrea $
+# $Id: PKGBUILD 204218 2014-01-15 10:18:38Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-kapptemplate
-pkgver=4.12.0
+pkgver=4.12.1
 pkgrel=1
 pkgdesc='KDE Template Generator'
 url='http://kde.org/applications/development/kapptemplate/'
@@ -13,7 +13,7 @@ depends=('kdebase-runtime')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/${pkgver}/src/kapptemplate-${pkgver}.tar.xz")
-sha1sums=('4034a10ec3a4f55e1c43a12b1610804d664088e1')
+sha1sums=('66afaef97c616652f0848af4f4c0044647c4575b')
 
 build() {
   mkdir build
