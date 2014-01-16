@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 104095 2014-01-15 14:24:22Z flexiondotorg $
+# $Id: PKGBUILD 104159 2014-01-16 13:02:33Z flexiondotorg $
 # Maintainer : Martin Wimpress <code@flexion.org>
 # Contributor: Giovanni "Talorno" Ricciardi <kar98k.sniper@gmail.com>
 # Contributor: Xpander <xpander0@gmail.com>
 
 pkgname=libmatekeyring
 pkgver=1.6.1
-pkgrel=2
+pkgrel=3
 pkgdesc="MATE keyring client library"
 url="http://mate-desktop.org"
 arch=('i686' 'x86_64')

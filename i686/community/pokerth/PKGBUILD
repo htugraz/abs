@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 103925 2014-01-13 17:16:59Z andyrtr $
+# $Id: PKGBUILD 104126 2014-01-16 06:37:17Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 # Contributor: Bartłomiej Piotrowski <barthalion@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=pokerth
 _realname=PokerTH
-pkgver=1.1
+pkgver=1.1.1
 pkgrel=1
 pkgdesc="Poker game written in C++/Qt4"
 arch=('i686' 'x86_64')
@@ -17,7 +17,7 @@ depends=('curl' 'boost-libs' 'gsasl' 'gnutls' 'protobuf'
          'qt5-base' 'sdl_mixer' 'libircclient' 'tinyxml')
 makedepends=('boost')
 source=("http://downloads.sourceforge.net/sourceforge/pokerth/$_realname-$pkgver-src.tar.bz2")
-md5sums=('7f577fdb04c697ac7227c1a0d4311ffc')
+md5sums=('a7f76f95782099f966e5f2b6809f502a')
 
 build() {
   cd "$srcdir/$_realname-$pkgver-src"
