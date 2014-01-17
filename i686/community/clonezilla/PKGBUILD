@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 97151 2013-09-14 10:46:12Z jsteel $
+# $Id: PKGBUILD 104328 2014-01-17 20:04:52Z jsteel $
 # Maintainer: Jonathan Steel <jsteel@aur.archlinux.org>
 # Contributor: M0Rf30
 
@@ -9,7 +9,8 @@ pkgdesc="The Free and Open Source Software for Disk Imaging and Cloning"
 arch=('any')
 url="http://clonezilla.org"
 license=('GPL')
-depends=('drbl' 'partclone' 'ntfsprogs' 'partimage' 'pigz' 'sshfs')
+depends=('drbl' 'partclone' 'ntfsprogs' 'partimage' 'pigz' 'sshfs' 'parted'
+         'gptfdisk')
 source=(http://free.nchc.org.tw/drbl-core/src/stable/$pkgname-$pkgver.tar.bz2
         usrbin.patch)
 backup=(etc/drbl/drbl-ocs.conf)
