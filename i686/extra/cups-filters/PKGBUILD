@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 204360 2014-01-17 21:38:53Z andyrtr $
+# $Id: PKGBUILD 204370 2014-01-18 10:14:50Z andyrtr $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=cups-filters
 pkgver=1.0.44
-pkgrel=1
+pkgrel=2
 pkgdesc="OpenPrinting CUPS Filters"
 arch=('i686' 'x86_64')
 url="http://www.linuxfoundation.org/collaborate/workgroups/openprinting"
@@ -27,6 +27,7 @@ build() {
   ./configure --prefix=/usr  \
     --sysconfdir=/etc \
     --sbindir=/usr/bin \
+    --localstatedir=/var \
     --with-rcdir=no \
     --enable-avahi \
     --with-browseremoteprotocols=DNSSD,CUPS \
