@@ -1,9 +1,9 @@
-#$Id: PKGBUILD 103153 2013-12-27 20:27:03Z jlichtblau $
+#$Id: PKGBUILD 104376 2014-01-19 16:29:40Z bpiotrowski $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 
 pkgname=qmmp
 pkgver=0.7.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Qt4 based audio-player"
 arch=('i686' 'x86_64')
 url="http://qmmp.ylsoftware.com/"

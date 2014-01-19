@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 102726 2013-12-17 20:17:14Z bgyorgy $
+# $Id: PKGBUILD 104372 2014-01-19 16:29:36Z bpiotrowski $
 # Maintainer: Jonathan Conder <jonno.conder@gmail.com>
 # Contributor: Giovanni Scafora <giovanni@archlinux.org>
 
@@ -14,7 +14,7 @@ pkgname=('mythplugins-mytharchive'
          'mythplugins-mythweb'
          'mythplugins-mythzoneminder')
 pkgver=0.27
-pkgrel=4
+pkgrel=5
 epoch=1
 arch=('i686' 'x86_64')
 url="http://www.mythtv.org"

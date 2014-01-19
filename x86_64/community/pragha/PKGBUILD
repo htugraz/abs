@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 101337 2013-11-22 22:20:43Z ttoepper $
+# $Id: PKGBUILD 104374 2014-01-19 16:29:38Z bpiotrowski $
 # Maintainer: Thorsten Töpper <atsutane-tu@freethoughts.de>
 # Contributor: J0k3r <moebius282 e4a t gmail D0_T com>
 # Contributor: Alois Nespor <alois.nespor@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=pragha
 pkgver=1.1.2.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A lightweight GTK+ music manager - fork of Consonance Music Manager."
 arch=('i686' 'x86_64')
 url="http://pragha.wikispaces.com/"

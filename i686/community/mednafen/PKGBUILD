@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 103351 2014-01-04 00:02:18Z jsteel $
+# $Id: PKGBUILD 104369 2014-01-19 16:29:32Z bpiotrowski $
 # Maintainer: Jonathan Steel <jsteel@aur.archlinux.org>
 # Contributor: megadriver <megadriver at gmx dot com>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
@@ -9,7 +9,7 @@
 pkgname=mednafen
 pkgver=0.9.32.1
 _pkgver=$pkgver-wip
-pkgrel=1
+pkgrel=2
 pkgdesc="A command-line multi-system gaming emulator"
 url="http://mednafen.sourceforge.net"
 license=('GPL')

@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 202198 2013-12-19 09:22:02Z allan $
+# $Id: PKGBUILD 204393 2014-01-19 00:33:32Z allan $
 # Maintainer: Allan McRae <allan@archlinux.org>
 # Contributor: Eric Belanger <eric@archlinux.org>
 # Contributor: John Proctor <jproctor@prium.net>
 
 pkgname=pcre
 pkgver=8.34
-pkgrel=1
+pkgrel=2
 pkgdesc="A library that implements Perl 5-style regular expressions"
 arch=('i686' 'x86_64')
 url="http://www.pcre.org/"
 license=('BSD')
-depends=('gcc-libs')
+depends=('readline' 'zlib' 'bzip2')
 source=(ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/${pkgname}-${pkgver}.tar.bz2{,.sig})
 md5sums=('5439e321351bddd5533551bbce128d07'
          'SKIP')
@@ -18,8 +18,13 @@ md5sums=('5439e321351bddd5533551bbce128d07'
 build() {
   cd "${srcdir}"/${pkgname}-${pkgver}
   ./configure --prefix=/usr \
-    --enable-pcre16 --enable-pcre32 --enable-jit \
-    --enable-utf --enable-unicode-properties
+    --enable-unicode-properties \
+    --enable-pcre16 \
+    --enable-pcre32 \
+    --enable-jit \
+    --enable-pcregrep-libz \
+    --enable-pcregrep-libbz2 \
+    --enable-pcretest-libreadline
   make
 }
 

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 201394 2013-12-10 15:34:19Z jgc $
+# $Id: PKGBUILD 204421 2014-01-19 16:28:54Z bpiotrowski $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgbase=gstreamer0.10-ugly
 pkgname=('gstreamer0.10-ugly' 'gstreamer0.10-ugly-plugins')
 pkgver=0.10.19
-pkgrel=8
+pkgrel=9
 arch=('i686' 'x86_64')
 license=('LGPL')
 makedepends=('pkgconfig' 'gstreamer0.10-base>=0.10.34' 'libdvdread' 'lame' 'libmpeg2' 'a52dec' 'libmad' 'libsidplay' 'libcdio' 'x264' 'opencore-amr' 'gtk-doc' 'git')

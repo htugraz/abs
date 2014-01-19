@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 101971 2013-12-03 03:22:58Z fyan $
+# $Id: PKGBUILD 104375 2014-01-19 16:29:39Z bpiotrowski $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Alessandro Pezzoni <donbex at nerdshack dot com>
 
 pkgname=python2-pycdio
 pkgver=0.20
-pkgrel=1
+pkgrel=2
 pkgdesc="Python OO interface to libcdio (CD Input and Control library)"
 arch=("i686" "x86_64")
 url="http://pypi.python.org/pypi/pycdio/"

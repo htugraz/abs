@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 103208 2013-12-30 05:17:01Z bpiotrowski $
+# $Id: PKGBUILD 104370 2014-01-19 16:29:34Z bpiotrowski $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Hugo Doria <hugo@archlinux.org>
 
 pkgname=mplayer-vaapi
 pkgver=36265
-pkgrel=7
+pkgrel=8
 pkgdesc="A movie player, compiled with vaapi support"
 arch=('i686' 'x86_64')
 url="http://gitorious.org/vaapi/mplayer"

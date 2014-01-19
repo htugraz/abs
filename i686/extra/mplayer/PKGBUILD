@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 200345 2013-11-26 19:19:27Z bpiotrowski $
+# $Id: PKGBUILD 204424 2014-01-19 16:28:57Z bpiotrowski $
 # Maintainer : Ionut Biru <ibiru@archlinux.org>
 # Contributor: Hugo Doria <hugo@archlinux.org>
 
 pkgbase=mplayer
 pkgname=('mplayer' 'mencoder')
 pkgver=36498
-pkgrel=4
+pkgrel=5
 arch=('i686' 'x86_64')
 makedepends=(
     'libxxf86dga' 'libxxf86vm' 'libmad' 'libxinerama' 'sdl' 'lame' 'libtheora'

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 99767 2013-10-30 23:35:23Z allan $
+# $Id: PKGBUILD 104368 2014-01-19 16:29:32Z bpiotrowski $
 # Maintainer: Federico Cinelli <cinelli@aur.archlinux.org>
 
 pkgname=gmerlin
 pkgver=1.2.0
-pkgrel=4
+pkgrel=5
 pkgdesc="Multimedia architecture for Linux"
 arch=('i686' 'x86_64')
 url="http://openmovieeditor.sourceforge.net/HomePage"
