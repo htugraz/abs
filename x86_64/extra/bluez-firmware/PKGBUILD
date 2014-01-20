@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 155891 2012-04-08 22:36:06Z tomegun $
+# $Id: PKGBUILD 204470 2014-01-20 16:09:44Z andyrtr $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor: Geoffroy Carrier <geoffroy@archlinux.org>
 # Contributor: Giovanni Scafora <giovanni@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=bluez-firmware
 pkgver=1.2
-pkgrel=7
+pkgrel=8
 pkgdesc="Firmwares for Broadcom BCM203x and STLC2300 Bluetooth chips"
 url="http://www.bluez.org/"
 arch=('any')
@@ -23,4 +23,7 @@ build() {
 package() {
   cd "${srcdir}/${pkgname}-${pkgver}"
   make DESTDIR="$pkgdir" install
+  
+  install -dm 755 ${pkgdir}/usr/share/doc/$pkgname
+  mv ${pkgdir}/usr/lib/firmware/BCM-LEGAL.txt ${pkgdir}/usr/share/doc/$pkgname/
 }
