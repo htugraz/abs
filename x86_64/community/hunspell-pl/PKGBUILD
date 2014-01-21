@@ -1,39 +1,36 @@
-# $Id: PKGBUILD 76144 2012-09-12 05:29:50Z bpiotrowski $
+# $Id: PKGBUILD 104477 2014-01-21 17:16:23Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <barthalion@gmail.com>
 # Contributor: Maciej Sitarz <macieks@freesco.pl>
 
 pkgname=hunspell-pl
 pkgver=20120911
-pkgrel=1
-pkgdesc="Polish (Poland) dictionary for Hunspell"
-arch=(any)
-url="http://www.sjp.pl/slownik/ort/"
+pkgrel=2
+pkgdesc='Polish dictionary for Hunspell'
+arch=('any')
+url='http://www.sjp.pl/slownik/ort/'
 license=('GPL')
 optdepends=('hunspell: the spell checking libraries and apps')
 source=(ftp://ftp.archlinux.org/other/community/$pkgname/sjp-myspell-pl-$pkgver.zip)
 md5sums=('cc1b05d329be79847b9e30a8f056753d')
 
-build() {
-    cd $srcdir
-    bsdtar -xf pl_PL.zip
+prepare() {
+  bsdtar -xf pl_PL.zip
 }
 
 package() {
-    cd $srcdir
-
-    install -dm755 $pkgdir/usr/share/hunspell
-    install -m644 pl_PL.aff $pkgdir/usr/share/hunspell
-    install -m644 pl_PL.dic $pkgdir/usr/share/hunspell
+  install -dm755 "$pkgdir"/usr/share/hunspell
+  install -m644 pl_PL.aff "$pkgdir"/usr/share/hunspell
+  install -m644 pl_PL.dic "$pkgdir"/usr/share/hunspell
 
     # the symlinks
-    install -dm755 ${pkgdir}/usr/share/myspell/dicts
-    pushd $pkgdir/usr/share/myspell/dicts
-        for file in $pkgdir/usr/share/hunspell/*; do
-            ln -sv /usr/share/hunspell/$(basename $file) .
-        done
-    popd
+  install -dm755 ${pkgdir}/usr/share/myspell/dicts
+  pushd "$pkgdir"/usr/share/myspell/dicts
+  for file in "$pkgdir"/usr/share/hunspell/*; do
+    ln -sv /usr/share/hunspell/$(basename $file) .
+  done
+  popd
 
-    # docs
-    install -dm755 $pkgdir/usr/share/doc/$pkgname
-    install -m644 README_pl_PL.txt $pkgdir/usr/share/doc/$pkgname
+  # docs
+  install -dm755 "$pkgdir"/usr/share/doc/$pkgname
+  install -m644 README_pl_PL.txt "$pkgdir"/usr/share/doc/$pkgname
 }
