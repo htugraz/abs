@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 96214 2013-08-21 19:31:33Z speps $
+# $Id: PKGBUILD 104536 2014-01-22 13:01:55Z speps $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: DonVla <donvla@users.sourceforge.net>
 
 pkgname=caps
-pkgver=0.9.10
+pkgver=0.9.16
 pkgrel=1
 pkgdesc="The LADSPA C* Audio Plugin Suite"
 arch=('i686' 'x86_64')
@@ -12,20 +12,20 @@ license=('GPL3')
 groups=('ladspa-plugins')
 depends=('ladspa')
 source=("http://quitte.de/dsp/caps_$pkgver.tar.bz2")
-md5sums=('dac87bf3a967b6f6ddcea1d90b6f4808')
+md5sums=('85e79596f22636b154b152efe54d05ce')
 
 prepare() {
-  cd "$srcdir/$pkgname-$pkgver"
+  cd $pkgname-$pkgver
   # use a minimum of optimization required to build
   export _CFLAGS='-msse -mfpmath=sse'
 }
 
 build() {
-  cd "$srcdir/$pkgname-$pkgver"
+  cd $pkgname-$pkgver
   make
 }
  
 package() {
-  cd "$srcdir/$pkgname-$pkgver"
+  cd $pkgname-$pkgver
   make PREFIX="$pkgdir/usr" install
 }

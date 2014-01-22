@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 102097 2013-12-05 08:05:48Z giovanni $
+# $Id: PKGBUILD 104501 2014-01-22 01:50:14Z eric $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: archtux <antonio.arias99999 at gmail.com>
 
 pkgname=converseen
 pkgver=0.6.6
-pkgrel=1
+pkgrel=2
 pkgdesc="The batch image converter and resizer"
 arch=('i686' 'x86_64')
 url="http://converseen.sourceforge.net/"

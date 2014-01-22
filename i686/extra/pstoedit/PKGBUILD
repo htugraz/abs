@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 198378 2013-10-30 14:30:32Z allan $
+# $Id: PKGBUILD 204525 2014-01-22 01:48:55Z eric $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: damir <damir@archlinux.org>
 # Contributor: Tobias Powalowski <t.powa@gmx.de>
 
 pkgname=pstoedit
 pkgver=3.62
-pkgrel=3
+pkgrel=4
 pkgdesc="Translates PostScript and PDF graphics into other vector formats"
 arch=('i686' 'x86_64')
 url="http://www.pstoedit.net/"

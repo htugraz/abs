@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 98721 2013-10-17 12:42:56Z spupykin $
+# $Id: PKGBUILD 104512 2014-01-22 06:54:53Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Igor Scabini <furester @ gmail.com>
 
 pkgname=('cython' 'cython2')
 pkgbase=cython
-pkgver=0.19.2
+pkgver=0.20
 pkgrel=1
 pkgdesc="C-Extensions for Python "
 arch=(i686 x86_64)
@@ -12,7 +12,7 @@ url="http://www.cython.org"
 license=('APACHE')
 makedepends=('python-setuptools' 'python2-setuptools')
 source=("http://cython.org/release/Cython-$pkgver.tar.gz")
-md5sums=('4af1218346510b464c0a6bf15500d0e2')
+md5sums=('6563dad21e2b5e31f9f7262a60dd0550')
 
 build() {
   true

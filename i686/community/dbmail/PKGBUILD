@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 104087 2014-01-15 13:08:32Z spupykin $
+# $Id: PKGBUILD 104522 2014-01-22 09:14:10Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sebastian Faltoni <sebastian.faltoni@gmail.com>
 
 pkgname=dbmail
-pkgver=3.1.9
+pkgver=3.1.10
 pkgrel=1
 pkgdesc="Fast and scalable sql based mail services"
 arch=('i686' 'x86_64')
