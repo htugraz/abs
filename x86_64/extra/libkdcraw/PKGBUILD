@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 204105 2014-01-15 10:16:24Z svenstaro $
+# $Id: PKGBUILD 204579 2014-01-23 13:18:52Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkdcraw
 pkgver=4.12.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A C++ interface used to decode RAW picture"
 url="https://projects.kde.org/projects/kde/kdegraphics/libs/libkdcraw"
 arch=('i686' 'x86_64')
