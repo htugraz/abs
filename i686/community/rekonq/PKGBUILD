@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 101077 2013-11-16 03:53:07Z andrea $
+# $Id: PKGBUILD 104680 2014-01-24 15:11:17Z andrea $
 # Maintainer: Peter Lewis <plewis@aur.archlinux.org>
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Panagiotis Papadopoulos <pano_90 AT gmx DOT net>
 
 pkgname=rekonq
-pkgver=2.4.0
+pkgver=2.4.2
 pkgrel=1
 pkgdesc='A WebKit based web browser for KDE'
 arch=('i686' 'x86_64')
@@ -16,7 +16,7 @@ optdepends=('kdebase-konqueror: search engines support'
             'qca-ossl: to use the sync handler')
 install=${pkgname}.install
 source=("http://downloads.sourceforge.net/${pkgname}/${pkgname}-${pkgver}.tar.xz")
-sha256sums=('660f40fe612b6706623977d8cdb94b49aaacdb53aac2689d95f02d782ce2715b')
+sha256sums=('e9805b32f592ca5809bd1632c624c57fc0109ce98b73a8b8e3ebd04e9c875126')
 
 prepare() {
   mkdir build

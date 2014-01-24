@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 203577 2014-01-13 17:12:08Z andyrtr $
+# $Id: PKGBUILD 204613 2014-01-24 10:08:11Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 # Contributor: Allan McRae <mcrae_allan@hotmail.com>
@@ -6,12 +6,12 @@
 
 pkgname=gtk-vnc
 pkgver=0.5.3
-pkgrel=2
+pkgrel=3
 pkgdesc="A VNC viewer widget for GTK"
 arch=('i686' 'x86_64')
 url="https://wiki.gnome.org/Projects/gtk-vnc"
 license=('LGPL')
-depends=('libgcrypt' 'gtk3')
+depends=('libgcrypt' 'gtk3' 'gnutls')
 optdepends=('gtk2: GTK2 widget')
 makedepends=('intltool' 'pygtk' 'pygobject2-devel' 'gtk-doc' 'gtk2' 'vala' 'gobject-introspection')
 source=(http://ftp.gnome.org/pub/gnome/sources/${pkgname}/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz)
