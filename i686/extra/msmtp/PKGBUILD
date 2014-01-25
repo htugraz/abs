@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 192439 2013-08-11 23:19:11Z eric $
+# $Id: PKGBUILD 204688 2014-01-25 00:14:19Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgbase=msmtp
 pkgname=('msmtp' 'msmtp-mta')
 pkgver=1.4.31
-pkgrel=4
+pkgrel=5
 arch=('i686' 'x86_64')
 license=('GPL3')
 url="http://msmtp.sourceforge.net"
