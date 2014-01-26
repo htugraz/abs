@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 102269 2013-12-07 10:36:55Z bpiotrowski $
+# $Id: PKGBUILD 104802 2014-01-26 12:17:40Z andyrtr $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 # Contributor: William Rea <sillywilly@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=pinot
 pkgver=1.06
-pkgrel=2
+pkgrel=3
 pkgdesc='Personal search and metasearch tool'
 arch=('i686' 'x86_64')
 url='http://code.google.com/p/pinot-search/'

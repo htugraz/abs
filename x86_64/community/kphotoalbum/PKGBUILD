@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 103167 2013-12-28 11:16:04Z lcarlier $
+# $Id: PKGBUILD 104796 2014-01-26 12:17:34Z andyrtr $
 # Maintainer: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Gilles CHAUVIN <gcnweb ][ gmail ? com>
@@ -7,7 +7,7 @@
 
 pkgname=kphotoalbum
 pkgver=4.4
-pkgrel=3
+pkgrel=4
 pkgdesc="KDE Photo Album, picture collection manager"
 url="http://www.kphotoalbum.org/"
 arch=('i686' 'x86_64')

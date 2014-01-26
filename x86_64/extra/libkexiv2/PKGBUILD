@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 204092 2014-01-15 10:16:09Z svenstaro $
+# $Id: PKGBUILD 204760 2014-01-26 12:16:05Z andyrtr $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkexiv2
 pkgver=4.12.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A library to manipulate pictures metadata"
 url="https://projects.kde.org/projects/kde/kdegraphics/libs/libkexiv2"
 arch=('i686' 'x86_64')

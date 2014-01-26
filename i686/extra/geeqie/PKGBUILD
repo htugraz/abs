@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 168110 2012-10-06 01:00:22Z eric $
+# $Id: PKGBUILD 204754 2014-01-26 12:15:58Z andyrtr $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 # Contributor: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 
 pkgname=geeqie
 pkgver=1.1
-pkgrel=2
+pkgrel=3
 pkgdesc="A lightweight image browser and viewer"
 arch=('i686' 'x86_64')
 url="http://geeqie.sourceforge.net/"

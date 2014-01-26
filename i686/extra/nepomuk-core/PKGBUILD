@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 204084 2014-01-15 10:16:00Z svenstaro $
+# $Id: PKGBUILD 204761 2014-01-26 12:16:06Z andyrtr $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=nepomuk-core
 pkgver=4.12.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Contains the central Nepomuk services like file indexing, file system monitoring, query, storage, client libraries"
 url="https://projects.kde.org/projects/kde/kdelibs/nepomuk-core"
 arch=('i686' 'x86_64')
