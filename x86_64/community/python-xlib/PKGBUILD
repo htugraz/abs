@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 92382 2013-06-04 12:33:25Z spupykin $
+# $Id: PKGBUILD 104826 2014-01-27 09:28:31Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Jeff Mickey <jeff@archlinux.org>
 # Contributor: Pappa < jcberg @ gmail . com >
 
-pkgname=('python-xlib' 'python2-xlib')
+pkgname=('python2-xlib')
 pkgbase=python-xlib
 pkgver=0.15rc1
-pkgrel=6
+pkgrel=7
 pkgdesc="A fully functional X client library for Python programs"
 url="http://python-xlib.sourceforge.net/"
 arch=('any')
@@ -22,6 +22,7 @@ package_python2-xlib() {
   python2 setup.py install --root=$pkgdir
 }
 
+# broken
 package_python-xlib() {
   depends=('python')
 
