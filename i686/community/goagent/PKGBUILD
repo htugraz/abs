@@ -1,19 +1,18 @@
-# $Id: PKGBUILD 103735 2014-01-11 02:08:57Z fyan $
+# $Id: PKGBUILD 104916 2014-01-28 10:59:31Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: cuihao <cuihao dot leo at gmail dot com>
 # Contributor: Guten <ywzhaifei@gmail.com> 
 
 pkgname=goagent
-pkgver=3.1.4
-pkgrel=1
+pkgver=3.1.5
+pkgrel=2
 pkgdesc="A gae proxy forked from gappproxy/wallproxy"
 arch=("any")
 url="http://goagent.googlecode.com"
 license=("GPL2")
-depends=('python2' 'python2-pyopenssl')
+depends=('python2' 'python2-pyopenssl' 'python2-gevent' 'python2-dnslib')
 conflicts=('python2-gevent<0.99')
-optdepends=('python2-gevent>0.99: for better performance'
-            'python2-crypto: optimization for RC4'
+optdepends=('python2-crypto: optimization for RC4'
             'python2-pacparser: PAC proxy support')
 makedepends=('git')
 source=("git+https://github.com/goagent/goagent.git#tag=v$pkgver"
@@ -28,6 +27,7 @@ package() {
   sed -i -e "s|^#!/usr/bin/env python|#!/usr/bin/env python2|" local/proxy.py
   
   install -Dm755 local/proxy.py "$pkgdir/usr/share/$pkgname/local/goagent"
+  install -Dm755 local/dnsproxy.py "$pkgdir/usr/share/$pkgname/local/dnsproxy.py"
   install -Dm644 local/proxy.pac "$pkgdir/usr/share/$pkgname/local/proxy.pac"
   install -Dm644 local/cacert.pem "$pkgdir/usr/share/$pkgname/local/cacert.pem"
   install -Dm644 local/SwitchyOptions.bak "$pkgdir/usr/share/$pkgname/local/SwitchyOptions.bak"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 104119 2014-01-16 05:24:03Z dwallace $
+# $Id: PKGBUILD 104902 2014-01-28 03:34:34Z td123 $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contributor: Valentin Hăloiu <vially.ichb+aur@gmail.com>
 # Contributor: Angel Velasquez <angvp@archlinux.org>  
@@ -24,7 +24,7 @@ pkgname=(uwsgi
         #uwsgi-plugin-erlang
         #uwsgi-plugin-admin
 pkgver=2.0
-pkgrel=1
+pkgrel=3
 arch=(i686 x86_64)
 url="http://projects.unbit.it/$pkgbase"
 license=(GPL2)

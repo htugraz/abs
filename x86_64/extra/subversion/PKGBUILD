@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 200590 2013-11-29 15:17:27Z angvp $
+# $Id: PKGBUILD 204824 2014-01-28 03:33:08Z td123 $
 # Maintainer: Angel Velasquez <angvp@archlinux.org> 
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 # Contributor: Paul Mattal <paul@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=subversion
 pkgver=1.8.5
-pkgrel=1
+pkgrel=2
 pkgdesc="A Modern Concurrent Version Control System"
 arch=('i686' 'x86_64')
 url="http://subversion.apache.org/"

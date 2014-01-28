@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 204124 2014-01-15 10:16:43Z svenstaro $
+# $Id: PKGBUILD 204820 2014-01-28 03:33:03Z td123 $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdebindings-korundum
 pkgver=4.12.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Ruby bindings for libraries created by the KDE community"
 url="https://projects.kde.org/projects/kde/kdebindings/ruby/korundum"
 arch=('i686' 'x86_64')

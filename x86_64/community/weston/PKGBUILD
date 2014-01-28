@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 104730 2014-01-25 02:24:17Z seblu $
+# $Id: PKGBUILD 104875 2014-01-27 23:38:12Z seblu $
 # Maintainer: Sébastien Luttringer
 # Contributor: Joel Teichroeb <joel@teichroeb.net>
 
 pkgname=weston
 pkgver=1.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Reference implementation of a Wayland compositor'
 arch=('i686' 'x86_64')
 url='http://wayland.freedesktop.org'
@@ -18,7 +18,7 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--libexecdir=/usr/lib/weston \
-		--enable-demo-clients
+		--enable-demo-clients-install
 	make
 }
 

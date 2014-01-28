@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 102895 2013-12-23 15:16:31Z spupykin $
+# $Id: PKGBUILD 104882 2014-01-28 03:34:09Z td123 $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer : Aaron Griffin <aaron@archlinux.org>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=clearsilver
 pkgver=0.10.5
-pkgrel=12
+pkgrel=13
 pkgdesc="clearsilver is a fast, powerful, and language-neutral HTML template system"
 arch=('i686' 'x86_64')
 url='http://www.clearsilver.net'

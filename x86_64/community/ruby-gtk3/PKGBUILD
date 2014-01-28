@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 104595 2014-01-23 10:58:45Z arodseth $
+# $Id: PKGBUILD 104889 2014-01-28 03:34:19Z td123 $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Eric Bélanger
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
@@ -7,7 +7,7 @@
 
 pkgbase=ruby-gtk3
 pkgver=2.1.0
-pkgrel=1
+pkgrel=2
 pkgname=('ruby-gtk3' 'ruby-gdk3')
 depends=("ruby-atk=$pkgver" "ruby-gdkpixbuf2=$pkgver" "ruby-glib2=$pkgver" "ruby-pango=$pkgver")
 arch=('x86_64' 'i686')

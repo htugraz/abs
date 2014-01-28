@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 92582 2013-06-09 08:55:46Z arodseth $
+# $Id: PKGBUILD 104893 2014-01-28 03:34:24Z td123 $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
 # Contributor: Jeff Mickey <j@codemac.net>
@@ -6,7 +6,7 @@
 
 pkgname=ruby-ncurses
 pkgver=1.3.1
-pkgrel=5
+pkgrel=6
 pkgdesc='Module for interactive text console applications (ncurses)'
 arch=('x86_64' 'i686')
 url='http://ncurses-ruby.berlios.de/'

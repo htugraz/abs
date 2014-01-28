@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 95720 2013-08-15 23:52:54Z kkeen $
+# $Id: PKGBUILD 104905 2014-01-28 03:42:50Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
 # Contributor: Andrew Antle <andrew dot antle at gmail dot com>
@@ -9,7 +9,7 @@ pkgbase=python-markdown
 pkgname=('python-markdown' 'python2-markdown')
 _pkgbasename=Markdown
 pkgver=2.3.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Python implementation of John Gruber's Markdown."
 arch=('any')
 url='http://pypi.python.org/pypi/Markdown'
@@ -28,8 +28,8 @@ package_python-markdown() {
   depends=('python')
   cd "$srcdir/$_pkgbasename-$pkgver"
   python3 setup.py install --root="$pkgdir" --optimize=0
-  find "$pkgdir/" -name '*.pyc' -delete
-  find "$pkgdir/" -type d -empty -delete
+  #find "$pkgdir/" -name '*.pyc' -delete
+  #find "$pkgdir/" -type d -empty -delete
   install -Dm644 LICENSE.md "$pkgdir/usr/share/licenses/python-markdown/LICENSE"
 }
 
@@ -37,7 +37,7 @@ package_python2-markdown() {
   depends=('python2')
   cd "$srcdir/python2-markdown"
   python2 setup.py install --root="$pkgdir" --optimize=0
-  find "$pkgdir/" -name '*.pyc' -delete
+  #find "$pkgdir/" -name '*.pyc' -delete
   mv "$pkgdir/usr/bin/markdown_py" "$pkgdir/usr/bin/markdown_py2"
   install -Dm644 LICENSE.md "$pkgdir/usr/share/licenses/python2-markdown/LICENSE"
 }

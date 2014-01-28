@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 100819 2013-11-11 12:06:03Z spupykin $
+# $Id: PKGBUILD 104886 2014-01-28 03:34:17Z td123 $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=passenger
 pkgver=4.0.21
-pkgrel=2
+pkgrel=3
 pkgdesc="mod_rails passenger"
 arch=('i686' 'x86_64')
 url="http://www.modrails.com"
