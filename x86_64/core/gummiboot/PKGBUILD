@@ -1,13 +1,13 @@
-# $Id: PKGBUILD 202776 2013-12-28 00:04:44Z tomegun $
+# $Id: PKGBUILD 204874 2014-01-30 03:12:06Z tomegun $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Keshav P R <(the.ridikulus.rat) (aatt) (gemmaeiil) (ddoott) (ccoomm)>
 # Contributor:  Mantas Mikulėnas <grawity@gmail.com>
 
 pkgname="gummiboot"
-pkgver="41"
-pkgrel="1"
-pkgdesc="Simple text-mode UEFI Boot Manager"
+pkgver="43"
+pkgrel="2"
+pkgdesc="Simple UEFI Boot Manager"
 url="http://freedesktop.org/wiki/Software/gummiboot"
 arch=('x86_64' 'i686')
 license=('LGPL2.1')
@@ -17,7 +17,7 @@ conflicts=('gummiboot-efi')
 provides=('gummiboot-efi')
 replaces=('gummiboot-efi')
 options=('!strip' '!makeflags')
-source=("git://anongit.freedesktop.org/${pkgname}#commit=ba731cee"
+source=("git://anongit.freedesktop.org/${pkgname}#commit=48e0a487"
         'loader.conf'
         'arch.conf'
 	'splash-arch.bmp')

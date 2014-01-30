@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 100622 2013-11-06 14:11:22Z spupykin $
+# $Id: PKGBUILD 105021 2014-01-30 10:11:38Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=myodbc
 pkgver=5.2.6
-pkgrel=1
+pkgrel=2
 pkgdesc="ODBC driver/connector for mariadb"
 arch=(i686 x86_64)
 url="http://dev.mysql.com/downloads/connector/odbc/"
@@ -20,7 +20,7 @@ build() {
   export LDFLAGS="-lpthread -ldl"
   cmake -G "Unix Makefiles" \
     -DCMAKE_INSTALL_PREFIX=/usr \
-    -DMYSQLCLIENT_LIB_NAME=libmysqlclient_r.so \
+    -DMYSQLCLIENT_LIB_NAME=libmysqlclient_r.a \
     -DWITH_UNIXODBC=1 .
   make
 }

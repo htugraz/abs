@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 104364 2014-01-19 14:07:40Z bpiotrowski $
+# $Id: PKGBUILD 105055 2014-01-30 18:44:14Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
 # Contributor: IgnorantGuru http://igurublog.wordpress.com/contact-ignorantguru/
 # Contributor: ridikulus_rat <the.ridikulus.rat@gmail.com>
@@ -15,7 +15,6 @@ depends=('gtk3' 'shared-mime-info' 'desktop-file-utils' 'startup-notification'
          'udev' 'bash')
 makedepends=('intltool' 'gettext')
 optdepends=('lsof: device processes'
-            'eject: eject media'
             'wget: plugin download'
             'gksu: perform as root functionality'
             'udevil: mount as non-root user and mount networks'
