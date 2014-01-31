@@ -1,20 +1,20 @@
-# $Id: PKGBUILD 204807 2014-01-27 19:22:09Z ronald $
+# $Id: PKGBUILD 204926 2014-01-31 13:36:05Z ronald $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor : shining <shiningxc.at.gmail.com>
 # Contributor : cyberdune <cyberdune@gmail.com>
 
 pkgname=octave
 pkgver=3.8.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A high-level language, primarily intended for numerical computations."
 arch=('i686' 'x86_64')
 url="http://www.octave.org"
 license=('GPL')
 depends=('fftw' 'curl' 'graphicsmagick' 'glpk' 'hdf5' 'qhull' 'fltk' 'arpack' 'glu') 
-makedepends=('gcc-fortran' 'texlive-core' 'suitesparse' 'texinfo' 'gnuplot')
+makedepends=('gcc-fortran' 'texlive-core' 'suitesparse' 'texinfo' 'gnuplot' 'qscintilla')
 optdepends=('texinfo: for help-support in octave'
             'gnuplot: alternative plotting'
-	    'qt4: experimental gui')
+	    'qscintilla: experimental gui')
 source=(ftp://ftp.gnu.org/gnu/octave/octave-$pkgver.tar.bz2{,.sig})
 options=('!emptydirs')
 install=octave.install

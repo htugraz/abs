@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 104187 2014-01-16 16:09:53Z flexiondotorg $
+# $Id: PKGBUILD 105084 2014-01-31 11:49:46Z flexiondotorg $
 # Maintainer : Martin Wimpress <code@flexion.org>
 
 pkgbase=mate-settings-daemon
 pkgname=("${pkgbase}-pulseaudio" "${pkgbase}-gstreamer")
 pkgver=1.6.2
-pkgrel=5
+pkgrel=6
 pkgdesc="The MATE Settings daemon"
 url="http://mate-desktop.org"
 arch=('i686' 'x86_64')
@@ -13,7 +13,6 @@ depends=('dbus-glib' 'dconf' 'fontconfig' 'gstreamer0.10-base' 'gtk2'
          'libcanberra-pulse' 'libmatekbd' 'libnotify' 'libxt' 'mate-desktop'
          'nss' 'polkit' 'pulseaudio-alsa')
 makedepends=('mate-common' 'perl-xml-parser')
-options=('!emptydirs')
 source=("http://pub.mate-desktop.org/releases/1.6/${pkgbase}-${pkgver}.tar.xz")
 sha1sums=('76c50bddcffd6b0415b058c828784bcd11c034ee')
 install=${pkgbase}.install
