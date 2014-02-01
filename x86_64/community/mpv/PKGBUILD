@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 104371 2014-01-19 16:29:35Z bpiotrowski $
+# $Id: PKGBUILD 105136 2014-02-01 12:59:23Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Eivind Uggedal <eivind@uggedal.com>
 
 pkgname=mpv
-pkgver=0.3.3
-pkgrel=2
+pkgver=0.3.4
+pkgrel=1
 pkgdesc='Video player based on MPlayer/mplayer2'
 arch=('i686' 'x86_64')
 license=('GPL')
@@ -18,7 +18,7 @@ makedepends=('mesa' 'python-docutils' 'waf')
 options=('!emptydirs' '!buildflags')
 install=mpv.install
 source=(https://github.com/mpv-player/$pkgname/archive/v$pkgver.tar.gz)
-md5sums=('bdf40570d1fc025058f9f2aabb91899f')
+md5sums=('274bf45367df99774512cf43659004d5')
 
 build() {
   cd $pkgname-$pkgver

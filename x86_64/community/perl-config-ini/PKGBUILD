@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 99443 2013-10-28 22:19:23Z seblu $
+# $Id: PKGBUILD 105131 2014-02-01 10:12:27Z seblu $
 # Maintainer: Sébastien Luttringer
 # Contributor: Alessandro Sagratini <ale_sagra at hotmail dot com>
 # Contributor: zlowly <zlowly@gmail.com>
 
 pkgname=perl-config-ini
-pkgver=0.021
+pkgver=0.022
 pkgrel=1
 pkgdesc='Perl/CPAN Module Config::INI - simple .ini-file format'
 arch=('any')
@@ -13,7 +13,7 @@ depends=('perl-io-string' 'perl-mixin-linewise' 'perl-capture-tiny')
 options=('!emptydirs')
 url='http://search.cpan.org/~rjbs/Config-INI/'
 source=("http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Config-INI-$pkgver.tar.gz")
-md5sums=('cc78f120031a5e536658222a06f9317f')
+md5sums=('4fb588e8fea91849232ccf3d1383db8e')
 
 build() {
   cd Config-INI-$pkgver
