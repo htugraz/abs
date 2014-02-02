@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 197817 2013-10-30 11:04:09Z allan $
+# $Id: PKGBUILD 205001 2014-02-02 20:56:10Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: mathieui <mathieui@mathieui.net>
 # Contributor: jiribb <jiribb@gmail.com>
 
 pkgname=ldns
-pkgver=1.6.16
+pkgver=1.6.17
 pkgrel=1
 pkgdesc='Fast DNS library supporting recent RFCs'
 url='http://www.nlnetlabs.nl/projects/ldns/'
@@ -14,7 +14,7 @@ depends=('openssl' 'dnssec-anchors')
 optdepends=('libpcap: ldns-dpa tool')
 makedepends=('libpcap')
 source=("http://www.nlnetlabs.nl/downloads/${pkgname}/${pkgname}-${pkgver}.tar.gz")
-sha1sums=('5b4fc6c5c3078cd061905c47178478cb1015c62a')
+sha1sums=('4218897b3c002aadfc7280b3f40cda829e05c9a4')
 
 build() {
 	cd "${srcdir}/${pkgname}-${pkgver}"
@@ -23,7 +23,6 @@ build() {
 		--prefix=/usr \
 		--sysconfdir=/etc \
 		--localstatedir=/var \
-		--enable-static=no \
 		--disable-rpath \
 		--with-drill \
 		--with-examples \

@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 103794 2014-01-11 20:08:28Z eric $
+# $Id: PKGBUILD 105169 2014-02-02 09:46:45Z bluewind $
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 # Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=filezilla
 pkgver=3.7.3
-pkgrel=2
+pkgrel=3
 pkgdesc="Fast and reliable FTP, FTPS and SFTP client"
 arch=('i686' 'x86_64')
 url="http://filezilla-project.org/"
 license=('GPL')
-depends=('dbus-core' 'xdg-utils' 'wxgtk2.8' 'libidn' 'hicolor-icon-theme' 'sqlite')
+depends=('dbus-core' 'xdg-utils' 'wxgtk2.8' 'libidn' 'hicolor-icon-theme' 'sqlite' 'gnutls')
 install=filezilla.install
 source=("http://downloads.sourceforge.net/project/filezilla/FileZilla_Client/${pkgver}/FileZilla_${pkgver}_src.tar.bz2")
 
