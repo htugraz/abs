@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 103590 2014-01-08 04:03:33Z kkeen $
+# $Id: PKGBUILD 105239 2014-02-03 10:02:23Z heftig $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: minder
 
 pkgbase=python-pillow
 pkgname=(python-pillow python2-pillow)
 pkgver=2.3.0
-pkgrel=1
+pkgrel=3
 _appname=Pillow
 _py2basever=2.7
 _py3basever=3.3m

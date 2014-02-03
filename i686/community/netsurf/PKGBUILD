@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 100034 2013-10-31 10:58:33Z arodseth $
+# $Id: PKGBUILD 105238 2014-02-03 10:02:22Z heftig $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Paulo Matias <matiasΘarchlinux-br·org>
 # Contributor: Georgij Kondratjev <smpuj@bk.ru>
@@ -6,7 +6,7 @@
 
 pkgname=netsurf
 pkgver=3.0
-pkgrel=5
+pkgrel=6
 pkgdesc='Lightweight and fast web browser'
 arch=('x86_64' 'i686')
 url='http://www.netsurf-browser.org/'

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 204904 2014-01-30 22:09:43Z eric $
+# $Id: PKGBUILD 205025 2014-02-03 10:02:55Z heftig $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgbase=imagemagick
 pkgname=('imagemagick' 'imagemagick-doc')
 pkgver=6.8.8.4
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url="http://www.imagemagick.org/"
 license=('custom')

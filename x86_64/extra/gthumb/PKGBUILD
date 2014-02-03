@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 204756 2014-01-26 12:16:01Z andyrtr $
+# $Id: PKGBUILD 205024 2014-02-03 10:02:54Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 # Contributor: Tobias Kieslich <tobias@justdreams.de>
 
 pkgname=gthumb
 pkgver=3.2.6
-pkgrel=2
+pkgrel=3
 pkgdesc="Image browser and viewer for the GNOME Desktop"
 arch=(i686 x86_64)
 license=(GPL)

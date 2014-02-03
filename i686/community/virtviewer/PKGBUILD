@@ -1,22 +1,23 @@
-# $Id: PKGBUILD 95330 2013-08-09 16:10:52Z spupykin $
+# $Id: PKGBUILD 105236 2014-02-03 09:59:08Z heftig $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Jonathan Wiersma <archaur at jonw dot org>
 
 pkgname=virtviewer
-pkgver=0.5.7
-pkgrel=1
+pkgver=0.6.0
+pkgrel=2
 pkgdesc="A lightweight interface for interacting with the graphical display of virtualized guest OS."
-depends=('gtk-vnc' 'libglade>=2.6.0' 'libvirt' 'spice-gtk3')
+depends=('gtk-vnc' 'libglade>=2.6.0' 'libvirt' 'spice-gtk3' 'desktop-file-utils')
 makedepends=('intltool')
 url="http://virt-manager.et.redhat.com"
 arch=('i686' 'x86_64')
 license=('GPL')
+install=virtviewer.install
 source=("http://virt-manager.et.redhat.com/download/sources/virt-viewer/virt-viewer-$pkgver.tar.gz")
-md5sums=('c0d6d2de66e61df6c2ad339625c58a2a')
+md5sums=('a3d7dd877105117e36185378ee1849ee')
 
 build() {
   cd $srcdir/virt-viewer-$pkgver
-  ./configure --prefix=/usr --with-gtk=3.0
+  ./configure --prefix=/usr --with-gtk=3.0 --disable-update-mimedb
   make
 }
 

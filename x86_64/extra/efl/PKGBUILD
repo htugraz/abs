@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 204914 2014-01-31 11:05:39Z ronald $
+# $Id: PKGBUILD 205022 2014-02-03 10:02:52Z heftig $
 # Maintainer: Ronald van Haren <ronald@archlinux.org>
 # Contributor: Enlightenment Developers <enlightenment-devel@enlightenment.org>
 
 pkgbase=efl
 pkgname=('efl' 'efl-docs')
 pkgver=1.8.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Enlightenment Foundation Libraries"
 arch=('i686' 'x86_64')
 url="http://www.enlightenment.org"
