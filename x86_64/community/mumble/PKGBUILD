@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 99917 2013-10-31 02:27:44Z allan $
+# $Id: PKGBUILD 105350 2014-02-05 20:04:46Z bluewind $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Lauri Niskanen <ape@ape3000.com>
 # Contributor: Sebastian.Salich@gmx.de
@@ -8,18 +8,18 @@
 # to the depends and delete "no-g15" in the configure line below
 
 pkgname=mumble
-pkgver=1.2.4
-pkgrel=2
+pkgver=1.2.5
+pkgrel=1
 arch=('i686' 'x86_64')
 pkgdesc="A voice chat application similar to TeamSpeak"
 license=('BSD')
 depends=('qt4' 'speex' 'lsb-release' 'libxi' 'avahi' 'libsndfile' 'protobuf' 'libpulse' 'opus')
-makedepends=('boost' 'mesa' 'avahi')
+makedepends=('boost' 'mesa')
 #optdepends=('portaudio: for portaudio back-end' 'g15daemon: G15 Keyboard support')
 install=mumble.install
 url="http://mumble.sourceforge.net/"
 source=("http://downloads.sourceforge.net/mumble/$pkgname-$pkgver.tar.gz")
-md5sums=('49bc6abea78f9c54298934c2c28a7c7c')
+md5sums=('084ca44252bd5356b68af555f81ba6f6')
 
 build() {
   cd $srcdir/$pkgname-$pkgver
@@ -53,5 +53,6 @@ package() {
   install -m755 -d $pkgdir/usr/share/man/man1
   install -m644 -D ./man/mum* $pkgdir/usr/share/man/man1/
   install -m644 -D ./icons/mumble.svg $pkgdir/usr/share/icons/hicolor/scalable/apps/mumble.svg
+  install -m644 -D ./LICENSE $pkgdir/usr/share/licenses/$pkgname/LICENSE
 }
 # vim: sw=2:ts=2 et:
