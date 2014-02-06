@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 201548 2013-12-14 21:56:57Z andyrtr $
+# $Id: PKGBUILD 205523 2014-02-06 16:23:04Z andyrtr $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=claws-mail
 pkgver=3.9.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A GTK+ based e-mail client."
 arch=('i686' 'x86_64')
 license=('GPL3')
 url="http://www.claws-mail.org"
-depends=('gtk2' 'gnutls' 'startup-notification' 'enchant' 'gpgme' 'libetpan>=1.1-4' 'compface'
+depends=('gtk2' 'gnutls' 'startup-notification' 'enchant' 'gpgme' 'libetpan' 'compface'
          'libsm' 'dbus-glib' 'hicolor-icon-theme' 'desktop-file-utils')
 makedepends=('spamassassin' 'bogofilter' 'valgrind' 
              # dependencies for plugins

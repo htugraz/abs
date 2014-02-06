@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 99702 2013-10-30 23:07:09Z alucryd $
+# $Id: PKGBUILD 105391 2014-02-06 16:23:43Z andyrtr $
 # Maintainer: Maxime Gauduin <alucryd at gmail dot com>
 # Contributor: Tofe <chris dot chapuis at gmail dot com>
 # Contributor: zhuqin <zhuqin83 at gmail dot com>
@@ -7,7 +7,7 @@
 
 pkgname=cairo-dock-plugins
 pkgver=3.3.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Plugins for Cairo-Dock'
 arch=('i686' 'x86_64')
 url="https://launchpad.net/${pkgname%-*}-plug-ins"

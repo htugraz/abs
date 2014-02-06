@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 103554 2014-01-07 21:43:33Z ttoepper $
+# $Id: PKGBUILD 105366 2014-02-06 05:24:12Z bisson $
 # Maintainer: Thorsten Töpper <atsutane-tu@freethoughts.de>
 
 pkgname=i3status
 pkgver=2.8
-pkgrel=1
+pkgrel=2
 pkgdesc='Generates status bar to use with i3bar, dzen2 or xmobar'
 arch=('i686' 'x86_64')
 url='http://i3.zekjur.net/i3status/'

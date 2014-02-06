@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 98054 2013-10-04 17:26:39Z bpiotrowski $
-# Maintainer:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
+# $Id: PKGBUILD 105368 2014-02-06 05:24:14Z bisson $
+# Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
 # Contributor: Juergen Hoetzel <juergen@archlinux.org>
 
 pkgname=lxpanel
 pkgver=0.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Lightweight X11 desktop panel for LXDE'
 arch=('i686' 'x86_64')
 license=('GPL2')
@@ -22,7 +22,7 @@ build() {
   CFLAGS+=' -lgmodule-2.0' ./configure \
     --sysconfdir=/etc \
     --prefix=/usr \
-    --enable-man 
+    --enable-man
   make
 }
 
