@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 91665 2013-05-26 09:25:00Z bluewind $
+# $Id: PKGBUILD 105418 2014-02-07 09:53:58Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-dbd-pg
-pkgver=2.19.3
-pkgrel=2
+pkgver=3.0.0
+pkgrel=1
 pkgdesc="Postgres Driver for DBI"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/DBD-Pg"
@@ -12,7 +12,7 @@ license=('GPL' 'PerlArtistic')
 depends=('perl-dbi>=1.52' 'postgresql-libs')
 options=('!emptydirs')
 source=("http://www.cpan.org/authors/id/T/TU/TURNSTEP/DBD-Pg-${pkgver}.tar.gz")
-md5sums=('026ea19f89aee12051bce23d797e824b')
+md5sums=('58c2613bcb241279aca4c111ba16db48')
 
 build() {
   cd  DBD-Pg-${pkgver}

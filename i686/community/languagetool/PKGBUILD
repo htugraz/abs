@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 104925 2014-01-28 11:29:19Z aginiewicz $
+# $Id: PKGBUILD 105427 2014-02-07 12:35:53Z aginiewicz $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 # Contributor: Julien MISCHKOWITZ <wain@archlinux.fr>
 # Contributor: Panagiotis Papadopoulos pano_90 (AT) gmx (DOT) net
 
 pkgname=languagetool
 pkgver=2.4.1
-pkgrel=1
+pkgrel=2
 pkgdesc="An open source language checker"
 arch=('any')
 url="http://www.languagetool.org" 
@@ -18,7 +18,7 @@ optdepends=('java-runtime: needed for the GUI version'
 source=($pkgname-$pkgver.zip::"http://www.languagetool.org/download/LanguageTool-stable.zip?$pkgver" "$pkgname.sh")
 noextract=($pkgname-$pkgver.zip)
 md5sums=('53265e24496707225a2f5997e65634a3'
-         '9d3c008ad6c0e150a29ea0be8e32a7fe')
+         '81c8355c6b3820e9788199daa647089e')
 
 package() {
   cd "$srcdir"

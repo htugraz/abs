@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 105361 2014-02-06 02:14:51Z fyan $
+# $Id: PKGBUILD 105414 2014-02-07 02:15:26Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Richard Murri <admin@richardmurri.com>
 # Contributor: Farhad Shahbazi <farhad@enthusiasm.cc>
@@ -6,7 +6,7 @@
 
 pkgbase=python-bottle
 pkgname=("python-bottle" "python2-bottle")
-pkgver=0.12.2
+pkgver=0.12.3
 pkgrel=1
 pkgdesc="A fast and simple micro-framework for small web-applications"
 arch=(any)

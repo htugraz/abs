@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 191927 2013-08-01 07:00:00Z bpiotrowski $
+# $Id: PKGBUILD 205562 2014-02-07 16:53:54Z giovanni $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=vice
 pkgver=2.4
-pkgrel=4
+pkgrel=5
 pkgdesc="The Versatile Commodore 8-bit Emulator"
 arch=('i686' 'x86_64')
 license=('GPL')
-url="http://www.viceteam.org/"
+url="http://vice-emu.sourceforge.net/"
 depends=('alsa-lib' 'giflib' 'libxxf86vm' 'vte' 'libnet' 'libpcap')
 makedepends=('xorg-font-utils')
 options=('!makeflags')
