@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 103497 2014-01-06 21:06:24Z bgyorgy $
+# $Id: PKGBUILD 105487 2014-02-09 06:17:37Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Doehni <dohny@gmx.de>
 
 pkgname=gnome-do
-pkgver=0.95
+pkgver=0.95.1
 pkgrel=1
 pkgdesc="Quickly search for many items present on your desktop or the web, and perform useful actions on those items"
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ depends=('gconf-sharp' 'gnome-desktop2' 'gnome-keyring-sharp' 'mono-addins' 'not
 makedepends=('intltool' 'gio-sharp')
 install=$pkgname.install
 source=(http://launchpad.net/do/trunk/$pkgver/+download/$pkgname-$pkgver.tar.gz)
-md5sums=('60309cd42dcdfc25e215346b3346095f')
+md5sums=('1f61376718d75d3defcdf81958754296')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"
