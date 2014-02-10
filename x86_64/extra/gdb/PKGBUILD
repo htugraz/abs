@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 201560 2013-12-15 06:41:56Z allan $
+# $Id: PKGBUILD 205618 2014-02-10 03:08:15Z allan $
 # Maintainer: Allan McRae <allan@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gdb
-pkgver=7.6.2
+pkgver=7.7
 pkgrel=1
 pkgdesc="The GNU Debugger"
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ makedepends=('texinfo')
 backup=('etc/gdb/gdbinit')
 install=gdb.install
 source=(http://ftp.gnu.org/gnu/gdb/${pkgname}-${pkgver}.tar.bz2{,.sig})
-md5sums=('496399e96654fc0f899a5c964bc1f0f8'
+md5sums=('271a18f41858a7e98b28ae4eb91287c9'
          'SKIP')
 
 prepare() {
@@ -44,6 +44,5 @@ package() {
 
   # resolve conflicts with binutils
   rm ${pkgdir}/usr/include/{ansidecl,bfd,bfdlink,dis-asm,symcat}.h
-  rm ${pkgdir}/usr/lib/{libbfd,libiberty,libopcodes}.a
   rm ${pkgdir}/usr/share/info/{bfd,configure,standards}.info
 }

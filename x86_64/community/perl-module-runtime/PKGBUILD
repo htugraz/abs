@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 95652 2013-08-15 09:48:30Z spupykin $
+# $Id: PKGBUILD 105559 2014-02-10 11:18:34Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=perl-module-runtime
-pkgver=0.013
-pkgrel=2
+pkgver=0.014
+pkgrel=1
 pkgdesc="runtime module handling"
 arch=('any')
 url="http://search.cpan.org/dist/Module-Runtime/"
@@ -11,7 +11,7 @@ license=('GPL' 'PerlArtistic')
 depends=('perl-params-classify')
 options=(!emptydirs)
 source=("http://search.cpan.org/CPAN/authors/id/Z/ZE/ZEFRAM/Module-Runtime-$pkgver.tar.gz")
-md5sums=('62b88b1f5f0e975a5d7c80cd46167b97')
+md5sums=('a6597bc25536a30476f0d75b64d35734')
 
 build() {
   cd $srcdir/Module-Runtime-$pkgver

@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 204225 2014-01-15 10:18:48Z svenstaro $
+# $Id: PKGBUILD 205778 2014-02-10 10:59:52Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-strigi-analyzers
-pkgver=4.12.1
+pkgver=4.12.2
 pkgrel=1
 pkgdesc='Analyzer plugins for strigi'
 url='https://projects.kde.org/projects/kde/kdesdk/kdesdk-strigi-analyzers'
@@ -12,7 +12,7 @@ groups=('kde' 'kdesdk')
 depends=('kdebase-runtime')
 makedepends=('cmake' 'automoc4')
 source=("http://download.kde.org/stable/${pkgver}/src/kdesdk-strigi-analyzers-${pkgver}.tar.xz")
-sha1sums=('37a5e2d923b01cd26206eea418b073b2b350d9c8')
+sha1sums=('8c952a9004053984c19c83c6c6c139e6167c66da')
 
 build() {
   mkdir build

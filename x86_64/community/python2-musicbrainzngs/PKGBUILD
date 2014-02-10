@@ -1,16 +1,15 @@
-# $Id: PKGBUILD 105478 2014-02-08 20:40:20Z alucryd $
+# $Id: PKGBUILD 105583 2014-02-10 14:29:16Z alucryd $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 # Contributor: Adrian Sampson <adrian@radbox.org>
 
 pkgname=python2-musicbrainzngs
 pkgver=0.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Bindings for the MusicBrainz NGS service'
 arch=('any')
 url="https://github.com/alastair/${pkgname/2/}"
 license=('BSD')
 depends=('python2')
-makedepends=('python2-setuptools')
 source=("${pkgname/2/}-${pkgver}.tar.gz::${url}/archive/v${pkgver}.tar.gz")
 sha256sums=('ea84abc60fcb5152418dd49e8fdecf3e68759304a71bef422c3b1376886c5b7a')
 

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 197712 2013-10-28 19:31:41Z heftig $
+# $Id: PKGBUILD 205830 2014-02-10 21:04:06Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Caleb Cushing <xenoterracide@gmail.com>
 
 pkgname=perl-capture-tiny
 _realname=Capture-Tiny
-pkgver=0.23
+pkgver=0.24
 pkgrel=1
 pkgdesc="Capture STDOUT and STDERR from Perl, XS or external programs"
 arch=(any)
@@ -13,7 +13,7 @@ depends=(perl)
 url="http://search.cpan.org/dist/Capture-Tiny"
 options=('!emptydirs')
 source=("http://search.cpan.org/CPAN/authors/id/D/DA/DAGOLDEN/$_realname-$pkgver.tar.gz")
-md5sums=('7c6f63671802d004c0df5dbcba93e5b4')
+md5sums=('718e9d62c4a27a3207cf8506cb99d846')
 
 build() {
   cd "$srcdir/$_realname-$pkgver"

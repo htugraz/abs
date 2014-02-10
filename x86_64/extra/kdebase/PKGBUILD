@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 204102 2014-01-15 10:16:20Z svenstaro $
+# $Id: PKGBUILD 205655 2014-02-10 10:57:59Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
@@ -12,7 +12,7 @@ pkgname=('kdebase-dolphin'
          'kdebase-konqueror'
          'kdebase-lib'
          'kdebase-plasma')
-pkgver=4.12.1
+pkgver=4.12.2
 pkgrel=1
 arch=('i686' 'x86_64')
 url='http://www.kde.org'
@@ -20,7 +20,7 @@ license=('GPL' 'LGPL' 'FDL')
 groups=('kde' 'kdebase')
 makedepends=('kdelibs' 'cmake' 'automoc4' 'tidyhtml' 'nepomuk-widgets')
 source=("http://download.kde.org/stable/${pkgver}/src/kde-baseapps-${pkgver}.tar.xz")
-sha1sums=('a08013c4f3e7221e597f98c310c323e40e03d280')
+sha1sums=('7002c8d1a8f4fb1735ad70b8cb1a106876323f94')
 
 prepare() {
   mkdir build

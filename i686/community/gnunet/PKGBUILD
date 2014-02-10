@@ -1,17 +1,22 @@
-# $Id: PKGBUILD 103911 2014-01-13 17:16:42Z andyrtr $
+# $Id: PKGBUILD 105576 2014-02-10 13:48:00Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: wahnby <wahnby@yahoo.fr>
 
 pkgname=gnunet
 pkgver=0.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A framework for secure peer-to-peer networking"
 arch=('i686' 'x86_64')
 url="http://gnunet.org"
 license=('GPL')
-depends=('gmp' 'libgcrypt' 'libextractor' 'sqlite' 'curl'
+depends=('gmp' 'libgcrypt' 'libextractor' 'sqlite' 'gnurl'
 	 'libmicrohttpd' 'libunistring' 'libidn')
-makedepends=('gettext' 'pkgconfig')
+makedepends=('gettext' 'pkgconfig'
+	     'bluez-libs' 'python' 'glpk' 'libpulse')
+optdepends=('bluez-libs'
+	    'python'
+	    'glpk'
+	    'libpulse')
 backup=(etc/gnunetd.conf)
 options=('!makeflags')
 install=gnunet.install
