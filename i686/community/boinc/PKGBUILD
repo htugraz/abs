@@ -1,13 +1,13 @@
-# $Id: PKGBUILD 103789 2014-01-11 20:08:21Z eric $
+# $Id: PKGBUILD 105640 2014-02-12 17:37:10Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Michal Krenek <mikos@sg1.cz>
 
 pkgbase=boinc
 pkgname=(boinc boinc-nox)
-pkgver=7.2.33
+pkgver=7.2.39
 _tag="client_release/7.2/$pkgver"
-pkgrel=3
+pkgrel=1
 arch=('i686' 'x86_64')
 url="http://boinc.berkeley.edu/"
 license=('LGPL')

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 204889 2014-01-30 18:34:44Z schiv $
+# $Id: PKGBUILD 205866 2014-02-12 07:12:24Z schiv $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: SpepS <dreamspepser at yahoo dot it>
 # Contributor: see .contrib
@@ -6,12 +6,12 @@
 pkgname=ardour
 _pkgname=Ardour3
 pkgver=3.5.308
-pkgrel=1
+pkgrel=2
 pkgdesc="Professional-grade digital audio workstation"
 arch=('i686' 'x86_64')
 url="http://ardour.org/"
 license=('GPL')
-depends=('liblrdf' 'liblo' 'libsmf' 'lilv'
+depends=('liblrdf' 'liblo>=0.28' 'libsmf' 'lilv'
          'aubio' 'libgnomecanvasmm' 'suil')
 makedepends=('python2' 'boost' 'cppunit' 'doxygen' 'graphviz')
 optdepends=('xjadeo: video monitoring')
