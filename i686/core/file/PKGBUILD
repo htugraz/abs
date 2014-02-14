@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 201433 2013-12-11 15:08:39Z allan $
+# $Id: PKGBUILD 205932 2014-02-14 08:16:42Z allan $
 # Maintainer: Allan McRae <allan@archlinux.org>
 # Contributor: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=file
-pkgver=5.16
+pkgver=5.17
 pkgrel=1
 pkgdesc="File type identification utility"
 arch=('i686' 'x86_64')
@@ -12,7 +12,7 @@ groups=('base' 'base-devel')
 url="http://www.darwinsys.com/file/"
 depends=('glibc' 'zlib')
 source=(ftp://ftp.astron.com/pub/${pkgname}/${pkgname}-${pkgver}.tar.gz)
-md5sums=('359c0cf41c3d438d17b4d293f3b950dc')
+md5sums=('e19c47e069ced7b01ccb4db402cc01d3')
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"

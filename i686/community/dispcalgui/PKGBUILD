@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 104543 2014-01-22 15:26:47Z tredaelli $
+# $Id: PKGBUILD 105728 2014-02-14 14:41:06Z tredaelli $
 # Maintainer: Timothy Redaelli <timothy.redaelli@gmail.com>
 # Contributor: Cedric Girard <girard.cedric@gmail.com>
 # Contributor: foxbunny <bg.branko@gmail.com>
 
 pkgname=dispcalgui
-pkgver=1.7.1.6
+pkgver=1.7.5.7
 pkgrel=1
 pkgdesc="A GUI frontend for several utilities from the open source color management system Argyll CMS"
 arch=('i686' 'x86_64')
@@ -16,7 +16,7 @@ optdepends=('gksu: For running as root')
 install=${pkgname}.install
 source=("http://downloads.sourceforge.net/project/dispcalgui/release/${pkgver}/dispcalGUI-${pkgver}.tar.gz"
         dispcalGUI-1.5.3.1-wxgtk3.patch)
-md5sums=('c51f5a6354b16342fd4ec3e0bb1bb4eb'
+md5sums=('7a66051d244f1b734448a865b50fae01'
          'b8001e5cbbb849f9ba95e0ef9fb1d073')
 
 prepare() {

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 91524 2013-05-23 11:16:10Z spupykin $
+# $Id: PKGBUILD 105714 2014-02-14 09:37:45Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=netcount
 pkgver=0.8i
-pkgrel=6
+pkgrel=7
 pkgdesc="network statistic and monitor tools"
 arch=('any')
 url="http://www.hczim.de/software/"
@@ -44,4 +44,5 @@ package() {
 	RCRONDIR=$srcdir \
 	INIT_GENTOO=$srcdir \
 	install
+  mv $pkgdir/usr/bin/nstat $pkgdir/usr/bin/nstat-$pkgname
 }
