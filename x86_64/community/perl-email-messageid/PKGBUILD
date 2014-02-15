@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65801 2012-02-22 12:43:30Z spupykin $
+# $Id: PKGBUILD 105777 2014-02-15 20:32:35Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+aur@gmail.com>
 
 pkgname=perl-email-messageid
-pkgver=1.402
-pkgrel=2
+pkgver=1.404
+pkgrel=1
 pkgdesc="Generate world unique message-ids. "
 arch=('any')
 url="http://search.cpan.org/dist/Email-MessageID"
@@ -12,12 +12,16 @@ license=('GPL' 'PerlArtistic')
 depends=('perl-email-address>=1.80')
 options=('!emptydirs')
 source=(http://www.cpan.org/authors/id/R/RJ/RJBS/Email-MessageID-$pkgver.tar.gz)
-md5sums=('ceadc7110336fa0de0da5e2c49be8235')
+md5sums=('4dc2f45a665dde29e6f0cf8b94befba9')
 
 build() {
   cd  $srcdir/Email-MessageID-$pkgver
   PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
   make
+}
+
+package() {
+  cd  $srcdir/Email-MessageID-$pkgver
   make install DESTDIR=$pkgdir
   find $pkgdir -name '.packlist' -delete
   find $pkgdir -name '*.pod' -delete
