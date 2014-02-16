@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 105735 2014-02-14 15:45:18Z tredaelli $
+# $Id: PKGBUILD 105850 2014-02-16 13:46:15Z bpiotrowski $
 # Maintainer: Timothy Redaelli <timothy.redaelli@gmail.com>
 # Contributor: Florian Loitsch <archlinux@florian.loitsch.com>
 pkgname=miniupnpc

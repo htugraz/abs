@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 205872 2014-02-12 07:31:26Z tpowa $
+# $Id: PKGBUILD 206056 2014-02-16 12:47:08Z tpowa $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 pkgname=libusb
 pkgver=1.0.18
