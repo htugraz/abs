@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 99596 2013-10-30 11:42:22Z spupykin $
+# $Id: PKGBUILD 105903 2014-02-18 17:27:03Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=arch-wiki-docs
-pkgver=20131030
+pkgver=20140218
 pkgrel=1
 pkgdesc="Documentation from wiki.archlinux.org"
 arch=('any')
