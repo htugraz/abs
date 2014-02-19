@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 101482 2013-11-26 11:05:38Z spupykin $
+# $Id: PKGBUILD 105919 2014-02-19 10:21:57Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: William Rea <sillywilly@gmail.com>
 # Contributor: Hans Janssen <hans@janserv.xs4all.nl>
 
 pkgname=simgear
-pkgver=2.12.1
-pkgrel=2
+pkgver=3.0.0
+pkgrel=1
 pkgdesc="A set of open-source libraries designed to be used as building blocks for quickly assembling 3d simulations, games, and visualization applications."
 arch=(i686 x86_64)
-depends=('glut' 'freealut' 'plib' 'openscenegraph')
+depends=('glu' 'glut' 'freealut' 'plib' 'openscenegraph')
 makedepends=('boost' 'cmake' 'mesa')
 license=("GPL")
 #url="http://www.simgear.org"
@@ -16,7 +16,7 @@ url="https://gitorious.org/fg"
 options=('!makeflags' 'staticlibs')
 #source=("SimGear-$pkgver.tar.gz::https://gitorious.org/fg/simgear/archive-tarball/release/$pkgver")
 source=("http://mirrors.ibiblio.org/pub/mirrors/simgear/ftp/Source/simgear-$pkgver.tar.bz2")
-md5sums=('8c483e13bce96f1dc27300a087fdb962')
+md5sums=('097f55962dfc48b3e740334dbfda64a6')
 
 build() {
   cd $srcdir/simgear-$pkgver
