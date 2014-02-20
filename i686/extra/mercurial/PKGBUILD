@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 204972 2014-02-02 16:54:39Z giovanni $
+# $Id: PKGBUILD 206155 2014-02-20 12:01:46Z giovanni $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Douglas Soares de Andrade <douglas@archlinux.org>
 
 pkgname=mercurial
 pkgver=2.9
-pkgrel=1
+pkgrel=2
 pkgdesc="A scalable distributed SCM tool"
 arch=('i686' 'x86_64')
 url="http://mercurial.selenic.com/"
@@ -44,4 +44,7 @@ package() {
   # install configuration file
   install -m755 -d ${pkgdir}/etc/mercurial
   install -m644 contrib/sample.hgrc "${pkgdir}/etc/mercurial/hgrc"
+  
+  # FS#38825 - Add certs config to package 
+  echo -e "\n[web]\ncacerts = /etc/ssl/certs/ca-certificates.crt" >> "${pkgdir}/etc/mercurial/hgrc"
 }

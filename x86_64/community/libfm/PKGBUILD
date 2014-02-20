@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 105946 2014-02-19 18:06:55Z bgyorgy $
+# $Id: PKGBUILD 105979 2014-02-20 12:14:35Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Unknown47 <unknown47r@gmail.com>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
@@ -6,15 +6,17 @@
 
 pkgname=libfm
 pkgver=1.2.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Library for file management'
 url='http://pcmanfm.sourceforge.net/'
 arch=('i686' 'x86_64')
 license=('GPL')
 groups=('lxde')
 depends=('gtk2' 'menu-cache' 'udisks' 'desktop-file-utils' 'libexif')
-makedepends=('intltool')
+makedepends=('intltool' 'gtk-doc')
 replaces=('lxshortcut')
+provides=('lxshortcut')
+conflicts=('lxshortcut')
 install=libfm.install
 source=(http://downloads.sourceforge.net/pcmanfm/libfm-$pkgver.tar.xz)
 md5sums=('07d1361bc008db46b0fd4c775f5696de')
