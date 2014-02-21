@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 205527 2014-02-06 18:30:11Z eric $
+# $Id: PKGBUILD 206180 2014-02-21 06:49:20Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=fvwm-crystal
-pkgver=3.3.1
+pkgver=3.3.2
 pkgrel=1
 pkgdesc="Transparent Themes for fvwm"
 arch=('any')
@@ -11,7 +11,7 @@ license=('GPL')
 depends=('fvwm' 'imagemagick' 'python2' 'hsetroot' 'trayer' 'xdg-user-dirs')
 options=('!makeflags')
 source=(http://downloads.sourceforge.net/sourceforge/${pkgname}/${pkgname}-${pkgver}.tar.gz)
-sha1sums=('044d0217ca03cd0f6e36a333dca6cfa124087866')
+sha1sums=('c07dfdc2c74fca1c632751f2c36fc7b94f454fb0')
 
 package() {
   cd ${pkgname}-${pkgver}

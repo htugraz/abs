@@ -1,13 +1,13 @@
-# $Id: PKGBUILD 105236 2014-02-03 09:59:08Z heftig $
+# $Id: PKGBUILD 106034 2014-02-21 12:52:48Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Jonathan Wiersma <archaur at jonw dot org>
 
 pkgname=virtviewer
 pkgver=0.6.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A lightweight interface for interacting with the graphical display of virtualized guest OS."
 depends=('gtk-vnc' 'libglade>=2.6.0' 'libvirt' 'spice-gtk3' 'desktop-file-utils')
-makedepends=('intltool')
+makedepends=('intltool' 'spice-protocol')
 url="http://virt-manager.et.redhat.com"
 arch=('i686' 'x86_64')
 license=('GPL')

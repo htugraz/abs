@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 104433 2014-01-20 20:06:58Z tpowa $
+# $Id: PKGBUILD 106037 2014-02-21 14:56:13Z thomas $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Contributor: Bob Fanger < bfanger(at)gmail >
 # Contributor: Filip <fila pruda com>, Det < nimetonmaili(at)gmail >
 
 pkgname=r8168
 pkgver=8.037.00
-pkgrel=6
+pkgrel=7
 pkgdesc="A kernel module for Realtek 8168 network cards"
 url="http://www.realtek.com.tw"
 license=("GPL")

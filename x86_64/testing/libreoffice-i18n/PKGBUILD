@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 206171 2014-02-20 17:41:44Z bpiotrowski $
+# $Id: PKGBUILD 206201 2014-02-21 17:48:33Z bpiotrowski $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 # Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 
@@ -114,7 +114,7 @@ pkgname=('libreoffice-af'
          'libreoffice-zu')
 _rcver=4.2.1.1
 pkgver=4.2.1
-pkgrel=1
+pkgrel=2
 
 _oodlver=${pkgver}
 #_oodlver=${_rcver}

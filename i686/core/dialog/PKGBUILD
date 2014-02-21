@@ -1,21 +1,21 @@
-# $Id: PKGBUILD 204572 2014-01-23 02:27:38Z foutrelis $
+# $Id: PKGBUILD 206199 2014-02-21 16:54:26Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=dialog
-pkgver=1.2_20140112
+pkgver=1.2_20140219
 pkgrel=1
 epoch=1
 pkgdesc="A tool to display dialog boxes from shell scripts"
 arch=('i686' 'x86_64')
 url="http://invisible-island.net/dialog/"
 license=('LGPL2.1')
-depends=('ncurses')
+depends=('sh' 'ncurses')
 options=('staticlibs')
 source=(ftp://invisible-island.net/$pkgname/$pkgname-${pkgver/_/-}.tgz)
-sha256sums=('8d30043872c57d4d3b3b05e4390ece356843f2a71303c91a2f8a536b369e0077')
+sha256sums=('ccf07eedf147ac901aff1d984ab63ddd6986b615ddf67435f270d5462ea4ca81')
 
 build() {
   cd "$srcdir/$pkgname-${pkgver/_/-}"
