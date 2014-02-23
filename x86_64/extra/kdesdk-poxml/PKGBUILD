@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 205777 2014-02-10 10:59:51Z andrea $
+# $Id: PKGBUILD 206286 2014-02-23 15:26:55Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-poxml
 pkgver=4.12.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Translates DocBook XML files using gettext po files'
 url='https://projects.kde.org/projects/kde/kdesdk/poxml'
 arch=('i686' 'x86_64')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198345 2013-10-30 14:18:09Z allan $
+# $Id: PKGBUILD 206328 2014-02-23 23:02:03Z thomas $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=networkmanager-pptp
 pkgver=0.9.8.4
-pkgrel=1
+pkgrel=2
 pkgdesc="NetworkManager VPN plugin for pptp "
 arch=('i686' 'x86_64')
 license=('GPL')
@@ -27,7 +27,8 @@ build() {
   ./configure --prefix=/usr \
         --sysconfdir=/etc \
         --libexecdir=/usr/lib/networkmanager \
-        --disable-static
+        --disable-static \
+        --with-pppd-plugin-dir=/usr/lib/pppd/2.4.6
   make
 }
 
