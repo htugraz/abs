@@ -1,13 +1,13 @@
-# $Id: PKGBUILD 96550 2013-08-31 16:05:13Z foutrelis $
+# $Id: PKGBUILD 106283 2014-02-26 11:56:59Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Jamie Nguyen <jamie AT tomoyolinux.co.uk>
 
 pkgname=tomoyo-tools
 _basever=2.5.0
-_timestamp=20130406
+_timestamp=20140105
 _file=53357
-pkgver=${_basever}.${_timestamp}
-pkgrel=2
+pkgver=2.5.0.20140105
+pkgrel=3
 pkgdesc='TOMOYO Linux userspace tools for Linux kernels >=3.2'
 arch=('i686' 'x86_64')
 url='http://tomoyo.sourceforge.jp'
@@ -16,7 +16,7 @@ license=('GPL')
 depends=('ncurses' 'linux>=3.2')
 install=tomoyo-tools.install
 source=("http://sourceforge.jp/frs/redir.php?f=/tomoyo/${_file}/${pkgname}-${_basever}-${_timestamp}.tar.gz")
-md5sums=('8888f83fcb87823d714ff551e8680d0d')
+md5sums=('555561e733a530f5514521d45bdbfeec')
 
 prepare() {
   cd "${srcdir}/${pkgname}"
