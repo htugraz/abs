@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 94707 2013-07-29 10:17:47Z spupykin $
+# $Id: PKGBUILD 106327 2014-02-28 06:54:06Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Eric Le Bras <eric.lebras@gmail.com>
 
@@ -8,7 +8,7 @@ pkgrel=9
 pkgdesc="A web based terminal"
 arch=('any')
 license=('GPL')
-url="http://antony.lesuisse.org/qweb/trac/wiki/AjaxTerm"
+url="https://github.com/antonylesuisse/qweb/tree/master/ajaxterm"
 depends=('python2')
 replaces=('ajaxterm-utf8-svn')
 backup=('etc/ajaxterm.conf')
