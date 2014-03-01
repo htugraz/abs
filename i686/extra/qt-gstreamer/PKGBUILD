@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 178986 2013-03-01 10:24:22Z andrea $
+# $Id: PKGBUILD 206558 2014-03-01 08:27:44Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: laloch <laloch@atlas.cz>
 
@@ -14,10 +14,11 @@ makedepends=('cmake' 'automoc4' 'boost' 'mesa' 'doxygen')
 source=("http://gstreamer.freedesktop.org/src/${pkgname}/${pkgname}-${pkgver}.tar.gz")
 md5sums=('0428aedf2874fd0884ad4c41db9da20e')
 
-build() {
-  . /etc/profile.d/qt4.sh
-
+prepare() {
   mkdir build
+}
+
+build() {
   cd build
   cmake ../${pkgname}-${pkgver} \
     -DCMAKE_INSTALL_PREFIX=/usr \
@@ -28,5 +29,5 @@ build() {
 
 package() {
   cd build
-  make DESTDIR="$pkgdir" install
+  make DESTDIR="${pkgdir}" install
 }
