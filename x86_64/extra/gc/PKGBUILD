@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 204775 2014-01-27 06:51:27Z jgc $
+# $Id: PKGBUILD 206603 2014-03-03 07:29:12Z jgc $
 # Maintainer: Daniel Isenmann <daniel [at] archlinux.org>
 # Contributor: dorphell <dorphell@gmx.net>
 
@@ -7,9 +7,9 @@ pkgver=7.4.0
 pkgrel=1
 pkgdesc="A garbage collector for C and C++"
 arch=('i686' 'x86_64')
-url="http://www.hpl.hp.com/personal/Hans_Boehm/gc/"
+url="http://www.hboehm.info/gc/"
 license=('GPL')
-source=("http://www.hpl.hp.com/personal/Hans_Boehm/gc/gc_source/${pkgname}-${pkgver}.tar.gz")
+source=("http://www.hboehm.info/gc/gc_source/${pkgname}-${pkgver}.tar.gz")
 depends=('gcc-libs' 'libatomic_ops')
 md5sums=('f40d9a47c90d60791eeecb484f8df5ee')
 
