@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 179069 2013-03-02 22:41:59Z andrea $
+# $Id: PKGBUILD 206676 2014-03-04 17:57:45Z andrea $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 
 pkgname=qt-assistant-compat
@@ -25,7 +25,7 @@ build() {
 
 	qmake-qt4 CONFIG+=create_prl
 	make
-	cd  ../translations; lrelease assistant_adp_*.ts
+	cd  ../translations; lrelease-qt4 assistant_adp_*.ts
 	cd ..
 	qmake-qt4 CONFIG+=create_prl
 	make

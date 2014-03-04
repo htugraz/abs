@@ -1,25 +1,34 @@
-# $Id: PKGBUILD 198359 2013-10-30 14:23:25Z allan $
+# $Id: PKGBUILD 206657 2014-03-04 11:58:53Z jgc $
 # Maintainer: Jan de Groot <jan@archlinux.org>
 
 pkgname=orbit2
 pkgver=2.14.19
-pkgrel=2
+pkgrel=3
 pkgdesc="Thin/fast CORBA ORB"
 arch=('i686' 'x86_64')
 license=('LGPL' 'GPL')
 depends=('libidl2')
+makedepends=('gtk-doc')
 options=('!makeflags' 'staticlibs')
 url="http://www.gnome.org"
-source=(http://ftp.gnome.org/pub/gnome/sources/ORBit2/2.14/ORBit2-${pkgver}.tar.bz2)
-sha256sums=('55c900a905482992730f575f3eef34d50bda717c197c97c08fa5a6eafd857550')
+source=(http://ftp.gnome.org/pub/gnome/sources/ORBit2/2.14/ORBit2-${pkgver}.tar.bz2
+        git-fixes.patch)
+sha256sums=('55c900a905482992730f575f3eef34d50bda717c197c97c08fa5a6eafd857550'
+            '7f145ed715d5a1d7f6ccf1e9bcce6a6a584a6b125845a84a3d69bfe30b0d6e04')
+
+prepare() {
+  cd ORBit2-$pkgver
+  patch -Np1 -i ../git-fixes.patch
+}
 
 build() {
-  cd "${srcdir}/ORBit2-${pkgver}"
+  cd ORBit2-$pkgver
+  autoreconf -fi
   ./configure --prefix=/usr --disable-static
   make
 }
 
 package() {
-  cd "${srcdir}/ORBit2-${pkgver}"
+  cd ORBit2-$pkgver
   make DESTDIR="${pkgdir}" install
 }
