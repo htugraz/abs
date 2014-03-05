@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 204255 2014-01-15 16:47:46Z bisson $
+# $Id: PKGBUILD 206695 2014-03-05 06:13:07Z bisson $
 # Contributor: Dale Blount <dale@archlinux.org>
 # Contributor: Gregor Ibic <gregor.ibic@intelicom.si>
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 
 pkgname=clamav
 pkgver=0.98.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Anti-virus toolkit for Unix'
 url='http://www.clamav.net/'
 license=('GPL')
@@ -55,7 +55,6 @@ package() {
 	install -Dm644 ../tmpfiles.d "${pkgdir}"/usr/lib/tmpfiles.d/clamav.conf
 	install -Dm644 ../logrotate "${pkgdir}"/etc/logrotate.d/clamav
 
-	install -d -o 64 -g 64 "${pkgdir}"/run/clamav
 	install -d -o 64 -g 64 "${pkgdir}"/var/log/clamav
 	install -d -o 64 -g 64 "${pkgdir}"/var/lib/clamav
 }
