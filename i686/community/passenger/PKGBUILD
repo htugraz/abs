@@ -1,13 +1,13 @@
-# $Id: PKGBUILD 105017 2014-01-30 08:53:30Z spupykin $
+# $Id: PKGBUILD 106740 2014-03-06 21:43:48Z anatolik $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=passenger
 pkgver=4.0.37
-pkgrel=1
+pkgrel=2
 pkgdesc="mod_rails passenger"
 arch=('i686' 'x86_64')
 url="http://www.modrails.com"
-#http://rubyforge.org/frs/?group_id=5873
+_watch="https://github.com/phusion/passenger/releases"
 license=('GPL')
 depends=('ruby' 'ruby-rack' 'curl')
 makedepends=('apache')

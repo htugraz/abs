@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 204785 2014-01-27 08:09:44Z jgc $
+# $Id: PKGBUILD 207112 2014-03-06 21:41:17Z anatolik $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=mod_fcgid
 pkgver=2.3.9
-pkgrel=1
+pkgrel=2
 pkgdesc="A FastCGI module for Apache HTTP Server."
 license=('APACHE')
 arch=('i686' 'x86_64')

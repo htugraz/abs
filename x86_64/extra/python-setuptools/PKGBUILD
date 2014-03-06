@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 205582 2014-02-08 02:57:25Z fyan $
+# $Id: PKGBUILD 207108 2014-03-06 15:12:53Z fyan $
 # Maintainer: Angel Velasquez <angvp@archlinux.org>
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgbase=python-setuptools
 pkgname=('python-setuptools' 'python2-setuptools')
-pkgver=2.2
+pkgver=3.0.2
 pkgrel=1
 pkgdesc="Easily download, build, install, upgrade, and uninstall Python packages"
 arch=('any')
@@ -12,17 +12,17 @@ license=('PSF')
 url="http://pypi.python.org/pypi/setuptools"
 makedepends=('python' 'python2')
 source=("http://pypi.python.org/packages/source/s/setuptools/setuptools-${pkgver}.tar.gz")
-md5sums=('04a7664538957b832710653fd7d5b4e6')
+md5sums=('5fa068a279113e2a94cd56d31a05880f')
 
-#check() {
-#   # Check python3 module
-#   cd "${srcdir}"/setuptools-${pkgver}
-#   python3 setup.py test
-#
-#   # Check python2 module
-#   cd "${srcdir}"/setuptools-${pkgver}-python2
-#   python2 setup.py test
-#}
+check() {
+   # Check python3 module
+   cd "${srcdir}"/setuptools-${pkgver}
+   python3 setup.py test
+
+   # Check python2 module
+   cd "${srcdir}"/setuptools-${pkgver}-python2
+   python2 setup.py test
+}
  
 prepare() {
    cd "${srcdir}"

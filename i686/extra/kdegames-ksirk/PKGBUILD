@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 205729 2014-02-10 10:59:07Z andrea $
+# $Id: PKGBUILD 207027 2014-03-06 12:07:15Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-ksirk
-pkgver=4.12.2
+pkgver=4.12.3
 pkgrel=1
 pkgdesc="A computerized version of a well known strategy game"
 url="http://kde.org/applications/games/ksirk/"
@@ -13,7 +13,7 @@ depends=('kdebase-runtime' 'libkdegames')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/${pkgver}/src/ksirk-${pkgver}.tar.xz")
-sha1sums=('2c5c17463f37913e4e47bd0d12d5f038e29c8af0')
+sha1sums=('6811d7b7ee2e2cc0340a2f5ee25abeffe28c0906')
 
 build() {
   mkdir build

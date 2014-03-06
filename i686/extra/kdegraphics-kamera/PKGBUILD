@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 205740 2014-02-10 10:59:17Z andrea $
+# $Id: PKGBUILD 207038 2014-03-06 12:07:26Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-kamera
-pkgver=4.12.2
+pkgver=4.12.3
 pkgrel=1
 pkgdesc="Configure Kamera"
 url="http://kde.org/applications/graphics/kamera/"
@@ -12,7 +12,7 @@ groups=('kde' 'kdegraphics')
 depends=('kdebase-runtime' 'libgphoto2')
 makedepends=('cmake' 'automoc4')
 source=("http://download.kde.org/stable/${pkgver}/src/kamera-${pkgver}.tar.xz")
-sha1sums=('e23203a5538310cd0e69e808d2f00d278903bdf7')
+sha1sums=('13cb0adfe4a297daf96b485c3c845de793e9529f')
 
 build() {
   cd "${srcdir}"

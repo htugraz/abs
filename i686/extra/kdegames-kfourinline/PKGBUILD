@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 205711 2014-02-10 10:58:51Z andrea $
+# $Id: PKGBUILD 207009 2014-03-06 12:06:59Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kfourinline
-pkgver=4.12.2
+pkgver=4.12.3
 pkgrel=1
 pkgdesc="A four-in-a-row game"
 url="http://kde.org/applications/games/kfourinline/"
@@ -13,7 +13,7 @@ depends=('kdebase-runtime' 'libkdegames')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/${pkgver}/src/kfourinline-${pkgver}.tar.xz")
-sha1sums=('61c512739989a277ed7fe51aca9ddfed597112bb')
+sha1sums=('bcb43108d33eaf08308ac9a4f1056cbd68d552cb')
 
 build() {
   mkdir build

@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 205752 2014-02-10 10:59:27Z andrea $
+# $Id: PKGBUILD 207050 2014-03-06 12:07:36Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdemultimedia-ffmpegthumbs
-pkgver=4.12.2
+pkgver=4.12.3
 pkgrel=1
 pkgdesc='FFmpeg-based thumbnail creator for video files'
 url='https://projects.kde.org/projects/kde/kdemultimedia/ffmpegthumbs'
@@ -12,7 +12,7 @@ groups=('kde' 'kdemultimedia')
 depends=('kdelibs' 'ffmpeg')
 makedepends=('cmake' 'automoc4')
 source=("http://download.kde.org/stable/${pkgver}/src/ffmpegthumbs-${pkgver}.tar.xz")
-sha1sums=('07ea21df05c8b6990c7d47a44f832c4347d646a8')
+sha1sums=('849dfa3faef83e744e53499173a97ebb46b73e5a')
 
 build() {
   cd "${srcdir}"
