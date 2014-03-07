@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 101723 2013-11-30 15:36:25Z jelle $
+# $Id: PKGBUILD 106755 2014-03-07 09:09:22Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 #Maintainer: David Campbell <davekong@archlinux.us>
 #Contributor: Cilyan Olowen <gaknar@gmail.com>
 #Contributor: Frederik M.J.V. <freqmod VED iskrembilen Dott kom>
 
 pkgname=python2-tempita
-pkgver=0.5.1
-pkgrel=2
+pkgver=0.5.2
+pkgrel=1
 pkgdesc="A lightweight unicode templating language"
 arch=('any')
 url="http://pythonpaste.org/tempita/"
@@ -15,8 +15,9 @@ depends=('python2')
 makedepends=('python2-distribute')
 source=(http://pypi.python.org/packages/source/T/Tempita/Tempita-${pkgver}.tar.gz
 	$pkgname-license.txt::http://pythonpaste.org/tempita/_sources/license.txt)
-md5sums=('f75bdfeabd2f3755f1ff32d582a574a4'
+md5sums=('4c2f17bb9d481821c41b6fbee904cea1'
          'c66b85ddcd09296abff87601467724fd')
+
 prepare() {
   cd $srcdir/Tempita-${pkgver}
   sed -i -e "s|#![ ]*/usr/bin/python$|#!/usr/bin/python2|" \
