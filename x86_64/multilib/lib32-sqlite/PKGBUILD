@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 105281 2014-02-04 13:02:58Z lcarlier $
+# $Id: PKGBUILD 106883 2014-03-09 12:49:49Z bpiotrowski $
 # Maintainer: Biru Ionut <ionut@archlinux.ro>
 # Contributor: Mikko Seppälä <t-r-a-y@mbnet.fi>
 # Contributor: Kaos < gianlucaatlas dot gmail dot com >
@@ -8,7 +8,7 @@ pkgname=lib32-sqlite
 _amalgamationver=3080300
 _docver=${_amalgamationver}
 #_docver=3080001
-pkgver=3.8.3
+pkgver=3.8.3.1
 pkgrel=1
 pkgdesc="A C library that implements an SQL database engine (32-bit)"
 arch=('x86_64')

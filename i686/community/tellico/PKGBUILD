@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 106246 2014-02-25 21:07:42Z jlichtblau $
+# $Id: PKGBUILD 106856 2014-03-09 12:28:17Z andrea $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Ray Rashif <schiv@archlinux.org
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -6,12 +6,12 @@
 
 pkgname=tellico
 pkgver=2.3.8
-pkgrel=3
+pkgrel=5
 pkgdesc="A collection manager for KDE"
 arch=('i686' 'x86_64')
 url="http://tellico-project.org/"
 license=('GPL')
-depends=('kdebase-runtime' 'qimageblitz' 'kdepimlibs' 'yaz' 'exempi' 'libksane' 'taglib' 'libkcddb' 'poppler-qt' 'kdemultimedia-audiocd-kio')
+depends=('kdebase-runtime' 'qimageblitz' 'kdepimlibs' 'yaz' 'exempi' 'libksane' 'taglib' 'libkcddb' 'poppler-qt4' 'kdemultimedia-audiocd-kio')
 makedepends=('automoc4' 'cmake')
 install=$pkgname.install
 changelog=$pkgname.changelog
@@ -23,7 +23,8 @@ build() {
 
   mkdir build
   cd build
-  cmake ../${pkgname}-${pkgver} -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+  cmake ../${pkgname}-${pkgver} -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr \
+    -DWITH_Nepomuk=OFF
   make
 }
 

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 206688 2014-03-05 02:21:22Z svenstaro $
+# $Id: PKGBUILD 207436 2014-03-09 07:42:41Z andyrtr $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=nvidia-lts
 pkgver=334.21
 _extramodules=extramodules-3.10-lts
-pkgrel=2
+pkgrel=3
 pkgdesc="NVIDIA drivers for linux-lts"
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"

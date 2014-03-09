@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 106147 2014-02-24 08:56:12Z spupykin $
+# $Id: PKGBUILD 106888 2014-03-09 13:16:31Z andrea $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Zuf <kontakt.zuf@gmail.com>
 # Contributor: Darwin Bautista <djclue917@gmail.com>
 
 pkgname=kdenlive
 pkgver=0.9.6
-pkgrel=3
+pkgrel=4
 pkgdesc="A non-linear video editor for Linux"
 arch=('i686' 'x86_64')
 # http://download.kde.org/stable/kdenlive/
@@ -39,7 +39,8 @@ build() {
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_INSTALL_DIR=/usr/lib \
-    -DLINK_LIBRARIES=-lX11
+    -DLINK_LIBRARIES=-lX11 \
+    -DWITH_Nepomuk=OFF
   make
 }
 
