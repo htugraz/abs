@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 206605 2014-03-03 07:32:16Z jgc $
+# $Id: PKGBUILD 207468 2014-03-10 08:36:21Z jgc $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gconf-perl
@@ -19,7 +19,7 @@ md5sums=('ea386003b18f067524833b0eeb271330'
 
 prepare() {
   cd Gnome2-GConf-$pkgver
-  patch -Np1 -i ../disable-orbit.patch"
+  patch -Np1 -i ../disable-orbit.patch
 }
 
 build() {

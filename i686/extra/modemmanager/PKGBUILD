@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 205463 2014-02-05 16:17:43Z heftig $
+# $Id: PKGBUILD 207487 2014-03-10 22:28:52Z heftig $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=modemmanager
 pkgname=(modemmanager libmm-glib)
 pkgver=1.2.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Mobile broadband modem management service"
 arch=(i686 x86_64)
 url="http://www.freedesktop.org/wiki/Software/ModemManager/"
@@ -31,11 +31,14 @@ build() {
 package_modemmanager() {
   depends+=(libmm-glib)
   optdepends=('usb_modeswitch: install if your modem shows up as a storage drive')
+  options=(!emptydirs)
 
   cd ModemManager-$pkgver
   make DESTDIR="$pkgdir" install
   make DESTDIR="$pkgdir" -C libmm-glib uninstall
   make DESTDIR="$pkgdir" -C vapi uninstall
+
+  mv -f "$pkgdir/usr/lib/pkgconfig/mm-glib.pc" ..
 }
 
 package_libmm-glib() {
@@ -45,4 +48,6 @@ package_libmm-glib() {
   cd ModemManager-$pkgver
   make DESTDIR="$pkgdir" -C libmm-glib install
   make DESTDIR="$pkgdir" -C vapi install
+
+  install -Dm644  ../mm-glib.pc "$pkgdir/usr/lib/pkgconfig/mm-glib.pc"
 }

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 65518 2012-02-21 08:40:35Z spupykin $
+# $Id: PKGBUILD 106941 2014-03-10 20:47:40Z jelle $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: dibblethewrecker dibblethewrecker.at.jiwe.dot.org
 # Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=g2sc
 pkgver=0.2
-pkgrel=4
+pkgrel=5
 pkgdesc="Samba gtk2 client"
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/g2sc"
@@ -16,6 +16,7 @@ md5sums=('c0994584f2c950241bf7e2782cb4d2fd')
 
 build() {
   cd ${srcdir}
+  sed -i 's/-lsmbclient/-I\/usr\/include\/samba-4.0 -lsmbclient/g' makefile
   make
 }
 
