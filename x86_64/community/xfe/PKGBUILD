@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 101413 2013-11-25 09:08:58Z spupykin $
+# $Id: PKGBUILD 107007 2014-03-11 11:16:08Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Eric Belanger <belanger@astro.umontreal.ca>
 # Contributor: Ravi Desai <ravster3@hotmail.com>
@@ -17,9 +17,11 @@ md5sums=('ce2a317ab4f7d728878d815afe13c1be')
 
 build() {
   cd $srcdir/$pkgname-$pkgver
-#  LDFLAGS=-lX11 ./configure --prefix=/usr
+  sed -i 's|freetype/config/ftheader.h|config/ftheader.h|g' configure.ac
+  aclocal
+  automake --add-missing
+  autoreconf
   ./configure --prefix=/usr
-#  sed -i 's|inline||' src/xfeutils.cpp
   make
 }
 

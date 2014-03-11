@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 58791 2011-11-18 14:30:27Z spupykin $
+# $Id: PKGBUILD 106973 2014-03-11 09:44:44Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: opqdonut <joel.kaasinen@gmail.com>
 
 pkgname=emacs-lua-mode
-pkgver=20111107
+pkgver=20130419
 pkgrel=1
 pkgdesc="Emacs lua-mode"
 arch=('any')
@@ -13,7 +13,7 @@ depends=()
 makedepends=('emacs')
 install=$pkgname.install
 source=(lua-mode-$pkgver.zip::https://github.com/immerrr/lua-mode/zipball/rel-$pkgver)
-md5sums=('8d476db7937ed449b2e2aea3a6ffa4db')
+md5sums=('1a7de56873e5a88ea2d29710fb01a36c')
 
 build() {
   cd $srcdir/immerrr-lua-mode-*

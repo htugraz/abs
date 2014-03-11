@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 103395 2014-01-05 16:56:22Z bgyorgy $
+# $Id: PKGBUILD 107038 2014-03-11 15:48:30Z andyrtr $
 # Maintainer: Alexandre Filgueira <alexfilgueira@cinnarch.com>
 # Contributor: M0Rf30
 # Contributor: unifiedlinux
@@ -6,7 +6,7 @@
 
 pkgname=cinnamon
 pkgver=2.0.14
-pkgrel=2
+pkgrel=3
 pkgdesc="Linux desktop which provides advanced innovative features and a traditional user experience"
 arch=('i686' 'x86_64')
 url="http://cinnamon.linuxmint.com/"
