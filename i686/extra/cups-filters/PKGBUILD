@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 207514 2014-03-11 17:04:53Z andyrtr $
+# $Id: PKGBUILD 207607 2014-03-12 18:51:22Z andyrtr $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=cups-filters
-pkgver=1.0.47
+pkgver=1.0.48
 pkgrel=1
 pkgdesc="OpenPrinting CUPS Filters"
 arch=('i686' 'x86_64')
@@ -20,7 +20,7 @@ source=(http://www.openprinting.org/download/cups-filters/$pkgname-$pkgver.tar.g
 provides=('foomatic-filters')
 replaces=('foomatic-filters')
 conflicts=('foomatic-filters')
-md5sums=('50494765f3725d663334cc81a9b3a4eb')
+md5sums=('9a879473de978b6fdbd4899f2a455be3')
 
 build() {
   cd $pkgname-$pkgver

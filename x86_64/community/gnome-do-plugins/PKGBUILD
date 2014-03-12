@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 101757 2013-11-30 18:43:41Z bgyorgy $
+# $Id: PKGBUILD 107061 2014-03-12 01:11:01Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Doehni <dohny@gmx.de>
@@ -11,7 +11,7 @@ arch=('any')
 url="https://launchpad.net/do-plugins"
 license=('GPL3')
 depends=('gnome-do>=0.9' 'flickrnet' 'gdata-sharp' 'wnck-sharp')
-makedepends=('intltool' 'libgnome-sharp')
+makedepends=('intltool' 'libgnome-sharp' 'libgnome-desktop-sharp')
 source=(http://launchpad.net/do-plugins/trunk/$pkgver/+download/$pkgname-$pkgver.tar.gz
         flickrnet-3.2.patch)
 md5sums=('022d184e884cabd3078716385f123c0a'
