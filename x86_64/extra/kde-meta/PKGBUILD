@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 207102 2014-03-06 12:54:51Z andrea $
+# $Id: PKGBUILD 207742 2014-03-14 08:14:22Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
@@ -19,7 +19,7 @@ pkgname=('kde-meta-kdeaccessibility'
          'kde-meta-kdeutils'
          'kde-meta-kdewebdev')
 pkgver=4.12
-pkgrel=2
+pkgrel=3
 arch=('any')
 url='http://www.archlinux.org/'
 license=('GPL')
@@ -71,7 +71,8 @@ package_kde-meta-kdebase() {
 	         'kdebase-konsole'
 	         'kdebase-kwrite'
 	         'kdebase-plasma'
-           'kde-wallpapers')
+           'kde-wallpapers'
+           'kdebase-workspace')
 	replaces=('kdebase')
 	conflicts=('kdebase')
 }
