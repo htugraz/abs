@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 207342 2014-03-08 09:57:59Z andrea $
+# $Id: PKGBUILD 207780 2014-03-15 07:43:26Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kactivities
-pkgver=4.12.80
+pkgver=4.12.90
 pkgrel=1
 arch=('i686' 'x86_64')
 pkgdesc='API for using and interacting with the Activity Manager'
 url='https://projects.kde.org/projects/kde/kdelibs/kactivities'
 license=('GPL' 'FDL')
-depends=('nepomuk-core')
+depends=('baloo')
 makedepends=('cmake' 'automoc4' 'mesa')
 source=("http://download.kde.org/unstable/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
-sha1sums=('9d1ca9f7eb64f8bc2555c07ee4ad3eae44689d96')
+sha1sums=('46b9ffef33e22857ddbfe383d9bea0f88ea947fe')
 
 prepare() {
   mkdir build

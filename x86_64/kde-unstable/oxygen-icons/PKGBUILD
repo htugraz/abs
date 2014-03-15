@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 207167 2014-03-08 08:31:06Z andrea $
+# $Id: PKGBUILD 207779 2014-03-15 07:42:51Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
 pkgbase=oxygen-icons
 pkgname=('oxygen-icons'
          'oxygen-icons-svg')
-pkgver=4.12.80
+pkgver=4.12.90
 pkgrel=1
 pkgdesc="The Oxygen Icon Theme"
 arch=('any')
@@ -13,7 +13,7 @@ url='http://www.oxygen-icons.org/'
 license=('LGPL')
 makedepends=('cmake' 'automoc4')
 source=("http://download.kde.org/unstable/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
-sha1sums=('5158058b266e6d2489685d9d80108516dbe375fd')
+sha1sums=('cd3dca8d0171e2fd7067ecacce08f641ffe4d69c')
 
 build() {
 	cd $srcdir
