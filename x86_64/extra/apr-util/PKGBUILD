@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 205605 2014-02-09 10:29:36Z andyrtr $
+# $Id: PKGBUILD 207989 2014-03-16 19:05:38Z anatolik $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Maintainer: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=apr-util
 pkgver=1.5.3
-pkgrel=2
+pkgrel=3
 pkgdesc="The Apache Portable Runtime"
 arch=('i686' 'x86_64')
 url="http://apr.apache.org/"
-depends=('apr' 'gdbm' 'expat' 'libldap' 'unixodbc')
+depends=('apr' 'gdbm' 'expat' 'libldap' 'unixodbc' 'openssl')
 license=('APACHE')
 source=(http://www.apache.org/dist/apr/apr-util-${pkgver}.tar.bz2{,.asc})
 md5sums=('6f3417691c7a27090f36e7cf4d94b36e'
@@ -17,7 +17,7 @@ md5sums=('6f3417691c7a27090f36e7cf4d94b36e'
 build() {
   cd "${srcdir}/apr-util-${pkgver}"
   ./configure --prefix=/usr --with-apr=/usr \
-    --with-ldap \
+    --with-ldap --with-crypto \
     --with-gdbm=/usr
   make
 }

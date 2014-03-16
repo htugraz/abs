@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 103171 2013-12-28 17:39:34Z lfleischer $
+# $Id: PKGBUILD 107294 2014-03-16 16:26:12Z lfleischer $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: simo <simo@archlinux.org>
 # Contributor: Sid Karunaratne
 
 pkgname=tor
-pkgver=0.2.4.20
+pkgver=0.2.4.21
 pkgrel=1
 pkgdesc='Anonymizing overlay network.'
 arch=('i686' 'x86_64')
@@ -20,7 +20,7 @@ install='tor.install'
 source=("http://www.torproject.org/dist/${pkgname}-${pkgver}.tar.gz"{,.asc}
         'torrc'
         'tor.service')
-md5sums=('a8cd8e3b3a3f6a7770f2c22d280f19b8'
+md5sums=('bde981d10e8faf1e171ef1ebbb7b398a'
          'SKIP'
          'c1dd4004c63edaeaa829e01be5413cfc'
          '51c81cd06b75edd87aafff5a7941822c')

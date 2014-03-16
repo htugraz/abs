@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 93648 2013-07-08 08:01:25Z lcarlier $
+# $Id: PKGBUILD 107292 2014-03-16 16:06:11Z lfleischer $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: DsTr <dstr@gmail.com>
 # Contributor: Allan McRae <allan@archlinux.org>
 
 pkgname=winetricks
-pkgver=20130707
+pkgver=20140302
 pkgrel=1
 pkgdesc='Script to install various redistributable runtime libraries in Wine.'
 url='http://wiki.winehq.org/winetricks'
@@ -15,7 +15,7 @@ optdepends=('zenity: GUI for GNOME desktop'
             'kdebase-kdialog: GUI for KDE desktop')
 source=("winetricks-${pkgver}::http://www.winetricks.org/winetricks"
 	http://winetricks.googlecode.com/svn-history/r532/trunk/src/winetricks.1)
-md5sums=('153383a6d1a0eb1ad9f070696ee9fd0b'
+md5sums=('1cab467dbc7f7937c08d00383db6e310'
          '0a2456fcacbca4c9db1e700d7b42207e')
 
 package() {
