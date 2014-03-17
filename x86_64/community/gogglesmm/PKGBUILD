@@ -1,24 +1,27 @@
-# $Id: PKGBUILD 103914 2014-01-13 17:16:46Z andyrtr $
+# $Id: PKGBUILD 107471 2014-03-17 13:16:20Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sander Jansen <sander@knology.net>
 
 pkgname=gogglesmm
-pkgver=0.12.7
-pkgrel=3
+pkgver=0.13.0
+pkgrel=4
 pkgdesc="Music Manager and Player"
 arch=('i686' 'x86_64')
-url="http://code.google.com/p/gogglesmm/"
+url="http://gogglesmm.github.io/"
 license=('GPL3')
 install=gogglesmm.install
-depends=('fox>=1.6.0' 'xine-lib>=1.0' 'sqlite>=3.4.0' 'taglib' 'dbus-core' 'curl' 'expat' 'libgcrypt')
+depends=('glew' 'fox-devel' 'xine-lib>=1.0' 'sqlite>=3.4.0' 'taglib'
+	 'dbus-core' 'curl' 'expat' 'libgcrypt' 'gcc-libs' 'libmad'
+	 'libpulse' 'opus' 'faad2')
 makedepends=('pkgconfig' 'glproto' 'dri2proto' 'glu' 'mesa')
 replaces=('musicmanager')
 conflicts=('musicmanager')
-source=(http://gogglesmm.googlecode.com/files/gogglesmm-$pkgver.tar.bz2)
-md5sums=('9ca337ab496b57d79e66d0541c7da970')
+source=($pkgname-$pkgver.tar.gz::https://github.com/gogglesmm/gogglesmm/archive/$pkgver.tar.gz)
+md5sums=('aa912ea42958311412e2300361d15812')
 
 build() {
   cd $srcdir/gogglesmm-$pkgver
+  export RESWRAP=/usr/bin/reswrap-1.7
   ./configure --prefix=/usr
   make
 }

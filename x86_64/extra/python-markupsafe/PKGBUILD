@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 193420 2013-08-20 06:10:07Z angvp $
+# $Id: PKGBUILD 208037 2014-03-17 07:42:18Z fyan $
 # Maintainer : Ionut Biru <ibiru@archlinux.org>
 # Contributor: Alex Anthony <alex.anthony28991@gmail.com>
 
 pkgname=('python-markupsafe' 'python2-markupsafe')
-pkgver=0.18
-pkgrel=2
+pkgver=0.19
+pkgrel=1
 pkgdesc="Implements a XML/HTML/XHTML Markup safe string for Python"
 arch=('i686' 'x86_64')
 url="http://pypi.python.org/pypi/MarkupSafe"
 license=('custom')
 makedepends=('python-setuptools' 'python2-setuptools')
 source=("http://pypi.python.org/packages/source/M/MarkupSafe/MarkupSafe-${pkgver}.tar.gz")
-md5sums=('f8d252fd05371e51dec2fe9a36890687')
+md5sums=('ccb3f746c807c5500850987006854a6d')
 
 build() {
   cp -r MarkupSafe-${pkgver} python2-MarkupSafe-${pkgver}

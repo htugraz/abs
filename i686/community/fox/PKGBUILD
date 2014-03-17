@@ -1,10 +1,11 @@
-# $Id: PKGBUILD 102384 2013-12-09 23:15:34Z bgyorgy $
+# $Id: PKGBUILD 107429 2014-03-17 10:21:01Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Ben <ben@benmazer.net>
 
 pkgname=fox
+epoch=1
 pkgver=1.6.49
-pkgrel=4
+pkgrel=5
 pkgdesc="Free Objects for X: GUI Toolkit for C++"
 arch=('i686' 'x86_64')
 url="http://www.fox-toolkit.org/"
