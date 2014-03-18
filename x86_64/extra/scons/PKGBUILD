@@ -1,11 +1,13 @@
-# $Id: PKGBUILD 179363 2013-03-05 15:28:43Z schiv $
+# $Id: PKGBUILD 208187 2014-03-18 15:57:06Z schiv $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: damir <damir@archlinux.org>
 # Contributor: Lukas Sabota <punkrockguy318@comcast.net>
 # Contributor: Brice Carpentier <brice@dlfp.org>
 
+# reminder: scons moving towards py3 as of Mar 2014 and 2.3.1
+
 pkgname=scons
-pkgver=2.3.0
+pkgver=2.3.1
 pkgrel=1
 pkgdesc="Extensible Python-based build utility"
 arch=('any')
@@ -13,7 +15,7 @@ url="http://scons.org"
 license=('MIT')
 depends=('python2')
 source=("http://downloads.sourceforge.net/sourceforge/$pkgname/$pkgname-$pkgver.tar.gz")
-md5sums=('083ce5624d6adcbdaf2526623f456ca9')
+md5sums=('60a3cfb98b661df9f4406c61b5686bd7')
 
 package() {
   cd "$srcdir/$pkgname-$pkgver"

@@ -1,7 +1,7 @@
-# $Id: PKGBUILD 107231 2014-03-15 08:43:57Z bluewind $
+# $Id: PKGBUILD 107678 2014-03-18 14:34:21Z bluewind $
 # Maintainer: Florian Pritz <f-p@gmx.at>
 pkgname=inxi
-pkgver=2.1.2
+pkgver=2.1.5
 pkgrel=1
 pkgdesc="script to get system information"
 arch=('any')
@@ -25,7 +25,7 @@ optdepends=(
   "xorg-xrandr: inxi -G single screen resolution"
 )
 source=(ftp://ftp.archlinux.org/other/community/$pkgname/$pkgname-$pkgver.tar.gz)
-md5sums=('e1dafbde4383d646f826f5bad62a880b')
+md5sums=('e87b49e44861dbe95b5c18447b3f3999')
 
 package() {
   cd "$srcdir"
