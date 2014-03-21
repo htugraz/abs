@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 103609 2014-01-08 10:39:22Z arcanis $
+# $Id: PKGBUILD 108040 2014-03-21 16:24:18Z arcanis $
 # Maintainer: Evgeniy Alekseev <arcanis.arch at gmail dot com>
 # Contributor: Matt Harrison <matt at mistbyte dot com>
 # Contributor: Muhammad Qadri <Muhammad dot A dot Qadri at gmail dot com>
 
 pkgname=julius
-pkgver=4.3
+pkgver=4.3.1
 pkgrel=1
 pkgdesc="A high-performance, two-pass large vocabulary continuous speech recognition decoder software"
 arch=("i686" "x86_64")
@@ -12,8 +12,8 @@ url="http://julius.sourceforge.jp/"
 license=("custom")
 depends=("libpulse")
 optdepends=("voxforge-am-julius: acoustic models")
-source=("http://iij.dl.sourceforge.jp/${pkgname}/60153/${pkgname}-${pkgver}.tar.gz")
-md5sums=("48b36e9104b55c409a60947f7ba05bb3")
+source=("http://dl.sourceforge.jp/${pkgname}/60273/${pkgname}-${pkgver}.tar.gz")
+md5sums=("7868d89ac1fa729f477a7c700efaf087")
 
 prepare() {
   cd "${srcdir}/${pkgname}-${pkgver}"
