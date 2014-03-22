@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 207882 2014-03-15 08:01:03Z andrea $
+# $Id: PKGBUILD 208448 2014-03-22 18:05:42Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-gwenview
-pkgver=4.12.90
+pkgver=4.12.95
 pkgrel=1
 pkgdesc="A fast and easy to use image viewer for KDE"
 url="http://kde.org/applications/graphics/gwenview/"
@@ -14,7 +14,7 @@ makedepends=('cmake' 'automoc4' 'mesa')
 optdepends=('kipi-plugins: extra plugins to share photos')
 install=$pkgname.install
 source=("http://download.kde.org/unstable/${pkgver}/src/gwenview-${pkgver}.tar.xz")
-sha1sums=('4aedd495657efcc9d9bfee8c5761634c3427c369')
+sha1sums=('fcf8d4f0ee4c40b565997105cc335e0b0dce4804')
 
 build() {
   mkdir build
