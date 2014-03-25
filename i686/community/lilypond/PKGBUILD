@@ -1,23 +1,24 @@
-# $Id: PKGBUILD 103308 2014-01-02 22:45:42Z spupykin $
+# $Id: PKGBUILD 108241 2014-03-25 10:37:30Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Geoffroy Carrier <geoffroy@archlinux.org>
 # Contributor: William Rea <sillywilly@gmail.com>
 # Contributor: Robert Emil Berge <filoktetes@linuxophic.org>
 
 pkgname=lilypond
-pkgver=2.18.0
-pkgrel=1
+pkgver=2.18.2
+pkgrel=2
 pkgdesc="An automated music engraving system"
 arch=('i686' 'x86_64')
 url="http://lilypond.org"
 license=('GPL')
 depends=('guile1.8' 'python2' 'texlive-core' 'ghostscript' 'pango' 'fontconfig')
 makedepends=('flex' 'bison' 'gettext' 'mftrace' 'texinfo' 'fontforge' 't1utils'
-	     'gsfonts' 'texi2html')
+	     'gsfonts' 'texi2html' 'dblatex' 'texlive-langcyrillic' 'imagemagick'
+	     'zip' 'rsync' 'netpbm')
 options=('emptydirs')
-#install=lilypond.install
+install=lilypond.install
 source=(http://download.linuxaudio.org/lilypond/sources/v2.18/$pkgname-$pkgver.tar.gz)
-md5sums=('5696fec935c616fb437693bed477cc27')
+md5sums=('3c4bcbb708d12644668b32bfe82ebf25')
 
 prepare() {
   cd "$srcdir/$pkgname-$pkgver"
@@ -32,10 +33,6 @@ prepare() {
   sed -i 's|GUILE_LDFLAGS=.*|GUILE_LDFLAGS="`pkg-config --libs guile-1.8`"|' configure
 
   rm -rf lily/out/ python/out/
-
-  # Fix build
-#  patch -Np1 -i "$srcdir/lilypond.git-1ca9814191d16fd3c571d93035247db039254fc1.patch"
-#  patch -Np1 -i "$srcdir/lilypond.git-7705e46966bfa05015fb9fb20c68da844ab88028.patch"
 }
 
 build() {
@@ -44,7 +41,7 @@ build() {
   export GUILE=/usr/bin/guile1.8
   export GUILE_CONFIG=/usr/bin/guile-config1.8
   export LDFLAGS="$LDFLAGS -lpthread"
-  ./configure --prefix=/usr --disable-documentation
+  ./configure --prefix=/usr
   make
 }
 
