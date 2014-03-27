@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 107750 2014-03-19 03:41:10Z dwallace $
+# $Id: PKGBUILD 108414 2014-03-27 14:47:22Z fyan $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contributor: Christopher Rosell <chrippa@tanuki.se>
 pkgname=livestreamer
 pkgver=1.7.5
-pkgrel=3
+pkgrel=4
 pkgdesc='CLI program that launches streams from various streaming services in a custom video player'
 arch=('any')
 url='https://github.com/chrippa/livestreamer'

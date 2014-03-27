@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 205554 2014-02-07 00:12:07Z dan $
+# $Id: PKGBUILD 208812 2014-03-27 14:43:01Z fyan $
 # Maintainer: Dan McGee <dan@archlinux.org>
 # Contributor: Shahar Weiss <sweiss4@gmx.net>
 
 pkgbase=django
 pkgname=('python-django' 'python2-django')
 pkgver=1.6.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A high-level Python Web framework that encourages rapid development and clean design"
 arch=('any')
 license=('BSD')

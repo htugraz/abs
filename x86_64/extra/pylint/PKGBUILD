@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 204397 2014-01-19 04:34:07Z angvp $
+# $Id: PKGBUILD 208830 2014-03-27 14:43:18Z fyan $
 # Maintainer: Angel Velasquez <angvp@archlinux.org>  
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
@@ -6,7 +6,7 @@
 pkgbase=pylint
 pkgname=('python2-pylint' 'python-pylint')
 pkgver=1.1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Analyzes Python code looking for bugs and signs of poor quality"
 arch=('any')
 url="http://pylint.org"

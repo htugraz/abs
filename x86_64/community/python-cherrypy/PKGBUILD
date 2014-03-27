@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 106830 2014-03-08 20:35:54Z jelle $
+# $Id: PKGBUILD 108435 2014-03-27 14:47:39Z fyan $
 # Maintainer: Angel Velasquez <angvp@archlinux.org> 
 # Contributor: Kaiting Chen <kaitocracy@gmail.com>
 # Contributor: Douglas Soares de Andrade <dsa@aur.archlinux.org>
@@ -6,7 +6,7 @@
 # Contributor: Florian Richter <Florian_Richter@gmx.de>
 pkgname=('python-cherrypy' 'python2-cherrypy')
 pkgver=3.2.5
-pkgrel=1
+pkgrel=2
 pkgdesc="A pythonic, object-oriented web development framework"
 arch=('any')
 url="http://www.cherrypy.org"

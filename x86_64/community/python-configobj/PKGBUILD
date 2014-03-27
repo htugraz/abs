@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 106951 2014-03-10 22:17:13Z arodseth $
+# $Id: PKGBUILD 108436 2014-03-27 14:47:40Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve>
 # Contributor: Stefan Husmann  <stefan-husmann@t-online.de>
@@ -7,7 +7,7 @@
 pkgbase=python-configobj
 pkgname=('python-configobj' 'python2-configobj')
 pkgver=5.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Simple but powerful config file reader and writer for Python'
 arch=('any')
 url='https://github.com/DiffSK/configobj'

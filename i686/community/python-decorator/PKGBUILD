@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 89953 2013-05-06 07:54:59Z jelle $
+# $Id: PKGBUILD 108440 2014-03-27 14:47:43Z fyan $
 # Maintainer: Thomas Dziedzic < gostrc at gmail >
 # Contributor: Pierre Chapuis <catwell at archlinux dot us>
 
 pkgname=('python-decorator' 'python2-decorator')
 pkgver=3.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Python Decorator module'
 arch=('any')
 url='http://pypi.python.org/pypi/decorator'
 license=('BSD')
-makedepends=('python2' 'python' 'python-distribute')
+makedepends=('python2' 'python' 'python-setuptools')
 source=("http://pypi.python.org/packages/source/d/decorator/decorator-${pkgver}.tar.gz"
         'LICENSE.txt')
 md5sums=('1e8756f719d746e2fc0dd28b41251356'

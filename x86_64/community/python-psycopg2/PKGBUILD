@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 103604 2014-01-08 10:35:30Z spupykin $
+# $Id: PKGBUILD 108468 2014-03-27 14:48:03Z fyan $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve>
 # Maintainer: Douglas Soares de Andrade <dsa@aur.archlinux.org>
@@ -6,7 +6,7 @@
 pkgbase=python-psycopg2
 pkgname=('python-psycopg2' 'python2-psycopg2')
 pkgver=2.5.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A PostgreSQL database adapter for the Python programming language."
 arch=('i686' 'x86_64')
 url="http://initd.org/psycopg/"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 106321 2014-02-27 21:43:46Z kkeen $
+# $Id: PKGBUILD 108454 2014-03-27 14:47:52Z fyan $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
 # Contributor: Andrew Antle <andrew dot antle at gmail dot com>
@@ -9,7 +9,7 @@ pkgbase=python-markdown
 pkgname=('python-markdown' 'python2-markdown')
 _pkgbasename=Markdown
 pkgver=2.4
-pkgrel=2
+pkgrel=3
 pkgdesc="Python implementation of John Gruber's Markdown."
 arch=('any')
 url='http://pypi.python.org/pypi/Markdown'

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 199998 2013-11-21 00:58:43Z eric $
-# Maintainer:
+# $Id: PKGBUILD 208843 2014-03-27 14:43:27Z fyan $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Simon Sapin <simon dot sapin at exyr dot org>
 
 pkgbase=python-cssselect
 pkgname=('python-cssselect' 'python2-cssselect')
 pkgver=0.9.1
-pkgrel=1
+pkgrel=2
 license=('BSD')
 arch=('any')
 url="http://pypi.python.org/pypi/cssselect"

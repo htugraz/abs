@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198220 2013-10-30 13:32:24Z allan $
+# $Id: PKGBUILD 208821 2014-03-27 14:43:10Z fyan $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=libpeas
 pkgver=1.9.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A GObject-based plugins engine"
 arch=(i686 x86_64)
 url="http://www.gtk.org/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 206420 2014-02-25 15:54:43Z dan $
+# $Id: PKGBUILD 208851 2014-03-27 14:43:34Z fyan $
 # Maintainer: Dan McGee <dan@archlinux.org>
 # Contributor: Sebastien Binet <binet@lblbox>
 
 pkgname=('python-pip' 'python2-pip')
 pkgver=1.5.4
-pkgrel=1
+pkgrel=2
 pkgdesc="An easy_install replacement for installing pypi python packages"
 url="http://www.pip-installer.org/"
 arch=('any')

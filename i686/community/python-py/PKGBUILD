@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 104995 2014-01-29 14:24:10Z fyan $
+# $Id: PKGBUILD 108469 2014-03-27 14:48:04Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Sebastian Wiesner <lunaryorn googlemail com>
 # Contributor: Igor Ramos Tiburcio <irtigor@yahoo.com.br>
@@ -9,7 +9,7 @@
 pkgbase=python-py
 pkgname=('python-py' 'python2-py')
 pkgver=1.4.20
-pkgrel=1
+pkgrel=2
 pkgdesc="library with cross-python path, ini-parsing, io, code, log facilities"
 arch=('any')
 license=('MIT')

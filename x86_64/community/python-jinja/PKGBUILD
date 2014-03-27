@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 103732 2014-01-11 01:42:23Z foutrelis $
+# $Id: PKGBUILD 108452 2014-03-27 14:47:51Z fyan $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Peter Baldwin <bald_pete@hotmail.com>
 
 pkgname=('python-jinja' 'python2-jinja')
 pkgver=2.7.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A simple pythonic template language written in Python"
 arch=('any')
 url="http://jinja.pocoo.org/"

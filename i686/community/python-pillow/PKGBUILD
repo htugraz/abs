@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 107607 2014-03-18 09:57:17Z kkeen $
+# $Id: PKGBUILD 108464 2014-03-27 14:48:00Z fyan $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: minder
 
 pkgbase=python-pillow
 pkgname=(python-pillow python2-pillow)
 pkgver=2.3.1
-pkgrel=1
+pkgrel=2
 _appname=Pillow
 _py2basever=2.7
-_py3basever=3.3m
+_py3basever=3.4m
 pkgdesc="Python Imaging Library (PIL) fork. Python3 version."
 arch=('i686' 'x86_64')
 url="http://python-imaging.github.io/"

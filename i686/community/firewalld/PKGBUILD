@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 105474 2014-02-08 19:58:55Z alucryd $
+# $Id: PKGBUILD 108402 2014-03-27 14:47:13Z fyan $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 # Contributor: unikum <unikum.pm@gmail.com>
 # Contributor: speed145a <jonathan@tagchapter.com>
 
 pkgname=firewalld
 pkgver=0.3.9.3
-pkgrel=1
+pkgrel=2
 pkgdesc='A firewall daemon with D-BUS interface providing a dynamic firewall'
 arch=('any')
 url="http://fedorahosted.org/${pkgname}"

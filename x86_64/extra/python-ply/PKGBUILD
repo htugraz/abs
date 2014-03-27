@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 207730 2014-03-14 02:58:08Z fyan $
+# $Id: PKGBUILD 208852 2014-03-27 14:43:35Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Marcin "avalan" Falkiewicz <avalatron@gmail.com>
@@ -7,7 +7,7 @@
 pkgbase=python-ply
 pkgname=(python-ply python2-ply)
 pkgver=3.4
-pkgrel=3
+pkgrel=4
 pkgdesc='Implementation of lex and yacc parsing tools'
 arch=('any')
 url='http://www.dabeaz.com/ply/'

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 92209 2013-06-02 18:57:49Z bpiotrowski $
+# $Id: PKGBUILD 108488 2014-03-27 14:48:18Z fyan $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Jon Bergli Heier <snakebite@jvnv.net>
 
@@ -6,12 +6,12 @@ pkgname=('python2-pyxattr' 'python-pyxattr')
 pkgbase=python-pyxattr
 _pkgname=pyxattr
 pkgver=0.5.2
-pkgrel=1
+pkgrel=2
 pkgdesc='A python extension module that allows you to manipulate the extended attributes.'
 arch=('i686' 'x86_64')
 url='http://pyxattr.k1024.org/'
 license=('GPL')
-makedepends=('python2' 'python' 'python2-distribute' 'python-distribute')
+makedepends=('python2' 'python' 'python2-setuptools' 'python-setuptools')
 source=("http://pyxattr.k1024.org/downloads/pyxattr-$pkgver.tar.gz")
 md5sums=('9ff2e4218badc201b689b6d254290001')
 

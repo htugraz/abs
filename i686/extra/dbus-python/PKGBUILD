@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 204499 2014-01-21 10:11:01Z jgc $
+# $Id: PKGBUILD 208811 2014-03-27 14:43:00Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgbase=dbus-python
 pkgname=('python-dbus' 'python2-dbus' 'python-dbus-common')
 pkgver=1.2.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Python bindings for DBUS"
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL')

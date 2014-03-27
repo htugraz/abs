@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 207983 2014-03-16 14:07:48Z dreisner $
+# $Id: PKGBUILD 208808 2014-03-27 14:42:47Z fyan $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Maintainer: Dave Reisner <dreisner@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
@@ -6,7 +6,7 @@
 pkgbase=util-linux
 pkgname=(util-linux libutil-linux)
 pkgver=2.24.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Miscellaneous system utilities for Linux"
 url="http://www.kernel.org/pub/linux/utils/util-linux/"
 arch=('i686' 'x86_64')

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 106220 2014-02-25 15:22:43Z kkeen $
+# $Id: PKGBUILD 108408 2014-03-27 14:47:17Z fyan $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: PepeSmith
 # Contributor: Aron Asor <aronasorman at gmail.com>
@@ -8,7 +8,7 @@
 pkgbase=ipython 
 pkgname=(ipython ipython2)
 pkgver=1.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="An enhanced Interactive Python shell."
 arch=('any')
 url="http://ipython.org"

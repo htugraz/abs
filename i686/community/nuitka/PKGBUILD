@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 107524 2014-03-17 16:55:04Z arodseth $
+# $Id: PKGBUILD 108419 2014-03-27 14:47:26Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Panagiotis Mavrogiorgos (pmav99) <> (gmail)
 
 pkgname=nuitka
 pkgver=0.5.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Python to native compiler'
 arch=('any')
 url='http://www.nuitka.net/'

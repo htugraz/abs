@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 106787 2014-03-07 16:41:06Z thestinger $
+# $Id: PKGBUILD 108473 2014-03-27 14:48:08Z fyan $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 
 pkgbase=python-pygit2
 pkgname=(python-pygit2 python2-pygit2)
 pkgver=0.20.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Python bindings for libgit2'
 url="https://github.com/libgit2/pygit2"
 depends=(libgit2)

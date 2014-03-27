@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 103463 2014-01-06 11:40:32Z arodseth $
+# $Id: PKGBUILD 108438 2014-03-27 14:47:41Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Ray Rashif <schiv@archlinux.org>
 # Contributor: Douglas Soares de Andrade <douglas@archlinux.org>
@@ -8,7 +8,7 @@
 pkgbase=python-cx_freeze
 pkgname=('python-cx_freeze' 'python2-cx_freeze')
 pkgver=4.3.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Set of utilities for freezing Python scripts into executables'
 arch=('x86_64' 'i686')
 url='http://cx-freeze.sourceforge.net/'

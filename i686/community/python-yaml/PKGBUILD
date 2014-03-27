@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 78260 2012-10-17 10:27:30Z allan $
+# $Id: PKGBUILD 108512 2014-03-27 14:48:36Z fyan $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Michal Bozon <michal.bozon__at__gmail.com>
 
 pkgbase=python-yaml
 pkgname=(python2-yaml python-yaml)
 pkgver=3.10
-pkgrel=3
+pkgrel=4
 pkgdesc="Python bindings for YAML, using fast libYAML library"
 arch=('i686' 'x86_64')
 url="http://pyyaml.org"

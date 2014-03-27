@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 106958 2014-03-10 22:32:08Z arodseth $
+# $Id: PKGBUILD 108498 2014-03-27 14:48:26Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
@@ -7,7 +7,7 @@
 pkgbase=python-simplejson
 pkgname=("$pkgbase" 'python2-simplejson')
 pkgver=3.3.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Simple, fast, extensible JSON encoder/decoder for Python'
 license=('MIT')
 arch=('x86_64' 'i686')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 107213 2014-03-14 15:30:46Z flexiondotorg $
+# $Id: PKGBUILD 108490 2014-03-27 14:48:20Z fyan $
 # Maintainer: Martin Wimpress <code@flexion.org>
 
 pkgname=python-qrencode
 pkgver=1.01
-pkgrel=5
+pkgrel=6
 pkgdesc="A simple wrapper for the C qrencode library"
 arch=('i686' 'x86_64')
 url="http://pypi.python.org/pypi/qrencode"

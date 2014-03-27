@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 102631 2013-12-16 22:19:33Z arodseth $
+# $Id: PKGBUILD 108456 2014-03-27 14:47:54Z fyan $
 # Maintainer: jelle van der Waa <jelle@vdwaa.nl>
 # Contributor: Felix Kaiser <felix.kaiser@fxkr.net>
 
 pkgbase=python-mock
 pkgname=(python2-mock python-mock)
 pkgver=1.0.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Mocking and Patching Library for Testing'
 url='http://www.voidspace.org.uk/python/mock/'
 makedepends=('python2' 'python')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 207974 2014-03-16 09:17:25Z fyan $
+# $Id: PKGBUILD 208857 2014-03-27 14:43:38Z fyan $
 # Maintainer: Angel Velasquez <angvp@archlinux.org>
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgbase=python-setuptools
 pkgname=('python-setuptools' 'python2-setuptools')
 pkgver=3.3
-pkgrel=1
+pkgrel=3
 pkgdesc="Easily download, build, install, upgrade, and uninstall Python packages"
 arch=('any')
 license=('PSF')

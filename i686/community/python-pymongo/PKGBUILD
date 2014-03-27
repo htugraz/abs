@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 98824 2013-10-19 20:51:12Z arodseth $
+# $Id: PKGBUILD 108476 2014-03-27 14:48:10Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Thomas S Hatch <thatch45@gmail.com>
@@ -7,7 +7,7 @@
 pkgbase=python-pymongo
 pkgname=('python-pymongo' 'python2-pymongo')
 pkgver=2.6.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Python module for using MongoDB'
 arch=('x86_64' 'i686')
 license=('APACHE')

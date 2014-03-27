@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 206945 2014-03-06 12:05:58Z andrea $
+# $Id: PKGBUILD 208818 2014-03-27 14:43:06Z fyan $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgbase=kdesdk-kate
@@ -6,7 +6,7 @@ pkgname=('kdebase-katepart'
          'kdebase-kwrite'
          'kdesdk-kate')
 pkgver=4.12.3
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
 makedepends=('kdelibs ''cmake' 'automoc4' 'kdebindings-python')

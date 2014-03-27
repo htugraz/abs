@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 108228 2014-03-25 05:25:33Z fyan $
+# $Id: PKGBUILD 108521 2014-03-27 15:03:40Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Karol 'Kenji Takahashi' Woźniak <kenji.sx>
 # Contributor: Pierre Gueth <pierre.gueth@gmail.com>
@@ -7,7 +7,7 @@ pkgbase=python-redis
 pkgname=('python-redis' 'python2-redis')
 _basename=redis
 pkgver=2.9.1
-pkgrel=3
+pkgrel=4
 pkgdesc='The Python interface to the Redis key-value store'
 arch=('any')
 url="http://github.com/andymccurdy/redis-py"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 202709 2013-12-25 21:25:43Z andyrtr $
+# $Id: PKGBUILD 208866 2014-03-27 14:43:46Z fyan $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xcb-proto
 pkgver=1.10
-pkgrel=1
+pkgrel=2
 pkgdesc="XML-XCB protocol descriptions"
 arch=(any)
 url="http://xcb.freedesktop.org/"

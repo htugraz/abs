@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 78261 2012-10-17 10:27:32Z allan $
+# $Id: PKGBUILD 108513 2014-03-27 14:48:36Z fyan $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: examon <examon.mail[at]gmail[dot]com>
 # Contributor: Sebastian Wiesner <lunaryorn googlemail com>
@@ -7,11 +7,11 @@
 pkgbase=pyudev
 pkgname=('python-pyudev' 'python2-pyudev')
 pkgver=0.16.1
-pkgrel=2
+pkgrel=3
 arch=('any')
 url='http://pyudev.readthedocs.org/en/latest/index.html'
 license=('LGPL')
-makedepends=('python-distribute' 'python2-distribute')
+makedepends=('python-setuptools' 'python2-setuptools')
 optdepends=('python2-pyqt: PyQt integration'
             'python2-gobject2: Glib integration'
             'wxpython: WX integration')

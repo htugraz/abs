@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 106745 2014-03-07 03:11:59Z fyan $
+# $Id: PKGBUILD 108485 2014-03-27 14:48:16Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 
 pkgbase=python-pytools
 pkgname=('python2-pytools' 'python-pytools')
 pkgver=2014.1.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A collection of tools for Python"
 arch=('any')
 url="http://mathema.tician.de/software/pytools"

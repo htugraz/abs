@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 104958 2014-01-28 15:12:54Z fyan $
+# $Id: PKGBUILD 108480 2014-03-27 14:48:13Z fyan $
 # Maintainer : Felix Yan <felixonmars@gmail.com>
 # Contributor: speps <speps at aur dot archlinux dot org>
 # Contributor: Arnau Sanchez <tokland {at} gmail {dot} com>
@@ -7,7 +7,7 @@ _name=pyquery
 pkgbase=python-pyquery
 pkgname=('python-pyquery' 'python2-pyquery')
 pkgver=1.2.8
-pkgrel=2
+pkgrel=3
 pkgdesc="A jquery-like library for python."
 arch=('any')
 url="https://github.com/gawel/pyquery/"

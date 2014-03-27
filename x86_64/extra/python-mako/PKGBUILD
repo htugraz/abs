@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 203460 2014-01-11 02:29:53Z eric $
+# $Id: PKGBUILD 208847 2014-03-27 14:43:32Z fyan $
 # Maintainer : 
 
 pkgname=('python-mako' 'python2-mako')
 pkgver=0.9.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Hyperfast and lightweight templating for the Python2 platform"
 arch=('any')
 url="http://www.makotemplates.org/"

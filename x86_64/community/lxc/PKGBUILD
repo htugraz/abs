@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 106992 2014-03-11 10:19:42Z spupykin $
+# $Id: PKGBUILD 108416 2014-03-27 14:47:24Z fyan $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andrea Zucchelli <zukka77@gmail.com>
 # Contributor: Daniel Micay <danielmicay@gmail.com>
@@ -8,7 +8,7 @@
 pkgname=lxc
 pkgver=1.0.1
 epoch=1
-pkgrel=1
+pkgrel=2
 pkgdesc="Linux Containers"
 arch=('i686' 'x86_64')
 url="http://linuxcontainers.org"

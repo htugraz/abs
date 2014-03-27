@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 102417 2013-12-10 16:34:33Z svenstaro $
+# $Id: PKGBUILD 108511 2014-03-27 14:48:35Z fyan $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
@@ -7,7 +7,7 @@
 
 pkgname=('python-werkzeug' 'python2-werkzeug')
 pkgver=0.9.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Swiss Army knife of Python web development'
 url='http://werkzeug.pocoo.org/'
 arch=('any')

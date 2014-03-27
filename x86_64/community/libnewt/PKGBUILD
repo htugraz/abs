@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 106158 2014-02-24 12:27:03Z arodseth $
+# $Id: PKGBUILD 108413 2014-03-27 14:47:21Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Roman Kyrylych <roman@archlinux.org>
 # Contributor: Tom Killian <tomk@runbox.com>
@@ -6,7 +6,7 @@
 
 pkgname=libnewt
 pkgver=0.52.17
-pkgrel=1
+pkgrel=2
 _tclver=8.6
 pkgdesc="Not Erik's Windowing Toolkit - text mode windowing with slang"
 arch=('x86_64' 'i686')
@@ -36,9 +36,7 @@ build() {
 }
 
 package() {
-  cd "newt-$pkgver"
-
-  make prefix="$pkgdir/usr" install
+  make -C "newt-$pkgver" prefix="$pkgdir/usr" install
 }
 
 # vim:set ts=2 sw=2 et:

@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 101589 2013-11-28 12:12:26Z jelle $ 
+# $Id: PKGBUILD 108441 2014-03-27 14:47:43Z fyan $ 
 # Maintainer: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve>
 # Contributor: Abhishek Dasgupta <abhidg@gmail.com>
 
 pkgbase=python-distutils-extra
 pkgname=('python-distutils-extra' 'python2-distutils-extra')
 pkgver=2.38
-pkgrel=1
+pkgrel=2
 pkgdesc='Enhancements to the Python build system'
 arch=('any')
 license=('GPL')
 url='https://launchpad.net/python-distutils-extra'
-makedepends=('python2-distribute' 'python-distribute' 'intltool')
+makedepends=('python2-setuptools' 'python-setuptools' 'intltool')
 source=(http://launchpad.net/$pkgbase/trunk/$pkgver/+download/$pkgbase-$pkgver.tar.gz
         $pkgbase-$pkgver.tar.gz.asc::http://launchpad.net/$pkgbase/trunk/$pkgver/+download/dist-$pkgbase-$pkgver.tar.gz.asc)
 md5sums=('4e4c9bee92a3ca8bfd915f3adcf14648'

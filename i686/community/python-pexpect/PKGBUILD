@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 105340 2014-02-05 15:22:50Z arodseth $
+# $Id: PKGBUILD 108463 2014-03-27 14:47:58Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Aaron Schaefer <aaron@elasticdog.com>
 
 pkgname=('python-pexpect' 'python2-pexpect')
 pkgver=3.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Make Python a better tool for controlling and automating other programs'
 arch=('any')
 url='http://pexpect.readthedocs.org/en/latest/'

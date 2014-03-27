@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 206581 2014-03-02 04:51:08Z angvp $
+# $Id: PKGBUILD 208845 2014-03-27 14:43:30Z fyan $
 # Maintainer: Angel Velasquez <angvp@archlinux.org> 
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
@@ -6,7 +6,7 @@
 pkgbase=python-logilab-common
 pkgname=('python2-logilab-common' 'python-logilab-common')
 pkgver=0.61.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Useful miscellaneous modules used by Logilab projects"
 arch=('any')
 url="http://www.logilab.org/project/logilab-common"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 205836 2014-02-11 12:33:14Z jgc $
+# $Id: PKGBUILD 208850 2014-03-27 14:43:34Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Douglas Soares de Andrade <dsa@aur.archlinux.org>
 # Contributor: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve> 
@@ -6,7 +6,7 @@
 pkgbase=python-numpy
 pkgname=('python2-numpy' 'python-numpy')
 pkgver=1.8.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Scientific tools for Python"
 arch=('i686' 'x86_64')
 license=('custom')
@@ -71,8 +71,8 @@ package_python-numpy() {
   replaces=('python3-numpy')
   conflicts=('python3-numpy')
 
-  _pyver=3.3
-  _pyinc=3.3m
+  _pyver=3.4
+  _pyinc=3.4m
 
   export ATLAS=None
   export LDFLAGS="$LDFLAGS -shared"

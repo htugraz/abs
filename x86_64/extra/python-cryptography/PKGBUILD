@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 207736 2014-03-14 03:47:23Z fyan $
+# $Id: PKGBUILD 208842 2014-03-27 14:43:27Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgbase=python-cryptography
 pkgname=('python-cryptography' 'python2-cryptography')
 pkgver=0.2.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A package designed to expose cryptographic recipes and primitives to Python developers"
 arch=('i686' 'x86_64')
 license=('Apache')

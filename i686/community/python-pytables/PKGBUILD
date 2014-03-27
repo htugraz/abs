@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 105425 2014-02-07 11:53:10Z aginiewicz $
+# $Id: PKGBUILD 108483 2014-03-27 14:48:15Z fyan $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 # Contributor: Sebastien Binet <binet@cern.ch>
 
 pkgbase=python-pytables
 pkgname=('python2-pytables' 'python-pytables')
 pkgver=3.1.0
-pkgrel=1
+pkgrel=2
 arch=("i686" "x86_64")
 pkgdesc="A package for managing hierarchical datasets and designed to efficiently and easily cope with extremely large amounts of data"
 url="http://www.pytables.org"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 207734 2014-03-14 03:35:05Z fyan $
+# $Id: PKGBUILD 208840 2014-03-27 14:43:25Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: lilydjwg <lilydjwg@gmail.com>
 
@@ -6,7 +6,7 @@ _name=cffi
 pkgbase=python-$_name
 pkgname=(python-$_name python2-$_name)
 pkgver=0.8.2
-pkgrel=3
+pkgrel=4
 pkgdesc="Foreign Function Interface for Python calling C code"
 arch=('i686' 'x86_64')
 url="http://cffi.readthedocs.org/"

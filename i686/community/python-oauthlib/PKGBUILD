@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 106624 2014-03-06 08:13:01Z mtorromeo $
+# $Id: PKGBUILD 108459 2014-03-27 14:47:56Z fyan $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 
 pkgbase=python-oauthlib
 pkgname=(python-oauthlib python2-oauthlib)
 pkgver=0.6.1
-pkgrel=1
+pkgrel=2
 _libname=oauthlib
 pkgdesc="A generic, spec-compliant, thorough implementation of the OAuth request-signing logic"
 arch=(any)
 url="https://github.com/idan/oauthlib"
 license=('BSD')
 source=(http://pypi.python.org/packages/source/${_libname:0:1}/$_libname/$_libname-$pkgver.tar.gz)
-makedepends=(python-distribute python2-distribute)
+makedepends=(python-setuptools python2-setuptools)
 
 build() {
 	cd "$srcdir/$_libname-$pkgver"

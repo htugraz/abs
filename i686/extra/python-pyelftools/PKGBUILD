@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198622 2013-10-30 23:33:52Z remy $
+# $Id: PKGBUILD 208856 2014-03-27 14:43:38Z fyan $
 # Maintainer : Rémy Oudompheng <remy@archlinux.org>
 
 pkgname=python-pyelftools
 _pypiname=pyelftools
 pkgver=0.21
-pkgrel=1
+pkgrel=2
 pkgdesc="Python library for analyzing ELF files and DWARF debugging information"
 arch=('any')
 url="http://pypi.python.org/pypi/pyelftools"

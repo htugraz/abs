@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 208037 2014-03-17 07:42:18Z fyan $
+# $Id: PKGBUILD 208848 2014-03-27 14:43:32Z fyan $
 # Maintainer : Ionut Biru <ibiru@archlinux.org>
 # Contributor: Alex Anthony <alex.anthony28991@gmail.com>
 
 pkgname=('python-markupsafe' 'python2-markupsafe')
 pkgver=0.19
-pkgrel=1
+pkgrel=2
 pkgdesc="Implements a XML/HTML/XHTML Markup safe string for Python"
 arch=('i686' 'x86_64')
 url="http://pypi.python.org/pypi/MarkupSafe"

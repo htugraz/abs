@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 99518 2013-10-29 10:34:57Z spupykin $
+# $Id: PKGBUILD 108482 2014-03-27 14:48:14Z fyan $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Douglas Soares de Andrade <dsandrade@gmail.com>
 # Contributor: Douglas Soares de Andrade <dsandrade@gmail.com>
@@ -6,7 +6,7 @@
 pkgbase=python-pyserial
 pkgname=('python-pyserial' 'python2-pyserial')
 pkgver=2.7
-pkgrel=3
+pkgrel=4
 pkgdesc="Multiplatform Serial Port Module for Python"
 arch=('any')
 url="http://pyserial.sf.net"

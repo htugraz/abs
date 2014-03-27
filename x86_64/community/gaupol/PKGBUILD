@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 105680 2014-02-13 16:39:04Z foutrelis $
+# $Id: PKGBUILD 108403 2014-03-27 14:47:13Z fyan $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=gaupol
 pkgver=0.25
-pkgrel=1
+pkgrel=2
 pkgdesc="An editor for text-based subtitles"
 arch=('any')
 url="http://home.gna.org/gaupol"

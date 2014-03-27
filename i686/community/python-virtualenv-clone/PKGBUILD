@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 78767 2012-10-24 11:47:54Z foutrelis $
+# $Id: PKGBUILD 108509 2014-03-27 14:48:34Z fyan $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com
 
 pkgname=('python-virtualenv-clone' 'python2-virtualenv-clone')
 pkgver=0.2.4
-pkgrel=3
+pkgrel=4
 pkgdesc="A script for cloning a non-relocatable virtualenv."
 arch=('any')
 url="https://github.com/edwardgeorge/virtualenv-clone"
