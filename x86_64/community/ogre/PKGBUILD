@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 108355 2014-03-27 01:34:43Z svenstaro $
+# $Id: PKGBUILD 108535 2014-03-28 05:39:25Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 pkgbase=ogre
 pkgname=('ogre' 'ogre-docs')
 pkgver=1.9.0
-pkgrel=3
+pkgrel=5
 pkgdesc='Scene-oriented, flexible 3D engine written in C++'
 arch=('i686' 'x86_64')
 url='http://www.ogre3d.org'

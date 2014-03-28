@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 205933 2014-02-14 08:16:43Z allan $
+# $Id: PKGBUILD 208893 2014-03-28 12:28:18Z allan $
 # Maintainer: Allan McRae <allan@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
 
 pkgname=flex
-pkgver=2.5.38
+pkgver=2.5.39
 pkgrel=1
 pkgdesc="A tool for generating text-scanning programs"
 arch=('i686' 'x86_64')
@@ -12,8 +12,8 @@ license=('custom')
 groups=('base-devel')
 depends=('glibc' 'm4' 'sh')
 install=flex.install
-source=(http://downloads.sourceforge.net/sourceforge/flex/flex-$pkgver.tar.bz2)
-md5sums=('b230c88e65996ff74994d08a2a2e0f27')
+source=(http://downloads.sourceforge.net/sourceforge/flex/flex-$pkgver.tar.xz)
+md5sums=('477679c37ff8b28248a9b05f1da29a82')
 
 build() {
   cd $srcdir/$pkgname-$pkgver

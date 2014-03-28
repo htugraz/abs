@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 101112 2013-11-17 12:54:28Z bpiotrowski $
+# $Id: PKGBUILD 108555 2014-03-28 15:46:55Z bpiotrowski $
 # Maintainer: Federico Cinelli <cinelli@aur.archlinux.org>
 # Maintainer: Mateusz Herych   <heniekk@gmail.com>
 
 pkgname=libquicktime
 pkgver=1.2.4
-pkgrel=8
+pkgrel=9
 pkgdesc="A library for reading and writing quicktime files"
 arch=('i686' 'x86_64')
 license=('GPL')
