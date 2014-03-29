@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 208459 2014-03-22 18:07:45Z andrea $
+# $Id: PKGBUILD 209064 2014-03-29 09:17:07Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdemultimedia-audiocd-kio
-pkgver=4.12.95
+pkgver=4.12.97
 pkgrel=1
 pkgdesc="Kioslave for accessing audio CDs"
 url='https://projects.kde.org/projects/kde/kdemultimedia/audiocd-kio'
@@ -14,7 +14,7 @@ groups=('kde' 'kdemultimedia')
 replaces=('kdemultimedia-kioslave')
 conflicts=('kdemultimedia-kioslave')
 source=("http://download.kde.org/unstable/${pkgver}/src/audiocd-kio-${pkgver}.tar.xz")
-sha1sums=('ce669929d0e30c676f38db68641b6ffa41b725e6')
+sha1sums=('555d7ae8212c4ce9432c67c1bc7bbebdcc6e616a')
 
 build() {
   cd "${srcdir}"
