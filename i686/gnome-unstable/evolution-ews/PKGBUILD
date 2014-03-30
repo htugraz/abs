@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 209179 2014-03-29 23:01:05Z heftig $
+# $Id: PKGBUILD 209183 2014-03-29 23:07:52Z heftig $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=evolution-ews
