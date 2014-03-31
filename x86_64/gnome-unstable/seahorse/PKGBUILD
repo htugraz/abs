@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 209184 2014-03-29 23:08:47Z heftig $
+# $Id: PKGBUILD 209659 2014-03-31 18:57:48Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 # Contributor: Michel Brabants <michel.linux@tiscali.be>
 
 pkgname=seahorse
 pkgver=3.12.0
-pkgrel=1
+pkgrel=2
 pkgdesc="GNOME application for managing PGP keys."
 arch=(i686 x86_64)
 license=(GPL)
@@ -24,8 +24,7 @@ sha256sums=('f78800b1d25b285ddc8928e925f9ee24f27640abba3fc9ab1cd9554c83380d0b'
 
 build() {
   cd "$pkgname-$pkgver"
-  ./configure --prefix=/usr --sysconfdir=/etc \
-      --localstatedir=/var --disable-static \
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --bindir=/usr/bin \
       --enable-ldap --enable-hkp \
       --disable-schemas-compile
   make
