@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 193702 2013-08-28 15:19:04Z andyrtr $
+# $Id: PKGBUILD 209705 2014-04-01 15:16:50Z andyrtr $
 # Maintainer: 
 
 ### rebuild on every ghostscript update -  FS#36562 ###
 
 pkgname=groff
 pkgver=1.22.2
-pkgrel=5
+pkgrel=6
 pkgdesc="GNU troff text-formatting system"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/groff/groff.html"
