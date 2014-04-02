@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 199354 2013-11-11 16:09:20Z heftig $
+# $Id: PKGBUILD 209751 2014-04-02 20:13:24Z jgc $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Arjan Timmerman <arjan@archlinux.org>
 # Contributor: Wael Nasreddine <gandalf@siemens-mobiles.org>
@@ -14,7 +14,7 @@ license=(GPL)
 url="http://www.gnome.org/projects/NetworkManager/"
 depends=("networkmanager>=${pkgver%.*}" libsecret gtk3 libnotify
          gnome-icon-theme mobile-broadband-provider-info iso-codes)
-makedepends=(intltool gnome-bluetooth gobject-introspection)
+makedepends=(intltool gnome-bluetooth gobject-introspection modemmanager)
 optdepends=('gnome-bluetooth: for PAN/DUN support')
 options=('!emptydirs')
 install=network-manager-applet.install

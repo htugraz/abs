@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 55492 2011-09-13 05:23:39Z foutrelis $
+# $Id: PKGBUILD 108737 2014-04-02 12:54:01Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Jared Casper <jaredcasper@gmail.com>
 # Contributor: Georgij Kondratjev <smpuj@bk.ru>
@@ -12,7 +12,7 @@ arch=('i686' 'x86_64')
 url="http://gnucap.org/"
 license=('GPL')
 depends=('gcc-libs' 'readline')
-source=(http://gnucap.org/devel/$pkgname-$_pkgver.tar.gz)
+source=(http://gnucap.org/devel/archive/$pkgname-$_pkgver.tar.gz)
 sha1sums=('a64be626b3e971437d677f14bc72eda0df6e7e3a')
 
 build() {
