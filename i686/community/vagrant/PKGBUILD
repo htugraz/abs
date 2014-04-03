@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 108008 2014-03-20 20:39:49Z jsteel $
+# $Id: PKGBUILD 108784 2014-04-03 17:58:29Z jsteel $
 # Maintainer: Jonathan Steel <jsteel at aur.archlinux.org>
 # Contributor: Ido Rosen <ido@kernel.org>
 # Contributor: Brett Hoerner <brett@bretthoerner.com>
@@ -10,8 +10,8 @@
 # Contributor: Steven Nance <steven@devtrw.com>
 
 pkgname=vagrant
-pkgver=1.5.1
-pkgrel=5
+pkgver=1.5.2
+pkgrel=1
 pkgdesc="Build and distribute virtualized development environments"
 arch=('i686' 'x86_64')
 url="http://vagrantup.com"
