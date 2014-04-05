@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 104382 2014-01-19 17:35:53Z bgyorgy $
+# $Id: PKGBUILD 108846 2014-04-05 05:27:19Z lcarlier $
 # Maintainer: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Konsta Kokkinen <kray@tsundere.fi>
 
 pkgname=minetest
 pkgver=0.4.9
-pkgrel=2
+pkgrel=3
 pkgdesc='An Infiniminer/Minecraft inspired game'
 arch=('i686' 'x86_64')
 url='http://minetest.net/'
 license=('GPL')
-depends=('sqlite' 'openal' 'libvorbis' 'curl' 'irrlicht' 'hicolor-icon-theme')
+depends=('sqlite' 'leveldb' 'openal' 'libvorbis' 'curl' 'irrlicht' 'hicolor-icon-theme')
 makedepends=('cmake')
 install=minetest.install
 source=(${pkgname}-${pkgver}.tar.gz::https://github.com/minetest/${pkgname}/tarball/${pkgver}
@@ -29,7 +29,9 @@ prepare() {
 build() {
   cd "$srcdir"/minetest-minetest-*
 
-  cmake . -DCMAKE_INSTALL_PREFIX=/usr
+  cmake . -DCMAKE_INSTALL_PREFIX=/usr \
+    -DENABLE_GETTEXT=on \
+    -DENABLE_LEVELDB=on 
   make
 }
 

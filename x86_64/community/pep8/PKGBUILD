@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 108803 2014-04-04 08:05:58Z fyan $
+# $Id: PKGBUILD 108829 2014-04-05 02:34:43Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Ismael Carnales <icarnales at gmail dot com>
 # Contributor: Sergey Mastykov <smastykov[at]gmail[dot]com>
 
 pkgbase=pep8
 pkgname=("$pkgbase" "$pkgbase-python2")
-pkgver=1.5.2
-pkgrel=2
+pkgver=1.5.3
+pkgrel=1
 pkgdesc="Python style guide checker"
 arch=('any')
 url="http://github.com/jcrocholl/pep8/"
