@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 99984 2013-10-31 02:50:20Z allan $
+# $Id: PKGBUILD 108952 2014-04-08 00:11:52Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 # Contributor: Ronald van Haren <ronald.archlinux.org>
@@ -7,22 +7,26 @@
 
 pkgname=scribus
 pkgver=1.4.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Desktop publishing software'
 url='http://www.scribus.net/'
 license=('GPL')
 arch=('i686' 'x86_64')
 makedepends=('cmake' 'boost' 'mesa')
+optdepends=('tk: scripts based on tkinter')
 depends=('qt4' 'cairo' 'lcms2' 'libcups' 'libxml2' 'hyphen'
          'ghostscript' 'python2' 'podofo' 'boost-libs'
          'desktop-file-utils' 'shared-mime-info')
-source=("http://downloads.sourceforge.net/${pkgname}/${pkgname}-${pkgver}.tar.xz")
-sha1sums=('30c111762790e4407c13236bbb4b06f04e907f71')
+source=("http://downloads.sourceforge.net/${pkgname}/${pkgname}-${pkgver}.tar.xz"
+        'CalendarWizard.patch')
+sha1sums=('30c111762790e4407c13236bbb4b06f04e907f71'
+          'a92629a98bc960a6f7f946faf2d6f06e9d1e9452')
 
 install=install
 
 prepare() {
 	cd "${srcdir}/${pkgname}-${pkgver}"
+	patch -p2 -i ../CalendarWizard.patch
 	sed 's|Icon=scribus|Icon=/usr/share/scribus/icons/scribus.png|' -i scribus.desktop
 	sed \
 		-e 's|#!/usr/bin/python|#!/usr/bin/python2|' \

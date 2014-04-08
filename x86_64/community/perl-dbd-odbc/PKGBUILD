@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 106272 2014-02-26 10:46:00Z spupykin $
+# $Id: PKGBUILD 108958 2014-04-08 09:20:49Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-dbd-odbc
-pkgver=1.47
+pkgver=1.48
 pkgrel=1
 pkgdesc="ODBC Driver for DBI"
 arch=('i686' 'x86_64')
@@ -12,7 +12,7 @@ license=('GPL' 'PerlArtistic')
 depends=('perl-dbi' 'perl' 'unixodbc')
 options=('!emptydirs')
 source=("http://search.cpan.org/CPAN/authors/id/M/MJ/MJEVANS/DBD-ODBC-${pkgver}.tar.gz")
-md5sums=('d5dc91518dc4a476f98e74d8c0774947')
+md5sums=('b029f1a9a555f4c22f8d773b2d267899')
 
 build() {
   cd  DBD-ODBC-${pkgver}
