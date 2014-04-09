@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 107117 2014-03-12 18:23:14Z bpiotrowski $
+# $Id: PKGBUILD 109046 2014-04-09 19:38:52Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Chris Brannon <chris@the-brannons.com>
 # Contributor: Paulo Matias <matiasΘarchlinux-br·org>
@@ -6,7 +6,7 @@
 
 pkgname=luajit
 pkgver=2.0.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Just-in-time compiler and drop-in replacement for Lua 5.1'
 arch=('i686' 'x86_64')
 url='http://luajit.org/'
@@ -17,7 +17,7 @@ md5sums=('f14e9104be513913810cd59c8c658dc0')
 
 build() {
   cd LuaJIT-$pkgver
-  make amalg PREFIX=/usr
+  CFLAGS+=' -DLUAJIT_ENABLE_LUA52COMPAT' make amalg PREFIX=/usr
 }
 
 package() {

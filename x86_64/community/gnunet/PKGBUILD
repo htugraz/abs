@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 105576 2014-02-10 13:48:00Z spupykin $
+# $Id: PKGBUILD 108990 2014-04-09 07:43:53Z ronald $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: wahnby <wahnby@yahoo.fr>
 
 pkgname=gnunet
 pkgver=0.10.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A framework for secure peer-to-peer networking"
 arch=('i686' 'x86_64')
 url="http://gnunet.org"
@@ -19,7 +19,6 @@ optdepends=('bluez-libs'
 	    'libpulse')
 backup=(etc/gnunetd.conf)
 options=('!makeflags')
-install=gnunet.install
 source=(ftp://ftp.gnu.org/gnu/gnunet/gnunet-${pkgver/_/}.tar.gz
 	gnunet.service
 	defaults.conf)

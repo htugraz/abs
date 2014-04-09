@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 105967 2014-02-20 09:02:05Z spupykin $
+# $Id: PKGBUILD 109015 2014-04-09 11:24:06Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer:  hydro <hydro@freenet.de>
 
 pkgname=libmediainfo
-pkgver=0.7.67
+pkgver=0.7.68
 pkgrel=1
 pkgdesc="shared library for mediainfo"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=( 'curl' 'libmms' 'libzen')
 makedepends=('libtool' 'automake' 'autoconf')
 source=(http://downloads.sourceforge.net/mediainfo/${pkgname}_${pkgver}.tar.bz2
 	libmediainfo-0.7.50-libmms.patch)
-md5sums=('c6372a176f45a9971740b46c652f65eb'
+md5sums=('838a472b430a28383366ad335c7b5416'
          '2f4b21cc250f663d52b497dedb963e3b')
 
 build() {

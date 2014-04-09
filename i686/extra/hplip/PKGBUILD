@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 208338 2014-03-22 17:39:56Z andyrtr $
+# $Id: PKGBUILD 210089 2014-04-09 19:22:49Z andyrtr $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor : Rémy Oudompheng <remy@archlinux.org>
 # Contributor: Morgan LEFIEUX <comete@archlinuxfr.org>
 
 pkgname=hplip
-pkgver=3.14.3
-pkgrel=2
+pkgver=3.14.4
+pkgrel=1
 pkgdesc="Drivers for HP DeskJet, OfficeJet, Photosmart, Business Inkjet and some LaserJet"
 arch=('i686' 'x86_64')
 url="http://hplipopensource.com"
@@ -27,7 +27,7 @@ optdepends=('cups: for printing support'
 install=hplip.install
 source=(http://downloads.sourceforge.net/${pkgname}/$pkgname-$pkgver.tar.gz{,.asc}
         disable_upgrade.patch)
-md5sums=('a0ae59a75d202b92738dc24610b98428'
+md5sums=('6e8d53fb2284271505d2e1706c01f6c5'
          'SKIP'
          '257c8bfe675862d90f4ce07d3dff1d9f')
 

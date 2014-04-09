@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 103148 2013-12-27 15:55:22Z spupykin $
+# $Id: PKGBUILD 109021 2014-04-09 11:24:59Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: robb_force <robb_force@holybuffalo.net>
 # Maintainer: JJDaNiMoTh <jjdanimoth@gmail.com>
 
 pkgname=sdlmame
-pkgver=0.152.u0
+pkgver=0.153.u0
 _patchlevel=`echo $pkgver | cut -f2 -du`
 _basever=`echo $pkgver | cut -f1,2 -d.`
 pkgrel=1
@@ -25,7 +25,7 @@ source=("mame${_basever/./}s.zip::http://mamedev.org/downloader.php?file=release
 	"sdlmame.sh"
 	"extras.tar.gz"
 	${_patches})
-md5sums=('ef3321a0a1ff3532ea0b07ad3f254db2'
+md5sums=('960c9181af27b4d06ef214128fc2abf3'
          '3c35b4a0806a82f3210df1683337655e'
          '420b61240bf5ae11615ba7c6100ee00d')
 
