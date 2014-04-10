@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 204874 2014-01-30 03:12:06Z tomegun $
+# $Id: PKGBUILD 210101 2014-04-09 22:21:57Z thomas $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Keshav P R <(the.ridikulus.rat) (aatt) (gemmaeiil) (ddoott) (ccoomm)>
 # Contributor:  Mantas Mikulėnas <grawity@gmail.com>
 
 pkgname="gummiboot"
-pkgver="43"
-pkgrel="2"
+pkgver="44"
+pkgrel="1"
 pkgdesc="Simple UEFI Boot Manager"
 url="http://freedesktop.org/wiki/Software/gummiboot"
 arch=('x86_64' 'i686')

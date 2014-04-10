@@ -1,19 +1,19 @@
-# $Id: PKGBUILD 108481 2014-03-27 14:48:14Z fyan $
+# $Id: PKGBUILD 109125 2014-04-10 14:26:39Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Angel Velasquez <angvp@archlinux.org> 
 # Contributor: Douglas Soares de Andrade <dsa@aur.archlinux.br>
 
 pkgbase=python-pyro
 pkgname=("$pkgbase" 'python2-pyro')
-pkgver=4.22
-pkgrel=2
+pkgver=4.24
+pkgrel=1
 pkgdesc='Distributed object middleware for Python (RPC)'
 url='http://pypi.python.org/pypi/Pyro4/'
 arch=('any')
 license=('MIT')
 depends=('python' 'python2')
 source=("http://pypi.python.org/packages/source/P/Pyro4/Pyro4-$pkgver.tar.gz")
-sha256sums=('d8f611f384edbd240006d8c0f56135e74199ab88e9416cfc78cf5472f1ff337d')
+sha256sums=('24d2ceaabbd886981d0df56f8f7e5f7f1a9db173778baa4965605f6880c90eb8')
 
 package_python-pyro() {
   depends=('python')

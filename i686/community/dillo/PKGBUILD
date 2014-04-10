@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 90016 2013-05-06 19:36:40Z foutrelis $
+# $Id: PKGBUILD 109078 2014-04-10 09:02:19Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: dorphell <dorphell@archlinux.org>
 
 pkgname=dillo
-pkgver=3.0.3
-pkgrel=2
+pkgver=3.0.4
+pkgrel=1
 pkgdesc="A small, fast graphical web browser built on FLTK"
 arch=(i686 x86_64)
 url="http://www.dillo.org"
@@ -13,7 +13,7 @@ depends=('fltk' 'libjpeg' 'perl' 'openssl' 'libpng' 'gcc-libs' 'libxcursor'
          'libxi' 'libxinerama')
 backup=(etc/dillo/{dillorc,dpidrc})
 source=(http://www.dillo.org/download/$pkgname-$pkgver.tar.bz2)
-md5sums=('726cd0b7a18c5e25f4d80ebeffe7607e')
+md5sums=('c85aab6b840527e1dd71b220a1dcfbab')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"

@@ -1,12 +1,13 @@
-# $Id: PKGBUILD 107711 2014-03-18 17:19:21Z bpiotrowski $
+# $Id: PKGBUILD 109140 2014-04-10 18:04:00Z thestinger $
 # Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Maintainer: Sébastien Luttringer
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Miroslaw Szot <mss@czlug.icis.pcz.pl>
+# Contributor: Daniel Micay <danielmicay@gmail.com>
 
 pkgname=nginx
 pkgver=1.4.7
-pkgrel=1
+pkgrel=2
 pkgdesc='Lightweight HTTP server and IMAP/POP3 proxy server'
 arch=('i686' 'x86_64')
 url='http://nginx.org'
@@ -27,7 +28,7 @@ source=($url/download/nginx-$pkgver.tar.gz
         service
         logrotate)
 md5sums=('aee151d298dcbfeb88b3f7dd3e7a4d17'
-         'ce9a06bcaf66ec4a3c4eb59b636e0dfd'
+         '5c0cd4fd992596938b2d4fd98b2bac41'
          '3441ce77cdd1aab6f0ab7e212698a8a7')
 
 build() {

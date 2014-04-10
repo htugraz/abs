@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 99504 2013-10-29 10:24:10Z spupykin $
+# $Id: PKGBUILD 109105 2014-04-10 13:01:46Z fyan $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Firmicus <francois.archlinux.org>
 
 pkgname=perl-tidy
-pkgver=20130922
+pkgver=20140328
 pkgrel=1
 pkgdesc="Parses and beautifies perl source"
 arch=('any')
@@ -12,7 +12,7 @@ license=('GPL' 'PerlArtistic')
 depends=('perl>=5.10.0')
 options=('!emptydirs')
 source=(http://www.cpan.org/authors/id/S/SH/SHANCOCK/Perl-Tidy-$pkgver.tar.gz)
-md5sums=('efc831bc9f238ae037dae22c41b6ba31')
+md5sums=('a33f908663934bdd67aa915e25f89f45')
 
 build() {
   cd  $srcdir/Perl-Tidy-$pkgver

@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 192111 2013-08-06 01:16:10Z eric $
+# $Id: PKGBUILD 210131 2014-04-10 08:53:35Z fyan $
 # Maintainer:
 
 pkgname=perl-log-log4perl
-pkgver=1.42
+pkgver=1.43
 pkgrel=1
 pkgdesc='Log4j implementation for Perl'
 arch=('any')
@@ -11,7 +11,7 @@ license=('PerlArtistic' 'GPL')
 depends=('perl')
 options=('!emptydirs')
 source=("http://search.cpan.org/CPAN/authors/id/M/MS/MSCHILLI/Log-Log4perl-$pkgver.tar.gz")
-md5sums=('76fcadf1dad78a31d582ffaca95bf251')
+md5sums=('c7b15008426c31f14726ed1257cd7b68')
 
 build() {
   cd Log-Log4perl-$pkgver
