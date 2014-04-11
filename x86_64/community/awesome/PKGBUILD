@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 108992 2014-04-09 08:54:27Z bpiotrowski $
+# $Id: PKGBUILD 109199 2014-04-11 09:39:08Z andrea $
 # Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Sébastien Luttringer
@@ -7,8 +7,8 @@
 # Contributor: Vesa Kaihlavirta
 
 pkgname=awesome
-pkgver=3.5.4
-pkgrel=2
+pkgver=3.5.5
+pkgrel=1
 pkgdesc='Highly configurable framework window manager'
 arch=('i686' 'x86_64')
 url='http://awesome.naquadah.org/'
@@ -22,16 +22,11 @@ optdepends=('rlwrap: readline support for awesome-client'
             'vicious: widgets for the Awesome window manager')
 provides=('notification-daemon')
 backup=('etc/xdg/awesome/rc.lua')
-source=($url/download/$pkgname-$pkgver.tar.xz
-        awesome-3.5.4-imagebox-Don-t-try-to-scale-by-infinite.patch)
-md5sums=('9d52a26bfbc142ace5427bfb55010359'
-         '1db70d4e40ca982ce49d7226a4eb3c92')
+source=($url/download/$pkgname-$pkgver.tar.xz)
+md5sums=('48a00b747f0279e6164d8b7e9c964346')
 
 prepare() {
   mkdir -p build
-
-  cd $pkgname-$pkgver
-  patch -p1 -i ../awesome-3.5.4-imagebox-Don-t-try-to-scale-by-infinite.patch
 }
 
 build() {

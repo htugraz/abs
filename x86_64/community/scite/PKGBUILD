@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 108391 2014-03-27 12:57:37Z arodseth $
+# $Id: PKGBUILD 109205 2014-04-11 12:38:36Z arodseth $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Thomas S Hatch <thatch45@gmail.com>
 # Contributor: Corrado 'bardo' Primier <corrado.primier@mail.polimi.it>
@@ -6,7 +6,7 @@
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=scite
-pkgver=3.4.0
+pkgver=3.4.1
 pkgrel=1
 pkgdesc='Editor with facilities for building and running programs'
 arch=('x86_64' 'i686')
@@ -17,7 +17,7 @@ makedepends=('setconf')
 backup=('usr/share/scite/SciTEGlobal.properties')
 install="$pkgname.install"
 source=("http://downloads.sourceforge.net/sourceforge/scintilla/${pkgname}${pkgver//./}.tgz")
-sha256sums=('6e247543e08840c6103b50308bb394892525194bffcd98b673e4c7f6d03ba1a4')
+sha256sums=('ab2940ba6ad3f1c7c33aea233dd5b44efc75319062fe0b3625db04c747bf3341')
 
 prepare() {
   if [ $?CXXBASEFLAGS == 1 ]; then 

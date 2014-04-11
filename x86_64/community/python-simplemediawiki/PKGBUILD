@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 108020 2014-03-21 08:50:49Z spupykin $
+# $Id: PKGBUILD 109195 2014-04-11 09:08:17Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Jakub Klinkovský <j.l.k@gmx.com>
 
 pkgname=python-simplemediawiki
 pkgdesc="Extremely low-level wrapper to the MediaWiki API"
 pkgver=1.2.0_b2
-pkgrel=1
+pkgrel=2
 arch=('any')
 url="https://github.com/ianweller/python-simplemediawiki"
 license=('LGPL')
