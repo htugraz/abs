@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 107290 2014-03-16 16:03:43Z lfleischer $
+# $Id: PKGBUILD 109329 2014-04-13 11:55:50Z lfleischer $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Kaiting Chen <kaitocracy@gmail.com>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 # Contributor: Kevin Piche <kevin@archlinux.org>
 
 pkgname=stunnel
-pkgver=5.00
+pkgver=5.01
 pkgrel=1
 pkgdesc="A program that allows you to encrypt arbitrary TCP connections inside SSL"
 arch=('i686' 'x86_64')
@@ -16,7 +16,7 @@ install=$pkgname.install
 source=("https://www.stunnel.org/downloads/$pkgname-$pkgver.tar.gz"{,.asc}
         'Makefile.patch'
         'stunnel.tmpfiles.conf')
-md5sums=('4f00fd0faf99e3c9cf258a19dd83d14a'
+md5sums=('7b63266b6fa05da696729e245100da65'
          'SKIP'
          '579f198ecb90a42fcbfd8a4e48006264'
          '2e065a39998e57727ee79887bbd1751e')

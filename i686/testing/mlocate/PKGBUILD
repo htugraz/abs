@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 208929 2014-03-28 20:38:50Z thomas $
+# $Id: PKGBUILD 210258 2014-04-13 07:33:11Z thomas $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: lydgate
 
 pkgname=mlocate
 pkgver=0.26
-pkgrel=2
+pkgrel=3
 pkgdesc='Merging locate/updatedb implementation'
 url='https://fedorahosted.org/mlocate/'
 arch=('i686' 'x86_64')
