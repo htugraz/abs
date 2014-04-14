@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 108114 2014-03-23 10:09:40Z stativ $
+# $Id: PKGBUILD 109412 2014-04-14 16:30:17Z stativ $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname=intellij-idea-community-edition
 pkgver=13.1.1
 _pkgver=135.480
-pkgrel=1
+pkgrel=2
 pkgdesc="IDE for Java, Groovy and other programming languages with advanced refactoring features"
 arch=('any')
 url="http://www.jetbrains.org/"
 license=('Apache')
-depends=('java-environment' "intellij-idea-libs=$pkgver" 'giflib')
+depends=('java-environment' "intellij-idea-libs=$pkgver" 'giflib' 'libxtst')
 install=idea.install
 source=(http://download.jetbrains.com/idea/ideaIC-$pkgver.tar.gz \
         idea.desktop idea.sh)

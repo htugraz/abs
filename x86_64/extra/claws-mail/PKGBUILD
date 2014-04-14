@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 205523 2014-02-06 16:23:04Z andyrtr $
+# $Id: PKGBUILD 210417 2014-04-14 20:05:53Z jgc $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=claws-mail
 pkgver=3.9.3
-pkgrel=2
+pkgrel=3
 pkgdesc="A GTK+ based e-mail client."
 arch=('i686' 'x86_64')
 license=('GPL3')

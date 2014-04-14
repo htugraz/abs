@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 204781 2014-01-27 07:47:56Z jgc $
+# $Id: PKGBUILD 210554 2014-04-14 20:13:41Z jgc $
 # Maintainer: Daniel Isenmann <daniel@archlinux.org>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=libgpod
 pkgver=0.8.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A shared library to access the contents of an iPod"
 arch=(i686 x86_64)
 license=('LGPL')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 94049 2013-07-13 12:37:05Z svenstaro $
+# $Id: PKGBUILD 109379 2014-04-14 09:42:49Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Jose Negron <josenj.arch@mailnull.net>
 
 pkgname=sdcc
-pkgver=3.3.0
-pkgrel=2
+pkgver=3.4.0
+pkgrel=1
 pkgdesc="Retargettable ANSI C compiler (Intel 8051, Maxim 80DS390, Zilog Z80 and the Motorola 68HC08)"
 arch=('i686' 'x86_64')
 license=('GPL')
@@ -12,9 +12,9 @@ depends=('bash' 'gcc-libs' 'boost-libs')
 makedepends=('gputils' 'flex' 'bison' 'patch' 'boost')
 optdepends=('python')
 url="http://sdcc.sourceforge.net/"
-options=(!strip)
+options=(!strip  staticlibs)
 source=(http://downloads.sourceforge.net/sourceforge/sdcc/$pkgname-src-$pkgver.tar.bz2)
-md5sums=('c7c6aa75415580795ecc4fd31948e5ba')
+md5sums=('92db2ea2526f6cef412547bb1e759a48')
 
 prepare() {
   cd $srcdir/$pkgname-$pkgver

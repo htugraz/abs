@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 198373 2013-10-30 14:28:32Z allan $
+# $Id: PKGBUILD 210524 2014-04-14 20:07:24Z jgc $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=polkit
 pkgver=0.112
-pkgrel=1
+pkgrel=2
 pkgdesc="Application development toolkit for controlling system-wide privileges"
 arch=(i686 x86_64)
 license=(LGPL)
 url="http://www.freedesktop.org/wiki/Software/polkit"
-depends=(glib2 pam expat libsystemd js)
+depends=(glib2 pam expat systemd js17)
 makedepends=(intltool gtk-doc gobject-introspection)
 install=polkit.install
 source=(http://www.freedesktop.org/software/polkit/releases/$pkgname-$pkgver.tar.gz

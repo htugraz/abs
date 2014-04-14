@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 196500 2013-10-14 14:05:19Z heftig $
+# $Id: PKGBUILD 210466 2014-04-14 20:06:35Z jgc $
 # Maintainer: Jan "heftig" Steffens <jan.steffens@gmail.com>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=gnome-icon-theme-symbolic
-pkgver=3.10.1
+pkgver=3.12.0
 pkgrel=1
 pkgdesc="GNOME icon theme, symbolic icons"
 arch=(any)
@@ -13,8 +13,8 @@ url="http://www.gnome.org"
 license=(GPL)
 install=gnome-icon-theme-symbolic.install
 groups=(gnome)
-source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.xz)
-sha256sums=('344e88e5f9dac3184bf012d9bac972110df2133b93d76f2ad128d4c9cbf41412')
+source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver:0:4}/$pkgname-$pkgver.tar.xz)
+sha256sums=('851a4c9d8e8cb0000c9e5e78259ab8b8e67c5334e4250ebcc8dfdaa33520068b')
 
 build() {
   cd "$pkgname-$pkgver"
