@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 108661 2014-03-31 11:41:19Z spupykin $
+# $Id: PKGBUILD 109492 2014-04-15 08:22:39Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Jeff Mickey <jeff@archlinux.org>
 # Contributor: Steve Sansom <snsansom@gmail.com>
 
 pkgname=units
-pkgver=2.10
+pkgver=2.11
 pkgrel=1
 pkgdesc="converts between different units"
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ license=("GPL")
 options=('!makeflags')
 install=units.install
 source=(http://ftp.gnu.org/gnu/units/$pkgname-$pkgver.tar.gz)
-md5sums=('08dc084526a879dd04b64ef46db2b80d')
+md5sums=('1d83f4e68135495aa9267b848de78dc5')
 
 build() {
   cd $srcdir/$pkgname-$pkgver

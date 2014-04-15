@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 101767 2013-11-30 20:33:20Z bgyorgy $
+# $Id: PKGBUILD 109548 2014-04-15 15:37:59Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-screensaver
 pkgver=3.6.1
-pkgrel=7
+pkgrel=8
 pkgdesc="Legacy GNOME screensaver"
 arch=('i686' 'x86_64')
 license=('GPL')
