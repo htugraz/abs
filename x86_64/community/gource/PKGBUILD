@@ -1,23 +1,22 @@
-# $Id: PKGBUILD 102252 2013-12-07 10:36:37Z bpiotrowski $
+# $Id: PKGBUILD 109602 2014-04-16 16:51:36Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Jose Valecillos <valecillosjg (at) gmail (dot) com>
 # Contributor: Olivier Ramonat <olivier at ramonat dot fr>
 pkgname=gource
-pkgver=0.40
-pkgrel=4
+pkgver=0.41
+pkgrel=2
 pkgdesc="software version control visualization"
 license=(GPL3)
 arch=(i686 x86_64)
 url=http://code.google.com/p/gource/
-depends=('ftgl' 'sdl' 'sdl_image' 'pcre' 'glew' 'boost-libs')
+depends=('ftgl' 'sdl2' 'sdl2_image' 'pcre' 'glew' 'boost-libs')
 makedepends=('boost' 'glm' 'mesa')
-source=(http://gource.googlecode.com/files/$pkgname-$pkgver.tar.gz)
-md5sums=('89c608a7aa3c901661eb1f2db6117492')
+source=(https://github.com/acaudwell/Gource/releases/download/gource-${pkgver}/gource-${pkgver}.tar.gz)
+md5sums=('3d8e0b6588878554e11bc03d19d517c9')
 
 build() {
 	cd "$srcdir/$pkgname-$pkgver"
 
-  sed -i "s/filesystem3/filesystem/g" src/logmill.cpp
 	./configure --prefix=/usr
 	make
 }
