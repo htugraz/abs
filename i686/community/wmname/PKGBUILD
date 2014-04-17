@@ -1,13 +1,13 @@
-# $Id: PKGBUILD 70750 2012-05-16 10:53:05Z spupykin $
+# $Id: PKGBUILD 109657 2014-04-17 12:48:23Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Vincent Kriek <vincent@vincentkriek.nl>
 
 pkgname=wmname
 pkgver=0.1
 pkgrel=2
-pkgdesc="An utility to set the name of your window manager"
+pkgdesc="A utility to set the name of your window manager"
 url="http://tools.suckless.org/wmname"
-license=('custom')
+license=('MIT')
 depends=('libx11')
 arch=('i686' 'x86_64')
 source=("http://dl.suckless.org/tools/wmname-$pkgver.tar.gz")

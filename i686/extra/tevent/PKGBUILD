@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 208146 2014-03-18 07:55:57Z tpowa $
+# $Id: PKGBUILD 211157 2014-04-17 20:02:05Z tpowa $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Christian Hesse <mail@eworm.de>
 # Contributor: Marco A Rojas <marquicus at gmail dot com>
@@ -7,7 +7,7 @@
 
 pkgname=tevent
 pkgver=0.9.21
-pkgrel=2
+pkgrel=3
 pkgdesc="An event system based on the talloc memory management library"
 arch=('i686' 'x86_64')
 url="https://tevent.samba.org/"
@@ -24,7 +24,9 @@ build() {
 	sed -i -e "s|/usr/bin/env python$|/usr/bin/env python2|" buildtools/bin/waf
 	export PYTHON=/usr/bin/python2
 
-	./configure --prefix=/usr
+	./configure --prefix=/usr \
+                    --bundled-libraries=NONE \
+                    --builtin-libraries=replace
 }
 
 package() {
