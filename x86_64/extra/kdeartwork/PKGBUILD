@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 209409 2014-03-31 10:12:44Z svenstaro $
+# $Id: PKGBUILD 211372 2014-04-18 18:01:52Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
@@ -11,7 +11,7 @@ pkgname=('kdeartwork-colorschemes'
          'kdeartwork-styles'
          'kdeartwork-wallpapers'
          'kdeartwork-weatherwallpapers')
-pkgver=4.12.4
+pkgver=4.13.0
 pkgrel=1
 arch=('i686' 'x86_64')
 url='http://www.kde.org'
@@ -19,7 +19,7 @@ license=('GPL' 'LGPL' 'FDL')
 groups=('kde' 'kdeartwork')
 makedepends=('cmake' 'automoc4' 'xscreensaver' 'eigen2' 'kdebase-workspace' 'libkexiv2')
 source=("http://download.kde.org/stable/${pkgver}/src/${pkgbase}-${pkgver}.tar.xz")
-sha1sums=('307a74aff0af5f19b9c10b4f035a74547c0f2d6b')
+sha1sums=('93ab54aefc0c9a93b2e76b53db21177fbf432d44')
 
 build() {
 	cd $srcdir

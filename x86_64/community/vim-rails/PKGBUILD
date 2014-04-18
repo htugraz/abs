@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 105981 2014-02-20 12:20:29Z arodseth $
+# $Id: PKGBUILD 109759 2014-04-18 14:03:37Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Aaron Schaefer <aaron@elasticdog.com>
 
 pkgname=vim-rails
-pkgver=5.0
-_sourceid=19738
+pkgver=5.1
+_sourceid=21702
 pkgrel=1
 pkgdesc='Vim plugin for enhanced Ruby on Rails application development'
 arch=('any')
@@ -15,7 +15,7 @@ depends=('vim')
 install=vimdoc.install
 source=("$pkgname.zip::http://www.vim.org/scripts/download_script.php?src_id=$_sourceid"
         'license.txt')
-sha256sums=('07e6405fdda1863f4d680c5105cedf2d77b764edfb4223716a748aa6d575ed5d'
+sha256sums=('d945d687c81a4b7b33848dd6bed4bbf29023de3bf9793c826298dfd91a8f45de'
             '446c67d93c43addf076fe103a71844c2d875d478f82186436567dd221f2652f3')
 
 package() {

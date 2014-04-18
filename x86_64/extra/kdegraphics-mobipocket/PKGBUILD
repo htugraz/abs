@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 209371 2014-03-31 10:09:04Z svenstaro $
+# $Id: PKGBUILD 211331 2014-04-18 18:01:19Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-mobipocket
-pkgver=4.12.4
+pkgver=4.13.0
 pkgrel=1
 pkgdesc="A collection of plugins to handle mobipocket files"
 url="https://projects.kde.org/projects/kde/kdegraphics/kdegraphics-mobipocket"
@@ -15,7 +15,7 @@ replaces=('kdegraphics-libs')
 conflicts=('kdegraphics-libs')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
-sha1sums=('703bd02f65392c85626ebe1c237c9e996ca257cb')
+sha1sums=('45379e04c2f2df3d247b97a5e34804f2e783e0d8')
 
 prepare() {
   mkdir build

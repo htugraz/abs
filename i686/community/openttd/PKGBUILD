@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 108838 2014-04-05 04:20:00Z lcarlier $
+# $Id: PKGBUILD 109789 2014-04-18 17:31:32Z andyrtr $
 # Maintainer: Vesa Kaihlavirta <vegai@iki.fi>
 
 pkgname=openttd
 pkgver=1.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc='An engine for running Transport Tycoon Deluxe.'
 arch=('i686' 'x86_64')
 url='http://www.openttd.org'

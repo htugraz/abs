@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 209538 2014-03-31 10:20:20Z svenstaro $
+# $Id: PKGBUILD 211443 2014-04-18 18:02:53Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-kruler
-pkgver=4.12.4
+pkgver=4.13.0
 pkgrel=1
 pkgdesc="Screen Ruler"
 url="http://kde.org/applications/graphics/kruler/"
@@ -13,7 +13,7 @@ depends=('kdebase-runtime')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/${pkgver}/src/kruler-${pkgver}.tar.xz")
-sha1sums=('b8dc82b269abd6e7342d116cfcacb1402f1c1369')
+sha1sums=('ea74eb62fe383d6f37866ee328b4a49503da9a2d')
 
 build() {
   cd "${srcdir}"

@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 103822 2014-01-11 20:36:36Z bgyorgy $
+# $Id: PKGBUILD 109763 2014-04-18 14:26:46Z thestinger $
 # Maintainer:
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgbase=ettercap
 pkgname=('ettercap' 'ettercap-gtk')
 pkgver=0.8.0
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 url="http://ettercap.github.com/ettercap/"
 license=('GPL')
-depends=('openssl' 'libpcap' 'pcre' 'libltdl' 'libnet')
+depends=('openssl' 'libpcap' 'pcre' 'libltdl' 'libnet' 'ethtool' 'curl')
 makedepends=('ghostscript' 'cmake' 'libpcap' 'libltdl' 'libnet' 'gtk2')
 options=('!makeflags' '!emptydirs')
 source=("https://github.com/Ettercap/ettercap/archive/v$pkgver.tar.gz")

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 98742 2013-10-17 14:01:49Z andyrtr $
+# $Id: PKGBUILD 109787 2014-04-18 17:31:30Z andyrtr $
 # Maintainer: Carlier Laurent <lordheavym@gmail.com>
 # Contributor: Douglas Soares de Andrade <dsa@aur.archlinux.org>
 
 pkgname=libfbclient
 pkgver=2.5.2.26540
-pkgrel=2
+pkgrel=3
 pkgdesc="Client library for Firebird."
 arch=('i686' 'x86_64')
 url="http://www.firebirdsql.org/"

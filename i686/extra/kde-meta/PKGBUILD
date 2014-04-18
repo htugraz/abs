@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 209681 2014-04-01 09:58:28Z andrea $
+# $Id: PKGBUILD 211498 2014-04-18 18:03:44Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
@@ -18,8 +18,8 @@ pkgname=('kde-meta-kdeaccessibility'
          'kde-meta-kdetoys'
          'kde-meta-kdeutils'
          'kde-meta-kdewebdev')
-pkgver=4.12
-pkgrel=4
+pkgver=4.13
+pkgrel=3
 arch=('any')
 url='http://www.archlinux.org/'
 license=('GPL')
@@ -79,7 +79,8 @@ package_kde-meta-kdebase() {
 
 package_kde-meta-kdeedu() {
 	pkgdesc=('Meta package for kdeedu')
-	depends=('kdeedu-blinken'
+	depends=('kdeedu-artikulate'
+           'kdeedu-blinken'
 	         'kdeedu-cantor'
 	         'kdeedu-kalgebra'
 	         'kdeedu-kalzium'

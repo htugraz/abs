@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 101191 2013-11-19 11:01:21Z spupykin $
+# $Id: PKGBUILD 109785 2014-04-18 17:31:29Z andyrtr $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Vesa Kaihlavirta <vegai@iki.fi>
 # Contributor: Sebastian Sareyko <public@nooms.de>
 
 pkgname=gnustep-gui
 pkgver=0.23.1
-pkgrel=5
+pkgrel=7
 pkgdesc="The GNUstep GUI class library"
 arch=('i686' 'x86_64')
 url="http://www.gnustep.org/"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 209176 2014-03-29 22:48:56Z heftig $
+# $Id: PKGBUILD 211287 2014-04-18 15:10:19Z heftig $
 # Maintainer: Roman Kyrylych <roman@archlinux.org>
 
 pkgname=gnome-user-share
 pkgver=3.10.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Easy to use user-level file sharing for GNOME."
 arch=('i686' 'x86_64')
 url="http://ftp.gnome.org/pub/GNOME/sources/gnome-user-share/"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 209764 2014-04-03 15:19:25Z pierre $
+# $Id: PKGBUILD 211313 2014-04-18 17:28:16Z andyrtr $
 # Maintainer: Pierre Schmitz <pierre@archlinux.de>
 
 pkgbase=php
@@ -22,7 +22,7 @@ pkgname=('php'
          'php-tidy'
          'php-xsl')
 pkgver=5.5.11
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 license=('PHP')
 url='http://www.php.net'
