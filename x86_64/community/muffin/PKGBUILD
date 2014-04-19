@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 109468 2014-04-15 00:55:39Z faidoc $
+# $Id: PKGBUILD 109803 2014-04-19 00:45:07Z bgyorgy $
 # Maintainer: Alexandre Filgueira <alexfilgueira@cinnarch.com>
 # Contributor: Adam Hani Schakaki <adam@schakaki.net>
 # Contributor: Ner0
 
 pkgname=muffin
 pkgver=2.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Cinnamon window manager based on Mutter"
 arch=('i686' 'x86_64')
 url="https://github.com/linuxmint/muffin"
 license=('GPL')
-depends=('clutter' 'gobject-introspection' 'cinnamon-desktop' 'libcanberra'
+depends=('clutter' 'gobject-introspection' 'cinnamon-desktop' 'libcanberra' 'libsm'
          'startup-notification' 'zenity' 'dconf')
 makedepends=('intltool' 'gnome-doc-utils' 'gnome-common') 
 options=('!emptydirs')

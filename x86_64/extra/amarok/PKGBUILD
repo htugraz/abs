@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 203567 2014-01-13 17:11:57Z andyrtr $
+# $Id: PKGBUILD 211521 2014-04-19 11:27:11Z andrea $
 # Maintainer: Ronald van Haren <ronald@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: damir <damir@archlinux.org>
 
 pkgname=amarok
 pkgver=2.8.0
-pkgrel=2
+pkgrel=3
 pkgdesc="The powerful music player for KDE"
 arch=("i686" "x86_64")
 url="http://amarok.kde.org/"
@@ -33,7 +33,9 @@ build() {
   cmake ../${pkgname}-${pkgver} \
     -DCMAKE_BUILD_TYPE=Release \
     -DKDE4_BUILD_TESTS=OFF \
-    -DCMAKE_INSTALL_PREFIX=/usr
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DWITH_NepomukCore=OFF \
+    -DWITH_Soprano=OFF
   make
 }
 
