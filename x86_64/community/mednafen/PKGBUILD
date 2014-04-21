@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 108527 2014-03-27 20:02:12Z jsteel $
+# $Id: PKGBUILD 109894 2014-04-21 10:35:45Z jsteel $
 # Maintainer: Jonathan Steel <jsteel@aur.archlinux.org>
 # Contributor: megadriver <megadriver at gmx dot com>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
@@ -7,7 +7,7 @@
 # Contributor: Hans-Kristian Arntzen <maister@archlinux.us>
 
 pkgname=mednafen
-pkgver=0.9.33.2
+pkgver=0.9.33.3
 pkgrel=1
 pkgdesc="A command-line multi-system gaming emulator"
 url="http://mednafen.sourceforge.net"
@@ -16,9 +16,9 @@ arch=('i686' 'x86_64')
 depends=('libcdio' 'libsamplerate' 'sdl_net' 'zlib')
 makedepends=('mesa' 'glu')
 replaces=('mednafen-wip')
-install="$pkgname.install"
+install=$pkgname.install
 source=(http://downloads.sourceforge.net/mednafen/$pkgname-$pkgver.tar.bz2)
-md5sums=('5ad015c5cbbefbf6b52fd6b972809b6a')
+md5sums=('004b0854b7d47916160b0f4c4a0ead60')
 
 build() {
   cd "$srcdir"/$pkgname
