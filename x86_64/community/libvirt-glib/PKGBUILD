@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 108799 2014-04-04 07:49:23Z spupykin $
+# $Id: PKGBUILD 109981 2014-04-22 16:21:25Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Stefano Facchini <stefano.facchini@gmail.com>
 
 pkgname=libvirt-glib
 pkgver=0.1.8
-pkgrel=1
+pkgrel=2
 pkgdesc="GLib bindings for libvirt"
 arch=('i686' 'x86_64')
 url="http://libvirt.org"
@@ -19,7 +19,7 @@ build() {
   ./configure --prefix=/usr \
               --disable-static \
               --with-python=/usr/bin/python2
-  make
+  make -j1
 }
 
 package() {
