@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 59871 2011-12-01 13:33:05Z spupykin $
+# $Id: PKGBUILD 110052 2014-04-23 16:25:10Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Vesa Kaihlavirta <vegai@iki.fi>
 
 pkgname=enter
 pkgver=0.0.9
-pkgrel=3
+pkgrel=4
 pkgdesc="Enter is a lightweight graphical login manager for X."
 arch=('i686' 'x86_64')
 url="http://enter.sf.net"
@@ -17,7 +17,11 @@ build() {
   cd $srcdir/$pkgname-$pkgver
   sed -i 's|\[xft-config\]|\[pkg-config\]|' configure.ac
   autoreconf
-  ./configure --prefix=/usr --sysconfdir=/etc CFLAGS="$CFLAGS -lcrypt"
+  ./configure --prefix=/usr --sysconfdir=/etc CFLAGS="$CFLAGS -lcrypt -lXext -lX11"
   make
+}
+
+package() {
+  cd $srcdir/$pkgname-$pkgver
   make DESTDIR=$pkgdir install
 }

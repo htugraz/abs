@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 88014 2013-04-09 21:51:39Z eric $
+# $Id: PKGBUILD 110076 2014-04-23 17:29:50Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=vyqchat
 pkgver=0.2.8
-pkgrel=4
+pkgrel=5
 pkgdesc="vypress compatible qt chat (can work without server)"
 arch=('i686' 'x86_64')
 url="http://linux.bydg.org/~yogin/"
@@ -22,7 +22,7 @@ build() {
   sed -i 's/vyqchat_LDFLAGS/vyqchat_LDADD/' src/Makefile.am
   # Correct acinclude.m4 to avoid empty else block
   sed -i 's:# Leave bnv_qt_lib_dir defined:/bin/true:' acinclude.m4
-  autoreconf -v
+  autoreconf -fiv
   ./configure --prefix=/usr --with-Qt-bin-dir=/usr/lib/qt3/bin --with-Qt-include-dir=/usr/include/qt3 --with-Qt-lib-dir=/usr/lib
   make
 }

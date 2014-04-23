@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 109574 2014-04-16 10:04:50Z spupykin $
+# $Id: PKGBUILD 110064 2014-04-23 17:09:44Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Thomas Jost <schnouki@schnouki.net>
 
 pkgname=opendkim
 pkgver=2.9.2
-pkgrel=1
+pkgrel=2
 pkgdesc="An open source implementation of the DKIM sender authentication system. Based on a fork of dkim-milter."
 arch=(i686 x86_64)
 url="http://www.opendkim.org/"

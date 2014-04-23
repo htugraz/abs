@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65918 2012-02-22 13:38:20Z spupykin $
+# $Id: PKGBUILD 110072 2014-04-23 17:29:18Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=perl-sgmls
 pkgver=1.03ii
-pkgrel=4
+pkgrel=5
 pkgdesc="A Post-Processor for SGMLS and NSGMLS"
 arch=('any')
 url="http://search.cpan.org/dist/SGMLSpm"
@@ -14,15 +14,21 @@ options=('!emptydirs' 'docs')
 source=(http://www.cpan.org/authors/id/D/DM/DMEGG/SGMLSpm-$pkgver.tar.gz)
 md5sums=('5bcb197fd42e67d51c739b1414d514a7')
 
-build() {
+prepare() {
   cd  $srcdir/SGMLSpm
-
-  mkdir -p $pkgdir/usr/bin $pkgdir/usr/lib/perl5/vendor_perl $pkgdir/usr/share/doc/perl-sgmls
-
   patch Makefile <<EOF
 84a85
 > 	find \${HTMLDIR} -type l -exec rm -f {} \;
 EOF
+}
+
+package() {
+  cd  $srcdir/SGMLSpm
+
+  mkdir -p \
+    $pkgdir/usr/bin \
+    $pkgdir/usr/lib/perl5/vendor_perl/SGMLS \
+    $pkgdir/usr/share/doc/perl-sgmls
 
   make install install_html \
     BINDIR=$pkgdir/usr/bin \
