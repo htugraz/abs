@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 108956 2014-04-08 09:20:32Z spupykin $
+# $Id: PKGBUILD 110129 2014-04-24 14:27:49Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Allan Henriksen <allan.henriksen@gmail.com>
 
 pkgname=ipsec-tools
 pkgver=0.8.2
-pkgrel=1
+pkgrel=2
 pkgdesc="KAME IPSec tools ported to Linux"
 arch=('i686' 'x86_64')
 url="http://ipsec-tools.sourceforge.net/"
-depends=('readline' 'openssl' 'krb5')
+depends=('readline' 'openssl' 'krb5' 'flex')
 makedepends=('linux-headers')
 license=('GPL')
 options=('!makeflags')
