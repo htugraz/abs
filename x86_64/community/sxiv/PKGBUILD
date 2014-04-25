@@ -1,30 +1,23 @@
-# $Id: PKGBUILD 106175 2014-02-24 18:03:28Z bpiotrowski $
+# $Id: PKGBUILD 110167 2014-04-25 15:45:41Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 # Contributor: Bert Muennich <muennich at informatik.hu-berlin.de>
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
 
 pkgname=sxiv
-pkgver=1.1.1
-pkgrel=3
+pkgver=1.2
+pkgrel=1
 pkgdesc='Simple X Image Viewer'
 arch=('i686' 'x86_64')
 license=('GPL2')
 install=sxiv.install
 url='https://github.com/muennich/sxiv'
-depends=('libx11' 'xproto' 'imlib2' 'giflib' 'desktop-file-utils')
-source=(https://github.com/muennich/sxiv/archive/v$pkgver.tar.gz
-        config.h)
-md5sums=('786f647326bdb24b672519924928dfca'
-         '53729e7dfba3c12b26fc8359d56523a2')
-
-prepare() {
-  cp config.h sxiv-$pkgver
-}
+depends=('imlib2' 'desktop-file-utils')
+source=(https://github.com/muennich/sxiv/archive/v$pkgver.tar.gz)
+md5sums=('9b79d3c70693d9abbc66295cf6f281a0')
 
 build() {
-  cd sxiv-$pkgver
-  make
+  make -C sxiv-$pkgver
 }
 
 package() {
