@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 209125 2014-03-29 16:33:53Z dan $
+# $Id: PKGBUILD 211798 2014-04-26 17:07:49Z dan $
 # Maintainer: Dan McGee <dan@archlinux.org>
 # Contributor: Evan LeCompte <evanlec@gmail.com>
 
 pkgname=('munin' 'munin-node')
 pkgbase=munin
-pkgver=2.0.20
+pkgver=2.0.21
 pkgrel=1
 pkgdesc="A distributed monitoring/graphing tool"
 arch=('any')
@@ -76,7 +76,7 @@ package_munin-node() {
 	chmod 775 "$pkgdir/var/lib/munin/plugin-state"
 }
 
-md5sums=('08ba9c8a5b53b217eaac1c1fa592f3de'
+md5sums=('3bf802b0910d930a93351746aa717d3f'
          'fb3cc403e298ae6b73c280c4d3af7b49'
          'dc9c83aa2a278466fb475364462f4119'
          'eb2f1e6e746e85ce1e91111f40086be0'
