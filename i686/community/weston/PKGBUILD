@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 104875 2014-01-27 23:38:12Z seblu $
+# $Id: PKGBUILD 110377 2014-04-28 15:11:35Z jgc $
 # Maintainer: Sébastien Luttringer
 # Contributor: Joel Teichroeb <joel@teichroeb.net>
 
 pkgname=weston
 pkgver=1.4.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Reference implementation of a Wayland compositor'
 arch=('i686' 'x86_64')
 url='http://wayland.freedesktop.org'

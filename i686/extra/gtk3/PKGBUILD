@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 210499 2014-04-14 20:07:02Z jgc $
+# $Id: PKGBUILD 211871 2014-04-28 15:12:02Z jgc $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=gtk3
 pkgver=3.12.1
-pkgrel=1
+pkgrel=2
 pkgdesc="GObject-based multi-platform GUI toolkit (v3)"
 arch=(i686 x86_64)
 url="http://www.gtk.org/"

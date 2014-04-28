@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 109725 2014-04-18 11:48:49Z heftig $
+# $Id: PKGBUILD 110376 2014-04-28 15:11:34Z jgc $
 # Maintainer: Thomas Dziedzic < gostrc at gmail >
 # Contributor: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Joeny Ang <ang(dot)joeny(at)gmail(dot)com>
 
 pkgname=simple-scan
 pkgver=3.12.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Simple scanning utility'
 arch=('i686' 'x86_64')
 url='http://launchpad.net/simple-scan'

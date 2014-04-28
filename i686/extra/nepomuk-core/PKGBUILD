@@ -1,14 +1,15 @@
-# $Id: PKGBUILD 211500 2014-04-18 18:03:47Z andrea $
+# $Id: PKGBUILD 211858 2014-04-28 10:48:32Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=nepomuk-core
 pkgver=4.13.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Contains the central Nepomuk services like file indexing, file system monitoring, query, storage, client libraries"
 url="https://projects.kde.org/projects/kde/kdelibs/nepomuk-core"
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
-depends=('kdelibs' 'poppler-qt' 'taglib' 'ffmpeg' 'ebook-tools' 'kdegraphics-mobipocket' 'shared-desktop-ontologies')
+depends=('kdelibs' 'poppler-qt' 'taglib' 'ffmpeg' 'ebook-tools'
+         'kdegraphics-mobipocket' 'shared-desktop-ontologies' 'baloo')
 makedepends=('cmake' 'automoc4' 'doxygen')
 source=("http://download.kde.org/stable/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
 sha1sums=('44e65063138088be91f03c8bb7ff8be7cd255984')
