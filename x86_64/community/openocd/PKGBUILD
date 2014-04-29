@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 110348 2014-04-28 09:59:02Z spupykin $
+# $Id: PKGBUILD 110413 2014-04-29 11:44:51Z spupykin $
 # Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Matthias Bauch <matthias.bauch@gmail.com>
 # Contributor: Laszlo Papp <djszapi2 at gmail com>
@@ -6,7 +6,8 @@
 
 pkgname=openocd
 pkgver=0.8.0
-pkgrel=1
+epoch=1
+pkgrel=2
 pkgdesc='Debugging, in-system programming and boundary-scan testing for embedded target devices'
 arch=('i686' 'x86_64')
 url='http://openocd.berlios.de'

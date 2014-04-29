@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 101662 2013-11-29 20:55:41Z spupykin $
+# $Id: PKGBUILD 110411 2014-04-29 11:37:39Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -6,7 +6,7 @@
 # Contributor: Robert Emil Berge <filoktetes@linuxophic.org>
 
 pkgname=recoll
-pkgver=1.19.11_p1
+pkgver=1.19.12
 pkgrel=1
 pkgdesc="Full text search tool based on Xapian backend"
 arch=('i686' 'x86_64')
@@ -31,7 +31,7 @@ optdepends=('libxslt: for XML based formats (fb2,etc)'
 	    'aspell-en: English stemming support')
 install=recoll.install
 source=("http://www.lesbonscomptes.com/$pkgname/$pkgname-${pkgver/_/}.tar.gz")
-md5sums=('5d77a74cddba4e21f7f3bb06ad20a7ac')
+md5sums=('5f688d48a574c142bb7e9c6606b5c6f6')
 
 build() {
   cd "$srcdir/$pkgname-${pkgver/_/}"
