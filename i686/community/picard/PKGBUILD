@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 87401 2013-03-31 13:44:28Z bisson $
+# $Id: PKGBUILD 110442 2014-04-30 00:52:28Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 # Contributor: sysrq
 
 pkgname=picard
 pkgver=1.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Official MusicBrainz tagger'
 url='http://musicbrainz.org/doc/MusicBrainz_Picard'
 license=('GPL')
@@ -26,4 +26,5 @@ build() {
 package() {
 	cd "${srcdir}/picard-${pkgver}"
 	python2 setup.py install --root="${pkgdir}"
+	cp -r contrib/* "${pkgdir}/usr/lib/python2.7/site-packages/picard/plugins/"
 }

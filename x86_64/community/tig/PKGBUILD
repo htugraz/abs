@@ -4,7 +4,7 @@
 # Contributor: Nathan Jones <nathanj@insightbb.com>
 
 pkgname=tig
-pkgver=1.2.1
+pkgver=2.0.1
 pkgrel=1
 pkgdesc='Text-mode interface for Git.'
 depends=('git' 'ncurses')
@@ -12,13 +12,14 @@ makedepends=('asciidoc' 'xmlto')
 url='http://jonas.nitro.dk/tig/'
 license=('GPL')
 arch=('i686' 'x86_64')
+backup=('etc/tigrc')
 source=("http://jonas.nitro.dk/${pkgname}/releases/${pkgname}-${pkgver}.tar.gz")
-md5sums=('9dec2966d3d51f7d8b5b8d4a4b8d93eb')
+md5sums=('e0b3bc47b8c2c1e556ae953c0b30faab')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"
 
-  ./configure --prefix=/usr
+  ./configure --prefix=/usr --sysconfdir=/etc
   make
 }
 
@@ -26,6 +27,6 @@ package() {
   cd "$srcdir/$pkgname-$pkgver"
 
   make DESTDIR="$pkgdir" install install-doc-man
-  install -Dm0644 contrib/tigrc "$pkgdir/etc/tigrc.sample"
+
   install -Dm0644 contrib/tig-completion.bash "$pkgdir/usr/share/bash-completion/completions/tig"
 }
