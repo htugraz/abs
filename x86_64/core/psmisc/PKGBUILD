@@ -1,17 +1,23 @@
-# $Id: PKGBUILD 211632 2014-04-21 19:41:48Z eric $
+# $Id: PKGBUILD 211948 2014-05-02 02:38:12Z fyan $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=psmisc
 pkgver=22.21
-pkgrel=1
+pkgrel=2
 pkgdesc="Miscellaneous procfs tools"
 arch=('i686' 'x86_64')
 url="http://psmisc.sourceforge.net/index.html"
 license=('GPL')
 groups=('base')
 depends=('ncurses')
-source=(http://downloads.sourceforge.net/psmisc/${pkgname}-${pkgver}.tar.gz)
-sha1sums=('09fabbef4539b58b6b8738a73da3d21d5daa1a58')
+source=(http://downloads.sourceforge.net/psmisc/${pkgname}-${pkgver}.tar.gz psmisc-fuser.patch)
+sha1sums=('09fabbef4539b58b6b8738a73da3d21d5daa1a58'
+          'e739ad5b14ca836db5859f0755d8f2fc8e86de69')
+
+prepare() {
+  cd ${pkgname}-${pkgver}
+  patch -p1 -i ../psmisc-fuser.patch
+}
 
 build() {
   cd ${pkgname}-${pkgver}

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 109714 2014-04-18 07:34:15Z fyan $
+# $Id: PKGBUILD 110517 2014-05-02 09:17:36Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: monson <holymonson@gmail.com>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 # Contributor: David Manouchehri <david@davidmanouchehri.com>
 
 pkgname=cgminer
-pkgver=4.3.0
+pkgver=4.3.2
 #_pkgver=
 _pkgver=$pkgver
 pkgrel=1

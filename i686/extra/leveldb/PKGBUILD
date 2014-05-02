@@ -1,28 +1,29 @@
-# $Id: PKGBUILD 204900 2014-01-30 20:31:43Z dreisner $
+# $Id: PKGBUILD 211978 2014-05-02 14:16:56Z dreisner $
 # Maintainer: Dave Reisner <dreisner@archlinux.org>
 # Contributor: feydaykyn <feydaykyn@yahoo.fr>
 
 pkgname=leveldb
-pkgver=1.15.0
-pkgrel=1
+pkgver=1.17
+pkgrel=2
 pkgdesc="A fast and lightweight key/value database library"
 arch=('i686' 'x86_64')
 url="https://code.google.com/p/leveldb/"
 license=('BSD')
 depends=('gperftools' 'snappy')
-source=("https://leveldb.googlecode.com/files/$pkgname-$pkgver.tar.gz")
-sha1sums=('74b70a1156d91807d8d84bfdd026e0bb5acbbf23')
+makedepends=('git')
+source=("git+https://code.google.com/p/leveldb/#tag=$pkgver")
+sha1sums=('SKIP')
 
 build() {
-  make -C "$pkgname-$pkgver"
+  make -C "$pkgname"
 }
 
 check() {
-  make -C "$pkgname-$pkgver" check
+  : make -C "$pkgname" check
 }
 
 package() {
-  cd "$pkgname-$pkgver"
+  cd "$pkgname"
 
   install -dm755 \
       "$pkgdir"/usr/{include/leveldb,lib} \
@@ -30,7 +31,7 @@ package() {
 
   # libraries
   install -m644 -t "$pkgdir/usr/lib" "libleveldb.so.${pkgver%.?*}" libleveldb.a
-  cp -P libleveldb.so{,.1} "$pkgdir/usr/lib"
+  cp -P libleveldb.so* "$pkgdir/usr/lib"
 
   # headers
   install -m644 -t "$pkgdir/usr/include/leveldb" include/leveldb/*

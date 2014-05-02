@@ -1,5 +1,6 @@
-# $Id: PKGBUILD 105921 2014-02-19 10:26:16Z bpiotrowski $
-# Maintainer:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
+# $Id: PKGBUILD 110530 2014-05-02 15:49:31Z fyan $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
+# Contributor  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 # Contributor: James Campos <james.r.campos@gmail.com>
 # Contributor: BlackEagle < ike DOT devolder AT gmail DOT com >
@@ -8,7 +9,7 @@
 # Contributor: TIanyi Cui <tianyicui@gmail.com>
 
 pkgname=nodejs
-pkgver=0.10.26
+pkgver=0.10.28
 pkgrel=1
 pkgdesc='Evented I/O for V8 javascript'
 arch=('i686' 'x86_64')
@@ -16,10 +17,11 @@ url='http://nodejs.org/'
 license=('MIT')
 depends=('openssl')
 makedepends=('python2')
+optdepends=('python2: for node-gyp')
 checkdepends=('curl')
 options=('!emptydirs')
 source=(http://nodejs.org/dist/v$pkgver/node-v$pkgver.tar.gz)
-sha256sums=('ef5e4ea6f2689ed7f781355012b942a2347e0299da0804a58de8e6281c4b1daa')
+sha256sums=('abddc6441e0f208f6ed8a045e0293f713ea7f6dfb2d6a9a2024bf8b1b4617710')
 
 prepare() {
   cd node-v$pkgver

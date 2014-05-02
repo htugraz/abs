@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 100795 2013-11-11 03:40:00Z heftig $
+# $Id: PKGBUILD 110513 2014-05-02 08:44:02Z allan $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
@@ -8,8 +8,8 @@
 pkgbase=libtool-multilib
 pkgname=(libtool-multilib lib32-libltdl)
 pkgver=2.4.2
-_gccver=4.8.2
-pkgrel=12
+_gccver=4.9.0
+pkgrel=13
 pkgdesc="A generic library support script for multilib"
 arch=('x86_64')
 url="http://www.gnu.org/software/libtool"
