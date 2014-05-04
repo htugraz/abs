@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 89299 2013-04-28 16:52:20Z td123 $
+# $Id: PKGBUILD 110618 2014-05-04 13:54:57Z td123 $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contributor: Don Stewart <dons@galois.com>
 # Contributor: Lex Black <autumn-wind at web dot de>
@@ -7,17 +7,18 @@ pkgname=haskell-dlist
 pkgver=0.5
 _hkgname=dlist
 _licensefile=LICENSE
-pkgrel=24
+pkgrel=26
 pkgdesc="Differences lists"
 url="http://code.haskell.org/~dons/code/dlist/"
 license=("BSD3")
 arch=('i686' 'x86_64')
-makedepends=('ghc=7.6.3-1')
-depends=('ghc=7.6.3-1')
+makedepends=('ghc=7.8.2-2')
+depends=('ghc=7.8.2-2')
 options=('strip')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 sha256sums=('4780e5409eff55bbfdd7470ef802a087a04048c9cd5efe0482c82878292f19ea')
 install="${pkgname}.install"
+options=('staticlibs')
 
 build() {
     cd ${srcdir}/${_hkgname}-${pkgver}

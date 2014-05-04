@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 108169 2014-03-24 08:21:00Z spupykin $
+# $Id: PKGBUILD 110637 2014-05-04 13:55:16Z td123 $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=haskell-vector
 pkgver=0.10.9.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Efficient Arrays"
 url="http://code.haskell.org/vector"
 license=("custom:BSD3")

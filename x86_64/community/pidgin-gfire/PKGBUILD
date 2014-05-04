@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 99954 2013-10-31 02:40:14Z allan $
+# $Id: PKGBUILD 110576 2014-05-03 23:18:16Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Slash <demodevil5[at]yahoo[dot]com>
 # Contributor: LookTJ <jesus[dot]christ[dot]i[dot]love[at]gmail[dot]com>
 
 pkgname=pidgin-gfire
-pkgver=0.9.4
-pkgrel=4
+pkgver=0.9.5
+pkgrel=1
 pkgdesc="Gfire is an Plugin for the Pidgin IM client which allows you to connect the Xfire network."
 arch=('i686' 'x86_64')
 url="http://gfireproject.org/"
@@ -13,16 +13,15 @@ license=('GPL')
 depends=('glib2' 'pidgin' 'libnotify' 'gtk2')
 makedepends=('pkgconfig' 'intltool' 'libtool')
 source=("http://downloads.sourceforge.net/gfire/pidgin-gfire-$pkgver.tar.bz2" "gfire-libnotify.patch")
-md5sums=('7167828fd77200603a318afdd4d9ebd2'
+md5sums=('6ad6197b6b1a0d5d82d7267661431907'
          '5d6fc2b98837fbebba6bef2648699d5e')
 
 build() {
-    cd "$srcdir/pidgin-gfire-$pkgver"
-
-    patch -p0 -i ../gfire-libnotify.patch
-    sed "/gthread.h/d" -i src/gf_base.h
     ./autogen.sh
     ./configure --prefix=/usr --enable-libnotify
     make
+}
+
+package() {
     make DESTDIR="$pkgdir" install
 }
