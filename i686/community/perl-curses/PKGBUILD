@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 109110 2014-04-10 13:24:43Z fyan $
+# $Id: PKGBUILD 110686 2014-05-05 09:15:21Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 # Contributor: Francois Charette <firmicus@gmx.net>
 
 pkgname=perl-curses
-pkgver=1.29
+pkgver=1.31
 pkgrel=1
 pkgdesc="Character screen handling and windowing"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ license=('GPL' 'PerlArtistic')
 depends=('perl' 'ncurses')
 options=('!emptydirs')
 source=(http://www.cpan.org/authors/id/G/GI/GIRAFFED/Curses-$pkgver.tgz)
-md5sums=('236de0209223e40b458c55e5250da2b3')
+md5sums=('119aff0faaa9347ed32dad127c4a6707')
 
 build() {
   cd  $srcdir/Curses-$pkgver

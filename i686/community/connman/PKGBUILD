@@ -1,16 +1,15 @@
-#$Id: PKGBUILD 109454 2014-04-14 22:41:47Z dwallace $
+#$Id: PKGBUILD 110674 2014-05-04 22:17:22Z dwallace $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contributor: Lucas De Marchi <lucas.de.marchi@gmail.com>
 
 pkgname=connman
 pkgver=1.23
-pkgrel=1
+pkgrel=2
 pkgdesc="Wireless LAN network manager"
 url="http://connman.net/"
 arch=('i686' 'x86_64')
 license=('GPL2')
 depends=('dbus-core' 'iptables' 'gnutls' 'glib2')
-conflicts=('openresolv')
 optdepends=('bluez: Support for Bluetooth devices'
             'wpa_supplicant: For WiFi devices'
             'pptpclient: for ppp support')
