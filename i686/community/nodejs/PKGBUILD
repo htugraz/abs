@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 110530 2014-05-02 15:49:31Z fyan $
+# $Id: PKGBUILD 110758 2014-05-06 12:26:13Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
@@ -10,12 +10,13 @@
 
 pkgname=nodejs
 pkgver=0.10.28
-pkgrel=1
+pkgrel=3
 pkgdesc='Evented I/O for V8 javascript'
 arch=('i686' 'x86_64')
 url='http://nodejs.org/'
 license=('MIT')
 depends=('openssl')
+provides=('nodejs-node-gyp')
 makedepends=('python2')
 optdepends=('python2: for node-gyp')
 checkdepends=('curl')
@@ -48,7 +49,7 @@ build() {
 
 check() {
   cd node-v$pkgver
-  make test || true
+  make test || :
 }
 
 package() {
@@ -63,6 +64,9 @@ package() {
 
   install -D -m644 LICENSE \
     "$pkgdir"/usr/share/licenses/nodejs/LICENSE
+
+  # Why the hell wasn't this installed?! FS#40221
+  ln -s /usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js "$pkgdir"/usr/bin/node-gyp
 }
 
 # vim:set ts=2 sw=2 et:

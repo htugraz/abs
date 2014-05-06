@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 109651 2014-04-17 11:14:59Z fyan $
+# $Id: PKGBUILD 110768 2014-05-06 17:17:11Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgname=lwqq
-pkgver=0.2.4.20140417
-#_gitver="tag=$pkgver"
-_gitver='commit=afe08eef972aaabff5c043a72af0b63e2bb23f2d'
+pkgver=0.3.0
+_gitver="tag=v$pkgver"
+#_gitver='commit=afe08eef972aaabff5c043a72af0b63e2bb23f2d'
 pkgrel=1
 pkgdesc="A library for webqq protocol"
 arch=('i686' 'x86_64')
