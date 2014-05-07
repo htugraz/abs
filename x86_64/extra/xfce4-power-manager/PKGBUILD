@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 211804 2014-04-27 09:35:08Z foutrelis $
+# $Id: PKGBUILD 212098 2014-05-07 09:06:59Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Tobias Kieslich <tobias funnychar archlinux.org>
 
 pkgname=xfce4-power-manager
-pkgver=1.2.0.198.g76d1f4f
+pkgver=1.2.0.212.g75107db
 pkgrel=1
 pkgdesc="Power manager for Xfce desktop"
 arch=('i686' 'x86_64')

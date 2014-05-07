@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 212064 2014-05-06 08:27:42Z bpiotrowski $
+# $Id: PKGBUILD 212100 2014-05-07 11:11:14Z bpiotrowski $
 # Maintainer:  Ionut Biru <ibiru@archlinux.org>
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
@@ -6,7 +6,7 @@
 
 pkgname=ffmpeg
 pkgver=2.2.2
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc='Complete and free Internet live audio and video broadcasting solution'
 arch=('i686' 'x86_64')
