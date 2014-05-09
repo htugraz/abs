@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 110806 2014-05-07 14:28:43Z spupykin $
+# $Id: PKGBUILD 110871 2014-05-08 22:31:11Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Stefan Husmann <stefan-husmann@t-online.de>
 # Contributor: Giovanni Scafora <linuxmania@gmail.com>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=qcad
-pkgver=3.4.7.1
+pkgver=3.5.0.0
 pkgrel=1
 pkgdesc="A 2D CAD package based upon Qt"
 arch=('i686' 'x86_64')
@@ -16,7 +16,7 @@ makedepends=('glu')
 options=('libtool')
 source=($pkgname-$pkgver.tar.gz::https://github.com/qcad/qcad/archive/v${pkgver}.tar.gz
         QCad.desktop)
-md5sums=('b1ac7f138407369089218ce02ef304ed'
+md5sums=('9a7480b75e25c43c8f5d2ca3e79b90b1'
          '84f189dd152e7614a1265659dac6222d')
 
 prepare() {

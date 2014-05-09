@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 101793 2013-12-01 09:52:06Z andyrtr $
+# $Id: PKGBUILD 110916 2014-05-09 14:55:05Z andyrtr $
 # Contributor: Paulo Matias <matiasΘarchlinux-br·org>
 # Maintainer: Jelle van der Waa <jelle@vdwaa.nl>
 
 pkgname=pdf2djvu
 pkgver=0.7.17
-pkgrel=2
+pkgrel=3
 pkgdesc="Creates DjVu files from PDF files"
 arch=('i686' 'x86_64')
 url="http://pdf2djvu.googlecode.com"
