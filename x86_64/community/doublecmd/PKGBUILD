@@ -1,5 +1,5 @@
 # vim:set ft=sh:
-# $Id: PKGBUILD 108143 2014-03-23 19:45:43Z idevolder $
+# $Id: PKGBUILD 110953 2014-05-10 14:08:22Z idevolder $
 # Maintainer: BlackIkeEagle <ike DOT devolder AT gmail DOT com>
 # Contributor: (sirocco AT ngs.ru)
 
@@ -7,7 +7,7 @@ pkgbase=doublecmd
 pkgname=('doublecmd-gtk2' 'doublecmd-qt')
 pkgver=0.5.9
 _helpver=0.5.5
-pkgrel=1
+pkgrel=2
 url="http://doublecmd.sourceforge.net/"
 arch=('i686' 'x86_64')
 license=('GPL')

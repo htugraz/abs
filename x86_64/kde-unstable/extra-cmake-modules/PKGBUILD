@@ -1,0 +1,33 @@
+# $Id: PKGBUILD 212200 2014-05-10 18:29:29Z andrea $
+# Maintainer: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=extra-cmake-modules
+pkgver=0.0.13
+_pkgver=4.99.0
+pkgrel=2
+pkgdesc='Extra CMake modules'
+arch=('any')
+url='https://projects.kde.org/projects/kdesupport/extra-cmake-modules'
+license=('LGPL')
+depends=('cmake')
+makedepends=('python-sphinx') # qt5-tools for QtHelp pages
+source=("http://download.kde.org/unstable/frameworks/${_pkgver}/${pkgname}-${pkgver}.tar.xz")
+md5sums=('c76fe1124e588fd518b2a2423aa64753')
+
+prepare() {
+  mkdir -p build
+}
+
+build() {
+  cd build
+  cmake ../${pkgname}-${pkgver} \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DBUILD_HTML_DOCS=OFF
+  make
+}
+
+package() {
+  cd build
+  make DESTDIR="${pkgdir}" install
+}
