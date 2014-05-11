@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 99816 2013-10-31 01:53:02Z allan $
+# $Id: PKGBUILD 110973 2014-05-11 14:44:29Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 # Contributor: Vitaliy Berdinskikh ur6lad[at]i.ua
 
@@ -15,7 +15,8 @@ makedepends=('java-environment')
 provides=("$_pkgname=$pkgver")
 replaces=("$_pkgname")
 install=$_pkgname.install
-source=(http://rxtx.qbang.org/pub/$_pkgname/$_pkgname-$pkgver.zip
+# Upstream gone: http://rxtx.qbang.org/pub/$_pkgname/$_pkgname-$pkgver.zip
+source=(http://pkgbuild.com/~bgyorgy/sources/$_pkgname-$pkgver.zip
         utsrelease.patch
         rxtx-2.2-lock.patch
         rxtx-2.2-fhs_lock.patch

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 208592 2014-03-24 15:32:22Z bpiotrowski $
+# $Id: PKGBUILD 212230 2014-05-11 10:00:41Z bpiotrowski $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 
 pkgname=libva
-pkgver=1.3.0
+pkgver=1.3.1
 pkgrel=1
 pkgdesc='Video Acceleration (VA) API for Linux'
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ makedepends=('mesa')
 optdepends=('libva-vdpau-driver: vdpau back-end for nvidia'
             'libva-intel-driver: back-end for intel cards')
 source=(http://www.freedesktop.org/software/vaapi/releases/$pkgname/$pkgname-$pkgver.tar.bz2)
-md5sums=('471bef887e92437914a7e1f799995570')
+md5sums=('eb4db967f068854444b597071c66b480')
 
 build() {
   cd $pkgname-$pkgver
