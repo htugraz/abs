@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 195973 2013-10-06 19:11:38Z eric $
+# $Id: PKGBUILD 212304 2014-05-12 15:12:06Z fyan $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Contributor: György Balló <ballogy@freestart.hu>
 pkgname=flickrnet
-pkgver=3.7.0.0
-_pkgver=103861
-pkgrel=1
+pkgver=3.10.0
+_pkgver=105368
+pkgrel=2
 pkgdesc="Flickr.Net API Library"
 arch=('any')
 url="http://www.codeplex.com/FlickrNet"
