@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 106330 2014-02-28 07:09:33Z fyan $
+# $Id: PKGBUILD 111139 2014-05-14 16:45:50Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: archtux <antonio dot arias99999 at gmail dot com>
 
 pkgname=xnoise
 pkgver=0.2.21
-pkgrel=1
+pkgrel=2
 pkgdesc="Media player with a slick GUI, great speed and lots of features."
 arch=('i686' 'x86_64')
 url="http://www.xnoise-media-player.com/"

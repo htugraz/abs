@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 90093 2013-05-06 19:39:40Z foutrelis $
+# $Id: PKGBUILD 111148 2014-05-14 18:33:17Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Adrián Chaves Fernández, aka Gallaecio <adriyetichaves@gmail.com>
 # Contributor: Shahar Weiss <sweiss4@gmx.net> (build() code from his TORCS' PKGBUILD)
 pkgname=speed-dreams
 pkgver=2.0.0
 _pkgver=2.0.0-r4687
-pkgrel=3
+pkgrel=4
 pkgdesc="A racing simulator with rich graphics and physics"
 arch=('i686' 'x86_64')
 url="http://speed-dreams.sourceforge.net/"
