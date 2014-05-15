@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 212004 2014-05-04 13:54:04Z td123 $
+# $Id: PKGBUILD 212771 2014-05-15 04:27:19Z td123 $
 # Maintainer: Thomas Dziedzic <gostrc@gmail.com>
 # Maintainer: Vesa Kaihlavirta <vesa@archlinux.org>
 # Special note for devs looking to upgrade this package:
@@ -11,7 +11,7 @@
 
 pkgname=ghc
 pkgver=7.8.2
-pkgrel=3
+pkgrel=4
 pkgdesc='The Glasgow Haskell Compiler'
 arch=('i686' 'x86_64')
 url='http://www.haskell.org/ghc/'

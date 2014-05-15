@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 186737 2013-05-30 22:20:23Z eric $
+# $Id: PKGBUILD 212775 2014-05-15 05:09:11Z fyan $
 # Maintainer: Justin Davis (juster) <jrcd83@gmail.com>
 
 pkgname=perl-net-server
-pkgver=2.007
+pkgver=2.008
 pkgrel=1
 pkgdesc='Extensible, general Perl server engine'
 arch=('any')
@@ -11,7 +11,7 @@ license=('PerlArtistic' 'GPL')
 depends=('perl')
 options=('!emptydirs')
 source=("http://search.cpan.org/CPAN/authors/id/R/RH/RHANDOM/Net-Server-$pkgver.tar.gz")
-md5sums=('b256c35a18caecc8fce9e6e1f2825658')
+md5sums=('85d488bc800f582839dd924ffa3f0d26')
 
 build() {
   cd Net-Server-$pkgver

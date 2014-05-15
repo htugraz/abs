@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 110688 2014-05-05 09:15:39Z spupykin $
+# $Id: PKGBUILD 111183 2014-05-15 14:14:48Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-datetime
-pkgver=1.09
+pkgver=1.10
 pkgrel=1
 pkgdesc="A complete, easy to use date and time object"
 arch=('i686' 'x86_64')
@@ -15,7 +15,7 @@ LC_NUMERIC=C
 provides=("perl-datetime=`printf %.4f $pkgver`")
 options=('!emptydirs')
 source=(http://www.cpan.org/authors/id/D/DR/DROLSKY/DateTime-$pkgver.tar.gz)
-md5sums=('5bd3b4145ea08df1af71f2e8979ca178')
+md5sums=('2dccc83565dfffef50611acaa50f0426')
 
 build() {
   cd  $srcdir/DateTime-$pkgver

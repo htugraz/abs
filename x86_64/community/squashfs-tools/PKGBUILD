@@ -1,19 +1,19 @@
-# $Id: PKGBUILD 91959 2013-05-30 09:44:39Z spupykin $
+# $Id: PKGBUILD 111215 2014-05-15 14:18:32Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Aaron Griffin <aaron@archlinux.org>
 # Original TU: Jeff Mickey <j@codemac.net>
 # Contributor: ciccio.a
 
 pkgname=squashfs-tools
-pkgver=4.2
-pkgrel=4
+pkgver=4.3
+pkgrel=1
 pkgdesc="Tools for squashfs, a highly compressed read-only filesystem for Linux."
 url="http://squashfs.sourceforge.net"
 license=("GPL")
 arch=('i686' 'x86_64')
 depends=('zlib' 'lzo2' 'xz')
 source=("http://downloads.sourceforge.net/sourceforge/squashfs/squashfs${pkgver}.tar.gz")
-md5sums=('1b7a781fb4cf8938842279bd3e8ee852')
+md5sums=('d92ab59aabf5173f2a59089531e30dbf')
 
 build() {
     cd ${srcdir}/squashfs${pkgver}/${pkgname}

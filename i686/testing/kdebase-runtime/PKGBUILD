@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 212441 2014-05-14 19:51:49Z svenstaro $
+# $Id: PKGBUILD 212840 2014-05-15 15:47:34Z tpowa $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=kdebase-runtime
 pkgver=4.13.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Plugins and applications necessary for the running of KDE applications"
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/kde-runtime'
