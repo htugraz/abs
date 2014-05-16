@@ -1,25 +1,24 @@
-# $Id: PKGBUILD 194663 2013-09-20 17:36:01Z eric $
+# $Id: PKGBUILD 212864 2014-05-15 22:57:17Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=mutagen
-pkgver=1.22
+pkgver=1.23
 pkgrel=1
 pkgdesc="An audio metadata tag reader and writer"
 arch=('any')
 url="http://code.google.com/p/mutagen/"
 license=('GPL2')
 depends=('python2')
-source=(http://mutagen.googlecode.com/files/${pkgname}-${pkgver}.tar.gz{,.sig})
-sha1sums=('4338be32a7fcdbc9063ce58277c144a143a856be'
-          'SKIP')
+source=(https://bitbucket.org/lazka/mutagen/downloads/${pkgname}-${pkgver}.tar.gz)
+sha1sums=('be72275ecded3bf41da5e44234d075deb71f5f62')
 
 check() {
-  cd "${srcdir}/${pkgname}-${pkgver}"
+  cd ${pkgname}-${pkgver}
   LANG=en_US.UTF8 python2 setup.py test
 }
 
 package() {
-  cd "${srcdir}/${pkgname}-${pkgver}"
+  cd ${pkgname}-${pkgver}
   python2 setup.py install --root="${pkgdir}"
   install -d "${pkgdir}/usr/bin"
   install -m755 tools/* "${pkgdir}/usr/bin"

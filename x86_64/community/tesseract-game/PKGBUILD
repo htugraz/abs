@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 111260 2014-05-15 21:20:00Z arodseth $
+# $Id: PKGBUILD 111267 2014-05-15 22:21:25Z arodseth $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: portals <portals at riseup.net>
 # Contributor: novemberist
@@ -22,7 +22,7 @@ md5sums=('SKIP'
          'ab00bafb80c1c7764cba8f51120d4a9a')
 
 prepare() {
-  gendesk -n -f --pkgname tesseract --pkgdesc "$pkgdesc"
+  gendesk -f -n --pkgname tesseract --pkgdesc "$pkgdesc" --exec tesseract-game
   convert -transparent white -resize 48x48 tesseract_large.png tesseract.png 2> /dev/null
 }
 

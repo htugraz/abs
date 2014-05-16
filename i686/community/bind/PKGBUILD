@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 110960 2014-05-11 00:59:07Z seblu $
+# $Id: PKGBUILD 111270 2014-05-15 22:26:04Z seblu $
 # Maintainer: Sébastien Luttringer
 # Contributor: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
@@ -7,7 +7,7 @@
 pkgname=bind
 _pkgver=9.10.0-P1
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc='The ISC BIND nameserver'
 url='http://www.isc.org/software/bind/'
 license=('custom:ISC')
