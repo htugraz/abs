@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 111270 2014-05-15 22:26:04Z seblu $
+# $Id: PKGBUILD 111392 2014-05-17 21:38:15Z seblu $
 # Maintainer: Sébastien Luttringer
 # Contributor: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
@@ -7,7 +7,7 @@
 pkgname=bind
 _pkgver=9.10.0-P1
 pkgver=${_pkgver//-/.}
-pkgrel=2
+pkgrel=4
 pkgdesc='The ISC BIND nameserver'
 url='http://www.isc.org/software/bind/'
 license=('custom:ISC')
@@ -47,6 +47,8 @@ prepare() {
 
 build() {
   cd bind-$_pkgver
+  # for gcc 4.8 rebuild
+  export CFLAGS="-march=${CARCH/_/-} -mtune=generic -O2 -pipe -fstack-protector --param=ssp-buffer-size=4"
   ./configure \
     --prefix=/usr \
     --sysconfdir=/etc \
