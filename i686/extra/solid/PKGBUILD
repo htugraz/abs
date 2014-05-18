@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 212962 2014-05-16 22:32:04Z andrea $
+# $Id: PKGBUILD 213077 2014-05-18 19:06:25Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=solid
 pkgver=4.99.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Solid'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/solid'
@@ -24,6 +24,7 @@ build() {
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_INSTALL_DIR=lib \
+    -DQML_INSTALL_DIR=lib/qt/qml \
     -DECM_MKSPECS_INSTALL_DIR=/usr/share/qt/mkspecs/modules \
     -DBUILD_TESTING=OFF
   make

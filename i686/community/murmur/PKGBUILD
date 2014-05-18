@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 105352 2014-02-05 20:05:30Z bluewind $
+# $Id: PKGBUILD 111408 2014-05-18 11:46:04Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Otto Allmendinger <otto.allmendinger@googlemail.com>
 # Contributor: Malte Rabenseifner <malte@zearan.de> 
 
 pkgname=murmur
-pkgver=1.2.5
+pkgver=1.2.6
 pkgrel=1
 pkgdesc="The voice chat application server for Mumble"
 arch=('i686' 'x86_64')
@@ -17,7 +17,7 @@ install="murmur.install"
 source=("http://downloads.sourceforge.net/mumble/mumble-$pkgver.tar.gz"
         "murmur.dbus.conf"
         "murmur.service")
-md5sums=('084ca44252bd5356b68af555f81ba6f6'
+md5sums=('32b37ff426863d7abeb1b7c1938652ff'
          'eddea4cdbd0bde4b960a67e16b5d5478'
          'd27a9adcd7561859e7b033046729bc0e')
 

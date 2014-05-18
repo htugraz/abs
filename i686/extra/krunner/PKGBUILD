@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 213028 2014-05-17 12:57:55Z andrea $
+# $Id: PKGBUILD 213073 2014-05-18 19:02:30Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=krunner
 pkgver=4.99.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Framework for providing different actions given a string query'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/krunner'
@@ -24,6 +24,7 @@ build() {
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_INSTALL_DIR=lib \
+    -DQML_INSTALL_DIR=lib/qt/qml \
     -DECM_MKSPECS_INSTALL_DIR=/usr/share/qt/mkspecs/modules \
     -DBUILD_TESTING=OFF
   make

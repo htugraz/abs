@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 110099 2014-04-24 04:49:29Z eric $
+# $Id: PKGBUILD 111404 2014-05-18 05:01:18Z fyan $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Felipe Hommen <felibank at gmail dot com>
 # Contributor: moostik <mooostik_at_gmail.com>
 
 pkgname=geogebra
-pkgver=4.4.29.0
+pkgver=4.4.35.0
 pkgrel=1
 pkgdesc='Dynamic mathematics software with interactive graphics, algebra and spreadsheet'
 arch=('any')
@@ -14,7 +14,7 @@ depends=('java-runtime' 'shared-mime-info' 'hicolor-icon-theme' 'xdg-utils'
          'desktop-file-utils' 'gsl')
 install=geogebra.install
 source=(http://download.geogebra.org/installers/4.4/GeoGebra-Linux-Installer-$pkgver.tar.gz)
-md5sums=('19a46049dce7af6f8cbc4edbf069b037')
+md5sums=('0f3890b29ea6d7cbed0dab95805054e4')
 
 package() {
   install -dm755 "$pkgdir"/usr/bin \
