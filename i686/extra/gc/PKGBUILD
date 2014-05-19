@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 206602 2014-03-03 07:28:53Z jgc $
+# $Id: PKGBUILD 213308 2014-05-19 16:09:54Z anatolik $
 # Maintainer: Daniel Isenmann <daniel [at] archlinux.org>
 # Contributor: dorphell <dorphell@gmx.net>
 
 pkgname=gc
 pkgver=7.4.0
-pkgrel=1
+pkgrel=3
 pkgdesc="A garbage collector for C and C++"
 arch=('i686' 'x86_64')
 url="http://www.hboehm.info/gc/"
@@ -23,6 +23,11 @@ build() {
   autoreconf -fi
   ./configure --prefix=/usr --enable-cplusplus --disable-static
   make
+}
+
+check() {
+  cd ${pkgname}-${pkgver}
+  make check
 }
 
 package() {

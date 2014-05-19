@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 76643 2012-09-25 15:23:38Z spupykin $
+# $Id: PKGBUILD 111484 2014-05-19 09:52:07Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
-#$Id: PKGBUILD 76643 2012-09-25 15:23:38Z spupykin $
+#$Id: PKGBUILD 111484 2014-05-19 09:52:07Z spupykin $
 # Maintainer: JJDaNiMoTh <jjdanimoth.aur@gmail.com>
 # Contributor: zlowly <zlowly [at] archlinux.org>
 
 pkgname=wqy-zenhei
 pkgver=0.9.45
-pkgrel=3
+pkgrel=4
 pkgdesc="A Hei Ti Style (sans-serif) Chinese Outline Font."
 arch=('any')
 license=('GPL2' 'custom:"font embedding exception"')
@@ -18,7 +18,7 @@ source=("http://downloads.sourceforge.net/project/wqy/wqy-zenhei/$pkgver%20%28Fi
 md5sums=('4c6c3f4e902dd5ee0a121e8c41d040bd'
          '1cdbb5dd5ea90faf48cf1ba61077da15')
 
-build() {
+package() {
   cd $srcdir/$pkgname
 
   patch -p0 44-wqy-zenhei.conf <$srcdir/44-wqy-zenhei.conf.diff

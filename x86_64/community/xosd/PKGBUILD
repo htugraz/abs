@@ -1,17 +1,15 @@
-# $Id: PKGBUILD 100303 2013-11-02 08:52:28Z spupykin $
+# $Id: PKGBUILD 111494 2014-05-19 10:10:09Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 
 pkgname=xosd
 pkgver=2.2.14
-pkgrel=7
+pkgrel=8
 pkgdesc="Displays text on your screen. On-Screen-Display-libs for some tools"
 arch=('i686' 'x86_64')
 license=('GPL2')
 url="http://www.ignavus.net/software.html"
 depends=('libxt' 'libxinerama' 'sh')
-makedepends=('xmms' 'gdk-pixbuf')
-optdepends=('gdk-pixbuf: for using the xmms plugin')
 source=("http://downloads.sourceforge.net/libxosd/${pkgname}-${pkgver}.tar.gz"
 	"http://ftp.de.debian.org/debian/pool/main/x/xosd/xosd_$pkgver-2.debian.tar.gz")
 md5sums=('4b349fe930e4eee2f504d6c02673e24d'

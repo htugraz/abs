@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 211362 2014-04-18 18:01:44Z andrea $
+# $Id: PKGBUILD 213169 2014-05-19 15:00:59Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkomparediff2
-pkgver=4.13.0
+pkgver=4.13.1
 pkgrel=1
 pkgdesc="Library to compare files and strings"
 url='https://projects.kde.org/projects/kde/kdesdk/libkomparediff2'
@@ -11,7 +11,7 @@ license=('GPL' 'LGPL' 'FDL')
 depends=('kdelibs')
 makedepends=('cmake' 'automoc4')
 source=("http://download.kde.org/stable/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
-sha1sums=('6debc3b9e8244a5ce90a2d3f3e704d10a74e84d3')
+sha1sums=('a22bfd9c28cb68f3d2fd5fb65f72dd19060aaf53')
 
 prepare() {
   mkdir build

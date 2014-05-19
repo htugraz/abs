@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 111449 2014-05-18 18:02:57Z arodseth $
+# $Id: PKGBUILD 111522 2014-05-19 14:32:47Z arodseth $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Kaiting Chen <kaitocracy@gmail.com>
 # Contributor: Gergely Imreh <imrehgATgmailDOTcom>
@@ -6,7 +6,7 @@
 
 pkgname=hwinfo
 pkgver=21.4.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Hardware detection tool from openSUSE'
 arch=('x86_64' 'i686')
 url='http://download.opensuse.org/source/factory/repo/oss/suse/src/'
@@ -16,7 +16,7 @@ makedepends=('sysfsutils' 'rpmextract' 'flex' 'aria2')
 options=('!emptydirs')
 source=("$pkgname.meta4::http://download.opensuse.org/source/factory/repo/oss/suse/src/$pkgname-${pkgver%.*.*}-${pkgver#*.*.}.src.rpm"
         'custom_ioctl.patch')
-sha256sums=('69abbeb2e53268fcf675fea990bb6703dc3031235c130605bae853b898b59205'
+sha256sums=('SKIP'
             '6e83b50aa34f31db5fe6de938402e7c4dda6ffa9ffe1346c076e4779018fcf1d')
 
 prepare() {

@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 211409 2014-04-18 18:02:24Z andrea $
+# $Id: PKGBUILD 213216 2014-05-19 15:02:18Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kdiamond
-pkgver=4.13.0
+pkgver=4.13.1
 pkgrel=1
 pkgdesc="A single player puzzle game"
 url="http://kde.org/applications/games/kdiamond/"
@@ -13,7 +13,7 @@ depends=('kdebase-runtime' 'libkdegames')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/${pkgver}/src/kdiamond-${pkgver}.tar.xz")
-sha1sums=('0c1e87c98c62a463d2f0e019defd9ebdffe9eab3')
+sha1sums=('2e1fb1544992d6d40bd0b4e2c68a33855c684191')
 
 build() {
   mkdir build

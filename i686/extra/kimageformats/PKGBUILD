@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 212941 2014-05-16 22:31:39Z andrea $
+# $Id: PKGBUILD 213138 2014-05-19 14:16:09Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kimageformats
 pkgver=4.99.0
-pkgrel=1
+pkgrel=2
 pkgdesc='KImageFormats'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kimageformats'

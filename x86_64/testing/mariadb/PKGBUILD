@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 212404 2014-05-14 08:59:37Z foutrelis $
+# $Id: PKGBUILD 213306 2014-05-19 15:35:13Z bpiotrowski $
 # Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 
 pkgbase=mariadb
 pkgname=('libmariadbclient' 'mariadb-clients' 'mytop' 'mariadb')
 pkgver=10.0.11
 _pkgver=${pkgver/.a/a}
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 license=('GPL')
 url='http://mariadb.org/'
@@ -80,7 +80,6 @@ package_libmariadbclient() {
   depends=('openssl' 'libaio' 'zlib' 'pcre')
   conflicts=('libmysqlclient')
   provides=("libmysqlclient=$pkgver")
-  options=('staticlibs')
 
   cd build
   for dir in include libmysql libmysqld libservices; do

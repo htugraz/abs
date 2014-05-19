@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 204566 2014-01-22 23:15:09Z heftig $
+# $Id: PKGBUILD 213117 2014-05-19 00:27:36Z eric $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 # Contributor: Douglas Soares de Andrade <douglas@archlinux.org>
 
 pkgname=meld
-pkgver=1.8.4
+pkgver=1.8.5
 pkgrel=1
 pkgdesc='Visual diff and merge tool'
 url='http://meldmerge.org/'
@@ -16,7 +16,7 @@ optdepends=('pygtksourceview2: syntax highlighting'
             'python2-dbus: open a new tab in an already running instance'
             'python2-gconf: gnome integration')
 source=("http://ftp.gnome.org/pub/gnome/sources/${pkgname}/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-sha1sums=('4d0b87a367c0a0ee8bb0403cfb366ebe92b10418')
+sha1sums=('a1f01bc68820c7e35c374dfb1923ed20ac28e603')
 
 install=install
 options=('!emptydirs')

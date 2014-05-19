@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 183283 2013-04-20 16:41:16Z heftig $
+# $Id: PKGBUILD 213129 2014-05-19 14:15:59Z svenstaro $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=fyre
 pkgver=1.0.1
-pkgrel=7
+pkgrel=8
 pkgdesc="Rendering of the Peter de Jong map"
 arch=('i686' 'x86_64')
 url="http://fyre.navi.cx/"

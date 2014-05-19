@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 211348 2014-04-18 18:01:32Z andrea $
+# $Id: PKGBUILD 213155 2014-05-19 15:00:45Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdebindings-qtruby
-pkgver=4.13.0
+pkgver=4.13.1
 pkgrel=1
 pkgdesc="Ruby bindings for the Qt libraries"
 url="https://projects.kde.org/projects/kde/kdebindings/ruby/qtruby"
@@ -13,7 +13,7 @@ depends=('kdebindings-smokeqt' 'ruby')
 makedepends=('cmake' 'automoc4' 'kdebindings-smokegen')
 conflicts=('kdebindings-ruby')
 source=("http://download.kde.org/stable/${pkgver}/src/qtruby-${pkgver}.tar.xz")
-sha1sums=('65951cfb0688c51ebb4cbc228ce5579727d1dc2a')
+sha1sums=('c046de707e352beadfe531b8daea7ad34a36138b')
 
 prepare() {
   mkdir build

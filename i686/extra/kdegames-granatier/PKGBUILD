@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 211401 2014-04-18 18:02:17Z andrea $
+# $Id: PKGBUILD 213208 2014-05-19 15:02:00Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-granatier
-pkgver=4.13.0
+pkgver=4.13.1
 pkgrel=1
 pkgdesc="A clone of the classic Bomberman game"
 url="http://kde.org/applications/games/granatier/"
@@ -13,7 +13,7 @@ depends=('kdebase-runtime' 'libkdegames')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/${pkgver}/src/granatier-${pkgver}.tar.xz")
-sha1sums=('616c9a43a4b3f5eb832864a56cec453fff437a69')
+sha1sums=('d0f77f14076fd6883981dac33e69bd429f3c457a')
 
 build() {
   mkdir build

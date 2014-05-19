@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 109379 2014-04-14 09:42:49Z spupykin $
+# $Id: PKGBUILD 111501 2014-05-19 10:48:21Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Jose Negron <josenj.arch@mailnull.net>
 
 pkgname=sdcc
 pkgver=3.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Retargettable ANSI C compiler (Intel 8051, Maxim 80DS390, Zilog Z80 and the Motorola 68HC08)"
 arch=('i686' 'x86_64')
 license=('GPL')
@@ -26,7 +26,8 @@ build() {
   ./configure \
 	--prefix=/usr \
 	--includedir=/usr/include/sdcc \
-	--libdir=/usr/lib/sdcc
+	--libdir=/usr/lib/sdcc \
+	--disable-werror
   make
 }
 

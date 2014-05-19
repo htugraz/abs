@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 203053 2014-01-02 22:35:26Z schiv $
+# $Id: PKGBUILD 213135 2014-05-19 14:16:07Z svenstaro $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 
@@ -6,7 +6,7 @@ pkgbase=opencv
 pkgname=('opencv' 'opencv-samples')
 _realname=OpenCV
 pkgver=2.4.8
-pkgrel=1
+pkgrel=2
 pkgdesc="Open Source Computer Vision Library"
 arch=('i686' 'x86_64')
 license=('BSD')

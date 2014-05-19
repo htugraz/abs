@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 211456 2014-04-18 18:03:05Z andrea $
+# $Id: PKGBUILD 213263 2014-05-19 15:03:34Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-filesharing
-pkgver=4.13.0
+pkgver=4.13.1
 pkgrel=1
 pkgdesc='Properties dialog plugin to share a directory with the local network'
 url='https://projects.kde.org/projects/kde/kdenetwork/kdenetwork-filesharing'
@@ -13,7 +13,7 @@ depends=('kdebase-runtime' 'smbclient')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/${pkgver}/src/kdenetwork-filesharing-${pkgver}.tar.xz")
-sha1sums=('2c1cd93e5f147726d2676549c1a5df8b7ac8eeb6')
+sha1sums=('7524180540dda6a770eb8471f87fb59b224ae5b1')
 
 build() {
   mkdir build
