@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 111480 2014-05-19 09:51:28Z spupykin $
+# $Id: PKGBUILD 111559 2014-05-20 11:21:42Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Jeff Mickey <jeff@archlinux.org>
 # Contributor: Steve Sansom <snsansom@gmail.com>
 
 pkgname=units
 pkgver=2.11
-pkgrel=2
+pkgrel=3
 pkgdesc="converts between different units"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/units/units.html"
-depends=('readline' 'python')
+depends=('readline' 'python' 'python-unidecode')
 license=("GPL")
 options=('!makeflags')
 install=units.install
