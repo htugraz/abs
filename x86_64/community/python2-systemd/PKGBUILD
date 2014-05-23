@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 108647 2014-03-31 04:16:54Z dwallace $
+# $Id: PKGBUILD 111765 2014-05-23 14:47:58Z dwallace $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com
 pkgname=python2-systemd
 _pkgname=systemd
 pkgver=212
-pkgrel=1
+pkgrel=2
 pkgdesc="Python2 bindings for systemd"
 arch=('x86_64' 'i686')
 url="http://www.freedesktop.org/wiki/Software/systemd/"
@@ -18,11 +18,9 @@ build() {
 	cd "$_pkgname-$pkgver"
     ./configure \
         --libexecdir=/usr/lib \
-        --disable-manpages \
-        --with-sysvinit-path=/etc/rc.d/init.d \
-        --with-rc-local-script-path-start=/etc/rc.d/rc.local \
+        --disable-manpages
         PYTHON=python2
-	make
+	make CFLAGS="${CFLAGS} -fno-lto"
 }
 
 package(){

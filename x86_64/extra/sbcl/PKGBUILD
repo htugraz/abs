@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 212174 2014-05-09 18:54:46Z juergen $
+# $Id: PKGBUILD 213412 2014-05-23 10:44:45Z juergen $
 # Contributor: John Proctor <jproctor@prium.net>
 # Contributor: Daniel White <daniel@whitehouse.id.au>
 # Maintainer: Juergen Hoetzel <juergen@archlinux.org>
 # Contributor: Leslie Polzer (skypher)
 
 pkgname=sbcl
-pkgver=1.1.17
+pkgver=1.1.18
 pkgrel=1
 pkgdesc="Steel Bank Common Lisp"
 url="http://www.sbcl.org/"
@@ -17,7 +17,7 @@ makedepends=('sbcl')
 install=sbcl.install
 source=("http://downloads.sourceforge.net/project/sbcl/sbcl/$pkgver/$pkgname-$pkgver-source.tar.bz2"
   "arch-fixes.lisp")
-md5sums=('b912772de511c9c570db2e5f6f76ecfd'
+md5sums=('4dc4e8d8a5111ee4a689ab1a5db65f7d'
          '7ac0c1936547f4278198b8bf7725204d')
 
 
