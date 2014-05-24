@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 211209 2014-04-18 11:04:38Z heftig $
+# $Id: PKGBUILD 213500 2014-05-23 23:56:32Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=tali
-pkgver=3.12.1
+pkgver=3.12.2
 pkgrel=1
 pkgdesc="Beat the odds in a poker-style dice game"
 arch=('i686' 'x86_64')
@@ -17,7 +17,7 @@ install=tali.install
 url="https://live.gnome.org/Tali"
 groups=('gnome-extra')
 source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver:0:4}/$pkgname-$pkgver.tar.xz)
-sha256sums=('c0fec44bd9083a88c75d6e81610d8ac339e0836dc0f45b71035230c1db067191')
+sha256sums=('a1386ab9d6e04c2ceb422704bd8404b423452823bde63ea87096351d729afe1c')
 
 build() {
   cd $pkgname-$pkgver

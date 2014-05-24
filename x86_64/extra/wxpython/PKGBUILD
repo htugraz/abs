@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 203510 2014-01-12 02:18:23Z eric $
+# $Id: PKGBUILD 213564 2014-05-24 21:28:05Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=wxpython
@@ -12,7 +12,7 @@ url="http://www.wxpython.org"
 depends=('wxgtk' 'python2')
 makedepends=('mesa' 'glu')
 source=(http://downloads.sourceforge.net/wxpython/wxPython-src-${pkgver}.tar.bz2
-        http://editra.org/uploads/src/Editra-${_editraver}.tar.gz)
+        http://editra.googlecode.com/files/Editra-${_editraver}.tar.gz)
 sha1sums=('48451763275cfe4e5bbec49ccd75bc9652cba719'
           'f439f4aa2cb90b8348cebb1670df9cf47ba341ab')
 

@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 202254 2013-12-20 22:16:30Z eric $
+# $Id: PKGBUILD 213534 2014-05-24 02:19:06Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=gifsicle
-pkgver=1.78
+pkgver=1.83
 pkgrel=1
 pkgdesc="A powerful command-line program for creating, editing, manipulating and getting information about GIF images and animations"
 arch=('i686' 'x86_64')
@@ -10,7 +10,7 @@ url="http://www.lcdf.org/gifsicle/"
 license=('GPL')
 depends=('libx11')
 source=(http://www.lcdf.org/${pkgname}/${pkgname}-${pkgver}.tar.gz)
-sha1sums=('df0cb87ee8237d7ba341e59cfef6cf44a7e4e630')
+sha1sums=('7498d75f1933156f3930aac417246d34f2cbbf64')
 
 build() {
   cd ${pkgname}-${pkgver}
