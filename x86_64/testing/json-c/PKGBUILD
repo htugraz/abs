@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 213536 2014-05-24 06:08:51Z anatolik $
+# $Id: PKGBUILD 213568 2014-05-25 04:38:29Z anatolik $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Geoffroy Carrier <geoffroy.carrier@koon.fr>
 # Contributor: congyiwu <congyiwu AT gmail DOT com>
 
 pkgname=json-c
 pkgver=0.12
-pkgrel=1
+pkgrel=2
 pkgdesc="A JSON implementation in C"
 url="https://github.com/json-c/json-c/wiki"
 license=(MIT)

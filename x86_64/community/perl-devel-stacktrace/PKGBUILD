@@ -1,0 +1,37 @@
+# $Id: PKGBUILD 111838 2014-05-25 13:46:07Z bpiotrowski $
+# Maintainer:
+# Contributor: Moritz Bunkus <moritz@bunkus.org>
+
+pkgname=perl-devel-stacktrace
+pkgver=1.32
+pkgrel=1
+pkgdesc='An object representing a stack trace'
+arch=(any)
+license=(PerlArtistic GPL)
+options=(!emptydirs)
+depends=('perl>=5.6')
+url=https://metacpan.org/release/Devel-StackTrace
+source=("http://search.cpan.org/CPAN/authors/id/D/DR/DROLSKY/Devel-StackTrace-$pkgver.tar.gz")
+md5sums=(2a6dae41533ecd30db72b35da366a8a5)
+_ddir=Devel-StackTrace-$pkgver
+
+build() {
+  cd "$srcdir/$_ddir"
+  export PERL_MM_USE_DEFAULT=1 PERL_AUTOINSTALL=--skipdeps
+  unset PERL5LIB PERL_MM_OPT
+  /usr/bin/perl Makefile.PL
+  make
+}
+
+check() {
+  cd "$srcdir/$_ddir"
+  export PERL_MM_USE_DEFAULT=1
+  unset PERL5LIB
+  make test
+}
+
+package() {
+  cd "$srcdir/$_ddir"
+  make install INSTALLDIRS=vendor DESTDIR="$pkgdir"
+  find "$pkgdir" -name .packlist -o -name perllocal.pod -delete
+}

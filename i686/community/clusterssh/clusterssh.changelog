@@ -1,3 +1,6 @@
+2014-05-25 Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+	* clusterssh 4.02_04-3 FS#40551 fixed
+
 2013-10-06 Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 	* clusterssh 3.28-4 - changelog properly added, changed to 'any' architecture
 

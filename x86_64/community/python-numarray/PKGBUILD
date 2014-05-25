@@ -1,18 +1,16 @@
-# $Id: PKGBUILD 78232 2012-10-17 10:26:10Z allan $
+# $Id: PKGBUILD 111801 2014-05-25 01:31:25Z allan $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Douglas Soares de Andrade <dsandrade@gmail.com>
 
 pkgbase=python-numarray
 pkgname=python2-numarray
 pkgver=1.5.2
-pkgrel=6
+pkgrel=7
 pkgdesc='Provides array manipulation and computational capabilities.'
 arch=('i686' 'x86_64')
 url='http://numpy.scipy.org/'
 license=('BSD')
 depends=('python2')
-conflicts=('python2-numarray<=1.5.2-6')
-replaces=('python2-numarray<=1.5.2-6')
 source=("http://downloads.sourceforge.net/sourceforge/numpy/numarray-${pkgver}.tar.gz"
         'LICENSE')
 md5sums=('d2ecfc60fe4869c328b872540d04e0f7'
