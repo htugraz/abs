@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 100522 2013-11-05 11:47:05Z spupykin $
+# $Id: PKGBUILD 111984 2014-05-27 12:47:32Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=torch
 pkgver=3.1
-pkgrel=4
+pkgrel=5
 pkgdesc="State of the art machine learning library"
 arch=(i686 x86_64)
 url="http://packages.debian.org/source/lenny/torch3"
@@ -34,4 +34,5 @@ package() {
 
   install -D -m0755 lib/*.so* $pkgdir/usr/lib/
   install -D -m0644 lib/*.a $pkgdir/usr/lib/
+  ln -s libtorch.so.3.0.0 $pkgdir/usr/lib/libtorch.so
 }

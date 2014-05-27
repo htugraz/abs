@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 99670 2013-10-30 22:55:01Z allan $
+# $Id: PKGBUILD 111939 2014-05-27 08:42:50Z jgc $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer : James Rayner <iphitus@gmail.com>
 # Contributor: Roberto Salas <ro0xito@gmail.com>
 
 pkgname=alltray
 pkgver=0.7.5.1dev
-pkgrel=1
+pkgrel=3
 pkgdesc="Drops any app in the tray."
 license=('GPL')
 arch=('i686' 'x86_64')

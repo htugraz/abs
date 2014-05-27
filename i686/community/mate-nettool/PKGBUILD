@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 105607 2014-02-11 17:55:05Z flexiondotorg $
+# $Id: PKGBUILD 111947 2014-05-27 08:42:59Z jgc $
 # Maintainer : Martin Wimpress <code@flexion.org>
 
 pkgname=mate-nettool
 pkgver=1.8.1
-pkgrel=7
+pkgrel=8
 pkgdesc="MATE interface for various networking tools."
 url="https://github.com/NiceandGently/mate-nettool"
 arch=('i686' 'x86_64')

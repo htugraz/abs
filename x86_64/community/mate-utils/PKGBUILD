@@ -1,8 +1,9 @@
+# $Id: PKGBUILD 111949 2014-05-27 08:43:01Z jgc $
 # Maintainer : Martin Wimpress <code@flexion.org>
 
 pkgname=mate-utils
 pkgver=1.8.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Common MATE utilities for viewing disk usage, logs and fonts, taking screenshots, managing dictionaries and searching files"
 url="http://mate-desktop.org"
 arch=('i686' 'x86_64')

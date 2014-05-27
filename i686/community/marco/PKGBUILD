@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 106646 2014-03-06 11:38:22Z flexiondotorg $
+# $Id: PKGBUILD 111944 2014-05-27 08:42:55Z jgc $
 # Maintainer : Martin Wimpress <code@flexion.org>
 
 pkgname=marco
 pkgver=1.8.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A window manager for MATE"
 url="http://mate-desktop.org"
 arch=('i686' 'x86_64')

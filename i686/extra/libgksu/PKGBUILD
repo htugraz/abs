@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198165 2013-10-30 13:11:26Z allan $
+# $Id: PKGBUILD 213635 2014-05-27 08:41:49Z jgc $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libgksu
 pkgver=2.0.12
-pkgrel=5
+pkgrel=6
 pkgdesc="gksu authorization library"
 arch=(i686 x86_64)
 url="http://www.nongnu.org/gksu/index.html"

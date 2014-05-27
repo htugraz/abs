@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 103213 2013-12-30 12:53:05Z lfleischer $
+# $Id: PKGBUILD 111974 2014-05-27 10:49:10Z lfleischer $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 # Contributor: Thomas Mader <thezema@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=astyle
 pkgver=2.04
-pkgrel=1
+pkgrel=2
 pkgdesc='A free, fast and small automatic formatter for C, C++, C#, and Java source code.'
 arch=('i686' 'x86_64')
 url='http://sourceforge.net/projects/astyle/'
@@ -18,13 +18,14 @@ md5sums=('30b1193a758b0909d06e7ee8dd9627f6')
 
 build() {
   cd "$srcdir/$pkgname/build/gcc"
-  make
+  make release shared
 }
 
 package() {
   cd "$srcdir/$pkgname/build/gcc"
 
   install -Dm0755 bin/astyle "$pkgdir/usr/bin/astyle"
+  install -Dm0755 bin/libastyle.so "$pkgdir/usr/lib/libastyle.so"
 
   # install documentation (implements FS#23290)
   install -d "$pkgdir/usr/share/doc/$pkgname/"

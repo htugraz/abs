@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 211869 2014-04-28 15:12:00Z jgc $
+# $Id: PKGBUILD 213637 2014-05-27 08:41:53Z jgc $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-control-center
 pkgver=3.12.1
-pkgrel=2
+pkgrel=3
 pkgdesc="The Control Center for GNOME"
 license=(GPL)
 arch=(i686 x86_64)

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 107994 2014-03-20 15:16:13Z flexiondotorg $
+# $Id: PKGBUILD 111941 2014-05-27 08:42:52Z jgc $
 # Maintainer : Martin Wimpress <code@flexion.org>
 # Contributor: 3ED <krzysztof1987@gmail.com>
 
 pkgname=caja-actions
 pkgver=1.7.0
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 pkgdesc="An extension for Caja which allows arbitrary programs to be launched via context menu."
 url="https://github.com/NiceandGently/caja-actions"
