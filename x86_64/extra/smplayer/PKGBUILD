@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 211325 2014-04-18 17:38:47Z bpiotrowski $
+# $Id: PKGBUILD 213683 2014-05-28 09:21:43Z bpiotrowski $
 # Maintainer : Ionut Biru <ibiru@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Alessio 'mOLOk' Bolognino <themolok@gmail.com>
@@ -6,12 +6,12 @@
 
 pkgname=smplayer
 pkgver=14.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A complete front-end for MPlayer"
 arch=('i686' 'x86_64')
 url="http://smplayer.sourceforge.net/"
 license=('GPL')
-depends=('qt5-script' 'mplayer' 'hicolor-icon-theme')
+depends=('qt5-script' 'mplayer' 'hicolor-icon-theme' 'libxkbcommon-x11')
 makedepends=('qt5-tools')
 optdepends=('smplayer-themes: icon themes collection'
             'smplayer-skins: skin themes collection'

@@ -5,7 +5,7 @@
 ## "1" to enable IA32-EFI build in Arch x86_64, "0" to disable
 _IA32_EFI_IN_ARCH_X64="1"
 
-_VER="6.03-pre11"
+_VER="6.03-pre12"
 _GIT_TAG="syslinux-${_VER}"
 
 pkgname="syslinux"
@@ -17,7 +17,7 @@ url="http://syslinux.zytor.com/"
 license=('GPL2')
 options=('!makeflags' '!emptydirs')
 backup=('boot/syslinux/syslinux.cfg')
-makedepends=('git' 'python2' 'nasm' 'ncurses' 'lib32-glibc')
+makedepends=('git' 'python2' 'nasm' 'ncurses' 'lib32-glibc') 
 depends=('perl' 'glibc')
 optdepends=('perl-passwd-md5:  For md5pass'
             'perl-digest-sha1: For sha1pass'
