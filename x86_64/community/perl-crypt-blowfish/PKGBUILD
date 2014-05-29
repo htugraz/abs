@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 95154 2013-08-06 11:51:02Z spupykin $
+# $Id: PKGBUILD 112087 2014-05-29 12:22:15Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-crypt-blowfish
 pkgver=2.14
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl/CPAN Module Crypt::Blowfish : XSbased implementation of Blowfish"
 arch=("i686" "x86_64")
 url="http://search.cpan.org/dist/Crypt-Blowfish"

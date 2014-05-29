@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 100026 2013-10-31 04:13:45Z allan $
+# $Id: PKGBUILD 112168 2014-05-29 12:37:06Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=kvirc

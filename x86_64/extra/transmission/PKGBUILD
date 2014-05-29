@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 213661 2014-05-27 18:32:30Z anatolik $
+# $Id: PKGBUILD 213749 2014-05-29 01:09:31Z anatolik $
 # Maintainer : Tom Gundersen <teg@jklm.no>
 # Maintainer : Ionut Biru <ibiru@archlinux.org>
 
 pkgbase=transmission
 pkgname=('transmission-cli' 'transmission-gtk' 'transmission-qt')
 pkgver=2.83
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 url="http://www.transmissionbt.com/"
 license=('MIT')
@@ -54,7 +54,7 @@ package_transmission-gtk() {
 
 package_transmission-qt() {
   pkgdesc="Fast, easy, and free BitTorrent client (Qt GUI)"
-  depends=('curl' 'qt5-base' 'libevent')
+  depends=('curl' 'qt5-base' 'libevent' 'libxkbcommon-x11')
   optdepends=('transmission-cli: daemon and web support')
   install=transmission-qt.install
 
