@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 110883 2014-05-09 02:10:06Z fyan $
+# $Id: PKGBUILD 112207 2014-05-30 03:51:52Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Kaiting Chen <kaitocracy@gmail.com>
 # Contributor: Aaron Schaefer <aaron@elasticdog.com>
 
 pkgbase=python-boto
 pkgname=python2-boto
-pkgver=2.28.0
+pkgver=2.29.0
 pkgrel=1
 pkgdesc='A Python interface to Amazon Web Services (AWS)'
 arch=('any')

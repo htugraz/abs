@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 211714 2014-04-23 18:51:17Z bpiotrowski $
+# $Id: PKGBUILD 213862 2014-05-30 16:36:56Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
 
 pkgname=readline
 _basever=6.3
-_patchlevel=005
+_patchlevel=006
 pkgver=$_basever.$_patchlevel
 pkgrel=1
 pkgdesc='GNU readline library'
@@ -63,4 +63,6 @@ md5sums=('33c8fb279e981274f485fd91da77e94a'
          '11f9def89803a5052db3ba72394ce14f'
          'SKIP'
          '93721c31cd225393f80cb3aadb165544'
+         'SKIP'
+         '71dc6ecce66d1489b96595f55d142a52'
          'SKIP')
