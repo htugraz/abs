@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 192119 2013-08-06 02:24:44Z eric $
-# Maintainer:
+# $Id: PKGBUILD 214233 2014-06-04 13:51:57Z bluewind $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Firmicus <francois.archlinux.org>
 # Contributor: Tom Killian <tomk@runbox.com>
 # Contributor: FJ <joostef@gmail.com>
 
 pkgname=perl-template-toolkit
 pkgver=2.25
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl template processing system"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/Template-Toolkit/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 105797 2014-02-15 20:34:32Z spupykin $
+# $Id: PKGBUILD 112647 2014-06-04 13:52:21Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-string-crc32
 pkgver=1.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl/CPAN Module String::CRC32 : ZMODEMlike CRC32 generation"
 arch=("i686" "x86_64")
 url="http://search.cpan.org/dist/String-CRC32"

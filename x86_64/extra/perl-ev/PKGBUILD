@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 210600 2014-04-15 09:26:43Z fyan $
-# Maintainer:
+# $Id: PKGBUILD 214221 2014-06-04 13:51:34Z bluewind $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgname=perl-ev
 pkgver=4.17
-pkgrel=1
+pkgrel=2
 pkgdesc='perl interface to libev, a high performance full-featured event loop'
 arch=(i686 x86_64)
 license=(PerlArtistic GPL)

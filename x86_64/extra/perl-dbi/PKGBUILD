@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 205966 2014-02-15 00:56:26Z eric $
-# Maintainer:
+# $Id: PKGBUILD 214218 2014-06-04 13:51:27Z bluewind $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgname=perl-dbi
 pkgver=1.631
-pkgrel=1
+pkgrel=2
 pkgdesc="Database independent interface for Perl"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/DBI/"

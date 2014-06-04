@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 210129 2014-04-10 08:52:32Z fyan $
-# Maintainer:
+# $Id: PKGBUILD 214228 2014-06-04 13:51:47Z bluewind $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgname=perl-netaddr-ip
 pkgver=4.073
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl module to manage IP addresses and subnets"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/NetAddr-IP/"

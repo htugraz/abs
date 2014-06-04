@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 108958 2014-04-08 09:20:49Z spupykin $
+# $Id: PKGBUILD 112617 2014-06-04 13:51:19Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-dbd-odbc
 pkgver=1.48
-pkgrel=1
+pkgrel=2
 pkgdesc="ODBC Driver for DBI"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/DBD-ODBC/"

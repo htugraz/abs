@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 205974 2014-02-15 01:40:48Z eric $
-# Maintainer:
+# $Id: PKGBUILD 214236 2014-06-04 13:52:08Z bluewind $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: François Charette <francois ατ archlinux δοτ org>
 # Contributor: Jason Chu <jchu@xentac.net>
 # Contributor: Juergen Hoetzel <juergen@archlinux.org>
 
 pkgname=perl-tk
 pkgver=804.032
-pkgrel=1
+pkgrel=2
 pkgdesc="A graphical user interface toolkit for Perl"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/Tk"

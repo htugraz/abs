@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 91668 2013-05-26 09:25:04Z bluewind $
+# $Id: PKGBUILD 112621 2014-06-04 13:51:24Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Ross melin <rdmelin@gmail.com>
 
 pkgname=perl-device-serialport
 pkgver=1.04
-pkgrel=5
+pkgrel=6
 pkgdesc="POSIX clone of Win32::SerialPort"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/Device-SerialPort"

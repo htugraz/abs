@@ -1,9 +1,10 @@
-# $Id: PKGBUILD 205929 2014-02-14 03:40:45Z eric $
-# Maintainer: Florian Pritz <bluewind@xinu.at>
+# $Id: PKGBUILD 214232 2014-06-04 13:51:55Z bluewind $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
+# Contributor: Florian Pritz <bluewind@xinu.at>
 
 pkgname=perl-socket6
 pkgver=0.25
-pkgrel=1
+pkgrel=2
 pkgdesc="A getaddrinfo/getnameinfo support module"
 arch=('i686' 'x86_64')
 url='http://search.cpan.org/dist/Socket6'

@@ -1,10 +1,10 @@
 # Packager: Justin Davis (juster) <jrcd83@gmail.com>
-# $Id: PKGBUILD 211640 2014-04-22 10:12:44Z fyan $
+# $Id: PKGBUILD 214209 2014-06-04 13:51:16Z bluewind $
 
 pkgname=perl-async-interrupt
 _ver=1.2
 pkgver=1.20
-pkgrel=1
+pkgrel=2
 pkgdesc='allow C/XS libraries to interrupt perl asynchronously'
 arch=(i686 x86_64)
 license=(PerlArtistic GPL)

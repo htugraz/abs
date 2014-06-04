@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 207114 2014-03-06 21:41:19Z anatolik $
+# $Id: PKGBUILD 214206 2014-06-04 13:51:12Z bluewind $
 # Maintainer:
 # Contributor: Firmicus <francois.archlinux.org>
 # Contributor: Tom K <tomk@runbox.com>
 
 pkgname=mod_perl
 pkgver=2.0.8
-pkgrel=2
+pkgrel=3
 pkgdesc="Apache module that embeds the Perl interpreter within the server"
 arch=('i686' 'x86_64')
 url="http://perl.apache.org/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 112168 2014-05-29 12:37:06Z spupykin $
+# $Id: PKGBUILD 112609 2014-06-04 13:51:09Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-class-methodmaker
 pkgver=2.21
-pkgrel=1
+pkgrel=2
 pkgdesc="Create generic class methods"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/Class-MethodMaker"

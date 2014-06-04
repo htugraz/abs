@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 91677 2013-05-26 09:25:21Z bluewind $
+# $Id: PKGBUILD 112630 2014-06-04 13:51:42Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Tom K <tomk@runbox.com>
 
 pkgname=perl-gtk2-trayicon
 pkgver=0.06
-pkgrel=10
+pkgrel=11
 pkgdesc="Perl interface to the EggTrayIcon library"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/Gtk2-TrayIcon/"

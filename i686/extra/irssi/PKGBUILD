@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 200011 2013-11-21 01:40:28Z allan $
+# $Id: PKGBUILD 214202 2014-06-04 13:51:07Z bluewind $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Dan McGee <dan@archlinux.org>
 
 pkgname=irssi
-pkgver=0.8.15
-pkgrel=8
+pkgver=0.8.16
+pkgrel=1
 pkgdesc="Modular text mode IRC client with Perl scripting"
 arch=('i686' 'x86_64')
 url="http://irssi.org/"
@@ -13,7 +13,7 @@ depends=('glib2' 'openssl')
 optdepends=('perl-libwww: for the scriptassist script')
 backup=('etc/irssi.conf')
 source=("http://irssi.org/files/${pkgname}-${pkgver}.tar.bz2")
-md5sums=('1dcb3f511b88df94b0c996f36668c7da')
+md5sums=('4346119c4c000d0198cda17666ff1f06')
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"

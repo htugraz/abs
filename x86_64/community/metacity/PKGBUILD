@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 111950 2014-05-27 08:43:03Z jgc $
+# $Id: PKGBUILD 112670 2014-06-04 15:57:08Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=metacity
 pkgver=2.34.13
-pkgrel=6
+pkgrel=7
 pkgdesc="Legacy GNOME window manager"
 arch=('i686' 'x86_64')
 license=('GPL')
-depends=('dconf' 'libcanberra' 'libgtop' 'gsettings-desktop-schemas' 'gtk2' 'startup-notification' 'zenity')
+depends=('dconf' 'libcanberra' 'libgtop' 'libsm' 'gsettings-desktop-schemas' 'gtk2' 'startup-notification' 'zenity')
 makedepends=('intltool' 'itstool')
 url="https://wiki.gnome.org/Projects/Metacity"
 install=metacity.install

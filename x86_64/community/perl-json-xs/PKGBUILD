@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 100497 2013-11-05 10:05:37Z spupykin $
+# $Id: PKGBUILD 112636 2014-06-04 13:51:54Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Tor Krill <tor@krill.nu>
 
 pkgname=perl-json-xs
 pkgver=3.01
-pkgrel=2
+pkgrel=3
 pkgdesc="JSON::XS - JSON serialising/deserialising, done correctly and fast"
 url="http://search.cpan.org/dist/JSON-XS/"
 license=("GPL")

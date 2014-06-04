@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 186373 2013-05-26 09:24:23Z bluewind $
+# $Id: PKGBUILD 214190 2014-06-04 13:50:47Z bluewind $
 # Maintainer: Jan "heftig" Steffens <jan.steffens@gmail.com>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Brandon Niemczyk <maccorin@cfl.rr.com>
@@ -6,7 +6,7 @@
 pkgname=frozen-bubble
 _pkgver=2.2.1-beta1
 pkgver=${_pkgver/-/}
-pkgrel=5
+pkgrel=6
 pkgdesc="A game in which you throw colorful bubbles and build groups to destroy the bubbles"
 arch=(i686 x86_64)
 url="http://www.frozen-bubble.org"

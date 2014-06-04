@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 91696 2013-05-26 09:26:06Z bluewind $
+# $Id: PKGBUILD 112649 2014-06-04 13:52:24Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-text-charwidth
 pkgver=0.04
-pkgrel=9
+pkgrel=10
 pkgdesc="Perl/CPAN Module Text::CharWidth"
 arch=("i686" "x86_64")
 url="http://search.cpan.org/dist/Text-CharWidth"

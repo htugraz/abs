@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 213950 2014-06-01 10:58:40Z fyan $
+# $Id: PKGBUILD 214229 2014-06-04 13:51:49Z bluewind $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgname=perl-net-dns
 pkgver=0.76_1
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl Module: Interface to the DNS resolver"
 arch=('i686' 'x86_64')
 license=('PerlArtistic')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 206086 2014-02-17 10:37:47Z jgc $
+# $Id: PKGBUILD 214208 2014-06-04 13:51:15Z bluewind $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=pango-perl
 pkgver=1.225
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl bindings for Pango"
 arch=(i686 x86_64)
 license=('LGPL')

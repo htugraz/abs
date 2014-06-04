@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 91676 2013-05-26 09:25:19Z bluewind $
+# $Id: PKGBUILD 112629 2014-06-04 13:51:40Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Charles Mauch <cmauch@gmail.com>
 # Creator: Florian Ragwitz <http://search.cpan.org/~/>
 
 pkgname=perl-gtk2-sexy
 pkgver=0.05
-pkgrel=8
+pkgrel=9
 pkgdesc="Perl/CPAN Module Gtk2::Sexy"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/Gtk2-Sexy"

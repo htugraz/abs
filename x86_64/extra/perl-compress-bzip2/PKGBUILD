@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 197716 2013-10-28 19:43:49Z heftig $
+# $Id: PKGBUILD 214211 2014-06-04 13:51:18Z bluewind $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=perl-compress-bzip2
 _realname=Compress-Bzip2
 pkgver=2.17
-pkgrel=1
+pkgrel=2
 pkgdesc="Interface to Bzip2 compression library"
 arch=(i686 x86_64)
 license=(GPL2)

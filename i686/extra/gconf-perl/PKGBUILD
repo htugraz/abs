@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 207468 2014-03-10 08:36:21Z jgc $
+# $Id: PKGBUILD 214191 2014-06-04 13:50:48Z bluewind $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gconf-perl
 pkgver=1.044
-pkgrel=8
+pkgrel=9
 pkgdesc="Gnome2-GConf perl bindings for gconf"
 arch=('i686' 'x86_64')
 license=('LGPL')

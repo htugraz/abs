@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 91672 2013-05-26 09:25:09Z bluewind $
+# $Id: PKGBUILD 112625 2014-06-04 13:51:33Z bluewind $
 # Maintainer Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Alessio 'mOLOk' Bolognino <themolok@gmail.com>
 
 pkgname=perl-gnome2-wnck
 pkgver=0.16
-pkgrel=8
+pkgrel=9
 pkgdesc="Perl interface to the Window Navigator Construction Kit"
 arch=('i686' 'x86_64')
 license=("GPL" "PerlArtistic")

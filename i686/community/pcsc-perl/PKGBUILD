@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 91655 2013-05-26 09:24:45Z bluewind $
+# $Id: PKGBUILD 112607 2014-06-04 13:51:07Z bluewind $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: neuromante <lorenzo.nizzi.grifi@gmail.com>
 # Contributor: marc0s <marc0s@fsfe.org>
 
 pkgname=pcsc-perl
 pkgver=1.4.13
-pkgrel=2
+pkgrel=3
 pkgdesc="A Perl Module for PC/SC SmartCard access"
 arch=('i686' 'x86_64')
 url="http://ludovic.rousseau.free.fr/softwares/pcsc-perl/"

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 208313 2014-03-20 14:13:19Z dan $
+# $Id: PKGBUILD 214240 2014-06-04 13:52:17Z bluewind $
 # Maintainer: Dan McGee <dan@archlinux.org>
 
 pkgbase=postgresql
 pkgname=('postgresql-libs' 'postgresql-docs' 'postgresql')
 pkgver=9.3.4
 _majorver=${pkgver%.*}
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url="http://www.postgresql.org/"
 license=('custom:PostgreSQL')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 109502 2014-04-15 09:25:51Z fyan $
+# $Id: PKGBUILD 112655 2014-06-04 13:52:37Z bluewind $
 # Maintainer: Jonathan Steel <jsteel@aur.archlinux.org>
 # Contributor: Justin "juster" Davis <jrcd83@gmail.com>
 # Contributor: François Charette <francois.archlinux.org>
 
 pkgname=perl-xml-libxml
 pkgver=2.0116
-pkgrel=1
+pkgrel=2
 pkgdesc="Interface to the libxml library"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/XML-LibXML"

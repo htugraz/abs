@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 110344 2014-04-28 09:15:22Z spupykin $
+# $Id: PKGBUILD 112653 2014-06-04 13:52:32Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-www-curl
 pkgver=4.17
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl/CPAN Module WWW::Curl"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/WWW-Curl/"

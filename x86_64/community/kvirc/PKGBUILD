@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 112168 2014-05-29 12:37:06Z spupykin $
+# $Id: PKGBUILD 112604 2014-06-04 13:50:59Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=kvirc
 pkgver=4.2.0
-pkgrel=3
+pkgrel=4
 pkgdesc="Qt-based IRC client"
 url="http://www.kvirc.net"
 depends=('python2' 'libxss' 'qtwebkit')

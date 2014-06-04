@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 91698 2013-05-26 09:26:10Z bluewind $
+# $Id: PKGBUILD 112651 2014-06-04 13:52:28Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Francois Charette <firmicus@gmx.net>
 
 pkgname=perl-tie-hash-indexed
 pkgver=0.05
-pkgrel=9
+pkgrel=10
 pkgdesc="Ordered hashes for Perl"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/Tie-Hash-Indexed"

@@ -1,9 +1,9 @@
 # Packager: Justin Davis <jrcd83@gmail.com>
-# $Id: PKGBUILD 186406 2013-05-26 09:25:16Z bluewind $
+# $Id: PKGBUILD 214223 2014-06-04 13:51:38Z bluewind $
 
 pkgname=perl-guard
 pkgver=1.022
-pkgrel=3
+pkgrel=4
 pkgdesc="safe cleanup blocks"
 arch=('i686' 'x86_64')
 url="https://metacpan.org/release/Guard"

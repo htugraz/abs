@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 111183 2014-05-15 14:14:48Z spupykin $
+# $Id: PKGBUILD 112683 2014-06-04 20:57:45Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-datetime
 pkgver=1.10
-pkgrel=1
+pkgrel=3
 pkgdesc="A complete, easy to use date and time object"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/DateTime"

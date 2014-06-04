@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 112168 2014-05-29 12:37:06Z spupykin $
+# $Id: PKGBUILD 112608 2014-06-04 13:51:08Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 # Contributor: Francois Charette <firmicus@gmx.net>
 
 pkgname=perl-berkeleydb
 pkgver=0.54
-pkgrel=1
+pkgrel=2
 pkgdesc="Interface to Berkeley DB version 2, 3 or 4"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/BerkeleyDB/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 91680 2013-05-26 09:25:26Z bluewind $
+# $Id: PKGBUILD 112633 2014-06-04 13:51:48Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Wael Nasreddine <gandalf@siemens-mobiles.org>
 
 pkgname=perl-inline-java
 pkgver=0.53
-pkgrel=5
+pkgrel=6
 pkgdesc="The Inline::Java module allows you to put Java source code directly inline in a Perl script or module."
 arch=('i686' 'x86_64')
 depends=('perl' 'perl-inline' 'java-runtime')

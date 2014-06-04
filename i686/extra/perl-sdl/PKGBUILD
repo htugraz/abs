@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 199485 2013-11-13 12:47:51Z heftig $
+# $Id: PKGBUILD 214231 2014-06-04 13:51:53Z bluewind $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Sarah Hay <sarahhay@mb.sympatico.ca>
 
 pkgname=perl-sdl
 pkgver=2.540
-pkgrel=5
+pkgrel=6
 pkgdesc="Simple DirectMedia Layer for Perl"
 arch=(i686 x86_64)
 license=(LGPL)

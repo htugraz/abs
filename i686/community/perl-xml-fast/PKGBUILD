@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 91701 2013-05-26 09:26:15Z bluewind $
+# $Id: PKGBUILD 112654 2014-06-04 13:52:34Z bluewind $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contributor: trizen .= x@gmail.com
 
 pkgname=perl-xml-fast
 pkgver=0.11
-pkgrel=4
+pkgrel=5
 pkgdesc="Simple and very fast XML to hash conversion."
 arch=('x86_64' 'i686')
 url="http://search.cpan.org/dist/XML-Fast/"

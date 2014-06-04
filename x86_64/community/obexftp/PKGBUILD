@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 104885 2014-01-28 03:34:16Z td123 $
+# $Id: PKGBUILD 112606 2014-06-04 13:51:04Z bluewind $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Alessio 'mOLOk' Bolognino <themolok@gmail.com>
 
 pkgname=obexftp
 pkgver=0.24
-pkgrel=2
+pkgrel=3
 pkgdesc="A tool for transfer files to/from any OBEX enabled device"
 arch=('i686' 'x86_64')
 url="http://dev.zuckschwerdt.org/openobex/wiki/ObexFtp"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 91679 2013-05-26 09:25:24Z bluewind $
+# $Id: PKGBUILD 112632 2014-06-04 13:51:46Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-html-strip
 pkgver=1.06
-pkgrel=9
+pkgrel=10
 pkgdesc="Perl/CPAN Module HTML::Strip"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/~kilinrax/HTML-Strip/"

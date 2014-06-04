@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198577 2013-10-30 15:43:11Z allan $
+# $Id: PKGBUILD 214248 2014-06-04 13:52:35Z bluewind $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: tobias <tobias funnychar archlinux.org>
 
 pkgname=xfconf
 pkgver=4.10.0
-pkgrel=3
+pkgrel=4
 pkgdesc="A simple client-server configuration storage and query system"
 arch=('i686' 'x86_64')
 url="http://www.xfce.org/"
@@ -38,9 +38,6 @@ package() {
   cd "$srcdir/$pkgname-$pkgver"
 
   make DESTDIR="$pkgdir" install
-
-  # remove unneeded dynloader bootstrap file
-  rm "$pkgdir/usr/lib/perl5/vendor_perl/auto/Xfce4/Xfconf/Xfconf.bs"
 
   # fix insecure rpath, http://bugs.archlinux.org/task/19980
   chrpath -d "$pkgdir/usr/lib/perl5/vendor_perl/auto/Xfce4/Xfconf/Xfconf.so"

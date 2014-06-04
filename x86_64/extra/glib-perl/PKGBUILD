@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 206082 2014-02-17 10:29:53Z jgc $
+# $Id: PKGBUILD 214193 2014-06-04 13:50:52Z bluewind $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Sarah Hay <sarah@archlinux.org>
 
 pkgname=glib-perl
 pkgver=1.304
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl wrappers for glib 2.x, including GObject"
 arch=(i686 x86_64)
 license=('LGPL')

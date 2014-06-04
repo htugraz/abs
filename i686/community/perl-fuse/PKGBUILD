@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 100908 2013-11-13 09:49:25Z spupykin $
+# $Id: PKGBUILD 112623 2014-06-04 13:51:28Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Tom K <tomk@runbox.com>
 
 pkgname=perl-fuse
 pkgver=0.16.1
-pkgrel=1
+pkgrel=2
 pkgdesc="write filesystems in Perl using FUSE"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/Fuse"

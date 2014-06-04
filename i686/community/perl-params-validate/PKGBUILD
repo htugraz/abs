@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 111203 2014-05-15 14:17:05Z spupykin $
+# $Id: PKGBUILD 112646 2014-06-04 13:52:19Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-params-validate
 pkgver=1.10
-pkgrel=1
+pkgrel=2
 pkgdesc="Validate sub params against a spec"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/Params-Validate"

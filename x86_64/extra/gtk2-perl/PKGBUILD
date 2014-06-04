@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 206090 2014-02-17 11:55:52Z jgc $
+# $Id: PKGBUILD 214200 2014-06-04 13:51:03Z bluewind $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Sarah Hay <sarah@archlinux.org>
 
 pkgname=gtk2-perl
 pkgver=1.249
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl bindings for GTK+ 2.x"
 arch=(i686 x86_64)
 license=('LGPL')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 91669 2013-05-26 09:25:06Z bluewind $
+# $Id: PKGBUILD 112622 2014-06-04 13:51:26Z bluewind $
 # Maintainer: Sébastien Luttringer
 
 pkgname=perl-file-rsyncp
 pkgver=0.70
-pkgrel=3
+pkgrel=4
 pkgdesc='Perl interface to rsync file list encoding and decoding'
 arch=('i686' 'x86_64')
 license=('GPL' 'PerlArtistic')

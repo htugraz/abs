@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 109088 2014-04-10 12:37:39Z fyan $
+# $Id: PKGBUILD 112624 2014-06-04 13:51:30Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+aur@gmail.com>
 
 pkgname=perl-gd
 pkgver=2.53
-pkgrel=1
+pkgrel=2
 pkgdesc="Interface to Gd Graphics Library"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/GD"

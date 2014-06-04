@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 105745 2014-02-14 22:09:27Z jsteel $
+# $Id: PKGBUILD 112662 2014-06-04 13:52:55Z bluewind $
 # Maintainer: Jonathan Steel <jsteel@aur.archlinux.org>
 # Contributor: Justin Davis <jrcd83@gmail.com>
 
 pkgname=perl-data-optlist
 pkgver=0.109
-pkgrel=1
+pkgrel=2
 pkgdesc="Parse and validate simple name/value option pairs"
 arch=('any')
 license=('PerlArtistic' 'GPL')

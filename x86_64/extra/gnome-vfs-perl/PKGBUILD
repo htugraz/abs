@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 206092 2014-02-17 12:47:14Z jgc $
+# $Id: PKGBUILD 214196 2014-06-04 13:50:56Z bluewind $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-vfs-perl
 pkgver=1.082
-pkgrel=1
+pkgrel=2
 pkgdesc="Gnome2-VFS perl bindings for gnome-vfs"
 arch=(i686 x86_64)
 license=('LGPL')

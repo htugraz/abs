@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 213153 2014-05-19 15:00:41Z svenstaro $
+# $Id: PKGBUILD 214204 2014-06-04 13:51:09Z bluewind $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdebindings-perlqt
 pkgver=4.13.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl bindings for the Qt libraries"
 url="https://projects.kde.org/projects/kde/kdebindings/perl/perlqt"
 arch=('i686' 'x86_64')

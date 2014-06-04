@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 91687 2013-05-26 09:25:47Z bluewind $
+# $Id: PKGBUILD 112640 2014-06-04 13:52:07Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-mail-transport-dbx
 pkgver=0.07
-pkgrel=9
+pkgrel=10
 pkgdesc="Perl/CPAN Module Mail::Transport::Dbx : Parse Outlook Express mailboxes"
 arch=("i686" "x86_64")
 url="http://search.cpan.org/dist/Mail-Transport-Dbx"

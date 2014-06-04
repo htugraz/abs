@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 206096 2014-02-17 13:00:33Z jgc $
+# $Id: PKGBUILD 214195 2014-06-04 13:50:54Z bluewind $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-perl
 pkgver=1.045
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl bindings for libgnome"
 arch=('i686' 'x86_64')
 license=('LGPL')

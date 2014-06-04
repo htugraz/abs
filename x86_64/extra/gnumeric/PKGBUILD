@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 213632 2014-05-27 08:37:09Z jgc $
+# $Id: PKGBUILD 214197 2014-06-04 13:50:57Z bluewind $
 # Maintainer: Eric Belanger <eric@archlinux.org>
 # Contributor: Kritoke <typeolinux@yahoo.com>
 
 pkgname=gnumeric
 pkgver=1.12.16
-pkgrel=1
+pkgrel=2
 pkgdesc="A GNOME Spreadsheet Program"
 arch=('i686' 'x86_64')
 url="http://www.gnome.org/projects/gnumeric/"

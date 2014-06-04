@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 187097 2013-06-03 18:17:55Z eric $
-# Maintainer: 
+# $Id: PKGBUILD 214238 2014-06-04 13:52:12Z bluewind $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgname=perl-yaml-syck
 pkgver=1.27
-pkgrel=1
+pkgrel=2
 pkgdesc="Fast, lightweight YAML loader and dumper"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/YAML-Syck/"

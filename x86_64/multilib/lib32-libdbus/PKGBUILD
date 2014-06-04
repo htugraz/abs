@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 104744 2014-01-25 17:13:49Z lcarlier $
+# $Id: PKGBUILD 112590 2014-06-04 07:05:43Z lcarlier $
 # Maintainer : Ionut Biru <ibiru@archlinux.org>
 
 pkgname=lib32-libdbus
 _pkgbasename=libdbus
-pkgver=1.8.0
+pkgver=1.8.2
 pkgrel=1
 pkgdesc="DBus library (32-bit)"
 arch=('x86_64')
@@ -15,7 +15,7 @@ provides=('lib32-dbus-core' 'lib32-dbus')
 conflicts=('lib32-dbus-core' 'lib32-dbus')
 replaces=('lib32-dbus-core' 'lib32-dbus')
 source=(http://dbus.freedesktop.org/releases/dbus/dbus-${pkgver}.tar.gz)
-md5sums=('059fbe84e39fc99c67a14f15b1f39dff')
+md5sums=('d6f709bbec0a022a1847c7caec9d6068')
 
 build() {
     export CC="gcc -m32"

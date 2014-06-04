@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 99484 2013-10-29 10:21:54Z spupykin $
+# $Id: PKGBUILD 112627 2014-06-04 13:51:37Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Corrado Primier <bardo@aur.archlinux.org>
 
 pkgname=perl-gstreamer
 pkgver=0.19
-pkgrel=1
+pkgrel=2
 pkgdesc="Interface to the GStreamer library"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/GStreamer"

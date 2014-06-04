@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 186377 2013-05-26 09:24:28Z bluewind $
+# $Id: PKGBUILD 214194 2014-06-04 13:50:53Z bluewind $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnomecanvas-perl
 _realname=Gnome2-Canvas
 pkgver=1.002
-pkgrel=11
+pkgrel=12
 pkgdesc="Gnome2-Canvas perl bindings for libgnomecanvas"
 arch=('i686' 'x86_64')
 license=('LGPL')

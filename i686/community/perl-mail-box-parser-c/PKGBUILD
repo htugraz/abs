@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 95186 2013-08-06 11:55:13Z spupykin $
+# $Id: PKGBUILD 112639 2014-06-04 13:52:05Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-mail-box-parser-c
 pkgver=3.007
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl/CPAN Module Mail::Box::Parser::C : extends MailBox with the speed of C"
 arch=("i686" "x86_64")
 url="http://search.cpan.org/dist/Mail-Box-Parser-C"

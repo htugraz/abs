@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 204822 2014-01-28 03:33:05Z td123 $
+# $Id: PKGBUILD 214243 2014-06-04 13:52:23Z bluewind $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=rrdtool
 pkgver=1.4.8
-pkgrel=3
+pkgrel=4
 pkgdesc="Data logging and graphing application"
 arch=('i686' 'x86_64')
 url="http://www.rrdtool.org"
