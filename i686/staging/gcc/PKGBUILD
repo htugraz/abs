@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 214317 2014-06-05 21:39:20Z allan $
+# $Id: PKGBUILD 214318 2014-06-05 23:52:51Z allan $
 # Maintainer: Allan McRae <allan@archlinux.org>
 
 # toolchain build order: linux-api-headers->glibc->binutils->gcc->binutils->glibc

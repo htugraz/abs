@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 176885 2013-02-02 04:32:35Z bisson $
+# $Id: PKGBUILD 214325 2014-06-06 11:44:35Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Firmicus <francois.archlinux.org>
 # Contributor: Lukas Jirkovsky <l.jirkovsky@gmail.com>
@@ -7,7 +7,7 @@
 pkgname=ttf-linux-libertine
 pkgver=5.3.0
 _reldate=2012_07_02
-pkgrel=2
+pkgrel=3
 url='http://linuxlibertine.sourceforge.net/'
 pkgdesc='Serif (Libertine) and Sans Serif (Biolinum) OpenType fonts with large Unicode coverage'
 license=('GPL' 'custom:OFL')
