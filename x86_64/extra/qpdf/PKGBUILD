@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 204257 2014-01-15 19:58:13Z andyrtr $
+# $Id: PKGBUILD 214746 2014-06-09 08:46:25Z andyrtr $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Contributor: Miguel Revilla <yo at miguelrevilla.com>
 # Contributor: David Sotelo <dvsotelo at gmail.com>
 # Contributor: Nuno Araujo <nuno.araujo@russo79.com>
 
 pkgname=qpdf
-pkgver=5.1.1
+pkgver=5.1.2
 pkgrel=1
 pkgdesc="QPDF: A Content-Preserving PDF Transformation System"
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ license=('custom:Artistic-2.0')
 depends=('pcre' 'perl')
 makedepends=('make')
 source=(http://downloads.sourceforge.net/${pkgname}/${pkgname}-${pkgver}.tar.gz)
-md5sums=('378bfd1c2ee15d7815f2f4b1a50fa6e0')
+sha1sums=('ede3938fdf2e3bf603fce6eb2bd93b3a2e1d13b9')
 
 build() {
   cd ${pkgname}-${pkgver}

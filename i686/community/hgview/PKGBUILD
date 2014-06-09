@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 105423 2014-02-07 11:45:56Z aginiewicz $
+# $Id: PKGBUILD 112922 2014-06-09 14:50:25Z aginiewicz $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 # Contributor: TDY <tdy@gmx.com>
 
 pkgname=hgview
-pkgver=1.8.0
+pkgver=1.8.1
 pkgrel=1
 pkgdesc="A fast Mercurial log navigator"
 arch=('any')
@@ -17,7 +17,7 @@ optdepends=('python2-qscintilla: for Qt interface'
             'python2-pygments: for CLI interface')
 makedepends=('python2-pyqt' 'asciidoc' 'xmlto')
 source=(http://download.logilab.org/pub/$pkgname/$pkgname-$pkgver.tar.gz)
-md5sums=('6a35e08ba70f04afa8d3698c3d16b39f')
+md5sums=('0945c3cc7f98677a9268c58bc0684d01')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"
