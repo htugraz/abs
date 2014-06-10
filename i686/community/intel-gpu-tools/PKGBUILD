@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 108407 2014-03-27 14:47:17Z fyan $
+# $Id: PKGBUILD 112963 2014-06-10 14:23:10Z thestinger $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 # Contributor: Mikael Eriksson <mikael_eriksson@miffe.org>
 # Originally by: Denis Smirnov <detanator@gmail.com>
 
 pkgname=intel-gpu-tools
-pkgver=1.6
-pkgrel=2
+pkgver=1.7
+pkgrel=1
 pkgdesc="Tools for development and testing of the Intel DRM driver"
 arch=(i686 x86_64)
 license=(MIT)
@@ -13,7 +13,7 @@ url='http://cgit.freedesktop.org/xorg/app/intel-gpu-tools/'
 depends=(libdrm libpciaccess cairo python dri2proto)
 makedepends=(swig)
 source=(http://xorg.freedesktop.org/releases/individual/app/$pkgname-$pkgver.tar.bz2)
-md5sums=('e823be446e06d31195c66e354752fb0b')
+md5sums=('680b95fd4f73f2d3b9004d2a2fb57f77')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"

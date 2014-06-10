@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 109605 2014-04-16 17:01:53Z anatolik $
+# $Id: PKGBUILD 112983 2014-06-10 19:03:57Z anatolik $
 # Maintainer: Anatol Pomozov <anatol.pomozov@gmail.com>
 # Contributor: Bernhard Walle <bernhard.walle@gmx.de>
 # Contributor: Michael Eckert <michael.eckert@linuxmail.org>
 # Contributor: Mathieu Pasquet <mathieui@mathieui.net>
 
 pkgname=crash
-pkgver=7.0.6
+pkgver=7.0.7
 pkgrel=1
 pkgdesc='Linux kernel crashdump analysis tool'
 url='http://people.redhat.com/~anderson'
@@ -13,7 +13,7 @@ arch=(i686 x86_64)
 license=(GPL)
 depends=(xz ncurses zlib)
 source=(http://people.redhat.com/~anderson/crash-$pkgver.tar.gz)
-sha256sums=('c347c44c9a69f914de2192b3b1ba48b9a6c5fcbd4e2de909d00d176f2ea0ed29')
+sha256sums=('c473ea9623787bee8fecf2e4d0caa9301a9462c26243e897ad202bf0dc3e9a07')
 
 prepare() {
   cd crash-$pkgver

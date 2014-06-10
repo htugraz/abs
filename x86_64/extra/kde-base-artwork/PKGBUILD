@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 213156 2014-05-19 15:00:46Z svenstaro $
+# $Id: PKGBUILD 214809 2014-06-10 17:52:30Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kde-base-artwork
-pkgver=4.13.1
+pkgver=4.13.2
 pkgrel=1
 pkgdesc="KDE KSplash theme"
 arch=('any')
@@ -10,7 +10,7 @@ url='http://www.kde.org/'
 license=('LGPL')
 makedepends=('kdelibs' 'cmake' 'automoc4')
 source=("http://download.kde.org/stable/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
-sha1sums=('ffc188d3f4bb99f5afe5075d6b5f3718357c8ffe')
+sha1sums=('006478e5c4c623516ab60ec0c21bdc910fdda34e')
 
 build() {
 	cd $srcdir

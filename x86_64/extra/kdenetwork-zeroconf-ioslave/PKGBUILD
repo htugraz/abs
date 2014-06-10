@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 213270 2014-05-19 15:03:44Z svenstaro $
+# $Id: PKGBUILD 214922 2014-06-10 17:55:29Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-zeroconf-ioslave
-pkgver=4.13.1
+pkgver=4.13.2
 pkgrel=1
 pkgdesc='Network Monitor for DNS-SD services (Zeroconf)'
 url='https://projects.kde.org/projects/kde/kdenetwork/zeroconf-ioslave'
@@ -14,7 +14,7 @@ makedepends=('cmake' 'automoc4')
 conflicts=('kdenetwork-kdnssd')
 replaces=('kdenetwork-kdnssd')
 source=("http://download.kde.org/stable/${pkgver}/src/zeroconf-ioslave-${pkgver}.tar.xz")
-sha1sums=('a71aac578785fb8fa59d4fea4302b4e08dcd5506')
+sha1sums=('1e18b93775a5dd34c38f8f00cdb55328e247795e')
 
 prepare() {
   mkdir build
