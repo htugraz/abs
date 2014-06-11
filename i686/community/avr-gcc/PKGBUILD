@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 111002 2014-05-11 20:34:17Z schuay $
+# $Id: PKGBUILD 112999 2014-06-11 11:41:10Z allan $
 # Maintainer: schuay <jakob.gruber@gmail.com>
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
 # Contributor: Corrado Primier <bardo@aur.archlinux.org>
@@ -9,7 +9,7 @@
 pkgname=avr-gcc
 _pkgname=gcc
 pkgver=4.9.0
-pkgrel=1
+pkgrel=2
 pkgdesc="The GNU AVR Compiler Collection"
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL' 'custom')

@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 104882 2014-01-28 03:34:09Z td123 $
+# $Id: PKGBUILD 113031 2014-06-11 14:49:15Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer : Aaron Griffin <aaron@archlinux.org>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=clearsilver
 pkgver=0.10.5
-pkgrel=13
+pkgrel=15
 pkgdesc="clearsilver is a fast, powerful, and language-neutral HTML template system"
 arch=('i686' 'x86_64')
 url='http://www.clearsilver.net'
 license=('custom')
 depends=('python2' 'perl' 'ruby' 'java-runtime')
-options=('!emptydirs')
+options=('!emptydirs' 'staticlibs')
 source=("http://www.clearsilver.net/downloads/$pkgname-$pkgver.tar.gz"
         "clearsilver-ruby-1.9.patch")
 md5sums=('b8c0c7fbe0ef5e06e0c935f134304d44'
@@ -38,6 +38,7 @@ EOF
 build() {
   cd $srcdir/$pkgname-$pkgver
   ./configure --disable-csharp --prefix=/usr --with-python=/usr/bin/python2
+  (cd perl && perl Makefile.PL INSTALLDIRS=vendor)
   make
 }
 

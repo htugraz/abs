@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 213460 2014-05-23 23:30:52Z heftig $
+# $Id: PKGBUILD 215041 2014-06-11 21:18:24Z heftig $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=evolution-ews
-pkgver=3.12.2
+pkgver=3.12.3
 pkgrel=1
 pkgdesc="MS Exchange integration through Exchange Web Services"
 arch=('i686' 'x86_64')
@@ -12,7 +12,7 @@ depends=('evolution-data-server' 'gtkhtml4' 'libmspack')
 makedepends=('intltool' 'evolution')
 options=('!emptydirs')
 source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver:0:4}/$pkgname-$pkgver.tar.xz)
-sha256sums=('aa5a179c2fbb6b5119bb53157b6dcf145b1603e5e84fc63b9b50a8b437e43f20')
+sha256sums=('6d06f303343cc56efcd19ea632209d7fd3ee57bf099b54603ad015d6590df47c')
 
 build() {
   cd $pkgname-$pkgver
