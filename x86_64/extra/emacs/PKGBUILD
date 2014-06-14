@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 204839 2014-01-28 14:14:20Z juergen $
+# $Id: PKGBUILD 215157 2014-06-14 19:17:04Z andyrtr $
 # Maintainer: Juergen Hoetzel <juergen@archlinux.org>
 # Contributor: Renchi Raju <renchi@green.tam.uiuc.edu>
 
 pkgname=emacs
 pkgver=24.3
-pkgrel=6
+pkgrel=7
 pkgdesc="The extensible, customizable, self-documenting real-time display editor"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/emacs/emacs.html"
@@ -15,7 +15,7 @@ source=(ftp://ftp.gnu.org/gnu/emacs/$pkgname-$pkgver.tar.xz{,.sig}
         emacs-24.3-giflib5.patch)
 md5sums=('ea9ed000ca165280265aabb55b9afbd7'
          'SKIP'
-         '560cdf463299e059c5fadf474bcba218')
+         'ccbe4e77440ff6ea56c8532ebc960446')
 
 prepare() {
   cd $pkgname-$pkgver

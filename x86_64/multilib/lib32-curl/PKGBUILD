@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 109458 2014-04-14 22:49:23Z dwallace $
+# $Id: PKGBUILD 113150 2014-06-14 15:22:22Z fyan $
 # Maintainer: Daniel Wallace <danielwallace@aur.archlinux.org>
 # Contributor: Dave Reisner <dreisner@archlinux.org>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
@@ -8,7 +8,7 @@
 
 pkgname=lib32-curl
 _pkgname=curl
-pkgver=7.36.0
+pkgver=7.37.0
 pkgrel=1
 pkgdesc="An URL retrieval utility and library (32-bit)"
 arch=('x86_64')
@@ -16,7 +16,7 @@ url="http://curl.haxx.se"
 license=('MIT')
 depends=('lib32-libssh2' 'lib32-krb5' "${_pkgname}")
 source=("http://curl.haxx.se/download/$_pkgname-$pkgver.tar.gz"{,.asc})
-md5sums=('643a7030b27449e76413d501d4b8eb57'
+md5sums=('c35d0b20a7ef38951da81b6cae7e5c36'
          'SKIP')
 
 
