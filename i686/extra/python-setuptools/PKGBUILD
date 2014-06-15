@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 215139 2014-06-14 17:13:04Z fyan $
+# $Id: PKGBUILD 215175 2014-06-15 12:18:26Z fyan $
 # Maintainer: Angel Velasquez <angvp@archlinux.org>
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgbase=python-setuptools
 pkgname=('python-setuptools' 'python2-setuptools')
-pkgver=5.0
+pkgver=5.0.2
 pkgrel=1
 epoch=1
 pkgdesc="Easily download, build, install, upgrade, and uninstall Python packages"
@@ -14,7 +14,7 @@ url="http://pypi.python.org/pypi/setuptools"
 makedepends=('python' 'python2')
 checkdepends=('python-pytest' 'python2-pytest')
 source=("http://pypi.python.org/packages/source/s/setuptools/setuptools-${pkgver}.tar.gz")
-sha512sums=('98f3e114aee97009ef1492316dba630b53be7396017b325b0e93bd337c30329d64f6922e6def3d9d1715a544bfa790ca6f9a58eba647695c2ab4068c53440d37')
+sha512sums=('c31a9c2e29491e8f11fe6e1f5eaaedb6f4c7e222b8e46e59b01b7334847140bece821f6467450afb2141c15928548d59787bcdcba4c2a78982888fde1af68595')
 
 prepare() {
   cp -a setuptools-${pkgver}{,-python2}
