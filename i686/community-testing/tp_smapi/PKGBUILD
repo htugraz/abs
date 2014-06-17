@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 112895 2014-06-09 12:14:47Z foutrelis $
+# $Id: PKGBUILD 113280 2014-06-17 08:05:42Z tpowa $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: xduugu
 # Contributor: nh2
@@ -10,7 +10,7 @@
 
 pkgname=tp_smapi
 pkgver=0.41
-pkgrel=48
+pkgrel=49
 pkgdesc="Modules for ThinkPad's SMAPI functionality"
 arch=('i686' 'x86_64')
 url='https://github.com/evgeni/tp_smapi'
