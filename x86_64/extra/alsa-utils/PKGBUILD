@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 191710 2013-07-29 10:16:55Z tpowa $
+# $Id: PKGBUILD 215276 2014-06-18 06:09:14Z tpowa $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
 
 pkgname=alsa-utils
-pkgver=1.0.27.2
+pkgver=1.0.28
 pkgrel=1
 pkgdesc="An alternative implementation of Linux sound support"
 arch=('i686' 'x86_64')
@@ -38,5 +38,5 @@ package() {
   # dir where to save ALSA state
   install -d ${pkgdir}/var/lib/alsa
 }
-md5sums=('b65e9a04181bd7c9db7667a4566f8dc3'
+md5sums=('361552d5b1cacd0a1e7ba09e69990211'
          '529216f6a46e61a546640e08ea7a0879')

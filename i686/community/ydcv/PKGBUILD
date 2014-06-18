@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 104989 2014-01-29 10:48:16Z fyan $
+# $Id: PKGBUILD 113318 2014-06-18 06:54:23Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgname=ydcv
 pkgdesc="YouDao Console Version - Simple wrapper for Youdao online translate (Chinese <-> English) service API, as an alternative to the StarDict Console Version(sdcv)"
-pkgver=0.3.4
+pkgver=0.3.5
 pkgrel=1
 arch=("any")
 url="https://github.com/felixonmars/ydcv"
