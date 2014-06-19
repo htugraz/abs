@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 111080 2014-05-13 11:01:57Z arodseth $
+# $Id: PKGBUILD 113369 2014-06-19 21:46:10Z arodseth $
 # Maintainer: Vesa Kaihlavirta <vegai@iki.fi>
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Rémy Oudompheng  <remy@archlinux.org>
@@ -11,7 +11,7 @@
 
 pkgname=go
 epoch=2
-pkgver=1.2.2
+pkgver=1.3
 pkgrel=1
 pkgdesc='Compiler and tools for the Go programming language from Google'
 arch=('x86_64' 'i686')
@@ -29,7 +29,7 @@ source=("$pkgname-$pkgver::hg+https://code.google.com/p/$pkgname#tag=$pkgname$pk
 md5sums=('SKIP')
 
 build() {
-  cd "$srcdir/$pkgname-$pkgver/src"
+  cd "$pkgname-$pkgver/src"
 
   export GOROOT="$srcdir/$pkgname-$pkgver"
   export GOBIN="$GOROOT/bin"
