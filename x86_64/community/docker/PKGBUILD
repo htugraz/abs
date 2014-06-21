@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 112920 2014-06-09 14:47:37Z seblu $
+# $Id: PKGBUILD 113377 2014-06-20 22:48:46Z seblu $
 # Maintainer: Sébastien "Seblu" Luttringer
 
 pkgname=docker
-pkgver=1.0.0
+pkgver=1.0.1
 pkgrel=1
 epoch=1
 pkgdesc='Pack, ship and run any application as a lightweight container'
