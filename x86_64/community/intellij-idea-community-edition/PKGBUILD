@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 112071 2014-05-29 10:02:59Z stativ $
+# $Id: PKGBUILD 113429 2014-06-22 16:37:51Z stativ $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname=intellij-idea-community-edition
 pkgver=13.1.3
 _pkgver=135.909
-pkgrel=1
+pkgrel=2
 pkgdesc="IDE for Java, Groovy and other programming languages with advanced refactoring features"
 arch=('any')
 url="http://www.jetbrains.org/"
@@ -34,6 +34,10 @@ package() {
   install -D -m644 "$srcdir"/idea.desktop "$pkgdir"/usr/share/applications/idea.desktop
   install -D -m644 "$pkgdir"/usr/share/intellijidea-ce/bin/idea.png \
                    "$pkgdir"/usr/share/pixmaps/idea.png
+
+
+  # workaround FS#40934
+  sed -i 's|lcd|on|'  "$pkgdir"/usr/share/intellijidea-ce/bin/*.vmoptions
 }
 
 # vim:set ts=2 sw=2 et:

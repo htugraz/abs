@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 94107 2013-07-14 13:09:46Z bluewind $
+# $Id: PKGBUILD 113414 2014-06-22 08:11:50Z lcarlier $
 # Maintainer: Jan "heftig" Steffens <jan.steffens@gmail.com>
 
 _pkgbasename=alsa-lib
 pkgname=lib32-${_pkgbasename}
-pkgver=1.0.27.2
+pkgver=1.0.28
 pkgrel=1
 pkgdesc="An alternative implementation of Linux sound support (32 bit)"
 arch=('x86_64')
@@ -11,9 +11,8 @@ url="http://www.alsa-project.org"
 depends=('lib32-glibc' $_pkgbasename)
 makedepends=('gcc-multilib')
 license=('GPL')
-options=(!libtool)
 source=(ftp://ftp.alsa-project.org/pub/lib/${_pkgbasename}-$pkgver.tar.bz2)
-md5sums=('69129a7c37697f81ac092335e9fa452b')
+md5sums=('c9e21b88a2b3e6e12ea7ba0f3b271fc3')
 
 build() {
   cd $srcdir/${_pkgbasename}-$pkgver
