@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 203560 2014-01-13 16:35:40Z tpowa $
+# $Id: PKGBUILD 215409 2014-06-24 06:20:48Z tpowa $
 # Maintainer:
 
 pkgname=gettext
-pkgver=0.18.3.2
+pkgver=0.19.1
 pkgrel=1
 pkgdesc="GNU internationalization library"
 arch=('i686' 'x86_64')
@@ -10,11 +10,11 @@ url="http://www.gnu.org/software/gettext/"
 license=('GPL')
 groups=('base' 'base-devel')
 depends=('gcc-libs' 'acl' 'sh' 'glib2' 'libunistring')
-optdepends=('cvs: for autopoint tool')
+optdepends=('git: for autopoint infrastructure updates')
 options=(!docs)
 install=gettext.install
 source=(ftp://ftp.gnu.org/pub/gnu/gettext/${pkgname}-${pkgver}.tar.gz{,.sig})
-md5sums=('241aba309d07aa428252c74b40a818ef'
+md5sums=('8949a57e82abe88274a93174ade515e4'
          'SKIP')
 
 build() {

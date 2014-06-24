@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 113191 2014-06-15 21:55:33Z svenstaro $
+# $Id: PKGBUILD 113528 2014-06-24 21:19:53Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Otto Allmendinger <otto.allmendinger@googlemail.com>
 # Contributor: Malte Rabenseifner <malte@zearan.de> 
 
 pkgname=murmur
 pkgver=1.2.7
-pkgrel=1
+pkgrel=2
 pkgdesc="The voice chat application server for Mumble"
 arch=('i686' 'x86_64')
 url="http://mumble.sourceforge.net"
