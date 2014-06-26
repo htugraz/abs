@@ -1,24 +1,25 @@
-# $Id: PKGBUILD 113142 2014-06-14 13:14:41Z bpiotrowski $
+# $Id: PKGBUILD 113644 2014-06-26 18:21:14Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Eivind Uggedal <eivind@uggedal.com>
 
 pkgname=mpv
-pkgver=0.3.11
-pkgrel=1
+pkgver=0.4.0
+pkgrel=2
 pkgdesc='Video player based on MPlayer/mplayer2'
 arch=('i686' 'x86_64')
 license=('GPL')
 url='http://mpv.io'
 depends=(
-  'portaudio' 'ffmpeg' 'lcms2' 'libdvdread' 'libcdio-paranoia' 'libquvi' 'libgl'
+  'ffmpeg' 'lcms2' 'libdvdread' 'libcdio-paranoia' 'libquvi' 'libgl' 'enca'
   'libxinerama' 'mpg123' 'libxv' 'libxkbcommon' 'libva' 'lirc-utils' 'wayland'
   'desktop-file-utils' 'hicolor-icon-theme' 'xdg-utils' 'lua' 'libdvdnav'
+  'libguess'
 )
 makedepends=('mesa' 'python-docutils' 'ladspa')
 options=('!emptydirs' '!buildflags')
 install=mpv.install
 source=(https://github.com/mpv-player/$pkgname/archive/v$pkgver.tar.gz)
-md5sums=('c2ab93033ce55e3e0ee596576db88e74')
+md5sums=('6b1ec7e8e3a2bcb5af68d62cea4577ba')
 
 prepare() {
   cd $pkgname-$pkgver
@@ -30,7 +31,10 @@ build() {
 
   ./waf configure --prefix=/usr \
     --confdir=/etc/mpv \
-    --enable-joystick
+    --enable-joystick \
+    --enable-zsh-comp \
+    --enable-libmpv-shared \
+    --enable-cdda
 
   ./waf build
 }
