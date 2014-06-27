@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 111919 2014-05-26 15:44:44Z arodseth $
+# $Id: PKGBUILD 113676 2014-06-27 18:32:24Z arodseth $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Sébastien Luttringer
 # Contributor: SpepS <dreamspepser at yahoo dot it>
@@ -6,14 +6,14 @@
 # Contributor: Donald Ephraim Curtis <dcurtis@gmail.com>
 
 pkgname=lua-posix
-pkgver=31
-pkgrel=2
+pkgver=32
+pkgrel=3
 pkgdesc='POSIX library for Lua'
 arch=('x86_64' 'i686')
 url='https://github.com/luaposix/luaposix'
-license=('GPL' 'LGPL')
+license=('MIT')
 depends=('lua')
-makedepends=('lua' 'git' 'help2man')
+makedepends=('git' 'help2man' 'ldoc')
 options=('!makeflags')
 source=("$pkgname::git://github.com/luaposix/luaposix.git#tag=v$pkgver")
 md5sums=('SKIP')
@@ -36,12 +36,11 @@ build() {
   make
 }
 
-check() {
-  make -C "$pkgname" check || true
-}
-
 package() {
-  make -C "$pkgname" DESTDIR="$pkgdir" install
+  cd "$pkgname"
+
+  make DESTDIR="$pkgdir" install
+  install -Dm644 COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
 }
 
 # vim:set ts=2 sw=2 et:

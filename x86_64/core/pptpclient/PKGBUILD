@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 187040 2013-06-03 11:15:32Z allan $
+# $Id: PKGBUILD 215512 2014-06-27 15:38:27Z daniel $
 # Maintainer: Daniel Isenmann <daniel @ archlinux.org>
 # Contributor: Mark Nikkel <mnikkel@gmail.com>
 
 pkgname=pptpclient
-pkgver=1.7.2
-pkgrel=5
+pkgver=1.8.0
+pkgrel=2
 pkgdesc="Client for the proprietary Microsoft Point-to-Point Tunneling Protocol, PPTP."
 arch=('i686' 'x86_64')
 url="http://pptpclient.sourceforge.net/"
@@ -12,7 +12,7 @@ license=('GPL')
 depends=('ppp' 'iproute2')
 backup=('etc/ppp/options.pptp')
 source=("http://downloads.sourceforge.net/sourceforge/pptpclient/pptp-$pkgver.tar.gz")
-md5sums=('4c3d19286a37459a632c7128c92a9857')
+md5sums=('4efce9f263e2c3f38d79d9df222476de')
 
 prepare() {
   cd $srcdir/pptp-$pkgver

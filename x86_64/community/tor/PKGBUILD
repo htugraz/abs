@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 113076 2014-06-12 19:38:25Z thestinger $
+# $Id: PKGBUILD 113657 2014-06-27 00:06:25Z thestinger $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Daniel Micay <danielmicay@gmail.com>
 # Contributor: simo <simo@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=tor
 pkgver=0.2.4.22
-pkgrel=2
+pkgrel=3
 pkgdesc='Anonymizing overlay network.'
 arch=('i686' 'x86_64')
 url='http://www.torproject.org/'
@@ -23,7 +23,7 @@ source=("http://www.torproject.org/dist/${pkgname}-${pkgver}.tar.gz"{,.asc}
 md5sums=('5a7eee0d9df87233255d78b25c6f8270'
          'SKIP'
          'c1dd4004c63edaeaa829e01be5413cfc'
-         '51c81cd06b75edd87aafff5a7941822c')
+         '503cedd9679f9817b2c27916ba989a74')
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
