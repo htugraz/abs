@@ -1,10 +1,11 @@
-# $Id: PKGBUILD 113725 2014-06-28 19:38:03Z spupykin $
+# $Id: PKGBUILD 113735 2014-06-29 08:22:15Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sébastien Luttringer
 
 pkgname=dokuwiki
-pkgver=20140505a
+pkgver=20140505_a
 _pkgver=${pkgver:0:4}-${pkgver:4:2}-${pkgver:6}
+_pkgver=${_pkgver/_/}
 pkgrel=2
 pkgdesc='Simple to use and highly versatile Open Source wiki software'
 arch=('any')
