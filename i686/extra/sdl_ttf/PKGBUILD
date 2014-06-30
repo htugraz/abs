@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 198424 2013-10-30 14:47:31Z allan $
+# $Id: PKGBUILD 215886 2014-06-30 19:14:11Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=sdl_ttf
 pkgver=2.0.11
-pkgrel=2
+pkgrel=3
 pkgdesc="A library that allows you to use TrueType fonts in your SDL applications"
 arch=('i686' 'x86_64')
 license=('custom')

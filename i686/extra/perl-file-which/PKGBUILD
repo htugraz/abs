@@ -1,15 +1,17 @@
-# $Id: PKGBUILD 149416 2012-02-07 16:24:46Z heftig $
+# $Id: PKGBUILD 215881 2014-06-30 19:09:43Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com
 # Contributor: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-file-which
 _realname=File-Which
 pkgver=1.09
-pkgrel=3
+pkgrel=4
 pkgdesc="Portable implementation of which"
 arch=(any)
 url="http://search.cpan.org/dist/File-Which"
 license=(GPL PerlArtistic)
+depends=(perl)
+options=('!emptydirs')
 source=("http://www.cpan.org/authors/id/A/AD/ADAMK/${_realname}-${pkgver}.tar.gz")
 md5sums=('b9429edaad7f45caafa4d458afcfd8af')
 

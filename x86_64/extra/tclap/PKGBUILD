@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 170163 2012-11-04 00:50:19Z eric $
+# $Id: PKGBUILD 215702 2014-06-30 09:28:23Z fyan $
 # Maintainer:
 # Contributor: Sébastien Piccand <sebcactus gmail com>
 
 pkgname=tclap
 pkgver=1.2.1
-pkgrel=2
+pkgrel=3
 pkgdesc="A small, flexible library that provides a simple interface for defining and accessing command line arguments"
 arch=('any')
 url="http://tclap.sourceforge.net/"

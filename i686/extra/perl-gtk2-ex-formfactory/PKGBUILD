@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 140117 2011-10-07 08:44:17Z eric $
+# $Id: PKGBUILD 215824 2014-06-30 16:41:07Z fyan $
 # Maintainer: tobias <tobias@archlinux.org>
 # Contributor: Tobias Kieslich <tobias@justdreams.de>
 
 pkgname=perl-gtk2-ex-formfactory
 _realname=Gtk2-Ex-FormFactory
 pkgver=0.67
-pkgrel=1
+pkgrel=2
 pkgdesc="Framework for perl-gtk2 development"
 arch=('any')
 license=('LGPL')
 url="http://www.exit1.org/${_realname}/"
-depends=('gtk2-perl' 'perl>=5.10.0')
+depends=('gtk2-perl' 'perl')
 options=('!emptydirs')
 DLAGENTS=('http::/usr/bin/wget -c -t 3 --waitretry=3 -O %o %u') # curl doesn't work
 source=(http://www.exit1.org/packages/${_realname}/dist/${_realname}-${pkgver}.tar.gz)

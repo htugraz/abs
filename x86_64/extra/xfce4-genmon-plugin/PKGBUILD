@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 198555 2013-10-30 15:34:47Z allan $
+# $Id: PKGBUILD 215659 2014-06-30 05:51:56Z fyan $
 # Maintainer:
 # Contributor: AndyRTR <andyrtr@archlinux.org>
 # Contributor: Tobias Kieslich <tobias (at) archlinux.org>
 
 pkgname=xfce4-genmon-plugin
 pkgver=3.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc="plugin that monitors customizable programs stdout for the Xfce4 panel"
 arch=('i686' 'x86_64')
 license=('LGPL2.1')

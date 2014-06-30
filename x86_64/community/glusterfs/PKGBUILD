@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 113498 2014-06-24 11:02:08Z spupykin $
+# $Id: PKGBUILD 113780 2014-06-30 11:59:55Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributors:
 #   Andrei Antoukh - niwi@niwi.be - http://www.niwi.be
@@ -6,14 +6,16 @@
 
 pkgname=glusterfs
 pkgver=3.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Is a cluster file-system capable of scaling to several peta-bytes.'
 arch=(i686 x86_64)
 url='http://www.gluster.org/'
 license=(GPL2 LGPL3)
 install=glusterfs.install
-depends=(fuse python2 libxml2)
+depends=(fuse python2 libxml2 libaio)
 makedepends=(flex bison)
+optdepends=('rpcbind: NFS'
+	    'glib2: qemu-block')
 source=($pkgname-$pkgver.tar.gz::https://github.com/gluster/glusterfs/archive/v$pkgver.tar.gz)
 md5sums=('8ca66470225704339b94317616977301')
 

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 137702 2011-09-10 12:52:17Z pierre $
+# $Id: PKGBUILD 215808 2014-06-30 16:10:55Z fyan $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=emovix
 pkgver=0.9.0
-pkgrel=5
+pkgrel=6
 pkgdesc="Create Movix-CD's (also emovix plugin for k3b)"
 arch=('any')
 url="http://movix.sourceforge.net/"

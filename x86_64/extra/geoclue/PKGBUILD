@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 197982 2013-10-30 12:04:23Z allan $
+# $Id: PKGBUILD 215864 2014-06-30 18:48:10Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: György Balló <ballogy@freestart.hu>
 
 pkgname=geoclue
 pkgver=0.12.99
-pkgrel=1
+pkgrel=2
 pkgdesc="Modular geoinformation service built on the D-Bus messaging system."
 arch=(i686 x86_64)
 url="http://geoclue.freedesktop.org/"

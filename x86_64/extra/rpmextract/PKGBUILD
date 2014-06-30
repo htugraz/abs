@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 149521 2012-02-08 11:18:26Z tpowa $
+# $Id: PKGBUILD 215672 2014-06-30 06:48:42Z tpowa $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=rpmextract
 pkgver=1.0
-pkgrel=5
+pkgrel=6
 pkgdesc="Script to convert or extract RPM archives (contains rpm2cpio)"
 url="http://www.archlinux.org"
 arch=('any')

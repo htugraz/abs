@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198546 2013-10-30 15:31:35Z allan $
+# $Id: PKGBUILD 215644 2014-06-30 05:34:13Z fyan $
 # Maintainer: aurelien <aurelien@archlinux.org>
 # Contributor: Aurelien Foret <orelien@chez.com>
 
 pkgname=xfce4-battery-plugin
 pkgver=1.0.5
-pkgrel=1
+pkgrel=2
 pkgdesc="A battery monitor plugin for the Xfce panel"
 arch=('i686' 'x86_64')
 license=('GPL2')

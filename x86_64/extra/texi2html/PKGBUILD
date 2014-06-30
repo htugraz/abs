@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 150542 2012-02-18 12:19:25Z pierre $
+# $Id: PKGBUILD 215700 2014-06-30 09:25:52Z fyan $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: dibblethewrecker dibblethewrecker.at.jiwe.dot.org
 
 pkgname=texi2html
 pkgver=5.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Converts texinfo documents to HTML"
 arch=('any')
 url="http://www.nongnu.org/texi2html/"

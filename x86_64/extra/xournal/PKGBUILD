@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 163006 2012-07-05 13:19:55Z bisson $
+# $Id: PKGBUILD 215756 2014-06-30 11:43:03Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 
 pkgname=xournal
 pkgver=0.4.7
-pkgrel=1
+pkgrel=2
 pkgdesc='Notetaking and sketching application'
 url='http://xournal.sourceforge.net/'
 license=('GPL')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 151743 2012-03-01 23:01:51Z bisson $
-# Contributor: Jan de Groot <jgc@archlinux.org>
+# $Id: PKGBUILD 215764 2014-06-30 11:44:21Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
+# Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-font-util
 pkgver=1.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc='X.Org font utilities'
 url='http://xorg.freedesktop.org/'
 arch=('i686' 'x86_64')

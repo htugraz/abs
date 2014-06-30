@@ -1,11 +1,12 @@
-# $Id: PKGBUILD 150520 2012-02-18 12:01:21Z allan $
-# Maintainer: kevin <kevin@archlinux.org>
+# $Id: PKGBUILD 215598 2014-06-30 04:03:11Z fyan $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
+# Contributor: kevin <kevin@archlinux.org>
 # Contributor: Manolis Tzanidakis
 
 pkgname=perl-digest-hmac
 _realname=Digest-HMAC
 pkgver=1.03
-pkgrel=2
+pkgrel=3
 pkgdesc="Perl Module: Keyed-Hashing for Message Authentication."
 arch=('any')
 license=('PerlArtistic')

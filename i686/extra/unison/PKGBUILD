@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 172029 2012-11-26 16:23:15Z tpowa $
+# $Id: PKGBUILD 215678 2014-06-30 06:54:10Z tpowa $
 #Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=unison
 pkgver=2.40.102
-pkgrel=1
+pkgrel=2
 pkgdesc="Unison is a file-synchronization tool"
 arch=(i686 x86_64)
 license=('GPL2')

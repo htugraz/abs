@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 150483 2012-02-18 03:18:23Z allan $
+# $Id: PKGBUILD 215708 2014-06-30 10:25:37Z bisson $
 
 pkgname=aspell-en
 pkgver=7.1
-pkgrel=2
+pkgrel=3
 pkgdesc="English dictionary for aspell"
 arch=('i686' 'x86_64')
 url="http://aspell.net/"

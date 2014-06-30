@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 198566 2013-10-30 15:38:50Z allan $
+# $Id: PKGBUILD 215688 2014-06-30 09:06:33Z fyan $
 # Maintainer:
 # Contributor: Andreas Radke <andyrtr@archlinux.org>
 # Contributor: Merk Matthias <macem@chello.at>
 
 pkgname=xfce4-sensors-plugin
 pkgver=1.2.5
-pkgrel=1
+pkgrel=2
 pkgdesc="A lm_sensors plugin for the Xfce panel"
 arch=('i686' 'x86_64')
 url="http://goodies.xfce.org/projects/panel-plugins/xfce4-sensors-plugin"

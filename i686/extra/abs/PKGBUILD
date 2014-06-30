@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 166403 2012-09-07 16:50:29Z dreisner $
+# $Id: PKGBUILD 215816 2014-06-30 16:28:12Z fyan $
 # Maintainer: Allan McRae <allan@archlinux.org>
 
 pkgname=abs
 pkgver=2.4.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Utilities to download and work with the Arch Build System (ABS)"
 arch=('i686' 'x86_64')
 url="http://projects.archlinux.org/abs.git/"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 198420 2013-10-30 14:46:03Z allan $
+# $Id: PKGBUILD 215884 2014-06-30 19:12:57Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
@@ -6,7 +6,7 @@
 
 pkgname=sdl_mixer
 pkgver=1.2.12
-pkgrel=3
+pkgrel=4
 pkgdesc="A simple multi-channel audio mixer"
 arch=('i686' 'x86_64')
 url="http://www.libsdl.org/projects/SDL_mixer/"

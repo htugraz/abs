@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198304 2013-10-30 14:03:06Z allan $
+# $Id: PKGBUILD 215870 2014-06-30 18:57:35Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=libzapojit
 pkgver=0.0.3
-pkgrel=1
+pkgrel=2
 pkgdesc="GLib/GObject wrapper for the SkyDrive and Hotmail REST APIs"
 arch=('i686' 'x86_64')
 license=('GPL')

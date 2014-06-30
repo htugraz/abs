@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 144034 2011-12-02 16:52:09Z eric $
+# $Id: PKGBUILD 215704 2014-06-30 09:34:04Z fyan $
 # Contributor: Sylvain HENRY <hsyl20@gmail.com>
 
 pkgname=w3c-mathml2
 pkgver=2.0
-pkgrel=3
+pkgrel=4
 pkgdesc="MathML XML scheme"
 arch=('any')
 url="http://www.w3.org/TR/MathML2/"

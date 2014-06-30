@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 176869 2013-02-02 03:26:36Z heftig $
+# $Id: PKGBUILD 215862 2014-06-30 18:43:49Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=pulseaudio-alsa
 pkgver=2
-pkgrel=2
+pkgrel=3
 pkgdesc="ALSA Configuration for PulseAudio"
 arch=(any)
 url="http://www.pulseaudio.org"

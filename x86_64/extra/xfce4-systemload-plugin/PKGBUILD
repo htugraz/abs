@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198569 2013-10-30 15:40:10Z allan $
+# $Id: PKGBUILD 215690 2014-06-30 09:11:26Z fyan $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Contributor: Aurelien Foret <orelien@chez.com>
 
 pkgname=xfce4-systemload-plugin
 pkgver=1.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A system load plugin for the Xfce4 panel"
 arch=('i686' 'x86_64')
 license=('custom')

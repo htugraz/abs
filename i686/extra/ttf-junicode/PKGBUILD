@@ -1,13 +1,13 @@
-# $Id: PKGBUILD 174016 2013-01-01 13:09:35Z bisson $
+# $Id: PKGBUILD 215778 2014-06-30 12:02:55Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Firmicus <francois.archlinux.org>
 
 pkgname=ttf-junicode
 pkgver=0.7.8
-pkgrel=1
+pkgrel=2
 pkgdesc='Junius-Unicode: a Unicode font targeted at medievalists'
 url='http://junicode.sourceforge.net'
-license=('custom')
+license=('custom:OFL')
 arch=('any')
 depends=('xorg-fonts-encodings' 'xorg-fonts-alias' 'xorg-font-utils' 'fontconfig')
 source=("http://downloads.sourceforge.net/junicode/junicode-${pkgver//\./-}.zip"

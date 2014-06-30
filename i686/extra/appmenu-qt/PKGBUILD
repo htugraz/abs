@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 206526 2014-03-01 08:09:19Z andrea $
+# $Id: PKGBUILD 215820 2014-06-30 16:38:31Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=appmenu-qt
 pkgver=0.2.6
-pkgrel=4
+pkgrel=5
 pkgdesc="Allows Qt applications to export menus over DBus to a menu applet"
 arch=('i686' 'x86_64')
 url='https://launchpad.net/appmenu-qt'

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198375 2013-10-30 14:29:13Z allan $
+# $Id: PKGBUILD 215724 2014-06-30 10:43:34Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Damir Perisa <damir@archlinux.org>
 
 pkgname=potrace
 pkgver=1.11
-pkgrel=1
+pkgrel=2
 pkgdesc='Utility for tracing a bitmap (input: PBM,PGM,PPM,BMP; output: EPS,PS,PDF,SVG,DXF,PGM,Gimppath,XFig)'
 url='http://potrace.sourceforge.net/'
 arch=('i686' 'x86_64')
@@ -19,7 +19,6 @@ build() {
 		--prefix=/usr \
 		--mandir=/usr/share/man \
 		--with-libpotrace \
-		--disable-static \
 
 	make
 }

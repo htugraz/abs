@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137917 2011-09-12 12:45:56Z pierre $
+# $Id: PKGBUILD 215804 2014-06-30 15:39:05Z fyan $
 # Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: dorphell <dorphell@archlinux.org>
@@ -6,7 +6,7 @@
 pkgbase=('cdrdao')
 pkgname=('cdrdao' 'gcdmaster')
 pkgver=1.2.3
-pkgrel=6
+pkgrel=7
 arch=('i686' 'x86_64')
 license=('GPL')
 url="http://cdrdao.sourceforge.net/"

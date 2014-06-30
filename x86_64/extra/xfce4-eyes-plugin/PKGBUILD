@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 198553 2013-10-30 15:34:02Z allan $
+# $Id: PKGBUILD 215653 2014-06-30 05:45:00Z fyan $
 # Maintainer:
 # Contributor: AndyRTR <andyrtr@archlinux.org>
 # Contributor: Aurelien Foret <orelien@chez.com>
 
 pkgname=xfce4-eyes-plugin
 pkgver=4.4.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A rolling eyes (following mouse pointer) plugin for the Xfce panel"
 arch=('i686' 'x86_64')
 url="http://goodies.xfce.org/projects/panel-plugins/xfce4-eyes-plugin"

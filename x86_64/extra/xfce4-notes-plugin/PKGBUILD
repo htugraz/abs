@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198560 2013-10-30 15:36:41Z allan $
+# $Id: PKGBUILD 215682 2014-06-30 08:57:25Z fyan $
 # Maintainer: Andreas Radke <andyrtr at archlinux.org>
 # Contributor: Ben Mazer <contrasutra@myrealbox.com>
 
 pkgname=xfce4-notes-plugin
 pkgver=1.7.7
-pkgrel=4
+pkgrel=5
 pkgdesc="A notes plugin for the Xfce4 panel"
 arch=('i686' 'x86_64')
 license=('GPL2')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 206554 2014-03-01 08:25:09Z andrea $
+# $Id: PKGBUILD 215836 2014-06-30 16:52:02Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libdbusmenu-qt
 pkgver=0.9.2
-pkgrel=2
+pkgrel=3
 pkgdesc="A library that provides a Qt implementation of the DBusMenu spec"
 arch=('i686' 'x86_64')
 url="https://launchpad.net/libdbusmenu-qt"

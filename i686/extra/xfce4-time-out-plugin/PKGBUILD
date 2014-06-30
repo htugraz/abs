@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198572 2013-10-30 15:41:22Z allan $
+# $Id: PKGBUILD 215692 2014-06-30 09:12:41Z fyan $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Contributor: Abhishek Dasgupta <abhidg@gmail.com>
 
 pkgname=xfce4-time-out-plugin
 pkgver=1.0.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Take a break from your computer with this plugin for XFCE4."
 arch=('i686' 'x86_64')
 url="http://xfce-goodies.berlios.de/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 154148 2012-03-23 17:34:14Z andyrtr $
-# Contributor: Jan de Groot <jgc@archlinux.org>
+# $Id: PKGBUILD 215762 2014-06-30 11:44:10Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
+# Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-setxkbmap
 pkgver=1.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Set the keyboard using the X Keyboard Extension'
 url='http://xorg.freedesktop.org/'
 license=('custom')

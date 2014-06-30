@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 197573 2013-10-27 02:09:58Z eric $
+# $Id: PKGBUILD 215740 2014-06-30 11:13:02Z fyan $
 # Maintainer: Ronald van Haren <ronald@archlinux.org>
 # Contributor: Stefan Husmann <stefan-husmann@t-online.de>
 # Contributor: Jason Taylor <jftaylor21@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=qhull
 pkgver=2012.1
-pkgrel=2
+pkgrel=3
 pkgdesc="A general dimension code for computing convex hulls and related structures"
 arch=('i686' 'x86_64')
 url="http://www.qhull.org/"

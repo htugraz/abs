@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198564 2013-10-30 15:38:04Z allan $
+# $Id: PKGBUILD 215684 2014-06-30 08:59:31Z fyan $
 # Maintainer: 
 # Contributor: Tobias Kieslich <tobias (at) archlinux.org>
 
 pkgname=xfce4-quicklauncher-plugin
 pkgver=1.9.4
-pkgrel=7
+pkgrel=8
 pkgdesc="plugin that creates 4 little application launcher in the Xfce4 panel"
 arch=('i686' 'x86_64')
 license=('GPL2')

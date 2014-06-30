@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198552 2013-10-30 15:33:40Z allan $
+# $Id: PKGBUILD 215651 2014-06-30 05:42:00Z fyan $
 # Maintainer:
 # Contributor: Aurelien Foret <orelien@chez.com>
 
 pkgname=xfce4-diskperf-plugin
 pkgver=2.5.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Plugin for the Xfce4 panel displaying instant disk/partition performance"
 arch=('i686' 'x86_64')
 license=('BSD')

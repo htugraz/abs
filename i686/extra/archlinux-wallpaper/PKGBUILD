@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 137080 2011-09-06 00:30:43Z eric $
+# $Id: PKGBUILD 215818 2014-06-30 16:35:06Z fyan $
 # Maintainer: Thayer Williams <thayer@archlinux.org>
 # Contributor: Thayer Williams <thayer@archlinux.org>
 
 pkgname=archlinux-wallpaper
 pkgver=1.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A variety of Arch Linux branded wallpapers"
 arch=('any')
 url="http://www.archlinux.org/"

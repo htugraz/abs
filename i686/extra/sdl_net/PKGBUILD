@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 198421 2013-10-30 14:46:25Z allan $
+# $Id: PKGBUILD 215888 2014-06-30 19:15:42Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: dorphell <dorphell@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=sdl_net
 pkgver=1.2.8
-pkgrel=1
+pkgrel=2
 pkgdesc="A small sample cross-platform networking library"
 arch=('i686' 'x86_64')
 license=('custom')

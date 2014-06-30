@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 176893 2013-02-02 06:08:32Z bisson $
+# $Id: PKGBUILD 215774 2014-06-30 12:02:23Z bisson $
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 
 pkgname=ttf-mph-2b-damase
 pkgver=001.000.4.dfsg.2
 _pkgver=001.000.dfsg.2+ds1
-pkgrel=4
+pkgrel=5
 pkgdesc='Unicode font covering full plane 1, and numerous scripts'
 url="http://packages.debian.org/unstable/x11/ttf-mph-2b-damase" 
 license=('custom:Public_Domain')

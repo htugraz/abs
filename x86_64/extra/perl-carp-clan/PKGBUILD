@@ -1,11 +1,12 @@
-# $Id: PKGBUILD 150345 2012-02-17 07:24:45Z allan $
-# Maintainer: Kevin Piche <kevin@archlinux.org>
+# $Id: PKGBUILD 215594 2014-06-30 03:59:21Z fyan $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
+# Contributor: Kevin Piche <kevin@archlinux.org>
 # Contributor: K. Piche <kpiche@rogers.com>
 
 pkgname=perl-carp-clan
 _realname=Carp-Clan
 pkgver=6.04
-pkgrel=2
+pkgrel=3
 pkgdesc='Report errors from perspective of caller of a "clan" of modules'
 arch=(any)
 license=('PerlArtistic')

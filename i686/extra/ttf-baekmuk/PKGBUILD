@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 176876 2013-02-02 04:30:33Z bisson $
+# $Id: PKGBUILD 215738 2014-06-30 11:05:38Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Darwin M. Bautista <djclue917@gmail.com>
 
 pkgname=ttf-baekmuk
 pkgver=2.2
-pkgrel=7
+pkgrel=8
 pkgdesc='Korean fonts'
 url='http://kldp.net/projects/baekmuk/'
 license=('custom:BSD')

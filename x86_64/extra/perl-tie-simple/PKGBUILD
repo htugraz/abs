@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 149417 2012-02-07 16:25:32Z heftig $
+# $Id: PKGBUILD 215880 2014-06-30 19:09:09Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=perl-tie-simple
 _realname=Tie-Simple
 pkgver=1.03
-pkgrel=2
+pkgrel=3
 pkgdesc="Variable ties made easier: much, much, much easier..."
 arch=(any)
 license=(PerlArtistic GPL)

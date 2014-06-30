@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 137726 2011-09-10 14:19:00Z pierre $
+# $Id: PKGBUILD 215666 2014-06-30 06:45:08Z tpowa $
 # Maintainer: Tom K <tomk@runbox.com>
 
 pkgname=gnu-netcat
 pkgver=0.7.1
-pkgrel=4
+pkgrel=5
 pkgdesc="GNU rewrite of netcat, the network piping application"
 depends=('glibc' 'texinfo')
 arch=('i686' 'x86_64')

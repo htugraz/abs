@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 149077 2012-02-05 16:47:56Z bisson $
+# $Id: PKGBUILD 215714 2014-06-30 10:35:23Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Jason Chu <jason@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
@@ -6,7 +6,7 @@
 
 pkgname=gnugo
 pkgver=3.8
-pkgrel=3
+pkgrel=4
 pkgdesc='Program that plays the game of Go'
 url='http://www.gnu.org/software/gnugo/'
 license=('GPL3' 'custom')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 157784 2012-04-29 11:28:45Z allan $
+# $Id: PKGBUILD 215897 2014-06-30 19:35:59Z andyrtr $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 
 pkgname=hunspell-en
 pkgver=7.1
-pkgrel=2
+pkgrel=3
 pkgdesc="English hunspell dictionaries"
 arch=(any)
 #url="http://en-gb.pyxidium.co.uk/"

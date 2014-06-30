@@ -1,13 +1,13 @@
-# $Id: PKGBUILD 197882 2013-10-30 11:27:01Z allan $
+# $Id: PKGBUILD 215814 2014-06-30 16:24:00Z fyan $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=capseo
 pkgver=0.3
-pkgrel=2
+pkgrel=3
 epoch=1
 pkgdesc="Capseo video codec"
 arch=('i686' 'x86_64')
-url="http://dev.gentoo.org/~trapni/capseo/"
+url="https://gitorious.org/capseo"
 license=('GPL2')
 depends=('libgl' 'gcc-libs')
 makedepends=('pkgconfig' 'mesa' 'libogg')

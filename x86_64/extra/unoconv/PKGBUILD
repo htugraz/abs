@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 180035 2013-03-15 05:01:01Z heftig $
+# $Id: PKGBUILD 215874 2014-06-30 19:01:27Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: max.bra <max.bra at alice dot it>
 # Contributor: SeeSchloss <seeschloss@seos.fr>
 
 pkgname=unoconv
 pkgver=0.6
-pkgrel=3
+pkgrel=4
 pkgdesc="Libreoffice-based document converter"
 depends=('python' 'libreoffice-common')
 makedepends=('asciidoc')
