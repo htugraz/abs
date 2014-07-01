@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 83201 2013-01-28 10:07:07Z spupykin $
+# $Id: PKGBUILD 114025 2014-07-01 12:20:23Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: dojo <joerg.doll[at]gmx.de>
 
 pkgname=gtkdialog
 pkgver=0.8.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Gtkdialog is a small utility for fast and easy GUI building."
 arch=('i686' 'x86_64')
 #url="http://linux.pte.hu/~pipas/gtkdialog/"

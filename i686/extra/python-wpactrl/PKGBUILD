@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 169034 2012-10-17 10:21:07Z allan $
+# $Id: PKGBUILD 216156 2014-07-01 17:53:58Z daniel $
 # Maintainer: Daniel Isenmann <daniel@archlinux.org>
 
 pkgbase=python-wpactrl
 pkgname=python2-wpactrl
 pkgver=20090609
-pkgrel=4
+pkgrel=5
 pkgdesc="A Python extension for wpa_supplicant/hostapd control interface access"
 arch=('i686' 'x86_64')
 url="http://projects.otaku42.de/wiki/PythonWpaCtrl"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 151181 2012-02-25 07:02:08Z pierre $
+# $Id: PKGBUILD 216111 2014-07-01 16:03:57Z fyan $
 #Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=damageproto
 pkgver=1.2.1
-pkgrel=2
+pkgrel=3
 pkgdesc="X11 Damage extension wire protocol"
 arch=(any)
 url="http://xorg.freedesktop.org/"

@@ -1,10 +1,10 @@
-#$Id: PKGBUILD 198038 2013-10-30 12:25:28Z allan $
+#$Id: PKGBUILD 216085 2014-07-01 15:24:07Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Kritoke <typeolinux@yahoo.com>
 
 pkgname=gnome-vfsmm
 pkgver=2.26.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A C++ wrapper for gnome-vfs."
 arch=('i686' 'x86_64')
 license=('LGPL')

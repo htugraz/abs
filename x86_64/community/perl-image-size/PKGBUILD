@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 73855 2012-07-16 05:43:31Z spupykin $
+# $Id: PKGBUILD 114233 2014-07-01 14:01:50Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: <francois . archlinux . org>
 # Contributor: Lukas Jirkovsky <l.jirkovsky@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=perl-image-size
 pkgver=3.232
-pkgrel=1
+pkgrel=2
 pkgdesc="Read the dimensions of an image in several popular formats"
 arch=(any)
 url="http://search.cpan.org/dist/Image-Size/"

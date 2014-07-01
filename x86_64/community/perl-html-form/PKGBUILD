@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 69178 2012-04-10 00:11:28Z spupykin $
+# $Id: PKGBUILD 114215 2014-07-01 13:57:03Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer : Justin "juster" Davis <jrcd83@gmail.com>
 
 pkgname=perl-html-form
 pkgver=6.03
-pkgrel=1
+pkgrel=2
 pkgdesc="Class that represents an HTML form element"
 arch=(any)
 license=(PerlArtistic GPL)

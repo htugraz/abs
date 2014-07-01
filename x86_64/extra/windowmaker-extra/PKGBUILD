@@ -1,9 +1,10 @@
-# $Id: PKGBUILD 128468 2011-06-24 03:00:43Z eric $
+# $Id: PKGBUILD 216163 2014-07-01 18:02:01Z daniel $
+# Maintainer: Daniel Isenmann <daniel@archlinux.org>
 # Contributor: orelien <orelien@chez.com>
 
 pkgname=windowmaker-extra
 pkgver=0.1
-pkgrel=4
+pkgrel=5
 pkgdesc="Extra WindowMaker icons and themes"
 arch=('any')
 url="http://www.windowmaker.info"

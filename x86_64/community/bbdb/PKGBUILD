@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65055 2012-02-20 02:29:43Z spupykin $
+# $Id: PKGBUILD 113923 2014-07-01 09:50:22Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: James Cozine <jmcozine@gmail.com>
 
 pkgname="bbdb"
 pkgver=2.35
-pkgrel=5
+pkgrel=6
 pkgdesc="A rolodex-like database for Emacs"
 arch=('any')
 url="http://bbdb.sourceforge.net"
@@ -19,6 +19,10 @@ build() {
 
   ./configure --prefix=/usr
   make -j1 all
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
 
   emacsdir="$pkgdir/usr/share/emacs/site-lisp/bbdb"
   mkdir -p "$emacsdir"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198240 2013-10-30 13:39:56Z allan $
+# $Id: PKGBUILD 216038 2014-07-01 13:16:44Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libspectre
 pkgver=0.2.7
-pkgrel=1
+pkgrel=2
 pkgdesc="Small library for rendering Postscript documents"
 arch=('i686' 'x86_64')
 license=('GPL2')

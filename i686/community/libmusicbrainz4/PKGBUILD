@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 83160 2013-01-27 16:20:02Z pierre $
+# $Id: PKGBUILD 113899 2014-07-01 08:09:46Z fyan $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Max Fehrm max.fehrm@gmail.com
 
 pkgname=libmusicbrainz4
 pkgver=4.0.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Library That Provides Access to the MusicBrainz Server"
 arch=('i686' 'x86_64')
 url="http://musicbrainz.org/"

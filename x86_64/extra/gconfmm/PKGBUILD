@@ -1,11 +1,11 @@
-#$Id: PKGBUILD 197972 2013-10-30 12:00:43Z allan $
+#$Id: PKGBUILD 216097 2014-07-01 15:41:58Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Kritoke <typeolinux@yahoo.com>
 
 pkgbase=gconfmm
 pkgname=('gconfmm' 'gconfmm-docs')
 pkgver=2.28.3
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url="http://gtkmm.sourceforge.net/"
 license=('LGPL')

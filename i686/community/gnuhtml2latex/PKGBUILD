@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65530 2012-02-21 08:45:05Z spupykin $
+# $Id: PKGBUILD 114013 2014-07-01 12:18:46Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # contributor: marcus fritzsch <m@fritschy.de>
 
 pkgname=gnuhtml2latex
 pkgver=0.4
-pkgrel=2
+pkgrel=3
 pkgdesc="A Perl script that converts html files to latex"
 arch=('any')
 url="http://packages.debian.org/unstable/text/gnuhtml2latex"

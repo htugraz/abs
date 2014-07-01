@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65813 2012-02-22 12:46:31Z spupykin $
+# $Id: PKGBUILD 114191 2014-07-01 13:54:05Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-extutils-xsbuilder
 pkgver=0.28
-pkgrel=5
+pkgrel=6
 pkgdesc="Automatic Perl XS glue code generation"
 arch=('any')
 url="http://search.cpan.org/dist/ExtUtils-XSBuilder"
@@ -18,6 +18,10 @@ build() {
   cd  $srcdir/ExtUtils-XSBuilder-$pkgver
   PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
   make
+}
+
+package() {
+  cd  $srcdir/ExtUtils-XSBuilder-$pkgver
   make install DESTDIR=$pkgdir
   find $pkgdir -name '.packlist' -delete
   find $pkgdir -name '*.pod' -delete

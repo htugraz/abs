@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65558 2012-02-21 08:56:01Z spupykin $
+# $Id: PKGBUILD 114033 2014-07-01 12:21:39Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Geoffroy Carrier <geoffroy.carrier@aur.archlinux.org>
 
 pkgname=hsolink
 pkgver=1.0.118
-pkgrel=8
+pkgrel=9
 pkgdesc="HSO command line connection utility"
 arch=('i686' 'x86_64')
 url="http://www.pharscape.org/hsolinkcontrol.html"

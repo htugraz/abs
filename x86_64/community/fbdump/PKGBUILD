@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 65232 2012-02-20 12:22:39Z spupykin $
+# $Id: PKGBUILD 113981 2014-07-01 10:52:05Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=fbdump
 pkgver=0.4.2
-pkgrel=3
+pkgrel=4
 pkgdesc="captures the contents of the visible portion of the Linux framebuffer to stdout"
 arch=('i686' 'x86_64')
 url="http://www.rcdrummond.net/fbdump/"
@@ -16,5 +16,9 @@ build() {
   cd $srcdir/$pkgname-$pkgver
   ./configure --prefix=/usr
   make
+}
+
+package() {
+  cd $srcdir/$pkgname-$pkgver
   make DESTDIR=$pkgdir install
 }

@@ -1,9 +1,9 @@
-#  $Id: PKGBUILD 198497 2013-10-30 15:13:24Z allan $
+#  $Id: PKGBUILD 215953 2014-07-01 08:54:22Z fyan $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=xdg-user-dirs-gtk
 pkgver=0.10
-pkgrel=1
+pkgrel=2
 pkgdesc="Creates user dirs and asks to relocalize them"
 arch=(i686 x86_64)
 license=('GPL')

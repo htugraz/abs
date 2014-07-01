@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 86494 2013-03-18 11:55:20Z spupykin $
+# $Id: PKGBUILD 114115 2014-07-01 13:31:47Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andrej Gelenberg <andrej.gelenberg@udo.edu>
 
 pkgname="openbsd-netcat"
 pkgver=1.105_7
-pkgrel=6
+pkgrel=7
 pkgdesc="TCP/IP swiss army knife. OpenBSD variant."
 arch=('i686' 'x86_64')
 url="http://packages.debian.org/sid/netcat-openbsd"

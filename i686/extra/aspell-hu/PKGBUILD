@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 150489 2012-02-18 03:27:52Z allan $
+# $Id: PKGBUILD 215924 2014-07-01 00:40:25Z fyan $
 # Maintainer:
 # Contributor: György Balló <ballogy@freestart.hu>
 
 pkgname=aspell-hu
 pkgver=0.99.4.2
-pkgrel=3
+pkgrel=4
 pkgdesc="Hungarian spellcheck dictionary for aspell"
 arch=('i686' 'x86_64')
 url="http://aspell.net/"

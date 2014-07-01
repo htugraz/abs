@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198202 2013-10-30 13:25:43Z allan $
+# $Id: PKGBUILD 216046 2014-07-01 13:28:13Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libmpcdec
 pkgver=1.2.6
-pkgrel=3
+pkgrel=4
 pkgdesc="Musepack decoding library"
 arch=('i686' 'x86_64')
 url="http://musepack.net/"

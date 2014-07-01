@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 82713 2013-01-23 11:06:02Z spupykin $
+# $Id: PKGBUILD 114003 2014-07-01 12:17:13Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Roman Kyrylych <Roman.Kyrylycg@gmail.com>
 # Contributor: Darwin Bautista <djclue917@gmail.com>
 
 pkgname=font-mathematica
 pkgver=9.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Mathematica fonts by Wolfram Research, Inc."
 arch=('any')
 url="http://support.wolfram.com/mathematica/systems/windows/general/latestfonts.html"
@@ -20,7 +20,7 @@ source=($pkgname-$pkgver.tar.gz::http://support.wolfram.com/kb/data/uploads/2012
 md5sums=('59220bcb9360e3b6886406cb66d750d8'
          '4d95629d78541826cb543764c8025c0b')
 
-build() {
+package() {
   cd $srcdir/Fonts/
   # Install TrueType fonts
   mkdir -p $pkgdir/usr/share/fonts/TTF

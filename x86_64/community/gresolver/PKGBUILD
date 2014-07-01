@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 86022 2013-03-11 10:39:31Z spupykin $
+# $Id: PKGBUILD 114017 2014-07-01 12:19:12Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=gresolver
 pkgver=0.0.5
-pkgrel=9
+pkgrel=10
 pkgdesc="A graphical frontend for dig"
 arch=('any')
 license=('GPL')

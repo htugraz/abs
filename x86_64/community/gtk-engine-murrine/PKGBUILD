@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 99796 2013-10-30 23:46:10Z allan $
+# $Id: PKGBUILD 114027 2014-07-01 12:20:39Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Roman Kyrylych <Roman.Kyrylych@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=gtk-engine-murrine
 pkgver=0.98.2
-pkgrel=1
+pkgrel=2
 pkgdesc="GTK2 engine to make your desktop look like a 'murrina', an italian word meaning the art glass works done by Venicians glass blowers."
 arch=('i686' 'x86_64')
 url="http://cimitan.com/murrine/project/murrine"

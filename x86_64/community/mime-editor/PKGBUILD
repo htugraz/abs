@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 66236 2012-02-23 05:09:35Z spupykin $
+# $Id: PKGBUILD 114089 2014-07-01 13:27:52Z spupykin $
 # Maintainer:
 # Contributor: dibblethewrecker <dibblethewrecker.at.jiwe.dot.org>
 
 pkgname=mime-editor
 pkgver=0.6
-pkgrel=4
+pkgrel=5
 pkgdesc='Shared-mime info database editor, useful for changing MIME-type info in rox applications'
 arch=('any')
 url='http://rox.sourceforge.net/mime_editor.html'

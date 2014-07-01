@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 67144 2012-03-05 00:04:12Z pschmitz $
+# $Id: PKGBUILD 114069 2014-07-01 12:48:32Z kkeen $
 # Maintainer:
 # Contributor: Lucien Immink <l.immink@student.fnt.hvu.nl>
 
 pkgname=gftp
 pkgver=2.0.19
-pkgrel=4
+pkgrel=5
 pkgdesc="A multithreaded ftp client for X Windows"
 arch=('i686' 'x86_64')
 url="http://www.gftp.org/"
@@ -14,12 +14,12 @@ source=(http://www.gftp.org/$pkgname-$pkgver.tar.bz2)
 md5sums=('5183cb4955d94be0e03c892585547c64')
 
 build() {
-   cd ${srcdir}/${pkgname}-${pkgver}
+   cd "$srcdir/$pkgname-$pkgver"
    ./configure --prefix=/usr --mandir=/usr/share/man
    make
 }
 
 package() {
-   cd ${srcdir}/${pkgname}-${pkgver}
-   make DESTDIR=${pkgdir} install
+   cd "$srcdir/$pkgname-$pkgver"
+   make DESTDIR="$pkgdir" install
 }

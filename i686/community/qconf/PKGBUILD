@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 85387 2013-03-01 10:37:35Z andrea $
+# $Id: PKGBUILD 114370 2014-07-01 15:05:41Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: DsTr <kostindima@gmail.com>
 
 pkgname=qconf
 pkgver=1.4
-pkgrel=3
+pkgrel=4
 pkgdesc="QConf allows you to have a nice configure script for your qmake-based project."
 arch=(i686 x86_64)
 url="http://delta.affinix.com/qconf/"

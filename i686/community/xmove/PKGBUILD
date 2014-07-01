@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65263 2012-02-20 12:41:25Z spupykin $
+# $Id: PKGBUILD 114478 2014-07-01 16:40:43Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Benjamin Andresen <benny AT klapmuetz DOT org>
 
 pkgname=xmove
 pkgver=2.0beta2
-pkgrel=5
+pkgrel=6
 pkgdesc="A tool to move X windows to different X servers, something like a GNU screen for X."
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/archlinux-stuff/"

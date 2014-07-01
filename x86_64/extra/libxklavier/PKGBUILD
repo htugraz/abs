@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198287 2013-10-30 13:56:54Z allan $
+# $Id: PKGBUILD 215995 2014-07-01 10:26:18Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Arjan Timmerman <arjan@archlinux.org>
 
 pkgname=libxklavier
 pkgver=5.3
-pkgrel=1
+pkgrel=2
 pkgdesc="High-level API for X Keyboard Extension"
 arch=(i686 x86_64)
 license=('LGPL')

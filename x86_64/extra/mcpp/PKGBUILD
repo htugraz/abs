@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198317 2013-10-30 14:07:54Z allan $
+# $Id: PKGBUILD 215991 2014-07-01 10:06:39Z fyan $
 # Maintainer: Alexander Baldeck <alexander@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=mcpp
 pkgver=2.7.2
-pkgrel=4
+pkgrel=5
 pkgdesc="Matsui's CPP implementation precisely conformed to standards"
 arch=('i686' 'x86_64')
 license=('custom')

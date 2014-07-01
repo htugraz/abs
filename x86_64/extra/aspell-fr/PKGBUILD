@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 150487 2012-02-18 03:25:43Z allan $
+# $Id: PKGBUILD 215922 2014-07-01 00:39:01Z fyan $
 # Maintainer:
 # Contributor: Simo Leone <simo@archlinux.org>
 # Contributor: Eric Johnson <eric@coding-zone.com>
 
 pkgname=aspell-fr
 pkgver=0.50.3
-pkgrel=6
+pkgrel=7
 pkgdesc="French dictionary for aspell"
 arch=('i686' 'x86_64')
 url="http://aspell.net/"

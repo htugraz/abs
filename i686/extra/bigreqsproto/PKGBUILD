@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 154132 2012-03-23 17:15:14Z andyrtr $
+# $Id: PKGBUILD 216119 2014-07-01 16:12:26Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=bigreqsproto
 pkgver=1.1.2
-pkgrel=1
+pkgrel=2
 pkgdesc="X11 Big Requests extension wire protocol"
 arch=(any)
 url="http://xorg.freedesktop.org/"

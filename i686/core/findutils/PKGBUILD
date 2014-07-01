@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 176243 2013-01-28 00:29:21Z allan $
+# $Id: PKGBUILD 216034 2014-07-01 12:13:13Z tpowa $
 # Maintainer:
 
 pkgname=findutils
 pkgver=4.4.2
-pkgrel=5
+pkgrel=6
 pkgdesc="GNU utilities to locate files"
 arch=('i686' 'x86_64')
 license=('GPL3')

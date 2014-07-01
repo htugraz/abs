@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 66227 2012-02-23 05:02:32Z spupykin $
+# $Id: PKGBUILD 114075 2014-07-01 13:26:15Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=man-pages-ru
 pkgver=0.98
-pkgrel=6
+pkgrel=7
 pkgdesc="Russian Linux man pages"
 arch=(any)
 #url="http://alexm.here.ru/manpages-ru/"
@@ -17,7 +17,7 @@ source=(http://www.linuxshare.ru/projects/trans/manpages-ru-$pkgver.tar.bz2)
 install=man-pages-ru.install
 md5sums=('2d452b93a2731eac8bb1767f61ff7557')
 
-build() {
+package() {
   cd $srcdir/manpages-ru-$pkgver
   mkdir -p $pkgdir/usr/share/man/ru
   mv man* $pkgdir/usr/share/man/ru/

@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 150834 2012-02-23 12:20:03Z ibiru $
-# Maintainer : Ionut Biru <ibiru@archlinux.org>
+# $Id: PKGBUILD 216141 2014-07-01 17:31:50Z daniel $
+# Maintainer : Daniel Isenmann <daniel@archlinux.org>
 # Contributor: György Balló <ballogy@freestart.hu>
 pkgname=gkeyfile-sharp
 pkgver=0.1
 _pkgver=GKEYFILE_SHARP_0_1-0-g07a401a
 _git=662c5c1
-pkgrel=2
+pkgrel=3
 pkgdesc="Mono bindings for GLib’s GKeyFile"
 arch=('any')
 url="http://github.com/mono/gkeyfile-sharp"
 license=('LGPL')
 depends=('gtk-sharp-2')
 source=(mono-$pkgname-$_pkgver.tar.gz::https://github.com/mono/gkeyfile-sharp/zipball/GKEYFILE_SHARP_0_1)
-md5sums=('cf2467dde223454d7eda0a8406518458')
+md5sums=('0f43ffd9ebe39969e2c7661b81a6dfae')
 
 build() {
   cd "$srcdir/mono-$pkgname-$_git"

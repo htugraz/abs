@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 99920 2013-10-31 02:28:43Z allan $
+# $Id: PKGBUILD 114103 2014-07-01 13:29:53Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=nemesis
 pkgver=1.4
-pkgrel=5
+pkgrel=6
 pkgdesc="command-line network packet crafting and injection utility"
 arch=(i686 x86_64)
 url="http://nemesis.sourceforge.net/"
@@ -17,7 +17,7 @@ md5sums=('acd7de57798a7f90f445f80d4d4a6e61'
          'ddf53f0f484184390e8c2a1bd0853667'
          'd802f7a12610e68124200310ad80e0ac')
 
-build() {
+package() {
   # build libnet
   cd $srcdir/Libnet-1.0.2a
   # very dirty hack

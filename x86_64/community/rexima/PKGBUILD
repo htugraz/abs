@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 56548 2011-10-08 11:58:00Z spupykin $
+# $Id: PKGBUILD 114378 2014-07-01 15:06:49Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Jeff Mickey <j@codemac.net>
 # Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=rexima
 pkgver=1.4
-pkgrel=4
+pkgrel=5
 pkgdesc="A curses-based interactive mixer."
 arch=('i686' 'x86_64')
 url="http://www.svgalib.org/rus/rexima.html"

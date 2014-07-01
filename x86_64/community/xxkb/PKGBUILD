@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 106999 2014-03-11 10:44:10Z spupykin $
+# $Id: PKGBUILD 114490 2014-07-01 16:45:29Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=xxkb
 pkgver=1.11
-pkgrel=4
+pkgrel=5
 pkgdesc="keyboard layout switcher/indicator"
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/xxkb/"

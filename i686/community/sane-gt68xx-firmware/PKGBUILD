@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65423 2012-02-21 05:41:37Z spupykin $
+# $Id: PKGBUILD 114382 2014-07-01 15:09:34Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=sane-gt68xx-firmware
 pkgver=1.0
-pkgrel=6
+pkgrel=7
 pkgdesc="gt68xx-based scanners firmwares"
 arch=(any)
 license=('GPL')
@@ -43,7 +43,7 @@ md5sums=('24f9eb96d7f1f3697b948f3d8df4b37a'
          'c314fc8fc431593c8fc6cefcb3d27a06'
          '4c3928214b03588a1e67c75f06d14dbb')
 
-build() {
+package() {
   cd $srcdir
   install -d -m0755 $pkgdir/usr/share/sane/gt68xx/
   install -m0644 *.usb $pkgdir/usr/share/sane/gt68xx/

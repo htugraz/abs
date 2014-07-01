@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198289 2013-10-30 13:57:37Z allan $
+# $Id: PKGBUILD 215997 2014-07-01 10:28:48Z fyan $
 # Maintainer: damir <damir@archlinux.org>
 
 pkgbase=libxml++
 pkgname=('libxml++' 'libxml++-docs')
 pkgver=2.36.0
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 license=('LGPL')
 url="http://libxmlplusplus.sourceforge.net/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65441 2012-02-21 05:47:41Z spupykin $
+# $Id: PKGBUILD 114392 2014-07-01 15:22:53Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: ice-man <icemanf@gmail.com>
 
 pkgname=sisctrl
 pkgver=0.0.20051202
-pkgrel=6
+pkgrel=7
 arch=(i686 x86_64)
 pkgdesc="Display Control Panel for XFree86/X.org SiS driver"
 makedepends=('pkgconfig')
@@ -24,6 +24,10 @@ build() {
   fi
 
   make
+}
+
+package() {
+  cd $srcdir/$pkgname-$pkgver
 
   mkdir -p $pkgdir/usr/bin
   mkdir -p $pkgdir/usr/man/man1/ 

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 83565 2013-02-03 08:26:51Z fyan $
+# $Id: PKGBUILD 113880 2014-07-01 07:56:57Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgname=yamdi
 pkgver=1.9
-pkgrel=1
+pkgrel=2
 pkgdesc="A metadata injector for FLV files"
 arch=('i686' 'x86_64')
 url="http://yamdi.sourceforge.net/"

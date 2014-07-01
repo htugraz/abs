@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 154361 2012-03-27 10:59:07Z heftig $
+# $Id: PKGBUILD 216093 2014-07-01 15:36:41Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-doc-utils
 pkgver=0.20.10
-pkgrel=1
+pkgrel=2
 pkgdesc="Documentation utilities for Gnome"
 arch=('any')
 license=('GPL' 'LGPL')

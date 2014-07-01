@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 169107 2012-10-18 03:22:47Z eric $
+# $Id: PKGBUILD 215940 2014-07-01 05:53:37Z fyan $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=mm-common
 pkgver=0.9.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Common build files of the C++ bindings"
 arch=('any')
 url="http://gtkmm.org"

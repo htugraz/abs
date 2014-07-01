@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 158605 2012-05-05 02:41:12Z allan $
+# $Id: PKGBUILD 215979 2014-07-01 09:45:51Z fyan $
 # Maintainer:
 # Contributor: Comete <la_comete@tiscali.fr>
 
 pkgname=pam_ldap
 pkgver=186
-pkgrel=4
+pkgrel=5
 pkgdesc="LDAP authentication module for the PAM framework"
 arch=('i686' 'x86_64')
 url="http://www.padl.com/OSS/pam_ldap.html"

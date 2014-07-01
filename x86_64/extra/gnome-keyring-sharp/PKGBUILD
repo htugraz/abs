@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 198013 2013-10-30 12:16:17Z allan $
-# Maintainer: Ionut Biru <ibiru@archlinux.org>
+# $Id: PKGBUILD 216139 2014-07-01 17:31:39Z daniel $
+# Maintainer: Daniel Isenmann <daniel@archlinux.org>
 pkgname=gnome-keyring-sharp
 pkgver=1.0.2
-pkgrel=4
+pkgrel=5
 pkgdesc="A fully managed implementation of libgnome-keyring"
 arch=('i686' 'x86_64')
 url="http://www.mono-project.com/Libraries"

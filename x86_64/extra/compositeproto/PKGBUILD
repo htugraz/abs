@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 149390 2012-02-07 13:05:41Z jgc $
+# $Id: PKGBUILD 216113 2014-07-01 16:06:17Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=compositeproto
 pkgver=0.4.2
-pkgrel=2
+pkgrel=3
 pkgdesc="X11 Composite extension wire protocol"
 arch=('any')
 url="http://xorg.freedesktop.org/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 60402 2011-12-13 10:30:01Z spupykin $
+# $Id: PKGBUILD 114317 2014-07-01 14:33:47Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=perl-unicode-stringprep
 pkgver=1.104.0
 _pkgver=1.104
-pkgrel=1
+pkgrel=2
 pkgdesc="Preparation of Internationalized Strings (RFC 3454)"
 arch=('any')
 url="http://search.cpan.org/dist/Unicode-Stringprep/"

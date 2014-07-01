@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 76254 2012-09-15 09:07:29Z aginiewicz $
+# $Id: PKGBUILD 113896 2014-07-01 08:07:13Z aginiewicz $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 
 pkgname=dhex
 pkgver=0.68
-pkgrel=1
+pkgrel=2
 pkgdesc="An ncurses-based hexeditor with a diff mode"
 arch=('i686' 'x86_64')
 url="http://www.dettus.net/dhex/"

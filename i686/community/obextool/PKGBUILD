@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 66255 2012-02-23 05:26:24Z spupykin $
+# $Id: PKGBUILD 114111 2014-07-01 13:31:12Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=obextool
 pkgver=0.35
-pkgrel=3
+pkgrel=4
 pkgdesc="A front-end of obexftp"
 arch=('any')
 url="http://obextool.sf.net"

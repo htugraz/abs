@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 78848 2012-10-25 20:30:11Z spupykin $
+# $Id: PKGBUILD 114394 2014-07-01 15:24:23Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sebastian A. Liem <sebastian at liem dot se>
 
 pkgname=slock
 pkgver=1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A simple screen locker for X"
 arch=('i686' 'x86_64')
 url="http://tools.suckless.org/slock"

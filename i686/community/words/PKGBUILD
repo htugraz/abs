@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 80176 2012-11-17 13:11:13Z kkeen $
+# $Id: PKGBUILD 113985 2014-07-01 11:42:56Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Eric Johnson <eric@coding-zone.com>
 pkgname=words
 pkgver=2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A collection of International 'words' files for /usr/share/dict."
 arch=('any')
 url="ftp://ftp.gnu.org/gnu/aspell/dict/0index.html"

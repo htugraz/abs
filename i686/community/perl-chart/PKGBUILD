@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 86688 2013-03-21 10:51:09Z spupykin $
+# $Id: PKGBUILD 114141 2014-07-01 13:47:55Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+aur@gmail.com>
 
 pkgname=perl-chart
 pkgver=2.4.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Business chart widget collection"
 arch=('any')
 url="http://search.cpan.org/dist/Chart"

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 57029 2011-10-18 20:00:10Z andrea $
+# $Id: PKGBUILD 114229 2014-07-01 14:01:17Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Mladen Pejakovic <pejakm@gmail.com>
 
 pkgname=perl-http-response-encoding
 pkgver=0.06
-pkgrel=2
+pkgrel=3
 pkgdesc="Adds encoding to HTTP::Response"
 arch=('any')
 url="http://search.cpan.org/dist/HTTP-Response-Encoding"

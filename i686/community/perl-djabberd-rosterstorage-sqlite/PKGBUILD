@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 66030 2012-02-22 14:48:40Z spupykin $
+# $Id: PKGBUILD 114189 2014-07-01 13:53:53Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=perl-djabberd-rosterstorage-sqlite
 pkgver=1.00
-pkgrel=3
+pkgrel=4
 pkgdesc="DJabberd sqlite roster storage module"
 arch=("any")
 url="http://search.cpan.org/~bradfitz/DJabberd-RosterStorage-SQLite/"
@@ -16,6 +16,10 @@ build() {
   cd $srcdir/DJabberd-RosterStorage-SQLite-$pkgver
   PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
   make
+}
+
+package() {
+  cd $srcdir/DJabberd-RosterStorage-SQLite-$pkgver
   make pure_install doc_install DESTDIR=$pkgdir
   find $pkgdir -name '.packlist' -delete
   find $pkgdir -name '*.pod' -delete

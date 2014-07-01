@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 71507 2012-05-27 19:58:13Z spupykin $
+# $Id: PKGBUILD 114420 2014-07-01 15:43:59Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Jeffrey 'jf' Lim <jfs.world@gmail.com>
 
 pkgname=tnef
 pkgver=1.4.9
-pkgrel=1
+pkgrel=2
 arch=(i686 x86_64)
 pkgdesc="Program which operates like tar to unpack the files inside an ms-tnef MIME attachment"
 url="http://sourceforge.net/projects/tnef/"
@@ -17,5 +17,9 @@ build() {
   cd $srcdir/$pkgname-$pkgver
   ./configure --prefix=/usr
   make
+}
+
+package() {
+  cd $srcdir/$pkgname-$pkgver
   make DESTDIR=$pkgdir install
 }

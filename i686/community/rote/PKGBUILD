@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 65507 2012-02-21 06:45:17Z spupykin $
+# $Id: PKGBUILD 114380 2014-07-01 15:09:00Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=rote
 pkgver=0.2.8
-pkgrel=3
+pkgrel=4
 pkgdesc="terminal emulation library"
 arch=('i686' 'x86_64')
 url="http://rote.sourceforge.net/"
@@ -17,6 +17,10 @@ build() {
   cd "$srcdir/$pkgname-$pkgver"
   ./configure --prefix=/usr
   make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
   make DESTDIR="$pkgdir" install
   install -D -m0644 roteprivate.h $pkgdir/usr/include/rote/roteprivate.h
 }

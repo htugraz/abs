@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 150574 2012-02-18 15:15:12Z pierre $
-# Maintainer: Hugo Doria <hugo@archlinux.org>
+# $Id: PKGBUILD 216153 2014-07-01 17:52:09Z daniel $
+# Maintainer: Daniel Isenmann <daniel@archlinux.org>
 
 pkgname=mono-zeroconf
 pkgver=0.9.0
-pkgrel=3
+pkgrel=4
 pkgdesc="A cross platform Zero Configuration Networking library for Mono and .NET."
 url="http://www.mono-project.com/Mono.Zeroconf"
 license=('GPL')

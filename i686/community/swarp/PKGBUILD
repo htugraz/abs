@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65469 2012-02-21 05:57:41Z spupykin $
+# $Id: PKGBUILD 114408 2014-07-01 15:35:51Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Dag Odenhall <dag.odenhall@gmail.com>
 
 pkgname=swarp
 pkgver=0.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Simple pointer warp"
 license=('MIT')
 arch=(i686 x86_64)
@@ -20,9 +20,11 @@ build() {
   cp $srcdir/config.mk .
   sed -i "s/%VERSION%/$pkgver/g" config.mk
   sed -i "s/%CFLAGS%/$CFLAGS/g" config.mk
-
   make
-  make DESTDIR=$pkgdir install
+}
 
+package() {
+  cd $srcdir/$pkgname-$pkgver
+  make DESTDIR=$pkgdir install
   install -m644 -D LICENSE $pkgdir/usr/share/licenses/$pkgname/COPYING
 }

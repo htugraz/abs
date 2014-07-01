@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65912 2012-02-22 13:36:26Z spupykin $
+# $Id: PKGBUILD 114275 2014-07-01 14:13:46Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-regexp-shellish
 pkgver=0.93
-pkgrel=5
+pkgrel=6
 pkgdesc="Perl/CPAN Module Regexp::Shellish : Shelllike regular expressions"
 arch=("any")
 url="http://search.cpan.org/dist/Regexp-Shellish"
@@ -16,6 +16,10 @@ build() {
   cd $srcdir/Regexp-Shellish-$pkgver
   PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
   make
+}
+
+package() {
+  cd $srcdir/Regexp-Shellish-$pkgver
   make install DESTDIR=$pkgdir
   find $pkgdir -name '.packlist' -delete
   find $pkgdir -name '*.pod' -delete

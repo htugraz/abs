@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 70322 2012-05-04 10:26:41Z spupykin $
+# $Id: PKGBUILD 114400 2014-07-01 15:28:18Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Alois Belaska <lloyd@centrum.cz>
 
 pkgname=sqlitemanager
 pkgver=1.2.4
-pkgrel=3
+pkgrel=4
 pkgdesc="Multilingual web based tool to manage SQLite database"
 arch=('any')
 license=('GPL')
@@ -17,7 +17,7 @@ url='http://sourceforge.net/projects/sqlitemanager'
 source=("http://downloads.sourceforge.net/project/sqlitemanager/sqlitemanager/$pkgver/SQliteManager-$pkgver.tar.gz")
 md5sums=('4d308b1bf4dcdf2e8d951c80a68ac705')
 
-build() {
+package() {
   cd $srcdir/SQLiteManager-$pkgver
 
   mkdir -p $pkgdir/var/lib/sqlitemanager

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 86492 2013-03-18 11:54:41Z spupykin $
+# $Id: PKGBUILD 114095 2014-07-01 13:28:44Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Samuel Mathieson <smathieson@gmail.com>
 
 pkgname=moinmoin
 _xpkgname=moin
 pkgver=1.9.7
-pkgrel=1
+pkgrel=2
 pkgdesc="A python wiki clone"
 arch=(any)
 url="http://moinmo.in/"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198117 2013-10-30 12:53:32Z allan $
+# $Id: PKGBUILD 216073 2014-07-01 14:33:32Z fyan $
 # Maitnainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=java-access-bridge
 pkgver=1.26.2
-pkgrel=3
+pkgrel=4
 pkgdesc="Java bindings for the GNOME accessibility framework"
 arch=('i686' 'x86_64')
 license=('LGPL')

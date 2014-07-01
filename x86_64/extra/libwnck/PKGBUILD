@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 198265 2013-10-30 13:49:06Z allan $
+# $Id: PKGBUILD 215999 2014-07-01 10:43:46Z fyan $
 # Maintainer: Jan de Groot  <jgc@archlinux.org>
 pkgname=libwnck
 pkgver=2.30.7
-pkgrel=1
+pkgrel=2
 pkgdesc="Window Navigator Construction Kit"
 arch=('i686' 'x86_64')
 license=('LGPL')

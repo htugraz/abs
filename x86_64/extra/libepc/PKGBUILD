@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198153 2013-10-30 13:07:09Z allan $
+# $Id: PKGBUILD 216064 2014-07-01 13:57:44Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libepc
 pkgver=0.4.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Easy Publish and Consume Library"
 arch=(i686 x86_64)
 license=('LGPL')

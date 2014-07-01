@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198029 2013-10-30 12:22:09Z allan $
+# $Id: PKGBUILD 216054 2014-07-01 13:43:54Z fyan $
 # Maintainer: tobias <tobias@archlinux.org>
 
 pkgbase=gnome-sharp
 pkgname=('gnome-sharp' 'art-sharp' 'gconf-sharp' 'gconf-sharp-peditors' 'libgnome-sharp' 'gnome-vfs-sharp')
 pkgver=2.24.2
-pkgrel=3
+pkgrel=4
 arch=(i686 x86_64)
 license=(LGPL)
 url="http://gtk-sharp.sourceforge.net"

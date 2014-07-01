@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 65373 2012-02-21 02:26:31Z spupykin $
+# $Id: PKGBUILD 114436 2014-07-01 15:57:51Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=vncviewer-jar
 pkgver=1.3.10
-pkgrel=3
+pkgrel=4
 pkgdesc="VNC viewer java applet"
 arch=('any')
 license=('GPL')
@@ -13,7 +13,7 @@ options=('!makeflags')
 source=(http://downloads.sf.net/sourceforge/vnc-tight/tightvnc-${pkgver}_unixsrc.tar.bz2)
 md5sums=('397b35faad32d5246b6d44b142f8304f')
 
-build() {
+package() {
   cd $srcdir/vnc_unixsrc
   mkdir -p $pkgdir/usr/share/vnc/classes
   install -D -m644 $srcdir/vnc_unixsrc/classes/* \

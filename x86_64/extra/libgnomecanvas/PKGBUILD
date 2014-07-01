@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198168 2013-10-30 13:12:34Z allan $
+# $Id: PKGBUILD 216060 2014-07-01 13:52:11Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libgnomecanvas
 pkgver=2.30.3
-pkgrel=2
+pkgrel=3
 pkgdesc="The GNOME Canvas library"
 arch=(i686 x86_64)
 license=('LGPL')

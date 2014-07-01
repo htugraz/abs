@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 86696 2013-03-21 10:52:18Z spupykin $
+# $Id: PKGBUILD 114193 2014-07-01 13:54:20Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 # Contributor: Francois Charette <firmicus@gmx.net>
 
 pkgname=perl-file-chdir
 pkgver=0.1008
-pkgrel=1
+pkgrel=2
 pkgdesc="a more sensible way to change directories "
 arch=('any')
 depends=('perl')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198383 2013-10-30 14:32:16Z allan $
+# $Id: PKGBUILD 215971 2014-07-01 09:31:45Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Sarah Hay <sarahhay@mb.sympatico.ca>
 
 pkgname=pygtk
 pkgver=2.24.0
-pkgrel=3
+pkgrel=4
 pkgdesc="Python bindings for the GTK widget set"
 arch=('i686' 'x86_64')
 license=('LGPL')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 76869 2012-10-01 14:50:59Z bisson $
+# $Id: PKGBUILD 113890 2014-07-01 08:04:43Z fyan $
 # Maintainer: Alexander Baldeck <alexander@archlinux.org>
 # Contributor: dorphell <dorphell@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=dvdrtools
 pkgver=0.3.1
-pkgrel=3
+pkgrel=4
 pkgdesc="A fork of cdrtools, with the primary goal of supporting writable DVD drives"
 arch=('i686' 'x86_64')
 url="http://savannah.nongnu.org/projects/dvdrtools/"

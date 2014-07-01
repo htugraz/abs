@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 197849 2013-10-30 11:14:35Z allan $
+# $Id: PKGBUILD 216127 2014-07-01 17:20:29Z fyan $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=aiksaurus
 pkgver=1.2.1
-pkgrel=3
+pkgrel=4
 pkgdesc="A cross-platform, open-source thesaurus"
 url="http://aiksaurus.sourceforge.net/"
 license=('GPL')

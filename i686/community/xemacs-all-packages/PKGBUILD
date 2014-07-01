@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 55248 2011-09-07 10:47:52Z spupykin $
+# $Id: PKGBUILD 114472 2014-07-01 16:33:43Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=xemacs-all-packages
 pkgver=20110907
-pkgrel=1
+pkgrel=2
 pkgdesc="xemacs-all-packages bundle from xemacs.org"
 arch=(any)
 url="http://xemacs.org/"
@@ -15,7 +15,7 @@ options=('!strip')
 source=(http://ftp.xemacs.org/pub/packages/xemacs-all-packages.tar.bz2)
 md5sums=('951ff1fb348e17bda74844788068e792')
 
-build() {
+package() {
   mkdir -p $pkgdir/usr/share/xemacs/xemacs-packages/
   cp -r $srcdir/xemacs-packages/*  $pkgdir/usr/share/xemacs/xemacs-packages/
 

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65192 2012-02-20 10:09:54Z spupykin $
+# $Id: PKGBUILD 114001 2014-07-01 12:17:00Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=fonteditfs
 pkgver=1.2
-pkgrel=3
+pkgrel=4
 pkgdesc="console font editor"
 arch=('i686' 'x86_64')
 url="http://fonteditfs.sourceforge.net/"
@@ -16,6 +16,10 @@ md5sums=('1e7c827da078d41a76459439dda0d5a9')
 build() {
   cd $srcdir/fnteditfs-$pkgver
   make
+}
+
+package() {
+  cd $srcdir/fnteditfs-$pkgver
   install -D -m0755 fnteditfs $pkgdir/usr/bin/fnteditfs
   install -D -m0644 fnteditfs.1 $pkgdir/usr/share/man/man1/fnteditfs.1
 }

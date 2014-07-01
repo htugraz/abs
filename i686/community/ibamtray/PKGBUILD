@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 86166 2013-03-12 14:43:58Z spupykin $
+# $Id: PKGBUILD 114035 2014-07-01 12:21:50Z spupykin $
 # Contributor: Derek 'tetonedge' Tucker <derek at tetonedge.net>
 
 pkgname=ibamtray
 pkgver=0.02
-pkgrel=7
+pkgrel=8
 pkgdesc="system tray ibam frontend based off vubat with libnotify support"
 arch=('any')
 url="http://www.tetonedge.net/?page_id=223"

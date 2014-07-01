@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198082 2013-10-30 12:41:42Z allan $
+# $Id: PKGBUILD 216079 2014-07-01 15:11:57Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gtksourceview2
 pkgver=2.10.5
-pkgrel=2
+pkgrel=3
 pkgdesc="A text widget adding syntax highlighting and more to GNOME"
 arch=('i686' 'x86_64')
 license=('GPL')

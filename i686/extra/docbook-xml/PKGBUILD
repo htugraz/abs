@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 151188 2012-02-25 07:07:26Z pierre $
+# $Id: PKGBUILD 216105 2014-07-01 15:57:51Z fyan $
 # Maintainer: dorphell <dorphell@archlinux.org>
 # Committer: Judd Vinet <jvinet@zeroflux.org>
 
 pkgname=docbook-xml
 pkgver=4.5
-pkgrel=5
+pkgrel=6
 pkgdesc="A widely used XML scheme for writing documentation and help"
 arch=('any')
 url="http://www.oasis-open.org/docbook/"

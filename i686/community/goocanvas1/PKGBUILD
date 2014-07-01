@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 99782 2013-10-30 23:41:15Z allan $
+# $Id: PKGBUILD 114534 2014-07-01 19:33:30Z jelle $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=goocanvas1
 pkgver=1.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A cairo canvas widget for GTK+"
 arch=(i686 x86_64)
 url="http://live.gnome.org/GooCanvas"
@@ -27,5 +27,4 @@ package() {
 check() {
   cd $srcdir/goocanvas-$pkgver
   make check
-
 }

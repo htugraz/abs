@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 83680 2013-02-04 11:05:45Z spupykin $
+# $Id: PKGBUILD 113997 2014-07-01 12:16:34Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=floyd
 pkgver=2.0.1
-pkgrel=4
+pkgrel=5
 pkgdesc="displays system load with pulse of keyboard LED"
 arch=('i686' 'x86_64')
 url="http://www.asahi-net.or.jp/~pi9s-nnb/floyd/"

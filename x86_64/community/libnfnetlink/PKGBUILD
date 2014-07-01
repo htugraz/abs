@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 99866 2013-10-31 02:10:24Z allan $
+# $Id: PKGBUILD 114046 2014-07-01 12:23:31Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
-# Maintainer: Sébastien Luttringer <seblu@aur.archlinux.org>
+# Maintainer: Sébastien Luttringer
 # Contributor: Kevin Edmonds <edmondskevin@hotmail.com>
 # Contributor: Filip Wojciechowski, filip at loka dot pl
 
 pkgname=libnfnetlink
 pkgver=1.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Low-level library for netfilter related kernel/userspace communication'
 arch=('i686' 'x86_64')
 url='http://www.netfilter.org/projects/libnfnetlink/'

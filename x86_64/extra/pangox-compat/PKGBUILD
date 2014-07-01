@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198366 2013-10-30 14:25:54Z allan $ 
+# $Id: PKGBUILD 215977 2014-07-01 09:42:07Z fyan $ 
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=pangox-compat
 pkgver=0.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="X Window System font support for Pango"
 arch=('i686' 'x86_64')
 license=('LGPL')

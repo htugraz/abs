@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 198031 2013-10-30 12:22:59Z allan $
+# $Id: PKGBUILD 216165 2014-07-01 18:08:23Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-speech
 pkgver=0.4.25
-pkgrel=2
+pkgrel=3
 pkgdesc="Gnome Text-to-Speech"
 arch=('i686' 'x86_64')
 license=('LGPL')
 url="http://www.gnome.org"
 depends=('libbonobo')
-makedepends=('intltool' 'pkgconfig' 'espeak' 'java-access-bridge' 'openjdk6')
+makedepends=('intltool' 'pkgconfig' 'espeak' 'java-access-bridge' 'jdk7-openjdk')
 optdepends=('espeak: Text to speech engine'
             'festival: Text to speech engine'
             'java-access-bridge: Speech support for java')

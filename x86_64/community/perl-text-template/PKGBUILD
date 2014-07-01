@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 84226 2013-02-14 00:01:33Z seblu $
-# Maintainer: Sébastien Luttringer
+# $Id: PKGBUILD 114515 2014-07-01 18:47:41Z seblu $
+# Contributor: Sébastien Luttringer <seblu@archlinux.org>
 
 pkgname=perl-text-template
 pkgver=1.46
-pkgrel=1
+pkgrel=2
 pkgdesc='Expand template text with embedded perl'
 arch=('any')
 url='http://search.cpan.org/dist/Text-Template'

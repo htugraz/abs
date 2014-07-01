@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 56478 2011-10-07 10:09:32Z spupykin $
+# $Id: PKGBUILD 114327 2014-07-01 14:34:53Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Francois Charette <firmicus@gmx.net>
 
 pkgname=perl-xml-atom
 pkgver=0.41
-pkgrel=1
+pkgrel=2
 pkgdesc="Atom feed and API implementation "
 arch=('any')
 url="http://search.cpan.org/dist/XML-Atom"
@@ -19,6 +19,10 @@ build() {
   sed -i "s|recommends('LWP::Authen::Wsse'),||g" Makefile.PL
   perl Makefile.PL INSTALLDIRS=vendor
   make
+}
+
+package() {
+  cd  $srcdir/XML-Atom-$pkgver
   make install DESTDIR=$pkgdir
   find $pkgdir -name '.packlist' -delete
   find $pkgdir -name '*.pod' -delete

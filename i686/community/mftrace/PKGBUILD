@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 76923 2012-10-02 09:37:01Z spupykin $
+# $Id: PKGBUILD 114087 2014-07-01 13:27:41Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: William Rea <sillywilly@gmail.com>
 
 pkgname=mftrace
 pkgver=1.2.18
-pkgrel=1
+pkgrel=2
 pkgdesc="Traces TeX bitmap fonts into PFA, PFB, or TTF"
 arch=('i686' 'x86_64')
 url="http://lilypond.org/mftrace/"
@@ -17,5 +17,9 @@ build() {
   cd $srcdir/$pkgname-$pkgver
   PYTHON=/usr/bin/python2 ./configure --prefix=/usr
   make
+}
+
+package() {
+  cd $srcdir/$pkgname-$pkgver
   make DESTDIR=$pkgdir install
 }

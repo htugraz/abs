@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198384 2013-10-30 14:32:43Z allan $
+# $Id: PKGBUILD 215969 2014-07-01 09:24:13Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=pygtksourceview2
 pkgver=2.10.1
-pkgrel=4
+pkgrel=5
 pkgdesc="Python bindings for gtksourceview2"
 arch=(i686 x86_64)
 license=('GPL')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198045 2013-10-30 12:28:07Z allan $
+# $Id: PKGBUILD 216087 2014-07-01 15:27:19Z fyan $
 # Maintainer: Aaron Griffin <aaron@archlinux.org>
 
 pkgname=goffice0.8
 pkgver=0.8.17
-pkgrel=2
+pkgrel=3
 pkgdesc="A library of document-centric objects and utilities built on top of GLib and Gtk+"
 arch=('i686' 'x86_64')
 url="http://www.gnome.org"

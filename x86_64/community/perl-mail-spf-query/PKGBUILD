@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 66012 2012-02-22 14:24:07Z spupykin $
+# $Id: PKGBUILD 114249 2014-07-01 14:10:42Z spupykin $
 # Maintainer: kevin <kevin@archlinux.org>
 # Contributor: Eric Johnson <eric@coding-zone.com>
 
 pkgname=perl-mail-spf-query
 _realname=Mail-SPF-Query
 pkgver=1.999.1
-pkgrel=5
+pkgrel=6
 pkgdesc="Perl module that provides SPF support"
 arch=('any')
 license=('GPL' 'PerlArtistic')

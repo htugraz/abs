@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 65267 2012-02-20 12:42:37Z spupykin $
+# $Id: PKGBUILD 114482 2014-07-01 16:41:11Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=xpacman
 pkgver=0.11
-pkgrel=6
+pkgrel=7
 pkgdesc="X pacman game (use z x / ' q keys)"
 arch=(i686 x86_64)
 url="http://www.ibiblio.org/pub/X11/contrib/games/"
@@ -33,6 +33,10 @@ diff -wbBur xpacman-0.11.orig/xpacman.c xpacman-0.11.orig.my/xpacman.c
 EOF
 
   gcc -o xpacman xpacman.c -lX11
+}
+
+package() {
+  cd $srcdir/$pkgname
   install -D -m 0755 xpacman $pkgdir/usr/bin/xpacman
   install -D -m 0755 $srcdir/xpacman.README $pkgdir/usr/share/licenses/xpacman/README
 }

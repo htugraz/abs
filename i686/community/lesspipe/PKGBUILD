@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 83838 2013-02-05 15:58:32Z spupykin $
+# $Id: PKGBUILD 114039 2014-07-01 12:22:21Z spupykin $
 # Maintainer: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve>
 # Contributor: solsTiCe d'Hiver <solstice.dhiver@gmail.com>
 
 pkgname=lesspipe
 pkgver=1.82
-pkgrel=1
+pkgrel=2
 pkgdesc='an input filter for the pager less'
 depends=('less')
 arch=('any')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 107009 2014-03-11 11:17:48Z spupykin $
+# $Id: PKGBUILD 113999 2014-07-01 12:16:46Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=flyspray
 pkgver=0.9.9.7
-pkgrel=1
+pkgrel=2
 pkgdesc="A PHP web-based bug tracker"
 arch=('any')
 url="http://www.flyspray.org/"

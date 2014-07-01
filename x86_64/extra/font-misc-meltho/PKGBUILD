@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 137960 2011-09-13 06:02:36Z allan $
+# $Id: PKGBUILD 216099 2014-07-01 15:44:03Z fyan $
 # Maintainer: Eric Belanger <eric@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=font-misc-meltho
 pkgver=1.0.1
-pkgrel=2
+pkgrel=3
 pkgdesc="X.org Misc Meltho fonts"
 arch=('any')
 url="http://xorg.freedesktop.org/"

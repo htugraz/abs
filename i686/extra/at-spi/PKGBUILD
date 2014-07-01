@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 197866 2013-10-30 11:21:08Z allan $
+# $Id: PKGBUILD 216123 2014-07-01 16:19:59Z fyan $
 # Maintainer: Jan de Groot <jan@archlinux.org>
 
 pkgname=at-spi
 pkgver=1.32.0
-pkgrel=5
+pkgrel=6
 pkgdesc="Assistive Technology Service Provider Interface"
 arch=('i686' 'x86_64')
 license=('GPL')

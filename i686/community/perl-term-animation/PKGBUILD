@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 56466 2011-10-07 10:06:44Z spupykin $
+# $Id: PKGBUILD 114293 2014-07-01 14:21:43Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-term-animation
 pkgver=2.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl/CPAN Module Term::Animation"
 arch=("any")
 url="http://search.cpan.org/dist/Term-Animation"
@@ -17,6 +17,10 @@ build() {
   cd $srcdir/Term-Animation-$pkgver
   PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
   make
+}
+
+package() {
+  cd $srcdir/Term-Animation-$pkgver
   make install DESTDIR=$pkgdir
   find $pkgdir -name '.packlist' -delete
   find $pkgdir -name '*.pod' -delete

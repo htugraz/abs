@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198172 2013-10-30 13:14:34Z allan $
+# $Id: PKGBUILD 216052 2014-07-01 13:39:19Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Kritoke <typeolinux@yahoo.com>
 
 pkgname=libgnomemm
 pkgver=2.30.0
-pkgrel=2
+pkgrel=3
 pkgdesc="C++ bindings for libgnome."
 arch=('i686' 'x86_64')
 license=('LGPL')

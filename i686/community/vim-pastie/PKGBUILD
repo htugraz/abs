@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 86890 2013-03-23 23:10:53Z td123 $
+# $Id: PKGBUILD 114542 2014-07-01 19:52:41Z jelle $
 # Maintainer: Aaron Schaefer <aaron@elasticdog.com>
 
 pkgname=vim-pastie
 pkgver=2.0
 _scriptid=10260
-pkgrel=6
+pkgrel=7
 pkgdesc='A Vim plugin that lets you read and create pastes at http://pastie.org/'
 arch=('any')
 url='http://www.vim.org/scripts/script.php?script_id=1624'

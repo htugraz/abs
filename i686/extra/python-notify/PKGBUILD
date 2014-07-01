@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198389 2013-10-30 14:34:32Z allan $
+# $Id: PKGBUILD 215959 2014-07-01 09:07:02Z fyan $
 # Maintainer: Angel Velasquez <angvp@archlinux.org>
 
 pkgbase=python-notify
 pkgname=python2-notify
 pkgver=0.1.1
-pkgrel=12
+pkgrel=13
 pkgdesc="Python bindings for libnotify"
 arch=('i686' 'x86_64')
 url="http://www.galago-project.org/"

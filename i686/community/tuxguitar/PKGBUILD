@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 84141 2013-02-11 15:15:31Z spupykin $
+# $Id: PKGBUILD 114426 2014-07-01 15:53:42Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: |AhIoRoS| < ahioros@gmail.com >
 
 pkgname=tuxguitar
 pkgver=1.2
-pkgrel=6
+pkgrel=7
 _jdk=java-7-openjdk
 pkgdesc="multitrack guitar tablature editor and player"
 arch=('i686' 'x86_64')

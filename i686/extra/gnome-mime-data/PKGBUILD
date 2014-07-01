@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 150864 2012-02-23 13:07:49Z ibiru $
+# $Id: PKGBUILD 216089 2014-07-01 15:29:24Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-mime-data
 pkgver=2.18.0
-pkgrel=6
+pkgrel=7
 pkgdesc="The base MIME and Application database for GNOME"
 arch=(any)
 license=('GPL')

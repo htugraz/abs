@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65078 2012-02-20 03:31:51Z spupykin $
+# $Id: PKGBUILD 113945 2014-07-01 10:19:45Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Roland Schaeuble <rschaeuble@gmx.ch>
 
 pkgname=cdcover
 pkgver=0.7.4
-pkgrel=5
+pkgrel=6
 pkgdesc="cdcover allows the creation of inlay-sheets for cd-cases and dvd's"
 arch=('i686' 'x86_64')
 url="http://cdcover.sourceforge.net"
@@ -26,7 +26,10 @@ build() {
 ---
 > IMAGEFILES=application-exit.gif cddb.gif document-print-preview.gif document-save.gif logo.gif nocddb.gif renumber.gif
 EOF
+}
 
+package() {
+  cd $srcdir/$pkgname
   make target=/usr prefix=$pkgdir/usr install
   rm -rf $pkgdir/usr/doc
 }

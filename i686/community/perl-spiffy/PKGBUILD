@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 86708 2013-03-21 10:54:08Z spupykin $
+# $Id: PKGBUILD 114279 2014-07-01 14:15:58Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-spiffy
 pkgver=0.31
-pkgrel=1
+pkgrel=2
 pkgdesc="Spiffy Perl Interface Framework For You"
 arch=('any')
 url="http://search.cpan.org/dist/Spiffy"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 59165 2011-11-21 13:00:34Z spupykin $
+# $Id: PKGBUILD 114123 2014-07-01 13:32:55Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=pdmenu
 pkgver=1.3.2
-pkgrel=1
+pkgrel=2
 pkgdesc="simple full screen menu program"
 arch=('i686' 'x86_64')
 url="http://packages.debian.org/unstable/source/pdmenu"

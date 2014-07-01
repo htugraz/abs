@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 86017 2013-03-11 10:27:49Z spupykin $
+# $Id: PKGBUILD 114311 2014-07-01 14:33:11Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-text-vfile-asdata
 pkgver=0.08
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl/CPAN Module Text::vFile::asData"
 arch=("any")
 url="http://search.cpan.org/dist/Text-vFile-asData"

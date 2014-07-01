@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 80895 2012-12-06 03:29:49Z fyan $
+# $Id: PKGBUILD 113878 2014-07-01 07:51:14Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Philacorns <opuspace@gmail.com>
 
 pkgname=wqy-microhei
 pkgver=0.2.0_beta
-pkgrel=5
-pkgdesc="A Sans-Serif style high quality CJK outline font."
+pkgrel=6
+pkgdesc="A Sans-Serif style high quality CJK outline font"
 arch=('any')
 license=('GPL3' 'APACHE' 'custom:"font embedding exception"')
 install=wqy-microhei.install

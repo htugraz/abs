@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 65238 2012-02-20 12:28:35Z spupykin $
+# $Id: PKGBUILD 114456 2014-07-01 16:12:13Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Roman Kyrylych <Roman.Kyrylych@gmail.com>
 # Contributor: rabyte <rabyte*at*gmail*dot*com>
@@ -6,7 +6,7 @@
 
 pkgname=xcursor-bluecurve
 pkgver=0.1.1
-pkgrel=4
+pkgrel=5
 pkgdesc="Redhat's Bluecurve X mouse cursor theme"
 arch=('any')
 url="http://opendesktop.org/content/show.php?content=39229"

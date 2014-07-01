@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 65239 2012-02-20 12:29:09Z spupykin $
+# $Id: PKGBUILD 114458 2014-07-01 16:12:27Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Roman Kyrylych <Roman.Kyrylych@gmail.com>
 # Contributor: Lee.MaRS <leemars@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=xcursor-flatbed
 pkgver=0.3
-pkgrel=2
+pkgrel=3
 pkgdesc="Flatbed XCursor Theme"
 arch=('any')
 url="http://www.limitland.de/flatbedcursors.html"

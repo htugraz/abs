@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 166675 2012-09-15 10:31:01Z guillaume $
+# $Id: PKGBUILD 216033 2014-07-01 11:45:59Z guillaume $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 # Maintainer: Guillaume ALAUX <guillaume@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
@@ -6,7 +6,7 @@
 pkgbase=rhino
 pkgname=('java-rhino' 'rhino' 'rhino-javadoc')
 pkgver=1.7R4
-pkgrel=1
+pkgrel=2
 arch=('any')
 url="http://www.mozilla.org/rhino/"
 license=('MPL')

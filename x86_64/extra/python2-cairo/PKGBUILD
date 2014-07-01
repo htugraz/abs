@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198386 2013-10-30 14:33:23Z allan $
+# $Id: PKGBUILD 215963 2014-07-01 09:12:57Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=python2-cairo
 pkgver=1.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Python2 bindings for the cairo graphics library"
 arch=('i686' 'x86_64')
 license=('LGPL' 'MPL')

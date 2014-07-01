@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65576 2012-02-21 09:03:53Z spupykin $
+# $Id: PKGBUILD 114011 2014-07-01 12:18:35Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 
 pkgname=gnome-ppp
 pkgver=0.3.23
-pkgrel=8
+pkgrel=9
 pkgdesc="A GNOME 2 WvDial frontend"
 arch=('i686' 'x86_64')
 url="http://www.gnomefiles.org/app.php?soft_id=41"
@@ -25,5 +25,9 @@ build() {
   patch -Np0 -i ${srcdir}/gnome-ppp-0.3.23-wvdial-notify.patch
   LDFLAGS=-lX11 ./configure --prefix=/usr
   make
+}
+
+package() {
+  cd ${srcdir}/${pkgname}-${pkgver}
   make DESTDIR=${pkgdir} install
 }

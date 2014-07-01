@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 60970 2011-12-19 21:33:58Z spupykin $
+# $Id: PKGBUILD 113973 2014-07-01 10:51:04Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Dag Odenhall <dag.odenhall@gmail.com>
 # Contributor: Grigorios Bouzakis <grbzks@gmail.com>
 
 pkgname=dwm
 pkgver=6.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A dynamic window manager for X"
 url="http://dwm.suckless.org"
 arch=('i686' 'x86_64')

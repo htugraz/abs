@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 86512 2013-03-18 12:25:13Z spupykin $
+# $Id: PKGBUILD 114225 2014-07-01 14:00:15Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Allan McRae <mcrae_allan@hotmail.com>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-html-tree
 pkgver=5.03
-pkgrel=2
+pkgrel=3
 pkgdesc="Make parse trees out of HTML source"
 arch=('any')
 url="http://search.cpan.org/dist/HTML-Tree"

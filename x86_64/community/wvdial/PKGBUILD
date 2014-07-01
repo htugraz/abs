@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 64685 2012-02-17 18:33:53Z bluewind $
+# $Id: PKGBUILD 113876 2014-07-01 07:49:58Z fyan $
 # Maintainer:
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: dorphell <dorphell@archlinux.org>
 
 pkgname=wvdial
 pkgver=1.61
-pkgrel=4
+pkgrel=5
 pkgdesc="A dialer program to connect to the Internet"
 url="http://alumnit.ca/wiki/index.php?page=WvDial"
 arch=('i686' 'x86_64')

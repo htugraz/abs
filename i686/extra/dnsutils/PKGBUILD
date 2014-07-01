@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 180987 2013-03-29 12:51:19Z jgc $
+# $Id: PKGBUILD 216109 2014-07-01 16:01:41Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: kevin <kevin@archlinux.org>
@@ -7,7 +7,7 @@
 pkgname=dnsutils
 _pkgver=9.9.2-P2
 pkgver=${_pkgver//-/.}
-pkgrel=1
+pkgrel=2
 pkgdesc='DNS utilities: dig host nslookup'
 url='http://www.isc.org/software/bind/'
 license=('custom:ISC')

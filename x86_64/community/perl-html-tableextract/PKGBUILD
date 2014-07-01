@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 56428 2011-10-07 09:56:04Z spupykin $
+# $Id: PKGBUILD 114219 2014-07-01 13:57:49Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-html-tableextract
 pkgver=2.11
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl/CPAN Module HTML::TableExtract : Flexible HTML table extraction"
 arch=('any')
 url="http://search.cpan.org/~msisk/HTML-TableExtract/"

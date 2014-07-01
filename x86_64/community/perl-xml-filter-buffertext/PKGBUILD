@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65988 2012-02-22 14:13:06Z spupykin $
+# $Id: PKGBUILD 114329 2014-07-01 14:39:29Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Ondrej Kucera <ondrej.kucera@centrum.cz>
 
 pkgname=perl-xml-filter-buffertext
 pkgver=1.01
-pkgrel=5
+pkgrel=6
 pkgdesc="XML-Filter-BufferText perl module (filter to put all characters() in one event)"
 arch=("any")
 url="http://search.cpan.org/dist/XML-Filter-BufferText/"
@@ -20,6 +20,10 @@ build() {
   perl Makefile.PL INSTALLDIRS=vendor
   make
   make test
+}
+
+package() {
+  cd $srcdir/XML-Filter-BufferText-${pkgver}
   make DESTDIR=$pkgdir install
 
   # Remove .packlist and perllocal.pod files.

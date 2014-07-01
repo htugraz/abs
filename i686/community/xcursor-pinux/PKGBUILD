@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 65241 2012-02-20 12:29:59Z spupykin $
+# $Id: PKGBUILD 114462 2014-07-01 16:15:49Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Roman Kyrylych <Roman.Kyrylych@gmail.com>
 # Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=xcursor-pinux
 pkgver=0.3
-pkgrel=10
+pkgrel=11
 pkgdesc="Pinux's Tux Cursors Theme"
 arch=('any')
 url="http://www.kde-look.org/content/show.php?content=19506"
@@ -15,7 +15,7 @@ source=(http://www.kde-look.org/CONTENT/content-files/19506-pinux\'s-tux-cursors
 md5sums=('b7fc00b4f7487bed6c118286d497f70f'
          'e3ef027f5c5ccee08fd638ad62bcb8e0')
 
-build() {
+package() {
   mkdir -p ${pkgdir}/usr/share/icons
   cp -R ${srcdir}/cursors/* ${pkgdir}/usr/share/icons/
 }

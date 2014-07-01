@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 63586 2012-02-05 11:58:12Z ibiru $
+# $Id: PKGBUILD 114007 2014-07-01 12:17:56Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Denis Kvist <denvist@ya.ru>
 
 pkgname=gimp-plugin-wavelet-decompose
 pkgver=0.1.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Wavelet decompose plugin for Gimp"
 arch=('i686' 'x86_64')
 url="http://registry.gimp.org/node/11742"
@@ -19,6 +19,10 @@ build() {
   cd "$srcdir/wavelet-decompose-$pkgver"
   patch -Np1 < ../po_install.diff
   make
+}
+
+package() {
+  cd "$srcdir/wavelet-decompose-$pkgver"
   install -Dvm755 src/wavelet-decompose \
 	"$pkgdir"/usr/lib/gimp/2.0/plug-ins/wavelet-decompose
   cd po

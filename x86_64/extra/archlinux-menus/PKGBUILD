@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 142263 2011-11-07 14:18:14Z jgc $
+# $Id: PKGBUILD 216121 2014-07-01 16:17:35Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Thayer Williams <thayer@archlinux.org>
 
 pkgname=archlinux-menus
 pkgver=2.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Arch Linux specific XDG-compliant menu"
 arch=('any')
 url="http://www.archlinux.org/"

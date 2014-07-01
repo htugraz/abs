@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65817 2012-02-22 12:47:34Z spupykin $
+# $Id: PKGBUILD 114195 2014-07-01 13:54:33Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-file-path-expand
 pkgver=1.02
-pkgrel=8
+pkgrel=9
 pkgdesc="Perl/CPAN Module File::Path::Expand"
 arch=('any')
 url="http://search.cpan.org/dist/File-Path-Expand"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 87008 2013-03-25 19:16:48Z bpiotrowski $
+# $Id: PKGBUILD 114061 2014-07-01 12:40:47Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sébastien Luttringer <seblu@archlinux.org>
 # Contributor: Anders Bergh <anders1@gmail.com>
@@ -6,7 +6,7 @@
 pkgbase=luasql
 pkgname=('lua-sql-mysql' 'lua-sql-postgres' 'lua-sql-sqlite')
 pkgver=2.2.0
-pkgrel=3
+pkgrel=5
 arch=('i686' 'x86_64')
 url='http://www.keplerproject.org/luasql/'
 license=('MIT')

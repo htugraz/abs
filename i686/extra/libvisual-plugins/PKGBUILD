@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198261 2013-10-30 13:47:39Z allan $
+# $Id: PKGBUILD 216001 2014-07-01 10:57:09Z fyan $
 # Maintainer: damir <damir@archlinux.org>
 
 pkgname=libvisual-plugins
 pkgver=0.4.0
-pkgrel=7
+pkgrel=8
 pkgdesc="plugins for libvisual"
 arch=("i686" "x86_64")
 license=('GPL')

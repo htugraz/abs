@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 55533 2011-09-14 07:44:04Z andrea $
+# $Id: PKGBUILD 114430 2014-07-01 15:55:21Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.co>
 # Contributor: dale <dale@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=unarj
 pkgver=2.63a
-pkgrel=3
+pkgrel=4
 pkgdesc="An utility to extract, test and  view the contents of archives created with the ARJ archiver"
 arch=('i686' 'x86_64')
 url="http://www.ibiblio.org/pub/Linux/utils/compress/"

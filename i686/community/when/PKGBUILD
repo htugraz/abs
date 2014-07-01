@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 86500 2013-03-18 11:56:38Z spupykin $
+# $Id: PKGBUILD 114442 2014-07-01 16:00:17Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Charles Mauch <cmauch@gmail.com>
 
 pkgname=when
 pkgver=1.1.31
-pkgrel=1
+pkgrel=2
 pkgdesc="A simple commandline personal calendar program"
 arch=('any')
 url="http://www.lightandmatter.com/when/when.html"

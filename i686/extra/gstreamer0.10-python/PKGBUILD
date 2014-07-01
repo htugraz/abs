@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198066 2013-10-30 12:35:41Z allan $
+# $Id: PKGBUILD 216083 2014-07-01 15:17:57Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gstreamer0.10-python
 pkgver=0.10.22
-pkgrel=1
+pkgrel=2
 pkgdesc="Python bindings for GStreamer 0.10"
 arch=('i686' 'x86_64')
 license=('LGPL')

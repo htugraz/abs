@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 99955 2013-10-31 02:40:34Z allan $
+# $Id: PKGBUILD 113872 2014-07-01 07:43:53Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Mateusz Slazynski <ceceron@gmail.com>
 
 pkgname=pidgin-kwallet
 pkgver=1.1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="KWallet plugin for Pidgin"
 arch=('i686' 'x86_64')
 url="http://kde-apps.org/content/show.php/Pidgin+KWallet+Plugin?content=127136"

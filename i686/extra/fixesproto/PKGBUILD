@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 151256 2012-02-25 10:07:40Z allan $
+# $Id: PKGBUILD 216101 2014-07-01 15:54:18Z fyan $
 #Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=fixesproto
 pkgver=5.0
-pkgrel=2
+pkgrel=3
 pkgdesc="X11 Fixes extension wire protocol"
 arch=('any')
 url="http://xorg.freedesktop.org/"

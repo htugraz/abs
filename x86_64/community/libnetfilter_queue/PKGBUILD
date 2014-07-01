@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 99865 2013-10-31 02:10:04Z allan $
+# $Id: PKGBUILD 114045 2014-07-01 12:23:12Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
-# Maintainer: Sébastien Luttringer <seblu@aur.archlinux.org>
+# Maintainer: Sébastien Luttringer
 # Contributor: Kevin Edmonds <edmondskevin@hotmail.com>
 # Maintainer: Filip Wojciechowski, filip at loka dot pl
 
 pkgname=libnetfilter_queue
 pkgver=1.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Userspace API to packets that have been queued by the kernel packet filter'
 arch=('i686' 'x86_64')
 url='http://www.netfilter.org/projects/libnetfilter_queue/'

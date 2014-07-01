@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 151398 2012-02-26 10:18:59Z pierre $
+# $Id: PKGBUILD 216103 2014-07-01 15:55:22Z fyan $
 #Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=evieext
 pkgver=1.1.1
-pkgrel=2
+pkgrel=3
 pkgdesc="X11 Event Interception extension wire protocol"
 arch=('any')
 url="http://xorg.freedesktop.org/"

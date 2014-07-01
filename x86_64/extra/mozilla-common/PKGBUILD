@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 137692 2011-09-10 12:22:03Z pierre $
+# $Id: PKGBUILD 215987 2014-07-01 09:58:28Z fyan $
 # Maintainer: dale <dale@archlinux.org>
 
 pkgname=mozilla-common
 pkgver=1.4
-pkgrel=3
+pkgrel=4
 pkgdesc="Common Initialization Profile for Mozilla.org products"
 arch=('any')
 license=('GPL')

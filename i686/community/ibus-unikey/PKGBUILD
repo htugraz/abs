@@ -1,10 +1,11 @@
-# $Id: PKGBUILD 79163 2012-10-31 05:41:19Z ebelanger $
-# Maintainer: Thomas Dziedzic < gostrc at gmail >
+# $Id: PKGBUILD 113860 2014-07-01 07:12:23Z fyan $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
+# Contributor: Thomas Dziedzic < gostrc at gmail >
 # Contributor: Trương Xuân Tính <xuantinh at gmail dot com>
 
 pkgname=ibus-unikey
 pkgver=0.6.1
-pkgrel=2
+pkgrel=3
 pkgdesc='IBus module for Vietnamese Keyboard'
 arch=('i686' 'x86_64')
 license=('GPL')

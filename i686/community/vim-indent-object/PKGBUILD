@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 82323 2013-01-14 23:21:03Z thestinger $
+# $Id: PKGBUILD 113949 2014-07-01 10:21:06Z thestinger $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 # Contributor: vae77 <fernandogrd@yahoo.com.br>
 
 pkgname=vim-indent-object
 pkgver=1.1.2
-pkgrel=2
+pkgrel=3
 pkgdesc='Text objects based on indent levels'
 arch=(any)
 url='http://www.vim.org/scripts/script.php?script_id=3037'

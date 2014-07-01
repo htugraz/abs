@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 73278 2012-07-05 10:43:05Z spupykin $
+# $Id: PKGBUILD 114341 2014-07-01 14:41:00Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Mike Sampson <mike at sambodata dot com>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
@@ -6,7 +6,7 @@
 
 pkgname=pstotext
 pkgver=1.9
-pkgrel=2
+pkgrel=3
 pkgdesc="Converts Postscript to text"
 arch=('i686' 'x86_64')
 url="http://www.cs.wisc.edu/~ghost/doc/pstotext.htm"

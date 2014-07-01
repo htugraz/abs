@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 66049 2012-02-22 15:26:44Z spupykin $
+# $Id: PKGBUILD 114251 2014-07-01 14:10:53Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-math-base85
 pkgver=0.2
-pkgrel=5
+pkgrel=6
 pkgdesc="Perl/CPAN Module Math::Base85"
 arch=("any")
 url="http://search.cpan.org/dist/Math-Base85"
@@ -16,6 +16,10 @@ build() {
   cd $srcdir/Math-Base85-$pkgver
   PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
   make
+}
+
+package() {
+  cd $srcdir/Math-Base85-$pkgver
   make install DESTDIR=$pkgdir
   find $pkgdir -name '.packlist' -delete
   find $pkgdir -name '*.pod' -delete

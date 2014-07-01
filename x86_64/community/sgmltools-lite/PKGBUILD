@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65437 2012-02-21 05:46:05Z spupykin $
+# $Id: PKGBUILD 114386 2014-07-01 15:14:20Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=sgmltools-lite
 pkgver=3.0.3
-pkgrel=7
+pkgrel=8
 pkgdesc="SGML processing tools (sucessor to the obsolete SGMLtools)"
 arch=('any')
 url="http://sgmltools-lite.sourceforge.net/"
@@ -22,5 +22,9 @@ build() {
   find -type d -name CVS -exec rm -rf {} \; || true
   ./configure --prefix=/usr --mandir=${pkgdir}/usr/share/man
   make
+}
+
+package() {
+  cd ${srcdir}/${pkgname}-${pkgver}
   make prefix=$pkgdir/usr etcdir=$pkgdir/etc/sgml install
 }

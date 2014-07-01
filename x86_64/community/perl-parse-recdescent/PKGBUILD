@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 73859 2012-07-16 05:44:29Z spupykin $
+# $Id: PKGBUILD 114267 2014-07-01 14:12:48Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-parse-recdescent
 pkgver=1.967009
-pkgrel=1
+pkgrel=2
 pkgdesc="Recursive descent parser generator"
 arch=(any)
 url="http://search.cpan.org/dist/Parse-RecDescent"
@@ -20,6 +20,10 @@ build() {
   cd  $srcdir/Parse-RecDescent-$pkgver
   perl Build.PL installdirs=vendor destdir="$pkgdir/"
   perl Build
+}
+
+package() {
+  cd  $srcdir/Parse-RecDescent-$pkgver
   perl Build install
   find $pkgdir -name '.packlist' -delete
   find $pkgdir -name '*.pod' -delete

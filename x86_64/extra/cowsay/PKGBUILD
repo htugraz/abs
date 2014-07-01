@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 173239 2012-12-15 22:05:18Z guillaume $
+# $Id: PKGBUILD 216019 2014-07-01 11:44:38Z guillaume $
 # Maintainer: Guillaume ALAUX <guillaume@archlinux.org> 
 # Contributor: Eric Belanger <eric@archlinux.org>
 # Contributor: Sarah Hay <sarahhay@mb.sympatico.ca>
 
 pkgname=cowsay
 pkgver=3.03
-pkgrel=8
+pkgrel=9
 pkgdesc='Configurable talking cow (and a few other creatures)'
 arch=('any')
 url='http://www.nog.net/~tony/warez/'

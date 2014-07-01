@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 65710 2012-02-22 10:19:25Z spupykin $
+# $Id: PKGBUILD 114015 2014-07-01 12:19:00Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 # Maintainer: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve>
 
 pkgname=gobby
 pkgver=0.4.13
-pkgrel=1
+pkgrel=2
 pkgdesc="A collaborative text editor"
 arch=('i686' 'x86_64')
 url="http://gobby.0x539.de"
@@ -23,6 +23,10 @@ build() {
   cd $srcdir/gobby-$pkgver
   ./configure --prefix=/usr --with-gnome
   make
+}
+
+package() {
+  cd $srcdir/gobby-$pkgver
   make DESTDIR=$pkgdir install
   install -D -m644 contrib/gobby.desktop \
                    $pkgdir/usr/share/applications/gobby.desktop

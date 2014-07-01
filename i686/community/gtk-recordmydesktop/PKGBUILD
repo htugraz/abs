@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 64924 2012-02-18 20:59:20Z jelle $
+# $Id: PKGBUILD 114536 2014-07-01 19:45:48Z jelle $
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Giovanni Scafora <linuxmania@gmail.com>
 # Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=gtk-recordmydesktop
 pkgver=0.3.8
-pkgrel=6
+pkgrel=7
 pkgdesc="A pygtk frontend for recordmydesktop"
 arch=('any')
 url="http://recordmydesktop.sourceforge.net"

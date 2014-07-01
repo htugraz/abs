@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 198385 2013-10-30 14:33:03Z allan $
+# $Id: PKGBUILD 215967 2014-07-01 09:18:51Z fyan $
 # Mantainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=pyorbit
 pkgver=2.24.0
-pkgrel=4
+pkgrel=5
 pkgdesc="Python bindings for ORBit2"
 arch=('i686' 'x86_64')
 license=('LGPL')
 url="http://www.pygtk.org"
 depends=('python2' 'orbit2')
-makedepends=('pkgconfig')
+makedepends=('pkg-config')
 source=("http://ftp.gnome.org/pub/GNOME/sources/pyorbit/2.24/${pkgname}-${pkgver}.tar.bz2")
 md5sums=('574593815e75ee6e98062c75d6d1581f')
 

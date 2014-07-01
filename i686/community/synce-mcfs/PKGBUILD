@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 65477 2012-02-21 06:00:10Z spupykin $
+# $Id: PKGBUILD 114410 2014-07-01 15:42:39Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Berkus <berkus@madfire.net>
 
 pkgname=synce-mcfs
 pkgver=0.1.1
-pkgrel=7
+pkgrel=8
 pkgdesc="Midnight Commander VFS for SynCE"
 arch=(any)
 url="http://synce.sourceforge.net/"
@@ -14,9 +14,8 @@ depends=('synce-librapi' 'perl')
 source=(synce)
 md5sums=('4837a8a0093713509bc6769089c1c402')
 
-build() {
+package() {
   cd $srcdir
   mkdir -p $pkgdir/usr/lib/mc/extfs.d || true
-#  cp src/{synce,synceroot} $pkgdir/usr/share/mc/extfs
   cp $srcdir/synce $pkgdir/usr/lib/mc/extfs.d
 }

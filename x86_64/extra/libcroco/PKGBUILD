@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198140 2013-10-30 13:01:56Z allan $
+# $Id: PKGBUILD 216067 2014-07-01 14:02:06Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libcroco
 pkgver=0.6.8
-pkgrel=1
+pkgrel=2
 pkgdesc="A CSS parsing library"
 arch=('x86_64' 'i686')
 depends=('glib2' 'libxml2')

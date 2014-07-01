@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 77071 2012-10-04 09:18:53Z spupykin $
+# $Id: PKGBUILD 114239 2014-07-01 14:09:39Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Jan-Erik Rediger <badboy at archlinux dot us>
 # Contributor: Gerardo Exequiel Pozzi <vmlinuz386@yahoo.com.ar>
@@ -6,7 +6,7 @@
 
 pkgname=perl-ipc-run
 pkgver=0.92
-pkgrel=1
+pkgrel=2
 pkgdesc="IPC::Run - system() and background procs w/ piping, redirs, ptys"
 arch=('any')
 url="http://search.cpan.org/dist/IPC-Run"
@@ -21,6 +21,10 @@ build() {
   cd $srcdir/IPC-Run-$pkgver
   PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
   make
+}
+
+package() {
+  cd $srcdir/IPC-Run-$pkgver
   make install DESTDIR=$pkgdir
   find $pkgdir -name perllocal.pod -delete
   find $pkgdir -name .packlist -delete

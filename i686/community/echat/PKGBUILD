@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 83671 2013-02-04 11:04:22Z spupykin $
+# $Id: PKGBUILD 113977 2014-07-01 10:51:39Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=echat
 pkgver=0.04beta1
-pkgrel=3
+pkgrel=4
 pkgdesc="vypress compatible ncurses chat (can work without server)"
 arch=('i686' 'x86_64')
 url="http://echat.deep.perm.ru/"

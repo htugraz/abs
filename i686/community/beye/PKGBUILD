@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 63902 2012-02-06 17:16:05Z giovanni $
+# $Id: PKGBUILD 113925 2014-07-01 09:50:42Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=beye
 pkgver=6.1.0
 _lver=610
-pkgrel=4
+pkgrel=5
 pkgdesc="A portable viewer of binary files, hexadecimal and disassembler modes"
 arch=('i686' 'x86_64')
 license=('GPL')

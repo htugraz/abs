@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198395 2013-10-30 14:36:41Z allan $
+# $Id: PKGBUILD 215955 2014-07-01 08:59:35Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=rarian
 pkgver=0.8.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Documentation meta-data library, designed as a replacement for Scrollkeeper."
 arch=('i686' 'x86_64')
 url="http://rarian.freedesktop.org/"

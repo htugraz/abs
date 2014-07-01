@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 86694 2013-03-21 10:52:03Z spupykin $
+# $Id: PKGBUILD 114185 2014-07-01 13:53:24Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=perl-device-gsm
 pkgver=1.60
-pkgrel=1
+pkgrel=2
 pkgdesc="Perl extension to interface GSM phones / modems"
 arch=('any')
 url="http://search.cpan.org/dist/Device-Gsm/"

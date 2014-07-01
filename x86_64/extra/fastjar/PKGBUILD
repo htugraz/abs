@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 151330 2012-02-25 14:29:04Z pierre $
+# $Id: PKGBUILD 216020 2014-07-01 11:44:45Z guillaume $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=fastjar
 pkgver=0.98
-pkgrel=2
+pkgrel=3
 pkgdesc="Sun java jar compatible archiver"
 arch=('i686' 'x86_64')
 url="http://savannah.nongnu.org/projects/fastjar"

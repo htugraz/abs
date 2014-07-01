@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 213906 2014-05-31 11:17:32Z andyrtr $
+# $Id: PKGBUILD 216036 2014-07-01 13:09:58Z fyan $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgbase="cups"
 pkgname=('libcups' 'cups')
 pkgver=1.7.3
-pkgrel=3
+pkgrel=4
 arch=('i686' 'x86_64')
 license=('GPL')
 url="http://www.cups.org/"

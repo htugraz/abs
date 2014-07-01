@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 67642 2012-03-13 15:00:45Z spupykin $
+# $Id: PKGBUILD 114484 2014-07-01 16:41:28Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=xpacman2
 pkgver=1.002
-pkgrel=4
+pkgrel=5
 pkgdesc="another X pacman game"
 arch=('i686' 'x86_64')
 url="ftp://ftp.nvg.unit.no/pub/pacman/"
@@ -20,6 +20,10 @@ build() {
   patch -Np1 <../build-fix.patch
   ./configure --prefix=/usr
   make
+}
+
+package() {
+  cd $srcdir/pacman-${pkgver/./_}
   make DESTDIR=$pkgdir install
   (cd $pkgdir/usr/bin/ && mv pacman xpacman2)
 }
