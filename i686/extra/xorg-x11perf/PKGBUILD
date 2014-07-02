@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 134289 2011-08-02 18:59:18Z jgc $
+# $Id: PKGBUILD 216271 2014-07-02 16:19:22Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-x11perf
 pkgver=1.5.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Simple X server performance benchmarker"
 arch=(i686 x86_64)
 url="http://xorg.freedesktop.org/"

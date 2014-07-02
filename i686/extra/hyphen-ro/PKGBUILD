@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 176961 2013-02-03 06:11:58Z allan $
+# $Id: PKGBUILD 216215 2014-07-02 09:01:58Z fyan $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=hyphen-ro
 pkgver=3.3.6
-pkgrel=3
+pkgrel=4
 pkgdesc="Romanian hyphenation rules"
 arch=('any')
 url="http://sourceforge.net/projects/rospell/"

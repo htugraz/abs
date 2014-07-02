@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 100004 2013-10-31 02:57:06Z allan $
+# $Id: PKGBUILD 114577 2014-07-02 05:53:05Z fyan $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: farid abdelnour <farid at atelier-labs.org>
 # Contributor: Gustavo Alvarez <sl1pkn07 at gmail.org>
 
 pkgname=twolame
 pkgver=0.3.13
-pkgrel=6
+pkgrel=7
 pkgdesc="An optimized MPEG Audio Layer 2 (MP2) encoder"
 arch=('i686' 'x86_64')
 url="http://www.twolame.org/"

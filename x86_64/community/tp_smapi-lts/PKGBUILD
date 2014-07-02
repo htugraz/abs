@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 106844 2014-03-09 07:43:04Z andyrtr $
+# $Id: PKGBUILD 114670 2014-07-02 19:37:38Z bpiotrowski $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: xduugu
 # Contributor: nh2
@@ -12,7 +12,7 @@ pkgname=tp_smapi-lts
 _pkgname=tp_smapi
 _extramodules=/usr/lib/modules/extramodules-3.10-lts
 pkgver=0.41
-pkgrel=26
+pkgrel=27
 pkgdesc="linux-lts modules for ThinkPad's SMAPI functionality"
 arch=('i686' 'x86_64')
 url='https://github.com/evgeni/tp_smapi'

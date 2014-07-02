@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 150845 2012-02-23 12:35:42Z ibiru $
+# $Id: PKGBUILD 216209 2014-07-02 08:47:11Z fyan $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Max Fehrm max.fehrm@gmail.com
 pkgname=libmusicbrainz3
 pkgver=3.0.3
-pkgrel=2
+pkgrel=3
 pkgdesc="Library That Provides Access to the MusicBrainz Server  "
 url="http://musicbrainz.org/"
 arch=('i686' 'x86_64')

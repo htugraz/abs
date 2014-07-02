@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 154168 2012-03-23 20:38:45Z andyrtr $
+# $Id: PKGBUILD 216227 2014-07-02 09:31:18Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-xlogo
 pkgver=1.0.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Draw [old] X logo"
 arch=('i686' 'x86_64')
 url="http://xorg.freedesktop.org/"

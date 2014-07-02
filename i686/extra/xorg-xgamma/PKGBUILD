@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 154160 2012-03-23 20:11:06Z andyrtr $
+# $Id: PKGBUILD 216233 2014-07-02 09:41:49Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-xgamma
 pkgver=1.0.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Alter a monitor's gamma correction"
 arch=('i686' 'x86_64')
 url="http://xorg.freedesktop.org/"

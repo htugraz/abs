@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 198326 2013-10-30 14:11:12Z allan $
+# $Id: PKGBUILD 216255 2014-07-02 15:48:18Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: tobias [tobias at archlinux.org]
 
 pkgname=mousepad
 pkgver=0.3.0
-pkgrel=2
-pkgdesc="Simple Text Editor for Xfce4 (based on Gedit)"
+pkgrel=3
+pkgdesc="Simple text editor for Xfce"
 arch=('i686' 'x86_64')
 url=('http://www.xfce.org/')
 license=('GPL2')

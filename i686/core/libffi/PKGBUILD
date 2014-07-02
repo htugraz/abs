@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 215318 2014-06-20 15:20:35Z bpiotrowski $
+# $Id: PKGBUILD 216291 2014-07-02 19:36:11Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libffi
 pkgver=3.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Portable foreign function interface library'
 arch=('i686' 'x86_64')
 url='http://sourceware.org/libffi/'
@@ -21,6 +21,7 @@ sha1sums=('cb373ef2115ec7c57913b84ca72eee14b10ccdc3'
 prepare() {
   cd $pkgname-$pkgver
   patch -p1 -i ../0001-Fix-paths-in-libffi.pc.in.patch
+  autoreconf -fi
 }
 
 build() {

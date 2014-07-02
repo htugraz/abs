@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 64853 2012-02-18 18:05:29Z stativ $
+# $Id: PKGBUILD 114676 2014-07-02 20:09:34Z stativ $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname=gimp-plugin-wavelet-denoise
 pkgver=0.3.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Tool to reduce noise in each channel of an image separately"
 arch=('i686' 'x86_64')
 url="http://registry.gimp.org/node/4235"

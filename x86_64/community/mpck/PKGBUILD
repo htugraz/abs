@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 81980 2013-01-05 08:44:35Z giovanni $
+# $Id: PKGBUILD 114585 2014-07-02 06:32:13Z fyan $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: damir <damir@archlinux.org>
 
 pkgname=mpck
 pkgver=0.19
-pkgrel=2
+pkgrel=3
 license=('GPL')
 pkgdesc="Reads MP3 files and tries to determine if they are correct"
 arch=('i686' 'x86_64')

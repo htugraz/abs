@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 175181 2013-01-16 10:11:05Z jgc $
+# $Id: PKGBUILD 216273 2014-07-02 16:21:53Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-xcalc
 pkgver=1.0.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Scientific calculator for X"
 arch=('i686' 'x86_64')
 url="http://xorg.freedesktop.org/"

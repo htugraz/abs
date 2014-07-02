@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 198451 2013-10-30 14:57:15Z allan $
+# $Id: PKGBUILD 216195 2014-07-02 07:52:46Z fyan $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 pkgname=telepathy-logger
 pkgver=0.8.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Telepathy framework logging daemon"
 arch=(i686 x86_64)
 url="http://telepathy.freedesktop.org/wiki/Logger"

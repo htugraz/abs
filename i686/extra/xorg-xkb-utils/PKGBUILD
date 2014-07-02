@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 150991 2012-02-24 12:47:38Z allan $
+# $Id: PKGBUILD 216231 2014-07-02 09:40:14Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-xkb-utils
 pkgver=7.6
-pkgrel=2
+pkgrel=3
 pkgdesc="Transition package depending on various X keyboard utilities"
 arch=('any')
 url="http://xorg.freedesktop.org/"

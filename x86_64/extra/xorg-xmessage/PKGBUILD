@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 175089 2013-01-13 09:51:21Z andyrtr $
+# $Id: PKGBUILD 216229 2014-07-02 09:33:46Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-xmessage
 pkgver=1.0.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Display a message or query in a window"
 arch=(i686 x86_64)
 url="http://xorg.freedesktop.org/"

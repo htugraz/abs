@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 176963 2013-02-03 06:13:09Z allan $
+# $Id: PKGBUILD 216205 2014-07-02 08:36:51Z fyan $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=mythes-ro
 pkgver=3.3
-pkgrel=4
+pkgrel=5
 pkgdesc="Romanian thesaurus"
 arch=('any')
 url="http://sourceforge.net/projects/rospell/"

@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 113919 2014-07-01 09:46:48Z spupykin $
+# $Id: PKGBUILD 114648 2014-07-02 14:54:20Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Douglas Soares de Andrade <dsandrade@gmail.com>
 # Contributor: Michael Fellinger <m.fellinger@gmail.com>
 
 pkgname=sqlitebrowser
 pkgver=3.1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="SQLite Database browser is a light GUI editor for SQLite databases, built on top of Qt"
 arch=('i686' 'x86_64')
 url="http://sqlitebrowser.org/"
 license=('GPL')
-depends=('qt5-base' 'sqlite')
+depends=('qt5-base' 'sqlite' 'libxkbcommon-x11')
 source=(https://github.com/sqlitebrowser/sqlitebrowser/archive/sqlb-$pkgver.tar.gz)
 md5sums=('17be1cdebcf79a906e6e206fc7cd6cde')
 

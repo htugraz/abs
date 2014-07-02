@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 150376 2012-02-17 09:55:00Z allan $
+# $Id: PKGBUILD 216283 2014-07-02 16:42:10Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-fonts-type1
 pkgver=7.4
-pkgrel=2
+pkgrel=3
 pkgdesc="X.org Type1 fonts"
 arch=(any)
 license=('custom')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 142522 2011-11-11 11:01:09Z ibiru $
+# $Id: PKGBUILD 216199 2014-07-02 07:56:35Z fyan $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=papyon
 pkgver=0.5.6
-pkgrel=1
+pkgrel=2
 pkgdesc="papyon is the library behind the msn connection manager: telepathy-butterfly."
 arch=('any')
 url="http://www.freedesktop.org/wiki/Software/papyon"

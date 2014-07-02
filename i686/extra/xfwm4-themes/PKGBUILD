@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198580 2013-10-30 15:44:13Z allan $
+# $Id: PKGBUILD 216265 2014-07-02 15:58:35Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Tobias Kieslich <tobias funnychar archlinux.org>
 
 pkgname=xfwm4-themes
 pkgver=4.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A set of additional themes for the Xfce window manager"
 arch=('any')
 url="http://www.xfce.org/"
@@ -21,8 +21,7 @@ build() {
     --prefix=/usr \
     --sysconfdir=/etc \
     --libexecdir=/usr/lib \
-    --localstatedir=/var \
-    --disable-static
+    --localstatedir=/var
   make
 }
 

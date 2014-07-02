@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198454 2013-10-30 14:58:17Z allan $
+# $Id: PKGBUILD 216197 2014-07-02 07:55:16Z fyan $
 # Maintainer:  Ionut Biru <ibiru@archlinux.org>
 # Contributor: Daniel Balieiro <daniel@balieiro.com>
 
 pkgname=telepathy-salut
 pkgver=0.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A link-local XMPP connection manager for Telepathy"
 arch=('i686' 'x86_64')
 url="http://telepathy.freedesktop.org"

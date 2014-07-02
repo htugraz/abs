@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 70184 2012-05-01 12:30:54Z andrea $
+# $Id: PKGBUILD 114565 2014-07-01 23:50:39Z lfleischer $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 # Contributor: Jason Chu <jason@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=steghide
 pkgver=0.5.1
-pkgrel=6
+pkgrel=7
 pkgdesc='Embeds a message in a file by replacing some of the least significant bits'
 arch=('i686' 'x86_64')
 url='http://steghide.sourceforge.net'

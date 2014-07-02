@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 82253 2013-01-13 15:02:45Z foutrelis $
+# $Id: PKGBUILD 114559 2014-07-01 23:33:51Z lfleischer $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Roman Kyrylych <Roman.Kyrylych@gmail.com>
@@ -8,7 +8,7 @@
 
 pkgname=ttf-liberation
 pkgver=2.00.1
-pkgrel=3
+pkgrel=4
 pkgdesc='Red Hats Liberation fonts.'
 arch=('any')
 license=('custom:OFL')

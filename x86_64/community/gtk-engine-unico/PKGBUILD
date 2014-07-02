@@ -1,26 +1,31 @@
-# $Id: PKGBUILD 99797 2013-10-30 23:46:34Z allan $
-# Maintainer:  Bartlomiej Piotrowski <nospam@bpiotrowski.pl>
+# $Id: PKGBUILD 114667 2014-07-02 18:37:29Z alucryd $
+# Maintainer: Maxime Gauduin <alucryd@gmail.com>
+# Maintainer: Bartlomiej Piotrowski <nospam@bpiotrowski.pl>
 # Contributor: Hilinus <itahilinus[at]hotmail[dot]it>
 
 pkgname=gtk-engine-unico
 pkgver=1.0.2
-pkgrel=3
+pkgrel=5
 pkgdesc='Unico GTK3 theme engine'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/unico'
 license=('GPL')
 depends=('gtk3')
 makedepends=('gnome-common')
-source=(ftp://ftp.archlinux.org/other/community/$pkgname/$pkgname-139.tar.xz)
-md5sums=('a451cf9e3d6b092a2fbeb424d0436dd3')
+source=("gtk-engine-unico-139.tar.gz::http://bazaar.launchpad.net/~unico-team/unico/trunk/tarball/139")
+sha256sums=('75963539dca895ff035fec68bac36e4218ca439f3bac4c826cf6349962166058')
 
 build() {
-  cd "~unico-team/unico/trunk"
-  ./autogen.sh --prefix=/usr --disable-static
+  cd ~unico-team/unico/trunk
+
+  ./autogen.sh --prefix='/usr' --disable-static
   make
 }
 
 package() {
-  cd "~unico-team/unico/trunk"
-  make DESTDIR=${pkgdir} install
+  cd ~unico-team/unico/trunk
+
+  make DESTDIR="${pkgdir}" install
 }
+
+# vim: ts=2 sw=2 et:

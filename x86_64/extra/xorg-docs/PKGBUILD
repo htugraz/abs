@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 160907 2012-06-06 16:56:36Z andyrtr $
+# $Id: PKGBUILD 216285 2014-07-02 16:44:20Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-docs
 pkgver=1.7
-pkgrel=1
+pkgrel=2
 pkgdesc="X.org documentations"
 arch=(any)
 url="http://xorg.freedesktop.org/"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 152267 2012-03-06 08:39:49Z allan $
+# $Id: PKGBUILD 216281 2014-07-02 16:41:19Z fyan $
 #Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-fonts-encodings
 pkgver=1.0.4
-pkgrel=3
+pkgrel=4
 pkgdesc="X.org font encoding files"
 arch=(any)
 url="http://xorg.freedesktop.org/"

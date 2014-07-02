@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 168660 2012-10-13 20:59:47Z eric $
+# $Id: PKGBUILD 216189 2014-07-02 07:25:24Z fyan $
 # Maintainer:  Ionut Biru <ibiru@archlinux.org>
 # Contributor: Daniel Balieiro <daniel@balieiro.com>
 pkgbase=python-telepathy
 pkgname=('python2-telepathy')
 pkgver=0.15.19
-pkgrel=3
+pkgrel=4
 pkgdesc="Python libraries for use in Telepathy clients and connection managers"
 arch=('i686' 'x86_64')
 url="http://telepathy.freedesktop.org"
 license=('LGPL')
-depends=('dbus-python')
+depends=('python2-dbus')
 makedepends=('libxslt')
 conflicts=('python-telepathy')
 replaces=('python-telepathy')

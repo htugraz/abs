@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198578 2013-10-30 15:43:32Z allan $
+# $Id: PKGBUILD 216263 2014-07-02 15:56:11Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: tobias <tobias funnychar archlinux.org>
 
 pkgname=xfdesktop
 pkgver=4.10.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A desktop manager for Xfce"
 arch=('i686' 'x86_64')
 url="http://www.xfce.org/"

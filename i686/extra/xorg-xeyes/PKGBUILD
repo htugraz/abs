@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 151165 2012-02-25 06:45:35Z allan $
+# $Id: PKGBUILD 216235 2014-07-02 09:45:23Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-xeyes
 pkgver=1.1.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Follow the mouse/SHAPE extension X demo"
 arch=('i686' 'x86_64')
 url="http://xorg.freedesktop.org/"

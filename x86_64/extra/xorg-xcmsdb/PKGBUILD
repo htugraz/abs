@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 150238 2012-02-15 16:35:38Z andyrtr $
+# $Id: PKGBUILD 216241 2014-07-02 10:06:41Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-xcmsdb
 pkgver=1.0.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Device Color Characterization utility for X Color Management System"
 arch=(i686 x86_64)
 url="http://xorg.freedesktop.org/"

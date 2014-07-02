@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 73129 2012-07-02 05:11:34Z foutrelis $
+# $Id: PKGBUILD 114658 2014-07-02 15:35:47Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Tim Yang <tdy@gmx.com>
 # Contributor: StormBlast <stormblast@land.ru>
 
 pkgname=tangerine-icon-theme
 pkgver=0.27
-pkgrel=1
+pkgrel=2
 pkgdesc="Ubuntu's twist on the Tango icon theme"
 arch=('any')
 url="http://launchpad.net/tangerine-icon-theme/"

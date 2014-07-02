@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 108737 2014-04-02 12:54:01Z foutrelis $
+# $Id: PKGBUILD 114654 2014-07-02 15:33:00Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Jared Casper <jaredcasper@gmail.com>
 # Contributor: Georgij Kondratjev <smpuj@bk.ru>
@@ -6,7 +6,7 @@
 pkgname=gnucap
 pkgver=20091207
 _pkgver=2009-12-07
-pkgrel=2
+pkgrel=3
 pkgdesc="GNU Circuit Analysis Package"
 arch=('i686' 'x86_64')
 url="http://gnucap.org/"

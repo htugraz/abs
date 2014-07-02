@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198584 2013-10-30 15:46:50Z allan $
+# $Id: PKGBUILD 216239 2014-07-02 09:53:14Z fyan $
 # Maintainer: Alexander Baldeck <alexander@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 pkgname=xorg-xdm
 pkgver=1.1.11
-pkgrel=4
+pkgrel=5
 pkgdesc="X Display Manager"
 arch=(i686 x86_64)
 url="http://xorg.freedesktop.org/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 206534 2014-03-01 08:14:43Z andrea $
+# $Id: PKGBUILD 216185 2014-07-02 04:32:08Z pierre $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=qca
 pkgver=2.0.3
-pkgrel=4
+pkgrel=5
 pkgdesc="Qt Cryptographic Architecture"
 arch=('i686' 'x86_64')
 url="http://delta.affinix.com/qca/"

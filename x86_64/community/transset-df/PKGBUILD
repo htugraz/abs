@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 57820 2011-11-03 10:04:35Z lfleischer $
+# $Id: PKGBUILD 114561 2014-07-01 23:36:45Z lfleischer $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Aaron Schaefer <aaron@elasticdog.com>
 
 pkgname=transset-df
 pkgver=6
-pkgrel=3
+pkgrel=4
 pkgdesc="A patched version of X.Org's transset with added functionality."
 arch=('i686' 'x86_64')
 url='http://forchheimer.se/transset-df/'

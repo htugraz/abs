@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 150844 2012-02-23 12:34:26Z ibiru $
+# $Id: PKGBUILD 216213 2014-07-02 08:58:21Z fyan $
 # Maintainer: Aaron Griffin <aaron@archlinux.org>
 # Contributor: Link Dupont <link@subpop.net>
 
 pkgname=leafpad
 pkgver=0.8.18.1
-pkgrel=3
+pkgrel=4
 pkgdesc="A notepad clone for GTK+ 2.0"
 arch=('i686' 'x86_64')
 url="http://tarot.freeshell.org/leafpad/"

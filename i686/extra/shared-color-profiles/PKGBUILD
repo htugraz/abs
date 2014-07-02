@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198429 2013-10-30 14:49:18Z allan $
+# $Id: PKGBUILD 216191 2014-07-02 07:35:51Z fyan $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=shared-color-profiles
 pkgver=0.1.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Shared color profiles are used in color management aware applications"
 arch=('any')
 url="http://github.com/hughsie/shared-color-profiles"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 149836 2012-02-11 10:08:56Z andyrtr $
+# $Id: PKGBUILD 216277 2014-07-02 16:38:08Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-oclock
 pkgver=1.0.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Round X clock"
 arch=(i686 x86_64)
 url="http://xorg.freedesktop.org/"

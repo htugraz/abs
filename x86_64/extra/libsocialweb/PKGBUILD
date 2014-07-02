@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198238 2013-10-30 13:39:14Z allan $
+# $Id: PKGBUILD 216207 2014-07-02 08:44:50Z fyan $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=libsocialweb
 pkgver=0.25.21
-pkgrel=2
+pkgrel=3
 pkgdesc="A personal social data server"
 arch=(i686 x86_64)
 url="http://www.gtk.org/"

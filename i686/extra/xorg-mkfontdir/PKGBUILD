@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 149832 2012-02-11 10:00:49Z andyrtr $
+# $Id: PKGBUILD 216279 2014-07-02 16:39:04Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-mkfontdir
 pkgver=1.0.7
-pkgrel=1
+pkgrel=2
 pkgdesc="Create an index of X font files in a directory"
 arch=(any)
 url="http://xorg.freedesktop.org/"
