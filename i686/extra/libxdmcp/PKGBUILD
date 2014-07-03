@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198275 2013-10-30 13:52:38Z allan $
+# $Id: PKGBUILD 216363 2014-07-03 04:24:11Z fyan $
 #Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libxdmcp
 pkgver=1.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="X11 Display Manager Control Protocol library"
 arch=('i686' 'x86_64')
 url="http://xorg.freedesktop.org/"

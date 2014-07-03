@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 151176 2012-02-25 06:58:45Z allan $
+# $Id: PKGBUILD 216330 2014-07-03 03:27:45Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-xbiff
 pkgver=1.0.3
-pkgrel=2
+pkgrel=3
 pkgdesc="Watch mailboxes for new message delivery"
 arch=('i686' 'x86_64')
 url="http://xorg.freedesktop.org/"

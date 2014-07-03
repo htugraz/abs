@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 150987 2012-02-24 12:44:03Z allan $
+# $Id: PKGBUILD 216337 2014-07-03 03:39:47Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-server-utils
 pkgver=7.6
-pkgrel=3
+pkgrel=4
 pkgdesc="Transition package depending on xorg server utilities"
 arch=('any')
 url="http://xorg.freedesktop.org/"

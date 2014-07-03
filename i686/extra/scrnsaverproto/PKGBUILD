@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 154140 2012-03-23 17:21:30Z andyrtr $
+# $Id: PKGBUILD 216355 2014-07-03 04:11:13Z fyan $
 #Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=scrnsaverproto
 pkgver=1.2.2
-pkgrel=1
+pkgrel=2
 pkgdesc="X11 Screen Saver extension wire protocol"
 arch=('any')
 license=('custom')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 215282 2014-06-18 14:07:35Z tpowa $
+# $Id: PKGBUILD 216415 2014-07-03 16:15:49Z tpowa $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Thomas Baechler <thomas@archlinux.org>
 
 pkgname=nvidia-304xx
 pkgver=304.121
 _extramodules=extramodules-3.15-ARCH
-pkgrel=5
+pkgrel=6
 pkgdesc="NVIDIA drivers for linux, 304xx legacy branch"
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"

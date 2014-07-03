@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 177990 2013-02-12 19:46:14Z andyrtr $
+# $Id: PKGBUILD 216335 2014-07-03 03:38:36Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-sessreg
 pkgver=1.0.8
-pkgrel=1
+pkgrel=2
 pkgdesc="Register X sessions in system utmp/utmpx databases"
 arch=(i686 x86_64)
 url="http://xorg.freedesktop.org/"

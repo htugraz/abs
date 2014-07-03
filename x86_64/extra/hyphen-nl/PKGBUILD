@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 151530 2012-02-27 15:13:35Z pierre $
+# $Id: PKGBUILD 216380 2014-07-03 05:46:26Z fyan $
 # Contributor: Jelle van der Waa <jelle vdwaa nl>
 
 pkgname=hyphen-nl
 pkgver=20050617
-pkgrel=2
+pkgrel=3
 pkgdesc="Dutch hyphenation rules"
 arch=('any')
 url="http://wiki.services.openoffice.org/wiki/Dictionaries#Dutch_.28Netherlands.29"

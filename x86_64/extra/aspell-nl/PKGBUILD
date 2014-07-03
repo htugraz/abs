@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 150491 2012-02-18 03:32:06Z allan $
+# $Id: PKGBUILD 216370 2014-07-03 04:37:07Z fyan $
 # Maintainer:
 # Contributor: Simo Leone <simo@archlinux.org>
 # Contributor: Tobias Kieslich <tobias@justdreams.de>
 
 pkgname=aspell-nl
 pkgver=0.50.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Dutch dictionary for aspell"
 arch=('i686' 'x86_64')
 url="http://aspell.net/"

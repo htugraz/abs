@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 176973 2013-02-03 07:12:26Z allan $
+# $Id: PKGBUILD 216384 2014-07-03 06:26:12Z fyan $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: eric <eric@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
  
 pkgname=psutils
 pkgver=1.17
-pkgrel=4
+pkgrel=5
 arch=('i686' 'x86_64')
 pkgdesc="A set of postscript utilities"
 url="http://knackered.org/angus/psutils/"

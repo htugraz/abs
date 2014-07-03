@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198073 2013-10-30 12:38:12Z allan $
+# $Id: PKGBUILD 216378 2014-07-03 05:35:54Z fyan $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Ben <ben@benmazer.net>
 
 pkgname=gtkglext
 pkgver=1.2.0
-pkgrel=9
+pkgrel=10
 pkgdesc="opengl extensions for gtk2"
 arch=('i686' 'x86_64')
 url="http://gtkglext.sourceforge.net/"

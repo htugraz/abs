@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198274 2013-10-30 13:52:16Z allan $
+# $Id: PKGBUILD 216368 2014-07-03 04:30:03Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libxdamage
 pkgver=1.1.4
-pkgrel=1
+pkgrel=2
 pkgdesc="X11 damaged region extension library"
 arch=('i686' 'x86_64')
 url="http://xorg.freedesktop.org/"

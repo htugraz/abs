@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 151336 2012-02-25 14:40:00Z pierre $
+# $Id: PKGBUILD 216318 2014-07-03 03:10:09Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=resourceproto
 pkgver=1.2.0
-pkgrel=2
+pkgrel=3
 pkgdesc="X11 Resource extension wire protocol"
 arch=('any')
 url="http://xorg.freedesktop.org/"

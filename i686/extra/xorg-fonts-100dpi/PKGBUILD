@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 150386 2012-02-17 11:05:50Z allan $
+# $Id: PKGBUILD 216347 2014-07-03 03:55:21Z fyan $
 # Maintainer: Alexander Baldeck <alexander@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 pkgname=xorg-fonts-100dpi
 pkgver=1.0.1
-pkgrel=4
+pkgrel=5
 pkgdesc="X.org 100dpi fonts"
 arch=('any')
 url="http://xorg.freedesktop.org/"

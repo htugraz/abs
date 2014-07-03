@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 176899 2013-02-02 07:09:03Z andyrtr $
+# $Id: PKGBUILD 216343 2014-07-03 03:45:59Z fyan $
 #Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-fonts-cyrillic
 pkgver=1.0.1
-pkgrel=3
+pkgrel=4
 pkgdesc="X.org cyrillic fonts"
 arch=(any)
 url="http://xorg.freedesktop.org/"

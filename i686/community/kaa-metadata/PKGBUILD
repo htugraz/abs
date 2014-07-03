@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 68029 2012-03-17 01:35:40Z giovanni $
+# $Id: PKGBUILD 114750 2014-07-03 16:30:43Z fyan $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: DonVla <donvla@users.sourceforge.net>
 
 pkgname=kaa-metadata
 pkgver=0.7.7
-pkgrel=4
+pkgrel=5
 pkgdesc="KAA metadata package"
 url="http://freevo.sourceforge.net/"
 license=('GPL2')

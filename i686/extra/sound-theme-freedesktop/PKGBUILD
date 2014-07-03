@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 167225 2012-09-28 19:44:35Z andyrtr $
+# $Id: PKGBUILD 216353 2014-07-03 04:09:29Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=sound-theme-freedesktop
 pkgver=0.8
-pkgrel=1
+pkgrel=2
 pkgdesc="Freedesktop sound theme"
 arch=(any)
 license=('custom')

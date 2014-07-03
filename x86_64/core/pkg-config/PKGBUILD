@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 176247 2013-01-28 00:29:25Z allan $
+# $Id: PKGBUILD 216305 2014-07-03 02:21:31Z allan $
 # Maintainer: Allan McRae <allan@archlinux.org>
-# Committer: Judd Vinet <jvinet@zeroflux.org>
+# Contributor: Judd Vinet <jvinet@zeroflux.org>
 
 pkgname=pkg-config
 pkgver=0.28
-pkgrel=1
+pkgrel=2
 pkgdesc="A system for managing library compile/link flags"
 arch=('i686' 'x86_64')
 url="http://pkgconfig.freedesktop.org/wiki/"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 151241 2012-02-25 09:49:53Z allan $
+# $Id: PKGBUILD 216320 2014-07-03 03:12:05Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=renderproto
 pkgver=0.11.1
-pkgrel=2
+pkgrel=3
 pkgdesc="X11 Render extension wire protocol"
 arch=(any)
 url="http://xorg.freedesktop.org/"

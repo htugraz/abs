@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 166176 2012-09-05 07:11:03Z andyrtr $
+# $Id: PKGBUILD 216312 2014-07-03 02:56:14Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Leslie P. Polzer <leslie.polzer@gmx.net>
 
 pkgname=xcompmgr
 pkgver=1.1.6
-pkgrel=2
+pkgrel=3
 pkgdesc="Composite Window-effects manager for X.org"
 arch=('i686' 'x86_64')
 url="http://xorg.freedesktop.org/"

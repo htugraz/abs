@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 68025 2012-03-17 01:28:26Z giovanni $
+# $Id: PKGBUILD 114717 2014-07-03 09:48:50Z fyan $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: DonVla <donvla@users.sourceforge.net>
 
 pkgname=kaa-base
 pkgver=0.6.0
-pkgrel=4
+pkgrel=5
 pkgdesc="KAA base package"
 url="http://freevo.sourceforge.net/"
 license=('GPL2')

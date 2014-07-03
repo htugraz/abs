@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198286 2013-10-30 13:56:32Z allan $
+# $Id: PKGBUILD 216322 2014-07-03 03:14:14Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libxkbfile
 pkgver=1.0.8
-pkgrel=1
+pkgrel=2
 pkgdesc="X11 keyboard file manipulation library"
 arch=('i686' 'x86_64')
 license=('custom')

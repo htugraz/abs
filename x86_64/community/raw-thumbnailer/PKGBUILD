@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 58310 2011-11-10 20:50:33Z rvanharen $
+# $Id: PKGBUILD 114752 2014-07-03 16:33:57Z fyan $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: boromil@gmail.com
 
 pkgname=raw-thumbnailer
 pkgver=0.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A lightweight and fast raw image thumbnailer that can be used by file managers."
 url="http://code.google.com/p/raw-thumbnailer/"
 license=('GPL2')

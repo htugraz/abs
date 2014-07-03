@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 151200 2012-02-25 07:27:18Z allan $
+# $Id: PKGBUILD 216316 2014-07-03 03:00:51Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xbitmaps
 pkgver=1.1.1
-pkgrel=2
+pkgrel=3
 pkgdesc="X.org Bitmap files"
 arch=('any')
 url="http://xorg.freedesktop.org/"

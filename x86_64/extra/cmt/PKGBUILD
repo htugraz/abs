@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 137734 2011-09-10 14:32:08Z pierre $
+# $Id: PKGBUILD 216392 2014-07-03 07:42:18Z fyan $
 #Maintainer: Damir Perisa <damir.perisa@bluewin.ch>
 #Contributor: Robert Emil Berge <robert@rebi.no>
 
 pkgname=cmt
 pkgver=1.16
-pkgrel=3
+pkgrel=4
 pkgdesc="CMT for LADSPA"
 arch=('i686' 'x86_64')
 license=('GPL')

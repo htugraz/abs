@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 113690 2014-06-27 23:36:49Z seblu $
+# $Id: PKGBUILD 114696 2014-07-03 04:22:07Z thestinger $
 # Maintainer: Sébastien Luttringer
 
 # Contacted by mail, author use svn commit as release version.
 # He only push tested release code into svn and support using revision as version
 
 pkgname=lz4
-pkgver=118
+pkgver=119
 pkgrel=1
 pkgdesc='Very fast lossless compression algorithm'
 arch=('i686' 'x86_64')

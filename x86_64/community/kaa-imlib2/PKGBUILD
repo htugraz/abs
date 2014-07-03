@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 86681 2013-03-21 01:58:58Z eric $
+# $Id: PKGBUILD 114748 2014-07-03 16:29:10Z fyan $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: DonVla <donvla@users.sourceforge.net>
 
 pkgname=kaa-imlib2
 pkgver=0.2.3
-pkgrel=5
+pkgrel=6
 pkgdesc="KAA imlib2 package"
 url="http://freevo.sourceforge.net/"
 license=('GPL2')
@@ -15,5 +15,5 @@ md5sums=('64828ede785ab0dd2d3c1f2f36c99342')
 
 package() {
   cd "$srcdir/$pkgname-$pkgver"
-  python2 setup.py install --prefix="$pkgdir/usr"
+  python2 setup.py install -O1 --prefix="$pkgdir/usr"
 }

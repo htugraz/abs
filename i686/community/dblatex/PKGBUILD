@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 79603 2012-11-08 19:47:00Z lfleischer $
+# $Id: PKGBUILD 114703 2014-07-03 06:56:36Z lfleischer $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Marcin Karpezo <sirmacik at gmail dot com>
 # Contributor: Andreas Hauser <andy-aur@splashground.de>
 
 pkgname=dblatex
 pkgver=0.3.4
-pkgrel=1
+pkgrel=2
 pkgdesc='DocBook (XML and SGML) to DVI, PDF, PostScript converter using latex.'
 arch=('any')
 url='http://dblatex.sourceforge.net/'
