@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 78533 2012-10-20 10:17:22Z ebelanger $
+# $Id: PKGBUILD 114794 2014-07-04 06:14:07Z fyan $
 # Maintainer: Chris Brannon <chris@the-brannons.com>
 # Contributor: Corrado Primier <bardo@aur.archlinux.org>
 # Contributor: Patrick Burroughs <celticmadman@gmail.com>
 
 pkgname=flac123
 pkgver=0.0.12
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 license=('GPL2')
 pkgdesc="A command-line program for playing FLAC audio files"

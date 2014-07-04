@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 79475 2012-11-06 00:49:02Z arodseth $
+# $Id: PKGBUILD 114843 2014-07-04 08:43:30Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: royrocks <royrocks13@gmail.com>
 
 pkgname=tuxpaint-stamps
 pkgver=2009.06.28
-pkgrel=3
+pkgrel=4
 pkgdesc='Additional stamps for Tux Paint'
 arch=('any')
 url='http://www.tuxpaint.org'

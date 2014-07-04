@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 78222 2012-10-17 10:25:44Z allan $
+# $Id: PKGBUILD 114814 2014-07-04 07:26:27Z fyan $
 # Maintainer: Chris Brannon <cmbrannon79@gmail.com>
 # Contributor: giniu <gginiu@gmail.com>
 
 pkgbase=python-foolscap
 pkgname=python2-foolscap
 pkgver=0.6.4
-pkgrel=1
+pkgrel=2
 pkgdesc="RPC protocol for Python and Twisted"
 license=('MIT')
 url="http://foolscap.lothar.com/"

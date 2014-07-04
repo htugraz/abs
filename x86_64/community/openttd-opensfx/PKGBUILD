@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 64936 2012-02-18 21:32:21Z jelle $
+# $Id: PKGBUILD 114930 2014-07-04 16:30:12Z jelle $
 # Contributor: Vesa Kaihlavirta <vegai@iki.fi>
 # Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=openttd-opensfx
 pkgver=0.2.3
-pkgrel=4
+pkgrel=5
 pkgdesc="Free sound set for openttd"
 arch=('any')
 url="http://www.openttd.org"

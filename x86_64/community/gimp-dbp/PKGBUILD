@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 83142 2013-01-27 16:14:44Z pierre $
+# $Id: PKGBUILD 114796 2014-07-04 06:33:43Z fyan $
 # Maintainer: tobias <tobias@archlinux.org>
 # Contributor: Tobias Kieslich <tobias@justdreams.de>
 
 pkgname=gimp-dbp
 pkgver=1.1.9
-pkgrel=3
+pkgrel=4
 pkgdesc="David's batch processor for the GIMP"
 arch=('i686' 'x86_64')
 url="http://members.ozemail.com.au/~hodsond/dbp.html"

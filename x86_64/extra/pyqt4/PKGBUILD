@@ -1,19 +1,19 @@
-# $Id: PKGBUILD 215219 2014-06-16 21:35:22Z andrea $
+# $Id: PKGBUILD 216493 2014-07-04 14:33:54Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Douglas Soares de Andrade <douglas@archlinux.org>
 # Contributor: riai <riai@bigfoot.com> Ben <ben@benmazer.net>
 
 pkgbase=pyqt4
 pkgname=('pyqt4-common' 'python-pyqt4' 'python2-pyqt4')
-pkgver=4.11
-pkgrel=2
+pkgver=4.11.1
+pkgrel=1
 arch=('i686' 'x86_64')
 url='http://www.riverbankcomputing.com/software/pyqt/intro'
 license=('GPL')
 makedepends=('python-sip' 'python-dbus' 'python2-sip' 'phonon' 'mesa'
              'python2-opengl' 'qt-assistant-compat' 'qtwebkit' 'python2-dbus')
 source=("http://downloads.sourceforge.net/pyqt/PyQt-x11-gpl-${pkgver}.tar.gz")
-md5sums=('8b991f95fec9582cdcc1bf1f4ac02406')
+md5sums=('9d0203c46ad8c838abd5d33b814ca659')
 
 build() {
   cp -r PyQt-x11-gpl-${pkgver} Py2Qt-x11-gpl-${pkgver}

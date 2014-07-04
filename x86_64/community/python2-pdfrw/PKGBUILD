@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 86142 2013-03-12 08:46:08Z cinelli $
+# $Id: PKGBUILD 114898 2014-07-04 15:31:10Z fyan $
 # Maintainer:  Federico Cinelli <cinelli@aur.archlinux.org>
 # Contributor: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Francois Boulogne <fboulogne at april dot org>
 
 pkgname=python2-pdfrw
 pkgver=0.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Basic PDF file manipulation library'
 arch=('any')
 url='https://code.google.com/p/pdfrw/'

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 61976 2012-01-12 08:01:41Z andrea $
+# $Id: PKGBUILD 114820 2014-07-04 07:35:36Z fyan $
 # Maintainer:
 # Contributor: nblock <nblock [/at\] archlinux DOT us>
 # Contributor: Dino Krtanjek <krtanjekdino@gmail.com>
 
 pkgname=python2-iniparse
 pkgver=0.4
-pkgrel=3
+pkgrel=4
 pkgdesc='Better INI parser library for Python'
 arch=('any')
 license=('MIT')

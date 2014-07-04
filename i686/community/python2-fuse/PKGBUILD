@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 77237 2012-10-07 19:35:53Z dwallace $
+# $Id: PKGBUILD 114901 2014-07-04 15:35:31Z fyan $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contributor: Chris Brannon <cmbrannon79@gmail.com>
 # Contributor: Jaroslaw Swierczynski <swiergot@aur.archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=python2-fuse
 pkgver=0.2.1
-pkgrel=4
+pkgrel=5
 arch=('i686' 'x86_64')
 pkgdesc="Python bindings for FUSE"
 url="http://fuse.sourceforge.net/wiki/index.php/FusePython"

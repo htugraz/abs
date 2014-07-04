@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 143956 2011-11-30 22:15:20Z giovanni $
+# $Id: PKGBUILD 216468 2014-07-04 04:19:41Z fyan $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-xml-sax
 pkgver=0.99
-pkgrel=3
+pkgrel=4
 pkgdesc="Simple API for XML"
 arch=('any')
 url="http://search.cpan.org/dist/XML-SAX"

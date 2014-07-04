@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 143932 2011-11-30 21:29:16Z giovanni $
+# $Id: PKGBUILD 216462 2014-07-04 04:14:30Z fyan $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-io-stringy
 pkgver=2.110
-pkgrel=9
+pkgrel=10
 pkgdesc="I/O on in-core objects like strings/arrays"
 arch=('any')
 url="http://search.cpan.org/dist/IO-stringy"

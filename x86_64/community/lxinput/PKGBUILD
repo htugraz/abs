@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 72002 2012-06-05 13:35:16Z bpiotrowski $
-# Maintainer:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
+# $Id: PKGBUILD 114911 2014-07-04 15:42:18Z fyan $
+# Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Filipp "Scorp" Andjelo <scorp@mailueberfall.de>
 
 pkgname=lxinput
 pkgver=0.3.2
-pkgrel=2
+pkgrel=3
 pkgdesc="A small program to configure keyboard and mouse for LXDE."
 arch=('i686' 'x86_64')
 url="http://lxde.org/"

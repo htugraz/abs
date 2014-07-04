@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 176074 2013-01-27 10:11:32Z giovanni $
+# $Id: PKGBUILD 216460 2014-07-04 04:12:10Z fyan $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=mtools
 pkgver=4.0.18
-pkgrel=1
+pkgrel=2
 pkgdesc="A collection of utilities to access MS-DOS disks"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/mtools/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 109578 2014-04-16 10:25:03Z spupykin $
+# $Id: PKGBUILD 114944 2014-07-04 18:18:04Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Eugen Zagorodniy e dot zagorodniy at gmail dot com
 # Contributor: aunoor
 
 pkgname=notion
-pkgver=20140416
+pkgver=20140704
 pkgrel=1
 pkgdesc="Tabbed tiling, window manager. Fork of Ion3"
 url="http://sourceforge.net/projects/notion/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198248 2013-10-30 13:42:59Z allan $
+# $Id: PKGBUILD 216458 2014-07-04 04:10:50Z fyan $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Emmanuel Gil Peyrot <linkmauve@linkmauve.fr>
 
 pkgname=libtiger
 pkgver=0.3.4
-pkgrel=3
+pkgrel=4
 pkgdesc="A rendering library for Kate streams using Pango and Cairo"
 url="http://libtiger.googlecode.com/"
 license=('LGPL')

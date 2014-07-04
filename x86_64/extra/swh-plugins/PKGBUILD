@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 151225 2012-02-25 09:04:22Z allan $
+# $Id: PKGBUILD 216481 2014-07-04 05:20:48Z fyan $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 # Contributor: Robert Emil Berge
 
 pkgname=swh-plugins
 pkgver=0.4.15
-pkgrel=5
+pkgrel=6
 pkgdesc="Steve Harris' LADSPA plug-ins suite"
 arch=('i686' 'x86_64')
 url="http://plugin.org.uk/"

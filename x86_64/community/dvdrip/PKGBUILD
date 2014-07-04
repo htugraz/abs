@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 102183 2013-12-06 12:17:36Z giovanni $
+# $Id: PKGBUILD 114918 2014-07-04 15:46:48Z fyan $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Fredrik Hammar <Horney_C86@Hotmail.com>
 
 pkgname=dvdrip
 pkgver=0.98.11
-pkgrel=10
+pkgrel=11
 pkgdesc="A Gtk frontend for transcode writen in Perl"
 arch=('i686' 'x86_64')
 license=('custom')

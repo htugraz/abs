@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 78229 2012-10-17 10:26:00Z allan $
+# $Id: PKGBUILD 114822 2014-07-04 07:42:16Z fyan $
 # Maintainer: Chris Brannon <cmbrannon79@gmail.com>
 # Contributor: Jeff Mickey <jeff@archlinux.org>
 # Contributor: William Rea <sillywilly@gmail.com>
@@ -6,7 +6,7 @@
 pkgbase=python-mpdclient2
 pkgname=python2-mpdclient2
 pkgver=1.0
-pkgrel=4
+pkgrel=5
 pkgdesc="Python module for interfacing MPD"
 arch=(any)
 url="http://incise.org/py-libmpdclient2.html"

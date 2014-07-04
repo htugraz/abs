@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 83614 2013-02-03 23:11:33Z arodseth $
+# $Id: PKGBUILD 114792 2014-07-04 06:03:55Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Chris Brannon <cmbrannon79@gmail.com>
 # Contributor: JJDaNiMoTh <jjdanimoth@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=dumb
 pkgver=0.9.3
-pkgrel=7
+pkgrel=8
 pkgdesc='IT, XM, S3M and MOD player library'
 arch=('x86_64' 'i686')
 license=('custom:dumb' 'GPL')

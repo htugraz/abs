@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 99762 2013-10-30 23:33:29Z allan $
+# $Id: PKGBUILD 114802 2014-07-04 06:56:03Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 
 pkgname=glitz
 pkgver=0.5.6
-pkgrel=4
+pkgrel=5
 pkgdesc='OpenGL image compositing library'
 arch=('x86_64' 'i686')
 url='http://cairographics.org/'

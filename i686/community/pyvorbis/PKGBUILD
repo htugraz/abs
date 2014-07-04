@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 64987 2012-02-19 11:27:59Z jelle $
+# $Id: PKGBUILD 114928 2014-07-04 16:23:05Z jelle $
 # Contributor: Jason Chu <jason@archlinux.org>
 # Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=pyvorbis
 pkgver=1.4
-pkgrel=6
+pkgrel=7
 pkgdesc="Python vorbis wrapper library"
 url="http://ekyo.nerim.net/software/pyogg/index.html" 
 arch=('i686' 'x86_64')
@@ -19,8 +19,8 @@ md5sums=('b4921e792c0a74f75b9d3057df10ee7c'
 
 build() {
 	cd ${srcdir}/${pkgname}-${pkgver}
-	patch -Np0 -i ${srcdir}/pyvorbis-1.4-python2.5.patch || return 1
-	patch -Np0 -i ${srcdir}/pyogg-ticket2-fix.patch || return 1
+	patch -Np0 -i ${srcdir}/pyvorbis-1.4-python2.5.patch
+	patch -Np0 -i ${srcdir}/pyogg-ticket2-fix.patch
 	python2 ./config_unix.py --prefix=/usr
 }
 

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 83170 2013-01-27 16:23:15Z pierre $
+# $Id: PKGBUILD 114818 2014-07-04 07:29:57Z fyan $
 # Maintainer:
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 
 pkgname=opendesktop-fonts
 pkgver=1.4.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Chinese TrueType Fonts"
 arch=('any')
 url='http://www.opendesktop.org.tw/'

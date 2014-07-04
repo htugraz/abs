@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 99746 2013-10-30 23:27:40Z allan $
+# $Id: PKGBUILD 114798 2014-07-04 06:40:25Z fyan $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Robert Emil Berge <filoktetes@linuxophic.org>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 
 pkgname=gavl
 pkgver=1.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc='A low level library, upon which multimedia APIs can be built.'
 arch=('i686' 'x86_64')
 url='http://gmerlin.sourceforge.net/'

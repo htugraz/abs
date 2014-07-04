@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 99721 2013-10-30 23:14:36Z allan $
+# $Id: PKGBUILD 114786 2014-07-04 05:46:37Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Angel Velasquez <angvp@archlinux.org>   
 # Contributor: Patrick Melo <patrick@patrickmelo.eti.br>
 pkgname=ctpl
 pkgver=0.3.3
-pkgrel=3
+pkgrel=4
 pkgdesc="Template engine library written in C"
 arch=('x86_64' 'i686')
 url="http://ctpl.tuxfamily.org/"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 102195 2013-12-06 13:05:07Z giovanni $
+# $Id: PKGBUILD 114913 2014-07-04 15:44:12Z fyan $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 
 pkgname=barcode
 pkgver=0.99
-pkgrel=1
+pkgrel=2
 pkgdesc="A tool to convert text strings to printed bars"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/barcode/"

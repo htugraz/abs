@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 143723 2011-11-28 17:13:34Z giovanni $
+# $Id: PKGBUILD 216454 2014-07-04 04:05:31Z fyan $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: John Proctor <jproctor@prium.net>
 
 pkgname=ctags
 pkgver=5.8
-pkgrel=3
+pkgrel=4
 pkgdesc="Generates an index file of language objects found in source files"
 arch=('i686' 'x86_64')
 license=('GPL')

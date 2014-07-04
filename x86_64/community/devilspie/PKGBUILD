@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 83136 2013-01-27 16:13:00Z pierre $
+# $Id: PKGBUILD 114790 2014-07-04 06:00:28Z fyan $
 # Maintainer: Aaron Griffin <aaron@archlinux.org>
 # Contributor: Travis Willard <travisw@wmpub.ca> 
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=devilspie
 pkgver=0.22
-pkgrel=5
+pkgrel=6
 pkgdesc="x11 window matching utility"
 arch=('i686' 'x86_64')
 url="http://www.burtonini.com/blog/computers/devilspie"

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 83744 2013-02-04 21:10:53Z arodseth $
+# $Id: PKGBUILD 114806 2014-07-04 07:06:00Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: dibblethewrecker dibblethewrecker.at.jiwe.dot.org
 
 pkgname=interlis-compiler
 pkgver=4.2.0
-pkgrel=3
+pkgrel=4
 pkgdesc='Compiler for INTERLIS 2'
 arch=('any')
 url='http://www.interlis.ch/content/index.php?language=e'

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 79472 2012-11-06 00:37:14Z arodseth $
+# $Id: PKGBUILD 114841 2014-07-04 08:41:49Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: royrocks <royrocks13@gmail.com>
 
 pkgname=tuxpaint-config
 pkgver=0.0.12
-pkgrel=2
+pkgrel=3
 pkgdesc='Tux Paint configuration tool'
 arch=('x86_64' 'i686')
 url='http://www.tuxpaint.org'

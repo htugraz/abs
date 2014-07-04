@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 100007 2013-10-31 02:58:06Z allan $
+# $Id: PKGBUILD 114847 2014-07-04 09:01:31Z fyan $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Geoffroy Carrier <geoffroy.carrier@koon.fr>
 # Previous Contributor: arjan <arjan@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=ucl
 pkgver=1.03
-pkgrel=5
+pkgrel=6
 pkgdesc="Portable lossless data compression library written in ANSI C"
 arch=('i686' 'x86_64')
 license=('GPL')

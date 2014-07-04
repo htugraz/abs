@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 102099 2013-12-05 09:01:04Z giovanni $
+# $Id: PKGBUILD 114920 2014-07-04 15:47:23Z fyan $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Jason Chu <jason@archlinux.org>
 
 pkgname=dvgrab
 pkgver=3.5
-pkgrel=4
+pkgrel=5
 pkgdesc="Saves audio and video data from an IEEE (FireWire) digital source"
 arch=('i686' 'x86_64')
 url="http://www.kinodv.org/"
