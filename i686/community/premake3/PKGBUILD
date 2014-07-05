@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 64785 2012-02-18 04:46:23Z svenstaro $
+# $Id: PKGBUILD 115016 2014-07-05 04:00:42Z fyan $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Anders Bergh <anders1@gmail.com>
 # Contributor: Mildred <silkensedai@online.fr>
@@ -6,7 +6,7 @@
 
 pkgname=premake3
 pkgver=3.7
-pkgrel=2
+pkgrel=3
 pkgdesc="A simple build configuration and project generation tool using lua"
 arch=('i686' 'x86_64')
 url="http://premake.sourceforge.net"

@@ -1,11 +1,11 @@
-#$Id: PKGBUILD 85901 2013-03-08 20:16:25Z svenstaro $
+#$Id: PKGBUILD 115036 2014-07-05 05:47:33Z fyan $
 # Contributor: Aaron Griffin <aaron@archlinux.org>
 # Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=vim-taglist
 pkgver=46
 _scriptid=19574
-pkgrel=1
+pkgrel=2
 pkgdesc="A source code browser plugin for vim"
 arch=('any')
 url="http://vim-taglist.sourceforge.net/"

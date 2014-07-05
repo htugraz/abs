@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198211 2013-10-30 13:28:54Z allan $
+# $Id: PKGBUILD 216533 2014-07-05 00:36:46Z heftig $
 # Maintainer: Jan "heftig" Steffens <jan.steffens@gmail.com>
 # Contributor: Kaiting Chen <kaitocracy@gmail.com>
 # Contributor: Martin Häger <martin.haeger@gmail.com>
 
 pkgname=liboauth
-pkgver=1.0.1
+pkgver=1.0.3
 pkgrel=1
 pkgdesc='C library implementing OAuth Core RFC 5849'
 arch=('i686' 'x86_64')
@@ -12,7 +12,7 @@ url='http://liboauth.sourceforge.net'
 license=('MIT')
 depends=('curl')
 source=("$url/pool/$pkgname-$pkgver.tar.gz")
-sha256sums=('5087d32fe1db7b588246a7de64fc0c2464c95efdebb2c7fe6f482d9b00e68d8b')
+sha256sums=('0df60157b052f0e774ade8a8bac59d6e8d4b464058cc55f9208d72e41156811f')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"

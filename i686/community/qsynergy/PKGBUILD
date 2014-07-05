@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 85453 2013-03-01 19:08:27Z andrea $
+# $Id: PKGBUILD 115055 2014-07-05 06:40:56Z fyan $
 # Maintainer: Timothy Redaelli <timothy.redaelli@gmail.com>
 # Contributor: mutlu_inek <mutlu_inek@yahoo.de>
 
 pkgname=qsynergy
 pkgver=0.9.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Qt gui for Synergy which lets you remotely control other computers."
 url="http://www.volker-lanz.de/en/software/qsynergy/"
 license=(GPL)

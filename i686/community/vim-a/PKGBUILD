@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 68654 2012-03-30 17:02:44Z pschmitz $
+# $Id: PKGBUILD 115026 2014-07-05 04:22:38Z fyan $
 # Contributor: Aaron Griffin <aaron@archlinux.org>
 # Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
 
@@ -6,7 +6,7 @@ pkgname=vim-a
 pkgver=2.18
 _scriptid=7218
 _docid=6347
-pkgrel=6
+pkgrel=7
 pkgdesc="alternate files in vim quickly (.c -> .h etc)"
 arch=('any')
 url="http://www.vim.org/scripts/script.php?script_id=31"

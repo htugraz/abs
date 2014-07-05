@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 64750 2012-02-18 03:56:17Z svenstaro $
+# $Id: PKGBUILD 114996 2014-07-05 03:17:19Z fyan $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Anton Bazhenov <anton.bazhenov at gmail>
 # Contributor: Drew Desai <alerante@yahoo.com>
@@ -6,7 +6,7 @@
 
 pkgname=hawknl
 pkgver=1.68
-pkgrel=3
+pkgrel=4
 pkgdesc="An open source game oriented network API"
 arch=('i686' 'x86_64')
 url="http://www.hawksoft.com/hawknl/"
@@ -22,11 +22,12 @@ build() {
 
   patch -Np0 -i ../$pkgname.patch
   make -f makefile.linux
-  install -m755 -d "$pkgdir"/usr/{lib,include}
 }
 
 package() {
   cd "$srcdir"/$pkgname$pkgver
+
+  install -m755 -d "$pkgdir"/usr/{lib,include}
 
   make -f makefile.linux \
     LIBDIR="$pkgdir"/usr/lib \

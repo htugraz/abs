@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 74580 2012-07-30 19:44:11Z jlichtblau $
+# $Id: PKGBUILD 115061 2014-07-05 06:48:16Z fyan $
 #Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 #Contributor: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve>
 
 pkgname=aspell-ca
 pkgver=2.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Catalan dictionary for aspell"
 arch=('i686' 'x86_64')
 url="http://aspell.net/"

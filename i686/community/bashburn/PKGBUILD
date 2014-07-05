@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 60252 2011-12-08 18:59:55Z jlichtblau $
+# $Id: PKGBUILD 115069 2014-07-05 06:52:27Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Andreas Wagner <A.Wagner@stud.uni-frankfurt.de>
 
 pkgname=bashburn
 pkgver=3.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A cd burning shell script"
 arch=('any')
 url="http://bashburn.dose.se/"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 75865 2012-09-03 20:25:45Z idevolder $
+# $Id: PKGBUILD 115085 2014-07-05 14:32:49Z idevolder $
 # Maintainer: BlackIkeEagle < ike DOT devolder AT gmail DOT com >
 # Contributor: Valeriy Lyasotskiy <onestep@ukr.net>
 # Contributor: Zom <zom@eevul.org>
@@ -6,7 +6,7 @@
 pkgname=apper
 _pkgmainver=0.7
 pkgver=0.7.2
-pkgrel=5
+pkgrel=6
 pkgdesc="KDE tools for PackageKit"
 arch=('i686' 'x86_64')
 url="http://kde-apps.org/content/show.php/Apper?content=84745"

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 67443 2012-03-11 20:00:53Z lcarlier $
+# $Id: PKGBUILD 115067 2014-07-05 06:52:04Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Allan McRae <mcrae_allan@hotmail.com>
 # Contributor: Angelo Theodorou <encelo@users.sourceforge.net>
 
 pkgname=barrage
 pkgver=1.0.4
-pkgrel=2
+pkgrel=3
 pkgdesc="A violent point-and-click shooting game with nice effects"
 arch=('i686' 'x86_64')
 url="http://lgames.sourceforge.net/index.php?project=Barrage"

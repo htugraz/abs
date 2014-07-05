@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 67709 2012-03-14 07:44:01Z ebelanger $
+# $Id: PKGBUILD 115057 2014-07-05 06:45:28Z fyan $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=pysol-sound-server
 pkgver=3.01
-pkgrel=8
+pkgrel=9
 pkgdesc="A Python extension module that plays WAV samples together with MP3 or MOD background music"
 arch=('i686' 'x86_64')
 url="http://www.pysol.org/"

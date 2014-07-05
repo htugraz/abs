@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 99845 2013-10-31 02:03:06Z allan $
+# $Id: PKGBUILD 114966 2014-07-05 02:35:03Z fyan $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: danitool
 
 pkgname=libgoom2
 pkgver=2k4
-pkgrel=2
+pkgrel=3
 pkgdesc="Shared library part of the Goom visualization plugin"
 arch=('i686' 'x86_64')
 url="http://www.fovea.cc/?page=details_produits&id=goom"

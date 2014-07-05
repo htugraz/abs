@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 99705 2013-10-30 23:08:43Z allan $
+# $Id: PKGBUILD 115074 2014-07-05 06:57:29Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Jeff Mickey <jeff@archlinux.org>
 
 pkgname=castget
 pkgver=1.1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A simple, command-line based RSS enclosure downloader"
 arch=('i686' 'x86_64')
 url="http://www.nongnu.org/castget/"

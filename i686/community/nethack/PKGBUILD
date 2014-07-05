@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 73188 2012-07-03 18:35:36Z schuay $
+# $Id: PKGBUILD 114982 2014-07-05 02:54:37Z fyan $
 # Maintainer : schuay <jakob.gruber@gmail.com>
 # Contributor : kevin <kevin@archlinux.org>
 # Contributor : Christian Schmidt <mucknert@gmx.net>
@@ -7,7 +7,7 @@
 
 pkgname=nethack
 pkgver=3.4.3
-pkgrel=7
+pkgrel=8
 pkgdesc='A single player dungeon exploration game'
 arch=('i686' 'x86_64')
 url="http://www.nethack.org/index.html"

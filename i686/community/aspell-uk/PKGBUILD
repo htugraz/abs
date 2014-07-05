@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 60430 2011-12-13 20:24:40Z jlichtblau $
+# $Id: PKGBUILD 115065 2014-07-05 06:50:13Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Roman Kyrylych <roman@archlinux.org>
 
 pkgname=aspell-uk
 pkgver=1.6.5
 _ftpver=1.4.0
-pkgrel=3
+pkgrel=4
 pkgdesc="Ukrainian dictionary for aspell"
 arch=('i686' 'x86_64')
 url="http://ispell-uk.sourceforge.net/"

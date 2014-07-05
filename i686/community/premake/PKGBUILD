@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 64914 2012-02-18 20:33:48Z lfleischer $
+# $Id: PKGBUILD 115018 2014-07-05 04:01:17Z fyan $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: revel <revelΘmuub·net>
 # Contributor: Marcos J. S. Magalhaes <mjsmagalhaes ^dot^ insc _at_ gmail ~dot~ com>
 
 pkgname=premake
 pkgver=4.3
-pkgrel=3
+pkgrel=4
 pkgdesc="A simple build configuration and project generation tool using lua"
 arch=('i686' 'x86_64')
 url="http://industriousone.com/premake"
@@ -21,5 +21,9 @@ build() {
 }
 
 package() {
-  install -Dm755 "$srcdir/premake-$pkgver/bin/release/premake4" "${pkgdir}/usr/bin/premake4"
+  cd "$srcdir/premake-$pkgver"
+
+  install -Dm755 "bin/release/premake4" "${pkgdir}/usr/bin/premake4"
+  
+  install -Dm644 LICENSE.txt "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 66459 2012-02-25 02:54:09Z lfleischer $
+# $Id: PKGBUILD 115101 2014-07-05 16:18:09Z lfleischer $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Eric Belanger <eric@archlinux.org>
 # Contributor: dorphell <dorphell@archlinux.org>
 
 pkgname=ngrep
 pkgver=1.45
-pkgrel=9
+pkgrel=10
 pkgdesc='A grep-like utility that allows you to search for network packets on an interface.'
 arch=('i686' 'x86_64')
 url='http://ngrep.sourceforge.net/'

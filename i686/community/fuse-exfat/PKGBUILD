@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 83563 2013-02-03 07:12:01Z giovanni $
+# $Id: PKGBUILD 114953 2014-07-05 02:25:24Z fyan $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: GaoShichao <xgdgsc@gmail.com>
 
 pkgname=fuse-exfat
 pkgver=1.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Free exFAT file system implementation"
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/exfat/"

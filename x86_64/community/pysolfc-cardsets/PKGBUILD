@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 55340 2011-09-10 05:56:30Z ebelanger $
+# $Id: PKGBUILD 115059 2014-07-05 06:47:06Z fyan $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=pysolfc-cardsets
 pkgver=2.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A collection of cardsets adapted for use with PySolFC"
 arch=('any')
 url="http://pysolfc.sourceforge.net/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 83561 2013-02-03 07:07:42Z giovanni $
+# $Id: PKGBUILD 114951 2014-07-05 02:24:49Z fyan $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Alex <mail.avatar@gmail.com>
 
 pkgname=exfat-utils
 pkgver=1.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Utilities for exFAT file system"
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/exfat/"

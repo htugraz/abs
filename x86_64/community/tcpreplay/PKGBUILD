@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 61217 2011-12-24 18:01:44Z tredaelli $
+# $Id: PKGBUILD 115052 2014-07-05 06:36:26Z fyan $
 # Maintainer: Timothy Redaelli <timothy.redaelli@gmail.com>
 # Contributor: Sébastien Duquette <ekse.0x@gmail.com>
 # Contributor: Dawid Wrobel <cromo@klej.net>
 pkgname=tcpreplay
 pkgver=3.4.4
-pkgrel=3
+pkgrel=4
 pkgdesc="Gives the ability to replay previously captured traffic in a libpcap format"
 url="http://tcpreplay.synfin.net"
 arch=('i686' 'x86_64')

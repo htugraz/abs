@@ -1,27 +1,27 @@
-# $Id: PKGBUILD 114800 2014-07-04 06:47:57Z stativ $
+# $Id: PKGBUILD 115137 2014-07-05 17:40:04Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <tu@dragonlord.cz>
 # Contributor: Michal Karas <largon@largon.net>
 
 pkgname=aspell-cs
 pkgver=20040614
-pkgrel=7
+pkgrel=8
 pkgdesc="Czech dictionary for aspell"
 arch=('i686' 'x86_64')
 url="http://aspell.net/"
 license=('GPL')
 depends=('aspell')
 source=(ftp://ftp.gnu.org/gnu/aspell/dict/cs/aspell6-cs-$pkgver-1.tar.bz2)
-md5sums=('50f0c2b7b6fcfe47bb647ad8993d2fe8')
+sha256sums=('01c091f907c2fa4dfa38305c2494bb80009407dfb76ead586ad724ae21913066')
 
 build() {
-  cd "$srcdir"/aspell6-cs-$pkgver-1
+  cd "${srcdir}"/aspell6-cs-$pkgver-1
 
   ./configure
   make
 }
 
 package() {
-  cd "$srcdir"/aspell6-cs-$pkgver-1
+  cd "${srcdir}"/aspell6-cs-$pkgver-1
 
-  make DESTDIR="$pkgdir" install
+  make DESTDIR="${pkgdir}" install
 }

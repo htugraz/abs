@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 81779 2012-12-29 07:29:09Z svenstaro $
+# $Id: PKGBUILD 115020 2014-07-05 04:05:38Z fyan $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Lone_Wolf <lonewolf@xs4all.nl> 
 # Contributor: sausageandeggs <s_stoakley at hotmail.co.uk>
 
 pkgname=singularity
 pkgver=0.30c
-pkgrel=5
+pkgrel=6
 pkgdesc="Strategy game - simulation of true AI"
 arch=('any')
 url="http://emhsoft.com/singularity/index.html"

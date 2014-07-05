@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 69408 2012-04-15 22:37:37Z svenstaro $
+# $Id: PKGBUILD 115008 2014-07-05 03:50:51Z fyan $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Johan Rehnberg <cleanrock@gmail.com>
 
 pkgname=naev-data
 pkgver=0.5.3
-pkgrel=1
+pkgrel=2
 pkgdesc='2D action/rpg space game (data files)'
 arch=('any')
 url="http://code.google.com/p/naev/"

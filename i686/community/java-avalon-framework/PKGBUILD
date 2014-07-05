@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 66415 2012-02-24 16:13:31Z lfleischer $
+# $Id: PKGBUILD 115095 2014-07-05 16:07:33Z lfleischer $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Stefan Husmann <stefan-husmann@t-online.de>
 # Contributor: Simon Lipp <sloonz+aur@gmail.com>
 
 pkgname=java-avalon-framework
 pkgver=4.2.0
-pkgrel=5
+pkgrel=6
 pkgdesc='Reusable components for J2SE applications.'
 arch=('any')
 url='http://excalibur.apache.org/'

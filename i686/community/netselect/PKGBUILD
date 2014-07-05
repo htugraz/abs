@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 60659 2011-12-16 15:40:36Z tredaelli $
+# $Id: PKGBUILD 115042 2014-07-05 05:57:26Z fyan $
 # Maintainer: Timothy Redaelli <timothy.redaelli@gmail.com>
 # Contributor: dorphell <dorphell@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=netselect
 pkgver=0.3
-pkgrel=2
+pkgrel=3
 pkgdesc="An ultrafast intelligent parallelizing binary-search implementation of ping"
 arch=('i686' 'x86_64')
 url="http://alumnit.ca/~apenwarr/netselect/index.html"

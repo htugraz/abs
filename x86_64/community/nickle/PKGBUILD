@@ -1,9 +1,9 @@
-#$Id: PKGBUILD 69252 2012-04-11 04:23:34Z allan $
+#$Id: PKGBUILD 115105 2014-07-05 16:25:20Z lfleischer $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=nickle
 pkgver=2.70
-pkgrel=2
+pkgrel=3
 pkgdesc="A programming language based prototyping environment with powerful programming and scripting capabilities"
 arch=('i686' 'x86_64')
 url="http://nickle.org"
