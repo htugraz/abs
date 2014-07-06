@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 67493 2012-03-12 21:01:46Z giovanni $
+# $Id: PKGBUILD 115187 2014-07-06 12:28:12Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: sxe <sxxe@gmx.de>
 
 pkgname=kuickshow
 pkgver=0.9.1
-pkgrel=4
+pkgrel=5
 pkgdesc="A very fast and convenient image viewer"
 url="http://userbase.kde.org/KuickShow"
 arch=('i686' 'x86_64')

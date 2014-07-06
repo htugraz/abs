@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 67952 2012-03-16 11:56:07Z giovanni $
+# $Id: PKGBUILD 115193 2014-07-06 12:40:32Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Ben <contrasutra@myrealbox.com>
@@ -6,7 +6,7 @@
 
 pkgname=menumaker
 pkgver=0.99.7
-pkgrel=8
+pkgrel=9
 pkgdesc="Heuristics-driven menu generator for Deskmenu, FluxBox, IceWM, OpenBox, WindowMaker and XFCE"
 arch=('any')
 url="http://menumaker.sourceforge.net/"

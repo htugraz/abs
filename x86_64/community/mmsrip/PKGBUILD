@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 67956 2012-03-16 12:10:10Z giovanni $
+# $Id: PKGBUILD 115197 2014-07-06 12:44:10Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Geoffroy Carrier <geoffroy.carrier@koon.fr>
 
 pkgname=mmsrip
 pkgver=0.7.0
-pkgrel=4
+pkgrel=5
 pkgdesc="A downloader for the proprietary protocol MMS://"
 arch=('i686' 'x86_64')
 url="http://nbenoit.tuxfamily.org/projects.php?rq=mmsrip"

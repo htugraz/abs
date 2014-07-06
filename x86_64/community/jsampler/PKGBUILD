@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 68250 2012-03-20 16:44:31Z schiv $
+# $Id: PKGBUILD 115155 2014-07-06 09:20:27Z schiv $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: svoufff <svoufff at gmail dot com>
 
 pkgname=jsampler
 _realname=JSampler
 pkgver=0.9
-pkgrel=2
+pkgrel=3
 pkgdesc="LinuxSampler Java GUI"
 arch=(any)
 url="http://sourceforge.net/projects/jsampler/"

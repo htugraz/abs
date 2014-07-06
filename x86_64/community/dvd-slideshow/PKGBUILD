@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 67542 2012-03-13 11:46:04Z giovanni $
+# $Id: PKGBUILD 115169 2014-07-06 11:58:27Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Tim Yang <tdy@gmx.com>
 # Contributor: JJDaNiMoTh <jjdanimoth.aur@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=dvd-slideshow
 pkgver=0.8.4
-pkgrel=2
+pkgrel=3
 pkgdesc="Scripts for creating slideshow DVDs with menus, audio, and fancy effects."
 arch=('any')
 url="http://dvd-slideshow.sourceforge.net"

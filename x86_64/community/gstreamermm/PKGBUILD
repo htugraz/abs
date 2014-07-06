@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 99791 2013-10-30 23:44:23Z allan $
+# $Id: PKGBUILD 115183 2014-07-06 12:13:54Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 
 pkgname=gstreamermm
 pkgver=0.10.11
-pkgrel=1
+pkgrel=2
 pkgdesc="C++ interface for GStreamer"
 arch=('i686' 'x86_64')
 url="http://gstreamer.freedesktop.org/bindings/cplusplus.html"

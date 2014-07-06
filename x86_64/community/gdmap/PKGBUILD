@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 67645 2012-03-13 15:14:31Z lcarlier $
+# $Id: PKGBUILD 115175 2014-07-06 12:04:20Z fyan $
 # Maintainer: Roman Kyrylych <Roman.Kyrylych@gmail.com>
 
 pkgname=gdmap
 pkgver=0.8.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Tool to inspect the used space of folders."
 arch=('i686' 'x86_64')
 url="http://gdmap.sourceforge.net"

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 68252 2012-03-20 16:47:35Z giovanni $
+# $Id: PKGBUILD 115160 2014-07-06 09:29:39Z schiv $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Max a.k.a. Synthead <synthead@gmail.com>
 # Contributor: christhemonkey <christhemonkey at gmail dot com>
 
 pkgname=raul
 pkgver=0.8.0
-pkgrel=3
+pkgrel=4
 pkgdesc="C++ Realtime Audio Utility Library"
 arch=('i686' 'x86_64')
 url="http://drobilla.net/software/raul/"

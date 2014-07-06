@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 216549 2014-07-05 16:05:54Z fyan $
+# $Id: PKGBUILD 216569 2014-07-06 14:57:20Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: lilydjwg <lilydjwg@gmail.com>
 
 _name=cffi
 pkgbase=python-$_name
 pkgname=(python-$_name python2-$_name)
-pkgver=0.8.3
+pkgver=0.8.6
 pkgrel=1
 pkgdesc="Foreign Function Interface for Python calling C code"
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ license=('MIT')
 makedepends=('python-setuptools' 'python2-setuptools' 'python-pycparser' 'python2-pycparser')
 checkdepends=('python-pytest' 'python2-pytest')
 source=("http://pypi.python.org/packages/source/c/${_name}/${_name}-${pkgver}.tar.gz")
-md5sums=('57e140a7d475f58bada8f2ada3f5749e')
+sha512sums=('b913d459bf0d355f0cb42fa0587a940c227d6765450033b14ab4d5281173cd1875cd6872911bb4f0b567cc1c5b0ca330615ec5f6ba205b25c41b683ae8c77790')
 
 prepare() {
   cp -a $_name-$pkgver{,-py2}

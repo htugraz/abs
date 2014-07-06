@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 67958 2012-03-16 12:13:31Z giovanni $
+# $Id: PKGBUILD 115199 2014-07-06 12:44:35Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Bartlomiej Palmowski (Rotwang), maks1k at wp dot pl
 
 pkgname=moc-tray
 pkgver=0.4
-pkgrel=2
+pkgrel=3
 pkgdesc="Simple tray icon for music on console"
 arch=('any')
 url="http://code.google.com/p/moc-tray/"

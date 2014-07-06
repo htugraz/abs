@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 67550 2012-03-13 12:10:00Z giovanni $
+# $Id: PKGBUILD 115185 2014-07-06 12:27:26Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Thayer Williams <thayer@archlinux.org>
 
 pkgname=lal
 pkgver=1.1
-pkgrel=2
+pkgrel=3
 pkgdesc="A simple dockapp to display the date and/or time"
 arch=('i686' 'x86_64')
 url="http://projects.l3ib.org/lal/"

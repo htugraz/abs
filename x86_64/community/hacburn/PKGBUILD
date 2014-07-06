@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 83505 2013-02-02 11:24:16Z jlichtblau $
+# $Id: PKGBUILD 115181 2014-07-06 12:11:34Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: dibblethewrecker dibblethewrecker.at.jiwe.dot.org
 
 pkgname=hacburn
 pkgver=0.3.5
-pkgrel=5
+pkgrel=6
 pkgdesc="A script written in perl to aid in writing CDs. It is a graphical interface (using gtk+) to cdrtools, mpg321 and ogg123."
 arch=('any')
 url="http://hacburn.sourceforge.net/"

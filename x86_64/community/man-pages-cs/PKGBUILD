@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 74420 2012-07-28 01:55:48Z ebelanger $
+# $Id: PKGBUILD 115191 2014-07-06 12:35:26Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Jan Krňávek <wamba@centrum.cz>
 
 pkgname=man-pages-cs
 pkgver=0.18.20090209
-pkgrel=4
+pkgrel=5
 pkgdesc="Czech man pages"
 arch=('any')
 url="http://sweb.cz/tropikhajma/man-pages-cs/"

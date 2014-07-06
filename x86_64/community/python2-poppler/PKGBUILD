@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 99970 2013-10-31 02:45:36Z allan $
+# $Id: PKGBUILD 115161 2014-07-06 09:29:44Z schiv $
 # Maintainer: Ray Rashif <schiv@archlinux.org
 # Contributor: György Balló <ballogy@freestart.hu>
 
 pkgname=python2-poppler
 _realname=pypoppler
 pkgver=0.12.1
-pkgrel=7
+pkgrel=8
 pkgdesc="Python 2.x bindings for Poppler"
 arch=('i686' 'x86_64')
 url="https://launchpad.net/poppler-python"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 57881 2011-11-04 08:14:48Z lcarlier $
+# $Id: PKGBUILD 115216 2014-07-06 16:50:58Z lcarlier $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: geekitus
@@ -6,7 +6,7 @@
 pkgname=blobwars-data
 _pkgname=blobwars
 pkgver=1.19
-pkgrel=2
+pkgrel=3
 pkgdesc="Platform action game featuring a blob wih lot of weapons - data files"
 arch=('any')
 url="http://sourceforge.net/projects/blobwars"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 76346 2012-09-16 07:22:01Z jlichtblau $
+# $Id: PKGBUILD 115201 2014-07-06 12:46:17Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Zhukov Pavel <gelios@gmail.com>
 
 pkgname=mp3unicode
 pkgver=1.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A command line utility to convert ID3 tags in mp3 files between different encodings"
 arch=('i686' 'x86_64')
 url="http://mp3unicode.yellowsite.ru/"

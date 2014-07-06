@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 110867 2014-05-08 22:29:31Z bisson $
+# $Id: PKGBUILD 115213 2014-07-06 16:44:01Z thestinger $
 # Contributor: Francois Boulogne <fboulogne at april dot org>
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 
 pkgname=subsurface
 _pkgname=Subsurface
 pkgver=4.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Divelog program'
 url='http://subsurface.hohndel.org/'
 license=('GPL2')

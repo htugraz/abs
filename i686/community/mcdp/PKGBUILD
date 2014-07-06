@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 67966 2012-03-16 12:59:54Z giovanni $
+# $Id: PKGBUILD 115195 2014-07-06 12:41:24Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Tino Reichardt <milky-archlinux@mcmilk.de>
@@ -6,7 +6,7 @@
 
 pkgname=mcdp
 pkgver=0.4b
-pkgrel=2
+pkgrel=3
 pkgdesc="Small console cd player"
 arch=('i686' 'x86_64')
 url="http://www.mcmilk.de/projects/mcdp/"

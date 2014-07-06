@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 79927 2012-11-14 19:57:14Z jlichtblau $
+# $Id: PKGBUILD 115179 2014-07-06 12:07:21Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Roman Kyrylych <Roman.Kyrylych@gmail.com>
 # Contributor: lp76 <l.peduto@gmail.com>
 
 pkgname=gpg-crypter
 pkgver=0.4.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A graphical front-end to GnuPG(GPG) using the GTK3 toolkit and libgpgme"
 arch=('i686' 'x86_64')
 url="http://gpg-crypter.sourceforge.net/"
