@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 67738 2012-03-14 10:05:54Z giovanni $
+# $Id: PKGBUILD 115233 2014-07-07 02:32:57Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: whatah <whatah@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=pympd
 pkgver=0.08.1
-pkgrel=3
+pkgrel=4
 pkgdesc="A Rhythmbox-like PyGTK+ client for Music Player Daemon"
 arch=('i686' 'x86_64')
 url="http://pympd.sourceforge.net/"

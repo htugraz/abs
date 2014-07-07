@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 67388 2012-03-10 21:54:03Z lcarlier $
+# $Id: PKGBUILD 115247 2014-07-07 02:51:40Z fyan $
 # Maintainer : Geoffroy Carrier <gcarrier@aur.archlinux.org>
 # Contributor: Joel Schaerer <joel.schaerer@laposte.net>
 
 pkgname=slimevolley
 pkgver=2.4.2
-pkgrel=2
+pkgrel=3
 pkgdesc="A simple yet fun arcade volley game"
 arch=('i686' 'x86_64')
 url="http://slime.tuxfamily.org/index.php"

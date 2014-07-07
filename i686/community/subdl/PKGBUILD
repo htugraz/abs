@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 66467 2012-02-25 04:48:39Z jlichtblau $
+# $Id: PKGBUILD 115249 2014-07-07 02:52:15Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Geoffroy Carrier <geoffroy.carrier@aur.archlinux.org>
 # Contributor: rich_o <rich_o@lavabit.com>
 
 pkgname=subdl
 pkgver=1.0.3
-pkgrel=2
+pkgrel=3
 pkgdesc="A command-line tool for downloading subtitles from opensubtitles.org"
 arch=('any')
 url="http://code.google.com/p/$pkgname/"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 215674 2014-06-30 06:50:16Z tpowa $
+# $Id: PKGBUILD 216587 2014-07-07 00:06:34Z eric $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Sarah Hay <sarahhay@mb.sympatico.ca>
 
@@ -10,7 +10,7 @@ arch=(i686 x86_64)
 url="http://www.sane-project.org"
 license=('GPL')
 depends=('sane' 'gimp' 'libjpeg>=7')
-source=(ftp://ftp2.sane-project.org/pub/sane/$pkgname-$pkgver/$pkgname-$pkgver.tar.gz MissingCapsFlag.patch)
+source=(ftp://ftp2.sane-project.org/pub/sane/$pkgname-$pkgver.tar.gz MissingCapsFlag.patch)
 md5sums=('c63bf7b0bb5f530cf3c08715db721cd3' '770f66e0534953f6129e1fc03d88ae01')
 
 build() {

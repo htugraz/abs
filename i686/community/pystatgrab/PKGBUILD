@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 83541 2013-02-02 14:56:35Z jlichtblau $
+# $Id: PKGBUILD 115235 2014-07-07 02:33:33Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Hugo Ideler <hugoideler@dse.nl>
 
 pkgname=pystatgrab
 pkgver=0.5
-pkgrel=6
+pkgrel=7
 pkgdesc="Python bindings for libstatgrab"
 arch=('i686' 'x86_64')
 url="http://www.i-scream.org/pystatgrab"

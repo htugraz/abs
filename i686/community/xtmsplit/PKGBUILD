@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 67921 2012-03-16 09:56:53Z giovanni $
+# $Id: PKGBUILD 115259 2014-07-07 03:06:38Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Geoffroy Carrier <geoffroy.carrier@koon.fr>
 
 pkgname=xtmsplit
 pkgver=0.2
-pkgrel=3
+pkgrel=4
 pkgdesc="Xtremsplit-compliant file splitter/merger"
 arch=('i686' 'x86_64')
 url="http://www.software.caelistis.be/"

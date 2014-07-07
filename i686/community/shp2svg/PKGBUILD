@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 55779 2011-09-20 06:52:40Z andrea $
+# $Id: PKGBUILD 115245 2014-07-07 02:46:33Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: dibblethewrecker dibblethewrecker.at.jiwe.dot.org
 
 pkgname=shp2svg
 pkgver=0.5.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Takes the text input from shp2pgsql and converts it to SVG files"
 arch=('any')
 url="http://www.carto.net/papers/svg/utils/shp2svg/"

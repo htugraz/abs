@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 67509 2012-03-12 21:51:42Z lcarlier $
+# $Id: PKGBUILD 115255 2014-07-07 03:02:25Z fyan $
 # Maintainer: Shinlun Hsieh <yngwiexx@yahoo.com.tw>
 # Contributor: Cory Farmer <rbgkofi@ameritech.net>
 pkgname=vorbisgain
 pkgver=0.37
-pkgrel=3
+pkgrel=4
 pkgdesc="A utility that computes the ReplayGain values for Ogg Vorbis files."
 arch=('i686' 'x86_64')
 url="http://sjeng.org/vorbisgain.html"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 67802 2012-03-14 13:31:15Z giovanni $
+# $Id: PKGBUILD 115251 2014-07-07 02:59:35Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 
 pkgname=tuxcmd
 pkgver=0.6.70
-pkgrel=4
+pkgrel=5
 pkgdesc='A GTK2 file manager with two panels'
 arch=('i686' 'x86_64')
 url='http://tuxcmd.sourceforge.net/'

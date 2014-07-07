@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 67742 2012-03-14 10:09:48Z giovanni $
+# $Id: PKGBUILD 115231 2014-07-07 02:30:08Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Eric Belanger <eric@archlinux.org>
 # Contributor: Roman G. <chesercat@gmail.com>
 
 pkgname=pydb
 pkgver=1.26
-pkgrel=2
+pkgrel=3
 pkgdesc="Pydb - Extended Python Debugger"
 arch=('any')
 url="http://bashdb.sourceforge.net/pydb/"
