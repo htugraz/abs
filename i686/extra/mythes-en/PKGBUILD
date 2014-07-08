@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 151532 2012-02-27 15:15:41Z pierre $
+# $Id: PKGBUILD 216649 2014-07-08 18:13:36Z andyrtr $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 
 pkgname=mythes-en
 pkgver=20060306
-pkgrel=2
+pkgrel=3
 pkgdesc="English thesaurus"
 arch=('any')
 url="http://wiki.services.openoffice.org/wiki/Dictionaries#English_.28AU.2CCA.2CGB.2CNZ.2CUS.2CZA.29"

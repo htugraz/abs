@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 151619 2012-02-28 17:47:55Z andyrtr $
+# $Id: PKGBUILD 216647 2014-07-08 18:11:48Z andyrtr $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 
 pkgname=mythes-de
 _date=20120228
 pkgver=${_date}
-pkgrel=1
+pkgrel=2
 pkgdesc="German thesaurus"
 arch=(any)
 url="http://www.openthesaurus.de/"

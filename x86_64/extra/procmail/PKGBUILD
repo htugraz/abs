@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 176897 2013-02-02 07:04:51Z andyrtr $
+# $Id: PKGBUILD 216690 2014-07-08 18:34:49Z andyrtr $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=procmail
 pkgver=3.22
-pkgrel=6
+pkgrel=7
 pkgdesc="Highly configurable auto mail processing."
 arch=('i686' 'x86_64')
 url="http://www.procmail.org"

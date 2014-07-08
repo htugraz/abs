@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 214140 2014-06-04 09:04:28Z andrea $
+# $Id: PKGBUILD 216669 2014-07-08 18:31:57Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kglobalaccel
-pkgver=4.100.0
+pkgver=5.0.0
 pkgrel=1
 pkgdesc='KGlobalAccel'
 arch=('i686' 'x86_64')
@@ -11,8 +11,8 @@ license=('LGPL')
 depends=('qt5-x11extras')
 makedepends=('extra-cmake-modules' 'qt5-tools')
 groups=('kf5')
-source=("http://download.kde.org/unstable/frameworks/${pkgver}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('f3ac048a83f00ba31765b10d26f6fa9f')
+source=("http://download.kde.org/stable/frameworks/${pkgver}/${pkgname}-${pkgver}.tar.xz")
+md5sums=('2789a7e598942a9a7004fa867019ec6a')
 
 prepare() {
   mkdir -p build
