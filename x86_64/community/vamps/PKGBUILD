@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 83866 2013-02-05 22:51:15Z lcarlier $
+# $Id: PKGBUILD 115361 2014-07-09 11:00:13Z fyan $
 # Contributor: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Stefano Zamprogno <stefano.zamprogno@gmail.com>
 # Maintainer: Stefan Husmann <stefan-husmann@t-online.de>
 
 pkgname=vamps
 pkgver=0.99.2
-pkgrel=10
+pkgrel=11
 pkgdesc='Very fast requantisizing tool for backup DVDs'
 arch=('i686' 'x86_64')
 url='http://vamps.sourceforge.net'

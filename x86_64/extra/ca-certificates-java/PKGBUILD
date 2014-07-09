@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 212424 2014-05-14 18:53:06Z pierre $
+# $Id: PKGBUILD 216749 2014-07-09 19:05:18Z guillaume $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Guillaume ALAUX <guillaume@archlinux.org>
 
 pkgname=ca-certificates-java
 pkgver=20140324
-pkgrel=2
+pkgrel=3
 pkgdesc='Common CA certificates (JKS keystore)'
 arch=('any')
 url='http://packages.qa.debian.org/c/ca-certificates-java.html'

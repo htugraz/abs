@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 115299 2014-07-08 10:17:01Z svenstaro $
+# $Id: PKGBUILD 115380 2014-07-09 14:13:21Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: William Giokas <1007380@gmail.com>
 
 pkgname=pypy
 pkgver=2.3.1
-pkgrel=3
+pkgrel=4
 pkgdesc="A Python implementation written in Python, JIT enabled"
 url="http://pypy.org"
 arch=('i686' 'x86_64')
 provides=('python2')
-depends=('python2' 'expat' 'bzip2' 'gdbm' 'openssl' 'libffi' 'zlib')
+depends=('expat' 'bzip2' 'gdbm' 'openssl' 'libffi' 'zlib')
 makedepends=('python2' 'tk' 'sqlite' 'mercurial')
 optdepends=('sqlite: sqlite module'
             'tk: tk module')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 67386 2012-03-10 21:21:31Z lcarlier $
+# $Id: PKGBUILD 115359 2014-07-09 10:56:31Z fyan $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Corrado Primier <bardo@aur.archlinux.org>
 
 pkgname=wavegain
 _realname=WaveGain
 pkgver=1.3.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A command line tool to normalize sound files"
 arch=('i686' 'x86_64')
 url="http://rarewares.org/others.php"

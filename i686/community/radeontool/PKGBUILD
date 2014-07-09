@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 79686 2012-11-11 05:31:16Z lcarlier $
+# $Id: PKGBUILD 115363 2014-07-09 12:36:21Z fyan $
 # Maintainer : Laurent Carlier <lordheavym AT gmail DOT com>
 
 pkgname=radeontool
 pkgver=1.6.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Lowlevel tools to tweak register and dump state on radeon GPUs"
 url="http://airlied.livejournal.com/"
 arch=('i686' 'x86_64')
