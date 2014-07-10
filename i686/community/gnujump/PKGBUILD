@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 82500 2013-01-19 17:34:43Z jsteel $
-# Maintainer: jsteel <mail at jsteel dot org>
+# $Id: PKGBUILD 115413 2014-07-10 18:44:34Z jsteel $
+# Maintainer: Jonathan Steel <jsteel at aur.archlinux.org>
 # Contributor: Anton Bazhenov <anton.bazhenov at gmail>
 # Contributor: Patrik Ilg <p.ilg@arcor.de>
 
 pkgname=gnujump
 pkgver=1.0.8
-pkgrel=3
+pkgrel=4
 pkgdesc="A clone of the simple yet addictive game Xjump"
 arch=('i686' 'x86_64')
 url="http://gnujump.es.gnu.org"
 license=('GPL3')
-depends=('libgl' 'sdl_image' 'sdl_mixer')
-makedepends=('mesa' 'glu')
+depends=('mesa' 'sdl_image' 'sdl_mixer')
+makedepends=('glu')
 source=(ftp://ftp.gnu.org/gnu/$pkgname/$pkgname-$pkgver.tar.gz
         ftp://ftp.archlinux.org/other/community/$pkgname/$pkgname.png
         $pkgname.desktop)

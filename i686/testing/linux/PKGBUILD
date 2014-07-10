@@ -1,42 +1,31 @@
-# Maintainer: Daniel Micay <danielmicay@gmail.com>
-# Contributor: Tobias Powalowski <tpowa@archlinux.org>
-# Contributor: Thomas Baechler <thomas@archlinux.org>
-# Contributor: henning mueller <henning@orgizm.net>
-# Contributor: Thomas Dwyer http://tomd.tel
+# $Id: PKGBUILD 216760 2014-07-10 05:36:16Z tpowa $
+# Maintainer: Tobias Powalowski <tpowa@archlinux.org>
+# Maintainer: Thomas Baechler <thomas@archlinux.org>
 
-pkgbase=linux-grsec
+pkgbase=linux               # Build stock -ARCH kernel
+#pkgbase=linux-custom       # Build kernel with a different name
 _srcname=linux-3.15
-_pkgver=3.15.5
-_grsecver=3.0
-_timestamp=201407100036
-_grsec_patch="grsecurity-$_grsecver-$_pkgver-$_timestamp.patch"
-pkgver=$_pkgver.$_timestamp
+pkgver=3.15.5
 pkgrel=1
 arch=('i686' 'x86_64')
-url=https://grsecurity.net/
+url="http://www.kernel.org/"
 license=('GPL2')
 makedepends=('xmlto' 'docbook-xsl' 'kmod' 'inetutils' 'bc')
 options=('!strip')
 source=("https://www.kernel.org/pub/linux/kernel/v3.x/${_srcname}.tar.xz"
-        "https://www.kernel.org/pub/linux/kernel/v3.x/patch-${_pkgver}.xz"
-        "https://grsecurity.net/test/$_grsec_patch"
-        "https://grsecurity.net/test/${_grsec_patch}.sig"
+        "https://www.kernel.org/pub/linux/kernel/v3.x/patch-${pkgver}.xz"
         # the main kernel config files
         'config' 'config.x86_64'
         # standard config files for mkinitcpio ramdisk
         'linux.preset'
         'change-default-console-loglevel.patch'
-        sysctl.conf
         )
 sha256sums=('c3927e87be4040fa8aca1b58663dc0776aaf00485604ff88a623be2f3fb07794'
             '9b0d000e0bdec7a25ee6303afdab8d2af77439995876eadd6ce248e5c954037d'
-            '130ec88600865218aad9a41e07525d80b502f28b7ca411b001fa21b6f1f0347c'
-            'SKIP'
-            '9e54806d6de98eeec1616657f29f0842ed63e3d79c3c8d644fb89eac6aaeb4fe'
-            '9b2ae8b17b3d0048d785ba81184b1bbc0734296cd03e3be4780274616155941d'
-            'ca7e718375b3790888756cc0a64a7500cd57dddb9bf7e10a0df22c860d91f74d'
-            'faced4eb4c47c4eb1a9ee8a5bf8a7c4b49d6b4d78efbe426e410730e6267d182'
-            'd4d4ae0b9c510547f47d94582e4ca08a7f12e9baf324181cb54d328027305e31')
+            'ec593326ac4dad420b0b45a472ba3d6be2ce66b9b4d7cccf1453d02d5eb01b19'
+            'cf10550fe511c534ec7f820f12c3345086b1ef64ac7f3b8b0d8d49bc3ea1f166'
+            'f0d90e756f14533ee67afda280500511a62465b4f76adcc5effa95a40045179c'
+            'faced4eb4c47c4eb1a9ee8a5bf8a7c4b49d6b4d78efbe426e410730e6267d182')
 
 _kernelname=${pkgbase#linux}
 
@@ -44,7 +33,7 @@ prepare() {
   cd "${srcdir}/${_srcname}"
 
   # add upstream patch
-  patch -p1 -i "${srcdir}/patch-${_pkgver}"
+  patch -p1 -i "${srcdir}/patch-${pkgver}"
 
   # add latest fixes from stable queue, if needed
   # http://git.kernel.org/?p=linux/kernel/git/stable/stable-queue.git
@@ -53,10 +42,6 @@ prepare() {
   # remove this when a Kconfig knob is made available by upstream
   # (relevant patch sent upstream: https://lkml.org/lkml/2011/7/26/227)
   patch -p1 -i "${srcdir}/change-default-console-loglevel.patch"
-
-  # Add grsecurity patches
-  patch -Np1 -i "$srcdir/$_grsec_patch"
-  rm localversion-grsec
 
   if [ "${CARCH}" = "x86_64" ]; then
     cat "${srcdir}/config.x86_64" > ./.config
@@ -70,7 +55,7 @@ prepare() {
   fi
 
   # set extraversion to pkgrel
-  sed -ri "s|^(EXTRAVERSION =).*|\1 .$_timestamp-${pkgrel}|" Makefile
+  sed -ri "s|^(EXTRAVERSION =).*|\1 -${pkgrel}|" Makefile
 
   # don't run depmod on 'make install'. We'll do this ourselves in packaging
   sed -i '2iexit 0' scripts/depmod.sh
@@ -97,17 +82,15 @@ build() {
 }
 
 _package() {
-  pkgdesc="The Linux kernel and modules with grsecurity/PaX patches"
+  pkgdesc="The ${pkgbase/linux/Linux} kernel and modules"
   [ "${pkgbase}" = "linux" ] && groups=('base')
   depends=('coreutils' 'linux-firmware' 'kmod' 'mkinitcpio>=0.7')
-  optdepends=('crda: to set the correct wireless channels of your country'
-              'gradm: to configure and enable Role Based Access Control (RBAC)'
-              'paxd: to enable PaX exploit mitigations and apply exceptions automatically')
-  provides=("kernel26${_kernelname}=${_pkgver}")
+  optdepends=('crda: to set the correct wireless channels of your country')
+  provides=("kernel26${_kernelname}=${pkgver}")
   conflicts=("kernel26${_kernelname}")
   replaces=("kernel26${_kernelname}")
-  backup=("etc/mkinitcpio.d/${pkgbase}.preset" etc/sysctl.d/05-grsecurity.conf)
-  install=${pkgbase}.install
+  backup=("etc/mkinitcpio.d/${pkgbase}.preset")
+  install=linux.install
 
   cd "${srcdir}/${_srcname}"
 
@@ -159,24 +142,12 @@ _package() {
   mv "${pkgdir}/lib" "${pkgdir}/usr/"
 
   # add vmlinux
-  install -D -m644 vmlinux "${pkgdir}/usr/lib/modules/${_kernver}/build/vmlinux"
-
-  # add grsecurity gcc plugins
-  mkdir -p "$pkgdir/usr/lib/modules/${_kernver}/build/tools/gcc"
-  cp -a tools/gcc/*.h "$pkgdir/usr/lib/modules/${_kernver}/build/tools/gcc/"
-  cp -a tools/gcc/Makefile "$pkgdir/usr/lib/modules/${_kernver}/build/tools/gcc/"
-  install -m644 tools/gcc/*.so "$pkgdir/usr/lib/modules/${_kernver}/build/tools/gcc/"
-  mkdir -p "$pkgdir/usr/lib/modules/${_kernver}/build/tools/gcc/size_overflow_plugin"
-  install -m644 tools/gcc/size_overflow_plugin/Makefile tools/gcc/size_overflow_plugin/*.so \
-    "$pkgdir/usr/lib/modules/${_kernver}/build/tools/gcc/size_overflow_plugin"
-
-  # install sysctl configuration for grsecurity switches
-  install -Dm600 "$srcdir/sysctl.conf" "$pkgdir/etc/sysctl.d/05-grsecurity.conf"
+  install -D -m644 vmlinux "${pkgdir}/usr/lib/modules/${_kernver}/build/vmlinux" 
 }
 
 _package-headers() {
   pkgdesc="Header files and scripts for building modules for ${pkgbase/linux/Linux} kernel"
-  provides=("kernel26${_kernelname}-headers=${_pkgver}")
+  provides=("kernel26${_kernelname}-headers=${pkgver}")
   conflicts=("kernel26${_kernelname}-headers")
   replaces=("kernel26${_kernelname}-headers")
 
@@ -295,7 +266,7 @@ _package-headers() {
 
 _package-docs() {
   pkgdesc="Kernel hackers manual - HTML documentation that comes with the ${pkgbase/linux/Linux} kernel"
-  provides=("kernel26${_kernelname}-docs=${_pkgver}")
+  provides=("kernel26${_kernelname}-docs=${pkgver}")
   conflicts=("kernel26${_kernelname}-docs")
   replaces=("kernel26${_kernelname}-docs")
 
