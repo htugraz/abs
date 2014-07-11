@@ -1,5 +1,5 @@
 # Maintainer: Florian Pritz <flo@xssn.at>
-# $Id: PKGBUILD 81429 2012-12-20 23:32:15Z bluewind $
+# $Id: PKGBUILD 115441 2014-07-11 10:26:59Z bluewind $
 # Contributor: Angel Velasquez <angvp@archlinux.org> 
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -8,7 +8,7 @@
 _pkgbasename=libssh2
 pkgname=lib32-$_pkgbasename
 pkgver=1.4.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A library implementing the SSH2 protocol as defined by Internet Drafts (32-bit)"
 url="http://www.libssh2.org/"
 arch=('i686' 'x86_64')

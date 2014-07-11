@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 82049 2013-01-06 10:57:49Z bluewind $
+# $Id: PKGBUILD 115443 2014-07-11 10:27:58Z bluewind $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 _pkgbasename=libxcomposite
 pkgname=lib32-$_pkgbasename
 pkgver=0.4.4
-pkgrel=1
+pkgrel=2
 pkgdesc="X11 Composite extension library (32-bit)"
 arch=(x86_64)
 url="http://xorg.freedesktop.org/"

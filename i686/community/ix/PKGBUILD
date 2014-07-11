@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 64626 2012-02-17 12:45:00Z bluewind $
+# $Id: PKGBUILD 115431 2014-07-11 10:14:33Z bluewind $
 # Maintainer: Florian Pritz <flo@xinu.at
 pkgname=ix
 pkgver=0.4
-pkgrel=4
+pkgrel=5
 pkgdesc="client for the ix.io pastebin"
 arch=('any')
 url="http://ix.io"

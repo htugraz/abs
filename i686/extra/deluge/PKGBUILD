@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 205858 2014-02-11 21:13:25Z heftig $
+# $Id: PKGBUILD 216812 2014-07-11 17:23:38Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Hugo Doria <hugo@archlinux.org>
 
 pkgname=deluge
-pkgver=1.3.6
-pkgrel=4
+pkgver=1.3.7
+pkgrel=1
 _commit=018330c
 pkgdesc="A BitTorrent client with multiple user interfaces in a client/server model"
 arch=('any')

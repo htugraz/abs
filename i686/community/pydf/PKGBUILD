@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 78210 2012-10-17 10:25:11Z allan $
+# $Id: PKGBUILD 115433 2014-07-11 10:17:18Z bluewind $
 # Maintainer: Florian Pritz <bluewind@xinu.at>
 # Contributor: TDY <tdy@gmx.com>
 # Contributor: Eduard "bekks" Warkentin <eduard.warkentin@gmail.com>
 
 pkgname=pydf
 pkgver=10
-pkgrel=2
+pkgrel=3
 pkgdesc="A colorized df clone"
 arch=("any")
 url="http://kassiopeia.juls.savba.sk/~garabik/software/pydf/"
