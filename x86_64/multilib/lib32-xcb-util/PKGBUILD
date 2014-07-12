@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 71888 2012-06-02 21:25:02Z lcarlier $
+# $Id: PKGBUILD 115623 2014-07-12 17:43:19Z fyan $
 # Maintainer : Ionut Biru <ibiru@archlinux.org>
 
 _pkgbasename=xcb-util
 pkgname=lib32-xcb-util
 pkgver=0.3.9
-pkgrel=1
+pkgrel=2
 pkgdesc="Utility libraries for XC Binding (32-bit)"
 arch=('x86_64')
 url="http://xcb.freedesktop.org"

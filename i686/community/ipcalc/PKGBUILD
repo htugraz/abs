@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 76867 2012-10-01 14:49:41Z bisson $
+# $Id: PKGBUILD 115594 2014-07-12 15:32:11Z jelle $
 # Contributor: K. Piche <kpiche@rogers.com>
 
 pkgname=ipcalc
 pkgver=0.41
-pkgrel=4
+pkgrel=5
 pkgdesc="Calculates IP broadcast, network, Cisco wildcard mask, and host ranges"
 arch=('any')
 url="http://jodies.de/ipcalc"
