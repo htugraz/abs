@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 106093 2014-02-22 12:16:01Z jlichtblau $
+# $Id: PKGBUILD 115653 2014-07-13 15:38:37Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Matthias Maennich <arch@maennich.net>
 # Contributor: <boenki@gmx.de>
 
 pkgname=qlandkartegt
-pkgver=1.7.6
+pkgver=1.7.7
 pkgrel=1
 pkgdesc="Use your GPS with Linux"
 arch=('i686' 'x86_64')
@@ -40,3 +40,5 @@ package(){
   install -D -m644 "${srcdir}/$pkgname-mimetypes.xml" \
     "${pkgdir}/usr/share/mime/packages/$pkgname-mimetypes.xml"
 }
+sha256sums=('0b0d659bef580bff7c6aabd563ad9bf0cf2d32467fe11e613ceaab58be7363d0'
+            'e8d33948831f8a66edd752c71c653085d6c4d9f1969e70dd8c40b9c7ca37fba0')
