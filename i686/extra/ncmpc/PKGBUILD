@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 216764 2014-07-10 16:20:56Z bisson $
+# $Id: PKGBUILD 216883 2014-07-14 17:09:13Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Angel Velasquez <angvp@archlinux.org> 
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -6,7 +6,7 @@
 # Contributor: Daniel Bainton <dpb [at] backarrow.org>
 
 pkgname=ncmpc
-pkgver=0.23
+pkgver=0.24
 pkgrel=1
 pkgdesc='Fully featured MPD client using ncurses'
 url='http://www.musicpd.org/clients/ncmpc/'
@@ -16,7 +16,7 @@ depends=('ncurses' 'glib2' 'libmpdclient')
 optdepends=('python2: to enable lyrics plugin'
             'ruby: to enable lyrics plugin')
 source=("http://www.musicpd.org/download/${pkgname}/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-sha1sums=('571ba50a252d9a7c69ae089b576560ef9de2f423')
+sha1sums=('4fe581299aa1b2efdce3018b734f6cfc283bea07')
 
 build() {
 	cd "${srcdir}/${pkgname}-${pkgver}"

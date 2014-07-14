@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 215329 2014-06-21 02:39:03Z fyan $
+# $Id: PKGBUILD 216878 2014-07-14 08:29:40Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 # Contributor: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-yaml
-pkgver=0.95
+pkgver=0.96
 pkgrel=1
 pkgdesc="Perl/CPAN Module YAML : YAML Aint Markup Language"
 arch=('any')
@@ -13,7 +13,7 @@ license=('GPL' 'PerlArtistic')
 depends=('perl')
 options=('!emptydirs')
 source=(http://www.cpan.org/authors/id/I/IN/INGY/YAML-${pkgver}.tar.gz)
-sha1sums=('d91c42a2fbc773e78e35f75284797c8465850176')
+sha1sums=('2783d0865e27322dcf310f1ab27b046050f69912')
 
 build() {
   cd YAML-${pkgver}
