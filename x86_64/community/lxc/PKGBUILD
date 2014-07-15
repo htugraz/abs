@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 113234 2014-06-16 11:42:44Z spupykin $
+# $Id: PKGBUILD 115735 2014-07-15 07:46:17Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andrea Zucchelli <zukka77@gmail.com>
 # Contributor: Daniel Micay <danielmicay@gmail.com>
@@ -6,7 +6,7 @@
 # Contributor: Jon Nordby <jononor@gmail.com>
 
 pkgname=lxc
-pkgver=1.0.4
+pkgver=1.0.5
 epoch=1
 pkgrel=1
 pkgdesc="Linux Containers"
@@ -22,10 +22,11 @@ license=('LGPL')
 install=lxc.install
 options=('emptydirs')
 backup=('etc/lxc/default.conf')
-source=("http://linuxcontainers.org/downloads/$pkgname-${pkgver}.tar.gz"
+source=("http://linuxcontainers.org/downloads/$pkgname-${pkgver}.tar.gz"{,.asc}
 	"lxc.tmpfiles.d"
 	"lxc.service")
-md5sums=('2689080af03a8ac1f1ce577728dd3619'
+md5sums=('9d9af9e9e69a831cd50b58d91c786013'
+         'SKIP'
          'df94c9fb8a753011c86ee664e9f521ff'
          '32db4ef06b27f36e15ff4b67c049dfeb')
 
