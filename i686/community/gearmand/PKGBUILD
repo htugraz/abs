@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 105677 2014-02-13 14:56:45Z mtorromeo $
+# $Id: PKGBUILD 115823 2014-07-17 10:01:01Z mtorromeo $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Contributor: Lev Lybin <lev.lybin@gmail.com>
 # Contributor: Vadym Abramchuk <abramm@gmail.com>
@@ -6,10 +6,10 @@
 
 pkgname=gearmand
 pkgver=1.1.12
-pkgrel=1
+pkgrel=2
 pkgdesc="Distributed job queue server."
 arch=('i686' 'x86_64')
-depends=('libevent' 'boost-libs' 'libmariadbclient' 'postgresql-libs' 'sqlite')
+depends=('libevent' 'boost-libs' 'libmariadbclient' 'postgresql-libs' 'sqlite' 'hiredis')
 makedepends=('boost' 'gperf' 'python-sphinx')
 conflicts=('gearman')
 replaces=('gearman')
