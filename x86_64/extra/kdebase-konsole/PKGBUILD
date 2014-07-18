@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 214833 2014-06-10 17:52:54Z svenstaro $
+# $Id: PKGBUILD 217136 2014-07-18 11:32:54Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdebase-konsole
-pkgver=4.13.2
+pkgver=4.13.3
 pkgrel=1
 arch=('i686' 'x86_64')
 url='http://kde.org/applications/system/konsole/'
@@ -12,7 +12,7 @@ groups=('kde' 'kdebase')
 depends=('kdebase-runtime' 'kdebase-lib')
 makedepends=('cmake' 'automoc4')
 source=("http://download.kde.org/stable/${pkgver}/src/konsole-${pkgver}.tar.xz")
-sha1sums=('93a09ad597dc00e6f01a06b6c4e5e69578b91daa')
+sha1sums=('4a6469d223f01ed2d71e1b0a2c78cca52670f464')
 
 build() {
   cd "${srcdir}"
