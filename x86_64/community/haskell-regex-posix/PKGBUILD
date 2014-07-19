@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 110631 2014-05-04 13:55:10Z td123 $
+# $Id: PKGBUILD 115992 2014-07-19 16:05:23Z td123 $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Maintainer: Vesa Kaihlavirta <vesa@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
@@ -6,7 +6,7 @@
 _hkgname=regex-posix
 pkgname=haskell-regex-posix
 pkgver=0.95.2
-pkgrel=7
+pkgrel=8
 pkgdesc='The posix regex backend for regex-base'
 url="http://hackage.haskell.org/package/$_hkgname"
 license=('custom:BSD3')
