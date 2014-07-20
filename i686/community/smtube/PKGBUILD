@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 112193 2014-05-29 16:12:28Z speps $
+# $Id: PKGBUILD 116011 2014-07-20 02:42:45Z speps $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Andreas Schnaiter <rc.poison@gmail.com>
 
 pkgname=smtube
-pkgver=2.1
-pkgrel=3
+pkgver=14.7.0
+pkgrel=1
 pkgdesc="A small youtube browser"
 arch=('i686' 'x86_64')
 url="http://smplayer.sourceforge.net"
@@ -19,7 +19,7 @@ optdepends=('mplayer: play videos with MPlayer'
             'vlc: play videos with VLC')
 install="$pkgname.install"
 source=("http://downloads.sourceforge.net/smplayer/$pkgname-$pkgver.tar.bz2")
-md5sums=('9cd034d5abcbc66445478b5824af50f1')
+md5sums=('19bbcb461112c70c0500b514a5de515c')
 
 build() {
   cd $pkgname-$pkgver

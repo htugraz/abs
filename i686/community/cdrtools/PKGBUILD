@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 112073 2014-05-29 10:40:22Z stativ $
+# $Id: PKGBUILD 116028 2014-07-20 18:58:39Z stativ $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname=cdrtools
 pkgver=3.01a24
-pkgrel=1
+pkgrel=2
 pkgdesc="Original cdrtools supporting CD, DVD and BluRay burning"
 arch=('i686' 'x86_64')
-url="http://cdrecord.berlios.de/private/cdrecord.html"
+url="http://cdrecord.org/"
 license=('CDDL')
 depends=('acl' 'libcap')
 conflicts=('cdrkit')
