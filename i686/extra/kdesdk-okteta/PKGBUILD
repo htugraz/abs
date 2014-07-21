@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217350 2014-07-18 11:49:25Z svenstaro $
+# $Id: PKGBUILD 217685 2014-07-21 20:30:26Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-okteta

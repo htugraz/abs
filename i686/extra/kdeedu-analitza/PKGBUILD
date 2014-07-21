@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217101 2014-07-18 11:29:43Z svenstaro $
+# $Id: PKGBUILD 217567 2014-07-21 20:15:16Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-analitza

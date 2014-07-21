@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217373 2014-07-18 11:51:09Z svenstaro $
+# $Id: PKGBUILD 217696 2014-07-21 20:31:43Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-kcharselect

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217281 2014-07-18 11:43:29Z svenstaro $
+# $Id: PKGBUILD 217652 2014-07-21 20:25:45Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-kolourpaint

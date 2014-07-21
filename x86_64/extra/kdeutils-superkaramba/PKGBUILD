@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217389 2014-07-18 11:52:22Z svenstaro $
+# $Id: PKGBUILD 217704 2014-07-21 20:32:46Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-superkaramba

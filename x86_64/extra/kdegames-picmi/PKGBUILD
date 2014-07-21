@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217271 2014-07-18 11:42:43Z svenstaro $
+# $Id: PKGBUILD 217647 2014-07-21 20:25:07Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-picmi

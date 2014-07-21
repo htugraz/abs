@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217319 2014-07-18 11:46:18Z svenstaro $
+# $Id: PKGBUILD 217670 2014-07-21 20:27:57Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-krdc

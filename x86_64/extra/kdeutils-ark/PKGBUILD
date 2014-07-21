@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217367 2014-07-18 11:50:42Z svenstaro $
+# $Id: PKGBUILD 217693 2014-07-21 20:31:21Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-ark

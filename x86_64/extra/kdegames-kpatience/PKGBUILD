@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217245 2014-07-18 11:40:56Z svenstaro $
+# $Id: PKGBUILD 217635 2014-07-21 20:23:40Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kpatience

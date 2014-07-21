@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217083 2014-07-18 11:28:19Z svenstaro $
+# $Id: PKGBUILD 217558 2014-07-21 20:14:12Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdebindings-qtruby

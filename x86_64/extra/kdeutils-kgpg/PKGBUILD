@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217379 2014-07-18 11:51:35Z svenstaro $
+# $Id: PKGBUILD 217699 2014-07-21 20:32:04Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-kgpg

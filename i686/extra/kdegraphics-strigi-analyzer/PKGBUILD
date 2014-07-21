@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217289 2014-07-18 11:44:09Z svenstaro $
+# $Id: PKGBUILD 217656 2014-07-21 20:26:12Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-strigi-analyzer

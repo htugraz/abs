@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217292 2014-07-18 11:44:17Z svenstaro $
+# $Id: PKGBUILD 217657 2014-07-21 20:26:22Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-svgpart

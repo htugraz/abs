@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217225 2014-07-18 11:39:29Z svenstaro $
+# $Id: PKGBUILD 217625 2014-07-21 20:22:36Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kjumpingcube

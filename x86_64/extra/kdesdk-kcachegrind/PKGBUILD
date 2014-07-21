@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217342 2014-07-18 11:48:45Z svenstaro $
+# $Id: PKGBUILD 217681 2014-07-21 20:29:56Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-kcachegrind

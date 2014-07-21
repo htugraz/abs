@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217229 2014-07-18 11:39:46Z svenstaro $
+# $Id: PKGBUILD 217627 2014-07-21 20:22:49Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-klines

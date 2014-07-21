@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217091 2014-07-18 11:28:59Z svenstaro $
+# $Id: PKGBUILD 217562 2014-07-21 20:14:40Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkdeedu

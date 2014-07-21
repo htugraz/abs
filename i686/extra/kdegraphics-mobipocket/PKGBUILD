@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217049 2014-07-18 11:25:07Z svenstaro $
+# $Id: PKGBUILD 217542 2014-07-21 20:11:52Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-mobipocket

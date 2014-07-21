@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217269 2014-07-18 11:42:34Z svenstaro $
+# $Id: PKGBUILD 217646 2014-07-21 20:25:00Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-palapeli

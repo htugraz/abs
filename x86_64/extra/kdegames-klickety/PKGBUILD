@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217227 2014-07-18 11:39:39Z svenstaro $
+# $Id: PKGBUILD 217626 2014-07-21 20:22:42Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-klickety

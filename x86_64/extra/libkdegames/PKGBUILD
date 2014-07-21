@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217109 2014-07-18 11:30:11Z svenstaro $
+# $Id: PKGBUILD 217570 2014-07-21 20:15:41Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkdegames

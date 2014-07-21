@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217077 2014-07-18 11:27:41Z svenstaro $
+# $Id: PKGBUILD 217555 2014-07-21 20:13:51Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdebindings-smokekde

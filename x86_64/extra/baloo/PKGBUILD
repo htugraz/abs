@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217055 2014-07-18 11:25:34Z svenstaro $
+# $Id: PKGBUILD 217545 2014-07-21 20:12:11Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=baloo

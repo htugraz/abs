@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217185 2014-07-18 11:36:39Z svenstaro $
+# $Id: PKGBUILD 217606 2014-07-21 20:20:30Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-parley

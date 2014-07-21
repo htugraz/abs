@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217346 2014-07-18 11:49:02Z svenstaro $
+# $Id: PKGBUILD 217683 2014-07-21 20:30:11Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-kompare

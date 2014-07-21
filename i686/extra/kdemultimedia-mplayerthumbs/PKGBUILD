@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217309 2014-07-18 11:45:32Z svenstaro $
+# $Id: PKGBUILD 217665 2014-07-21 20:27:22Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdemultimedia-mplayerthumbs

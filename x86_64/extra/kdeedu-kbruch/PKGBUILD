@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217159 2014-07-18 11:34:38Z svenstaro $
+# $Id: PKGBUILD 217594 2014-07-21 20:19:06Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-kbruch

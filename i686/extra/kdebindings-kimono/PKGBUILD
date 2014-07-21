@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217139 2014-07-18 11:33:03Z svenstaro $
+# $Id: PKGBUILD 217584 2014-07-21 20:17:52Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdebindings-kimono

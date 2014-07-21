@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217215 2014-07-18 11:38:47Z svenstaro $
+# $Id: PKGBUILD 217620 2014-07-21 20:22:05Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kfourinline

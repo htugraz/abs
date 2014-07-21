@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217119 2014-07-18 11:30:56Z svenstaro $
+# $Id: PKGBUILD 217575 2014-07-21 20:16:20Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeaccessibility-kaccessible

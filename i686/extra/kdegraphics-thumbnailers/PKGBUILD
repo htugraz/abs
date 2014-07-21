@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217294 2014-07-18 11:44:28Z svenstaro $
+# $Id: PKGBUILD 217658 2014-07-21 20:26:32Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-thumbnailers

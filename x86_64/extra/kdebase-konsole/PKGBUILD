@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217136 2014-07-18 11:32:54Z svenstaro $
+# $Id: PKGBUILD 217583 2014-07-21 20:17:45Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdebase-konsole

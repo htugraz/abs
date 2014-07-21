@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217195 2014-07-18 11:37:26Z svenstaro $
+# $Id: PKGBUILD 217611 2014-07-21 20:21:05Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-granatier

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217277 2014-07-18 11:43:11Z svenstaro $
+# $Id: PKGBUILD 217650 2014-07-21 20:25:32Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-kcolorchooser

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217107 2014-07-18 11:30:03Z svenstaro $
+# $Id: PKGBUILD 217569 2014-07-21 20:15:35Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkcompactdisc

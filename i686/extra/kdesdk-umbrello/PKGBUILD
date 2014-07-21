@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217359 2014-07-18 11:50:03Z svenstaro $
+# $Id: PKGBUILD 217689 2014-07-21 20:30:55Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-umbrello

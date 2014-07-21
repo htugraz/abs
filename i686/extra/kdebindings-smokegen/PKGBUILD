@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217064 2014-07-18 11:26:43Z svenstaro $
+# $Id: PKGBUILD 217550 2014-07-21 20:13:14Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdebindings-smokegen

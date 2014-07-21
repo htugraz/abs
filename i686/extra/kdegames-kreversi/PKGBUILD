@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217248 2014-07-18 11:41:05Z svenstaro $
+# $Id: PKGBUILD 217636 2014-07-21 20:23:46Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kreversi

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217147 2014-07-18 11:33:40Z svenstaro $
+# $Id: PKGBUILD 217588 2014-07-21 20:18:20Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-artikulate

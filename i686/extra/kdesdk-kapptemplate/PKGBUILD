@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217340 2014-07-18 11:48:36Z svenstaro $
+# $Id: PKGBUILD 217680 2014-07-21 20:29:49Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-kapptemplate

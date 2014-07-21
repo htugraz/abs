@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217163 2014-07-18 11:34:56Z svenstaro $
+# $Id: PKGBUILD 217596 2014-07-21 20:19:19Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-khangman

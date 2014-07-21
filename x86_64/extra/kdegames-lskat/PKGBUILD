@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217267 2014-07-18 11:42:25Z svenstaro $
+# $Id: PKGBUILD 217645 2014-07-21 20:24:52Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-lskat

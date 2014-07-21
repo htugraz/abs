@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217321 2014-07-18 11:46:27Z svenstaro $
+# $Id: PKGBUILD 217671 2014-07-21 20:28:04Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-krfb

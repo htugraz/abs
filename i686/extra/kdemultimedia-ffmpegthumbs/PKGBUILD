@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217301 2014-07-18 11:44:55Z svenstaro $
+# $Id: PKGBUILD 217661 2014-07-21 20:26:53Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdemultimedia-ffmpegthumbs

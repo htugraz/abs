@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217165 2014-07-18 11:35:05Z svenstaro $
+# $Id: PKGBUILD 217597 2014-07-21 20:19:26Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-kig

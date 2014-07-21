@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217087 2014-07-18 11:28:34Z svenstaro $
+# $Id: PKGBUILD 217560 2014-07-21 20:14:24Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=baloo-widgets

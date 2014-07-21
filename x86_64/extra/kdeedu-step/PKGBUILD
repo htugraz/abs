@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217189 2014-07-18 11:36:59Z svenstaro $
+# $Id: PKGBUILD 217608 2014-07-21 20:20:44Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-step

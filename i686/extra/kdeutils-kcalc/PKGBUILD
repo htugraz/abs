@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217371 2014-07-18 11:50:59Z svenstaro $
+# $Id: PKGBUILD 217695 2014-07-21 20:31:34Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-kcalc

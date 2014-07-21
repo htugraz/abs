@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217299 2014-07-18 11:44:44Z svenstaro $
+# $Id: PKGBUILD 217660 2014-07-21 20:26:46Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdemultimedia-dragonplayer

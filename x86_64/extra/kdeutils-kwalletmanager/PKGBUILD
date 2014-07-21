@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217385 2014-07-18 11:52:02Z svenstaro $
+# $Id: PKGBUILD 217702 2014-07-21 20:32:27Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-kwalletmanager

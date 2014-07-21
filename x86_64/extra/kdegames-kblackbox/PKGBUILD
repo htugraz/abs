@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217205 2014-07-18 11:38:04Z svenstaro $
+# $Id: PKGBUILD 217615 2014-07-21 20:21:34Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kblackbox

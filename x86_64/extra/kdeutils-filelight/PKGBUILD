@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217369 2014-07-18 11:50:51Z svenstaro $
+# $Id: PKGBUILD 217694 2014-07-21 20:31:27Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-filelight

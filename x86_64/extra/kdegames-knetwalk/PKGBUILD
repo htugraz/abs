@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217237 2014-07-18 11:40:19Z svenstaro $
+# $Id: PKGBUILD 217631 2014-07-21 20:23:14Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-knetwalk

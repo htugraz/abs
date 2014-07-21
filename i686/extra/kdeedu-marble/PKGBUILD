@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217093 2014-07-18 11:29:08Z svenstaro $
+# $Id: PKGBUILD 217563 2014-07-21 20:14:47Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-marble

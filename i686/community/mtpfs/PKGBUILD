@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 67994 2012-03-16 19:16:02Z lcarlier $
+# $Id: PKGBUILD 116044 2014-07-21 08:05:28Z lcarlier $
 # Maintainer: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: yugrotavele <yugrotavele at archlinux dot us>
 # Contributor: Anton Pirogov <anton.pirogov <AT> googlemail.com>
 
 pkgname=mtpfs
 pkgver=1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A FUSE filesystem that supports reading and writing from any MTP device"
 arch=('i686' 'x86_64')
 url="http://www.adebenham.com/mtpfs/"

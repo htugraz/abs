@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217157 2014-07-18 11:34:29Z svenstaro $
+# $Id: PKGBUILD 217593 2014-07-21 20:18:59Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-kanagram

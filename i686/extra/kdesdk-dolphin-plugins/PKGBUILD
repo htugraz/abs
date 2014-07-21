@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217338 2014-07-18 11:48:29Z svenstaro $
+# $Id: PKGBUILD 217679 2014-07-21 20:29:43Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-dolphin-plugins

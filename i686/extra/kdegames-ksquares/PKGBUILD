@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217259 2014-07-18 11:41:48Z svenstaro $
+# $Id: PKGBUILD 217641 2014-07-21 20:24:23Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-ksquares

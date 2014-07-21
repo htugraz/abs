@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217235 2014-07-18 11:40:11Z svenstaro $
+# $Id: PKGBUILD 217630 2014-07-21 20:23:08Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-knavalbattle

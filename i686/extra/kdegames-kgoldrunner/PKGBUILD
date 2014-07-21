@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217217 2014-07-18 11:38:55Z svenstaro $
+# $Id: PKGBUILD 217621 2014-07-21 20:22:11Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kgoldrunner

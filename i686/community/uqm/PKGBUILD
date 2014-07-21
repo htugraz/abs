@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 79596 2012-11-08 15:28:33Z heftig $
+# $Id: PKGBUILD 116042 2014-07-21 08:01:23Z lcarlier $
 # Maintainer : Laurent Carlier <lordheavym@gmail.com>
 # Maintainer : Daenyth <Daenyth+Arch _AT_ gmail _DOT_ com>
 # Contributor : wizzomafizzo <wizzomafizzo@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=uqm
 pkgver=0.7.0
-pkgrel=3
+pkgrel=4
 pkgdesc="The Ur-Quan Masters, a port of Star Control 2"
 arch=('i686' 'x86_64')
 url="http://sc2.sf.net/"

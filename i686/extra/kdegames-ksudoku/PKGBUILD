@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217261 2014-07-18 11:41:56Z svenstaro $
+# $Id: PKGBUILD 217642 2014-07-21 20:24:32Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-ksudoku

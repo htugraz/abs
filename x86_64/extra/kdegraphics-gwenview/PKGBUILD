@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217273 2014-07-18 11:42:51Z svenstaro $
+# $Id: PKGBUILD 217648 2014-07-21 20:25:13Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-gwenview

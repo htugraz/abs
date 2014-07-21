@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217263 2014-07-18 11:42:04Z svenstaro $
+# $Id: PKGBUILD 217643 2014-07-21 20:24:38Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-ktuberling

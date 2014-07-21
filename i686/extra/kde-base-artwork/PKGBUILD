@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217085 2014-07-18 11:28:25Z svenstaro $
+# $Id: PKGBUILD 217559 2014-07-21 20:14:17Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kde-base-artwork

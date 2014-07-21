@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217051 2014-07-18 11:25:18Z svenstaro $
+# $Id: PKGBUILD 217543 2014-07-21 20:11:58Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kfilemetadata

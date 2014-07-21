@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217115 2014-07-18 11:30:39Z svenstaro $
+# $Id: PKGBUILD 217573 2014-07-21 20:16:07Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kqtquickcharts

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217145 2014-07-18 11:33:32Z svenstaro $
+# $Id: PKGBUILD 217587 2014-07-21 20:18:13Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdebindings-perlkde

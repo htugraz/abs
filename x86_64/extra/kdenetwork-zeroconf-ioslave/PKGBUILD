@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217325 2014-07-18 11:46:48Z svenstaro $
+# $Id: PKGBUILD 217673 2014-07-21 20:28:20Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-zeroconf-ioslave

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217097 2014-07-18 11:29:27Z svenstaro $
+# $Id: PKGBUILD 217565 2014-07-21 20:15:03Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkipi

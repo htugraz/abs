@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217104 2014-07-18 11:29:54Z svenstaro $
+# $Id: PKGBUILD 217568 2014-07-21 20:15:26Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkcddb

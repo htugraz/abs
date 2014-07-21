@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217209 2014-07-18 11:38:20Z svenstaro $
+# $Id: PKGBUILD 217617 2014-07-21 20:21:46Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kbounce

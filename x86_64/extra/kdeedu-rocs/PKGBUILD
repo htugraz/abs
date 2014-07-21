@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217187 2014-07-18 11:36:48Z svenstaro $
+# $Id: PKGBUILD 217607 2014-07-21 20:20:37Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-rocs

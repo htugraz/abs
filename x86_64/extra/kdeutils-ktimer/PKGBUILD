@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217383 2014-07-18 11:51:52Z svenstaro $
+# $Id: PKGBUILD 217701 2014-07-21 20:32:19Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-ktimer

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217197 2014-07-18 11:37:35Z svenstaro $
+# $Id: PKGBUILD 217612 2014-07-21 20:21:12Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kajongg

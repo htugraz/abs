@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217131 2014-07-18 11:31:54Z svenstaro $
+# $Id: PKGBUILD 217581 2014-07-21 20:17:01Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeadmin-kuser

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217285 2014-07-18 11:43:52Z svenstaro $
+# $Id: PKGBUILD 217654 2014-07-21 20:25:59Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-ksaneplugin

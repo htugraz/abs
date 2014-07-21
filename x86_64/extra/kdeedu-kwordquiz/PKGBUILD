@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217181 2014-07-18 11:36:20Z svenstaro $
+# $Id: PKGBUILD 217604 2014-07-21 20:20:16Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-kwordquiz

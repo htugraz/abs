@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217095 2014-07-18 11:29:20Z svenstaro $
+# $Id: PKGBUILD 217564 2014-07-21 20:14:56Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkdcraw

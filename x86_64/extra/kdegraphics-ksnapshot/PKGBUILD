@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217287 2014-07-18 11:43:59Z svenstaro $
+# $Id: PKGBUILD 217655 2014-07-21 20:26:05Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-ksnapshot

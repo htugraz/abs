@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217183 2014-07-18 11:36:30Z svenstaro $
+# $Id: PKGBUILD 217605 2014-07-21 20:20:22Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-pairs

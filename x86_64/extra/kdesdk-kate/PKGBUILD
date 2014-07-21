@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217075 2014-07-18 11:27:28Z svenstaro $
+# $Id: PKGBUILD 217554 2014-07-21 20:13:43Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgbase=kdesdk-kate

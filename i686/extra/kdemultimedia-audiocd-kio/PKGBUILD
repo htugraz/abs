@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217297 2014-07-18 11:44:36Z svenstaro $
+# $Id: PKGBUILD 217659 2014-07-21 20:26:39Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdemultimedia-audiocd-kio

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217311 2014-07-18 11:45:44Z svenstaro $
+# $Id: PKGBUILD 217666 2014-07-21 20:27:28Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-filesharing

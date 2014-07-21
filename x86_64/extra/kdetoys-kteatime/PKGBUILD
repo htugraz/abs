@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217363 2014-07-18 11:50:24Z svenstaro $
+# $Id: PKGBUILD 217691 2014-07-21 20:31:09Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdetoys-kteatime

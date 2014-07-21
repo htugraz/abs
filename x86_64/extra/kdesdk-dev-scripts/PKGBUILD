@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217336 2014-07-18 11:48:19Z svenstaro $
+# $Id: PKGBUILD 217678 2014-07-21 20:29:35Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-dev-scripts

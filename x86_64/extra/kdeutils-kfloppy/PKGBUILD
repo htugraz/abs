@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217377 2014-07-18 11:51:27Z svenstaro $
+# $Id: PKGBUILD 217698 2014-07-21 20:31:57Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-kfloppy

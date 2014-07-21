@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217251 2014-07-18 11:41:14Z svenstaro $
+# $Id: PKGBUILD 217637 2014-07-21 20:23:52Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kshisen

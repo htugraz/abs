@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217265 2014-07-18 11:42:17Z svenstaro $
+# $Id: PKGBUILD 217644 2014-07-21 20:24:46Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kubrick

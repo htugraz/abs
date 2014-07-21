@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217059 2014-07-18 11:26:22Z svenstaro $
+# $Id: PKGBUILD 217547 2014-07-21 20:12:53Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgbase=kactivities4

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217143 2014-07-18 11:33:22Z svenstaro $
+# $Id: PKGBUILD 217586 2014-07-21 20:18:06Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgbase=kdebindings-kross

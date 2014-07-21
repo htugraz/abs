@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217344 2014-07-18 11:48:54Z svenstaro $
+# $Id: PKGBUILD 217682 2014-07-21 20:30:02Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-kioslaves

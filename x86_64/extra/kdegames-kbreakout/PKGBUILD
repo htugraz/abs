@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217211 2014-07-18 11:38:30Z svenstaro $
+# $Id: PKGBUILD 217618 2014-07-21 20:21:53Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kbreakout

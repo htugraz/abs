@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217071 2014-07-18 11:27:11Z svenstaro $
+# $Id: PKGBUILD 217553 2014-07-21 20:13:34Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-okular

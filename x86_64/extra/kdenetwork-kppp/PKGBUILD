@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217317 2014-07-18 11:46:10Z svenstaro $
+# $Id: PKGBUILD 217669 2014-07-21 20:27:50Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-kppp

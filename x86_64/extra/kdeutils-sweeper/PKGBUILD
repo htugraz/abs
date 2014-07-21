@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217391 2014-07-18 11:52:30Z svenstaro $
+# $Id: PKGBUILD 217705 2014-07-21 20:32:53Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-sweeper

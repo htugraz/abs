@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217068 2014-07-18 11:27:02Z svenstaro $
+# $Id: PKGBUILD 217552 2014-07-21 20:13:28Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkexiv2

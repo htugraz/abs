@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217239 2014-07-18 11:40:30Z svenstaro $
+# $Id: PKGBUILD 217632 2014-07-21 20:23:20Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kolf

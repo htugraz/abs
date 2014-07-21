@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217303 2014-07-18 11:45:04Z svenstaro $
+# $Id: PKGBUILD 217662 2014-07-21 20:26:59Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdemultimedia-juk

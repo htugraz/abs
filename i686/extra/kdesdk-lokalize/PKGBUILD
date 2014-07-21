@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217348 2014-07-18 11:49:14Z svenstaro $
+# $Id: PKGBUILD 217684 2014-07-21 20:30:19Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-lokalize

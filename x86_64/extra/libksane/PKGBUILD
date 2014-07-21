@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217099 2014-07-18 11:29:35Z svenstaro $
+# $Id: PKGBUILD 217566 2014-07-21 20:15:09Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libksane

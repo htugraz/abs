@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217279 2014-07-18 11:43:22Z svenstaro $
+# $Id: PKGBUILD 217651 2014-07-21 20:25:39Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-kgamma
