@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 112875 2014-06-09 10:23:23Z svenstaro $
+# $Id: PKGBUILD 116117 2014-07-22 17:06:27Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Matthew Bowra-Dean <matthew@ijw.co.nz>
 pkgname=openra
-pkgver=20140608
+pkgver=20140722
 pkgrel=1
 pkgdesc="An open-source implementation of the Red Alert engine using .NET/mono and OpenGL"
 arch=('any')
