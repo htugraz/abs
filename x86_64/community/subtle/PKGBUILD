@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 116071 2014-07-21 17:07:55Z anatolik $
+# $Id: PKGBUILD 116182 2014-07-23 16:39:44Z anatolik $
 # Maintainer: Anatol Pomozov <anatol.pomozov@gmail.com>
 # Contributor: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
@@ -12,7 +12,7 @@ pkgname=subtle
 _hg_revision=3243
 _hg_hash=43d1d0478c46
 pkgver=0.11.r$_hg_revision
-pkgrel=3
+pkgrel=4
 pkgdesc='Grid-based manual tiling window manager'
 arch=(x86_64 i686)
 url='http://subtle.subforge.org/'
