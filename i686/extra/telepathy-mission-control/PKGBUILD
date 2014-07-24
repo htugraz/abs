@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 210535 2014-04-14 20:07:32Z jgc $
+# $Id: PKGBUILD 217802 2014-07-24 03:23:16Z fyan $
 # Maintainer:  Ionut Biru <ibiru@archlinux.org>
 # Contributor: Ju Liu <liuju86 at gmail dot com>
 # Contributor: Bjorn Lindeijer <bjorn lindeijer nl>
 # Contributor: Andreas Zwinkau <beza1e1@web.de>
 
 pkgname=telepathy-mission-control
-pkgver=5.16.1
-pkgrel=2
+pkgver=5.16.2
+pkgrel=1
 pkgdesc="A Telepathy component providing abstraction of some of the details of connection managers."
 arch=('i686' 'x86_64')
 url="http://telepathy.freedesktop.org/wiki/Mission Control"
@@ -15,7 +15,7 @@ depends=('telepathy-glib' 'libgnome-keyring' 'dconf' 'networkmanager')
 makedepends=('libxslt' 'python2' 'gtk-doc')
 install=telepathy-mission-control.install
 source=(http://telepathy.freedesktop.org/releases/$pkgname/$pkgname-$pkgver.tar.gz)
-md5sums=('421115a35b9e427807326877f86e7f43')
+md5sums=('8dc751da77a84abef3f9153bc422a17b')
 
 build() {
     cd "$pkgname-$pkgver"

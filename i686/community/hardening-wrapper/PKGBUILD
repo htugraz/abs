@@ -1,17 +1,21 @@
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 pkgname=hardening-wrapper
-pkgver=2
+pkgver=3
 pkgrel=4
 pkgdesc='Wrapper script for building hardened executables by default'
-arch=(any)
+arch=(i686 x86_64)
 url='https://archlinux.org/'
 license=('GPL')
 depends=(bash)
-source=(cc-wrapper.sh path.sh)
-sha1sums=('41ed86439513a9be2cd4a186e419d70f4d362b0c'
-          '1e5f6d9931f01b26bb4b6fbb839e21d34d534cdc')
+backup=(etc/hardening-wrapper.conf)
+source=(cc-wrapper.sh path.sh hardening-wrapper-i686.conf hardening-wrapper-x86_64.conf)
+sha1sums=('edddffd8d8bf6c4b57d7a8fa32b65e29020c2a3c'
+          '1e5f6d9931f01b26bb4b6fbb839e21d34d534cdc'
+          '658aed4d1039393f0ba08152c1320fca04ce1315'
+          'ff104a6624ce898010f277fe22e6f964aeb34300')
 
 package() {
+  install -Dm644 hardening-wrapper-${CARCH}.conf "$pkgdir/etc/hardening-wrapper.conf"
   install -Dm644 path.sh "$pkgdir/etc/profile.d/hardening-wrapper.sh"
 
   mkdir -p "$pkgdir/usr/lib/hardening-wrapper/bin"
