@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 115778 2014-07-16 13:54:27Z seblu $
+# $Id: PKGBUILD 116315 2014-07-24 22:59:14Z seblu $
 # Maintainer: Sébastien "Seblu" Luttringer
 
 pkgname=docker
-pkgver=1.1.1
+pkgver=1.1.2
 pkgrel=1
 epoch=1
 pkgdesc='Pack, ship and run any application as a lightweight container'
@@ -16,7 +16,7 @@ optdepends=('btrfs-progs: btrfs backend support'
 # don't strip binaries! A sha1 is used to check binary consistency.
 options=('!strip')
 install=$pkgname.install
-source=("git+https://github.com/dotcloud/docker.git#tag=v$pkgver")
+source=("git+https://github.com/docker/docker.git#tag=v$pkgver")
 md5sums=('SKIP')
 
 build() {
@@ -39,10 +39,15 @@ package() {
   install -Dm644 'contrib/completion/bash/docker' "$pkgdir/usr/share/bash-completion/completions/docker"
   install -Dm644 'contrib/completion/zsh/_docker' "$pkgdir/usr/share/zsh/site-functions/_docker"
   # systemd
-  install -Dm644 'contrib/init/systemd/docker.service' "$pkgdir/usr/lib/systemd/system/docker.service"
+  install -Dm644 'contrib/init/systemd/socket-activation/docker.service' \
+    "$pkgdir/usr/lib/systemd/system/docker.service"
+  install -Dm644 'contrib/init/systemd/socket-activation/docker.socket' \
+    "$pkgdir/usr/lib/systemd/system/docker.socket"
   # vim syntax
-  install -Dm644 'contrib/syntax/vim/syntax/dockerfile.vim' "$pkgdir/usr/share/vim/vimfiles/syntax/dockerfile.vim"
-  install -Dm644 'contrib/syntax/vim/ftdetect/dockerfile.vim' "$pkgdir/usr/share/vim/vimfiles/dockerfile.vim"
+  install -Dm644 'contrib/syntax/vim/syntax/dockerfile.vim' \
+    "$pkgdir/usr/share/vim/vimfiles/syntax/dockerfile.vim"
+  install -Dm644 'contrib/syntax/vim/ftdetect/dockerfile.vim' \
+    "$pkgdir/usr/share/vim/vimfiles/ftdetect/dockerfile.vim"
 }
 
 # vim:set ts=2 sw=2 et:
