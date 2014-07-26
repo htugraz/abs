@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 113169 2014-06-14 19:22:23Z andyrtr $
+# $Id: PKGBUILD 116375 2014-07-26 10:40:22Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 # Contributor: Bert Muennich <muennich at informatik.hu-berlin.de>
@@ -6,13 +6,13 @@
 
 pkgname=sxiv
 pkgver=1.2
-pkgrel=2
+pkgrel=3
 pkgdesc='Simple X Image Viewer'
 arch=('i686' 'x86_64')
 license=('GPL2')
 install=sxiv.install
 url='https://github.com/muennich/sxiv'
-depends=('imlib2' 'desktop-file-utils')
+depends=('imlib2' 'desktop-file-utils' 'xdg-utils' 'hicolor-icon-theme')
 source=(https://github.com/muennich/sxiv/archive/v$pkgver.tar.gz
         giflib-5.1.0.patch)
 md5sums=('9b79d3c70693d9abbc66295cf6f281a0'
@@ -29,6 +29,7 @@ build() {
 
 package() {
   cd $pkgname-$pkgver
-  make PREFIX="$pkgdir"/usr install
+  make PREFIX=/usr DESTDIR="$pkgdir" install
+  make -C icon PREFIX=/usr DESTDIR="$pkgdir" install
   install -Dm644 sxiv.desktop "$pkgdir"/usr/share/applications/sxiv.desktop
 }
