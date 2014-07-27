@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 197947 2013-10-30 11:51:03Z allan $
+# $Id: PKGBUILD 218246 2014-07-27 20:49:06Z eric $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=farstream
-pkgver=0.2.3
+pkgver=0.2.4
 pkgrel=1
 pkgdesc="Farstream (formerly Farsight) - Audio/Video Communications Framework"
-arch=(i686 x86_64)
+arch=('i686' 'x86_64')
 url="http://www.freedesktop.org/wiki/Software/Farstream"
 license=('LGPL')
 depends=('gst-plugins-base-libs' 'libnice')
@@ -14,15 +14,14 @@ optdepends=('gst-plugins-good' 'gst-plugins-bad')
 conflicts=('farsight2')
 replaces=('farsight2')
 source=(http://freedesktop.org/software/$pkgname/releases/$pkgname/$pkgname-$pkgver.tar.gz{,.asc})
-md5sums=('a8971167068b69a6933d3eaaeb9ab448'
+md5sums=('edcc75cbf7c811cfe3de9b00b9808682'
          'SKIP')
 
 build() {
   cd $pkgname-$pkgver
   ./configure --prefix=/usr \
     --with-package-name='Arch Linux farstream package' \
-    --with-package-origin='http://archlinux.org' \
-    --disable-static
+    --with-package-origin='http://archlinux.org'
   make
 }
 

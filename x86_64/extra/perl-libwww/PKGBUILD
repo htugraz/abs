@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 212769 2014-05-15 03:25:47Z eric $
+# $Id: PKGBUILD 218225 2014-07-27 16:00:00Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=perl-libwww
-pkgver=6.06
+pkgver=6.08
 pkgrel=1
 pkgdesc="The World-Wide Web library for Perl"
 arch=('any')
@@ -16,7 +16,7 @@ depends=('perl' 'perl-encode-locale' 'perl-file-listing'
 optdepends=('perl-lwp-protocol-https: for https:// url schemes')
 options=('!emptydirs')
 source=(http://search.cpan.org/CPAN/authors/id/M/MS/MSCHILLI/libwww-perl-${pkgver}.tar.gz)
-sha1sums=('9640b88fb8bd3c88813525cad8e613f26a4e002b')
+sha1sums=('400977d632eaf6e9dc3fb517114995d93cb3f6d2')
 
 build() {
   cd libwww-perl-${pkgver}

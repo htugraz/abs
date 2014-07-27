@@ -1,18 +1,17 @@
-# $Id: PKGBUILD 210264 2014-04-13 07:49:43Z andyrtr $
-# Maintainer: Andreas Radke <andyrtr@archlinux.org>
-# Maintainer: Jan de Groot <jgc@archlinux.org>
+# $Id: PKGBUILD 218213 2014-07-27 08:32:25Z andyrtr $
+
 # Contributor: Hussam Al-Tayeb <ht990332@gmail.com>
 
 pkgname=xalan-java
-pkgver=2.7.1
-pkgrel=5
+pkgver=2.7.2
+pkgrel=1
 pkgdesc="XSLT processor for transforming XML documents into HTML, text, or other XML document types"
 arch=('any')
 license=('APACHE')
 url="http://xalan.apache.org/xalan-j/index.html"
 depends=('xerces2-java')
 source=(http://archive.apache.org/dist/xalan/xalan-j/binaries/xalan-j_${pkgver//./_}-bin-2jars.tar.gz)
-md5sums=('3ccda39bcd08b780436dfd2f22fb23d5')
+md5sums=('f4f5bf5723e7758f78b68c82a28bc063')
 
 package() {
   cd ${srcdir}/xalan-j_${pkgver//./_}
