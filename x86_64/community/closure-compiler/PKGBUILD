@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 116073 2014-07-21 18:35:41Z idevolder $
+# $Id: PKGBUILD 116506 2014-07-29 09:33:31Z idevolder $
 # Maintainer: BlackEagle < ike DOT devolder AT gmail DOT com >
 # Contributor: Bram Schoenmakers <me@bramschoenmakers.nl>
 pkgname=closure-compiler
 pkgver=20140625
-pkgrel=1
+pkgrel=2
 pkgdesc="Performs checking, instrumentation and optimizations on Javascript code."
 arch=('any')
-url="http://code.google.com/closure"
+url="https://developers.google.com/closure/compiler/"
 license=('APACHE')
 depends=('java-runtime')
 makedepends=('apache-ant')

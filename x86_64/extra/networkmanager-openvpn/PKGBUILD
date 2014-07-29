@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198344 2013-10-30 14:17:49Z allan $
+# $Id: PKGBUILD 218332 2014-07-29 14:30:03Z heftig $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=networkmanager-openvpn
 pkgver=0.9.8.4
-pkgrel=1
+pkgrel=2
 pkgdesc="NetworkManager VPN plugin for OpenVPN"
 arch=('i686' 'x86_64')
 license=('GPL')
@@ -20,6 +20,7 @@ build() {
   ./configure --prefix=/usr \
   	--sysconfdir=/etc \
 	--libexecdir=/usr/lib/networkmanager \
+        --enable-more-warnings=yes \
 	--disable-static
   make
 }

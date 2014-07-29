@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 110546 2014-05-03 05:45:16Z lcarlier $
+# $Id: PKGBUILD 116559 2014-07-29 21:59:00Z lcarlier $
 # Maintainer: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 _pkgbasename=libdrm
 pkgname=lib32-$_pkgbasename
-pkgver=2.4.54
+pkgver=2.4.56
 pkgrel=1
 pkgdesc="Userspace interface to kernel DRM services (32-bit)"
 arch=(x86_64)
@@ -14,7 +14,7 @@ makedepends=(gcc-multilib)
 options=('!libtool')
 url="http://dri.freedesktop.org/"
 source=(http://dri.freedesktop.org/${_pkgbasename}/${_pkgbasename}-${pkgver}.tar.bz2)
-sha256sums=('d94001ebfbe80e1523d1228ee2df57294698d1c734fad9ccf53efde8932fe4e9')
+sha256sums=('e20fbbe092177a8422913d8884a1255477456ab5b10b07389fa891a4dce54030')
 
 build() {
   cd "${srcdir}/${_pkgbasename}-${pkgver}"
