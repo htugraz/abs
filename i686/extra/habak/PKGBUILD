@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 136978 2011-09-04 12:05:11Z pierre $
+# $Id: PKGBUILD 218380 2014-07-30 13:45:42Z ronald $
 # Maintainer: Ronald van Haren <ronald@archlinux.org>
 # Contributor: Simo Leone <simo@archlinux.org>
 
 pkgname=habak
 pkgver=0.2.5
-pkgrel=4
+pkgrel=5
 pkgdesc="A background changing app"
 url="http://fvwm-crystal.org"
 license=('GPL2')
@@ -14,13 +14,18 @@ arch=('i686' 'x86_64')
 options=('!makeflags')
 md5sums=('bee5c394989367f7a4c5cb9ec99d307c')
 
+prepare() {
+  cd "$srcdir/$pkgname-$pkgver"
+  sed -i 's|^\(LDFLAGS.*$\)|\1 -lX11|' src/Makefile
+}
+
 build() {
-  cd $srcdir/$pkgname-$pkgver
+  cd "$srcdir/$pkgname-$pkgver"
   export LDFLAGS=${LDFLAGS/,--sort-common,--as-needed//}
   make
 }
 
 package() {
-  cd $srcdir/$pkgname-$pkgver
-  install -m755 -D habak $pkgdir/usr/bin/habak
+  cd "$srcdir/$pkgname-$pkgver"
+  install -m755 -D habak "$pkgdir/usr/bin/habak"
 }

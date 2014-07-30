@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 206675 2014-03-04 17:57:40Z andrea $
+# $Id: PKGBUILD 218382 2014-07-30 13:52:56Z ronald $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 
 pkgname=qt-assistant-compat
 pkgver=4.6.3
-pkgrel=4
+pkgrel=5
 pkgdesc="compat version of Qt Assistant"
 url="http://qt-project.org/"
 arch=('i686' 'x86_64')
@@ -14,11 +14,13 @@ source=('ftp://ftp.qt.nokia.com/qt/source/qt-assistant-qassistantclient-library-
 md5sums=('a20148e0488d5c12ab35ccc107dcc64d'
          '1b55290dc9fab0c035797e9301d2fa61')
 
-# separate package function does not really work here due to broken build files
+prepare() {
+        cd ${srcdir}/qt-assistant-qassistantclient-library-compat-version-${pkgver}
+        patch -Np1 -i ${srcdir}/debian_patches_01_build_system.diff
+}
+
 build() {
 	cd ${srcdir}/qt-assistant-qassistantclient-library-compat-version-${pkgver}
-
-	patch -Np1 -i ${srcdir}/debian_patches_01_build_system.diff
 
 	cd lib; if [ -e Makefile ]; then $(MAKE) distclean; fi
 	rm -f translations/assistant_adp_*.qm
