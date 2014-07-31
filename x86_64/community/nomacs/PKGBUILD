@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 116077 2014-07-22 00:54:22Z speps $
+# $Id: PKGBUILD 116631 2014-07-31 11:02:32Z speps $
 # Maintainer: speps <speps at aur dot archlinux dot org>
 
 pkgname=nomacs
-pkgver=2.0.0
+pkgver=2.0.2
 pkgrel=1
 pkgdesc="A Qt image viewer"
 arch=(i686 x86_64)
@@ -12,7 +12,7 @@ depends=('qt4' 'exiv2' 'libraw' 'opencv')
 makedepends=('cmake')
 install="$pkgname.install"
 source=("http://downloads.sourceforge.net/project/$pkgname/$pkgname-$pkgver/$pkgname-$pkgver-source.tar.bz2")
-md5sums=('9c666fa1bb1efe814fc70d1df810b9fd')
+md5sums=('6869f737b6877b8937834874a0590d0a')
 
 prepare() {
   cd $pkgname-$pkgver
