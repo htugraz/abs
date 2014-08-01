@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 213375 2014-05-22 00:08:37Z djgera $
+# $Id: PKGBUILD 218466 2014-07-31 22:56:12Z djgera $
 # Maintainer: Gerardo Exequiel Pozzi <vmlinuz386@yahoo.com.ar>
 # Maintainer: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=archiso
-pkgver=16
+pkgver=17
 pkgrel=1
 pkgdesc='Tools for creating Arch Linux live and install iso images'
 arch=('any')
@@ -11,7 +11,7 @@ license=('GPL')
 url='https://projects.archlinux.org/archiso.git/'
 depends=('make' 'arch-install-scripts' 'squashfs-tools' 'libisoburn' 'dosfstools' 'lynx')
 source=("ftp://ftp.archlinux.org/other/${pkgname}/${pkgname}-${pkgver}.tar.gz")
-sha1sums=('1677ccc99d9aea32530b97c7f1a1e4ed05570ffa')
+sha1sums=('26c911d953099dede9a2772c20471c636c39f708')
 
 package() {
 	make -C "${pkgname}-${pkgver}" DESTDIR="${pkgdir}" install
