@@ -2,7 +2,10 @@
 
 set -o nounset
 
-declare -A default="($(< /etc/hardening-wrapper.conf))"
+declare -A default
+while IFS== read key value; do
+  default["$key"]="$value"
+done < /etc/hardening-wrapper.conf
 
 force_bindnow="${HARDENING_BINDNOW:-"${default[HARDENING_BINDNOW]:-1}"}"
 force_fPIE="${HARDENING_PIE:-"${default[HARDENING_PIE]:-1}"}"
@@ -13,7 +16,7 @@ force_stack_check="${HARDENING_STACK_CHECK:-"${default[HARDENING_STACK_CHECK]:-0
 force_stack_protector="${HARDENING_STACK_PROTECTOR:-${default[HARDENING_STACK_PROTECTOR]:-2}}"
 
 error() {
-  echo "$1" >&2
+  printf "%s\n" "$1" >&2
   exit 1
 }
 
