@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 116627 2014-07-31 05:15:45Z dwallace $
+# $Id: PKGBUILD 116779 2014-08-03 04:12:55Z dwallace $
 # Maintainer: Sébastien Luttringer
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contibutor: Christer Edwards <christer.edwards@gmail.com>
 
 pkgname=salt
-pkgver=2014.1.8
-pkgrel=1
+pkgver=2014.1.10
+pkgrel=2
 pkgdesc='Central system and configuration manager'
 arch=('any')
 url='http://saltstack.org/'
@@ -22,12 +22,13 @@ depends=('python2'
          'python2-yaml'
          'apache-libcloud'
          'sshpass')
-optdepends=('dmidecode: decode SMBIOS/DMI tables')
+optdepends=('dmidecode: decode SMBIOS/DMI tables'
+            'python2-pygit2: gitfs support')
 backup=('etc/salt/master'
         'etc/salt/minion')
 install=salt.install
 source=("http://pypi.python.org/packages/source/s/salt/salt-$pkgver.tar.gz")
-md5sums=('d6bf12b43b825c210bda32e91a4e5570')
+md5sums=('ff6dff1ce949ab176745a30bde17e81d')
 
 package() {
   cd $pkgname-$pkgver

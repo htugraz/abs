@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 218511 2014-08-02 12:45:05Z tpowa $
+# $Id: PKGBUILD 218529 2014-08-03 08:13:48Z tpowa $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 pkgname=('qemu' 'libcacard')
 pkgver=2.1.0
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 license=('GPL2' 'LGPL2.1')
 url="http://wiki.qemu.org/Index.html"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 116191 2014-07-23 20:44:21Z bpiotrowski $
+# $Id: PKGBUILD 116785 2014-08-03 07:42:56Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: tobias <tobias@archlinux.org>
@@ -6,7 +6,7 @@
 # Contributor: Simon Lackerbauer <calypso "at" strpg.org>
 
 pkgname=phpmyadmin
-pkgver=4.2.6
+pkgver=4.2.7
 pkgrel=1
 pkgdesc='PHP and hence web-based tool to administrate MySQL over the WWW'
 arch=('any')
@@ -16,7 +16,7 @@ depends=('mariadb-clients' 'php')
 optdepends=('php-mcrypt: to use phpMyAdmin internal authentication')
 backup=(etc/webapps/phpmyadmin/config.inc.php)
 source=(http://downloads.sourceforge.net/sourceforge/$pkgname/phpMyAdmin-$pkgver-all-languages.tar.bz2)
-md5sums=('2d851ac78d1222a4ee37406f980e181f')
+md5sums=('c27f47dbd3b136e5075de292a02736c5')
 
 package() {
   _instdir="$pkgdir"/usr/share/webapps/phpMyAdmin

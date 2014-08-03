@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 215086 2014-06-13 13:39:00Z giovanni $
+# $Id: PKGBUILD 218534 2014-08-03 08:58:29Z giovanni $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Gilles CHAUVIN <gcnweb@gmail.com>
 
 pkgname=live-media
-pkgver=2014.05.27
+pkgver=2014.07.25
 pkgrel=1
 pkgdesc="A set of C++ libraries for multimedia streaming"
 arch=('i686' 'x86_64')
@@ -12,7 +12,7 @@ url="http://live555.com/liveMedia"
 depends=('gcc-libs')
 options=('staticlibs')
 source=("http://live555.com/liveMedia/public/live.${pkgver}.tar.gz")
-md5sums=('69f877ac5464b6488f7af425d59f84d4')
+md5sums=('46e082a1c6142d44526856cc6df4870b')
 
 build() {
   cd ${srcdir}/live
