@@ -1,20 +1,28 @@
-# $Id: PKGBUILD 218220 2014-07-27 10:14:40Z andyrtr $
+# $Id: PKGBUILD 219286 2014-08-04 07:52:44Z lcarlier $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-twm
 pkgver=1.0.8
-pkgrel=2
+pkgrel=3
 pkgdesc="Tab Window Manager for the X Window System"
 arch=(i686 x86_64)
 url="http://xorg.freedesktop.org/"
-backup=(etc/X11/twm/system.twmrc)
+backup=(usr/share/X11/twm/system.twmrc)
 license=('custom')
 depends=('libxmu')
 makedepends=('xorg-util-macros')
 options=('!emptydirs')
-source=(${url}/releases/individual/app/twm-${pkgver}.tar.bz2)
-sha256sums=('7660352353d632127ff50390991706aa660b28a4ada816c2582ac02720722e44')
+source=(${url}/releases/individual/app/twm-${pkgver}.tar.bz2
+        manpage.patch)
+sha256sums=('7660352353d632127ff50390991706aa660b28a4ada816c2582ac02720722e44'
+            '0d08dacdb94bb0b2de1a80cc7275082e8f168e6309252c5250e507dd36950b9f')
+
+prepare() {
+  cd twm-${pkgver}
+  patch -Np1 -i ../manpage.patch
+  autoreconf -fiv
+}
 
 build() {
   cd twm-${pkgver}
@@ -26,10 +34,5 @@ package() {
   cd twm-${pkgver}
   make DESTDIR="${pkgdir}" install
 
-  # fix config file location
-  install -m755 -d "${pkgdir}/etc/X11/twm"
-  install -m644 src/system.twmrc "${pkgdir}/etc/X11/twm/"
-  rm $pkgdir/usr/share/X11/twm/system.twmrc
-  
   install -D -m644 COPYING "${pkgdir}/usr/share/licenses/${pkgname}/COPYING"
 }
