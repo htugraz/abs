@@ -1,16 +1,15 @@
-# $Id: PKGBUILD 218283 2014-07-29 10:12:00Z lcarlier $
+# $Id: PKGBUILD 219298 2014-08-04 23:31:52Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 # Contributor: M Rawash <mrawash@gmail.com>
 
 pkgname=xf86-input-wacom
 pkgver=0.25.0
-pkgrel=2
+pkgrel=3
 pkgdesc="X.Org Wacom tablet driver"
 arch=(i686 x86_64)
 url="http://linuxwacom.sourceforge.net/"
 license=(GPL)
-backup=('etc/X11/xorg.conf.d/50-wacom.conf')
 depends=(libxi libxinerama libxrandr systemd)
 makedepends=('xorg-server-devel' 'X-ABI-XINPUT_VERSION=21' 'resourceproto' 'scrnsaverproto')
 conflicts=('xorg-server<1.16' 'X-ABI-XINPUT_VERSION<21' 'X-ABI-XINPUT_VERSION>=22')
@@ -19,7 +18,7 @@ md5sums=('2cf57400fbd9e35eb16b50ad9fe32de1')
 
 build() {
   cd $pkgname-$pkgver
-  ./configure --prefix=/usr --with-xorg-conf-dir=/etc/X11/xorg.conf.d
+  ./configure --prefix=/usr
   make
 }
 
