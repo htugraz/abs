@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 218185 2014-07-26 05:43:41Z pierre $
+# $Id: PKGBUILD 219350 2014-08-06 04:34:09Z pierre $
 # Maintainer: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=php-composer
-pkgver=1.0.0.alpha8.458
+pkgver=1.0.0.alpha8.461
 pkgrel=1
 pkgdesc="Dependency Manager for PHP"
 arch=('any')
