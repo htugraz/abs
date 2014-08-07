@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 116599 2014-07-30 17:37:12Z spupykin $
+# $Id: PKGBUILD 116999 2014-08-07 17:38:17Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor : Rohan Dhruva (rohandhruva at gmail dot com)
 
 pkgname=python-docs
 pkgver=3.4.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Set of HTML documentation for python"
 arch=('any')
 url="http://docs.python.org/py3k/"
@@ -12,7 +12,7 @@ license=('GPL')
 depends=()
 options=('docs')
 source=(https://docs.python.org/3/archives/python-$pkgver-docs-html.tar.bz2)
-md5sums=('a0c1b1e77ad39da6aaaf87218cab4658')
+md5sums=('aa23ff2d485068f554a12996800c4628')
 
 package() {
   mkdir -p $pkgdir/usr/share/doc/python/html

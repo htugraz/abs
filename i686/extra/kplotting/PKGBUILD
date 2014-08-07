@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 216686 2014-07-08 18:34:27Z andrea $
+# $Id: PKGBUILD 219429 2014-08-07 12:08:35Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kplotting
-pkgver=5.0.0
+pkgver=5.1.0
 pkgrel=1
 pkgdesc='KPlotting'
 arch=('i686' 'x86_64')
@@ -12,7 +12,7 @@ depends=('qt5-base')
 makedepends=('extra-cmake-modules')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('28eae81acd540a79c91acad75f0c725c')
+md5sums=('b363b11e0f09069eb90ee638b33e1b13')
 
 prepare() {
   mkdir -p build

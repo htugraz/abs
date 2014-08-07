@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 216674 2014-07-08 18:32:40Z andrea $
+# $Id: PKGBUILD 219417 2014-08-07 12:06:23Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=ktextwidgets
-pkgver=5.0.0
+pkgver=5.1.0
 pkgrel=1
 pkgdesc='KTextWidgets'
 arch=('i686' 'x86_64')
@@ -12,7 +12,7 @@ depends=('kcompletion' 'kservice' 'kiconthemes' 'sonnet')
 makedepends=('extra-cmake-modules')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('8898de855c4d060133e6c4e141e4d284')
+md5sums=('1046a71b8a50f02dd3fb10a31bfa00b6')
 
 prepare() {
   mkdir -p build
