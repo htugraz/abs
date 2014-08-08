@@ -1,20 +1,20 @@
-# $Id: PKGBUILD 115214 2014-07-06 16:44:02Z thestinger $
+# $Id: PKGBUILD 117037 2014-08-08 14:30:26Z thestinger $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 # Contributor: Hilton Medeiros <medeiros.hilton@gmail.com>
 # Contributor: Dave Reisner <d@falconindy.com>
 
 pkgname=libgit2
-pkgver=0.21.0
+pkgver=0.21.1
 pkgrel=1
 epoch=1
-pkgdesc="A linkable library for Git"
+pkgdesc='A linkable library for Git'
 arch=('i686' 'x86_64')
-url="http://libgit2.github.com/"
+url='https://libgit2.github.com/'
 depends=(zlib openssl libssh2)
 makedepends=(cmake python)
 license=('GPL2')
 source=("https://github.com/libgit2/libgit2/archive/v${pkgver}.tar.gz")
-md5sums=('06b598bf21b0536dcbf454dc63af2313')
+md5sums=('cbf3422d54dd6f55f09855a6eb749f41')
 
 build() {
   cd $pkgname-$pkgver
