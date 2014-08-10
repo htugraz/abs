@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 215788 2014-06-30 14:48:27Z giovanni $
+# $Id: PKGBUILD 219516 2014-08-10 21:32:59Z giovanni $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: dorphell <dorphell@gmx.net>
 
 pkgbase=unrar
 pkgname=('unrar' 'libunrar')
-pkgver=5.1.6
+pkgver=5.1.7
 pkgrel=1
 epoch=1
 arch=('i686' 'x86_64')
@@ -12,13 +12,13 @@ url="http://www.rarlab.com/rar_add.htm"
 license=('custom')
 makedepends=('gcc-libs')
 source=("http://www.rarlab.com/rar/unrarsrc-${pkgver}.tar.gz"
-        'unrar-5.1.6-soname.patch')
-md5sums=('be9607c59d62c3b101a70cd62c681515'
+        'unrar-5.1.7-soname.patch')
+md5sums=('af571529a358c972872b91792ffc0a80'
          'cd9a5291db0379d73148872cf6e6d3ce')
 
 prepare() {
   cd "${srcdir}/${pkgbase}"
-  patch -Np1 -i "${srcdir}/unrar-5.1.6-soname.patch"
+  patch -Np1 -i "${srcdir}/unrar-5.1.7-soname.patch"
 }
 
 build() {
