@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 113642 2014-06-26 17:45:39Z eric $
+# $Id: PKGBUILD 117278 2014-08-12 10:32:33Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Franco Iacomella <yaco@gnu.org>
 
 pkgname=synfig
 pkgver=0.64.1
-pkgrel=5
+pkgrel=8
 pkgdesc="Professional vector animation program (CLI renderer only)"
 arch=(i686 x86_64)
 url="http://synfig.org"

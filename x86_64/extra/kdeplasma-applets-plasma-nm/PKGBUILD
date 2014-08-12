@@ -1,13 +1,13 @@
-# $Id: PKGBUILD 219370 2014-08-07 07:34:07Z andrea $
+# $Id: PKGBUILD 219602 2014-08-12 04:31:49Z fyan $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas < nqn1976 @ gmail.com >
 
 pkgname=kdeplasma-applets-plasma-nm
 pkgver=0.9.3.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Plasma applet written in QML for managing network connections"
 arch=('i686' 'x86_64')
-url="https://projects.kde.org/projects/playground/network/plasma-nm"
+url="https://projects.kde.org/projects/kde/workspace/plasma-nm"
 license=('GPL')
 depends=('kdebase-workspace' 'libnm-qt')
 makedepends=('cmake' 'automoc4' 'openconnect' 'mobile-broadband-provider-info')

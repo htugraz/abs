@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 108629 2014-03-30 18:34:13Z schuay $
+# $Id: PKGBUILD 117206 2014-08-11 23:35:24Z fyan $
 # Maintainer: schuay <jakob.gruber@gmail.com>
 # Contributor: Jonathan Conder <jonno dot conder at gmail dot com>
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
@@ -13,13 +13,13 @@
 
 pkgname=desmume
 pkgver=0.9.10
-pkgrel=3
+pkgrel=4
 pkgdesc="Nintendo DS emulator"
 arch=('i686' 'x86_64')
 url="http://desmume.org/"
 license=('GPL')
 depends=('desktop-file-utils' 'libpcap' 'soundtouch' 'alsa-lib' 'glu' 'sdl' 'gtk2' 'zziplib')
-makedepends=('intltool' 'mesa')
+makedepends=('intltool' 'mesa' 'clang')
 install=desmume.install
 source=("http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.gz"
         "glx_3Demu.patch")
@@ -34,7 +34,8 @@ build() {
   # https://sourceforge.net/tracker/?func=detail&aid=3612768&group_id=164579&atid=832291
   sed -i 's/@GETTEXT_PACKAGE@/desmume/' po/Makefile.in.in
 
-  ./configure --prefix=/usr --enable-wifi --enable-openal
+  # Using clang to workaround FS#41476
+  ./configure --prefix=/usr --enable-wifi --enable-openal CC=clang CXX=clang++
   make
 }
 
