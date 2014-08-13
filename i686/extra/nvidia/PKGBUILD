@@ -1,23 +1,23 @@
-# $Id: PKGBUILD 218349 2014-07-29 23:37:12Z svenstaro $
+# $Id: PKGBUILD 219669 2014-08-13 13:42:32Z svenstaro $
 # Maintainer : Thomas Baechler <thomas@archlinux.org>
 
 pkgname=nvidia
-pkgver=340.24
-_extramodules=extramodules-3.15-ARCH
-pkgrel=3
+pkgver=340.32
+_extramodules=extramodules-3.16-ARCH
+pkgrel=1
 pkgdesc="NVIDIA drivers for linux"
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"
-depends=('linux>=3.15' 'linux<3.16' "nvidia-libgl" "nvidia-utils=${pkgver}")
-makedepends=('linux-headers>=3.15' 'linux-headers<3.16')
+depends=('linux>=3.16' 'linux<3.17' "nvidia-libgl" "nvidia-utils=${pkgver}")
+makedepends=('linux-headers>=3.16' 'linux-headers<3.17')
 conflicts=('nvidia-96xx' 'nvidia-173xx')
 license=('custom')
 install=nvidia.install
 options=(!strip)
 source=("ftp://download.nvidia.com/XFree86/Linux-x86/${pkgver}/NVIDIA-Linux-x86-${pkgver}.run"
         "ftp://download.nvidia.com/XFree86/Linux-x86_64/${pkgver}/NVIDIA-Linux-x86_64-${pkgver}-no-compat32.run")
-md5sums=('edd4c618265d22ef4d2b28baf070c6ff'
-         'b71118e3e3ae9b227bf6f17a2cc8c726')
+md5sums=('423ea1a6938dbf226bb84504746fc646'
+         'baea4c968a06d3eddec8fb1287bb38bb')
 
 [[ "$CARCH" = "i686" ]] && _pkg="NVIDIA-Linux-x86-${pkgver}"
 [[ "$CARCH" = "x86_64" ]] && _pkg="NVIDIA-Linux-x86_64-${pkgver}-no-compat32"

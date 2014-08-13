@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 108080 2014-03-22 13:31:09Z svenstaro $
+# $Id: PKGBUILD 117354 2014-08-13 08:44:12Z lfleischer $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Sven-Hendrik Haase <sh@lutzhaase.com>
 
 pkgname=vim-ultisnips
 pkgver=3.0
-pkgrel=1
+pkgrel=2
 pkgdesc='TextMate-style snippets for Vim.'
 arch=('any')
 url='https://github.com/SirVer/ultisnips'
-license=('GPL2')
+license=('GPL3')
 depends=('gvim' 'python')
 groups=('vim-plugins')
 replaces=('vim-snipmate')
