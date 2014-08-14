@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 117109 2014-08-10 19:38:03Z bpiotrowski $
+# $Id: PKGBUILD 117389 2014-08-14 07:50:24Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: jason ryan <jasonwryan@gmail.com>
 
 pkgname=profanity
 pkgver=0.4.3
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc='Console based XMPP client'
 arch=('i686' 'x86_64')
 url='http://www.profanity.im'
 license=('GPL3')
-depends=('curl' 'expat' 'glib2' 'libotr')
-makedepends=('doxygen' 'libstrophe')
+depends=('curl' 'expat' 'glib2' 'libotr' 'libstrophe')
+makedepends=('doxygen')
 source=(http://www.profanity.im/profanity-$pkgver.tar.gz)
 md5sums=('bdeadf6790bd04b0a796affb670bc894')
 
