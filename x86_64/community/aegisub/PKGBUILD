@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 116486 2014-07-28 16:44:53Z alucryd $
+# $Id: PKGBUILD 117424 2014-08-15 08:31:55Z bluewind $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 # Contributor: kozec <kozec@kozec.com>
 # Contributor: Limao Luo <luolimao+AUR@gmail.com>
 
 pkgname=aegisub
 pkgver=3.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc='A general-purpose subtitle editor with ASS/SSA support'
 arch=('i686' 'x86_64')
 url='http://www.aegisub.org'

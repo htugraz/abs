@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 213564 2014-05-24 21:28:05Z eric $
+# $Id: PKGBUILD 219747 2014-08-15 08:31:34Z bluewind $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=wxpython
 pkgver=3.0.0.0
 _editraver=0.7.20
-pkgrel=2
+pkgrel=3
 pkgdesc="A wxWidgets GUI toolkit for Python"
 arch=('i686' 'x86_64')
 license=('custom:wxWindows')

@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 111011 2014-05-12 01:07:23Z svenstaro $
+# $Id: PKGBUILD 117431 2014-08-15 08:32:02Z bluewind $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 pkgname=wxcam
 pkgver=1.1
-pkgrel=5
+pkgrel=6
 arch=('i686' 'x86_64')
 license=(GPL)
 pkgdesc="Webcam application for linux"
