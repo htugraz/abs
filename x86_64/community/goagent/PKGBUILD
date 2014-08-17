@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 117047 2014-08-08 18:02:04Z fyan $
+# $Id: PKGBUILD 117472 2014-08-17 08:40:06Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: cuihao <cuihao dot leo at gmail dot com>
 # Contributor: Guten <ywzhaifei@gmail.com> 
 
 pkgname=goagent
-pkgver=3.1.21
+pkgver=3.1.22
 #_commit=0772f4ecb4c825d556801d1ba418ca2d1ea37971
 pkgrel=1
 pkgdesc="A gae proxy forked from gappproxy/wallproxy"

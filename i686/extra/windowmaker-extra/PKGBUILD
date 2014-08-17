@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 216163 2014-07-01 18:02:01Z daniel $
+# $Id: PKGBUILD 220178 2014-08-17 18:03:02Z eric $
 # Maintainer: Daniel Isenmann <daniel@archlinux.org>
 # Contributor: orelien <orelien@chez.com>
 
@@ -10,7 +10,7 @@ arch=('any')
 url="http://www.windowmaker.info"
 license=('GPL2')
 depends=('windowmaker')
-source=(http://www.sgiweb.org/freeware/source/windowmaker-extra/windowmaker-extra-$pkgver.tar.gz)
+source=(ftp://ftp.archlinux.org/other/packages/windowmaker-extra/windowmaker-extra-$pkgver.tar.gz)
 md5sums=('3ef850cfe0fb6660a55ccc8a2e408f74')
 
 build() {
