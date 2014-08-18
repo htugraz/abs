@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 117254 2014-08-12 09:18:44Z kkeen $
+# $Id: PKGBUILD 117541 2014-08-18 21:35:28Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Chirantan Ekbote <chirantan.ekbote at gmail.com>
 # Contributor: Eric Anderson <ejona86 at gmail.com>
 # Contributor: Pierre DOUCET <pierre at equinoxefr.org>
 pkgname=openscad
 pkgver=2014.03
-pkgrel=2
+pkgrel=4
 pkgdesc="The programmers solid 3D CAD modeller"
 url="http://openscad.org/"
 arch=('i686' 'x86_64')

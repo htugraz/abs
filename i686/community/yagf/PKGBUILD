@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 116854 2014-08-04 12:30:07Z spupykin $
+# $Id: PKGBUILD 117513 2014-08-18 10:11:52Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: das-ich <das-ich@yandex.ru>
 
 pkgname=yagf
 pkgver=0.9.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Qt4-based GUI for Cuneiform and Tesseract OCRs"
 arch=(i686 x86_64)
 url="http://symmetrica.net/cuneiform-linux/yagf-en.html"
@@ -16,7 +16,7 @@ optdepends=('cuneiform: recognition tool'
 makedepends=('cmake')
 install=yagf.install
 source=(https://yagf.googlecode.com/archive/yagf-$pkgver.tar.gz)
-md5sums=('a3dd65f939199c084d27661df93174ca')
+md5sums=('8a14cffa63c4e5492962b777cbb5f96b')
 
 prepare() {
   cd `find ${srcdir}/ -type d -name "${pkgname}*"`

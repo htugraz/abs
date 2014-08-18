@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 165599 2012-08-27 07:53:46Z tomegun $
+# $Id: PKGBUILD 220185 2014-08-18 08:35:40Z bpiotrowski $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 pkgname="bootchart"
 pkgver=1.20
-pkgrel=1
+pkgrel=2
 pkgdesc="A 'startup' graphing tool"
 url="https://github.com/sofar/bootchart"
 license=('GPL2')
@@ -14,7 +14,7 @@ build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
 
   ./configure --prefix=/usr --sbindir=/usr/bin
- 
+
    make
 }
 

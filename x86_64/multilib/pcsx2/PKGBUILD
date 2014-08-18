@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 105943 2014-02-19 17:19:32Z alucryd $
+# $Id: PKGBUILD 117544 2014-08-18 21:43:44Z alucryd $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 # Contributor: josephgbr <rafael.f.f1@gmail.com>
 # Contributor: vEX <vex@niechift.com>
 
 pkgname=pcsx2
 pkgver=1.2.2
-pkgrel=2
+pkgrel=3
 pkgdesc='A Sony PlayStation 2 emulator'
 arch=('i686' 'x86_64')
 url='http://www.pcsx2.net'

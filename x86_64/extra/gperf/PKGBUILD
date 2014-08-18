@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 140657 2011-10-17 19:09:57Z andrea $
+# $Id: PKGBUILD 220187 2014-08-18 08:36:15Z bpiotrowski $
 # Maintainer:
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gperf
 pkgver=3.0.4
-pkgrel=4
+pkgrel=5
 pkgdesc="Perfect hash function generator"
 arch=('x86_64' 'i686')
 url="http://www.gnu.org/software/gperf/"
