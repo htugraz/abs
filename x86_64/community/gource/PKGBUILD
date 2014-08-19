@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 111125 2014-05-14 14:19:59Z svenstaro $
+# $Id: PKGBUILD 117589 2014-08-19 00:51:14Z kkeen $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Jose Valecillos <valecillosjg (at) gmail (dot) com>
 # Contributor: Olivier Ramonat <olivier at ramonat dot fr>
 pkgname=gource
 pkgver=0.42
-pkgrel=1
+pkgrel=3
 pkgdesc="software version control visualization"
 license=(GPL3)
 arch=(i686 x86_64)

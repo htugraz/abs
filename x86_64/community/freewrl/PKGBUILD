@@ -1,24 +1,23 @@
-# $Id: PKGBUILD 99745 2013-10-30 23:27:19Z allan $
+# $Id: PKGBUILD 117587 2014-08-18 23:52:37Z alucryd $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=freewrl
 pkgver=1.22.13.1
 _pkgver=1.22.13
-pkgrel=6
+pkgrel=7
 pkgdesc="VRML viewer"
 arch=('i686' 'x86_64')
 url="http://freewrl.sourceforge.net/"
 license=('GPL')
 depends=('java-runtime' 'libxaw' 'glew' 'freeglut' 'curl' 'freetype2' 'imlib2' 'sox'
-	 'unzip' 'imagemagick' 'libxml2' 'ttf-bitstream-vera' 'lesstif' 'js185' 'glu')
+         'unzip' 'imagemagick' 'libxml2' 'ttf-bitstream-vera' 'lesstif' 'js185' 'glu')
 makedepends=('java-environment' 'xulrunner' 'wget' 'mesa')
 source=(http://downloads.sourceforge.net/sourceforge/$pkgname/$pkgname-$pkgver.tar.bz2)
 md5sums=('27f4bf163011d8ac2088a535cb58a13d')
 
 build() {
   . /etc/profile.d/jre.sh
-  . /etc/profile.d/jdk.sh
   cd $srcdir/$pkgname-${_pkgver}
   export JAVASCRIPT_ENGINE_CFLAGS="-I/usr/include/js -DXP_UNIX -DJS_THREADSAFE $(pkg-config --cflags nspr)"
   export JAVASCRIPT_ENGINE_LIBS="$(pkg-config --libs nspr) -lmozjs185"

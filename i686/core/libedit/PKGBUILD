@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 208315 2014-03-20 17:31:01Z bisson $
+# $Id: PKGBUILD 220246 2014-08-19 13:40:16Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Maintainer: Vesa Kaihlavirta <vesa@archlinux.org>
 # Contributor: Roman Cheplyaka <roma@ro-che.info>
 
 pkgname=libedit
-pkgver=20140213_3.1
+pkgver=20140620_3.1
 pkgrel=1
 pkgdesc='Command line editor library providing generic line editing, history, and tokenization functions'
 url='http://www.thrysoee.dk/editline/'
@@ -12,7 +12,7 @@ arch=('i686' 'x86_64')
 license=('BSD')
 depends=('ncurses')
 source=("http://www.thrysoee.dk/editline/libedit-${pkgver/_/-}.tar.gz")
-sha1sums=('759c396a7b33829a995904d8fc595600757f0313')
+sha1sums=('9c0fc40ac9336af9af0799bcdfd3537a6ad258ff')
 
 build() {
 	cd "${srcdir}/${pkgname}-${pkgver/_/-}"

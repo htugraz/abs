@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 219468 2014-08-07 18:27:23Z andrea $
+# $Id: PKGBUILD 220235 2014-08-19 07:57:26Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkgapi

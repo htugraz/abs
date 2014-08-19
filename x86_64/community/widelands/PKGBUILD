@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 106252 2014-02-25 21:52:04Z svenstaro $
+# $Id: PKGBUILD 117605 2014-08-19 08:31:41Z alucryd $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Arkham <arkham at archlinux dot us>
 # Contributor: Christoph Zeiler <rabyte*gmail>
@@ -6,7 +6,7 @@
 pkgname=widelands
 pkgver=18
 _realver=build${pkgver}
-pkgrel=1
+pkgrel=2
 pkgdesc="A realtime strategy game with emphasis on economy and transport"
 arch=('i686' 'x86_64')
 url="http://widelands.org/"

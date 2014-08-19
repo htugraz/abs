@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 117188 2014-08-11 18:01:55Z alucryd $
+# $Id: PKGBUILD 117557 2014-08-18 22:18:17Z alucryd $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 # Contributor: Daniel Wallace <daniel.wallace@gatech.edu>
 
 pkgname=plex-home-theater
 pkgver=1.2.1
-pkgrel=2
+pkgrel=4
 pkgdesc='Plex Home Theater'
 arch=('i686' 'x86_64')
 url='http://www.plexapp.com/'

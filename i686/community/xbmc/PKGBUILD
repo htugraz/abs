@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 117531 2014-08-18 19:56:29Z idevolder $
+# $Id: PKGBUILD 117563 2014-08-18 22:43:21Z alucryd $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
 # Contributor: [vEX] <niechift.dot.vex.at.gmail.dot.com>
@@ -12,7 +12,7 @@ _prefix=/usr
 pkgname=xbmc
 pkgver=13.2
 _codename=Gotham
-pkgrel=1
+pkgrel=2
 pkgdesc="A software media player and entertainment hub for digital media"
 arch=('i686' 'x86_64')
 url="http://xbmc.org"

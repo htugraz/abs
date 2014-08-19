@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 197879 2013-10-30 11:25:53Z allan $
+# $Id: PKGBUILD 220222 2014-08-19 00:40:37Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Kevin Piche <kevin@archlinux.org>
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 
 pkgname=bzflag
 pkgver=2.4.2
-pkgrel=4
+pkgrel=5
 pkgdesc='Multiplayer 3D tank battle game'
 url='http://bzflag.org/'
 license=('LGPL')
@@ -13,7 +13,6 @@ arch=('i686' 'x86_64')
 depends=('curl' 'glew' 'glu' 'sdl')
 source=("http://downloads.sourceforge.net/project/bzflag/bzflag%20source/${pkgver}/bzflag-${pkgver}.tar.bz2")
 sha1sums=('36c67c0734a1318b34b39ed0da49606e05ebd291')
-
 
 build() {
 	cd "${srcdir}/${pkgname}-${pkgver}"

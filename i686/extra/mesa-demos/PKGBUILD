@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 220158 2014-08-17 12:20:54Z lcarlier $
+# $Id: PKGBUILD 220230 2014-08-19 02:40:59Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname='mesa-demos'
 pkgver=8.2.0
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 pkgdesc="Mesa demos and tools"
 url="http://mesa3d.sourceforge.net"

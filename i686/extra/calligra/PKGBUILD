@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 216503 2014-07-04 18:26:20Z andrea $
+# $Id: PKGBUILD 220239 2014-08-19 08:35:40Z bpiotrowski $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Ronald van Haren <ronald.archlinux.org>
 
@@ -19,7 +19,7 @@ pkgname=('calligra-braindump'
          'calligra-stage'
          'calligra-words')
 pkgver=2.8.5
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url='http://www.calligra-suite.org/'
 license=('FDL1.2' 'GPL2' 'LGPL')

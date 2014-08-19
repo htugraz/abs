@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 105859 2014-02-16 14:27:59Z bpiotrowski $
+# $Id: PKGBUILD 117573 2014-08-18 23:02:56Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Larry Hajali <larryhaja [at] gmail [dot] com>
 
 pkgname=megaglest
 pkgver=3.9.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Fork of Glest, a 3D real-time strategy game in a fantastic world"
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/megaglest/"
