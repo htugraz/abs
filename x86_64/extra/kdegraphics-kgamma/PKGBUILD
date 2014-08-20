@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 217651 2014-07-21 20:25:39Z svenstaro $
+# $Id: PKGBUILD 220386 2014-08-20 15:32:53Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-kgamma
-pkgver=4.13.3
+pkgver=4.14.0
 pkgrel=1
 pkgdesc="A monitor calibration tool"
 url="http://kde.org/applications/graphics/kgamma/"
@@ -15,7 +15,7 @@ groups=('kde' 'kdegraphics')
 depends=('kdebase-runtime' 'libxxf86vm')
 makedepends=('cmake' 'automoc4')
 source=("http://download.kde.org/stable/${pkgver}/src/kgamma-${pkgver}.tar.xz")
-sha1sums=('c86a10a0ce289d019d04481e942f42da5c99eecc')
+sha1sums=('1b9e637d732ffffb0a58e2969895bc2bdb1a7324')
 
 build() {
   cd "${srcdir}"

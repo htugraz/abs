@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 217702 2014-07-21 20:32:27Z svenstaro $
+# $Id: PKGBUILD 220437 2014-08-20 15:34:12Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-kwalletmanager
-pkgver=4.13.3
+pkgver=4.14.0
 pkgrel=1
 pkgdesc='Wallet Management Tool'
 url='http://kde.org/applications/system/kwalletmanager/'
@@ -15,7 +15,7 @@ conflicts=('kdeutils-kwallet')
 replaces=('kdeutils-kwallet')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/${pkgver}/src/kwalletmanager-${pkgver}.tar.xz")
-sha1sums=('0356ac479e3c569566a9aa01b2c0206518d73eff')
+sha1sums=('86d77dd6f8b295572f19d0d04444ad4bdf2c157d')
 
 prepare() {
   mkdir build

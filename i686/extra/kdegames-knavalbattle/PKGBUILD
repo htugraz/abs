@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 217630 2014-07-21 20:23:08Z svenstaro $
+# $Id: PKGBUILD 220365 2014-08-20 15:32:20Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-knavalbattle
-pkgver=4.13.3
+pkgver=4.14.0
 pkgrel=1
 pkgdesc="A ship sinking game"
 url="http://kde.org/applications/games/knavalbattle/"
@@ -13,7 +13,7 @@ depends=('kdebase-runtime' 'libkdegames')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/${pkgver}/src/knavalbattle-${pkgver}.tar.xz")
-sha1sums=('fd613eb3724733e9145ffed9f90dfd3174548ded')
+sha1sums=('03bfdcf741ef4f20a68ceb5c726f6dbd7edcf21f')
 
 build() {
   mkdir build

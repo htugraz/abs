@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 217610 2014-07-21 20:20:57Z svenstaro $
+# $Id: PKGBUILD 220345 2014-08-20 15:31:46Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-bovo
-pkgver=4.13.3
+pkgver=4.14.0
 pkgrel=1
 pkgdesc="A Gomoku like game for two players"
 url="http://kde.org/applications/games/bovo/"
@@ -13,7 +13,7 @@ depends=('kdebase-runtime' 'libkdegames')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/${pkgver}/src/bovo-${pkgver}.tar.xz")
-sha1sums=('cf6105c481c9e11c610b28580ede175fe9ed3e61')
+sha1sums=('755dfd03e5abaf6278fe1fc5359c71a9a260bb11')
 
 build() {
   mkdir build

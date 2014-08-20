@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 217683 2014-07-21 20:30:11Z svenstaro $
+# $Id: PKGBUILD 220418 2014-08-20 15:33:45Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-kompare
-pkgver=4.13.3
+pkgver=4.14.0
 pkgrel=1
 pkgdesc='Diff/Patch Frontend'
 url='http://kde.org/applications/development/kompare/'
@@ -13,7 +13,7 @@ depends=('kdebase-runtime' 'libkomparediff2')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/${pkgver}/src/kompare-${pkgver}.tar.xz")
-sha1sums=('c65f780ae315f1119faa067a5d8137adcdfe222f')
+sha1sums=('1954dea23673adf4dd3c3cf452f82a673a61b2e1')
 
 prepare() {
   mkdir build

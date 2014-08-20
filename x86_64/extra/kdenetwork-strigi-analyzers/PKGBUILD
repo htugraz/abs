@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 217672 2014-07-21 20:28:13Z svenstaro $
+# $Id: PKGBUILD 220407 2014-08-20 15:33:24Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-strigi-analyzers
-pkgver=4.13.3
+pkgver=4.14.0
 pkgrel=1
 pkgdesc='Strigi analyzers for various network protocols'
 url='https://projects.kde.org/projects/kde/kdenetwork/kdenetwork-strigi-analyzers'
@@ -12,7 +12,7 @@ groups=('kde' 'kdenetwork')
 depends=('kdebase-runtime')
 makedepends=('cmake' 'automoc4' 'boost')
 source=("http://download.kde.org/stable/${pkgver}/src/kdenetwork-strigi-analyzers-${pkgver}.tar.xz")
-sha1sums=('a770e9c35c79b20ec90214348de24522b4f56924')
+sha1sums=('a26e4eb66fa976d55ea4317ce150d56ed7b9b8e8')
 
 build() {
   mkdir build

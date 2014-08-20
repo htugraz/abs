@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 214366 2014-06-07 21:02:51Z heftig $
+# $Id: PKGBUILD 220468 2014-08-20 21:06:23Z heftig $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=modemmanager
 pkgname=(modemmanager libmm-glib)
 pkgver=1.2.0
-pkgrel=4
+pkgrel=5
 pkgdesc="Mobile broadband modem management service"
 arch=(i686 x86_64)
 url="http://www.freedesktop.org/wiki/Software/ModemManager/"
@@ -25,6 +25,10 @@ build() {
         --with-polkit=permissive \
         --enable-gtk-doc \
         --disable-static
+
+  # https://bugzilla.gnome.org/show_bug.cgi?id=655517
+  sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
   make
 }
 

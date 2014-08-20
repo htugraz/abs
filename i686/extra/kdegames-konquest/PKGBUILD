@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 217634 2014-07-21 20:23:32Z svenstaro $
+# $Id: PKGBUILD 220369 2014-08-20 15:32:27Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-konquest
-pkgver=4.13.3
+pkgver=4.14.0
 pkgrel=1
 pkgdesc="The KDE version of Gnu-Lactic"
 url="http://kde.org/applications/games/konquest/"
@@ -13,7 +13,7 @@ depends=('kdebase-runtime' 'libkdegames')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/${pkgver}/src/konquest-${pkgver}.tar.xz")
-sha1sums=('07739419d808d6e434257b4578b59dd215fbaed7')
+sha1sums=('267eb725a068fe0faa771302858264f4a78d7a01')
 
 build() {
   mkdir build
