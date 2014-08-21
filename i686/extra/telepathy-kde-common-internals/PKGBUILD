@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 211765 2014-04-26 07:06:20Z andrea $
+# $Id: PKGBUILD 220482 2014-08-20 22:22:55Z svenstaro $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=telepathy-kde-common-internals
 _pkgname=ktp-common-internals
 pkgver=0.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Common components for KDE-Telepathy"
 arch=('i686' 'x86_64')
 url="http://community.kde.org/Real-Time_Communication_and_Collaboration"

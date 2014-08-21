@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 117444 2014-08-15 19:23:14Z svenstaro $
+# $Id: PKGBUILD 117688 2014-08-21 00:15:45Z svenstaro $
 # Contributor: John Sowiak <john@archlinux.org>
 # Contributor: tobias <tobias@archlinux.org>
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
@@ -12,12 +12,12 @@
 # unreasonable.
 
 #_gittag=v2.71
-_gitcommit=bb39925ec
+_gitcommit=d42c08
 
 pkgname=blender
 pkgver=2.71
-[[ -n $_gitcommit ]] && pkgver=2.71.git1.$_gitcommit
-pkgrel=2
+[[ -n $_gitcommit ]] && pkgver=${pkgver}.git1.${_gitcommit}
+pkgrel=4
 epoch=14
 pkgdesc="A fully integrated 3D graphics creation suite"
 arch=('i686' 'x86_64')
@@ -41,11 +41,7 @@ if [[ -n $_gittag ]]; then
 else
     source+=("${pkgname}-${pkgver}::git://git.blender.org/blender.git#commit=${_gitcommit}")
 fi
-md5sums=('SKIP'
-         'SKIP'
-         'SKIP'
-         'SKIP'
-         'SKIP')
+md5sums=('SKIP' 'SKIP' 'SKIP' 'SKIP' 'SKIP')
 
 prepare() {
   cd "$srcdir/$pkgname-$pkgver"

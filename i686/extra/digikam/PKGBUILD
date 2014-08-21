@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 219353 2014-08-06 06:36:44Z ronald $
+# $Id: PKGBUILD 220488 2014-08-20 22:40:56Z svenstaro $
 # Maintainer: Ronald van Haren <ronald@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
@@ -6,7 +6,7 @@
 pkgbase=digikam
 pkgname=('digikam' 'kipi-plugins' 'libkface' 'libkgeomap' 'libkvkontakte' 'libmediawiki')
 pkgver=4.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Digital photo management application for KDE"
 arch=('i686' 'x86_64')
 license=('GPL')
