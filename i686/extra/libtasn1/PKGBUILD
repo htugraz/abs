@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 218211 2014-07-27 08:27:31Z andyrtr $
+# $Id: PKGBUILD 220611 2014-08-23 15:01:35Z andyrtr $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
 
 pkgname=libtasn1
-pkgver=4.0
+pkgver=4.1
 pkgrel=1
 pkgdesc="The ASN.1 library used in GNUTLS"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ url="http://www.gnu.org/software/libtasn1/"
 depends=('glibc' 'texinfo')
 install=libtasn1.install
 source=(http://ftp.gnu.org/gnu/libtasn1/${pkgname}-${pkgver}.tar.gz{,.sig})
-md5sums=('d3d2d9bce3b6668b9827a9df52635be1'
+md5sums=('f9b37df3c2c9c6439d8bf427bfbfc521'
          'SKIP')
 
 build() {

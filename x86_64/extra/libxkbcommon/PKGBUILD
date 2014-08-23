@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 213527 2014-05-24 00:33:04Z heftig $
+# $Id: PKGBUILD 220587 2014-08-23 09:31:43Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Daniel Micay <danielmicay@gmail.com>
 # Contributor: Mladen Pejakovic <pejakm@gmail.com>
 
 pkgbase=libxkbcommon
 pkgname=(libxkbcommon libxkbcommon-x11)
-pkgver=0.4.2
+pkgver=0.4.3
 pkgrel=1
 pkgdesc="Keyboard handling library using XKB data"
 arch=(i686 x86_64)
@@ -14,7 +14,7 @@ license=(custom)
 depends=(xkeyboard-config glibc)
 makedepends=(libxcb doxygen xorg-util-macros)
 source=("http://xkbcommon.org/download/$pkgname-$pkgver.tar.xz")
-md5sums=('4b717adce41c8305258e99a9b396330a')
+md5sums=('26c57ff21438ed45de2a4ca609177db9')
 
 prepare() {
   mkdir -p x11/usr/{include/xkbcommon,lib/pkgconfig}
