@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 219485 2014-08-07 20:05:22Z seblu $
+# $Id: PKGBUILD 220618 2014-08-23 22:58:26Z seblu $
 # Maintainer: Sébastien "Seblu" Luttringer <seblu@archlinux.org>
 # Contributor: Tom Gundersen <teg@jklm.no>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=btrfs-progs
 pkgver=3.14.2
-pkgrel=3
+pkgrel=4
 pkgdesc='Btrfs filesystem utilities'
 arch=('i686' 'x86_64')
 depends=('glibc' 'libutil-linux' 'e2fsprogs' 'lzo' 'zlib')
@@ -28,6 +28,9 @@ md5sums=('SKIP'
 
 prepare() {
   patch -p 1 -d $pkgname < 01-fix-manpages.patch
+  # FS#41627
+  cd $pkgname
+  git update-index --assume-unchanged Documentation/Makefile
 }
 
 build() {
