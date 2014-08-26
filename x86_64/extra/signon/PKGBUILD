@@ -1,19 +1,19 @@
-# $Id: PKGBUILD 206455 2014-02-26 20:00:34Z andrea $
+# $Id: PKGBUILD 220674 2014-08-26 16:22:52Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Balló György <ballogyor+arch at gmail dot com>
 
 pkgbase=signon
 pkgname=('signon' 'signon-doc')
-pkgver=8.56
+pkgver=8.57
 pkgrel=1
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/accounts-sso/"
 license=('LGPL')
 makedepends=('qt4' 'libproxy' 'doxygen' 'graphviz' 'ttf-font')
 options=('!emptydirs')
-source=("http://accounts-sso.googlecode.com/files/$pkgbase-$pkgver.tar.bz2"
+source=("ftp://ftp.archlinux.org/other/packages/${pkgbase}/$pkgbase-$pkgver.tar.bz2"
         'use_keyring.patch')
-sha1sums=('54c502204e2f31446feafba21041ebdfc2401fc5'
+sha1sums=('c9fa0567b68db434a7a954dcb303adf7aad1578b'
           'cfdd48b494ad267654ceba23f1b81bcb8f56b9a1')
 
 prepare() {
