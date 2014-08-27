@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 117371 2014-08-13 15:49:08Z arodseth $
+# $Id: PKGBUILD 117978 2014-08-27 18:18:59Z arodseth $
 # Maintainer: Vesa Kaihlavirta <vegai@iki.fi>
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Rémy Oudompheng  <remy@archlinux.org>
@@ -12,7 +12,7 @@
 pkgname=go
 epoch=2
 pkgver=1.3.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Compiler and tools for the Go programming language from Google'
 arch=('x86_64' 'i686')
 url='http://golang.org/'

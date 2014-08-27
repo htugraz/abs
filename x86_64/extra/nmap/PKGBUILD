@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 220575 2014-08-23 05:12:20Z bisson $
+# $Id: PKGBUILD 220709 2014-08-27 17:57:02Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
 # Contributor: Hugo Doria <hugo@archlinux.org>
 
 pkgname=nmap
 pkgver=6.47
-pkgrel=1
+pkgrel=2
 pkgdesc='Utility for network discovery and security auditing'
 url='http://nmap.org/'
 arch=('i686' 'x86_64')
@@ -37,4 +37,5 @@ package() {
 	make DESTDIR="${pkgdir}" install
 	rm "${pkgdir}"/usr/bin/uninstall_zenmap
 	install -Dm644 COPYING "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+	python2 -m compileall "${pkgdir}"/usr/lib/python2.7/site-packages/zenmapCore
 }

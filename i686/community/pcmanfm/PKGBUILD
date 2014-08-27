@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 115328 2014-07-08 18:27:38Z bpiotrowski $
+# $Id: PKGBUILD 117942 2014-08-27 05:55:20Z fyan $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Unknown47 <unknown47r@gmail.com>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
 # Contributor: Juergen Hoetzel <juergen@archlinux.org>
 
 pkgname=pcmanfm
-pkgver=1.2.1
+pkgver=1.2.2
 pkgrel=1
 pkgdesc='Extremely fast and lightweight file manager'
 arch=('i686' 'x86_64')
@@ -18,7 +18,7 @@ optdepends=('gvfs: for trash support, mounting with udisks and remote filesystem
             'udisks: alternative for mounting volumes')
 install=$pkgname.install
 source=(http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.xz)
-md5sums=('66e634aff37dbc6d7204570df041152f')
+md5sums=('ac0ba2f8e2b4d47014a62ccf43388e0f')
 
 build() {
   cd $pkgname-$pkgver

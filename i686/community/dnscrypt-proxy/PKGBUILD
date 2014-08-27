@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 111112 2014-05-14 03:44:59Z fyan $
+# $Id: PKGBUILD 117932 2014-08-27 00:52:47Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Techlive Zheng <techlivezheng at gmail dot com>
 # Contributor: peace4all <markspost at rocketmail dot com>
 
 pkgname=dnscrypt-proxy
 pkgver=1.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A tool for securing communications between a client and a DNS resolver"
 arch=('i686' 'x86_64')
 url="http://dnscrypt.org/"
