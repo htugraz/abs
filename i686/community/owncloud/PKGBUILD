@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 116864 2014-08-04 18:06:19Z spupykin $
+# $Id: PKGBUILD 118027 2014-08-28 13:49:56Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Antonio Rojas <nqn1976 @ gmail.com>
 # Based on owncloud-git PKGBUILD by Alexander Ovsyannikov
 
 pkgname=owncloud
-pkgver=7.0.1
+pkgver=7.0.2
 pkgrel=1
 pkgdesc="A cloud server to store your files centrally on a hardware controlled by you"
 arch=('any')
@@ -29,7 +29,7 @@ options=('!strip')
 backup=('etc/webapps/owncloud/apache.example.conf')
 source=("http://download.owncloud.org/community/$pkgname-${pkgver}.tar.bz2"{,.asc}
 	'apache.example.conf')
-md5sums=('a922504271aa4dbca83b28aec1c11178'
+md5sums=('4af57e093878917d80004f7151f9282e'
          'SKIP'
          '64c6edf88bcbb37d063e4bf77b39237f')
 
