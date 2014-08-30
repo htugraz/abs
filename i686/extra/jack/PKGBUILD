@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 204709 2014-01-25 13:36:18Z schiv $
+# $Id: PKGBUILD 220812 2014-08-30 07:57:52Z schiv $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: tobias <tobias@archlinux.net>
 # Contributor: Robert Emil Berge <robert@rebi.no>
@@ -6,11 +6,11 @@
 pkgname=jack
 _longname=jack-audio-connection-kit
 pkgver=0.124.1
-pkgrel=1
+pkgrel=3
 pkgdesc="A low-latency audio server"
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL')
-depends=('libsamplerate' 'readline')
+depends=('libsamplerate' 'db' 'zita-alsa-pcmi' 'zita-resampler')
 makedepends=('doxygen' 'libffado' 'celt')
 optdepends=('libffado: FireWire support'
             'celt: NetJACK driver')
