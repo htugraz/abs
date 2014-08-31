@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 215891 2014-06-30 19:18:37Z heftig $
+# $Id: PKGBUILD 220838 2014-08-31 16:39:48Z heftig $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=telepathy-farstream
-pkgver=0.6.1
+pkgver=0.6.2
 pkgrel=1
 pkgdesc="A telepathy-backend to use stream engine."
 arch=(i686 x86_64)
@@ -13,7 +13,7 @@ makedepends=('dbus-glib' 'gobject-introspection')
 conflicts=('telepathy-farsight')
 replaces=('telepathy-farsight')
 source=(http://telepathy.freedesktop.org/releases/$pkgname/$pkgname-$pkgver.tar.gz)
-md5sums=('53e3a69bdee7b301e2fdd2f2d254e385')
+md5sums=('20bdc61ea3f3a01df41068006b62641b')
 
 build() {
   cd "$pkgname-$pkgver"
