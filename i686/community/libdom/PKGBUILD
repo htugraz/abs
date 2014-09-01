@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 110365 2014-04-28 13:57:38Z arodseth $
+# $Id: PKGBUILD 118142 2014-09-01 15:47:04Z arodseth $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 
 pkgname=libdom
-pkgver=0.1.0
+pkgver=0.1.1
 pkgrel=1
 pkgdesc='Implementation of the W3C DOM'
 arch=('x86_64' 'i686')
