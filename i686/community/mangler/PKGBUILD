@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 117063 2014-08-09 07:13:02Z arcanis $
+# $Id: PKGBUILD 118201 2014-09-02 20:24:33Z arcanis $
 # Maintainer: Evgeniy Alekseev <arcanis.arch at gmail dot com>
 # Contributor: Simon Perry <pezz at sanxion dot net>
 # Contributor: Sigitas Mazaliauskas <sigisnn at gmail dot com>
@@ -6,12 +6,12 @@
 
 pkgname=mangler
 pkgver=1.2.5
-pkgrel=3
+pkgrel=4
 pkgdesc="Ventrilo compatible VOIP client for Linux"
 arch=('i686' 'x86_64')
 url="http://www.mangler.org/"
 license=('GPL3')
-depends=('espeak' 'g15daemon' 'dbus-glib' 'gsm' 'gtkmm' 'speex' 'xosd')
+depends=('espeak' 'g15daemon' 'dbus-glib' 'gsm' 'gtkmm' 'pulseaudio' 'xosd')
 makedepends=('librsvg' 'pkg-config')
 optdepends=('alsa-lib: ALSA support'
             'celt: CELT codec support')
