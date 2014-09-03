@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 106133 2014-02-23 23:02:14Z thomas $
+# $Id: PKGBUILD 118212 2014-09-03 05:44:49Z thomas $
 
 pkgname=pppd-ldap-simple
 pkgver=0.12b
-pkgrel=7
+pkgrel=8
 pkgdesc="pppd ldap simple plugin (based on pppd ldap, without radius, etc. Just search by uid and userPassword)"
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/pppd-ldap/"

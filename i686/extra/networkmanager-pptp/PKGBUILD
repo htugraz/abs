@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 218333 2014-07-29 14:30:04Z heftig $
+# $Id: PKGBUILD 220924 2014-09-03 05:29:04Z thomas $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=networkmanager-pptp
 pkgver=0.9.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc="NetworkManager VPN plugin for pptp "
 arch=('i686' 'x86_64')
 license=('GPL')
 url="http://www.gnome.org/projects/NetworkManager/"
-_pppver=2.4.6
+_pppver=2.4.7
 depends=("networkmanager>=${pkgver}" 'pptpclient' 'gtk3' 'libgnome-keyring' "ppp=$_pppver")
 makedepends=('intltool' 'network-manager-applet')
 optdepends=('network-manager-applet: GNOME frontends to NetWorkmanager')
