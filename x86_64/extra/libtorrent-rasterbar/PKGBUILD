@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 217798 2014-07-24 03:20:18Z fyan $
+# $Id: PKGBUILD 221079 2014-09-07 08:30:01Z foutrelis $
 # Maintainer : Ionut Biru <ibiru@archlinux.org>
 # Contributor: Hugo Doria <hugo@archlinux.org>
 
 pkgname=libtorrent-rasterbar
 pkgver=0.16.17
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc="A C++ library that aims to be a good alternative to all the other bittorrent implementations around"
 url="http://www.rasterbar.com/products/libtorrent/"

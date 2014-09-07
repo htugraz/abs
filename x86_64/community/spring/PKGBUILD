@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 117647 2014-08-19 19:43:44Z svenstaro $
+# $Id: PKGBUILD 118575 2014-09-07 08:31:07Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Arkham <arkham at archlinux dot us>
 # Contributor: Christoph Zeiler <archNOSPAM_at_moonblade.dot.org>
 
 pkgname=spring
 pkgver=97.0
-pkgrel=3
+pkgrel=4
 pkgdesc='A free 3D real-time-strategy (RTS) game engine'
 arch=('i686' 'x86_64')
 url="http://springrts.com/"

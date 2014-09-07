@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 115808 2014-07-17 07:44:38Z fyan $
+# $Id: PKGBUILD 118607 2014-09-07 17:48:10Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: monson <holymonson@gmail.com>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 # Contributor: David Manouchehri <david@davidmanouchehri.com>
 
 pkgname=cgminer
-pkgver=4.4.2
+pkgver=4.6.0
 #_pkgver=
 _pkgver=$pkgver
 pkgrel=1
@@ -56,26 +56,20 @@ build() {
   
   # ./configure \
 
+  # Taken from README - Q: What should I build in for a generic distribution binary?
   ./autogen.sh \
     --prefix=/usr \
-    --enable-ants2 \
     --enable-avalon \
     --enable-avalon2 \
-    --enable-bab \
     --enable-bflsc \
-    --enable-bitforce \
     --enable-bitfury \
-    --enable-bitmine_A1 \
     --enable-cointerra \
     --enable-drillbit \
     --enable-hashfast \
+    --enable-hashratio \
     --enable-icarus \
     --enable-klondike \
-    --enable-minion \
-    --enable-modminer \
     --with-system-libusb
-    # --enable-spondoolies # Enable it only when you need to
-    # --enable-knc         # Enable it only when you need to
   
   make
 }

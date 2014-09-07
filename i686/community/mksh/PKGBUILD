@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 118452 2014-09-06 11:44:53Z ttoepper $
+# $Id: PKGBUILD 118621 2014-09-07 20:36:49Z ttoepper $
 # Maintainer: Thorsten Töpper <atsutane-tu@freethoughts.de>
 # Contributor: Daniel Hommel <dhommel@gmail.com>
 
 pkgname=mksh
 _pkgver=R50b
-pkgver=50b
+pkgver=50.b
 pkgrel=1
 pkgdesc='The MirBSD Korn Shell - an enhanced version of the public domain ksh'
 url='https://www.mirbsd.org/mksh.htm'

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 220224 2014-08-19 00:51:37Z fyan $
+# $Id: PKGBUILD 221074 2014-09-07 08:29:55Z foutrelis $
 # Maintainer: tobias <tobias@archlinux.org>
 # Contributor: Dominik Ryba <domryba@post.pl>
 
 pkgname=enblend-enfuse
 pkgver=4.1.1
-pkgrel=7
+pkgrel=8
 pkgdesc="Intelligent blend tool for overlapping picture"
 arch=("i686" "x86_64")
 license=('GPL')

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 102245 2013-12-07 10:36:29Z bpiotrowski $
+# $Id: PKGBUILD 118531 2014-09-07 08:29:53Z foutrelis $
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Jaroslaw Swierczynski <swiergot@aur.archlinux.org>
 # Contributor: Sven Kauber, <celeon@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=encfs
 pkgver=1.7.4
-pkgrel=12
+pkgrel=13
 pkgdesc='Encrypted filesystem in user-space'
 arch=('i686' 'x86_64')
 url='http://www.arg0.net/encfs'

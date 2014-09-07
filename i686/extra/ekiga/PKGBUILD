@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 201257 2013-12-07 10:34:57Z bpiotrowski $
+# $Id: PKGBUILD 221073 2014-09-07 08:29:54Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Tom K <tomk@runbox.com>
 
 pkgname=ekiga
 pkgver=4.0.1
-pkgrel=8
+pkgrel=9
 pkgdesc="VOIP/Videoconferencing app with full SIP and H.323 support (GnomeMeeting expanded and renamed)"
 url="http://www.ekiga.org"
 license=(GPL)

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 118303 2014-09-04 23:20:53Z kkeen $
+# $Id: PKGBUILD 118546 2014-09-07 08:30:16Z foutrelis $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Dominik Heidler <dheidler@gmail.com>
 
 pkgname=libuhd
 pkgver=3.7.2
 _verstring=003_007_002
-pkgrel=1
+pkgrel=3
 pkgdesc="Universal Software Radio Peripheral (USRP) userspace driver"
 arch=('x86_64' 'i686')
 url="http://code.ettus.com/redmine/ettus/projects/uhd/wiki"

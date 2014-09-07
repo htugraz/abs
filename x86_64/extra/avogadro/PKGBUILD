@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 205595 2014-02-08 15:48:17Z andrea $
+# $Id: PKGBUILD 221071 2014-09-07 08:29:51Z foutrelis $
 # Maintainer:
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Nick B <Shirakawasuna at gmail _dot_com>
 
 pkgname=avogadro
 pkgver=1.1.1
-pkgrel=2
+pkgrel=3
 pkgdesc="An advanced molecular editor based on Qt"
 arch=('i686' 'x86_64')
 url="http://avogadro.openmolecules.net/wiki/Main_Page"

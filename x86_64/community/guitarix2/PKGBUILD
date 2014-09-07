@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 115568 2014-07-12 11:35:58Z speps $
+# $Id: PKGBUILD 118544 2014-09-07 08:30:13Z foutrelis $
 # Maintainer: speps <speps at aur dot archlinux dot org>
 
 pkgname=guitarix2
 pkgver=0.30.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A simple mono guitar amplifier and FX for JACK using Faust"
 arch=('i686' 'x86_64')
 url="http://guitarix.sourceforge.net/"
