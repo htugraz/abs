@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 108222 2014-03-25 03:10:36Z thestinger $
+# $Id: PKGBUILD 118678 2014-09-08 16:20:20Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Daniel Micay <danielmicay@gmail.com>
 # Contributor: Jonathan Wiersma <archaur at jonw dot org>
 
 pkgname=virt-manager
-pkgver=1.0.1
-pkgrel=1
+pkgver=1.1.0
+pkgrel=2
 pkgdesc="Desktop user interface for managing virtual machines"
 arch=('any')
 url="http://virt-manager.et.redhat.com"
@@ -15,13 +15,13 @@ depends=('dbus-python' 'libvirt' 'libxml2' 'gtk-vnc' 'rarian'
          'python2-ipy' 'newt-syrup' 'openbsd-netcat' 'x11-ssh-askpass'
          'gnome-icon-theme' 'graphite' 'python2-ipaddr' 'spice-gtk3'
          'libvirt-glib' 'python2-gobject' 'urlgrabber' 'vte3'
-         'libvirt-python')
+         'libvirt-python' 'libosinfo')
 makedepends=('gnome-doc-utils' 'intltool>=0.35.0')
 conflicts=('virtinst')
 replaces=('virtinst')
 install=virt-manager.install
 source=("http://virt-manager.et.redhat.com/download/sources/$pkgname/$pkgname-$pkgver.tar.gz")
-md5sums=('4741c0d93d69cef5f936b2ea2d8348c5')
+md5sums=('baf6eaa88b02bdd7a3c2fdd293eeb6ac')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"
