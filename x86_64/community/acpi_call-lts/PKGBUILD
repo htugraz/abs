@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 115350 2014-07-09 09:06:59Z fyan $
+# $Id: PKGBUILD 118713 2014-09-09 13:13:06Z andyrtr $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 # Contributor: mortzu <me@mortzu.de>
 # Contributor: fnord0 <fnord0@riseup.net>
 
 pkgname=acpi_call-lts
 pkgver=1.1.0
-pkgrel=7
+pkgrel=8
 _extramodules=extramodules-3.14-lts
 pkgdesc='A linux kernel module that enables calls to ACPI methods through /proc/acpi/call'
 arch=('i686' 'x86_64')

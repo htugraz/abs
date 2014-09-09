@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 220327 2014-08-20 15:31:16Z svenstaro $
+# $Id: PKGBUILD 221346 2014-09-09 15:51:19Z tpowa $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-kalzium
 pkgver=4.14.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Periodic Table of Elements"
 url="http://kde.org/applications/education/kalzium/"
 arch=('i686' 'x86_64')

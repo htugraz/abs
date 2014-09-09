@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 195985 2013-10-07 07:06:20Z tpowa $
+# $Id: PKGBUILD 221338 2014-09-09 14:09:01Z tpowa $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=facile
 pkgver=1.1
-pkgrel=16
+pkgrel=18
 pkgdesc="A Functional Constraint Library"
 arch=(i686 x86_64)
 url="http://www.recherche.enac.fr/opti/facile/"

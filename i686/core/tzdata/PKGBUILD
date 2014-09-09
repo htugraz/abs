@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 220612 2014-08-23 15:02:38Z andyrtr $
+# $Id: PKGBUILD 221328 2014-09-09 13:22:20Z andyrtr $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=tzdata
-pkgver=2014f
+pkgver=2014g
 pkgrel=1
 pkgdesc="Sources for time zone and daylight saving time data"
 arch=('any')
@@ -10,7 +10,7 @@ url="http://www.iana.org/time-zones"
 license=('GPL')
 options=('!emptydirs')
 source=(http://www.iana.org/time-zones/repository/releases/${pkgname}${pkgver}.tar.gz{,.asc})
-sha1sums=('1369848ff99a3b51c325b27cb0e41ef23fd35b8a'
+sha1sums=('20be4323055278a4a789d9c95926dd38733afa8d'
           'SKIP')
 
 timezones=('africa' 'antarctica' 'asia' 'australasia'

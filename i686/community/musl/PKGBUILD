@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 118720 2014-09-09 19:33:47Z bpiotrowski $
+# Maintainer:  Sergej Pupykin <arch+pub@sergej.pp.ru>
+# Contributor: TJ Vanderpoel <tj@rubyists>
+
+pkgname=musl
+pkgver=1.1.4
+pkgrel=1
+pkgdesc='Lightweight implementation of C standard library'
+arch=('i686' 'x86_64')
+url='http://www.musl-libc.org/'
+license=('MIT')
+makedepends=('make')
+options=('staticlibs' '!buildflags')
+source=(http://www.musl-libc.org/releases/musl-$pkgver.tar.gz)
+md5sums=('f18f3bdbe088438cd64a5313c19a7312')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr/lib/musl \
+    --exec-prefix=/usr
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+
+  install -dm755 "$pkgdir"/usr/lib/
+  mv "$pkgdir"/lib/ld-musl*.so* "$pkgdir"/usr/lib/
+  rmdir "$pkgdir"/lib
+
+  install -Dm0644 README "$pkgdir"/usr/share/doc/musl/README
+  install -Dm0644 COPYRIGHT "$pkgdir"/usr/share/licenses/musl/COPYRIGHT
+}
