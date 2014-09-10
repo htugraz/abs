@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 221227 2014-09-09 00:34:44Z foutrelis $
+# $Id: PKGBUILD 221391 2014-09-10 16:56:45Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Jan "heftig" Steffens <jan.steffens@gmail.com>
 # Contributor: Sebastian Nowicki <sebnow@gmail.com>
@@ -12,17 +12,20 @@
 pkgname=('llvm' 'llvm-libs' 'llvm-ocaml' 'clang' 'clang-analyzer'
          'clang-tools-extra')
 pkgver=3.5.0
-pkgrel=1
+pkgrel=2.1
 arch=('i686' 'x86_64')
 url="http://llvm.org/"
 license=('custom:University of Illinois/NCSA Open Source License')
 makedepends=('libffi' 'python2' 'ocaml' 'python-sphinx' 'chrpath')
+# Use gcc-multilib to build 32-bit compiler-rt libraries on x86_64 (FS#41911)
+[[ $CARCH = x86_64 ]] && makedepends+=('gcc-multilib')
 options=('staticlibs')
 source=(http://llvm.org/releases/$pkgver/llvm-$pkgver.src.tar.xz{,.sig}
         http://llvm.org/releases/$pkgver/cfe-$pkgver.src.tar.xz{,.sig}
         http://llvm.org/releases/$pkgver/clang-tools-extra-$pkgver.src.tar.xz{,.sig}
         http://llvm.org/releases/$pkgver/compiler-rt-$pkgver.src.tar.xz{,.sig}
         llvm-3.5.0-force-link-pass.o.patch
+        llvm-3.5.0-fix-cmake-llvm-exports.patch
         llvm-Config-config.h
         llvm-Config-llvm-config.h)
 sha256sums=('28e199f368ef0a4666708f31c7991ad3bcc3a578342b0306526dd35f07595c03'
@@ -34,6 +37,7 @@ sha256sums=('28e199f368ef0a4666708f31c7991ad3bcc3a578342b0306526dd35f07595c03'
             'a4b3e655832bf8d9a357ea2c771db347237460e131988cbb96cda40ff39a8136'
             'SKIP'
             '5702053503d49448598eda1b8dc8c263f0df9ad7486833273e3987b5dec25a19'
+            '841a153d0e9d2d196ea5318388ff295e69c41547eb73b24edf92a1b2cc3cccdd'
             '312574e655f9a87784ca416949c505c452b819fad3061f2cde8aced6540a19a3'
             '597dc5968c695bbdbb0eac9e8eb5117fcd2773bc91edf5ec103ecffffab8bc48')
 
@@ -59,6 +63,10 @@ prepare() {
   # Fix build with GCC 4.9 (patch from Debian)
   # http://llvm.org/bugs/show_bug.cgi?id=20067
   patch -Np1 -i "$srcdir/llvm-3.5.0-force-link-pass.o.patch"
+
+  # Fix generation of broken LLVMExports.cmake file
+  # http://llvm.org/bugs/show_bug.cgi?id=20884
+  patch -Np0 -i "$srcdir/llvm-3.5.0-fix-cmake-llvm-exports.patch"
 }
 
 build() {
