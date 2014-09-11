@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 220742 2014-08-28 15:39:07Z fyan $
+# $Id: PKGBUILD 221427 2014-09-11 07:22:15Z fyan $
 # Maintainer: Angel Velasquez <angvp@archlinux.org>
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgbase=python-lxml
 pkgname=('python-lxml' 'python2-lxml' 'python-lxml-docs')
-pkgver=3.3.6
+pkgver=3.4.0
 pkgrel=1
 arch=('i686' 'x86_64')
 license=('BSD' 'custom')
 url="http://lxml.de/"
 makedepends=('python2' 'python' 'libxslt' 'python-cssselect' 'python2-cssselect')
 source=(http://pypi.python.org/packages/source/l/lxml/lxml-${pkgver}.tar.gz{,.asc})
-md5sums=('a804b36864c483fe7abdd7f493a0c379'
+md5sums=('bc90cc4e4ee04e1f8290ae0f70e34eea'
          'SKIP')
 
 check() {
