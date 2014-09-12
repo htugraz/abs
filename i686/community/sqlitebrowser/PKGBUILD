@@ -1,17 +1,18 @@
-# $Id: PKGBUILD 116472 2014-07-28 09:51:01Z spupykin $
+# $Id: PKGBUILD 118862 2014-09-12 12:23:36Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Douglas Soares de Andrade <dsandrade@gmail.com>
 # Contributor: Michael Fellinger <m.fellinger@gmail.com>
 
 pkgname=sqlitebrowser
 pkgver=3.2.0
-pkgrel=2
+pkgrel=3
 pkgdesc="SQLite Database browser is a light GUI editor for SQLite databases, built on top of Qt"
 arch=('i686' 'x86_64')
 url="http://sqlitebrowser.org/"
 license=('GPL')
 depends=('qt5-base' 'sqlite' 'libxkbcommon-x11')
 makedepends=('cmake')
+install=sqlitebrowser.install
 source=(https://github.com/sqlitebrowser/sqlitebrowser/archive/sqlb-$pkgver.tar.gz)
 md5sums=('8e0edc6b14230e3933aa68a4731d9bd3')
 
@@ -31,5 +32,5 @@ package() {
   make install DESTDIR=$pkgdir
   install -Dm0644 distri/sqlitebrowser.desktop $pkgdir/usr/share/applications/sqlitebrowser.desktop
   install -dm0755 $pkgdir/usr/share/icons/
-  install -m0644 images/sqlitebrowser.{png,svg} $pkgdir/usr/share/icons/
+  install -m0644 images/sqlitebrowser.svg $pkgdir/usr/share/icons/
 }

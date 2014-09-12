@@ -1,14 +1,15 @@
-# $Id: PKGBUILD 118572 2014-09-07 08:31:01Z foutrelis $
+# $Id: PKGBUILD 118877 2014-09-12 16:15:10Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andreas Wagner <Andreas dot Wagner at em dot uni-frankfurt dot de>
 
 pkgname=schroot
 pkgver=1.6.10
-pkgrel=2
+pkgrel=3
 pkgdesc="Allows users to execute shell commands under different root filesystems. (Successor to dchroot)."
 url="http://packages.qa.debian.org/s/schroot.html"
 license=('GPL3')
-depends=('pam' 'lockdev' 'boost' 'e2fsprogs')
+depends=('pam' 'lockdev' 'boost-libs' 'e2fsprogs')
+makedepends=('boost')
 optdepends=('btrfs-progs-unstable' 'lvm2')
 arch=('i686' 'x86_64')
 conflicts=('dchroot')
