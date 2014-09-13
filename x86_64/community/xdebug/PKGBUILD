@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 111217 2014-05-15 14:18:48Z spupykin $
+# $Id: PKGBUILD 118926 2014-09-13 18:29:10Z pierre $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Jonathan Wiersma <arch aur at jonw dot org>
 # Contributor: Jonathan Wiersma <arch aur at jonw dot org>
@@ -6,7 +6,7 @@
 
 pkgname=xdebug
 pkgver=2.2.5
-pkgrel=1
+pkgrel=2
 pkgdesc="PHP debugging extension"
 arch=('i686' 'x86_64')
 url="http://www.xdebug.org"

@@ -1,21 +1,21 @@
-# $Id: PKGBUILD 219434 2014-08-07 12:09:31Z andrea $
+# $Id: PKGBUILD 221594 2014-09-13 10:08:00Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kactivities-frameworks
-pkgver=5.1.0
+pkgver=5.2.0
 pkgrel=1
 arch=('i686' 'x86_64')
 pkgdesc="The KActivity Manager Daemon"
 url='https://projects.kde.org/projects/kde/kdelibs/kactivities'
 license=('LGPL')
-depends=('kio')
+depends=('kio' 'kcmutils')
 makedepends=('extra-cmake-modules' 'boost')
 provides=('kactivities')
 conflicts=('kactivities4' 'libkactivities-frameworks')
 replaces=('libkactivities-frameworks')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver}/kactivities-${pkgver}.tar.xz")
-md5sums=('69314c72e6908698d7ff948bb6166a03')
+md5sums=('78264630f265bfb46d99a07a8b6d4983')
 
 prepare() {
   mkdir -p build
@@ -30,6 +30,7 @@ build() {
     -DQT_PLUGIN_INSTALL_DIR=lib/qt/plugins \
     -DQML_INSTALL_DIR=lib/qt/qml \
     -DECM_MKSPECS_INSTALL_DIR=/usr/share/qt/mkspecs/modules \
+    -DLOCALE_INSTALL_DIR=/usr/share/locale/kf5 \
     -DBUILD_TESTING=OFF
   make
 }

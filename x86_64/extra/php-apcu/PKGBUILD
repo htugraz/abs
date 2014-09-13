@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 215109 2014-06-14 10:57:01Z pierre $
+# $Id: PKGBUILD 221622 2014-09-13 18:28:25Z pierre $
 # Maintainer: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=php-apcu
 pkgver=4.0.6
-pkgrel=2
+pkgrel=4
 arch=('i686' 'x86_64')
 pkgdesc='A userland caching module for PHP'
 url='http://pecl.php.net/package/APCu'

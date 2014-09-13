@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 220383 2014-08-20 15:32:49Z svenstaro $
+# $Id: PKGBUILD 221520 2014-09-13 07:34:25Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-gwenview
 pkgver=4.14.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A fast and easy to use image viewer for KDE"
 url="http://kde.org/applications/graphics/gwenview/"
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
 groups=('kde' 'kdegraphics')
-depends=('kdebase-lib' 'kdebase-runtime' 'libkipi' 'baloo' 'libkdcraw')
+depends=('kdebase-lib' 'kdebase-runtime' 'libkipi' 'libbaloo4' 'libkdcraw')
 makedepends=('cmake' 'automoc4' 'mesa')
 optdepends=('kipi-plugins: extra plugins to share photos')
 install=$pkgname.install

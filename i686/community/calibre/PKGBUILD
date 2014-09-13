@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 118866 2014-09-12 12:34:14Z jelle $
+# $Id: PKGBUILD 118898 2014-09-13 08:38:25Z andrea $
 # Maintainer: Jelle van der Waa <jelle@vdwaa.nl>
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contributor: Giovanni Scafora <giovanni@archlinux.org>
@@ -8,7 +8,7 @@
 
 pkgname=calibre
 pkgver=2.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Ebook management application"
 arch=('i686' 'x86_64') 
 url="http://calibre-ebook.com/"

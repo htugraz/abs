@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 95809 2013-08-17 08:23:09Z pierre $
+# $Id: PKGBUILD 118923 2014-09-13 18:29:07Z pierre $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 
 pkgname=php-memcache
 pkgver=3.0.8
-pkgrel=2
+pkgrel=3
 pkgdesc="Memcache module for PHP"
 arch=('i686' 'x86_64')
 url="http://pecl.php.net/package/memcache"

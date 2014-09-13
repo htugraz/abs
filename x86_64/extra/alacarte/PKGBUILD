@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 210555 2014-04-14 20:13:41Z jgc $
+# $Id: PKGBUILD 221541 2014-09-13 09:46:21Z bpiotrowski $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: pressh <pressh@gmail.com>
 
 pkgname=alacarte
 pkgver=3.11.91
-pkgrel=1
+pkgrel=2
 pkgdesc="Menu editor for gnome"
 arch=(any)
 license=('LGPL')
@@ -29,4 +29,5 @@ build() {
 package() {
   cd $pkgname-$pkgver
   make DESTDIR="$pkgdir" install
+  python2 -m compileall "$pkgdir"/usr/lib/python2.7/site-packages/Alacarte/
 }

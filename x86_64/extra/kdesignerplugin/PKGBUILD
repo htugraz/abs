@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 219430 2014-08-07 12:08:45Z andrea $
+# $Id: PKGBUILD 221589 2014-09-13 10:07:07Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesignerplugin
-pkgver=5.1.0
+pkgver=5.2.0
 pkgrel=1
 pkgdesc='KDesignerPlugin'
 arch=('i686' 'x86_64')
@@ -12,7 +12,7 @@ depends=('kplotting' 'kdewebkit')
 makedepends=('extra-cmake-modules' 'qt5-tools' 'kdoctools')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('1fbe22beaadd66c2760073bb2a98645d')
+md5sums=('66bad42e2e753a67ba31c8dc397d8b7e')
 
 prepare() {
   mkdir -p build
@@ -25,6 +25,7 @@ build() {
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_INSTALL_DIR=lib \
     -DQT_PLUGIN_INSTALL_DIR=lib/qt/plugins \
+    -DLOCALE_INSTALL_DIR=/usr/share/locale/kf5 \
     -DBUILD_TESTING=OFF
   make
 }

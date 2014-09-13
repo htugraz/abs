@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 219441 2014-08-07 12:10:51Z andrea $
+# $Id: PKGBUILD 221600 2014-09-13 10:09:03Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdnssd
-pkgver=5.1.0
+pkgver=5.2.0
 pkgrel=1
 pkgdesc='KDNSSD Framework'
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ groups=('kf5')
 replaces=('kdnssd-framework')
 conflicts=('kdnssd-framework')
 source=("http://download.kde.org/stable/frameworks/${pkgver}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('24249b3b82538c8c6ba7014268d78bf7')
+md5sums=('eb61b614a4f358110e45302c18eabac2')
 
 prepare() {
   mkdir -p build
@@ -27,6 +27,7 @@ build() {
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_INSTALL_DIR=lib \
     -DECM_MKSPECS_INSTALL_DIR=/usr/share/qt/mkspecs/modules \
+    -DLOCALE_INSTALL_DIR=/usr/share/locale/kf5 \
     -DBUILD_TESTING=OFF
   make
 }

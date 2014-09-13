@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 219592 2014-08-12 00:30:17Z bisson $
+# $Id: PKGBUILD 221620 2014-09-13 18:28:22Z pierre $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: kevin <kevin@archlinux.org>
 # Contributor: John Proctor <jproctor@prium.net>
 
 pkgname=graphviz
 pkgver=2.38.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Graph visualization software'
 url='http://www.graphviz.org/'
 license=('CPL')

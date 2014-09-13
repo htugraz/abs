@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 219446 2014-08-07 12:11:48Z andrea $
+# $Id: PKGBUILD 221605 2014-09-13 10:09:57Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=knewstuff
-pkgver=5.1.0
+pkgver=5.2.0
 pkgrel=1
 pkgdesc='KNewStuff'
 arch=('i686' 'x86_64')
@@ -12,7 +12,7 @@ depends=('kio')
 makedepends=('extra-cmake-modules')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('8e3b6a2825d948f15bc2070fb740911e')
+md5sums=('198dbf6864bdda6e84efd242440f7486')
 
 prepare() {
   mkdir -p build
@@ -25,6 +25,7 @@ build() {
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_INSTALL_DIR=lib \
     -DECM_MKSPECS_INSTALL_DIR=/usr/share/qt/mkspecs/modules \
+    -DLOCALE_INSTALL_DIR=/usr/share/locale/kf5 \
     -DBUILD_TESTING=OFF
   make
 }

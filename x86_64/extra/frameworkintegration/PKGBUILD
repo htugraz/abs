@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 219437 2014-08-07 12:10:05Z andrea $
+# $Id: PKGBUILD 221597 2014-09-13 10:08:32Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=frameworkintegration
-pkgver=5.1.0
+pkgver=5.2.0
 pkgrel=1
 pkgdesc='Framework providing components to allow applications to integrate with a KDE Workspace'
 arch=('i686' 'x86_64')
@@ -12,7 +12,7 @@ depends=('kio' 'ttf-oxygen')
 makedepends=('extra-cmake-modules')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('e51e47d0721013facc2378bf01f33bf2')
+md5sums=('9e356a195e5f94866dc215bb9d388613')
 
 prepare() {
   mkdir -p build
@@ -25,6 +25,7 @@ build() {
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_INSTALL_DIR=lib \
     -DQT_PLUGIN_INSTALL_DIR=lib/qt/plugins \
+    -DLOCALE_INSTALL_DIR=/usr/share/locale/kf5 \
     -DBUILD_TESTING=OFF
   make
 }

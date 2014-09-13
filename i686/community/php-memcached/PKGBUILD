@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 108735 2014-04-02 12:09:29Z foutrelis $
+# $Id: PKGBUILD 118924 2014-09-13 18:29:08Z pierre $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 
 pkgname=php-memcached
 pkgver=2.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="PHP extension for interfacing with memcached via libmemcached library"
 arch=('i686' 'x86_64')
 url="http://pecl.php.net/package/memcached"

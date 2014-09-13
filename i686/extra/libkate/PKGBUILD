@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 198191 2013-10-30 13:21:33Z allan $
+# $Id: PKGBUILD 221551 2014-09-13 10:00:01Z bpiotrowski $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: N30N <archlinux@alunamation.com>
 # Contributor: linkmauve <linkmauve@linkmauve.fr>
@@ -6,7 +6,7 @@
 
 pkgname=libkate
 pkgver=0.4.1
-pkgrel=4
+pkgrel=5
 pkgdesc="A karaoke and text codec for embedding in ogg"
 url="http://libkate.googlecode.com/"
 license=('BSD')
@@ -32,8 +32,8 @@ build() {
 
 package() {
   cd "${srcdir}/${pkgname}-${pkgver}"
-
   make DESTDIR="${pkgdir}" install
-  # install BSD license
   install -Dm644 COPYING "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+
+  python2 -m compileall "${pkgdir}/usr/lib/python2.7/site-packages/kdj/"
 }

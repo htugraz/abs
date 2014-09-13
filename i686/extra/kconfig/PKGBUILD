@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 219402 2014-08-07 12:03:29Z andrea $
+# $Id: PKGBUILD 221559 2014-09-13 10:02:02Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kconfig
-pkgver=5.1.0
+pkgver=5.2.0
 pkgrel=1
 pkgdesc='KConfig'
 arch=('i686' 'x86_64')
@@ -12,7 +12,7 @@ depends=('qt5-base')
 makedepends=('extra-cmake-modules' 'qt5-tools')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('aa54e94c9ba08a681a6ebae151046632')
+md5sums=('21b0742e2b99c939af613794ba526be6')
 
 prepare() {
   mkdir -p build
@@ -25,6 +25,7 @@ build() {
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_INSTALL_DIR=lib \
     -DECM_MKSPECS_INSTALL_DIR=/usr/share/qt/mkspecs/modules \
+    -DLOCALE_INSTALL_DIR=/usr/share/locale/kf5 \
     -DBUILD_TESTING=OFF
   make
 }
