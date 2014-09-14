@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 208804 2014-03-27 09:45:06Z bpiotrowski $
+# $Id: PKGBUILD 221720 2014-09-14 17:54:10Z eric $
 # Maintainer:  Jan de Groot <jgc@archlinux.org>
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=guile
 pkgver=2.0.11
-pkgrel=1
+pkgrel=2
 pkgdesc='Portable, embeddable Scheme implementation written in C'
 url='http://www.gnu.org/software/guile/'
 arch=('i686' 'x86_64')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 218421 2014-07-31 06:18:17Z tpowa $
+# $Id: PKGBUILD 221718 2014-09-14 17:54:06Z eric $
 # Maintainer:
 
 pkgname=gettext
 pkgver=0.19.2
-pkgrel=1
+pkgrel=2
 pkgdesc="GNU internationalization library"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/gettext/"
@@ -25,7 +25,7 @@ build() {
 
 check() {
   cd "${srcdir}/${pkgname}-${pkgver}"
-  make check
+  make -j1 -k check
 }
 
 package() {

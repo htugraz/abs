@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 221594 2014-09-13 10:08:00Z andrea $
+# $Id: PKGBUILD 221709 2014-09-14 13:26:03Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kactivities-frameworks
 pkgver=5.2.0
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 pkgdesc="The KActivity Manager Daemon"
 url='https://projects.kde.org/projects/kde/kdelibs/kactivities'
 license=('LGPL')
-depends=('kio' 'kcmutils')
-makedepends=('extra-cmake-modules' 'boost')
+depends=('kcmutils' 'kdeclarative')
+makedepends=('extra-cmake-modules' 'boost' 'python')
 provides=('kactivities')
 conflicts=('kactivities4' 'libkactivities-frameworks')
 replaces=('libkactivities-frameworks')
