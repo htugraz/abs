@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 220814 2014-08-30 09:06:35Z guillaume $
+# $Id: PKGBUILD 221787 2014-09-15 21:00:29Z guillaume $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 # Maintainer: Guillaume ALAUX <guillaume@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
@@ -14,7 +14,7 @@ _JDK_UPDATE_VERSION=65
 _bootstrap=0 # 0/1 for quick build or full bootstrap
 
 pkgver=${_java_ver}.u${_JDK_UPDATE_VERSION}_${_icedtea_ver}
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url='http://icedtea.classpath.org'
 license=('custom')

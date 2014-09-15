@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 111771 2014-05-24 01:52:39Z alucryd $
+# $Id: PKGBUILD 119026 2014-09-15 16:08:32Z alucryd $
 # Maintainer: Maxime Gauduin <alucryd at gmail dot com> 
 # Contributor: Ner0 <darkelfdarkelf666 at yahoo dot co dot uk>
 # Contributor: dcelasun <dcelasun at gmaild dot com>
 
 pkgname=plank
-pkgver=0.6.1
+pkgver=0.7.0
 pkgrel=1
 pkgdesc='Elegant, simple, clean dock'
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ depends=('bamf' 'libdbusmenu-gtk3' 'libgee')
 makedepends=('gnome-common' 'intltool' 'vala')
 install="${pkgname}.install"
 source=("https://launchpad.net/${pkgname}/1.0/${pkgver}/+download/${pkgname}-${pkgver}.tar.xz")
-sha256sums=('3636afc5e2c15daa1f8fa1c4a9b1fc9a483c56ea8caf2b071de1a86578138c3c')
+sha256sums=('f2df764006685b72b8bf7d0e2fca3eda108df131ed7fe84e00e8ae796f1e1653')
 
 build() {
   cd ${pkgname}-${pkgver}
