@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 107147 2014-03-13 13:24:28Z fyan $
+# $Id: PKGBUILD 119048 2014-09-16 11:27:07Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Rainy <rainylau(at)gmail(dot)com>
 # Contributor: Lee.MaRS <leemars at gmail dot com>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=ibus-anthy
-pkgver=1.5.5
+pkgver=1.5.6
 pkgrel=1
 pkgdesc='Japanese input method Anthy IMEngine for IBus Framework'
 arch=('i686' 'x86_64')

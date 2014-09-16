@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 217815 2014-07-24 07:24:43Z fyan $
+# $Id: PKGBUILD 221801 2014-09-16 11:19:32Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgbase=ibus
 pkgname=(ibus libibus)
-pkgver=1.5.8
+pkgver=1.5.9
 pkgrel=1
 pkgdesc="Next Generation Input Bus for Linux"
 arch=('i686' 'x86_64')
