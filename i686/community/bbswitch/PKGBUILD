@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 117341 2014-08-13 06:39:45Z tpowa $
+# $Id: PKGBUILD 119188 2014-09-18 13:22:54Z tpowa $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: M0Rf30
 # Contributor: Samsagax <samsagax@gmail.com>
@@ -6,7 +6,7 @@
 pkgname=bbswitch
 pkgver=0.8
 _extramodules=extramodules-3.16-ARCH # Don't forget to update bbswitch.install
-pkgrel=15
+pkgrel=16
 pkgdesc="Kernel module allowing to switch dedicated graphics card on Optimus laptops"
 arch=('i686' 'x86_64')
 url=("http://github.com/Bumblebee-Project/bbswitch")

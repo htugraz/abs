@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 220266 2014-08-20 09:21:14Z lfleischer $
+# $Id: PKGBUILD 221928 2014-09-18 12:52:40Z tpowa $
 # Maintainer: Paul Mattal <paul@archlinux.org>
 
 pkgbase=lirc
 pkgname=('lirc' 'lirc-utils')
 _pkgver=0.9.1a
 [[ $_pkgver =~ [a-z]$ ]] && pkgver="${_pkgver:0:-1}.${_pkgver: -1}" || pkgver="$_pkgver"
-pkgrel=3
+pkgrel=4
 epoch=1
 _extramodules=extramodules-3.16-ARCH
 arch=('i686' 'x86_64')
