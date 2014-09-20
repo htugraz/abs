@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 117080 2014-08-09 18:16:17Z jelle $
+# $Id: PKGBUILD 119321 2014-09-20 13:16:46Z jelle $
 # Contributor: Bartłomiej Piotrowski
 # Contributor: Renato Garcia <fgar.renatoATgmailDOTcom>
 # Contributor: Gerson E. Ruotolo <gersonruotolo@globo.com>
 
 pkgname=dos2unix
-pkgver=6.0.6
+pkgver=7.0
 pkgrel=1
 pkgdesc='Text file format converter'
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ depends=('glibc')
 makedepends=('perl')
 conflicts=('hd2u')
 source=("http://waterlan.home.xs4all.nl/${pkgname}/${pkgname}-${pkgver}.tar.gz")
-md5sums=('9010a4ca60d91798e6859a5a987fe7db')
+md5sums=('7abcb86ef1cfac629448a86d3d7b3a52')
 
 build() {
   cd $srcdir/$pkgname-$pkgver

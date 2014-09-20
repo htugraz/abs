@@ -1,10 +1,10 @@
-#$Id: PKGBUILD 103634 2014-01-08 14:31:20Z bpiotrowski $
+#$Id: PKGBUILD 119299 2014-09-19 22:31:33Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Angel Velasquez <angvp@archlinux.org>  
 # Contributor: Geoffroy Carrier <geoffroy.carrier@koon.fr>
 
 pkgname=lxappearance
-pkgver=0.5.5
+pkgver=0.5.6
 pkgrel=1
 pkgdesc='Feature-rich GTK+ theme switcher of the LXDE Desktop'
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ groups=('lxde')
 depends=('gtk2' 'dbus-glib')
 makedepends=('intltool')
 source=(http://downloads.sourceforge.net/sourceforge/lxde/$pkgname-$pkgver.tar.xz)
-md5sums=('a67113681d9d0a6d936289909aed5782')
+md5sums=('90bed417817a42b24af368f85cb5fc58')
 
 build() {
   cd $pkgname-$pkgver

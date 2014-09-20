@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198130 2013-10-30 12:58:13Z allan $
+# $Id: PKGBUILD 222152 2014-09-20 08:21:37Z bpiotrowski $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libbonoboui
 pkgver=2.24.5
-pkgrel=2
+pkgrel=3
 pkgdesc="User Interface library for Bonobo"
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL')

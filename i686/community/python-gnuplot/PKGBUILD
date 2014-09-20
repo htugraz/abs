@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 108262 2014-03-25 13:01:14Z arodseth $
+# $Id: PKGBUILD 119308 2014-09-20 03:28:00Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Michael Krauss <hippodriver@gmx.net>
 # Contributor: Baptiste Jonglez <zerstorer at free dot fr>
@@ -6,7 +6,7 @@
 pkgbase=python-gnuplot
 pkgname=('python2-gnuplot' 'python-gnuplot')
 pkgver=1.8
-pkgrel=3
+pkgrel=4
 pkgdesc='Plot graphs with Gnuplot'
 arch=('any')
 license=('LGPL')
