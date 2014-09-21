@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 117928 2014-08-26 18:49:44Z lcarlier $
+# $Id: PKGBUILD 119381 2014-09-21 21:30:32Z lcarlier $
 # Maintainer: Dave Reisner <dreisner@archlinux.org>
 # Maintainer: Tom Gundersen <teg@jklm.no>
 
 pkgname=lib32-systemd
 _pkgbasename=systemd
 pkgver=216
-pkgrel=1
+pkgrel=2
 pkgdesc="system and service manager (32-bit)"
 arch=('x86_64')
 url="http://www.freedesktop.org/wiki/Software/systemd"
@@ -57,7 +57,6 @@ package() {
     
   rm -rf "${pkgdir}"/{etc,var}
   rm -rf "${pkgdir}"/usr/{bin,include,lib,share}
-  rm -rf "${pkgdir}"/usr/lib32/libnss*
 
   install -m755 -d "${pkgdir}/usr/share/licenses"
   ln -s systemd "$pkgdir/usr/share/licenses/lib32-systemd"

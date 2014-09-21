@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 110145 2014-04-24 20:53:44Z flexiondotorg $
+# $Id: PKGBUILD 119357 2014-09-21 09:42:48Z flexiondotorg $
 # Maintainer : Martin Wimpress <code@flexion.org>
 
 pkgname=mate-applet-streamer
 pkgver=0.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A MATE panel applet to let you play your favourite online radio station with a single click."
 url="http://www.zavedil.com/online-radio-applet/"
 arch=('i686' 'x86_64')

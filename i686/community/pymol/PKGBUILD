@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 117930 2014-08-26 19:46:14Z arcanis $
+# $Id: PKGBUILD 119367 2014-09-21 18:31:25Z arcanis $
 # Maintainer: Evgeniy Alekseev <arcanis dot arch at gmail dot com>
 # Contributor: graysky
 # Contributor: Tomasz Żok <tomasz dot zok at gmail dot com>
 
 pkgname=pymol
 pkgver=1.7.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Molecular visualization system on an Open Source foundation"
 arch=('i686' 'x86_64')
 url="http://pymol.org/"
 license=('custom')
-depends=('glew' 'glut' 'mesa' 'python2-numpy' 'python2-pmw' 'tcsh')
+depends=('glew' 'glut' 'libgl' 'python2-numpy' 'python2-pmw' 'tcsh')
 makedepends=('desktop-file-utils' 'gendesk')
 source=("http://downloads.sourceforge.net/project/pymol/pymol/1.7/pymol-v${pkgver}.tar.bz2"
         ${pkgname}.png::"https://c.fsdn.com/allura/p/pymol/icon"
