@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 112658 2014-06-04 13:52:46Z bluewind $
+# $Id: PKGBUILD 119529 2014-09-23 21:05:41Z seblu $
 # Maintainer: Sébastien Luttringer
 # Contributor: Angel Velasquez <angvp@archlinux.org>
 # Contributor: tobias <tobias@archlinux.org>
@@ -7,7 +7,7 @@
 pkgbase=rxvt-unicode
 pkgname=('rxvt-unicode' 'rxvt-unicode-terminfo')
 pkgver=9.20
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 url='http://software.schmorp.de/pkg/rxvt-unicode.html'
 license=('GPL')
@@ -58,7 +58,7 @@ build() {
 }
 
 package_rxvt-unicode() {
-  pkgdesc='An unicode enabled rxvt-clone terminal emulator (urxvt)'
+  pkgdesc='A unicode enabled rxvt-clone terminal emulator (urxvt)'
   depends=('rxvt-unicode-terminfo' 'libxft' 'perl' 'startup-notification')
   optdepends=('gtk2-perl: to use the urxvt-tabbed')
 

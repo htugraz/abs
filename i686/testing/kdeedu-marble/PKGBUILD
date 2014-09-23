@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 222216 2014-09-20 16:10:00Z svenstaro $
+# $Id: PKGBUILD 222726 2014-09-23 00:16:38Z bpiotrowski $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-marble
 pkgver=4.14.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Desktop Globe"
 url="http://kde.org/applications/education/marble/"
 arch=('i686' 'x86_64')

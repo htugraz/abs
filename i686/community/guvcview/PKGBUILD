@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 105940 2014-02-19 16:43:36Z giovanni $
+# $Id: PKGBUILD 119483 2014-09-23 13:59:17Z bpiotrowski $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Maxwell Pray a.k.a. Synthead <synthead@gmail.com>
 
 pkgname=guvcview
 pkgver=1.7.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A video viewer and capturer for the linux uvc driver"
 arch=('i686' 'x86_64')
 url="http://guvcview.sourceforge.net/"

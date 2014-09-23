@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 118118 2014-09-01 09:23:02Z spupykin $
+# $Id: PKGBUILD 119490 2014-09-23 13:59:25Z bpiotrowski $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer:Biginoz < biginoz AT free point fr>
 # Contributor: Ignacio Galmarino <igalmarino@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=minidlna
 pkgver=1.1.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A DLNA/UPnP-AV Media server (aka ReadyDLNA)"
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/minidlna/"

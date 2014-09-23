@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 200281 2013-11-24 17:51:20Z bisson $
+# $Id: PKGBUILD 222845 2014-09-23 13:57:37Z bpiotrowski $
 # Contributor: Wieland Hoffmann <the_mineo@web.de>
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 
 pkgname=chromaprint
 pkgver=1.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Library that implements a custom algorithm for extracting fingerprints from any audio source'
 url='http://acoustid.org/chromaprint/'
 arch=('i686' 'x86_64')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 218388 2014-07-30 16:08:57Z ronald $
+# $Id: PKGBUILD 222847 2014-09-23 13:57:39Z bpiotrowski $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: boromil@gmail.com
 
 pkgname=ffmpegthumbnailer
 pkgver=2.0.9
-pkgrel=1
+pkgrel=2
 pkgdesc="Lightweight video thumbnailer that can be used by file managers."
 url="http://code.google.com/p/ffmpegthumbnailer/"
 license=('GPL2')

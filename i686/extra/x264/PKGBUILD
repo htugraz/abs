@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 221092 2014-09-07 10:31:16Z bpiotrowski $
+# $Id: PKGBUILD 222860 2014-09-23 13:57:55Z bpiotrowski $
 # Maintainer:  Ionut Biru <ibiru@archlinux.org>
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: damir <damir@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=('x264' 'libx264' 'libx264-10bit')
 pkgver=142.20140826
-pkgrel=1
+pkgrel=2
 epoch=1
 arch=('i686' 'x86_64')
 url='http://www.videolan.org/developers/x264.html'

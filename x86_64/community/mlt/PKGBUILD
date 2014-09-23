@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 115397 2014-07-10 09:26:27Z spupykin $
+# $Id: PKGBUILD 119491 2014-09-23 13:59:26Z bpiotrowski $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Fabian Schoelzel <myfirstname.mylastname@googlemail.com>
 # Contributor: funkyou <spamopfer@nickname.berlin.de>
@@ -8,7 +8,7 @@
 pkgbase=mlt
 pkgname=('mlt' 'mlt-python-bindings')
 pkgver=0.9.2
-pkgrel=1
+pkgrel=2
 pkgdesc="An open source multimedia framework"
 arch=('i686' 'x86_64')
 url="http://www.mltframework.org"

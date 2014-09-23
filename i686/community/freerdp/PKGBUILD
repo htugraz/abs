@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 113544 2014-06-25 13:25:34Z spupykin $
+# $Id: PKGBUILD 119481 2014-09-23 13:59:15Z bpiotrowski $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Stijn Segers <francesco dot borromini at gmail dot com>
 
 pkgname=freerdp
 pkgver=1.0.2
-pkgrel=6
+pkgrel=7
 pkgdesc="Free RDP client"
 arch=('i686' 'x86_64')
 url="http://freerdp.sourceforge.net"

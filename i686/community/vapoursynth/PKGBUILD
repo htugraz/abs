@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 117816 2014-08-23 15:21:34Z alucryd $
+# $Id: PKGBUILD 119501 2014-09-23 13:59:45Z bpiotrowski $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 # Contributor: sl1pkn07 <sl1pkn07@gmail.com>
 # Contributor: jackoneill <cantabile.desu@gmail.com>
 
 pkgname=vapoursynth
 pkgver=R24
-pkgrel=2
+pkgrel=3
 pkgdesc='A video processing framework with the future in mind'
 arch=('i686' 'x86_64')
 url='http://www.vapoursynth.com/'

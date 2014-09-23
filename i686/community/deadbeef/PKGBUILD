@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 116934 2014-08-06 18:32:14Z lfleischer $
+# $Id: PKGBUILD 119476 2014-09-23 13:59:09Z bpiotrowski $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Alexey Yakovenko <waker@users.sourceforge.net>
 
 pkgname=deadbeef
 pkgver=0.6.2
-pkgrel=1
+pkgrel=2
 pkgdesc='A GTK+ audio player for GNU/Linux.'
 arch=('i686' 'x86_64')
 url='http://deadbeef.sourceforge.net'

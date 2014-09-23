@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 102822 2013-12-21 05:06:07Z alucryd $
+# $Id: PKGBUILD 119517 2014-09-23 16:16:56Z alucryd $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 # Contributor: Harley Laue <losinggeneration@gmail.com>
 # Contributor: Hyacinthe Cartiaux <hyacinthe.cartiaux@free.fr>
@@ -8,12 +8,12 @@
 
 pkgname=yabause-qt
 pkgver=0.9.13
-pkgrel=1
+pkgrel=2
 pkgdesc='A Sega Saturn emulator'
 arch=('i686' 'x86_64')
 url="http://yabause.org/"
 license=('GPL')
-depends=('freeglut' 'mesa' 'openal' 'qt4' 'sdl')
+depends=('freeglut' 'openal' 'qt4' 'sdl')
 makedepends=('cmake' 'glu')
 conflicts=('yabause-gtk')
 source=("http://downloads.sourceforge.net/${pkgname%-*}/${pkgname%-*}-${pkgver}.tar.gz" 'rwx.patch')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 103886 2014-01-13 10:05:50Z spupykin $
+# $Id: PKGBUILD 119492 2014-09-23 13:59:29Z bpiotrowski $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=motion
 pkgver=3.2.12
-pkgrel=11
+pkgrel=12
 pkgdesc="A software motion detector which grabs images from video4linux devices and/or from webcams"
 arch=('i686' 'x86_64')
 license=('GPL')

@@ -1,12 +1,10 @@
-# $Id: PKGBUILD 116000 2014-07-19 16:05:32Z td123 $
+# $Id: PKGBUILD 119485 2014-09-23 13:59:19Z bpiotrowski $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=hedgewars
 pkgver=0.9.20.5
-pkgrel=3
-pkgdesc="turn based strategy, artillery, action and comedy game, featuring the
- antics of pink hedgehogs with attitude as they battle from the depths of hell
- to the depths of space."
+pkgrel=4
+pkgdesc="Turn-based strategy artillery game similiar to Worms"
 arch=('i686' 'x86_64')
 url="http://hedgewars.org"
 license=('GPL' 'custom')
