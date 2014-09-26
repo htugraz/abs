@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 223067 2014-09-26 10:54:06Z jgc $
+# Maintainer: Jan de Groot  <jgc@archlinux.org>
+
+pkgname=libgweather
+pkgver=3.14.0
+pkgrel=1
+pkgdesc="Provides access to weather information from the net"
+arch=('i686' 'x86_64')
+license=('LGPL')
+depends=('libsoup' 'gtk3' 'geocode-glib')
+makedepends=('intltool' 'gobject-introspection' 'vala' 'python2')
+options=('!emptydirs')
+url="http://www.gnome.org/"
+install=libgweather.install
+source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver:0:4}/$pkgname-$pkgver.tar.xz)
+sha256sums=('337c9a8331cabc2422e23a556264dad0fde1f13c8bbba2726db5b54a5bccbb5b')
+
+build() {
+    cd "$pkgname-$pkgver"
+    ./configure --prefix=/usr --sysconfdir=/etc \
+        --localstatedir=/var --disable-static
+    make
+}
+
+package() {
+    cd "$pkgname-$pkgver"
+    make GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1 DESTDIR="$pkgdir" install
+}

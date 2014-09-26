@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 220285 2014-08-20 15:30:15Z svenstaro $
+# $Id: PKGBUILD 223198 2014-09-26 17:20:31Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdebindings-smokeqt
-pkgver=4.14.0
+pkgver=4.14.1
 pkgrel=1
 pkgdesc="Language independent library for Qt bindings"
 url="https://projects.kde.org/projects/kde/kdebindings/smoke/smokeqt"
@@ -13,7 +13,7 @@ depends=('kdebindings-smokegen' 'qimageblitz' 'qscintilla')
 makedepends=('cmake' 'automoc4' 'mesa')
 conflicts=('kdebindings-smoke')
 source=("http://download.kde.org/stable/${pkgver}/src/smokeqt-${pkgver}.tar.xz")
-sha1sums=('8a80669d3516bd2dd789db43556bc1072afd2b3c')
+sha1sums=('ac82ec05a34a0a842393226076c733cc7b390a5a')
 
 prepare() {
   mkdir build

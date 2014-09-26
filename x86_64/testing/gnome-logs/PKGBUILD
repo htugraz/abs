@@ -1,0 +1,27 @@
+# $Id: PKGBUILD 223112 2014-09-26 10:56:17Z jgc $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+
+pkgname=gnome-logs
+pkgver=3.14.0
+pkgrel=1
+pkgdesc="A log viewer for the systemd journal"
+arch=(i686 x86_64)
+url="https://wiki.gnome.org/Apps/Logs"
+license=(GPL)
+groups=(gnome-extra)
+depends=(systemd gtk3 gsettings-desktop-schemas)
+makedepends=(intltool itstool)
+install=gnome-logs.install
+source=(http://download.gnome.org/sources/$pkgname/${pkgver:0:4}/$pkgname-$pkgver.tar.xz)
+sha256sums=('8e73137917d01640b042e8234210f3336f8cf2e2c85d5e2b0875225103b95cb3')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

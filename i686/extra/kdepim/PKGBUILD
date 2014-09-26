@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 221519 2014-09-13 07:34:23Z andrea $
+# $Id: PKGBUILD 223321 2014-09-26 17:23:44Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
@@ -20,8 +20,8 @@ pkgname=('kdepim-akonadiconsole'
          'kdepim-ktimetracker'
          'kdepim-ktnef'
          'kdepim-libkdepim')
-pkgver=4.14.0
-pkgrel=2
+pkgver=4.14.1
+pkgrel=1
 arch=('i686' 'x86_64')
 url='http://pim.kde.org'
 license=('GPL' 'LGPL' 'FDL')
@@ -29,7 +29,7 @@ groups=('kde' 'kdepim')
 makedepends=('cmake' 'automoc4' 'boost' 'kdepim-runtime' 'libxss' 'pilot-link'
              'baloo4' 'link-grammar')
 source=("http://download.kde.org/stable/${pkgver}/src/${pkgbase}-${pkgver}.tar.xz")
-sha1sums=('e5f24a8892954004f4b4eada5bcd46b6c71e1bbd')
+sha1sums=('a2a8d36407446546ac0fab66e0742ea2d1288ec8')
 
 build() {
 	mkdir build

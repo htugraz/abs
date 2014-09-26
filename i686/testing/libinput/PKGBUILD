@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 222116 2014-09-19 18:11:26Z seblu $
+# $Id: PKGBUILD 223066 2014-09-26 10:54:05Z jgc $
 # Maintainer: Jan de Groot
 
 pkgname=libinput

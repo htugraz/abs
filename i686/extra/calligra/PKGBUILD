@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 220697 2014-08-27 15:11:59Z foutrelis $
+# $Id: PKGBUILD 223180 2014-09-26 14:04:08Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Ronald van Haren <ronald.archlinux.org>
 
@@ -18,8 +18,8 @@ pkgname=('calligra-braindump'
          'calligra-sheets'
          'calligra-stage'
          'calligra-words')
-pkgver=2.8.5
-pkgrel=3
+pkgver=2.8.6
+pkgrel=1
 arch=('i686' 'x86_64')
 url='http://www.calligra-suite.org/'
 license=('FDL1.2' 'GPL2' 'LGPL')
@@ -31,7 +31,7 @@ makedepends=('cmake' 'automoc4' 'boost' 'kdepimlibs' 'eigen2' 'kdeedu-marble'
 groups=('calligra')
 source=("http://download.kde.org/stable/${pkgbase}-${pkgver}/${pkgbase}-${pkgver}.tar.xz"
         0001-switch-to-librevenge-based-import-libs.patch)
-md5sums=('8538e740b69dbf6b574312200cac969a'
+md5sums=('fc6d40b7d8df62f6a890457e90aa0779'
          '2589200d3f2199a8bff5755ff3245e33')
 
 prepare() {

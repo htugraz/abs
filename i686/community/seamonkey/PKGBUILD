@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 119438 2014-09-22 21:14:14Z kkeen $
+# $Id: PKGBUILD 119629 2014-09-26 19:33:55Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 
 pkgname=seamonkey
