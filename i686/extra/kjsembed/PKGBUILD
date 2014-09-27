@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 221702 2014-09-14 13:14:19Z andrea $
+# $Id: PKGBUILD 223541 2014-09-27 14:26:14Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kjsembed
 pkgver=5.2.0
-pkgrel=1
+pkgrel=3
 pkgdesc='KJSEmbed'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kjsembed'
@@ -24,8 +24,7 @@ build() {
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_INSTALL_DIR=lib \
-    -DECM_MKSPECS_INSTALL_DIR=/usr/share/qt/mkspecs/modules \
-    -DLOCALE_INSTALL_DIR=/usr/share/locale/kf5 \
+    -DKDE_INSTALL_USE_QT_SYS_PATHS=ON \
     -DBUILD_TESTING=OFF
   make
 }

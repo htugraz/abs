@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 221595 2014-09-13 10:08:11Z andrea $
+# $Id: PKGBUILD 223385 2014-09-27 07:30:33Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=plasma-framework
@@ -25,7 +25,7 @@ build() {
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_INSTALL_DIR=lib \
     -DQML_INSTALL_DIR=lib/qt/qml \
-    -DQT_PLUGIN_INSTALL_DIR=lib/qt/plugins \
+    -DKDE_INSTALL_USE_QT_SYS_PATHS=ON \
     -DBUILD_TESTING=OFF
   make
 }

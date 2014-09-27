@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 221587 2014-09-13 10:06:47Z andrea $
+# $Id: PKGBUILD 223423 2014-09-27 09:30:44Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdewebkit
 pkgver=5.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc='KDE Webkit'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kdewebkit'
@@ -24,7 +24,7 @@ build() {
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_INSTALL_DIR=lib \
-    -DECM_MKSPECS_INSTALL_DIR=/usr/share/qt/mkspecs/modules \
+    -DKDE_INSTALL_USE_QT_SYS_PATHS=ON \
     -DBUILD_TESTING=OFF
   make
 }
