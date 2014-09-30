@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 117973 2014-08-27 16:53:53Z bpiotrowski $
+# $Id: PKGBUILD 119875 2014-09-30 11:51:43Z andrea $
 # Maintainer:  Federico Cinelli <cinelli@aur.archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Mcder3 <mcder3[at]gmail[dot]com>
 # Contributor: MisterFred <mister.fred[at]free[dot]fr>
 
 pkgname=cantata
-pkgver=1.4.1
+pkgver=1.4.2
 pkgrel=1
 pkgdesc='Qt5 client for the music player daemon (MPD)'
 arch=('i686' 'x86_64')
