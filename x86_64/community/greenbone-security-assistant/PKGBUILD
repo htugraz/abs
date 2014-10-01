@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 119171 2014-09-18 06:15:42Z thestinger $
+# $Id: PKGBUILD 119906 2014-10-01 03:17:18Z thestinger $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 pkgname=greenbone-security-assistant
 pkgver=5.0.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Greenbone Security Assistant (gsa) - OpenVAS web frontend'
 url='http://www.openvas.org/'
 license=(GPL)
@@ -24,7 +24,7 @@ replaces=(gsa)
 build() {
   cd $pkgname-$pkgver
   cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr \
-    -DSYSCONFDIR=/etc -DLOCALSTATEDIR=/var .
+    -DSYSCONFDIR=/etc -DLOCALSTATEDIR=/var . -DSBINDIR=/usr/bin
   make
 }
 
