@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 119806 2014-09-29 17:55:49Z idevolder $
+# $Id: PKGBUILD 120022 2014-10-02 12:17:07Z andrea $
 # Maintainer: BlackIkeEagle < ike DOT devolder AT gmail DOT com >
 # Contributor: Valeriy Lyasotskiy <onestep@ukr.net>
 # Contributor: Zom <zom@eevul.org>
 
 pkgname=apper
 pkgver=0.9.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Get and manage software in KDE"
 arch=('i686' 'x86_64')
 url="http://kde-apps.org/content/show.php/Apper?content=84745"
