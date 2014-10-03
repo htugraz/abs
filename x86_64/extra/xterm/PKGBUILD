@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 222508 2014-09-20 17:40:15Z andyrtr $
+# $Id: PKGBUILD 223813 2014-10-03 17:58:26Z andyrtr $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Alexander Baldeck <alexander@archlinux.org>
 
 pkgname=xterm
-pkgver=311
+pkgver=312
 pkgrel=1
 pkgdesc="X Terminal Emulator"
 arch=('i686' 'x86_64')
@@ -12,7 +12,7 @@ license=('custom')
 depends=('libxft' 'libxaw' 'ncurses' 'xorg-luit' 'xbitmaps' 'libutempter')
 source=(ftp://invisible-island.net/${pkgname}/${pkgname}-${pkgver}.tgz{,.asc}
         LICENSE)
-md5sums=('bba4f296724aca42adeb61399e7b2a08'
+md5sums=('e42f09b2f59efa862367967241d56306'
          'SKIP'
          '10ecc3f8ee91e3189863a172f68282d2')
 
