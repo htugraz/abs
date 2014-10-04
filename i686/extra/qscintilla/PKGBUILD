@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 221528 2014-09-13 07:52:30Z andrea $
+# $Id: PKGBUILD 223854 2014-10-04 07:51:24Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Douglas Soares de Andrade <dsa@aur.archlinux.org>
 
@@ -6,11 +6,12 @@ pkgbase=qscintilla
 pkgname=('qscintilla' 'python-qscintilla' 'python2-qscintilla'
          'python-qscintilla-common')
 pkgver=2.8.4
-pkgrel=1
+pkgrel=2
 license=('GPL')
 arch=('i686' 'x86_64')
 url="http://www.riverbankcomputing.co.uk/software/qscintilla/intro"
 makedepends=('python2-pyqt4' 'python-pyqt4' 'chrpath')
+options=('!buildflags') # Fix Qt Designer plugin
 source=("http://downloads.sourceforge.net/pyqt/QScintilla-gpl-${pkgver}.tar.gz"
         'configure.py-objdir-support.diff'
         'qsci_link.patch')
