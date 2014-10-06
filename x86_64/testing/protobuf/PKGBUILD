@@ -1,17 +1,13 @@
-# $Id: PKGBUILD 223877 2014-10-05 10:50:20Z bpiotrowski $
+# $Id: PKGBUILD 223918 2014-10-06 13:02:14Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Thomas S Hatch <thatch45@gmail.com>
 # Contributor: Geoffroy Carrier <geoffroy@archlinux.org>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 
-# TODO: c++ bindings for python
-# TODO: propset
-# TODO: staging + todo
-
 pkgname=('protobuf' 'python2-protobuf')
 pkgver=2.6.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Protocol Buffers - Google's data interchange format"
 arch=('i686' 'x86_64')
 url='https://github.com/google/protobuf/'
@@ -47,6 +43,6 @@ package_python2-protobuf() {
   cd $pkgbase-$pkgver/python
   python2 setup.py install --prefix=/usr --root="$pkgdir"
 
-  install -d "$pkgdir"/usr/share/licenses/$pkgbase
-  ln -s /usr/share/licenses/$pkgbase/LICENSE "$pkgdir"/usr/share/licenses/$pkgbase/
+  install -d "$pkgdir"/usr/share/licenses/$pkgname
+  ln -s /usr/share/licenses/$pkgbase/LICENSE "$pkgdir"/usr/share/licenses/$pkgname/
 }

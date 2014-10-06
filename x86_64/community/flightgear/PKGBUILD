@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 115355 2014-07-09 10:05:46Z spupykin $
+# $Id: PKGBUILD 120239 2014-10-06 12:22:44Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: William Rea <sillywilly@gmail.com>
 # Contributor: Hans Janssen <hans@janserv.xs4all.nl>
 
 pkgname=flightgear
 pkgver=3.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="An open-source, multi-platform flight simulator"
 arch=(i686 x86_64)
-depends=('libxmu' 'libxi' 'zlib' 'openscenegraph' 'subversion' 'libxrandr' 'glu')
+depends=('libxmu' 'libxi' 'zlib' 'openscenegraph' 'subversion' 'libxrandr' 'glu' 'openal')
 makedepends=('boost' 'cmake' 'mesa' 'sharutils' 'simgear')
 license=("GPL")
 url="http://www.flightgear.org"

@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 220573 2014-08-23 00:20:09Z eric $
+# $Id: PKGBUILD 223937 2014-10-06 20:37:03Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=quodlibet
-pkgver=3.2.1
+pkgver=3.2.2
 pkgrel=1
 pkgdesc="An audio library tagger, manager and player"
 arch=('any')
@@ -30,7 +30,7 @@ replaces=('quodlibet-plugins')
 options=('!makeflags')
 install=quodlibet.install
 source=(https://bitbucket.org/lazka/quodlibet-files/raw/default/releases/${pkgname}-${pkgver}.tar.gz)
-sha1sums=('dc62270e6795f30bcd44261fb9999f98666992dc')
+sha1sums=('bad265479b39aefdbb2f52376808502ba8d11eec')
 
 prepare() {
   cd ${pkgname}-${pkgver}
