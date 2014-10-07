@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 221243 2014-09-09 06:56:13Z andrea $
+# $Id: PKGBUILD 223970 2014-10-07 07:03:52Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdevelop-python
 pkgver=1.7.0
 _pkgver=4.7.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Python language and documentation plugin for KDevelop"
 arch=('i686' 'x86_64')
 url="http://www.kdevelop.org/"

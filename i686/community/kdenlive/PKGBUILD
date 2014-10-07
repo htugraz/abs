@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 116052 2014-07-21 08:52:59Z spupykin $
+# $Id: PKGBUILD 120326 2014-10-07 07:02:01Z andrea $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Zuf <kontakt.zuf@gmail.com>
 # Contributor: Darwin Bautista <djclue917@gmail.com>
 
 pkgname=kdenlive
-pkgver=0.9.8
-pkgrel=2
+pkgver=0.9.10
+pkgrel=1
 pkgdesc="A non-linear video editor for Linux"
 arch=('i686' 'x86_64')
 # http://download.kde.org/stable/kdenlive/
@@ -21,7 +21,7 @@ optdepends=('recordmydesktop: screen capture'
 install=kdenlive.install
 options=('docs')
 source=(http://download.kde.org/stable/kdenlive/$pkgver/src/kdenlive-$pkgver.tar.bz2)
-md5sums=('6c28868598eecd878b9d041bb3900615')
+md5sums=('40d7ee8e388cb084f5eb1ad1596a14b2')
 
 build() {
   export LDFLAGS="$LDFLAGS -lX11"

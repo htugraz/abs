@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 222849 2014-09-23 13:57:42Z bpiotrowski $
+# $Id: PKGBUILD 223963 2014-10-07 07:03:39Z andrea $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=k3b
 pkgver=2.0.2
-pkgrel=10
+pkgrel=11
 pkgdesc="Feature-rich and easy to handle CD burning application"
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/k3b/"

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 106808 2014-03-08 10:42:51Z andrea $
+# $Id: PKGBUILD 120342 2014-10-07 07:02:22Z andrea $
 # Maintainer: Peter Lewis <plewis@aur.archlinux.org>
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Panagiotis Papadopoulos <pano_90 AT gmx DOT net>
 
 pkgname=rekonq
 pkgver=2.4.2
-pkgrel=2
+pkgrel=3
 pkgdesc='A WebKit based web browser for KDE'
 arch=('i686' 'x86_64')
 url='http://rekonq.kde.org/'

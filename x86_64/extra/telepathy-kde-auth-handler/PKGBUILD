@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 211763 2014-04-26 07:06:07Z andrea $
+# $Id: PKGBUILD 223986 2014-10-07 07:04:19Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=telepathy-kde-auth-handler
 _pkgname=ktp-auth-handler
 pkgver=0.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Provide UI/KWallet Integration For Passwords and SSL Errors on Account Connect"
 arch=('i686' 'x86_64')
 url="http://community.kde.org/Real-Time_Communication_and_Collaboration"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 100788 2013-11-10 20:07:06Z spupykin $
+# $Id: PKGBUILD 120323 2014-10-07 07:01:57Z andrea $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Eric Belanger <belanger@astro.umontreal.ca>
 # Contributor: Jason Taylor <jftaylor21@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=kdbg
 pkgver=2.5.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A gdb GUI for KDE"
 arch=('i686' 'x86_64')
 url="http://www.kdbg.org"

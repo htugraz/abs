@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 96780 2013-09-04 22:10:06Z andrea $
+# $Id: PKGBUILD 120318 2014-10-07 07:01:51Z andrea $
 # Maintainer: Peter Richard Lewis <plewis@aur.archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Emanuele Rossi <newdna1510@yahoo.it>
@@ -6,7 +6,7 @@
 
 pkgname=choqok
 pkgver=1.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A Twitter/identi.ca/laconica client for KDE"
 url='http://choqok.gnufolks.org/'
 license=('GPL')

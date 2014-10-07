@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 106386 2014-03-02 00:23:09Z arodseth $
+# $Id: PKGBUILD 120336 2014-10-07 07:02:15Z andrea $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=kshutdown
 pkgver=3.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Shutdown Utility for KDE'
 arch=('x86_64' 'i686')
 url='http://kshutdown.sourceforge.net/'

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 109333 2014-04-13 12:27:58Z andrea $
+# $Id: PKGBUILD 120319 2014-10-07 07:01:53Z andrea $
 # Maintainer: 
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=kaffeine
 pkgver=1.2.2
-pkgrel=3
+pkgrel=4
 pkgdesc='KDE media player'
 license=('GPL')
 arch=('i686' 'x86_64')

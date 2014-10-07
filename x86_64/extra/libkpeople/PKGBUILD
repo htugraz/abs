@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 211757 2014-04-26 06:59:43Z andrea $
+# $Id: PKGBUILD 223980 2014-10-07 07:04:10Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas <nqn1976 @ gmail.com>
 
 pkgname=libkpeople
 pkgver=0.2.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A contact aggregation library for KDE"
 arch=('i686' 'x86_64')
 url='http://community.kde.org/KTp/libkpeople'

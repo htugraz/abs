@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 222514 2014-09-20 19:15:49Z bpiotrowski $
+# $Id: PKGBUILD 224002 2014-10-07 15:33:55Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Arjan <arjan@archlinux.org>
 # contributor Sarah Hay <sarahhay@mb.sympatico.ca>
 
 pkgname=libdvdnav
-pkgver=5.0.0
+pkgver=5.0.1
 pkgrel=1
 pkgdesc="The library for xine-dvdnav plugin."
 arch=('i686' 'x86_64')

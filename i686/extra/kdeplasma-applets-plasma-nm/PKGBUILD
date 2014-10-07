@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 220564 2014-08-22 17:26:26Z andrea $
+# $Id: PKGBUILD 223967 2014-10-07 07:03:44Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas < nqn1976 @ gmail.com >
 
 pkgname=kdeplasma-applets-plasma-nm
 pkgver=0.9.3.4
-pkgrel=3
+pkgrel=4
 pkgdesc="Plasma applet written in QML for managing network connections"
 arch=('i686' 'x86_64')
 url="https://projects.kde.org/projects/kde/workspace/plasma-nm"
