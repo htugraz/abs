@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 211769 2014-04-26 07:06:56Z andrea $
+# $Id: PKGBUILD 224096 2014-10-08 16:35:32Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=telepathy-kde-contact-runner
 _pkgname=ktp-contact-runner
 pkgver=0.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="KRunner plugin for KDE Telepathy"
 arch=('i686' 'x86_64')
 url="http://community.kde.org/Real-Time_Communication_and_Collaboration"

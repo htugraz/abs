@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 223531 2014-09-27 14:25:08Z andrea $
+# $Id: PKGBUILD 224042 2014-10-08 14:17:00Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kiconthemes
-pkgver=5.2.0
-pkgrel=3
+pkgver=5.3.0
+pkgrel=1
 pkgdesc='KIconThemes'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kiconthemes'
@@ -12,7 +12,7 @@ depends=('qt5-svg' 'kconfigwidgets' 'kitemviews')
 makedepends=('extra-cmake-modules' 'python')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('e5ae06c83cff9707b16e0c8837fea25e')
+md5sums=('ceba533af5bfd92aa86419d6cb75bfc8')
 
 prepare() {
   mkdir -p build

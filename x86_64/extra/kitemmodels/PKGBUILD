@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 223443 2014-09-27 09:33:03Z andrea $
+# $Id: PKGBUILD 224082 2014-10-08 14:25:37Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kitemmodels
-pkgver=5.2.0
-pkgrel=2
+pkgver=5.3.0
+pkgrel=1
 pkgdesc='KItemModels'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kitemmodels'
@@ -12,7 +12,7 @@ depends=('qt5-base')
 makedepends=('extra-cmake-modules')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('fc5e1113c25263abe4246f0605271a5a')
+md5sums=('407c95ceb7da6d64646d14a92b2ae42a')
 
 prepare() {
   mkdir -p build

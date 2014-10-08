@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 211773 2014-04-26 07:07:27Z andrea $
+# $Id: PKGBUILD 224090 2014-10-08 16:31:38Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=telepathy-kde-filetransfer-handler
 _pkgname=ktp-filetransfer-handler
 pkgver=0.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Telepathy file transfer handler"
 arch=('i686' 'x86_64')
 url="http://community.kde.org/Real-Time_Communication_and_Collaboration"

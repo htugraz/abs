@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 220530 2014-08-22 10:18:01Z andrea $
+# $Id: PKGBUILD 224092 2014-10-08 16:31:58Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=telepathy-kde-call-ui
 _pkgname=ktp-call-ui
 pkgver=0.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Voice/Video Call UI for Telepathy"
 arch=('i686' 'x86_64')
 url="http://community.kde.org/Real-Time_Communication_and_Collaboration"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 222848 2014-09-23 13:57:41Z bpiotrowski $
+# $Id: PKGBUILD 224106 2014-10-08 16:59:21Z bpiotrowski $
 # Maintainer: Daniel Isenmann <daniel@archlinux.org>
 
 pkgname=gegl
 pkgver=0.2.0
-pkgrel=12
+pkgrel=13
 pkgdesc="Graph based image processing framework"
 arch=('i686' 'x86_64')
 url="http://www.gegl.org/"
