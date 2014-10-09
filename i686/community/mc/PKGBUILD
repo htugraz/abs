@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 108694 2014-04-01 12:32:09Z schuay $
+# $Id: PKGBUILD 120447 2014-10-09 14:10:52Z anatolik $
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 # Maintainer: schuay <jakob.gruber@gmail.com>
 
 pkgname=mc
-pkgver=4.8.12
+pkgver=4.8.13
 pkgrel=1
 pkgdesc="Midnight Commander is a text based filemanager/shell that emulates Norton Commander"
 arch=('i686' 'x86_64')
@@ -65,4 +65,4 @@ package() {
         -i "${pkgdir}/usr/lib/mc/extfs.d/s3+"
 }
 
-md5sums=('a64c426364bfaee56b628f6c0738aade')
+md5sums=('12a521a50da6a86852177591b9623d5e')

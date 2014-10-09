@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 216918 2014-07-15 19:44:25Z dreisner $
+# $Id: PKGBUILD 224144 2014-10-09 11:58:57Z dreisner $
 # Maintainer: Dave Reisner <dreisner@archlinux.org>
 # Contributor: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Douglas Soares de Andrade
 # Contributor: Roberto Alsina <ralsina@kde.org>
 
 pkgname=varnish
-pkgver=4.0.1
+pkgver=4.0.2
 pkgrel=1
 pkgdesc="High-performance HTTP accelerator"
 arch=('i686' 'x86_64')
@@ -19,7 +19,7 @@ install=$pkgname.install
 source=("http://repo.varnish-cache.org/source/$pkgname-$pkgver.tar.gz"
         varnish-vcl-reload
         varnish.service)
-md5sums=('53e272f448b2109ab370e03d794a243f'
+md5sums=('bf86f3630605c273b1bbadbbe518237a'
          '03196dee7fc68e75069393d52c370762'
          '699d118a069c2e63e49c81f275ce2658')
 

@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 113583 2014-06-26 08:54:46Z bpiotrowski $
+# $Id: PKGBUILD 120446 2014-10-09 13:14:00Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Chris Brannon <cmbrannon79@gmail.com>
 # Contributor: Geoffroy Carrier <geoffroy@archlinux.org>
 
 pkgbase=luarocks
 pkgname=('luarocks' 'luarocks5.1')
-pkgver=2.1.2
-pkgrel=2
+pkgver=2.2.0
+pkgrel=1
 arch=('any')
 url='http://luarocks.org/'
 license=('custom')
@@ -18,7 +18,7 @@ optdepends=('cvs: for fetching sources from CVS repositories'
             'cmake: for building rocks that use the cmake build system')
 options=('!makeflags')
 source=(http://luarocks.org/releases/$pkgname-$pkgver.tar.gz)
-md5sums=('0afc5fd6ee6ec6128fccda1bc559f41e')
+md5sums=('eb142e0f0891ea4243ef3b7582cfbbaa')
 
 prepare() {
   cp -r $pkgbase-$pkgver ${pkgbase}5.1-$pkgver
