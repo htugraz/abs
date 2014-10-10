@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 103651 2014-01-08 19:58:08Z bgyorgy $
+# $Id: PKGBUILD 120488 2014-10-10 16:19:44Z bpiotrowski $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Ali H. Caliskan <ali.h.caliskan AT gmail DOT com>
 # Contributor: Ryan Coyner <rcoyner@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=mixxx
 pkgver=1.11.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Free, open source software for digital DJ'ing."
 arch=('i686' 'x86_64')
 url='http://www.mixxx.org'

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 120170 2014-10-05 16:22:20Z bpiotrowski $
+# $Id: PKGBUILD 120498 2014-10-10 18:26:02Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Mateusz Herych
 # Contributor: Jaroslaw Swierczynski <swiergot@aur.archlinux.org>
 
 pkgname=kadu
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Qt-based Jabber/XMPP and Gadu-Gadu client'
 arch=('i686' 'x86_64')
 url='http://www.kadu.net/'

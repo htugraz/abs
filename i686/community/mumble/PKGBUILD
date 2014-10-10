@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 117713 2014-08-21 15:33:31Z svenstaro $
+# $Id: PKGBUILD 120490 2014-10-10 16:19:48Z bpiotrowski $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Lauri Niskanen <ape@ape3000.com>
 # Contributor: Sebastian.Salich@gmx.de
@@ -9,7 +9,7 @@
 
 pkgname=mumble
 pkgver=1.2.8
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 pkgdesc="A voice chat application similar to TeamSpeak"
 license=('BSD')
