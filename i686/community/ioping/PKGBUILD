@@ -1,17 +1,18 @@
-# $Id: PKGBUILD 103240 2013-12-30 22:20:06Z seblu $
+# $Id: PKGBUILD 120507 2014-10-11 01:56:17Z seblu $
 # Maintainer: Sébastien Luttringer
 # Contributor: Kovivchak Evgen <oneonfire@gmail.com>
 
 pkgname=ioping
-pkgver=0.8
+pkgver=0.9
 pkgrel=1
 pkgdesc='Simple disk I/0 latency measuring tool'
 arch=('i686' 'x86_64')
 license=('GPL3')
 url='http://ioping.googlecode.com'
 depends=('glibc')
-source=("http://ioping.googlecode.com/files/$pkgname-$pkgver.tar.gz")
-sha1sums=('7d4fe1414cdd5887c332426a8844e17eca5e5646')
+#source=("http://ioping.googlecode.com/files/$pkgname-$pkgver.tar.gz")
+source=("$pkgname-$pkgver.tar.gz::https://docs.google.com/uc?authuser=0&id=0B_PlDc2qaehFWWtLZ3Z3N1ltdm8&export=download")
+sha1sums=('658cbeb7e7dfc2dd67100fd260b653317ba604b6')
 
 build() {
   cd $pkgname-$pkgver
