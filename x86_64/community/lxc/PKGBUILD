@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 119601 2014-09-26 14:42:08Z spupykin $
+# $Id: PKGBUILD 120597 2014-10-13 09:40:50Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andrea Zucchelli <zukka77@gmail.com>
 # Contributor: Daniel Micay <danielmicay@gmail.com>
@@ -8,11 +8,11 @@
 pkgname=lxc
 pkgver=1.0.6
 epoch=1
-pkgrel=1
+pkgrel=2
 pkgdesc="Linux Containers"
 arch=('i686' 'x86_64')
 url="http://linuxcontainers.org"
-depends=('bash' 'perl' 'libseccomp' 'libcap' 'python' 'cgmanager')
+depends=('bash' 'perl' 'libseccomp' 'libcap' 'python' 'cgmanager' 'rsync')
 makedepends=('docbook2x' 'lua')
 optdepends=('arch-install-scripts: for archlinux template'
 	    'lua'
