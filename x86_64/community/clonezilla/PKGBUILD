@@ -1,16 +1,17 @@
-# $Id: PKGBUILD 113311 2014-06-17 19:15:17Z jsteel $
-# Maintainer: Jonathan Steel <jsteel at aur.archlinux.org>
+# $Id: PKGBUILD 120735 2014-10-15 18:23:10Z jsteel $
+# Maintainer: Jonathan Steel <jsteel at archlinux.org>
 # Contributor: M0Rf30
 
 pkgname=clonezilla
 pkgver=3.10.11
-pkgrel=2
+pkgrel=3
 pkgdesc="The Free and Open Source Software for Disk Imaging and Cloning"
 arch=('any')
 url="http://clonezilla.org"
-license=('GPL')
+license=('GPL2')
 depends=('drbl' 'partclone' 'ntfs-3g' 'partimage' 'pigz' 'sshfs' 'parted'
-         'gptfdisk' 'dosfstools')
+         'gptfdisk' 'dosfstools' 'gzip' 'bzip2' 'pbzip2' 'lbzip2' 'lrzip'
+         'xz' 'pixz')
 backup=('etc/drbl/drbl-ocs.conf')
 source=(http://free.nchc.org.tw/drbl-core/src/stable/$pkgname-$pkgver.tar.bz2
         usrbin.patch)

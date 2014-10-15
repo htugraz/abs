@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 215159 2014-06-14 19:17:07Z andyrtr $
+# $Id: PKGBUILD 224353 2014-10-15 02:27:57Z foutrelis $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Eric Belanger <eric@archlinux.org>
 # Contributor: William Rea <sillywilly@gmail.com>
@@ -6,7 +6,7 @@
 pkgname=fontforge
 _pkgver=2.0.20140101
 pkgver=${_pkgver##*.}
-pkgrel=3
+pkgrel=4
 pkgdesc='Outline and bitmap font editor'
 url='http://www.fontforge.org/'
 arch=('i686' 'x86_64')

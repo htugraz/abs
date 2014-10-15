@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 115343 2014-07-09 07:50:35Z kkeen $
+# $Id: PKGBUILD 120687 2014-10-15 02:27:56Z foutrelis $
 # Maintainer: Kyle Keen <keenerd at gmail dot com>
 pkgbase=python-pyzmq
 pkgname=(python2-pyzmq python-pyzmq)
 pkgver=14.3.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Python bindings for zeromq, written in Cython"
 arch=(i686 x86_64)
 url="http://www.zeromq.org/bindings:python"
