@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 119920 2014-10-01 06:14:10Z jlichtblau $
+# $Id: PKGBUILD 120780 2014-10-16 11:56:26Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Michele Schäuble <mschaeuble@swissonline.ch>
 
 pkgname=josm
 pkgver=7588
-pkgrel=1
+pkgrel=3
 pkgdesc="An editor for OpenStreetMap written in Java"
 arch=('any')
 url="http://josm.openstreetmap.de/"
 license=('GPL')
-depends=('java-runtime')
+depends=('java-runtime' 'libxtst' 'ttf-font')
 changelog=$pkgname.changelog
 backup=('etc/conf.d/josm')
 source=(http://josm.openstreetmap.de/$pkgname-tested.jar \

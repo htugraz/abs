@@ -1,62 +1,52 @@
-# $Id: PKGBUILD 112249 2014-05-30 13:27:43Z spupykin $
+# $Id: PKGBUILD 120832 2014-10-16 17:13:51Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=remmina
-pkgver=1.0.0
-pkgrel=12
+pkgver=1.1.1
+pkgrel=2
 pkgdesc="remote desktop client written in GTK+"
 arch=(i686 x86_64)
-url="http://remmina.sourceforge.net/"
+url="http://freerdp.github.io/Remmina/"
 license=('GPL')
 depends=('gtk3' 'zlib' 'libjpeg' 'libssh' 'libunique' 'avahi' 'vte3' 'libgcrypt' 'libxdmcp')
 makedepends=('intltool' 'pkgconfig' 'cmake' 'libgnome-keyring'
-	     'avahi' 'libxkbfile' 'freerdp' 'telepathy-glib')
+             'avahi' 'libxkbfile' 'freerdp' 'telepathy-glib'
+             'libvncserver')
 optdepends=('libxkbfile'
-	    'freerdp'
-	    'telepathy-glib'
-	    'gnome-keyring'
-	    'nxproxy')
+            'freerdp'
+            'telepathy-glib'
+            'gnome-keyring'
+            'nxproxy'
+            'xorg-server-xephyr: XDMCP support'
+            'libvncserver')
 replaces=('remmina-plugins')
 provides=('remmina-plugins')
 install=remmina.install
-source=("https://github.com/downloads/FreeRDP/Remmina/Remmina-$pkgver.tar.gz"
-	'https://github.com/FreeRDP/Remmina/commit/569d9bb7.patch'
-	'https://github.com/FreeRDP/Remmina/commit/f7d1038b.patch'
-	'https://github.com/FreeRDP/Remmina/commit/1aebfc02.patch'
-	'https://github.com/FreeRDP/Remmina/commit/3ebdd6e7.patch'
-	'https://github.com/FreeRDP/Remmina/commit/97c2af8c.patch'
-	'https://github.com/FreeRDP/Remmina/commit/84327f81.patch'
-	'https://github.com/FreeRDP/Remmina/commit/c1ef3a16.patch'
-	'https://github.com/FreeRDP/Remmina/commit/6ee20289.patch'
-	'https://github.com/FreeRDP/Remmina/commit/b2277827.patch'
-	'https://github.com/FreeRDP/Remmina/commit/cb0b209b.patch')
-md5sums=('701c540acaab961bc3adf130a2ddb8b1'
-         'befda121d469a3fe712d905de8563f70'
-         '436d77279b86960e0588cee935173214'
-         '0612d5d0c1f29424b68e2f5d1b162fb1'
-         '7288a5492e92eebba838e673cd54ad5f'
-         '0d4231a14713b4db29a1233b632c9ee3'
-         'd77ef61a7ff5c3d219f01bdfd907c6be'
-         '1bf8ecce08dab36b33d646c4ade6024b'
-         '8c78241ac4649f34d7b8db22f9364cc7'
-         'f849143485c9cac71e3b943fa40d5e09'
-         '30c257020537e3a0fcce91c103e9f5f8')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/FreeRDP/Remmina/archive/v1.1.1.tar.gz"
+	"vte2.91.patch")
+md5sums=('481dd96ebf7b14e4fd4df8648040b725'
+         '5d8e0245ed23b856b35b02bf1a69c0a4')
 
-build() {
-  cd ${srcdir}/FreeRDP-Remmina-*/
-
-  for i in ${source[@]}; do
-    if [ ${i:(-6)} == ".patch" ]; then
-      patch -p1 -i "${srcdir}/${i:(-14)}"
+prepare() {
+  cd ${srcdir}/Remmina-$pkgver/
+  for i in "${source[@]}"; do
+    if [[ $i == *.patch ]]; then
+      patch -F100 -p1 -i "${srcdir}/${i}"
     fi
   done
+}
 
-  export LDFLAGS="-lX11 -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lpthread -lgnutls"
-  cmake -DCMAKE_INSTALL_PREFIX=/usr -DWITH_APPINDICATOR=OFF .
+build() {
+  cd ${srcdir}/Remmina-$pkgver/
+  cmake \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=/usr/lib \
+    -DWITH_APPINDICATOR=OFF .
   make
 }
 
 package() {
-  cd ${srcdir}/FreeRDP-Remmina-*/
+  cd ${srcdir}/Remmina-$pkgver/
   make DESTDIR=${pkgdir} install
+  rm -rf $pkgdir/build
 }

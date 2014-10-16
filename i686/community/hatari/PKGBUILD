@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 93259 2013-06-30 06:28:12Z lcarlier $
+# $Id: PKGBUILD 120759 2014-10-16 06:00:18Z lcarlier $
 # Maintainer: Shinlun Hsieh <yngwiexx@yahoo.com.tw>
 
 pkgname=hatari
-pkgver=1.7.0
+pkgver=1.8.0
 pkgrel=1
 pkgdesc='An Atari ST and STE emulator'
 arch=('i686' 'x86_64')
 url='http://hatari.sourceforge.net/'
 license=('GPL')
-depends=('sdl' 'libpng')
+depends=('sdl' 'libpng' 'portaudio')
 makedepends=('cmake')
 source=("http://download.tuxfamily.org/${pkgname}/${pkgver}/${pkgname}-${pkgver}.tar.bz2")
-md5sums=('67b16ec0a0994aa6a935b193254118e0')
+md5sums=('f78cf673debbbe2d523415ab605550e1')
 
 build() {
   cd ${pkgname}-${pkgver}

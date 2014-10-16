@@ -1,21 +1,21 @@
-# $Id: PKGBUILD 210542 2014-04-14 20:07:39Z jgc $
+# $Id: PKGBUILD 224495 2014-10-16 11:57:41Z jgc $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=vino
-pkgver=3.12.0
+pkgver=3.14.0
 pkgrel=1
 pkgdesc="a VNC server for the GNOME desktop"
 arch=(i686 x86_64)
 license=(GPL)
 depends=(libnotify libxtst libsm telepathy-glib gtk3 libsecret avahi desktop-file-utils gnutls)
-makedepends=(intltool networkmanager gnome-common)
+makedepends=(intltool networkmanager)
 groups=(gnome)
 url="http://www.gnome.org"
 options=(!emptydirs)
 install=vino.install
 source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver:0:4}/$pkgname-$pkgver.tar.xz)
-sha256sums=('86c9d8b60d79982e4488815db0d441c398e011ad8262659789afecc97a01ca5b')
+sha256sums=('8faf864009e697e8652e4833150eaaba3da6c5a85f9f95886a5b76b00e5a9c1b')
 
 build() {
   cd $pkgname-$pkgver
