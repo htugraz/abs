@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 213520 2014-05-24 00:27:35Z heftig $
+# $Id: PKGBUILD 224549 2014-10-16 11:59:22Z jgc $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-sound-recorder
-pkgver=3.12.2
+pkgver=3.14.0.1
 pkgrel=1
 pkgdesc="A utility to make simple audio recording from your GNOME desktop"
-arch=(i686 x86_64)
+arch=(any)
 url="https://wiki.gnome.org/Design/Apps/SoundRecorder"
 license=(GPL2)
 depends=(gtk3 gjs gst-plugins-good gst-plugins-base)
-makedepends=(intltool gobject-introspection)
+makedepends=(intltool gobject-introspection python2)
 install=gnome-sound-recorder.install
 source=(http://download.gnome.org/sources/$pkgname/${pkgver:0:4}/$pkgname-$pkgver.tar.xz)
-sha256sums=('6b7f1e3fc5ed8452ca880a492812f8662ca82276195657f8c6516ee2979d878e')
+sha256sums=('002b3e24fc88f28ecec7ece0d8ce59e7489f3c94da4ba5d09311290865e56486')
 
 build() {
   cd $pkgname-$pkgver
