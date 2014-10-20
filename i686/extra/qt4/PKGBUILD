@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 211742 2014-04-25 11:11:02Z andrea $
+# $Id: PKGBUILD 225127 2014-10-20 17:57:57Z andyrtr $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=qt4
 pkgver=4.8.6
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url='http://qt-project.org/'
 license=('GPL3' 'LGPL' 'FDL' 'custom')

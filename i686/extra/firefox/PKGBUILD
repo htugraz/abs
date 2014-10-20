@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 224627 2014-10-16 12:15:56Z jgc $
+# $Id: PKGBUILD 225118 2014-10-20 17:57:44Z andyrtr $
 # Maintainer : Ionut Biru <ibiru@archlinux.org>
 # Contributor: Jakub Schmidtke <sjakub@gmail.com>
 
 pkgname=firefox
 pkgver=33.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Standalone web browser from mozilla.org"
 arch=('i686' 'x86_64')
 license=('MPL' 'GPL' 'LGPL')

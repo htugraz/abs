@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 223980 2014-10-07 07:04:10Z andrea $
+# $Id: PKGBUILD 224890 2014-10-20 07:59:33Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas <nqn1976 @ gmail.com>
 
 pkgname=libkpeople
-pkgver=0.2.2
-pkgrel=2
+pkgver=0.3.0
+pkgrel=1
 pkgdesc="A contact aggregation library for KDE"
 arch=('i686' 'x86_64')
 url='http://community.kde.org/KTp/libkpeople'
@@ -12,7 +12,7 @@ license=('LGPL')
 depends=('kdepimlibs')
 makedepends=('cmake' 'automoc4' 'boost')
 source=("http://download.kde.org/unstable/${pkgname}/${pkgver}/src/${pkgname}-${pkgver}.tar.bz2")
-sha1sums=('67610bbd4232918fb9168849d58f051e9600560a')
+sha1sums=('2e0aa42d3897ef7ec6c2cad30fe374879b96b36e')
 
 prepare() {
   mkdir build

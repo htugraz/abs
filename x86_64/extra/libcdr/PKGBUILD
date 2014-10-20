@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 215146 2014-06-14 19:16:52Z andyrtr $
+# $Id: PKGBUILD 225120 2014-10-20 17:57:46Z andyrtr $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Contributor: megadriver <megadriver at gmx dot com>
 # Contributor: Luca Bennati <lucak3 AT gmail DOT com>
 
 pkgname=libcdr
 pkgver=0.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="CorelDraw file format importer library for LibreOffice"
 arch=('i686' 'x86_64')
 url="http://www.freedesktop.org/wiki/Software/libcdr/"

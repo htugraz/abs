@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 223215 2014-09-26 17:20:49Z andrea $
+# $Id: PKGBUILD 224918 2014-10-20 08:04:52Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-analitza
-pkgver=4.14.1
+pkgver=4.14.2
 pkgrel=1
 pkgdesc="A library to add mathematical features to your program"
 url="https://projects.kde.org/projects/kde/kdeedu/analitza"
@@ -12,7 +12,7 @@ groups=('kde' 'kdeedu')
 depends=('kdebase-runtime' 'glu')
 makedepends=('cmake' 'automoc4')
 source=("http://download.kde.org/stable/${pkgver}/src/analitza-${pkgver}.tar.xz")
-sha1sums=('d506dd9884f3b6e9cd9b6f640eae4fcadb9ef6a3')
+sha1sums=('6f6f1867158b2a7c903e5a2cc406cff533b5e35e')
 
 prepare() {
   mkdir build
