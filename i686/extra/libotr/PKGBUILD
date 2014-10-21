@@ -1,25 +1,18 @@
-# $Id: PKGBUILD 203583 2014-01-13 17:12:14Z andyrtr $
+# $Id: PKGBUILD 225156 2014-10-21 21:05:09Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 # Contributor: Bug <Bug2000@gmail.com>
 
 pkgname=libotr
-pkgver=4.0.0
-pkgrel=5
+pkgver=4.1.0
+pkgrel=1
 pkgdesc='Off-the-Record Messaging Library and Toolkit'
-url='http://www.cypherpunks.ca/otr/'
+url='http://otr.cypherpunks.ca/'
 license=('GPL' 'LGPL')
 arch=('i686' 'x86_64')
 depends=('libgcrypt')
-source=("http://www.cypherpunks.ca/otr/${pkgname}-${pkgver}.tar.gz"
-        'kopete.patch')
-sha1sums=('8865e9011b8674290837afcf7caf90c492ae09cc'
-          '55988c4f11b6852491a758ea7a5b7071e8959c55')
-
-prepare() {
-	cd "${srcdir}/${pkgname}-${pkgver}"
-	patch -p1 -i ../kopete.patch # FS#38326
-}
+source=("http://otr.cypherpunks.ca/${pkgname}-${pkgver}.tar.gz"{,.asc})
+sha1sums=('df30bc87a7a8f37678dd679d17fa1f9638ea247e' 'SKIP')
 
 build() {
 	cd "${srcdir}/${pkgname}-${pkgver}"

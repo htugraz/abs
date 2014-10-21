@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 120387 2014-10-08 07:59:47Z alucryd $
+# $Id: PKGBUILD 121136 2014-10-21 09:44:53Z alucryd $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor : sebikul <sebikul@gmail.com>
 # Contributor : Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 
 pkgname=geary
 pkgver=0.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc='A lightweight email client for the GNOME desktop'
 arch=('i686' 'x86_64')
 url='http://www.yorba.org/projects/geary/'
