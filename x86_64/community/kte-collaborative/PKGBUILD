@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 120659 2014-10-14 16:38:17Z andrea $
+# $Id: PKGBUILD 121229 2014-10-22 16:26:10Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas <nqn1976 @ gmail.com>
 
 pkgname=kte-collaborative
 pkgver=0.2.0.git4a0c637
-pkgrel=1
+pkgrel=2
 pkgdesc="A plugin for KTextEditor which allows to edit text documents collaboratively"
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/playground/network/kte-collaborative'

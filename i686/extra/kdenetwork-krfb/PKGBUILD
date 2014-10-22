@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 225021 2014-10-20 08:21:06Z andrea $
+# $Id: PKGBUILD 225187 2014-10-22 16:16:11Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-krfb
 pkgver=4.14.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Desktop Sharing'
 url='http://www.kde.org/applications/system/krfb'
 arch=('i686' 'x86_64')

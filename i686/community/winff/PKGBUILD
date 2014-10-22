@@ -1,16 +1,17 @@
-# $Id: PKGBUILD 105386 2014-02-06 11:25:14Z arodseth $
+# $Id: PKGBUILD 121217 2014-10-22 13:27:37Z arodseth $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: yugrotavele <yugrotavele at archlinux dot us>
 # Contributor: Paolo Stivanin <admin AT polslinux DOT it>
 
 pkgname=winff
 pkgver=1.5.3
-pkgrel=1
+pkgrel=2
 pkgdesc='GUI for ffmpeg'
 url='http://code.google.com/p/winff/'
 license=('GPL3')
 arch=('x86_64' 'i686')
-depends=('ffmpeg' 'gtk2' 'xterm' 'hicolor-icon-theme')
+depends=('ffmpeg' 'gtk2' 'hicolor-icon-theme')
+optdepends=('xterm: terminal emulator')
 makedepends=('lazarus' 'lazarus-gtk2' 'gendesk' 'tar')
 install='winff.install'
 source=("$pkgname-$pkgver.tar.gz::https://docs.google.com/uc?authuser=0&id=0B8HoAIi30ZDkMHlvVkVtNHJnLVE&export=download")
