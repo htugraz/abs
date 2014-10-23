@@ -1,13 +1,14 @@
-# $Id: PKGBUILD 224636 2014-10-16 13:13:36Z pierre $
+# $Id: PKGBUILD 225238 2014-10-23 16:26:47Z pierre $
 # Maintainer: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=logrotate
 pkgver=3.8.8
-pkgrel=1
+pkgrel=2
 pkgdesc="Rotates system logs automatically"
 arch=('i686' 'x86_64')
 url="https://fedorahosted.org/logrotate/"
 license=('GPL')
+groups=('base')
 depends=('popt' 'gzip' 'acl')
 backup=('etc/logrotate.conf')
 source=("https://fedorahosted.org/releases/l/o/logrotate/logrotate-${pkgver}.tar.gz"
