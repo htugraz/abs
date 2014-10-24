@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 224027 2014-10-08 14:14:43Z andrea $
+# $Id: PKGBUILD 225272 2014-10-24 18:16:41Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kauth
 pkgver=5.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc='KAuth'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kauth'
@@ -25,6 +25,7 @@ build() {
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_INSTALL_DIR=lib \
+    -DLIBEXEC_INSTALL_DIR=lib \
     -DKDE_INSTALL_USE_QT_SYS_PATHS=ON \
     -DQT_PLUGIN_INSTALL_DIR=lib/qt/plugins \
     -DSYSCONF_INSTALL_DIR=/etc \

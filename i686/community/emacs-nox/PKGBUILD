@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 121127 2014-10-21 08:04:48Z jlichtblau $
+# $Id: PKGBUILD 121354 2014-10-24 16:38:28Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Chris Brannon <cmbrannon@cox.net>
 
 pkgname=emacs-nox
 pkgver=24.4
-pkgrel=1
+pkgrel=2
 pkgdesc="The extensible, customizable, self-documenting real-time display editor, without X11 support"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/emacs/emacs.html"
 license=('GPL3')
-depends=('dbus' 'ncurses' 'perl')
+depends=('dbus' 'ncurses' 'perl' 'libxml2')
 provides=('emacs')
 conflicts=('emacs')
 changelog=$pkgname.changelog
