@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 116648 2014-07-31 16:55:55Z bgyorgy $
+# $Id: PKGBUILD 121374 2014-10-25 04:05:51Z foutrelis $
 # Maintainer: Alexandre Filgueira (faidoc) <alexfilgueira@antergos.com>
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=cinnamon-settings-daemon
 pkgver=2.2.4
-pkgrel=2
+pkgrel=3
 pkgdesc="The Cinnamon Settings daemon"
 arch=('i686' 'x86_64')
 license=('GPL')

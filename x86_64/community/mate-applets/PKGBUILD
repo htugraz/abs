@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 119830 2014-09-29 19:48:30Z flexiondotorg $
+# $Id: PKGBUILD 121375 2014-10-25 04:05:52Z foutrelis $
 # Maintainer : Martin Wimpress <code@flexion.org>
 
 pkgname=mate-applets
 pkgver=1.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Applets for MATE panel"
 arch=('i686' 'x86_64')
 url="http://mate-desktop.org"
