@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 224719 2014-10-18 08:51:59Z andrea $
+# $Id: PKGBUILD 225381 2014-10-26 11:56:43Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgname=ksysguard
 pkgver=5.1.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc='KSysGuard'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/ksysguard'

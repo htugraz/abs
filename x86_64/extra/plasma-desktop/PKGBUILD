@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 224776 2014-10-18 15:23:31Z andrea $
+# $Id: PKGBUILD 225375 2014-10-26 11:43:11Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgname=plasma-desktop
 pkgver=5.1.0.1
-pkgrel=2
+pkgrel=3
 pkgdesc='KDE Plasma Desktop'
 arch=('i686' 'x86_64')
 url='https://www.kde.org/workspaces/plasmadesktop/'
@@ -29,6 +29,7 @@ build() {
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_INSTALL_DIR=lib \
+    -DLIBEXEC_INSTALL_DIR=lib \
     -DKDE_INSTALL_USE_QT_SYS_PATHS=ON \
     -DSYSCONF_INSTALL_DIR=/etc \
     -DBUILD_TESTING=OFF

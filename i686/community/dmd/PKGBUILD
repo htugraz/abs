@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 117543 2014-08-18 21:39:47Z dicebot $
+# $Id: PKGBUILD 121421 2014-10-26 09:35:18Z dicebot $
 # Maintainer: Mihails Strasunse <public@dicebot.lv>
 # Contributor: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Chris Brannon <cmbrannon79@gmail.com>
@@ -9,7 +9,7 @@
 pkgname=('dmd' 'libphobos-devel' 'libphobos')
 groups=('dlang' 'dlang-dmd')
 pkgbase=dmd
-pkgver=2.066.0
+pkgver=2.066.1
 pkgrel=1
 arch=('i686' 'x86_64')
 url="http://www.dlang.org"

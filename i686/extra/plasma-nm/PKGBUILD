@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 224766 2014-10-18 11:44:55Z andrea $
+# $Id: PKGBUILD 225383 2014-10-26 11:57:08Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=plasma-nm
 pkgver=5.1.0.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Plasma applet written in QML for managing network connections'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/playground/network/plasma-nm'
