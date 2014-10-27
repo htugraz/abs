@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 121317 2014-10-23 17:48:57Z bpiotrowski $
+# $Id: PKGBUILD 121463 2014-10-27 09:37:30Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: naelstrof <naelstrof@gmail.com>
 
 pkgname=slop
-pkgver=3.1.9
+pkgver=3.1.10
 pkgrel=1
 pkgdesc='Utility to query the user for a selection and print the region to stdout'
 arch=('i686' 'x86_64')
@@ -12,7 +12,7 @@ license=('GPL3')
 depends=('libxext' 'libx11' 'gcc-libs')
 makedepends=('cmake')
 source=($url/archive/v$pkgver.tar.gz)
-md5sums=('92b0d2e511d0c7de6be513b3d29af480')
+md5sums=('d2e136bba6cc500bf87aa172bea57378')
 
 build() {
   cd $pkgname-$pkgver
