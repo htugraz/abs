@@ -1,18 +1,19 @@
-# $Id: PKGBUILD 225371 2014-10-26 11:30:40Z andrea $
+# $Id: PKGBUILD 225413 2014-10-28 18:56:43Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 # Contributor: Alexey D. <lq07829icatm at rambler.ru>
 
 pkgname=plasma-workspace
 pkgver=5.1.0.1
-pkgrel=5
+pkgrel=6
 pkgdesc='KDE Plasma Workspace'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/plasma-workspace'
 license=('LGPL')
 depends=('knewstuff' 'baloo-frameworks' 'kjsembed' 'knotifyconfig' 'libxcursor'
          'libksysguard' 'libkscreen-frameworks' 'ktexteditor' 'libqalculate'
-         'qt5-tools' 'kded' 'kde-cli-tools' 'kio-extras' 'milou' 'breeze')
+         'qt5-tools' 'kded' 'kde-cli-tools' 'kio-extras' 'milou' 'breeze'
+         'xorg-xrdb' 'xorg-xsetroot' 'xorg-xmessage')
 makedepends=('extra-cmake-modules' 'kdoctools' 'kwin' 'gpsd')
 optdepends=('plasma-workspace-wallpapers: additional wallpapers'
             'kwin: KDE Window Manager'

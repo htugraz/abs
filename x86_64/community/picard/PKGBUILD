@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 121119 2014-10-21 03:30:05Z bisson $
+# $Id: PKGBUILD 121515 2014-10-28 08:33:57Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 # Contributor: sysrq
 
 pkgname=picard
 pkgver=1.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Official MusicBrainz tagger'
 url='http://picard.musicbrainz.org/'
 license=('GPL')
 arch=('i686' 'x86_64')
 depends=('python2-pyqt' 'mutagen')
-optdepends=('libdiscid: CD lookup'
+optdepends=('python2-discid: CD lookup'
             'chromaprint: fingerprinting')
 source=("http://ftp.musicbrainz.org/pub/musicbrainz/${pkgname}/${pkgname}-${pkgver}.tar.gz")
 sha1sums=('dade79ecd7a158a89ecd7c59aa1ab9744071b20c')

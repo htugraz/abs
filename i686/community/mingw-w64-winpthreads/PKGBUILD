@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 118161 2014-09-01 17:20:54Z spupykin $
+# $Id: PKGBUILD 121523 2014-10-28 10:21:30Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: rubenvb vanboxem <dottie> ruben <attie> gmail <dottie> com
 
 _targets="i686-w64-mingw32 x86_64-w64-mingw32"
 
 pkgname=mingw-w64-winpthreads
-pkgver=3.2.0
+pkgver=3.3.0
 pkgrel=1
 pkgdesc='MinGW-w64 winpthreads library'
 arch=('any')
@@ -18,7 +18,7 @@ conflicts=('mingw-w64-headers-bootstrap')
 replaces=('mingw-w64-headers-bootstrap')
 options=('!strip' '!buildflags' 'staticlibs' '!emptydirs')
 source=(http://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/mingw-w64-v${pkgver}.tar.bz2)
-md5sums=('cae9125a531f346afb49c4efea391c53')
+md5sums=('3c56901ca7be60beba6d58caff168240')
 
 build() {
   for _target in ${_targets}; do
