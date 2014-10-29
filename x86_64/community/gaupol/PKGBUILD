@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 113466 2014-06-23 17:40:57Z foutrelis $
+# $Id: PKGBUILD 121538 2014-10-29 01:10:46Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
@@ -6,7 +6,7 @@
 # Contributor: Sebastien Piccand <sebcactus gmail com>
 
 pkgname=gaupol
-pkgver=0.26
+pkgver=0.27
 pkgrel=1
 pkgdesc="An editor for text-based subtitles"
 arch=('any')
@@ -24,8 +24,8 @@ optdepends=('python-pyenchant: spell-checking'
             'gst-plugins-ugly: extra media codecs'
             'gst-libav: extra media codecs')
 install=gaupol.install
-source=(http://download.gna.org/$pkgname/0.26/$pkgname-$pkgver.tar.xz)
-sha256sums=('fd9ca00166c643b6c955c591b5e71f1891d2d4f9224ad477999da6dcd5363d0a')
+source=(http://download.gna.org/$pkgname/0.27/$pkgname-$pkgver.tar.xz)
+sha256sums=('645acdeed823e29570f110e1312f883a89cbbd02c7c71b0c97996d2e4e51c18c')
 
 package() {
   cd "$srcdir/$pkgname-$pkgver"

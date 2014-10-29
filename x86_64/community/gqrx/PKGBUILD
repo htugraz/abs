@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 118543 2014-09-07 08:30:12Z foutrelis $
+# $Id: PKGBUILD 121568 2014-10-29 13:35:44Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Dominik Heidler <dheidler@gmail.com>
 
 pkgname=gqrx
 pkgver=2.3.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Interactive SDR receiver waterfall for many devices."
 arch=('i686' 'x86_64')
 url="http://gqrx.dk/"

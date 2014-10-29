@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 224024 2014-10-08 14:14:16Z andrea $
+# $Id: PKGBUILD 225429 2014-10-29 14:09:25Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kcoreaddons
 pkgver=5.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc='KCoreAddons'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kcoreaddons'
@@ -25,6 +25,7 @@ build() {
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_INSTALL_DIR=lib \
+    -D_KDE4_DEFAULT_HOME_POSTFIX=4 \
     -DKDE_INSTALL_USE_QT_SYS_PATHS=ON \
     -DBUILD_TESTING=OFF
   make
