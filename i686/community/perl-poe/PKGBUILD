@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 116703 2014-08-01 11:52:25Z spupykin $
+# $Id: PKGBUILD 121977 2014-11-05 18:32:16Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-poe
-pkgver=1.364
+pkgver=1.366
 pkgrel=1
 pkgdesc="portable multitasking and networking framework for Perl "
 arch=(any)
@@ -12,7 +12,7 @@ license=('GPL' 'PerlArtistic')
 depends=('perl>=5.10.0' 'perl-io-tty>=1.08' 'perl-io-pipely')
 options=('!emptydirs')
 source=(http://search.cpan.org/CPAN/authors/id/R/RC/RCAPUTO/POE-$pkgver.tar.gz)
-md5sums=('eb83124faeac63d2bf86b0a7983299b4')
+md5sums=('0cbbc3fadf5787cd91a5005128fd39f0')
 
 build() {
   cd  $srcdir/POE-$pkgver

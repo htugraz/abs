@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 121500 2014-10-27 20:50:01Z spupykin $
+# $Id: PKGBUILD 121954 2014-11-05 14:32:30Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Norberto Lopes <shelika@mail.telepac.pt>
 
 pkgname=wanderlust
 #pkgver=2.15.9
-pkgver=20141027
+pkgver=20141105
 pkgrel=1
 pkgdesc="Mail/News reader supporting IMAP4rev1 for emacs."
 arch=(any)
@@ -16,7 +16,7 @@ makedepends=('cvs' 'bbdb')
 optdepends=('bbdb: contact management utility')
 install=wanderlust.install
 source=("wanderlust-$pkgver.zip::https://github.com/wanderlust/wanderlust/zipball/master")
-md5sums=('5b8e53eaf44ee96938fc3d1e898547d4')
+md5sums=('b061f728e5e53fc6f07f97ead5a77dff')
 
 package() {
   cd $srcdir/wanderlust-wanderlust-*
