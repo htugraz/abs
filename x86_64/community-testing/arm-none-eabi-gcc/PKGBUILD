@@ -6,7 +6,7 @@ pkgname=$_target-gcc
 pkgver=4.9.2
 _islver=0.12.2
 _cloogver=0.18.1
-pkgrel=1
+pkgrel=3
 #_snapshot=4.9-20140903
 pkgdesc='The GNU Compiler Collection - cross compiler for ARM EABI (bare-metal) target'
 arch=(i686 x86_64)
@@ -51,9 +51,8 @@ prepare() {
 build() {
   cd gcc-build
 
-  export CFLAGS_FOR_TARGET='-O2 -g -pipe'
-  export CXXFLAGS_FOR_TARGET='-O2 -g -pipe'
-
+  export CFLAGS_FOR_TARGET='-g -Os -ffunction-sections -fdata-sections -fno-exceptions'
+  export CXXFLAGS_FOR_TARGET='-g -Os -ffunction-sections -fdata-sections -fno-exceptions'
   $srcdir/$_basedir/configure \
     --target=$_target \
     --prefix=/usr \
@@ -99,8 +98,11 @@ package() {
 
   make DESTDIR="$pkgdir" install -j1
 
-  # Strip host objects but do not touch target one
-  find "$pkgdir"/usr/{bin,lib} -executable -type f -exec /usr/bin/strip --strip-debug '{}' \;
+  # strip target binaries
+  find "$pkgdir"/usr/lib/gcc/$_target/ "$pkgdir"/usr/$_target/lib -type f -and \( -name \*.a -or -name \*.o \) -exec $_target-objcopy -R .comment -R .note -R .debug_info -R .debug_aranges -R .debug_pubnames -R .debug_pubtypes -R .debug_abbrev -R .debug_line -R .debug_str -R .debug_ranges -R .debug_loc '{}' \;
+
+  # strip host binaries
+  find "$pkgdir"/usr/bin/ "$pkgdir"/usr/lib/gcc/$_target/ -type f -and \( -executable \) -exec strip '{}' \;
 
   # Remove files that conflict with host gcc package
   rm -r "$pkgdir"/usr/share/man/man7

@@ -1,19 +1,19 @@
-# $Id: PKGBUILD 117517 2014-08-18 11:58:33Z thestinger $
+# $Id: PKGBUILD 122063 2014-11-06 18:35:37Z thestinger $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 # Contributor: Nicolas Pouillard <nicolas.pouillard@gmail.com>
 # Contributor: Rorschach <r0rschach@lavabit.com>
 
 pkgname=torsocks
 pkgver=2.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Wrapper to safely torify applications'
 arch=('i686' 'x86_64')
 url='http://code.google.com/p/torsocks'
 license=('GPL2')
 depends=('tor')
 makedepends=('git')
-backup=("etc/${pkgname}.conf")
-source=("git://git.torproject.org/torsocks.git#tag=1.3")
+backup=("etc/tor/${pkgname}.conf")
+source=("git://git.torproject.org/torsocks.git#tag=v$pkgver")
 md5sums=('SKIP')
 
 build() {
