@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 211544 2014-04-19 19:57:26Z jgc $
+# $Id: PKGBUILD 225729 2014-11-07 13:49:53Z jgc $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Silvio Knizek (killermoehre)
 
 pkgname=gnome-disk-utility
 pkgver=3.12.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Disk Management Utility for GNOME"
 arch=(i686 x86_64)
 license=(GPL)
 url="http://www.gnome.org"
 groups=(gnome)
-depends=(udisks2 gtk3 libsecret libpwquality libcanberra libdvdread libnotify desktop-file-utils gnome-icon-theme-symbolic)
+depends=(udisks2 gtk3 libsecret libpwquality libcanberra libdvdread libnotify desktop-file-utils parted)
 makedepends=(intltool docbook-xsl gnome-settings-daemon)
 options=('!emptydirs')
 install=gnome-disk-utility.install

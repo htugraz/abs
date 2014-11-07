@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 224175 2014-10-10 16:19:27Z bpiotrowski $
+# $Id: PKGBUILD 225734 2014-11-07 18:02:58Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Thomas S Hatch <thatch45@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=('protobuf' 'python2-protobuf')
 pkgver=2.6.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Protocol Buffers - Google's data interchange format"
 arch=('i686' 'x86_64')
 url='https://github.com/google/protobuf/'
@@ -31,6 +31,9 @@ package_protobuf() {
   cd $pkgbase-$pkgver
   make DESTDIR="$pkgdir" install
   install -Dm644 COPYING.txt "$pkgdir"/usr/share/licenses/$pkgname/LICENSE
+
+  install -Dm644 editors/protobuf-mode.el \
+    "$pkgdir"/usr/share/emacs/site-lisp/protobuf-mode.el
 }
 
 package_python2-protobuf() {
