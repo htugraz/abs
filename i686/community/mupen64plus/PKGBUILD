@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 118552 2014-09-07 08:30:25Z foutrelis $
+# $Id: PKGBUILD 122208 2014-11-08 05:52:16Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 # Contributor: Laurent Carlier <lordheavym@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=mupen64plus
 pkgver=2.0
-pkgrel=3
+pkgrel=4
 pkgdesc='Nintendo64 Emulator'
 arch=('i686' 'x86_64')
 url='http://code.google.com/p/mupen64plus/'

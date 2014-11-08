@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 121284 2014-10-23 11:09:27Z svenstaro $
+# $Id: PKGBUILD 122182 2014-11-08 05:51:39Z foutrelis $
 # Contributor: John Sowiak <john@archlinux.org>
 # Contributor: tobias <tobias@archlinux.org>
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
@@ -17,7 +17,7 @@ _gittag=v2.72b
 pkgname=blender
 pkgver=2.72b
 [[ -n $_gitcommit ]] && pkgver=${pkgver}.git1.${_gitcommit}
-pkgrel=1
+pkgrel=2
 epoch=15
 pkgdesc="A fully integrated 3D graphics creation suite"
 arch=('i686' 'x86_64')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 118545 2014-09-07 08:30:15Z foutrelis $
+# $Id: PKGBUILD 122202 2014-11-08 05:52:07Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: GONG Chen <chen dot sst at gmail dot com>
 # Contributor: 網軍總司令
 
 pkgname=librime
 pkgver=1.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Rime input method engine"
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/rimeime/"

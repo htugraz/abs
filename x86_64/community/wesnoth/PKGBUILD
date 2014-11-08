@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 121085 2014-10-20 15:59:20Z foutrelis $
+# $Id: PKGBUILD 122236 2014-11-08 05:53:14Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=wesnoth
 pkgver=1.10.7
-pkgrel=4
+pkgrel=5
 pkgdesc="A turn-based strategy game on a fantasy world"
 arch=('i686' 'x86_64')
 license=('GPL')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 221080 2014-09-07 08:30:02Z foutrelis $
+# $Id: PKGBUILD 225749 2014-11-08 05:53:04Z foutrelis $
 # Maintainer: Juergen Hoetzel <juergen@archlinux.org>
 
 pkgname=licq
 pkgver=1.8.2
-pkgrel=3
+pkgrel=4
 pkgdesc="Advanced graphical ICQ clone and more for Unix"
 arch=('i686' 'x86_64')
 url="http://www.licq.org"

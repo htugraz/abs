@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 118570 2014-09-07 08:30:56Z foutrelis $
-# Maintainer: Felix Yan <felixonmars@gmail.com>
+# $Id: PKGBUILD 122227 2014-11-08 05:52:53Z foutrelis $
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 
 pkgbase=python-pycuda
 pkgname=('python-pycuda' 'python2-pycuda' 'pycuda-headers')
 pkgver=2014.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Python wrapper for Nvidia CUDA"
 arch=('x86_64')
 url="http://mathema.tician.de/software/pycuda"

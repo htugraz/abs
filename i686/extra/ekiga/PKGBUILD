@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 221073 2014-09-07 08:29:54Z foutrelis $
+# $Id: PKGBUILD 225742 2014-11-08 05:52:49Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Tom K <tomk@runbox.com>
 
 pkgname=ekiga
 pkgver=4.0.1
-pkgrel=9
+pkgrel=10
 pkgdesc="VOIP/Videoconferencing app with full SIP and H.323 support (GnomeMeeting expanded and renamed)"
 url="http://www.ekiga.org"
 license=(GPL)
 arch=(i686 x86_64)
-depends=('opal' 'boost-libs' 'libxv' 'libnotify' 'hicolor-icon-theme' 'avahi' 'gtk2' 'gconf')
+depends=('opal' 'boost-libs' 'libxv' 'libnotify' 'gnome-icon-theme' 'avahi' 'gtk2' 'gconf')
 makedepends=('intltool' 'gnome-doc-utils' 'evolution-data-server' 'boost')
 optdepends=('evolution-data-server: Evolution integration')
 options=(!emptydirs)

@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 118535 2014-09-07 08:29:59Z foutrelis $
+# $Id: PKGBUILD 122192 2014-11-08 05:51:55Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Jaroslaw Swierczynski <swiergot@aur.archlinux.org>
 # Contributor: Roman Kyrylych <Roman.Kyrylych@gmail.com>
 
 pkgname=glob2
 pkgver=0.9.4.4
-pkgrel=22
-pkgdesc='RTS game which minimizes micro-management'
+pkgrel=23
+pkgdesc='Globulation 2 is an innovative Real-Time Strategy (RTS) game which reduces micro-management by automatically assigning tasks to units'
 arch=('x86_64' 'i686')
 url='http://www.globulation2.org/'
 license=('GPL3')

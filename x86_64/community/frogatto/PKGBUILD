@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 118533 2014-09-07 08:29:55Z foutrelis $
+# $Id: PKGBUILD 122190 2014-11-08 05:51:52Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Federico CInelli <cinelli@aur.archlinux.org>
 # Contributor: Tom Wambold <tom5760@gmail.com>
@@ -6,7 +6,7 @@
 pkgname='frogatto'
 arch=('i686' 'x86_64')
 pkgver=1.3.1
-pkgrel=9
+pkgrel=10
 pkgdesc="An old-school 2d platformer game, starring a certain quixotic frog"
 url="http://www.frogatto.com"
 license=('GPL')

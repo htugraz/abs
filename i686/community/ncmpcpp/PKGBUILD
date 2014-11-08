@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 122151 2014-11-07 12:06:56Z bpiotrowski $
+# $Id: PKGBUILD 122210 2014-11-08 05:52:19Z foutrelis $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: graysky <graysky AT archlinux DOT us>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=ncmpcpp
 pkgver=0.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Almost exact clone of ncmpc with some new features'
 arch=('i686' 'x86_64')
 url='http://ncmpcpp.rybczak.net/'
