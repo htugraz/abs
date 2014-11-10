@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 205001 2014-02-02 20:56:10Z bisson $
+# $Id: PKGBUILD 225926 2014-11-10 22:53:56Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: mathieui <mathieui@mathieui.net>
 # Contributor: jiribb <jiribb@gmail.com>
 
 pkgname=ldns
 pkgver=1.6.17
-pkgrel=1
+pkgrel=2
 pkgdesc='Fast DNS library supporting recent RFCs'
 url='http://www.nlnetlabs.nl/projects/ldns/'
 license=('custom:BSD')
@@ -26,6 +26,7 @@ build() {
 		--disable-rpath \
 		--with-drill \
 		--with-examples \
+		--with-trust-anchor=/etc/trusted-key.key \
 
 	make
 }

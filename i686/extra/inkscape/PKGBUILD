@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 215483 2014-06-26 17:44:48Z eric $
+# $Id: PKGBUILD 225899 2014-11-10 19:54:56Z andyrtr $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Tobias Kieslich <tobias@justdreams.de>
 # Contributor: tobias <tobias@archlinux.org>
 
 pkgname=inkscape
 pkgver=0.48.5
-pkgrel=2
+pkgrel=3
 pkgdesc='Vector graphics editor using the SVG file format'
 url='http://inkscape.sourceforge.net/'
 license=('GPL' 'LGPL')

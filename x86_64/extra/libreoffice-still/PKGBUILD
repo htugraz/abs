@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 225497 2014-10-30 18:21:13Z andyrtr $
+# $Id: PKGBUILD 225901 2014-11-10 19:55:01Z andyrtr $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 
@@ -20,7 +20,7 @@ pkgname=('libreoffice-still-common'
 	'libreoffice-still-extension-nlpsolver')
 _LOver=4.2.7.2
 pkgver=4.2.7
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 license=('LGPL3')
 url="http://www.libreoffice.org/"

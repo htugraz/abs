@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 120094 2014-10-03 09:56:38Z jlichtblau $
+# $Id: PKGBUILD 122315 2014-11-10 19:57:10Z andyrtr $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: dibblethewrecker dibblethewrecker.at.jiwe.dot.org
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=gdal
 pkgver=1.11.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A translator library for raster geospatial data formats"
 arch=('i686' 'x86_64')
 url="http://www.gdal.org/"
@@ -14,8 +14,7 @@ depends=('curl' 'geos' 'giflib' 'hdf5' 'libgeotiff' 'libjpeg' 'libpng' 'libspati
 makedepends=('perl' 'swig' 'chrpath' 'doxygen')
 optdepends=('postgresql: postgresql database support'
             'mariadb: mariadb database support'
-            'perl:  perl binding support'
-            'swig:  perl binding support')
+            'perl:  perl binding support')
 changelog=$pkgname.changelog
 source=(http://download.osgeo.org/${pkgname}/${pkgver}/${pkgname}-${pkgver}.tar.gz
         gdal-1.5.1-python-install.patch)
