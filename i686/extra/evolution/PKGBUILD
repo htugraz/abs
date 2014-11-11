@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 224594 2014-10-16 12:00:40Z jgc $
+# $Id: PKGBUILD 225947 2014-11-10 23:12:41Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgbase=evolution
 pkgname=('evolution' 'evolution-bogofilter' 'evolution-spamassassin')
-pkgver=3.12.7
+pkgver=3.12.8
 pkgrel=1
 pkgdesc="Manage your email, contacts and schedule"
 arch=(i686 x86_64)
@@ -13,7 +13,7 @@ makedepends=(intltool itstool docbook-xsl networkmanager bogofilter spamassassin
 options=('!emptydirs')
 url=https://wiki.gnome.org/Apps/Evolution
 source=(http://ftp.gnome.org/pub/gnome/sources/$pkgbase/${pkgver:0:4}/$pkgbase-$pkgver.tar.xz)
-sha256sums=('77fdfe1a92edb514bf28e577ff46e5a4c22d16c389077eff23945b0feb650eb9')
+sha256sums=('6a6996ed350e2bc09ecb63befdbc9cfbd9d1097e0ff77033e9bafd1f7b5a6414')
 
 build() {
   cd $pkgbase-$pkgver

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 107429 2014-03-17 10:21:01Z spupykin $
+# $Id: PKGBUILD 122368 2014-11-11 15:53:19Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Ben <ben@benmazer.net>
 
 pkgname=fox
 epoch=1
-pkgver=1.6.49
-pkgrel=5
+pkgver=1.6.50
+pkgrel=1
 pkgdesc="Free Objects for X: GUI Toolkit for C++"
 arch=('i686' 'x86_64')
 url="http://www.fox-toolkit.org/"
@@ -14,7 +14,7 @@ depends=('bzip2' 'libxcursor' 'libxft' 'libxrandr' 'libxi' 'libpng' 'libtiff' 'g
 makedepends=('mesa' 'gendesk' 'imagemagick')
 optdepends=('perl')
 source=(http://ftp.fox-toolkit.org/pub/fox-$pkgver.tar.gz)
-md5sums=('e120647d26a27ed37cd5fed8b75c8a3d')
+md5sums=('f68c2219318ecb0b838387ae85d3220d')
 
 prepare() {
   cd ${srcdir}/${pkgname}-${pkgver}

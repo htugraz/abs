@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 224753 2014-10-18 10:18:18Z andrea $
+# $Id: PKGBUILD 226040 2014-11-11 08:26:05Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas <nqn1976 @ gmail.com>
 
 pkgname=polkit-kde-frameworks
-pkgver=0.99.1.20.cecfca6
+pkgver=5.1.1
 pkgrel=1
 pkgdesc='Daemon providing a polkit authentication UI for KDE'
 arch=('i686' 'x86_64')
