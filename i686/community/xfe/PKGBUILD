@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 107006 2014-03-11 11:16:00Z spupykin $
+# $Id: PKGBUILD 122435 2014-11-12 14:10:20Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Eric Belanger <belanger@astro.umontreal.ca>
 # Contributor: Ravi Desai <ravster3@hotmail.com>
 
 pkgname=xfe
 pkgver=1.37
-pkgrel=1
+pkgrel=2
 pkgdesc="X File Explorer (Xfe) is an MS-Explorer like file manager for X."
 arch=('i686' 'x86_64')
 url="http://roland65.free.fr/xfe"

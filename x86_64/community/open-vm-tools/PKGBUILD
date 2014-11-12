@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 121103 2014-10-20 18:02:49Z andyrtr $
+# $Id: PKGBUILD 122397 2014-11-12 01:25:43Z bisson $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Krzysztof Raczkowski <raczkow@gmail.com>
 
@@ -6,7 +6,7 @@ pkgname=open-vm-tools
 epoch=6
 pkgver=9.4.6
 _pkgsubver=1770165
-pkgrel=2
+pkgrel=3
 pkgdesc="The Open Virtual Machine Tools (open-vm-tools) are the open source implementation of VMware Tools"
 arch=('i686' 'x86_64')
 url="http://open-vm-tools.sourceforge.net/"
