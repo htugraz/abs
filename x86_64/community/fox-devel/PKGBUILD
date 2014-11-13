@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 122370 2014-11-11 15:53:36Z spupykin $
+# $Id: PKGBUILD 122533 2014-11-13 20:18:00Z speps $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Dany Martineau <dany.luc.martineau@gmail.com>
 
@@ -11,7 +11,6 @@ url="http://www.fox-toolkit.org/"
 license=('LGPL' 'custom')
 depends=('glu' 'libsm' 'libtiff' 'libxcursor' 'libxft' 'libxi' 'libxrandr')
 makedepends=('mesa')
-install="$pkgname.install"
 provides=("fox=$pkgver")
 source=("${url/www/ftp}pub/fox-$pkgver.tar.gz")
 md5sums=('ab8ef768c5052d5826e939927061a137')
