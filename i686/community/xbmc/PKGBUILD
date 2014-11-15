@@ -1,5 +1,5 @@
 # vim:set ts=2 sw=2 et:
-# $Id: PKGBUILD 122050 2014-11-06 12:37:21Z idevolder $
+# $Id: PKGBUILD 122614 2014-11-15 14:57:16Z bpiotrowski $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
 # Contributor: [vEX] <niechift.dot.vex.at.gmail.dot.com>
@@ -13,7 +13,7 @@ _prefix=/usr
 pkgname=xbmc
 pkgver=13.2
 _codename=Gotham
-pkgrel=5
+pkgrel=6
 pkgdesc="A software media player and entertainment hub for digital media"
 arch=('i686' 'x86_64')
 url="http://xbmc.org"

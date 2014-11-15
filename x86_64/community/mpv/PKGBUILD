@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 121402 2014-10-25 14:05:20Z bpiotrowski $
+# $Id: PKGBUILD 122608 2014-11-15 14:57:04Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Eivind Uggedal <eivind@uggedal.com>
 
 pkgname=mpv
 pkgver=0.6.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Video player based on MPlayer/mplayer2'
 arch=('i686' 'x86_64')
 license=('GPL')

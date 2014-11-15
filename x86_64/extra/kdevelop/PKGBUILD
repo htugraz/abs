@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 224346 2014-10-14 16:59:41Z andrea $
+# $Id: PKGBUILD 226280 2014-11-15 11:05:05Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Giovanni Scafora <giovanni@archlinux.org>
 
 pkgname=kdevelop
 pkgver=4.7.0
-pkgrel=3
+pkgrel=4
 pkgdesc="A C/C++ development environment for KDE"
 arch=('i686' 'x86_64')
 url="http://www.kdevelop.org/"
 license=('GPL')
 depends=('kdebase-runtime' 'kdevplatform' 'kdebase-katepart')
-makedepends=('cmake' 'automoc4' 'kdesdk-okteta')
+makedepends=('cmake' 'automoc4' 'kdesdk-okteta' 'kdebase-workspace')
 optdepends=('kdesdk-okteta: hex editor integration'
             'kdebase-konsole: embedded terminal'
             "kdebase-workspace: 'Attach to process' functionality"

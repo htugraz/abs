@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 224815 2014-10-18 19:34:36Z bisson $
+# $Id: PKGBUILD 226284 2014-11-15 14:56:07Z bpiotrowski $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=audacious-plugins
 pkgver=3.5.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Plugins for Audacious'
 url='http://audacious-media-player.org/'
 license=('custom:BSD' 'GPL')

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 120487 2014-10-10 16:19:43Z bpiotrowski $
+# $Id: PKGBUILD 122602 2014-11-15 14:56:50Z bpiotrowski $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 # Contributor: BlackEagle <ike.devolder@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=clementine
 pkgver=1.2.3
-pkgrel=3
+pkgrel=4
 pkgdesc='A modern music player and library organizer'
 url='http://www.clementine-player.org/'
 license=('GPL')
