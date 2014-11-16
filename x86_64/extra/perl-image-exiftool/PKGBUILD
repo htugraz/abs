@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 220935 2014-09-04 11:10:33Z bluewind $
+# $Id: PKGBUILD 226314 2014-11-16 13:29:05Z bluewind $
 # Maintainer: Florian Pritz <bluewind@xinu.at>
 # Contributor: tobias <tobias@archlinux.org>
 # Contributor: Tobias Kieslich <tobias@justdreams.de>
@@ -6,7 +6,7 @@
 
 pkgname=perl-image-exiftool
 _srcname=Image-ExifTool
-pkgver=9.70
+pkgver=9.76
 pkgrel=1
 pkgdesc="Reader and rewriter of EXIF informations that supports raw files"
 arch=('any')
@@ -17,7 +17,7 @@ provides=("perl-exiftool=$pkgver")
 replaces=("perl-exiftool")
 options=('!emptydirs')
 source=(http://search.cpan.org/CPAN/authors/id/E/EX/EXIFTOOL/${_srcname}-$pkgver.tar.gz)
-md5sums=('474bb4b097c8e1577067855f88e67bf8')
+md5sums=('2dedfc6df3bf0fe04877f0335c0ac315')
 
 build() {
   cd "${srcdir}/${_srcname}-${pkgver}"
