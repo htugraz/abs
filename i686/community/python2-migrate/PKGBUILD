@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 116978 2014-08-07 11:25:45Z spupykin $
+# $Id: PKGBUILD 122677 2014-11-17 12:03:20Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Roberto Alsina <ralsina@kde.org>
 
 pkgname=python2-migrate
-pkgver=0.9.1
+pkgver=0.9.2
 pkgrel=1
 pkgdesc="provides a way to deal with database schema changes in SQLAlchemy projects"
 arch=(any)
