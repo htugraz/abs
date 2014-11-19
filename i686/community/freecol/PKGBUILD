@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 120967 2014-10-19 02:04:17Z svenstaro $
+# $Id: PKGBUILD 122786 2014-11-19 21:54:12Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: TDY <tdy@gmx.com>
 # Contributor: Nelson Menon <nelsonmenon@gmail.com insanatorium.wordpress.com>
 
 pkgname=freecol
-pkgver=0.11.0
+pkgver=0.11.1
 pkgrel=1
 pkgdesc="A turn-based strategy game based on Colonization"
 arch=('any')
@@ -14,7 +14,7 @@ depends=('java-runtime')
 source=(http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.zip
         fc.desktop
         fc.sh)
-md5sums=('042c44485cb8c721f8d8dfbec565d7a4'
+md5sums=('0b5ab487e0291b92a18a601b680700f9'
          '55594d770904af3e3e3852d375085357'
          '5f8e99b4e5ab0e79895a31c6f5a15420')
 

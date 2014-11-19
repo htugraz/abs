@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 226169 2014-11-13 05:48:56Z bisson $
+# $Id: PKGBUILD 226742 2014-11-19 22:43:10Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Andreas Radke <andyrtr@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=gnupg
 pkgver=2.1.0
-pkgrel=3
+pkgrel=4
 pkgdesc='Complete and free implementation of the OpenPGP standard'
 url='http://www.gnupg.org/'
 license=('GPL')
@@ -41,7 +41,6 @@ build() {
 		--sbindir=/usr/bin \
 		--libexecdir=/usr/lib/gnupg \
 		--enable-maintainer-mode \
-		--enable-standard-socket \
 		--enable-symcryptrun \
 		--enable-gpgtar \
 
