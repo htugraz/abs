@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 119460 2014-09-23 11:59:12Z bgyorgy $
+# $Id: PKGBUILD 122812 2014-11-20 03:23:11Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 # Contributor: Stefano Facchini <stefano.facchini@gmail.com>
 
@@ -10,7 +10,7 @@ arch=('i686' 'x86_64')
 url="http://libosinfo.org/"
 license=('GPL' 'LGPL')
 depends=('glib2' 'libxslt')
-makedepends=('check' 'gobject-introspection' 'intltool' 'libsoup' 'vala')
+makedepends=('check' 'gobject-introspection' 'intltool' 'libsoup' 'vala' 'python2')
 options=('!libtool')
 source=(https://fedorahosted.org/releases/l/i/$pkgname/$pkgname-$pkgver.tar.gz)
 sha256sums=('bb6ba136756b26045ba3ed9b3c1b0920a639dd80b007769a1df356d8e2fe0921')
