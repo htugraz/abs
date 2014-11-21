@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 226451 2014-11-19 17:11:59Z fyan $
+# $Id: PKGBUILD 226789 2014-11-21 13:15:16Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkcddb
 pkgver=4.14.3
-pkgrel=1
+pkgrel=2
 pkgdesc="KDE CDDB library"
 url='https://projects.kde.org/projects/kde/kdemultimedia/libkcddb'
 arch=('i686' 'x86_64')
