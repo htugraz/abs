@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 225312 2014-10-25 04:05:37Z foutrelis $
+# $Id: PKGBUILD 226842 2014-11-22 20:18:31Z bpiotrowski $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=upower
 pkgver=0.99.1
 _commit=3a5f3e5
-pkgrel=2
+pkgrel=3
 pkgdesc="Abstraction for enumerating power devices, listening to device events and querying history and statistics"
 arch=('i686' 'x86_64')
 url="http://upower.freedesktop.org"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 224620 2014-10-16 12:04:59Z jgc $
+# $Id: PKGBUILD 226841 2014-11-22 20:18:30Z bpiotrowski $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Giovanni Scafora <giovanni@archlinux.org>
 
 pkgname=rhythmbox
 pkgver=3.1
-pkgrel=1
+pkgrel=2
 pkgdesc="An iTunes-like music playback and management application"
 arch=(i686 x86_64)
 license=(GPL)
