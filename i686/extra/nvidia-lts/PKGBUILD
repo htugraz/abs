@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 225206 2014-10-22 21:35:24Z thomas $
+# $Id: PKGBUILD 226862 2014-11-23 04:25:40Z fyan $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=nvidia-lts
 pkgver=343.22
 _extramodules=extramodules-3.14-lts
-pkgrel=4
+pkgrel=5
 pkgdesc="NVIDIA drivers for linux-lts"
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"
-depends=('linux-lts>=3.14.21' "nvidia-utils=$pkgver" 'nvidia-libgl')
-makedepends=('linux-lts-headers>=3.14.21')
+depends=('linux-lts>=3.14.25' "nvidia-utils=$pkgver" 'nvidia-libgl')
+makedepends=('linux-lts-headers>=3.14.25')
 provides=('nvidia')
 license=('custom')
 install=nvidia-lts.install
