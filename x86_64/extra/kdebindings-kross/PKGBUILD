@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 224937 2014-10-20 08:08:18Z andrea $
+# $Id: PKGBUILD 226914 2014-11-24 07:17:13Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgbase=kdebindings-kross
 pkgname=('kdebindings-kross-python'
 #         'kdebindings-kross-ruby'
          'kdebindings-kross-java')
-pkgver=4.14.2
+pkgver=4.14.3
 pkgrel=1
 url="https://projects.kde.org/projects/kde/kdebindings/kross-interpreters"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ license=('GPL' 'LGPL' 'FDL')
 groups=('kdebindings')
 makedepends=('kdelibs' 'cmake' 'automoc4' 'python2' 'java-environment')
 source=("http://download.kde.org/stable/${pkgver}/src/kross-interpreters-${pkgver}.tar.xz")
-sha1sums=('96965f025e8174badc320868baf8e38e358d208d')
+sha1sums=('6be0688d97571422ab4bcac13150d14cfe76c896')
 
 build() {
   cd "${srcdir}"

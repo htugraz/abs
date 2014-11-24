@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 224503 2014-10-16 11:58:01Z jgc $
+# $Id: PKGBUILD 227038 2014-11-24 07:27:06Z andrea $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 # Contributor: Ben <contrasutra@myrealbox.com>
 
 pkgname=sound-juicer
 pkgver=3.14.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A cd ripper application"
 arch=(i686 x86_64)
 license=(GPL)

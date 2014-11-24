@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 225046 2014-10-20 08:25:24Z andrea $
+# $Id: PKGBUILD 227024 2014-11-24 07:21:13Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-kcharselect
-pkgver=4.14.2
+pkgver=4.14.3
 pkgrel=1
 pkgdesc='Character Selector'
 url="http://kde.org/applications/utilities/kcharselect/"
@@ -12,7 +12,7 @@ depends=('kdebase-runtime')
 makedepends=('cmake' 'automoc4')
 groups=('kde' 'kdeutils')
 source=("http://download.kde.org/stable/${pkgver}/src/kcharselect-${pkgver}.tar.xz")
-sha1sums=('2c87db6af8fe794954ced5ad5905f9d6857a1963')
+sha1sums=('738483687b5d4651a1b9a7a2d8cd41ca25c2ef88')
 
 build() {
   cd "${srcdir}"

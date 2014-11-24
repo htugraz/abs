@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 113554 2014-06-25 15:06:22Z spupykin $
+# $Id: PKGBUILD 123056 2014-11-24 11:48:27Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=arch-wiki-docs
 pkgdesc="Pages from Arch Wiki optimized for offline browsing"
-pkgver=20140625
+pkgver=20141124
 pkgrel=1
 arch=('any')
 url="https://github.com/lahwaacz/arch-wiki-docs"
