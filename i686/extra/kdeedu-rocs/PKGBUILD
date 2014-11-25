@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 226935 2014-11-24 07:17:59Z andrea $
+# $Id: PKGBUILD 227085 2014-11-25 09:53:16Z fyan $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-rocs
 pkgver=4.14.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Rocs Graph Theory"
 url="http://kde.org/applications/education/rocs/"
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
 groups=('kde' 'kdeedu')
-depends=('kdebase-runtime')
+depends=('kdebase-runtime' 'grantlee-qt4')
 makedepends=('cmake' 'automoc4' 'boost')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/${pkgver}/src/rocs-${pkgver}.tar.xz")

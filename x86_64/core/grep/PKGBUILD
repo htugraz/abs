@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 215061 2014-06-12 10:52:02Z seblu $
+# $Id: PKGBUILD 227100 2014-11-25 22:34:14Z seblu $
 # Maintainer: Sébastien Luttringer <seblu@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
 
 pkgname=grep
-pkgver=2.20
+pkgver=2.21
 pkgrel=1
 pkgdesc='A string search utility'
 arch=('i686' 'x86_64')
@@ -15,7 +15,7 @@ depends=('glibc' 'pcre')
 makedepends=('texinfo')
 install=$pkgname.install
 source=("ftp://ftp.gnu.org/gnu/$pkgname/$pkgname-$pkgver.tar.xz"{,.sig})
-md5sums=('2cbea44a4f1548aee20b9ff2d3076908'
+md5sums=('43c48064d6409862b8a850db83c8038a'
          'SKIP')
 
 build() {

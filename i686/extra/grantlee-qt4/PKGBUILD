@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 225790 2014-11-09 10:12:51Z andrea $
+# $Id: PKGBUILD 227083 2014-11-25 08:14:48Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=grantlee-qt4
@@ -30,7 +30,7 @@ build() {
   make
 }
 
-package_grantlee() {
+package() {
   cd build
   make DESTDIR="${pkgdir}" install
 }

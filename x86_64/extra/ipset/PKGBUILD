@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 222913 2014-09-23 20:57:30Z seblu $
+# $Id: PKGBUILD 227101 2014-11-25 22:35:23Z seblu $
 # Maintainer: Sébastien Luttringer
 
 pkgname=ipset
