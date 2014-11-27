@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 122647 2014-11-16 17:32:02Z faidoc $
+# $Id: PKGBUILD 123172 2014-11-27 02:40:19Z faidoc $
 # Maintainer: Alexandre Filgueira <alexfilgueira@cinnarch.com>
 # Based on gnome-control-center:
 # Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Jan de Groot <jgc@archlinux.org>
 
 pkgname=cinnamon-control-center
-pkgver=2.4.1
+pkgver=2.4.2
 pkgrel=1
 pkgdesc="The Control Center for Cinnamon"
 arch=('i686' 'x86_64')
@@ -18,7 +18,7 @@ install=cinnamon-control-center.install
 license=('GPL')
 options=('!emptydirs')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/linuxmint/cinnamon-control-center/archive/$pkgver.tar.gz")
-sha256sums=('17010c06f832cbc8bbc61001f87db581bc6ccbf477aebf32eee638466865d73b')
+sha256sums=('7d25193a3cc13c12f22864f3c9a907acfaa616392cb2b7ab4e0624f0d200f188')
 
 prepare() {
   cd $pkgname-$pkgver

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 111964 2014-05-27 10:31:27Z lfleischer $
+# $Id: PKGBUILD 123234 2014-11-27 20:34:54Z lfleischer $
 # Maintainer:
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Andreas Radke <andyrtr@archlinux.org>
 # Contributor: Jason Chu <jchu@xentac.net>
 
 pkgname=icecast
-pkgver=2.4.0
+pkgver=2.4.1
 pkgrel=1
 pkgdesc='Streaming audio over the Internet'
 arch=('i686' 'x86_64')
@@ -18,7 +18,7 @@ source=("http://downloads.us.xiph.org/releases/${pkgname}/${pkgname}-${pkgver}.t
         'icecast.logrotate'
         'start-by-nobody.patch'
         'icecast.service')
-md5sums=('bb00bfc0d6d2dde24974641085602b81'
+md5sums=('b1402712a79734d4720c8fe15fd9fb10'
          '59c6552bcb1dd9fb542af8670dfabd3c'
          'd8e929d2214123a1954da4383bf16583'
          '0753c15f01dc14852e5d70925fc1f6a0')

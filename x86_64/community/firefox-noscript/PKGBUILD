@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 122673 2014-11-17 12:02:49Z spupykin $
+# $Id: PKGBUILD 123203 2014-11-27 12:52:33Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=firefox-noscript
-pkgver=2.6.9.4
+pkgver=2.6.9.5
 pkgrel=1
 pkgdesc="Extension for firefox which disables script"
 arch=('any')
@@ -11,7 +11,7 @@ license=('GPL2')
 depends=()
 makedepends=('unzip')
 source=(https://secure.informaction.com/download/releases/noscript-$pkgver.xpi)
-md5sums=('94af1e645f4b5c0e0c3c7af5282c0e48')
+md5sums=('2e4bbd6ef5db1f523cbad56da223e77a')
 
 package() {
   depends=("firefox")
