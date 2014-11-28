@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 116891 2014-08-05 10:10:11Z spupykin $
+# $Id: PKGBUILD 123266 2014-11-28 19:27:14Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Aaron Griffin <aaron@archlinux.org>
 # Original TU: Jeff Mickey <j@codemac.net>
@@ -6,7 +6,7 @@
 
 pkgname=squashfs-tools
 pkgver=4.3
-pkgrel=3
+pkgrel=4
 pkgdesc="Tools for squashfs, a highly compressed read-only filesystem for Linux."
 url="http://squashfs.sourceforge.net"
 license=("GPL")
