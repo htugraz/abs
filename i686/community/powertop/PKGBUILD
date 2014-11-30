@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 112200 2014-05-29 19:08:14Z jlichtblau $
+# $Id: PKGBUILD 123297 2014-11-30 17:22:30Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 # Contributor: Xilon <xilonmu@gmail.com>
 
 pkgname=powertop
-pkgver=2.6.1
+pkgver=2.7
 pkgrel=1
 pkgdesc='A tool to diagnose issues with power consumption and power management'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ license=('GPL2')
 depends=('gcc-libs' 'libnl' 'ncurses' 'pciutils')
 changelog=$pkgname.changelog
 source=(https://01.org/sites/default/files/downloads/powertop/$pkgname-$pkgver.tar.gz)
-sha256sums=('85122b092d7b025bcdd8fdeb8169efcf57de637875570cbfdefb4017a9febc29')
+sha256sums=('8d4b1490e2baad4467c0ded3c423db4472dcbf7b2dd8f8f2a928f54047c678ca')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"
