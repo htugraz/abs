@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 225346 2014-10-26 00:04:17Z heftig $
+# $Id: PKGBUILD 227225 2014-12-01 05:15:45Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 # Contributor: Douglas Soares de Andrade <douglas@archlinux.org>
 
 pkgname=meld
-pkgver=3.12.1
+pkgver=3.12.2
 pkgrel=1
 pkgdesc='Visual diff and merge tool'
 url='http://meldmerge.org/'
@@ -17,7 +17,7 @@ depends=(python2-gobject python2-cairo gtksourceview3 hicolor-icon-theme desktop
          gsettings-desktop-schemas)
 optdepends=('python2-dbus: open a new tab in an already running instance')
 source=("http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver%.*}/$pkgname-${pkgver}.tar.xz")
-sha1sums=('c46ecab903bad2ece5c5031a624b545c7dcdb486')
+sha1sums=('693ae87bcd0080d938d16197c3d46ffe1a4de42d')
 
 # Meld does not support Python 3. The build succeeds, but
 # the main executable checks the version and errors out.

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 110054 2014-04-23 16:25:28Z spupykin $
+# $Id: PKGBUILD 123320 2014-12-01 11:00:48Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: kevin <kevin@archlinux.org>
 # Contributor: iztok pizorn <pizorn@gmail.com>
 
 pkgname=fldiff
 pkgver=1.1
-pkgrel=8
+pkgrel=9
 pkgdesc="graphical diff program"
 arch=(i686 x86_64)
 url="http://directory.fsf.org/wiki/Fldiff"
