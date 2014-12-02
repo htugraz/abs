@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 226752 2014-11-20 13:22:28Z ronald $
+# $Id: PKGBUILD 227254 2014-12-02 11:06:37Z fyan $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor : shining <shiningxc.at.gmail.com>
 # Contributor : cyberdune <cyberdune@gmail.com>
 
 pkgname=octave
 pkgver=3.8.2
-pkgrel=2
+pkgrel=3
 pkgdesc="A high-level language, primarily intended for numerical computations."
 arch=('i686' 'x86_64')
 url="http://www.octave.org"

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 221620 2014-09-13 18:28:22Z pierre $
+# $Id: PKGBUILD 227260 2014-12-02 20:42:16Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: kevin <kevin@archlinux.org>
 # Contributor: John Proctor <jproctor@prium.net>
 
 pkgname=graphviz
 pkgver=2.38.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Graph visualization software'
 url='http://www.graphviz.org/'
 license=('CPL')
@@ -23,10 +23,17 @@ optdepends=('mono: sharp bindings'
             'tcl: tcl bindings'
             'qt4: gvedit'
             'gtk2: gtk output plugin')
-source=("${url}/pub/${pkgname}/stable/SOURCES/${pkgname}-${pkgver}.tar.gz")
-sha1sums=('053c771278909160916ca5464a0a98ebf034c6ef')
+source=("${url}/pub/${pkgname}/stable/SOURCES/${pkgname}-${pkgver}.tar.gz"
+        'format-string.patch')
+sha1sums=('053c771278909160916ca5464a0a98ebf034c6ef'
+          '271d116bc022596a64b6ee061f3d2e50fa2e6025')
 
 install=install
+
+prepare() {
+	cd "${srcdir}/${pkgname}-${pkgver}"
+	patch -p1 -i ../format-string.patch # FS#42983
+}
 
 build() {
 	cd "${srcdir}/${pkgname}-${pkgver}"
