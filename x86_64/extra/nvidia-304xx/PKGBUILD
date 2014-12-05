@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 227128 2014-11-26 13:39:45Z tpowa $
-# Maintainer: Felix Yan <felixonmars@gmail.com>
+# $Id: PKGBUILD 227303 2014-12-05 18:05:38Z fyan $
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Thomas Baechler <thomas@archlinux.org>
 
 pkgname=nvidia-304xx
-pkgver=304.123
+pkgver=304.125
 _extramodules=extramodules-3.17-ARCH
-pkgrel=10
+pkgrel=1
 pkgdesc="NVIDIA drivers for linux, 304xx legacy branch"
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"
@@ -20,12 +20,12 @@ if [ "$CARCH" = "i686" ]; then
     _arch='x86'
     _pkg="NVIDIA-Linux-${_arch}-${pkgver}"
     source=("http://us.download.nvidia.com/XFree86/Linux-${_arch}/${pkgver}/${_pkg}.run")
-    md5sums=('52307054483f5c40391608ce69114d48')
+    md5sums=('bc3b0ac291fa998d5109a6f7e94fb2d4')
 elif [ "$CARCH" = "x86_64" ]; then
     _arch='x86_64'
    _pkg="NVIDIA-Linux-${_arch}-${pkgver}-no-compat32"
     source=("http://us.download.nvidia.com/XFree86/Linux-${_arch}/${pkgver}/${_pkg}.run")
-    md5sums=('9d461e9e00e473f458aee96cd6d85101')
+    md5sums=('291d41ccdbcc08f752a38f9e0a7eeea0')
 fi
 
 prepare() {
