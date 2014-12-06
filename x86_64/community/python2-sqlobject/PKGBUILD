@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 118148 2014-09-01 16:37:20Z arodseth $
+# $Id: PKGBUILD 123533 2014-12-06 04:05:49Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Thomas S Hatch <thatch45@gmail.com>
 # Contributor: Aaron Griffin <aaron@archlinux.org>
 # Contributor: Todd Maynard <arch@toddmaynard.com>
 
 pkgname=python2-sqlobject
-pkgver=1.5.1
-pkgrel=2
+pkgver=1.6.1
+pkgrel=1
 pkgdesc='Provides an object interface to SQL databases'
 arch=('any')
 license=('LGPL')
@@ -15,7 +15,7 @@ depends=('python2-formencode')
 makedepends=('python2-setuptools')
 optdepends=('python2-psycopg2: PostgreSQL database support')
 source=("https://pypi.python.org/packages/source/S/SQLObject/SQLObject-$pkgver.tar.gz")
-sha256sums=('68f86ae270b59f9cb57eadbd6b82264c2684cf0ab582e62e1188d5f8d1456a8d')
+sha256sums=('fd52f08189b576e72438d1dda1b4afe49a38e6c4d9e6cbe012867e4e60c23df0')
 
 prepare() {
   cd "SQLObject-$pkgver"
