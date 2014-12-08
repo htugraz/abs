@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 122535 2014-11-13 20:21:21Z speps $
+# $Id: PKGBUILD 123643 2014-12-08 11:18:36Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sander Jansen <sander@knology.net>
 
 pkgname=gogglesmm
-pkgver=0.14.1
-pkgrel=2
+pkgver=0.14.2
+pkgrel=1
 pkgdesc="Music Manager and Player"
 arch=('i686' 'x86_64')
 url="http://gogglesmm.github.io/"
@@ -17,7 +17,7 @@ conflicts=('musicmanager')
 replaces=('musicmanager')
 install="$pkgname.install"
 source=("$pkgname-$pkgver.tar.gz::https://github.com/gogglesmm/gogglesmm/archive/$pkgver.tar.gz")
-md5sums=('9da90e39bb560de40bcc3ea9e5a1fa0d')
+md5sums=('ee7ad1513e1e281b16e1eb10d7ab9f8e')
 
 build() {
   cd gogglesmm-$pkgver
