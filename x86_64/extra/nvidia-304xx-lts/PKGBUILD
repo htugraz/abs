@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 227305 2014-12-05 18:24:02Z fyan $
+# $Id: PKGBUILD 227380 2014-12-09 19:02:32Z bpiotrowski $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=nvidia-304xx-lts
 pkgver=304.125
 _extramodules=extramodules-3.14-lts
-pkgrel=1
+pkgrel=2
 pkgdesc="NVIDIA drivers for linux-lts, 304xx legacy branch"
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"
