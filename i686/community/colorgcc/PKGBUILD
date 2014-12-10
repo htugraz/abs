@@ -1,8 +1,9 @@
-# $Id: PKGBUILD 115089 2014-07-05 15:10:31Z eric $
+# $Id: PKGBUILD 123724 2014-12-10 16:16:42Z jlichtblau $
 # Maintainer: Eric Belanger <eric@archlinux.org>
+# Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 
 pkgname=colorgcc
-pkgver=1.4.1
+pkgver=1.4.3
 pkgrel=1
 pkgdesc="A Perl wrapper to colorize the output of compilers with warning/error messages matching the gcc output format"
 arch=('any')
