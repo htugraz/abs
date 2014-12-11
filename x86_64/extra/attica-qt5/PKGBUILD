@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 225831 2014-11-10 08:23:24Z andrea $
+# $Id: PKGBUILD 227500 2014-12-11 16:04:04Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=attica-qt5
-pkgver=5.4.0
+pkgver=5.5.0
 pkgrel=1
 arch=('i686' 'x86_64')
 pkgdesc='Qt5 library that implements the Open Collaboration Services API'
@@ -12,7 +12,7 @@ depends=('qt5-base')
 makedepends=('extra-cmake-modules')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/attica-${pkgver}.tar.xz")
-md5sums=('493c08ce82d5ab34bf2efeb1a01349ab')
+md5sums=('094b6d024cc171b9350c44f7870011e1')
 
 prepare() {
   mkdir -p build
