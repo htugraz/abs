@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 227538 2014-12-11 16:10:57Z andrea $
+# $Id: PKGBUILD 227566 2014-12-12 14:18:53Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdelibs4support
 pkgver=5.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Porting aid from KDELibs4'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kdelibs4support'
