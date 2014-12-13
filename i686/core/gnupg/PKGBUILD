@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 227197 2014-11-29 21:07:11Z bisson $
+# $Id: PKGBUILD 227592 2014-12-13 21:05:08Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Andreas Radke <andyrtr@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=gnupg
 pkgver=2.1.0
-pkgrel=6
+pkgrel=7
 pkgdesc='Complete and free implementation of the OpenPGP standard'
 url='http://www.gnupg.org/'
 license=('GPL')
@@ -15,7 +15,7 @@ optdepends=('libldap: gpg2keys_ldap'
             'libusb-compat: scdaemon')
 makedepends=('libldap' 'libusb-compat')
 depends=('npth' 'libgpg-error' 'libgcrypt' 'libksba' 'libassuan'
-         'pinentry' 'bzip2' 'readline')
+         'pinentry' 'bzip2' 'readline' 'gnutls')
 source=("ftp://ftp.gnupg.org/gcrypt/${pkgname}/${pkgname}-${pkgver}.tar.bz2"{,.sig}
         'oid2str-overflow.patch'
         'subpacket-off.patch'
