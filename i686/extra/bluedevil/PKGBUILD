@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 227414 2014-12-10 21:33:43Z andrea $
+# $Id: PKGBUILD 227609 2014-12-14 16:32:40Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=bluedevil
 pkgver=2.0
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc='KDE bluetooth framework'
 arch=('i686' 'x86_64')
@@ -13,11 +13,16 @@ depends=('kdebase-runtime' 'libbluedevil')
 makedepends=('cmake' 'automoc4')
 optdepends=('kdebase-workspace: to run the plasmoid')
 install="${pkgname}.install"
-source=("http://download.kde.org/stable/${pkgname}/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
-md5sums=('c318b94d6de3d516598208e32cbccad6')
+source=("http://download.kde.org/stable/${pkgname}/${pkgver}/src/${pkgname}-${pkgver}.tar.xz"
+        'KDEBUG-337193.patch')
+md5sums=('c318b94d6de3d516598208e32cbccad6'
+         '9b89d5741c951b3d940faa4cfda0a738')
 
 prepare() {
   mkdir build
+
+  cd ${pkgname}-${pkgver}
+  patch -p1 -i "${srcdir}"/KDEBUG-337193.patch
 }
 
 build(){

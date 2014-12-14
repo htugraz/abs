@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 224834 2014-10-19 16:25:44Z fyan $
+# $Id: PKGBUILD 227600 2014-12-14 04:23:45Z fyan $
 # Maintainer: Angel Velasquez <angvp@archlinux.org>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-setuptools
 pkgname=('python-setuptools' 'python2-setuptools')
-pkgver=7.0
+pkgver=8.0.1
 pkgrel=1
 epoch=1
 pkgdesc="Easily download, build, install, upgrade, and uninstall Python packages"
@@ -12,9 +12,9 @@ arch=('any')
 license=('PSF')
 url="http://pypi.python.org/pypi/setuptools"
 makedepends=('python' 'python2')
-checkdepends=('python-pytest' 'python2-pytest')
+checkdepends=('python-pytest' 'python2-pytest' 'subversion')
 source=("http://pypi.python.org/packages/source/s/setuptools/setuptools-${pkgver}.tar.gz")
-sha512sums=('0c52bf2d22f7bbd7560e8bb3184406426cf759980add0e60a864f15d9bcf10f01a2bfe0eb598c8c965b2e89df8c4159c2b43028b560f04192bba47e67d9cda18')
+sha512sums=('c86a2c6ae5ed8205b9b37911002a8f551f2607ecab8b74b9eae6a7b92713c0d0a3d6aa54c4428df48765c1a2c9e21f53128bb1f138f7753e1f45188b0e357ff2')
 
 prepare() {
   cp -a setuptools-${pkgver}{,-python2}
@@ -51,7 +51,7 @@ check() {
 }
  
 package_python-setuptools() {
-  depends=('python>=3.4')
+  depends=('python')
   provides=('python-distribute')
   replaces=('python-distribute')
 
@@ -60,7 +60,7 @@ package_python-setuptools() {
 }
  
 package_python2-setuptools() {
-  depends=('python2>=2.7')
+  depends=('python2')
   provides=('python2-distribute' 'setuptools')
   replaces=('python2-distribute' 'setuptools')
 

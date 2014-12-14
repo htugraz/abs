@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 113798 2014-06-30 14:06:29Z bgyorgy $
+# $Id: PKGBUILD 123879 2014-12-14 16:05:41Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 # Contributor: Ray Rashif <schiv@archlinux.org>
 
 pkgname=gourmet
 pkgver=0.17.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A simple but powerful recipe-managing application"
 arch=('any')
 url="http://thinkle.github.io/gourmet/"
 license=('GPL')
-depends=('pygtk' 'python2-pillow' 'python2-sqlalchemy')
+depends=('pygtk' 'python2-elib-intl' 'python2-pillow' 'python2-sqlalchemy')
 makedepends=('python2-distutils-extra')
 optdepends=('gstreamer0.10-python: play timer sounds'
             'ipython2: Python Shell plugin'
