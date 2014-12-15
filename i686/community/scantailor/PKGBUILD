@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 90086 2013-05-06 19:39:25Z foutrelis $
+# $Id: PKGBUILD 123918 2014-12-15 17:53:07Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Denis Terskov aka neurosurgeon <terskov.den@gmail.com>
 
 pkgname=scantailor
 pkgver=0.9.11.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Interactive post-processing tool for scanned pages"
 arch=(i686 x86_64)
 url="http://scantailor.sourceforge.net"
@@ -12,8 +12,11 @@ license="GPL"
 depends=('qt4')
 makedepends=('cmake' 'boost')
 options=('!makeflags')
-source=(http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.gz)
-md5sums=('6cdca1b6d1dafd022ea94b4800dad340')
+install=scantailor.install
+source=(http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.gz
+	scantailor.desktop)
+md5sums=('6cdca1b6d1dafd022ea94b4800dad340'
+         '7fdbdef6167d124762421ec99a98f8de')
 
 build() {
   cd $srcdir/$pkgname-$pkgver
@@ -29,4 +32,6 @@ build() {
 package() {
   cd $srcdir/$pkgname-$pkgver
   make DESTDIR="$pkgdir" install
+  install -Dm0644 "resources/appicon.svg" "$pkgdir/usr/share/icons/hicolor/scalable/apps/scantailor.svg"
+  install -Dm0644 "$srcdir/scantailor.desktop" "$pkgdir/usr/share/applications/scantailor.desktop"
 }

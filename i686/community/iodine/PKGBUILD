@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 122343 2014-11-11 08:05:49Z fyan $
+# $Id: PKGBUILD 123896 2014-12-15 03:26:49Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Christian Hesse <mail@eworm.de>
 # Contributor: Daenyth <Daenyth+Arch [at] gmail [dot] com>
@@ -6,12 +6,13 @@
 
 pkgname=iodine
 pkgver=0.7.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Tunnel IPv4 data through a DNS server'
 arch=('i686' 'x86_64')
 url='http://code.kryo.se/iodine'
 license=('custom:ISC')
 depends=('zlib' 'net-tools')
+backup=('etc/conf.d/iodined')
 source=("http://code.kryo.se/${pkgname}/${pkgname}-${pkgver}.tar.gz"
         'iodined.service'
         'iodined.conf.d')

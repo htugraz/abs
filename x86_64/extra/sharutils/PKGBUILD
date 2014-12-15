@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 196822 2013-10-20 09:31:59Z bisson $
+# $Id: PKGBUILD 227628 2014-12-15 17:01:07Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Kevin Piche <kevin@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=sharutils
-pkgver=4.14
+pkgver=4.14.2
 pkgrel=1
 pkgdesc='Makes so-called shell archives out of many files'
 url='http://www.gnu.org/software/sharutils/'
 license=('GPL')
 arch=('i686' 'x86_64')
 depends=('perl' 'gettext' 'texinfo')
-source=("ftp://ftp.gnu.org/gnu/${pkgname}/${pkgname}-${pkgver}.tar.xz")
-sha1sums=('5d2d76caa6ee816202fb78395415bd863043d81b')
+source=("ftp://ftp.gnu.org/gnu/${pkgname}/su-4.14.2/${pkgname}-${pkgver}.tar.xz")
+sha1sums=('d28608310666d6ac17e771b058558b29aabd9fad')
 
 install=install
 
