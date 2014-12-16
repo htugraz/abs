@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 122745 2014-11-19 14:15:39Z mtorromeo $
+# $Id: PKGBUILD 123956 2014-12-16 10:26:15Z mtorromeo $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Contributor: David Stelter <david.stelter@gmail.com>
 # Contributor: Francisco Lopes <chico.lopes@gmail.com>
 
 pkgname='pfff'
 pkgver=0.28.1
-pkgrel=4
+pkgrel=5
 pkgdesc='Tools and APIs for code analysis, visualization and transformation'
 arch=('i686' 'x86_64')
 url='https://github.com/facebook/pfff'

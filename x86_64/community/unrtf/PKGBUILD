@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 95284 2013-08-08 19:29:43Z jlichtblau $
-# Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+# $Id: PKGBUILD 124003 2014-12-16 19:42:22Z jlichtblau $
+# Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 # Contributor: froggie <sullivanva@gmail.com>
 
 pkgname=unrtf
-pkgver=0.21.5
+pkgver=0.21.7
 pkgrel=1
 pkgdesc="Command-line program which converts RTF documents to other formats"
 arch=('i686' 'x86_64')
@@ -13,17 +13,17 @@ license=('GPL3')
 depends=('glibc')
 changelog=$pkgname.changelog
 source=(http://ftp.gnu.org/gnu/$pkgname/$pkgname-$pkgver.tar.gz)
-sha256sums=('b6b1afd301dcec1cf377476154fc22ed0ac73aee2b7d56a42e2279cced3943c2')
+sha256sums=('855bae8f106eb1366a56343322ddfebaf407fb450e3933aa0b3c5047074f8020')
 
 build() {
-  cd ${srcdir}/$pkgname-$pkgver
+  cd "${srcdir}"/$pkgname-$pkgver
 
   ./configure --prefix=/usr
   make
 }
 
 package() {
-  cd ${srcdir}/$pkgname-$pkgver
+  cd "${srcdir}"/$pkgname-$pkgver
 
-  make DESTDIR=${pkgdir} install
+  make DESTDIR="${pkgdir}" install
 }

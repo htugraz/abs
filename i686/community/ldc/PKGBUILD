@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 123904 2014-12-15 09:56:01Z dicebot $
+# $Id: PKGBUILD 123959 2014-12-16 12:28:53Z dicebot $
 # Maintainer: Mihails Strasuns <public@dicebot.lv>
 # Contributor: Sven-Hendrik Haase <sh@lutzhaase.com>
 pkgname=('ldc' 'liblphobos')
 groups=('dlang' 'dlang-ldc')
 pkgver=0.15.1
 epoch=1
-pkgrel=1
+pkgrel=2
 pkgdesc="A D Compiler based on the LLVM Compiler Infrastructure including D runtime and libphobos2"
 arch=('i686' 'x86_64')
 url="https://github.com/ldc-developers/ldc"
@@ -56,6 +56,7 @@ package_ldc() {
 package_liblphobos() {
     provides=("d-runtime" "d-stdlib")
     replaces=("liblphobos-devel")
+    conflicts=("liblphobos-devel")
     depends=("curl")
 
     # licenses
