@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 227698 2014-12-17 15:33:41Z tpowa $
+# $Id: PKGBUILD 227734 2014-12-18 06:26:28Z tpowa $
 # Maintainer : Thomas Baechler <thomas@archlinux.org>
 
 pkgname=nvidia
 pkgver=343.36
 _extramodules=extramodules-3.18-ARCH
-pkgrel=3
+pkgrel=4
 pkgdesc="NVIDIA drivers for linux"
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"
