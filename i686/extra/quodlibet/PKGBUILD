@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 223937 2014-10-06 20:37:03Z eric $
+# $Id: PKGBUILD 227769 2014-12-19 02:16:04Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=quodlibet
 pkgver=3.2.2
-pkgrel=1
+pkgrel=2
 pkgdesc="An audio library tagger, manager and player"
 arch=('any')
 license=('GPL2')
 url="http://code.google.com/p/quodlibet/"
-depends=('gtk3' 'python2-gobject' 'python2-dbus' 'mutagen' 
+depends=('gtk3' 'python2-gobject' 'python2-dbus' 'python2-cairo' 'mutagen' 
          'gst-plugins-base' 'gst-plugins-good' 'gst-plugins-ugly' 
 	 'gnome-icon-theme')
 makedepends=('intltool')
