@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 122606 2014-11-15 14:57:01Z bpiotrowski $
+# $Id: PKGBUILD 124181 2014-12-20 11:25:05Z jsteel $
 # Maintainer: Jonathan Steel <jsteel at archlinux.org>
 # Contributor: megadriver <megadriver at gmx dot com>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
@@ -7,8 +7,8 @@
 # Contributor: Hans-Kristian Arntzen <maister@archlinux.us>
 
 pkgname=mednafen
-pkgver=0.9.36.5
-pkgrel=2
+pkgver=0.9.37.1
+pkgrel=1
 pkgdesc="Command-line multi-system gaming emulator"
 url="http://mednafen.sourceforge.net"
 license=('GPL2')
@@ -16,7 +16,7 @@ arch=('i686' 'x86_64')
 depends=('libcdio' 'libsndfile' 'sdl' 'zlib')
 makedepends=('mesa' 'glu')
 source=(http://downloads.sourceforge.net/mednafen/$pkgname-$pkgver.tar.bz2)
-md5sums=('a0841f0073322414858c22e247344502')
+md5sums=('79d4694f0234cd457324271a58b665a6')
 
 build() {
   cd $pkgname
