@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 225913 2014-11-10 22:19:58Z heftig $
+# $Id: PKGBUILD 227868 2014-12-21 15:03:10Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 
 pkgbase=tracker
 pkgname=(tracker libtracker-sparql)
-pkgver=1.2.4
+pkgver=1.2.5
 pkgrel=1
 pkgdesc="All-in-one indexer, search tool and metadata database"
 arch=(i686 x86_64)
@@ -18,7 +18,7 @@ makedepends=(libgee libsecret upower libexif exempi
 url="http://www.gnome.org"
 options=('!emptydirs')
 source=(http://ftp.gnome.org/pub/gnome/sources/$pkgbase/${pkgver:0:3}/$pkgbase-$pkgver.tar.xz)
-sha256sums=('438efa29ea1ff7546321d2eb0f7f9edc83c74be24a9d8bef4f993be243647bb7')
+sha256sums=('1e614bc33f93d5820f3c90510e11210bf34d02dba6ccbd3dc30097758a6d31aa')
 
 build() {
   cd $pkgbase-$pkgver

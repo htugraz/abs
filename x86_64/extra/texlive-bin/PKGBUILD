@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 225903 2014-11-10 19:55:07Z andyrtr $
+# $Id: PKGBUILD 227907 2014-12-21 16:56:17Z andyrtr $
 # Maintainer: Rémy Oudompheng <remy@archlinux.org>
 # Contributor: francois <francois.archlinux.org>
 
 pkgname=texlive-bin
 pkgver=2014.34260
-pkgrel=3
+pkgrel=4
 _biber_ver=1.9 # for biblatex 2.9 only.
 pkgdesc="TeX Live binaries"
 license=('GPL')

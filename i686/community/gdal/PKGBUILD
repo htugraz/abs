@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 123352 2014-12-02 11:07:26Z fyan $
+# $Id: PKGBUILD 124326 2014-12-21 17:01:26Z andyrtr $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: dibblethewrecker dibblethewrecker.at.jiwe.dot.org
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=gdal
 pkgver=1.11.1
-pkgrel=3
+pkgrel=4
 pkgdesc="A translator library for raster geospatial data formats"
 arch=('i686' 'x86_64')
 url="http://www.gdal.org/"
