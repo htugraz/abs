@@ -5,7 +5,7 @@
 pkgbase=gap
 pkgname=('gap' 'gap-packages')
 pkgver=4.7.6
-pkgrel=1
+pkgrel=3
 pkgdesc="GAP: a system for computational discrete algebra"
 arch=('i686' 'x86_64')
 url="http://www.gap-system.org/"
@@ -28,10 +28,21 @@ package_gap() {
   
   mkdir -p "$pkgdir"/usr/lib/gap
   cp -r * "$pkgdir"/usr/lib/gap
-  rm -r "$pkgdir"/usr/lib/gap/pkg
+
+# move pkg to gap-packages, except for GAPDoc
+  mv "$pkgdir"/usr/lib/gap/pkg{,0}
+  mkdir "$pkgdir"/usr/lib/gap/pkg
+  mv "$pkgdir"/usr/lib/gap/pkg0/GAPDoc-* "$pkgdir"/usr/lib/gap/pkg
+  rm -r "$pkgdir"/usr/lib/gap/pkg0
+
+# remove leftover source files
+  rm -r "$pkgdir"/usr/lib/gap/extern
 
   mkdir -p "$pkgdir"/usr/bin
   ln -s /usr/lib/gap/bin/gap.sh "$pkgdir"/usr/bin/gap
+
+# fix location
+  sed -e 's|/build/gap/src/gap4r7|/usr/lib/gap|' -i "$pkgdir"/usr/lib/gap/bin/gap.sh  
 }
 
 package_gap-packages() {
@@ -41,4 +52,7 @@ package_gap-packages() {
 
   mkdir -p "$pkgdir"/usr/lib/gap
   cp -r pkg "$pkgdir"/usr/lib/gap
+
+# GAPDoc is in main package
+  rm -r "$pkgdir"/usr/lib/gap/pkg/GAPDoc-*
 }
