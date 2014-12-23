@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 124198 2014-12-20 18:21:02Z fyan $
+# $Id: PKGBUILD 124385 2014-12-23 08:35:19Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
@@ -10,8 +10,8 @@
 
 pkgname=nodejs
 pkgver=0.10.34
-_npmver=2.1.15
-pkgrel=2
+_npmver=2.1.16
+pkgrel=3
 pkgdesc='Evented I/O for V8 javascript'
 arch=('i686' 'x86_64')
 url='http://nodejs.org/'

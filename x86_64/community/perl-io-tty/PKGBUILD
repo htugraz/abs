@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 112635 2014-06-04 13:51:52Z bluewind $
+# $Id: PKGBUILD 124447 2014-12-23 22:21:08Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-io-tty
-pkgver=1.11
-pkgrel=2
+pkgver=1.12
+pkgrel=1
 pkgdesc="Provide an interface to TTYs and PTYs"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/IO-Tty/"
@@ -12,7 +12,7 @@ license=("GPL" "PerlArtistic")
 depends=('glibc')
 options=('!emptydirs')
 source=("http://search.cpan.org/CPAN/authors/id/T/TO/TODDR/IO-Tty-$pkgver.tar.gz")
-md5sums=('fc42736aee83f848ff5191c6890cc539')
+md5sums=('11695a1a516b3bd1b90ce75ff0ce3e6d')
 
 build() {
   cd $srcdir/IO-Tty-$pkgver

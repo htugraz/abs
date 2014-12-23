@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 105787 2014-02-15 20:33:34Z spupykin $
+# $Id: PKGBUILD 124451 2014-12-23 22:21:34Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Allan McRae <mcrae_allan@hotmail.com>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-lingua-en-numbers
-pkgver=1.06
+pkgver=2.00
 pkgrel=1
 pkgdesc="Turn 407 into four hundred and seven, etc."
 arch=('any')
@@ -13,7 +13,7 @@ license=('GPL' 'PerlArtistic')
 depends=('perl>=5.10.0')
 options=('!emptydirs')
 source=(http://search.cpan.org/CPAN/authors/id/N/NE/NEILB/Lingua-EN-Numbers-$pkgver.tar.gz)
-md5sums=('9a84e14fea6eacd2cbf1355b93f6c6a0')
+md5sums=('4c203447af2a3217eeac765201df7f78')
 
 build() {
   cd  $srcdir/Lingua-EN-Numbers-$pkgver

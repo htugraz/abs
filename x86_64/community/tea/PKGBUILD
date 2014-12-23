@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 122679 2014-11-17 12:03:40Z spupykin $
+# $Id: PKGBUILD 124476 2014-12-23 22:24:48Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Roman Kyrylych <roman@archlinux.org>
@@ -6,7 +6,7 @@
 # Contributor: Zsolt Varadi <sysop_xxl@fibermail.hu>
 
 pkgname=tea
-pkgver=39.0.0
+pkgver=39.1.0
 pkgrel=1
 pkgdesc="A Qt-based text editor for Linux and *BSD. With an ultimate small size TEA provides you hundreds of functions."
 arch=('i686' 'x86_64')
@@ -16,7 +16,7 @@ depends=('qt4' 'aspell' 'hunspell')
 install=tea.install
 source=(http://semiletov.org/tea/dloads/tea-$pkgver.tar.bz2
         tea.desktop)
-md5sums=('6b912da316b467725e46b6cc5dac9eb3'
+md5sums=('31df3094f6d7e63e84be6162d6d19406'
          '377ace3363124f4c086de0babb820761')
 
 prepare() {
