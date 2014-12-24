@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 226977 2014-11-24 07:19:31Z andrea $
+# $Id: PKGBUILD 228016 2014-12-24 14:44:22Z jgc $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-kamera
 pkgver=4.14.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Configure Kamera"
 url="http://kde.org/applications/graphics/kamera/"
 arch=('i686' 'x86_64')

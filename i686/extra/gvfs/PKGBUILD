@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 226838 2014-11-22 20:18:25Z bpiotrowski $
+# $Id: PKGBUILD 228015 2014-12-24 14:44:20Z jgc $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgbase=gvfs
 pkgname=('gvfs' 'gvfs-smb' 'gvfs-afc' 'gvfs-afp' 'gvfs-gphoto2' 'gvfs-goa' 'gvfs-mtp')
 pkgver=1.22.2
-pkgrel=3
+pkgrel=4
 arch=('i686' 'x86_64')
 license=('LGPL')
 makedepends=('avahi' 'dbus' 'fuse' 'intltool' 'libarchive' 'libcdio-paranoia' 'libgphoto2' 'libimobiledevice' 'libsoup' 'smbclient' 'udisks2' 'libsecret' 'docbook-xsl' 'gtk3' 'libmtp' 'gnome-online-accounts' 'libbluray')

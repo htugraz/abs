@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 198401 2013-10-30 14:38:47Z allan $
+# $Id: PKGBUILD 228018 2014-12-24 14:44:26Z jgc $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Sarah Hay <sarahhay@mb.sympatico.ca>
 # Contributor: Simo L. <neotuli@yahoo.com>
@@ -6,7 +6,7 @@
 
 pkgname=sane
 pkgver=1.0.24
-pkgrel=3
+pkgrel=4
 pkgdesc="Scanner Access Now Easy"
 url="http://www.sane-project.org/"
 arch=('i686' 'x86_64')

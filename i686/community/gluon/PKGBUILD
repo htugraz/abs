@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 118195 2014-09-02 15:26:13Z svenstaro $
+# $Id: PKGBUILD 124499 2014-12-24 07:18:50Z andrea $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Ivan Sichmann Freitas <ivansichfreitas@gmail.com>
 
 pkgname=gluon
 pkgver=0.71.0
 _pkgver=0.71
-pkgrel=6
+pkgrel=7
 pkgdesc="A free and open source platform for creating and distributing games"
 arch=('i686' 'x86_64')
 url="http://gluon.gamingfreedom.org/"
