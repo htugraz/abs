@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 124478 2014-12-23 22:25:07Z spupykin $
+# $Id: PKGBUILD 124539 2014-12-25 12:52:22Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: William Rea <sillywilly@gmail.com>
 
 pkgname=workrave
 pkgver=1.10.5
-pkgrel=1
+pkgrel=2
 pkgdesc="a tool to help RSI"
 arch=('i686' 'x86_64')
 license=('GPL2')
 url="http://workrave.org"
-depends=('libxtst' 'gtkmm3' 'gconf' 'gdome2' 'gstreamer0.10' 'libsm' 'libice'
+depends=('libxtst' 'gtkmm3' 'gdome2' 'gstreamer0.10' 'libsm' 'libice'
 	 'python2-cheetah' 'libxss')
 makedepends=('intltool' 'gobject-introspection')
 source=($pkgname-$pkgver.tar.gz::https://github.com/rcaelers/workrave/archive/v${pkgver//./_}.tar.gz)
