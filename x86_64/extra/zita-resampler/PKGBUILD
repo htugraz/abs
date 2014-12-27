@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 219549 2014-08-11 12:22:43Z schiv $
+# $Id: PKGBUILD 228096 2014-12-27 17:35:39Z schiv $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Philipp Überbacher <murks at lavabit dot com>
 
 pkgname=zita-resampler
 pkgver=1.3.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A C++ library for resampling audio signals"
 url="http://kokkinizita.linuxaudio.org/linuxaudio/"
 arch=('i686' 'x86_64')

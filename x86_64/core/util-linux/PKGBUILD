@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 225426 2014-10-29 13:04:27Z dreisner $
+# $Id: PKGBUILD 228092 2014-12-27 16:41:31Z dreisner $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Maintainer: Dave Reisner <dreisner@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
@@ -13,7 +13,7 @@ arch=('i686' 'x86_64')
 makedepends=('systemd' 'python')
 license=('GPL2')
 options=('strip' 'debug')
-source=("ftp://ftp.kernel.org/pub/linux/utils/$pkgname/v2.25/$pkgname-$pkgver.tar.xz"
+source=("https://www.kernel.org/pub/linux/utils/util-linux/v2.25/$pkgname-$pkgver.tar.xz"
         uuidd.tmpfiles
         pam-{login,common,su})
 md5sums=('cab3d7be354000f629bc601238b629b3'
