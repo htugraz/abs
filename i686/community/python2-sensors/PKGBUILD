@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 114832 2014-07-04 08:27:13Z fyan $
+# $Id: PKGBUILD 124950 2014-12-30 16:04:49Z fyan $
 # Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Nuno Araujo <nuno.araujo@russo79.com>
 
 pkgname=python2-sensors
 _pkgname=PySensors
-pkgver=0.0.2
-pkgrel=2
+pkgver=0.0.3
+pkgrel=1
 pkgdesc='Python bindings to libsensors'
 arch=('any')
 url='http://pypi.python.org/pypi/PySensors/'
 license=('GPL')
 depends=('python2' 'lm_sensors')
 source=(http://pypi.python.org/packages/source/P/${_pkgname}/${_pkgname}-${pkgver}.tar.gz)
-md5sums=('7786f888e59866a0b3b91ec2138b0d1f')
+md5sums=('ff15240b5918a9f5aa1bb7b2a75c7b07')
 
 build() {
   cd "${srcdir}"/${_pkgname}-${pkgver}
