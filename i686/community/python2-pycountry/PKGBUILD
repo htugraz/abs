@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 124954 2014-12-30 16:12:56Z fyan $
+# $Id: PKGBUILD 125059 2014-12-31 01:52:23Z fyan $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor:  Pawel "kTT" Salata <rockplayer.pl@gmail.com>
 
 pkgname=python2-pycountry
-pkgver=1.9
+pkgver=1.10
 pkgrel=1
 pkgdesc="ISO country, subdivision, language, currency and script definitions and their translations"
 arch=('any')
@@ -12,7 +12,7 @@ license=('LGPL2.1')
 depends=('python2-lxml')
 makedepends=('python2-setuptools')
 source=("http://pypi.python.org/packages/source/p/pycountry/pycountry-${pkgver}.zip")
-md5sums=('1fa53872c78080d3da19b62aed86296f')
+md5sums=('617635a7e94dc3d18ebcb5382cd3c93f')
 
 package() {
   cd "${srcdir}/pycountry-${pkgver}"
