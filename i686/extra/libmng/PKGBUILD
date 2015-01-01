@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 197262 2013-10-24 20:00:46Z eric $
+# $Id: PKGBUILD 228294 2015-01-01 02:10:06Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=libmng
@@ -14,6 +14,7 @@ source=(http://downloads.sourceforge.net/sourceforge/${pkgname}/${pkgname}-${pkg
 sha1sums=('7dd35369ff5916e1823cbacef984ab1b87714b69'
           'SKIP'
           '2f8b472d53791ba3a44dab9b18fb215e8b19dd77')
+validpgpkeys=('8048643BA2C840F4F92A195FF54984BFA16C640F')
 
 prepare() {
   cd ${pkgname}-${pkgver}

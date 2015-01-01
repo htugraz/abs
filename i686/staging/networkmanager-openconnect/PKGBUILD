@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 228120 2014-12-28 17:21:19Z fyan $
+# $Id: PKGBUILD 228268 2015-01-01 00:26:43Z eric $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=networkmanager-openconnect

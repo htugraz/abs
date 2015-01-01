@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 124086 2014-12-19 00:36:23Z eric $
+# $Id: PKGBUILD 125103 2015-01-01 02:30:07Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=youtube-dl
@@ -15,6 +15,7 @@ source=(http://youtube-dl.org/downloads/${pkgver}/${pkgname}-${pkgver}.tar.gz
         http://youtube-dl.org/downloads/${pkgver}/${pkgname}-${pkgver}.tar.gz.sig)
 sha1sums=('7e5f71535979b2bf627bf71020075b53b9e19d40'
           'SKIP')
+validpgpkeys=('7D33D762FD6C35130481347FDB4B54CBA4826A18')
 
 prepare() {
   cd ${pkgname}

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 215918 2014-07-01 00:03:58Z eric $
+# $Id: PKGBUILD 228289 2015-01-01 01:50:58Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=intltool
@@ -12,6 +12,7 @@ depends=('perl-xml-parser')
 source=(http://launchpad.net/intltool/trunk/${pkgver}/+download/${pkgname}-${pkgver}.tar.gz{,.asc})
 sha1sums=('7fddbd8e1bf94adbf1bc947cbf3b8ddc2453f8ad'
           '85c71e9651df41fc330c5f171fdfe1bf11e44f65')
+validpgpkeys=('6977ECD0E1517D6CA45C0DA443ACFF9623AE85D2')
 
 build() {
   cd ${pkgname}-${pkgver}

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 222854 2014-09-23 13:57:47Z bpiotrowski $
+# $Id: PKGBUILD 228306 2015-01-01 02:34:37Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=moc
@@ -21,6 +21,7 @@ optdepends=('speex: for using the speex plugin'
 source=(http://ftp.daper.net/pub/soft/moc/stable/${pkgname}-${pkgver}.tar.bz2{,.sig})
 sha1sums=('a02c10075541995771dbdccb7f2d0ecd19d70b81'
           'SKIP')
+validpgpkeys=('59359B80406D9E73E80599BEF3121E4F2885A7AA')
 
 build() {
   cd ${pkgname}-${pkgver}

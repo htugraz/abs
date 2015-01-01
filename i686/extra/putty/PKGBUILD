@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 192256 2013-08-09 00:29:07Z eric $
+# $Id: PKGBUILD 228314 2015-01-01 02:52:15Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=putty
@@ -13,6 +13,7 @@ source=(http://the.earth.li/~sgtatham/putty/${pkgver}/${pkgname}-${pkgver}.tar.g
         putty-${pkgver}.tar.gz.sig::http://the.earth.li/~sgtatham/putty/latest/putty-${pkgver}.tar.gz.DSA)
 sha1sums=('195c0603ef61082b91276faa8d4246ea472bba3b'
           '77a3c246485071f7c2ac7101778bdc6bd4918a6b')
+validpgpkeys=('00B1100938E698006518F0ABFECD6F3F08B0A90B')
 
 build() {
   cd ${pkgname}-${pkgver}/unix

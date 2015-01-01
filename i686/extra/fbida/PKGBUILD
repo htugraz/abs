@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 215158 2014-06-14 19:17:06Z andyrtr $
+# $Id: PKGBUILD 228280 2015-01-01 01:24:13Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=fbida
@@ -18,6 +18,7 @@ sha1sums=('5838b2cb7188481fece6159fccb3b121acd906e7'
           'SKIP'
           'd06b70f2d581a1a3e9e0909b5af7f3f71ed54717'
           'a5644d75e868bfc23bc462c3b4bc84c1a168146c')
+validpgpkeys=('A0328CFFB93A17A79901FE7D4CB6D8EED3E87138')
 
 prepare() {
   cd ${pkgname}-${pkgver}

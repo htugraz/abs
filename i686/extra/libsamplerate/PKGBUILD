@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 197267 2013-10-24 20:17:46Z eric $
+# $Id: PKGBUILD 228297 2015-01-01 02:20:35Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=libsamplerate
@@ -12,6 +12,7 @@ depends=('libsndfile')
 source=(http://www.mega-nerd.com/SRC/libsamplerate-${pkgver}.tar.gz{,.asc})
 sha1sums=('e5fe82c4786be2fa33ca6bd4897db4868347fe70'
           'SKIP')
+validpgpkeys=('73571E85C19F4281D8C97AA86CA41A7743B8D6C8')
 
 build() {
   cd ${pkgname}-${pkgver}

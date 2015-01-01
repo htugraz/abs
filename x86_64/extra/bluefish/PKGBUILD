@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 211664 2014-04-22 23:43:54Z eric $
+# $Id: PKGBUILD 228275 2015-01-01 00:58:28Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=bluefish
@@ -15,6 +15,7 @@ install=bluefish.install
 source=(http://www.bennewitz.com/bluefish/stable/source/bluefish-${pkgver}.tar.bz2{,.sig})
 sha1sums=('7742f732a4259ff927a2160a4d94e0c0a805a196'
           'SKIP')
+validpgpkeys=('58FD02766D031E832560A6A226073EFCDAC576E6')
 
 prepare() {
   cd ${pkgname}-${pkgver}
