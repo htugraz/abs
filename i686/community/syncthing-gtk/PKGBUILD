@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 124986 2014-12-30 20:03:33Z jlichtblau $
+# $Id: PKGBUILD 125187 2015-01-02 20:47:32Z jlichtblau $
 # Maintainer: Martin Wimpress <code@flexion.org>
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: kozec <kozec at kozec dot com>
 
 pkgname=syncthing-gtk
-pkgver=0.5.5
+pkgver=0.5.6
 pkgrel=1
 pkgdesc='GTK3 based GUI and notification area icon for Syncthing'
 arch=('any')
@@ -13,7 +13,7 @@ license=('GPL2')
 makedepends=('python2-setuptools')
 depends=('gtk3' 'libnotify' 'python2-dateutil' 'python2-gobject' 'python2-pyinotify' 'syncthing')
 source=(https://github.com/syncthing/$pkgname/archive/v$pkgver.tar.gz)
-md5sums=('176dadfbb51171719dd72fa1a68632aa')
+md5sums=('0931d312e9cb9510ef92d4a3927b0d1e')
 
 build() {
   cd $pkgname-$pkgver

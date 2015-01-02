@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 215820 2014-06-30 16:38:31Z andrea $
+# $Id: PKGBUILD 228345 2015-01-02 16:13:43Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=appmenu-qt
@@ -13,8 +13,9 @@ makedepends=('cmake')
 source=("http://launchpad.net/${pkgname}/trunk/${pkgver}/+download/${pkgname}-${pkgver}.tar.bz2"{,.asc}
         'appmenu-async.diff')
 md5sums=('90cce750e5412d43ce075b0a9bdb6782'
-         'de499d01369fc85040f5bbfc53ae1700'
+         'SKIP'
          '5db00ca92274c8b1797c204321961189')
+validpgpkeys=('45C43F82329D77F384214CCABEED35A5EEE34473') # Aurelien Gateau
 
 prepare() {
   mkdir build
