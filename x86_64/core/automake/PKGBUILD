@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 203055 2014-01-03 00:30:47Z allan $
+# $Id: PKGBUILD 228359 2015-01-03 06:22:26Z allan $
 # Maintainer: Allan McRae <allan@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
 
@@ -17,6 +17,7 @@ install=automake.install
 source=(ftp://ftp.gnu.org/gnu/${pkgname}/${pkgname}-${pkgver}.tar.xz{,.sig})
 md5sums=('7fc29854c520f56b07aa232a0f880292'
          'SKIP')
+validpgpkeys=('A0460631BECA5C1CCD1C8362FC818E17429F96EA')   # Stefano Lattarini
 
 prepare() {
   cd ${srcdir}/${pkgname}-${pkgver}

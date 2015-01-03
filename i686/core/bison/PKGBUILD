@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 201434 2013-12-11 15:08:40Z allan $
+# $Id: PKGBUILD 228361 2015-01-03 06:27:22Z allan $
 # Maintainer: Allan McRae <allan@archlinux.org>
 # Contributor: Eric Belanger <eric@archlinux.org>
 
@@ -16,6 +16,7 @@ install=bison.install
 source=(ftp://ftp.gnu.org/gnu/bison/${pkgname}-${pkgver}.tar.xz{,.sig})
 md5sums=('146be9ff9fbd27497f0bf2286a5a2082'
          'SKIP')
+validpgpkeys=('7DF84374B1EE1F9764BBE25D0DDCAA3278D5264E')  # Akim Demaille
 
 build() {
   cd ${srcdir}/${pkgname}-${pkgver}  

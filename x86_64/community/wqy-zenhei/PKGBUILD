@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 111484 2014-05-19 09:52:07Z spupykin $
+# $Id: PKGBUILD 125225 2015-01-03 13:36:51Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
-#$Id: PKGBUILD 111484 2014-05-19 09:52:07Z spupykin $
+#$Id: PKGBUILD 125225 2015-01-03 13:36:51Z spupykin $
 # Maintainer: JJDaNiMoTh <jjdanimoth.aur@gmail.com>
 # Contributor: zlowly <zlowly [at] archlinux.org>
 
 pkgname=wqy-zenhei
 pkgver=0.9.45
-pkgrel=4
+pkgrel=5
 pkgdesc="A Hei Ti Style (sans-serif) Chinese Outline Font."
 arch=('any')
 license=('GPL2' 'custom:"font embedding exception"')

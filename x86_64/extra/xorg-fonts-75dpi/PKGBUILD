@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 185756 2013-05-18 10:56:35Z andyrtr $
+# $Id: PKGBUILD 228375 2015-01-03 09:48:51Z andyrtr $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-fonts-75dpi
 pkgver=1.0.3
-pkgrel=1
+pkgrel=2
 pkgdesc="X.org 75dpi fonts"
 arch=(any)
 url="http://xorg.freedesktop.org/"

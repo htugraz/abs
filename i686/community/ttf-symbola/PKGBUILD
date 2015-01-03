@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 124149 2014-12-20 00:00:33Z thestinger $
+# $Id: PKGBUILD 125201 2015-01-03 08:06:51Z thestinger $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 # Contributor: Elena ``of Valhalla'' Grandi <gmail.com: elena.valhalla>
 # Contributor: Jesse Jaara <gmail.com: jesse.jaara>
 
 pkgname=ttf-symbola
 pkgver=7.19
-pkgrel=1
+pkgrel=2
 pkgdesc="Font for unicode symbols (part of Unicode Fonts for Ancient Scripts)."
 arch=('any')
 url="http://users.teilar.gr/~g1951d/"

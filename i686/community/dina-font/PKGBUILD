@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 111625 2014-05-21 10:41:38Z kkeen $
+# $Id: PKGBUILD 125229 2015-01-03 14:01:27Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 # Contributor: Xilon <xilonmu@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=dina-font
 pkgver=2.92
-pkgrel=4
+pkgrel=5
 pkgdesc="A monospace bitmap font, primarily aimed at programmers"
 arch=('any')
 url="http://www.donationcoder.com/Software/Jibz/Dina/index.html"

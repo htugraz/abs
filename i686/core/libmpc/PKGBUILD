@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 204788 2014-01-27 08:27:19Z allan $
+# $Id: PKGBUILD 228369 2015-01-03 06:43:06Z allan $
 # Maintainer: Allan McRae <allan@archlinux.org>
 
 pkgname=libmpc
@@ -13,6 +13,7 @@ install=libmpc.install
 source=(http://www.multiprecision.org/mpc/download/mpc-${pkgver/_/-}.tar.gz{,.sig})
 md5sums=('68fadff3358fb3e7976c7a398a0af4c3'
          'SKIP')
+validpgpkeys=('AD17A21EF8AED8F1CC02DBD9F7D5C9BF765C61E3')  # Andreas Enge
 
 build() {
   cd "${srcdir}/mpc-${pkgver}"
