@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 123996 2014-12-16 15:12:05Z spupykin $
+# $Id: PKGBUILD 125296 2015-01-04 06:39:02Z td123 $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Arch Haskell Team <arch-haskell@haskell.org>
 
 pkgname=haskell-hslogger
 pkgver=1.2.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Versatile logging framework"
 url="http://hackage.haskell.org/package/hslogger"
 license=('LGPL')

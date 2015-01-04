@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 123990 2014-12-16 14:54:15Z spupykin $
+# $Id: PKGBUILD 125301 2015-01-04 06:39:12Z td123 $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=haskell-pango
 pkgver=0.13.0.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Binding to the pango library for Gtk2Hs."
 url="http://hackage.haskell.org/package/pango"
 license=('LGPL2.1')

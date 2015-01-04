@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 227003 2014-11-24 07:20:28Z andrea $
+# $Id: PKGBUILD 228422 2015-01-04 12:31:21Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
@@ -80,7 +80,7 @@ pkgname=('kdeplasma-addons-applets-bball'
 pkgver=4.14.3
 pkgrel=1
 arch=('i686' 'x86_64')
-url='https://projects.kde.org/projects/kde/kdeplasma-addons'
+url='https://projects.kde.org/projects/kde/workspace/kdeplasma-addons'
 license=('GPL' 'LGPL')
 groups=('kde' 'kdeplasma-addons')
 makedepends=('cmake' 'automoc4' 'kdebase-workspace' 'kdeedu-marble' 'eigen2'

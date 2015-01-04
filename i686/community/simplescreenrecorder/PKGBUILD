@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 119626 2014-09-26 18:17:58Z kkeen $
+# $Id: PKGBUILD 125363 2015-01-04 22:02:23Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Maarten Baert
 
 pkgname=simplescreenrecorder
-pkgver=0.3.1
+pkgver=0.3.2
 pkgrel=1
 pkgdesc="A feature-rich screen recorder that supports X11 and OpenGL."
 arch=("i686" "x86_64")

@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 123386 2014-12-03 11:19:31Z aginiewicz $
+# $Id: PKGBUILD 125257 2015-01-03 23:22:39Z aginiewicz $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 
 pkgbase=python-xlsxwriter
 pkgname=('python2-xlsxwriter' 'python-xlsxwriter')
-pkgver=0.6.4
-pkgrel=2
+pkgver=0.6.5
+pkgrel=1
 pkgdesc="A Python module for creating Excel XLSX files"
 arch=('any')
 url="https://github.com/jmcnamara/XlsxWriter"
 license=('BSD')
 makedepends=('python2-setuptools' 'python-setuptools')
 source=("https://pypi.python.org/packages/source/X/XlsxWriter/XlsxWriter-${pkgver}.tar.gz")
-md5sums=('b3702816516257a03f432b8c978406f0')
+md5sums=('7d58c3a4684ea79b9e5cbeee7f9240b0')
 
 prepare() {
   cd "$srcdir"
