@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 104890 2014-01-28 03:34:20Z td123 $
+# $Id: PKGBUILD 125477 2015-01-05 22:55:07Z anatolik $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 
 pkgname=ruby-iconv
 pkgver=1.0.4
-pkgrel=2
+pkgrel=3
 pkgdesc='Wrapper library for iconv'
 arch=('i686' 'x86_64')
 url='https://github.com/nurse/iconv'

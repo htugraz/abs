@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 215752 2014-06-30 11:38:33Z bisson $
+# $Id: PKGBUILD 228677 2015-01-05 16:42:45Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 # Contributor: Firmicus <francois.archlinux.org> 
 
 pkgname=ttf-freebanglafont
 pkgver=20130212
-pkgrel=1
+pkgrel=2
 pkgdesc='Bengali fonts'
 url='http://www.ekushey.org/'
 license=('GPL')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 121747 2014-11-03 14:23:04Z alucryd $
+# $Id: PKGBUILD 125478 2015-01-05 22:55:08Z anatolik $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 # Contributor: Emiliano Vavassori <syntaxerrormmm@gmail.com>
 # Contributor: Alexsandr Pavlov <kidoz@mail.ru>
 
 pkgname=ruby-mail
 pkgver=2.6.3
-pkgrel=1
+pkgrel=2
 pkgdesc='A really Ruby Mail handler'
 arch=('any')
 url='http://github.com/mikel/mail'

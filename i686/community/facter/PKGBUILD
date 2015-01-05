@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 121706 2014-11-02 12:10:03Z jsteel $
+# $Id: PKGBUILD 125468 2015-01-05 22:54:55Z anatolik $
 # Maintainer: Jonathan Steel <jsteel at archlinux.org>
 # Contributor: Greg Sutcliffe <facter_aur (at) emeraldreverie.orgr>
 # Contributor: Hyacinthe Cartiaux <hyacinthe.cartiaux@free.fr>
@@ -8,7 +8,7 @@
 
 pkgname=facter
 pkgver=2.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Collect and display system facts"
 arch=('any')
 url="http://puppetlabs.com/facter"

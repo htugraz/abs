@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 124559 2014-12-25 14:08:12Z anatolik $
+# $Id: PKGBUILD 125474 2015-01-05 22:55:04Z anatolik $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Eric Bélanger
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
@@ -7,7 +7,7 @@
 
 pkgbase=ruby-gnome2
 pkgver=2.2.4
-pkgrel=1
+pkgrel=2
 pkgname=('ruby-atk' 'ruby-gdkpixbuf2' 'ruby-gio2' 'ruby-glib2'
          'ruby-gtk2' 'ruby-pango' 'ruby-gobject-introspection')
 arch=('x86_64' 'i686')

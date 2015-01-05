@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 118329 2014-09-05 09:10:05Z bpiotrowski $
+# $Id: PKGBUILD 125486 2015-01-05 22:55:16Z anatolik $
 # Maintainer: Anatol Pomozov <anatol.pomozov@gmail.com>
 # Contributor: Massimiliano Torromeo <massimiliano.torromeo at gmail dot com>
 # Contributor: Alexsandr Pavlov <kidoz at mail dot ru>
@@ -6,7 +6,7 @@
 _gemname=rdiscount
 pkgname=ruby-$_gemname
 pkgver=2.1.7.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Fast Implementation of Gruber's Markdown in C"
 arch=(i686 x86_64)
 url='http://dafoster.net/projects/rdiscount/'

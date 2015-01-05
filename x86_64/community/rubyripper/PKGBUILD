@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 104897 2014-01-28 03:34:29Z td123 $
+# $Id: PKGBUILD 125492 2015-01-05 22:55:22Z anatolik $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 # Contributor: Dave Reisner <dreisner@archlinux.org>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 
 pkgname=rubyripper
 pkgver=0.6.2
-pkgrel=5
+pkgrel=6
 pkgdesc='Secure audiodisc ripper'
 arch=('any')
 url='http://code.google.com/p/rubyripper/'

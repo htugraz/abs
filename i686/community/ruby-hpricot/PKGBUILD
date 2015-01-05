@@ -1,4 +1,4 @@
-#$Id: PKGBUILD 118331 2014-09-05 09:10:07Z bpiotrowski $
+#$Id: PKGBUILD 125476 2015-01-05 22:55:06Z anatolik $
 # Maintainer: Anatol Pomozov <anatol.pomozov@gmail.com>
 # Contributor: Andrea Scarpino <bash.lnx@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
@@ -8,7 +8,7 @@
 _gemname=hpricot
 pkgname=ruby-$_gemname
 pkgver=0.8.6
-pkgrel=2
+pkgrel=3
 pkgdesc='A swift, liberal HTML parser with a fantastic library'
 arch=(i686 x86_64)
 url='http://code.whytheluckystiff.net/hpricot/'

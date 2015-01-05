@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 215772 2014-06-30 12:02:09Z bisson $
+# $Id: PKGBUILD 228669 2015-01-05 16:28:39Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Firmicus <francois.archlinux.org>
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
@@ -6,7 +6,7 @@
 pkgname=ttf-khmer
 _pkgname=All_KhmerOS
 pkgver=5.0
-pkgrel=4
+pkgrel=5
 pkgdesc='Fonts for Khmer and Latin alphabets'
 # url='http://www.khmeros.info/en/fonts' # dead
 url='http://sourceforge.net/projects/khmer/'

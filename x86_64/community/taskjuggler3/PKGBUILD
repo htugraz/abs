@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 124727 2014-12-27 20:15:48Z alucryd $
+# $Id: PKGBUILD 125493 2015-01-05 22:55:24Z anatolik $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 # Contributor: Mathieu Clabaut <mathieu.clabaut@gmail.com>
 # Contributor: John Henderson <jw.hendy@gmail.com>
 
 pkgname=taskjuggler3
 pkgver=3.5.0
-pkgrel=9
+pkgrel=10
 pkgdesc='Project Management Software'
 arch=('any')
 url='http://www.taskjuggler.org'

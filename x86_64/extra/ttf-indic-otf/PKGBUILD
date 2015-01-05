@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 215780 2014-06-30 12:03:12Z bisson $
+# $Id: PKGBUILD 228680 2015-01-05 16:52:09Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 # Contributor: Firmicus <francois.archlinux.org> 
 
 pkgname=ttf-indic-otf
 pkgver=0.2
-pkgrel=7
+pkgrel=8
 pkgdesc='Indic Opentype Fonts collection'
 url='http://www.indlinux.org/wiki/index.php/Downloads'
 license=('GPL')

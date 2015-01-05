@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 219648 2014-08-13 04:04:13Z bisson $
+# $Id: PKGBUILD 228673 2015-01-05 16:32:56Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 
 pkgname=ttf-tlwg
 pkgver=0.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Collection of scalable Thai fonts'
 url='http://linux.thai.net/projects/fonts-tlwg'
 arch=('any')

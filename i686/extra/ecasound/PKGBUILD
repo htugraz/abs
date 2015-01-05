@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 228114 2014-12-28 10:35:42Z schiv $
+# $Id: PKGBUILD 228681 2015-01-05 22:53:27Z anatolik $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Eric Belanger <eric@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=ecasound
 pkgver=2.9.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Command-line multitrack audio processor"
 arch=('i686' 'x86_64')
 url="http://www.eca.cx/ecasound/"

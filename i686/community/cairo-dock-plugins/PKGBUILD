@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 121035 2014-10-20 09:32:01Z alucryd $
+# $Id: PKGBUILD 125466 2015-01-05 22:54:53Z anatolik $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Tofe <chris.chapuis@gmail.com>
 # Contributor: zhuqin <zhuqin83@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=cairo-dock-plugins
 pkgver=3.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Plugins for Cairo-Dock'
 arch=('i686' 'x86_64')
 url='http://glx-dock.org'

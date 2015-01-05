@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 215745 2014-06-30 11:23:39Z bisson $
+# $Id: PKGBUILD 228679 2015-01-05 16:48:29Z bisson $
 # Contributor: Willey Chen <chwilley@gmail.com>
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 
 pkgname=ttf-hannom
 pkgver=2005
-pkgrel=3
+pkgrel=4
 pkgdesc='Chinese and Vietnamese TrueType fonts'
 url='http://vietunicode.sourceforge.net/fonts/fonts_hannom.html'
 license=('custom:non-profit')

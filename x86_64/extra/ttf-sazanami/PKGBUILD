@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 215770 2014-06-30 11:57:16Z bisson $
+# $Id: PKGBUILD 228671 2015-01-05 16:30:40Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Darwin M. Bautista <djclue917@gmail.com>
 
 pkgname=ttf-sazanami
 pkgver=20040629
-pkgrel=8
+pkgrel=9
 pkgdesc='Japanese fonts'
 url='http://wiki.fdiary.net/font/?sazanami'
 license=('custom:BSD')
