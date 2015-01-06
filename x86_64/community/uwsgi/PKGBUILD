@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 125276 2015-01-04 05:43:17Z svenstaro $
+# $Id: PKGBUILD 125498 2015-01-05 23:33:32Z foutrelis $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Valentin Hăloiu <vially.ichb+aur@gmail.com>
@@ -21,7 +21,7 @@ pkgname=(uwsgi
          uwsgi-plugin-mono
          mod_proxy_uwsgi)
 pkgver=2.0.9
-pkgrel=1
+pkgrel=2
 arch=(i686 x86_64)
 url="http://projects.unbit.it/$pkgbase"
 license=(GPL2)
