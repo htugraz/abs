@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 107163 2014-03-13 17:21:19Z spupykin $
+# $Id: PKGBUILD 125571 2015-01-07 18:26:20Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=bcg729
 pkgver=1.0.0
-pkgrel=5
+pkgrel=6
 pkgdesc="g729 codec"
 arch=('i686' 'x86_64')
 url="http://www.linphone.org/eng/documentation/dev/bcg729.html"

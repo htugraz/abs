@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 215920 2014-07-01 00:15:10Z eric $
+# $Id: PKGBUILD 228729 2015-01-07 02:12:48Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=ttf-cheapskate
 pkgver=2.0
-pkgrel=9
+pkgrel=10
 pkgdesc="TTFonts collection from dustimo.com"
 arch=('any')
 url="http://dustismo.com/"

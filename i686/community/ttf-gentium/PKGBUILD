@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 114674 2014-07-02 20:05:51Z stativ $
+# $Id: PKGBUILD 125579 2015-01-07 22:15:18Z stativ $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname=ttf-gentium
 pkgver=1.03
-pkgrel=2
+pkgrel=3
 pkgdesc="Wide range of Latin-based alphabets, defines roughly 1,500 glyphs."
 arch=('any')
 url="http://scripts.sil.org/Gentium"
