@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 95242 2013-08-07 13:23:12Z bgyorgy $
+# $Id: PKGBUILD 125593 2015-01-08 12:08:09Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 
 pkgname=ttf-linux-libertine-g
 _pkgname=LinLibertineG
 pkgver=20120116
-pkgrel=2
+pkgrel=3
 pkgdesc="Graphite port of Linux Libertine and Linux Biolinum fonts"
 arch=('any')
 url="http://numbertext.org/linux/"
