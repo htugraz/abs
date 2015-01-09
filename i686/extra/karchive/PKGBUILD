@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 228754 2015-01-08 17:04:03Z andrea $
+# $Id: PKGBUILD 228779 2015-01-09 07:44:31Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=karchive

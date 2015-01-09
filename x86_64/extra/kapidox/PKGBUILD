@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 228752 2015-01-08 17:03:46Z andrea $
+# $Id: PKGBUILD 228777 2015-01-09 07:44:09Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kapidox

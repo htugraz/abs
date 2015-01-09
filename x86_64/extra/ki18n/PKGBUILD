@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 228755 2015-01-08 17:04:15Z andrea $
+# $Id: PKGBUILD 228780 2015-01-09 07:44:40Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=ki18n

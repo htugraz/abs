@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 227525 2014-12-11 16:08:28Z andrea $
+# $Id: PKGBUILD 228839 2015-01-09 08:02:13Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=plasma-framework
-pkgver=5.5.0
-pkgrel=1
+pkgver=5.6.0
+pkgrel=2
 pkgdesc='Plasma library and runtime components based upon KF5 and Qt5'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/plasma-framework'
 license=('LGPL')
-depends=('qt5-quickcontrols' 'kactivities-frameworks')
+depends=('qt5-quickcontrols' 'kactivities-frameworks' 'kpackage')
 makedepends=('extra-cmake-modules' 'qt5-tools' 'kdoctools')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('e89f887d879cac23143f960fedb95ef7')
+md5sums=('743394f54a6029af0b512ed7b82118ed')
 
 prepare() {
   mkdir -p build

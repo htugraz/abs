@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 114559 2014-07-01 23:33:51Z lfleischer $
+# $Id: PKGBUILD 125659 2015-01-09 13:54:17Z lfleischer $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Roman Kyrylych <Roman.Kyrylych@gmail.com>
@@ -8,13 +8,12 @@
 
 pkgname=ttf-liberation
 pkgver=2.00.1
-pkgrel=4
+pkgrel=5
 pkgdesc='Red Hats Liberation fonts.'
 arch=('any')
 license=('custom:OFL')
 url='https://www.redhat.com/promo/fonts/'
 depends=('fontconfig' 'xorg-fonts-encodings' 'xorg-font-utils')
-makedepends=('fontforge')
 provides=('ttf-font')
 install=ttf.install
 source=("https://fedorahosted.org/releases/l/i/liberation-fonts/liberation-fonts-ttf-$pkgver.tar.gz"

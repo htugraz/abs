@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 228751 2015-01-08 17:03:39Z andrea $
+# $Id: PKGBUILD 228776 2015-01-09 07:44:03Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=extra-cmake-modules
