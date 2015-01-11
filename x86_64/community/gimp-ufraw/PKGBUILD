@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 119963 2014-10-01 11:44:46Z arodseth $
+# $Id: PKGBUILD 125718 2015-01-11 03:30:40Z bisson $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Tobias Kieslich <tobias@archlinux.org>
 # Contributor: Martin Sugioarto <nakal@web.de>
 
 pkgname=gimp-ufraw
 pkgver=0.20
-pkgrel=1
+pkgrel=2
 pkgdesc='Converter for raw files; utility and GIMP plugin'
 url='http://ufraw.sourceforge.net/'
 arch=('x86_64' 'i686')
