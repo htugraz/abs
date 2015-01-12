@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 125751 2015-01-11 13:53:38Z spupykin $
+# $Id: PKGBUILD 125812 2015-01-12 12:04:33Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=haskell-cairo
 pkgver=0.13.0.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Binding to the cairo library for Gtk2Hs."
 url="http://hackage.haskell.org/package/cairo"
 license=('LGPL2.1')
