@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 228024 2014-12-25 01:18:31Z dreisner $
+# $Id: PKGBUILD 228975 2015-01-13 15:48:05Z dreisner $
 # Maintainer: Dave Reisner <dreisner@archlinux.org>
 # Contributor: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Thomas Jost <schnouki@schnouki.net>
@@ -7,7 +7,7 @@
 # Contributor: Jan Rüegg <rggjan@gmail.com>
 
 pkgname=gperftools
-pkgver=2.3
+pkgver=2.4
 pkgrel=1
 pkgdesc="Fast, multi-threaded malloc and nifty performance analysis tools"
 arch=('i686' 'x86_64')
@@ -23,7 +23,7 @@ provides=('libtcmalloc.so'
 optdepends=('graphviz: pprof graph generation'
             'gv: pprof postscript generation')
 source=("https://googledrive.com/host/0B6NtGsLhIcf7MWxMMF9JdTN3UVk/$pkgname-$pkgver.tar.gz")
-md5sums=('f54dd119f0e46ac1f13264f8d97adf90')
+md5sums=('2171cea3bbe053036fb5d5d25176a160')
 
 build() {
   cd "$pkgname-$pkgver"
