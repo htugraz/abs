@@ -1,0 +1,46 @@
+# $Id: PKGBUILD 229402 2015-01-16 10:58:25Z fyan $
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
+# Contributor: Andrea Scarpino <andrea@archlinux.org>
+
+pkgname=okteta
+pkgver=14.12.1
+pkgrel=2
+pkgdesc='Hex Editor'
+url='http://kde.org/applications/utilities/okteta/'
+arch=('i686' 'x86_64')
+license=('GPL' 'LGPL' 'FDL')
+groups=('kde' 'kdesdk')
+depends=('kcmutils' 'kparts' 'knewstuff' 'qca-qt5')
+makedepends=('extra-cmake-modules' 'kdoctools' 'python' 'qt5-tools')
+replaces=('kdesdk-okteta')
+conflicts=('kdesdk-okteta<4.14.3-2')
+install=${pkgname}.install
+source=("http://download.kde.org/stable/applications/${pkgver}/src/okteta-${pkgver}.tar.xz"
+        find_qca_qt5.patch)
+sha1sums=('3d9caab4e6fa31e96ceb51032e9a97db663f0060'
+          'ff51e1448f4df5c2715bdcad57560e82acfbacbf')
+
+prepare() {
+  mkdir build
+
+  cd okteta-${pkgver}
+  # https://bugs.kde.org/show_bug.cgi?id=341509
+  patch -p0 -i ../find_qca_qt5.patch
+}
+
+build() {
+  cd build
+  cmake ../okteta-${pkgver} \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DBUILD_TESTING=OFF \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib \
+    -DSYSCONF_INSTALL_DIR=/etc \
+    -DKDE_INSTALL_USE_QT_SYS_PATHS=ON
+  make
+}
+
+package() {
+  cd build
+  make DESTDIR="$pkgdir" install
+}

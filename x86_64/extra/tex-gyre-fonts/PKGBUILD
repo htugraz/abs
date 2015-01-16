@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 196318 2013-10-11 13:51:25Z heftig $
+# $Id: PKGBUILD 229427 2015-01-16 12:31:46Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=tex-gyre-fonts
 pkgver=2.005
-pkgrel=1
+pkgrel=2
 pkgdesc="Substitute PostScript fonts in OpenType format"
 arch=(any)
 url="http://www.gust.org.pl/projects/e-foundry/tex-gyre"
