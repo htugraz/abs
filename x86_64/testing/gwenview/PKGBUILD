@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 229387 2015-01-16 10:58:04Z fyan $
+# $Id: PKGBUILD 229484 2015-01-17 09:02:13Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=gwenview
 pkgver=14.12.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A fast and easy to use image viewer for KDE"
 url="http://kde.org/applications/graphics/gwenview/"
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
 groups=('kde' 'kdegraphics')
-depends=('kactivities-frameworks' 'kdelibs4support' 'exiv2' 'lcms2')
+depends=('kded' 'kactivities-frameworks' 'kdelibs4support' 'exiv2' 'lcms2')
 makedepends=('extra-cmake-modules' 'git' 'kdoctools' 'python')
 replaces=('kdegraphics-gwenview')
 conflicts=('kdegraphics-gwenview')
