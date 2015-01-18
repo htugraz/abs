@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 107167 2014-03-13 17:22:00Z spupykin $
+# $Id: PKGBUILD 126179 2015-01-18 22:01:23Z eric $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Darwin Bautista <djclue917@gmail.com>
 
@@ -12,7 +12,7 @@ license=('GPL')
 depends=('alsa-lib' 'ffmpeg' 'gtk2' 'libexosip2' 'speex' 'libv4l' 'libglade' 'v4l-utils'
 	 'libpulse' 'libxv' 'mediastreamer' 'ortp' 'libzrtpcpp' 'bcg729' 'libsoup'
 	 'belle-sip')
-makedepends=('pkgconfig' 'perlxml' 'intltool' 'sgmltools-lite')
+makedepends=('pkg-config' 'perl-xml-parser' 'intltool' 'sgmltools-lite')
 optdepends=('pulseaudio')
 options=('!emptydirs')
 source=("http://download-mirror.savannah.gnu.org/releases/${pkgname}/3.7.x/sources/${pkgname}-$pkgver.tar.gz")

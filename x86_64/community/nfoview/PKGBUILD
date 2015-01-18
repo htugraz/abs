@@ -1,23 +1,23 @@
-# $Id: PKGBUILD 120607 2014-10-13 12:21:57Z schiv $
+# $Id: PKGBUILD 126058 2015-01-18 07:55:04Z schiv $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Wes Brewer <brewerw@gmail.com>
 # Contributor: VuDu <vudu.curse@gmail.com>
 
 pkgname=nfoview
-pkgver=1.15
+pkgver=1.15.1
 _basever=1.15
 pkgrel=1
 pkgdesc="Simple NFO file viewer in GTK+ 3"
 arch=('any')
 url="http://home.gna.org/nfoview/"
 license=('GPL3')
-depends=('gtk3' 'python-gobject' 'desktop-file-utils' 'hicolor-icon-theme' 'python>=3.4')
+depends=('gtk3' 'python-gobject' 'desktop-file-utils')
 makedepends=('intltool')
 optdepends=('terminus-font: recommended font')
 install=$pkgname.install
 source=("http://download.gna.org/$pkgname/$_basever/$pkgname-$pkgver.tar.xz"
         'x-nfo.desktop')
-md5sums=('a44d82c375cd5d9cb01624a5d2c9b1df'
+md5sums=('47f0db47cdd99cac3f23d94b07f3edbe'
          '29d0ad75aeecfaf21965c01173d23e48')
 
 package() {

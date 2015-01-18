@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 104743 2014-01-25 15:14:59Z kkeen $
+# $Id: PKGBUILD 126156 2015-01-18 21:20:47Z eric $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Jared Casper <jaredcasper@gmail.com>
 # Contributor: Stefan Husmann <stefan-husmann@t-online.de>
@@ -11,7 +11,7 @@ arch=('i686' 'x86_64')
 url="http://geda-project.org/"
 license=('GPL')
 depends=('gtk2' 'guile' 'libstroke' 'shared-mime-info' 'hicolor-icon-theme')
-makedepends=('pkgconfig' 'perlxml' 'flex' 'gawk')
+makedepends=('pkg-config' 'perl-xml-parser' 'flex' 'gawk')
 optdepends=('python2: for two of the commands (garchive, tragesym)'
   'gawk: for sw2asc')
 replaces=('geda-suite' 'geda-libs')

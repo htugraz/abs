@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 122212 2014-11-08 05:52:22Z foutrelis $
+# $Id: PKGBUILD 126109 2015-01-18 16:07:28Z svenstaro $
 # Contributor: SpepS <dreamspepser at yahoo dot it>
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 
 pkgname=openimageio
-pkgver=1.4.14
+pkgver=1.4.15
 pkgrel=1
 pkgdesc="A library for reading and writing images, including classes, utilities, and applications"
 arch=(i686 x86_64)
@@ -19,8 +19,9 @@ md5sums=('SKIP')
 prepare() {
   cd oiio
 
+  curl "https://github.com/OpenImageIO/oiio/commit/e1150f22f012d8d86f14534eda14bec960e96f3e.patch"|patch -Np1
   # https://github.com/OpenImageIO/oiio/issues/987
-  git revert -n 6f0e019
+  #git revert -n 6f0e019
 }
 
 build() {

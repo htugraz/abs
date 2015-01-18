@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 227460 2014-12-11 14:20:40Z fyan $
+# $Id: PKGBUILD 229549 2015-01-18 20:59:11Z svenstaro $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=nvidia-lts
-pkgver=343.36
+pkgver=346.35
 _extramodules=extramodules-3.14-lts
-pkgrel=1
+pkgrel=2
 pkgdesc="NVIDIA drivers for linux-lts"
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"
@@ -16,8 +16,8 @@ install=nvidia-lts.install
 options=(!strip)
 source=("ftp://download.nvidia.com/XFree86/Linux-x86/${pkgver}/NVIDIA-Linux-x86-${pkgver}.run"
         "ftp://download.nvidia.com/XFree86/Linux-x86_64/${pkgver}/NVIDIA-Linux-x86_64-${pkgver}-no-compat32.run")
-md5sums=('eae5d5407df0b371929a76f96aec4020'
-         'dfdf53ee8787455fe92a760ffa6badcb')
+md5sums=('d2b8f7f90ef5037f03f94519f9809511'
+         '9ca9f07f91361362f304ca8317ddd453')
 
 [[ "$CARCH" = "i686" ]] && _pkg="NVIDIA-Linux-x86-${pkgver}"
 [[ "$CARCH" = "x86_64" ]] && _pkg="NVIDIA-Linux-x86_64-${pkgver}-no-compat32"
@@ -27,22 +27,28 @@ prepare() {
 }
 
 build() {
-  _kernver="$(cat /usr/lib/modules/${_extramodules}/version)"
-  cd "${_pkg}/kernel"
-  make SYSSRC=/usr/lib/modules/${_kernver}/build module
+    _kernver="$(cat /usr/lib/modules/${_extramodules}/version)"
+    cd "${_pkg}/kernel"
+    make SYSSRC=/usr/lib/modules/${_kernver}/build module
 
-  cd uvm
-  make SYSSRC=/usr/lib/modules/${_kernver}/build module
+    if [[ "$CARCH" = "x86_64" ]]; then
+        cd uvm
+        make SYSSRC=/usr/lib/modules/"${_kernver}/build" module
+    fi
 }
 
 package() {
-  install -D -m644 "${srcdir}/${_pkg}/kernel/nvidia.ko" \
-    "${pkgdir}/usr/lib/modules/${_extramodules}/kernel/drivers/video/nvidia.ko"
-  install -D -m644 "${srcdir}/${_pkg}/kernel/uvm/nvidia-uvm.ko" \
-    "${pkgdir}/usr/lib/modules/${_extramodules}/kernel/drivers/video/nvidia-uvm.ko"
-  gzip "${pkgdir}/usr/lib/modules/${_extramodules}/kernel/drivers/video/"*.ko
-  install -d -m755 "${pkgdir}/usr/lib/modprobe.d"
-  echo "blacklist nouveau" >> "${pkgdir}/usr/lib/modprobe.d/nvidia-lts.conf"
-  echo "blacklist nvidiafb" >> "${pkgdir}/usr/lib/modprobe.d/nvidia-lts.conf"
-  install -D -m644 "${srcdir}/${_pkg}/LICENSE" "${pkgdir}/usr/share/licenses/nvidia-lts/LICENSE"
+    install -D -m644 "${srcdir}/${_pkg}/kernel/nvidia.ko" \
+      "${pkgdir}/usr/lib/modules/${_extramodules}/kernel/drivers/video/nvidia.ko"
+  
+    if [[ "$CARCH" = "x86_64" ]]; then
+        install -D -m644 "${srcdir}/${_pkg}/kernel/uvm/nvidia-uvm.ko" \
+            "${pkgdir}/usr/lib/modules/${_extramodules}/nvidia-uvm.ko"
+    fi
+  
+    gzip "${pkgdir}/usr/lib/modules/${_extramodules}/kernel/drivers/video/"*.ko
+    install -d -m755 "${pkgdir}/usr/lib/modprobe.d"
+    echo "blacklist nouveau" >> "${pkgdir}/usr/lib/modprobe.d/nvidia-lts.conf"
+    echo "blacklist nvidiafb" >> "${pkgdir}/usr/lib/modprobe.d/nvidia-lts.conf"
+    install -D -m644 "${srcdir}/${_pkg}/LICENSE" "${pkgdir}/usr/share/licenses/nvidia-lts/LICENSE"
 }

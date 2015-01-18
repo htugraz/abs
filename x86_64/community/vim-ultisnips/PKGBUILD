@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 119869 2014-09-30 09:42:46Z svenstaro $
+# $Id: PKGBUILD 126060 2015-01-18 09:26:48Z lfleischer $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Sven-Hendrik Haase <sh@lutzhaase.com>
 
 pkgname=vim-ultisnips
 pkgver=3.0
-pkgrel=3
+pkgrel=4
 pkgdesc='TextMate-style snippets for Vim.'
 arch=('any')
 url='https://github.com/SirVer/ultisnips'
@@ -30,4 +30,8 @@ package() {
 
   install -dm755 "$pkgdir/usr/share/vim/vimfiles/"
   cp -r -t "$pkgdir/usr/share/vim/vimfiles/" UltiSnips autoload snippets
+
+  # compile .pyc and .pyo files (fixes FS#43121)
+  find "${pkgdir}" -name '*.py' -exec python2 -mpy_compile {} +
+  find "${pkgdir}" -name '*.py' -exec python2 -O -mpy_compile {} +
 }

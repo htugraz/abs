@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 101139 2013-11-18 10:37:26Z spupykin $
+# $Id: PKGBUILD 126122 2015-01-18 19:34:25Z eric $
 # Maintainer: Sergej Pupykin <sergej@aur.archlinux.org>
 # Contributor: Sergej Pupykin <sergej@aur.archlinux.org>
 
 pkgname=archlinux-xdg-menu
 pkgver=0.7.6.2
-pkgrel=1
+pkgrel=2
 pkgdesc="automatic generate WM menu from xdg files"
 arch=('any')
 url="http://wiki.archlinux.org/index.php/XdgMenu"
 license=("GPL")
-depends=('perl' 'perlxml')
+depends=('perl' 'perl-xml-parser')
 optdepends=('sux: for xdg_menu_su')
 backup=("etc/update-menus.conf"
 	"etc/xdg/menus/arch-applications.menu")

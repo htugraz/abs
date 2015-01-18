@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 109615 2014-04-16 19:38:06Z arodseth $
+# $Id: PKGBUILD 126151 2015-01-18 20:57:43Z eric $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Angel Velasquez <angvp@archlinux.org> 
 # Contributor: Ionut Biru  <ibiru@archlinux.ro>
@@ -13,7 +13,7 @@ arch=('x86_64' 'i686')
 url='http://www.geany.org/'
 license=('GPL')
 depends=('gtk2' 'hicolor-icon-theme' 'desktop-file-utils')
-makedepends=('perlxml' 'setconf' 'intltool')
+makedepends=('perl-xml-parser' 'setconf' 'intltool')
 optdepends=('geany-plugins: various extra features'
             'vte: terminal support'
             'python2')

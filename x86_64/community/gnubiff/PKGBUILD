@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 125910 2015-01-14 11:22:12Z spupykin $
+# $Id: PKGBUILD 126168 2015-01-18 21:40:11Z eric $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Tom K <tomk@runbox.com>
 # Contributor: Todd Musall <tmusall@gmail.com>
@@ -11,7 +11,7 @@ arch=('i686' 'x86_64')
 url="http://gnubiff.sourceforge.net/"
 license=("GPL")
 depends=('libglade' 'gtk3' 'popt')
-makedepends=('perlxml' 'intltool')
+makedepends=('perl-xml-parser' 'intltool')
 conflicts=(gnubiff-gtk)
 source=(http://downloads.sourceforge.net/gnubiff/gnubiff-$pkgver.tar.gz
 	mutex.patch)
