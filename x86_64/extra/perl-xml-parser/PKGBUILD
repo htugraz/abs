@@ -1,19 +1,17 @@
-# $Id: PKGBUILD 227848 2014-12-21 01:32:08Z eric $
+# $Id: PKGBUILD 229563 2015-01-19 04:05:07Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=perl-xml-parser
-pkgver=2.43
+pkgver=2.44
 pkgrel=1
 pkgdesc="Expat-based XML parser module for perl"
 arch=('i686' 'x86_64')
 license=('GPL' 'PerlArtistic')
 url="http://search.cpan.org/dist/XML-Parser/"
 depends=('perl' 'expat')
-replaces=('perlxml')
-provides=("perlxml=${pkgver}")
 options=('!emptydirs')
 source=("http://search.cpan.org/CPAN/authors/id/T/TO/TODDR/XML-Parser-${pkgver}.tar.gz")
-sha1sums=('c9bb4540b66f43ebe1d2544e4dffcf2a2ef4974f')
+sha1sums=('0ab6b932713ec1f9927a1b1c619b6889a5c12849')
 
 build() {
   cd XML-Parser-${pkgver}

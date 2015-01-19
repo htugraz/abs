@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 123684 2014-12-09 17:38:59Z spupykin $
+# $Id: PKGBUILD 126208 2015-01-19 10:20:05Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andreas Schönfelder <passtschu at freenet dot de>
 
 pkgname=phoronix-test-suite
-pkgver=5.4.0
+pkgver=5.4.1
 pkgrel=1
 pkgdesc="The most comprehensive testing and benchmarking platform available for Linux"
 arch=('any')
@@ -14,7 +14,7 @@ optdepends=('php-gtk'
 	    'php-gd')
 install=${pkgname}.install
 source=(http://www.phoronix.net/downloads/phoronix-test-suite/releases/phoronix-test-suite-$pkgver.tar.gz)
-md5sums=('5f299db13b09ab422b93c87df878b405')
+md5sums=('a4d1148d228a7ca9e18363806926a0ee')
 
 package() {
   cd $srcdir/phoronix-test-suite

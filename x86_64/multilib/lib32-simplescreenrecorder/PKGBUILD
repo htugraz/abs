@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 125365 2015-01-04 22:10:57Z kkeen $
+# $Id: PKGBUILD 126260 2015-01-19 23:03:44Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Maarten Baert
 
 pkgname=lib32-simplescreenrecorder
-pkgver=0.3.2
+pkgver=0.3.3
 pkgrel=1
 pkgdesc="Record 32-bit OpenGL applications with SimpleScreenRecorder."
 arch=("x86_64")
