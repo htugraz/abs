@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 125892 2015-01-14 08:33:59Z svenstaro $
+# $Id: PKGBUILD 126467 2015-01-23 21:32:49Z bluewind $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Jan "heftig" Steffens <jan.steffens@gmail.com>
 # Contributor: Eduardo Romero <eduardo@archlinux.org>
 # Contributor: Giovanni Scafora <giovanni@archlinux.org>
 
 pkgname=wine
-pkgver=1.7.34
+pkgver=1.7.35
 pkgrel=1
 
 _pkgbasever=${pkgver/rc/-rc}
 
 source=(http://prdownloads.sourceforge.net/$pkgname/$pkgname-$_pkgbasever.tar.bz2{,.sign}
         30-win32-aliases.conf)
-sha1sums=('1c8981df189421a26c447ef6a2da4f8f0a874653'
+sha1sums=('3dfaa07a7fcda253cb52eacd8c9a26146ef26661'
           'SKIP'
           '023a5c901c6a091c56e76b6a62d141d87cce9fdb')
 validpgpkeys=(5AC1A08B03BD7A313E0A955AF5E6E9EEB9461DD7)
