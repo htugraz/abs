@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 125947 2015-01-15 06:18:53Z kkeen $
+# $Id: PKGBUILD 126567 2015-01-25 11:39:07Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Kurt Marasco <celilo _at_ lavabit _dot_ com>
 # Contributor: Pascal Ernster <aur at hardfalcon dot net>
 
 pkgname=hiawatha
-pkgver=9.10
+pkgver=9.11
 pkgrel=1
 pkgdesc="Secure and advanced webserver"
 url="https://www.hiawatha-webserver.org/"
@@ -24,7 +24,7 @@ source=(
         'hiawatha.conf.sample'
         'hiawatha.service'
 )
-sha256sums=('c9f8650b43b3cdf7ad9550cfb0ef7516b7faf1b1ff20bc9eacab95c43f6c14a2'
+sha256sums=('bf7f09dff86fe689e872e7adade91e13fd81106a97e5af02ab8afb3c77fccd9c'
             '4671d2586cbe3cd6497b16ff422c6143cdab40641ef3c9c4988c478351a8f5e7'
             'fb789b12bb6246237b15a9244f58317abdd53e5ca4eb55880e40a498b2237155')
 
