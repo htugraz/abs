@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 122904 2014-11-22 08:11:12Z andrea $
+# $Id: PKGBUILD 230012 2015-01-26 18:10:56Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sddm
