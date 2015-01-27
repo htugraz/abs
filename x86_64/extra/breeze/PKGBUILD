@@ -1,17 +1,18 @@
-# $Id: PKGBUILD 227672 2014-12-17 07:49:21Z andrea $
+# $Id: PKGBUILD 230125 2015-01-27 17:30:32Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgbase=breeze
 pkgname=('breeze' 'breeze-kde4')
-pkgver=5.1.2
-pkgrel=1
+pkgver=5.2.0
+pkgrel=2
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/breeze'
 license=('LGPL')
-makedepends=('extra-cmake-modules' 'frameworkintegration' 'kdelibs' 'automoc4')
+makedepends=('extra-cmake-modules' 'frameworkintegration' 'kdelibs'
+             'automoc4' 'kdecoration')
 source=("http://download.kde.org/stable/plasma/${pkgver}/$pkgbase-$pkgver.tar.xz")
-md5sums=('d3ca341863579bab1222353a84fa09fa')
+md5sums=('6fb1281714f7da7d9b9dfcbdbf69147e')
 
 prepare() {
   mkdir build{,-kde4}
@@ -37,10 +38,11 @@ build() {
 }
 
 package_breeze() {
-  depends=('frameworkintegration')
+  depends=('frameworkintegration' 'kdecoration')
   pkgdesc='Artwork, styles and assets for the Breeze visual style for the Plasma Desktop'
   optdepends=('breeze-kde4: Breeze widget style for KDE4 applications'
               'oxygen-icons: fallback icon theme')
+  groups=('plasma')
 
   cd build
   make DESTDIR="${pkgdir}" install

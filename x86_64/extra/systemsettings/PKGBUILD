@@ -1,23 +1,23 @@
-# $Id: PKGBUILD 227682 2014-12-17 07:51:01Z andrea $
+# $Id: PKGBUILD 230084 2015-01-27 12:19:09Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgname=systemsettings
-pkgver=5.1.2
+pkgver=5.2.0
 pkgrel=1
 pkgdesc='KDE system settings'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/systemsettings'
 license=('LGPL')
-depends=('kcmutils' 'khtml' 'kdelibs4support')
+depends=('kcmutils' 'khtml')
 makedepends=('extra-cmake-modules' 'kdoctools' 'python')
 conflicts=('kdebase-workspace')
-groups=('plasma-next')
+groups=('plasma')
 source=("http://download.kde.org/stable/plasma/${pkgver}/$pkgname-$pkgver.tar.xz")
-md5sums=('8ffe9ac1164fa6344f48842815bfd5e0')
+md5sums=('cf6b126c3365864348d1faa5eb43e9ba')
 
 prepare() {
-  mkdir -p build
+  mkdir build
 }
 
 build() {

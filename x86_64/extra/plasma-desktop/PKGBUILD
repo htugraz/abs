@@ -1,26 +1,28 @@
-# $Id: PKGBUILD 227689 2014-12-17 07:52:13Z andrea $
+# $Id: PKGBUILD 230131 2015-01-27 17:54:02Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgname=plasma-desktop
-pkgver=5.1.2
-pkgrel=1
+pkgver=5.2.0
+pkgrel=2
 pkgdesc='KDE Plasma Desktop'
 arch=('i686' 'x86_64')
 url='https://www.kde.org/workspaces/plasmadesktop/'
 license=('LGPL')
-depends=('qt5-graphicaleffects' 'powerdevil' 'polkit-kde-frameworks' 'libcanberra'
-         'kwin' 'libusb-compat' 'libxkbfile' 'kmenuedit' 'systemsettings' 'ksysguard')
-makedepends=('extra-cmake-modules' 'kdoctools')
-optdepends=('plasma-nm: Network manager applet')
+depends=('qt5-graphicaleffects' 'powerdevil' 'polkit-kde-frameworks'
+         'libcanberra' 'kwin' 'libusb-compat' 'libxkbfile' 'kmenuedit'
+         'systemsettings' 'ksysguard' 'breeze' 'krunner')
+makedepends=('extra-cmake-modules' 'kdoctools' 'boost' 'baloo-frameworks')
+optdepends=('baloo-frameworks: system indexing'
+           'plasma-nm: Network manager applet')
 conflicts=('kdebase-workspace' 'kdebase-kdepasswd')
 install="${pkgname}.install"
-groups=('plasma-next')
+groups=('plasma')
 source=("http://download.kde.org/stable/plasma/${pkgver}/$pkgname-$pkgver.tar.xz")
-md5sums=('cd5dbce577c175cb33008702400d5598')
+md5sums=('476bc7465f8615b932696c9721453d26')
 
 prepare() {
-  mkdir -p build
+  mkdir build
 }
 
 build() {
