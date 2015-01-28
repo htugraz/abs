@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 229436 2015-01-16 12:40:24Z heftig $
+# $Id: PKGBUILD 230190 2015-01-28 16:03:04Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=colord-gtk
 pkgver=0.1.26
-pkgrel=1
+pkgrel=2
 pkgdesc="GTK integration for libcolord"
 arch=('i686' 'x86_64')
 url="http://www.freedesktop.org/software/colord"

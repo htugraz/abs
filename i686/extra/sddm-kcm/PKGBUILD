@@ -1,15 +1,14 @@
-# $Id: PKGBUILD 230100 2015-01-27 12:21:46Z andrea $
+# $Id: PKGBUILD 230208 2015-01-28 17:25:47Z andrea $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Maintainer: Antonio Rojas
 
 pkgname=sddm-kcm
 pkgver=5.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc='KDE Config Module for SDDM'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/sddm-kcm'
 license=('GPL')
-groups=('plasma')
 depends=('sddm' 'libxcursor' 'kio')
 makedepends=('extra-cmake-modules' 'kdoctools' 'qt5-tools')
 source=("http://download.kde.org/stable/plasma/$pkgver/$pkgname-$pkgver.tar.xz")
