@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 228058 2014-12-26 14:25:38Z fyan $
+# $Id: PKGBUILD 230274 2015-01-30 04:37:52Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 # Contributor: Sarah Hay <sarah@archlinux.org>
 # Contributor: Arjan Timmerman <arjan@soulfly.nl>
 
 pkgname=perl-extutils-depends
-pkgver=0.403
+pkgver=0.404
 pkgrel=1
 pkgdesc="The Perl depends module"
 arch=('any')
@@ -14,7 +14,7 @@ license=('PerlArtistic')
 depends=('perl')
 options=('!emptydirs')
 source=("http://www.cpan.org/authors/id/X/XA/XAOC/ExtUtils-Depends-${pkgver}.tar.gz")
-md5sums=('bf28c1aad4e1d8761f598ab0b0531dd9')
+md5sums=('2b66dbb4bcfc2639c6b26309569471ad')
 
 build() {
   cd ExtUtils-Depends-${pkgver}
