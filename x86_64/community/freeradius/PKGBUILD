@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 124976 2014-12-30 18:19:36Z spupykin $
+# $Id: PKGBUILD 126840 2015-01-31 09:33:16Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Jason R Begley (jayray@digitalgoat.com>
 # Contributor: Daniel Micay <danielmicay@gmail.com>
 
 pkgname=freeradius
 pkgver=3.0.6
-pkgrel=1
+pkgrel=2
 pkgdesc="The premier open source RADIUS server"
 arch=('i686' 'x86_64')
 url="http://www.freeradius.org/"

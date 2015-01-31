@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 224857 2014-10-20 02:39:11Z bisson $
+# $Id: PKGBUILD 230321 2015-01-31 13:03:23Z pierre $
 # Contributor: Jeff Brodnax <tullyarcher@bellsouth.net>
 # Contributor: Paul Mattal <paul@archlinux.org>
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
@@ -6,7 +6,7 @@
 pkgname=(postfix postfix-tools)
 pkgbase=postfix
 pkgver=2.11.3
-pkgrel=1
+pkgrel=2
 url='http://www.postfix.org/'
 license=('custom')
 arch=('i686' 'x86_64')

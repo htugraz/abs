@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 125994 2015-01-16 16:41:41Z bluewind $
+# $Id: PKGBUILD 126862 2015-01-31 16:39:23Z bluewind $
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 # Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=filezilla
-pkgver=3.10.0.2
+pkgver=3.10.1
 pkgrel=1
 pkgdesc="Fast and reliable FTP, FTPS and SFTP client"
 arch=('i686' 'x86_64')
@@ -30,4 +30,4 @@ package() {
 
   make DESTDIR="${pkgdir}" install
 }
-md5sums=('3456276f703f6fd8f84b0ecb26e3638e')
+md5sums=('6dbe9f9d60aa925fa1ddfcd8568bfe32')
