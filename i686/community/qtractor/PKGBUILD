@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 123372 2014-12-02 23:34:03Z speps $
+# $Id: PKGBUILD 126897 2015-02-01 02:54:37Z speps $
 # Maintainer : Ray Rashif <schiv@archlinux.org>
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Philipp Überbacher <hollunder at gmx dot at>
 
 pkgname=qtractor
-pkgver=0.6.4
+pkgver=0.6.5
 pkgrel=1
 pkgdesc="Audio/MIDI multitrack sequencer"
 arch=('i686' 'x86_64')
@@ -16,7 +16,7 @@ makedepends=('ladspa' 'dssi')
 optdepends=('dssi-vst: win32 VST support')
 install="$pkgname.install"
 source=("http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.gz")
-md5sums=('37396d7dae7a5d6348d481d2d77a88cb')
+md5sums=('810ec8b8d80cf76be6347c271f28a6cc')
 
 prepare() {
   cd $pkgname-$pkgver
