@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 126485 2015-01-24 10:10:41Z andrea $
+# $Id: PKGBUILD 127137 2015-02-04 23:02:34Z bluewind $
 # Maintainer: Thayer Williams <thayer@archlinux.org>
 # Contributor: Thayer Williams <thayer@archlinux.org>
 
@@ -10,7 +10,7 @@ arch=('any')
 url="http://www.archlinux.org/"
 license=('CCPL:by-nc-sa')
 install=archlinux-wallpaper.install
-source=(ftp://ftp.archlinux.org/other/artwork/${pkgname}-${pkgver}.tar.xz)
+source=(https://sources.archlinux.org/other/artwork/${pkgname}-${pkgver}.tar.xz)
 md5sums=('8cdd4f987676977bb3d3679564ec3cfa')
 
 package() {

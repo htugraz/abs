@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 126270 2015-01-20 01:41:47Z svenstaro $
+# $Id: PKGBUILD 127094 2015-02-04 15:59:39Z andyrtr $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Juergen Hoetzel <juergen@archlinux.org> 
 # Contributor: William Rea <sillywilly@gmail.com>, 
@@ -7,7 +7,7 @@
 pkgname=cegui
 pkgver=0.8.4
 _tag=0-8-4
-pkgrel=6
+pkgrel=7
 pkgdesc="A free library providing windowing and widgets for graphics APIs/engines"
 arch=('i686' 'x86_64')
 url="http://cegui.org.uk"

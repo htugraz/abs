@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 225090 2014-10-20 17:02:17Z andrea $
+# $Id: PKGBUILD 230776 2015-02-04 23:00:34Z bluewind $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Balló György <ballogyor+arch at gmail dot com>
 
@@ -10,7 +10,7 @@ arch=('i686' 'x86_64')
 url="http://code.google.com/p/accounts-sso/"
 license=('LGPL')
 makedepends=('qt4' 'libaccounts-glib' 'doxygen' 'qt5-base')
-source=("ftp://ftp.archlinux.org/other/packages/${pkgbase}/accounts-qt-$pkgver.tar.bz2")
+source=("https://sources.archlinux.org/other/packages/${pkgbase}/accounts-qt-$pkgver.tar.bz2")
 sha1sums=('df4f51ea3dac547e0cbdda04d60f6c501d6280f2')
 
 prepare() {

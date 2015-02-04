@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 126109 2015-01-18 16:07:28Z svenstaro $
+# $Id: PKGBUILD 127105 2015-02-04 15:59:57Z andyrtr $
 # Contributor: SpepS <dreamspepser at yahoo dot it>
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 
 pkgname=openimageio
 pkgver=1.4.15
-pkgrel=1
+pkgrel=2
 pkgdesc="A library for reading and writing images, including classes, utilities, and applications"
 arch=(i686 x86_64)
 url="http://www.openimageio.org/"

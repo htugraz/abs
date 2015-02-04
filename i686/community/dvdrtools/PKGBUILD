@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 113890 2014-07-01 08:04:43Z fyan $
+# $Id: PKGBUILD 127137 2015-02-04 23:02:34Z bluewind $
 # Maintainer: Alexander Baldeck <alexander@archlinux.org>
 # Contributor: dorphell <dorphell@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
@@ -14,7 +14,7 @@ depends=('file' 'bash')
 makedepends=('transcode')
 optdepends=('transcode: video/DVD ripper and encoder for the terminal/console')
 conflicts=('cdrkit')
-source=(ftp://ftp.archlinux.org/other/dvdrtools/$pkgname-$pkgver.tar.gz)
+source=(https://sources.archlinux.org/other/dvdrtools/$pkgname-$pkgver.tar.gz)
 md5sums=('5707b7e877b853e258cd738938833006')
 
 build() {

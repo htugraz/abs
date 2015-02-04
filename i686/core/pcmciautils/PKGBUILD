@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 185562 2013-05-15 07:34:58Z tpowa $
+# $Id: PKGBUILD 230776 2015-02-04 23:00:34Z bluewind $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 pkgname=pcmciautils
@@ -12,7 +12,7 @@ groups=('base')
 depends=('systemd')
 conflicts=('pcmcia-cs')
 # source=(http://kernel.org/pub/linux/utils/kernel/pcmcia/${pkgname}-${pkgver}.tar.bz2) broken due to breakin
-source=(ftp://ftp.archlinux.org/other/$pkgname/$pkgname-$pkgver.tar.xz
+source=(https://sources.archlinux.org/other/$pkgname/$pkgname-$pkgver.tar.xz
         initcpio-install-pcmcia)
 options=(!makeflags)
 

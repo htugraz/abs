@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 228729 2015-01-07 02:12:48Z eric $
+# $Id: PKGBUILD 230776 2015-02-04 23:00:34Z bluewind $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=ttf-cheapskate
@@ -10,7 +10,7 @@ url="http://dustismo.com/"
 license=('GPL')
 depends=('xorg-fonts-encodings' 'xorg-fonts-alias' 'xorg-font-utils' 'fontconfig')
 install=ttf.install
-source=(ftp://ftp.archlinux.org/other/packages/ttf-cheapskate/ttf-dustin_20030517.orig.tar.gz)
+source=(https://sources.archlinux.org/other/packages/ttf-cheapskate/ttf-dustin_20030517.orig.tar.gz)
 sha1sums=('66fe8772adf3e3390706c2a34380e380d5533677')
 
 package() {

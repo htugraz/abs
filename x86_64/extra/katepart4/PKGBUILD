@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 229759 2015-01-24 10:40:43Z fyan $
+# $Id: PKGBUILD 230739 2015-02-04 09:54:20Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
-pkgname='katepart4'
+pkgname=katepart4
 pkgver=4.14.3
-pkgrel=2
+pkgrel=3
 pkgdesc="A fast and feature-rich text editor component"
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
@@ -37,5 +37,8 @@ build() {
 
 package() {
   cd build/part
+  make DESTDIR="${pkgdir}" install
+
+  cd ../addons/ktexteditor
   make DESTDIR="${pkgdir}" install
 }

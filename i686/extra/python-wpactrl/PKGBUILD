@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 216156 2014-07-01 17:53:58Z daniel $
+# $Id: PKGBUILD 230776 2015-02-04 23:00:34Z bluewind $
 # Maintainer: Daniel Isenmann <daniel@archlinux.org>
 
 pkgbase=python-wpactrl
@@ -12,7 +12,7 @@ license=('GPL2')
 depends=('python2')
 conflicts=('python-wpactrl<=20090609-3')
 replaces=('python-wpactrl<=20090609-3')
-source=(ftp://ftp.archlinux.org/other/${pkgbase}/python-wpactrl-20090609.tar.gz)
+source=(https://sources.archlinux.org/other/${pkgbase}/python-wpactrl-20090609.tar.gz)
 md5sums=('8d45739aa9bfa1110a4570bb5ceda768')
 
 build() {

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 228987 2015-01-13 18:27:54Z tpowa $
+# $Id: PKGBUILD 230598 2015-02-04 07:27:55Z tpowa $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=rpcbind
 pkgver=0.2.2
-pkgrel=1
+pkgrel=2
 pkgdesc="portmap replacement which supports RPC over various protocols"
 arch=(i686 x86_64)
 backup=('etc/conf.d/rpcbind')

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 115831 2014-07-17 17:30:07Z jsteel $
+# $Id: PKGBUILD 127137 2015-02-04 23:02:34Z bluewind $
 # Maintainer:  Jonathan Steel <jsteel@aur.archlinux.org>
 # Contributor: Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
@@ -15,7 +15,7 @@ license=('GPL')
 depends=('gtk2' 'poppler-glib' 'djvulibre' 'desktop-file-utils')
 makedepends=('cmake' 'webkitgtk2')
 install=$pkgname.install
-source=(ftp://ftp.archlinux.org/other/community/$pkgname/$pkgname-$pkgver.tar.xz
+source=(https://sources.archlinux.org/other/community/$pkgname/$pkgname-$pkgver.tar.xz
         $pkgname.desktop)
 backup=('etc/apvlvrc')
 md5sums=('f222fc4b09b15358eb4e7f996ba810d6'

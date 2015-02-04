@@ -1,5 +1,5 @@
 # vim: set ts=2 sw=2 et:
-# $Id: PKGBUILD 229974 2015-01-25 09:30:56Z allan $
+# $Id: PKGBUILD 230776 2015-02-04 23:00:34Z bluewind $
 # Maintainer: Dan McGee <dan@archlinux.org>
 # Maintainer: Dave Reisner <dreisner@archlinux.org>
 
@@ -20,7 +20,7 @@ conflicts=('pacman-contrib')
 replaces=('pacman-contrib')
 backup=(etc/pacman.conf etc/makepkg.conf)
 options=('strip' 'debug')
-source=(ftp://ftp.archlinux.org/other/pacman/$pkgname-$pkgver.tar.gz{,.sig}
+source=(https://sources.archlinux.org/other/pacman/$pkgname-$pkgver.tar.gz{,.sig}
         pacman.conf.i686
         pacman.conf.x86_64
         makepkg.conf

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 93578 2013-07-05 19:42:56Z bpiotrowski $
+# $Id: PKGBUILD 127137 2015-02-04 23:02:34Z bluewind $
 # Maintainer: Bartłomiej Piotrowski <barthalion@gmail.com>
 # Contributor: Jaroslaw Swierczynski <swiergot@aur.archlinux.org>
 # Contributor: Arkadiusz Laczynski <alaczynski@gmail.com>
@@ -11,7 +11,7 @@ arch=('i686' 'x86_64')
 url="http://www.sjp.pl/slownik/en/"
 license=('GPL' 'LGPL' 'MPL')
 depends=('aspell')
-source=(ftp://ftp.archlinux.org/other/community/$pkgname/sjp-aspell6-pl-6.0_$pkgver-0.tar.bz2)
+source=(https://sources.archlinux.org/other/community/$pkgname/sjp-aspell6-pl-6.0_$pkgver-0.tar.bz2)
 md5sums=('977708b770709d55909b23be2851af10')
 
 build() {

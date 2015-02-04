@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 227316 2014-12-06 10:01:00Z andrea $
+# $Id: PKGBUILD 230776 2015-02-04 23:00:34Z bluewind $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Balló György <ballogyor+arch at gmail dot com>
 
@@ -11,7 +11,7 @@ url="http://code.google.com/p/accounts-sso/"
 license=('LGPL')
 depends=('dbus-glib' 'libxml2' 'sqlite')
 makedepends=('python2-gobject' 'docbook-xsl')
-source=("ftp://ftp.archlinux.org/other/packages/${pkgname}/${pkgname}-${pkgver}.tar.gz")
+source=("https://sources.archlinux.org/other/packages/${pkgname}/${pkgname}-${pkgver}.tar.gz")
 md5sums=('fa37ebbe1cc1e8b738368ba86142c197')
 
 build() {

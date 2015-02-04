@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 121888 2014-11-04 21:34:43Z kkeen $
+# $Id: PKGBUILD 127104 2015-02-04 15:59:56Z andyrtr $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Maintainer: Xyne <ca dot archlinux at xyne, backwards>
 # Contributor: nikor
 
 pkgname=opencsg
 pkgver=1.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Library for image-based CSG rendering using OpenGL."
 arch=('i686' 'x86_64')
 license=('GPL2')

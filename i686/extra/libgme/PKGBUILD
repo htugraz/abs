@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 215795 2014-06-30 15:03:13Z fyan $
+# $Id: PKGBUILD 230776 2015-02-04 23:00:34Z bluewind $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributer: Emmanuel Gil Peyrot <linkmauve@linkmauve.fr>
 
@@ -11,7 +11,7 @@ license=('LGPL')
 arch=('i686' 'x86_64')
 depends=('gcc-libs')
 makedepends=('cmake')
-source=("ftp://ftp.archlinux.org/other/game-music-emu/game-music-emu-${pkgver}.tar.xz")
+source=("https://sources.archlinux.org/other/game-music-emu/game-music-emu-${pkgver}.tar.xz")
 md5sums=('b72bc337ea4bd6dab7f0288ed4cd598e')
 
 build() {

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 110598 2014-05-04 04:26:44Z heftig $
+# $Id: PKGBUILD 127137 2015-02-04 23:02:34Z bluewind $
 # Maintainer: Jonathan Conder <jonno dot conder at gmail dot com>
 
 pkgname=agg
@@ -11,7 +11,7 @@ license=('GPL')
 depends=('gcc-libs' 'sdl' 'freetype2')
 provides=('antigrain')
 replaces=('antigrain')
-source=("ftp://ftp.archlinux.org/other/community/agg/${pkgname}-free-${pkgver}.tar.gz"
+source=("https://sources.archlinux.org/other/community/agg/${pkgname}-free-${pkgver}.tar.gz"
         agg-2.4-depends.patch
         agg-2.5-pkgconfig.patch
         agg-2.5-autotools.patch

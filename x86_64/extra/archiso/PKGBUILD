@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 225525 2014-11-01 01:40:17Z djgera $
+# $Id: PKGBUILD 230776 2015-02-04 23:00:34Z bluewind $
 # Maintainer: Gerardo Exequiel Pozzi <vmlinuz386@yahoo.com.ar>
 # Maintainer: Pierre Schmitz <pierre@archlinux.de>
 
@@ -10,8 +10,8 @@ arch=('any')
 license=('GPL')
 url='https://projects.archlinux.org/archiso.git/'
 depends=('make' 'arch-install-scripts' 'squashfs-tools' 'libisoburn' 'dosfstools' 'lynx')
-source=("ftp://ftp.archlinux.org/other/${pkgname}/${pkgname}-${pkgver}.tar.gz"
-        "ftp://ftp.archlinux.org/other/${pkgname}/${pkgname}-${pkgver}.tar.gz.sig")
+source=("https://sources.archlinux.org/other/${pkgname}/${pkgname}-${pkgver}.tar.gz"
+        "https://sources.archlinux.org/other/${pkgname}/${pkgname}-${pkgver}.tar.gz.sig")
 sha1sums=('2378aee55e51161e8575a53e576cb31d09d985b6'
           'SKIP')
 

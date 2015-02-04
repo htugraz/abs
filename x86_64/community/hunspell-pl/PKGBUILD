@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 104477 2014-01-21 17:16:23Z bpiotrowski $
+# $Id: PKGBUILD 127137 2015-02-04 23:02:34Z bluewind $
 # Maintainer:  Bartłomiej Piotrowski <barthalion@gmail.com>
 # Contributor: Maciej Sitarz <macieks@freesco.pl>
 
@@ -10,7 +10,7 @@ arch=('any')
 url='http://www.sjp.pl/slownik/ort/'
 license=('GPL')
 optdepends=('hunspell: the spell checking libraries and apps')
-source=(ftp://ftp.archlinux.org/other/community/$pkgname/sjp-myspell-pl-$pkgver.zip)
+source=(https://sources.archlinux.org/other/community/$pkgname/sjp-myspell-pl-$pkgver.zip)
 md5sums=('cc1b05d329be79847b9e30a8f056753d')
 
 prepare() {

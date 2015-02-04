@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 226238 2014-11-14 13:09:31Z andrea $
+# $Id: PKGBUILD 230776 2015-02-04 23:00:34Z bluewind $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kwebkitpart
@@ -12,7 +12,7 @@ depends=('kdelibs')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 # Generate using kde releaseme scripts
-source=("ftp://ftp.archlinux.org/other/packages/${pkgname}/${pkgname}-${pkgver}.tar.xz"
+source=("https://sources.archlinux.org/other/packages/${pkgname}/${pkgname}-${pkgver}.tar.xz"
         'sanitize-input.patch')
 md5sums=('0a3e176a7c24f00e22c92a7b105585f8'
          'f9ae9520069ffac4c5da1f408fd4bbdf')

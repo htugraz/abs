@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 187331 2013-06-05 14:36:28Z lcarlier $
+# $Id: PKGBUILD 230776 2015-02-04 23:00:34Z bluewind $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 
 pkgname=opengl-man-pages
@@ -11,7 +11,7 @@ url="http://www.opengl.org/wiki/Getting_started/XML_Toolchain_and_Man_Pages"
 license=('custom')
 makedepends=('libxslt' 'docbook-xsl' 'w3c-mathml2' 'docbook-mathml')
 options=('!makeflags')
-source=("ftp://ftp.archlinux.org/other/${pkgname}/${pkgname}_${_svndate}.tar.xz"
+source=("https://sources.archlinux.org/other/${pkgname}/${pkgname}_${_svndate}.tar.xz"
         'LICENSE')
 md5sums=('b557459f660facc4d69cff8fc1a0f024'
          'cb856abe5968300057e650096ba25b2f')

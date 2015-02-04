@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 198376 2013-10-30 14:29:48Z allan $
+# $Id: PKGBUILD 230776 2015-02-04 23:00:34Z bluewind $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=progsreiserfs
@@ -10,7 +10,7 @@ url="http://www.namesys.com"
 license=('GPL')
 depends=('e2fsprogs')
 source=(#ftp://ftp.namesys.com/pub/libreiserfs/${pkgname}-${pkgver}.tar.gz
-	ftp://ftp.archlinux.org/other/progsreiserfs/${pkgname}-${pkgver}.tar.gz
+	https://sources.archlinux.org/other/progsreiserfs/${pkgname}-${pkgver}.tar.gz
         fix-underquoted-definition.patch
 	)
 md5sums=('d822579bbd4a29a1be5e4490869d9bee')

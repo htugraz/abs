@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 213907 2014-05-31 11:41:24Z tpowa $
+# $Id: PKGBUILD 230566 2015-02-04 07:10:00Z tpowa $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Keshav P R <(the.ridikulus.rat) (aatt) (gemmaeiil) (ddoott) (ccoomm)>
 # Contributor:  Mantas Mikulėnas <grawity@gmail.com>
 
 pkgname=gummiboot
-pkgver=45
+pkgver=48
 pkgrel=1
 pkgdesc="Simple UEFI Boot Manager"
 url="http://freedesktop.org/wiki/Software/gummiboot"

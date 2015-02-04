@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 197790 2013-10-30 08:14:33Z tpowa $
+# $Id: PKGBUILD 230776 2015-02-04 23:00:34Z bluewind $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 #Contributor: Urs Wolfer <uwolfer @ fwo.ch>
 
@@ -11,7 +11,7 @@ conflicts=('mkinitcpio<0.7')
 depends=('device-mapper>=2.0.54')
 arch=('i686' 'x86_64')
 license=('GPL')
-source=(#ftp://ftp.archlinux.org/other/dmraid/$pkgname-$pkgver.tar.bz2
+source=(#https://sources.archlinux.org/other/dmraid/$pkgname-$pkgver.tar.bz2
         http://people.redhat.com/~heinzm/sw/dmraid/src/$pkgname-1.0.0.rc16-3.tar.bz2
         dmraid_install
         dmraid_hook

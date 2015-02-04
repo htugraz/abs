@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 122610 2014-11-15 14:57:08Z bpiotrowski $
+# $Id: PKGBUILD 127137 2015-02-04 23:02:34Z bluewind $
 # Maintainer: schuay <jakob.gruber@gmail.com>
 # Contributor: quantax -- contact via Arch Linux forum or AUR
 # Contributor: Christoph Zeiler <archNOSPAM_at_moonblade.dot.org>
@@ -15,7 +15,7 @@ makedepends=('mesa' 'intltool')
 [[ $CARCH == 'i686' ]] && makedepends+=('nasm')
 
 # Accessible through /srv/ftp/other/community on nymeria.
-source=("ftp://ftp.archlinux.org/other/community/pcsxr/pcsxr-${pkgver}.tar.bz2")
+source=("https://sources.archlinux.org/other/community/pcsxr/pcsxr-${pkgver}.tar.bz2")
 
 build() {
     cd "$srcdir/$pkgname"

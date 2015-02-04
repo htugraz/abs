@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 124325 2014-12-21 17:01:24Z andyrtr $
+# $Id: PKGBUILD 127099 2015-02-04 15:59:49Z andyrtr $
 # Maintainer: Laurent Carlier <lordheavym@gmail.com>
 # Contributor : sebikul <sebikul@gmail.com>
 
@@ -16,7 +16,7 @@ _components=('gambas3-gb-args' 'gambas3-gb-cairo' 'gambas3-gb-chart' 'gambas3-gb
          'gambas3-gb-xml-html' 'gambas3-gb-xml-rpc' 'gambas3-gb-xml-xslt' 'gambas3-gb-xml' 'gambas3-gb-web')
 pkgname=(${_components[@]} 'gambas3-runtime' 'gambas3-devel' 'gambas3-ide' 'gambas3-script' 'gambas3-examples')
 pkgver=3.6.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A free development environment based on a Basic interpreter."
 arch=('i686' 'x86_64')
 url="http://gambas.sourceforge.net/"
