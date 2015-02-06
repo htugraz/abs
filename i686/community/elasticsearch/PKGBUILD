@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 124001 2014-12-16 15:43:20Z mtorromeo $
+# $Id: PKGBUILD 127192 2015-02-06 15:34:44Z mtorromeo $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Contributor: Marcello "mererghost" Rocha <https://github.com/mereghost>
 # Refactored by Blaž "Speed" Hrastnik <https://github.com/archSeer>
 
 pkgname=elasticsearch
 pkgver=1.4.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Distributed RESTful search engine built on top of Lucene"
 arch=('i686' 'x86_64')
 url="http://www.elasticsearch.org/"
@@ -79,4 +79,6 @@ package() {
   install -Dm644 "$srcdir"/elasticsearch.default "$pkgdir"/etc/default/elasticsearch
 
   ln -s ../../../var/lib/elasticsearch "$pkgdir"/usr/share/elasticsearch/data
+
+  chown -R 114:144 "$pkgdir"/usr/share/elasticsearch
 }
