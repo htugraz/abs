@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 229775 2015-01-24 10:41:11Z fyan $
+# $Id: PKGBUILD 230956 2015-02-07 09:37:46Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-artikulate
-pkgver=14.12.1
+pkgver=14.12.2
 pkgrel=1
 pkgdesc="Improve your pronunciation by listening to native speakers"
 url="https://projects.kde.org/projects/kde/kdeedu/artikulate"
@@ -13,7 +13,7 @@ groups=('kde' 'kdeedu')
 depends=('kdebase-runtime' 'qt-gstreamer' 'kqtquickcharts')
 makedepends=('cmake' 'automoc4' 'boost')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/artikulate-${pkgver}.tar.xz")
-sha1sums=('33e8a7953295a741f3fb582f095dec992a8c2b9e')
+sha1sums=('00115f64f80510109b4a1eb99fba081522edb207')
 
 prepare() {
   mkdir build

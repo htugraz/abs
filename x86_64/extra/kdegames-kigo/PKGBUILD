@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 229806 2015-01-24 10:42:09Z fyan $
+# $Id: PKGBUILD 230987 2015-02-07 09:38:45Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kigo
-pkgver=14.12.1
+pkgver=14.12.2
 pkgrel=1
 pkgdesc="An open-source implementation of the popular Go game"
 url="http://kde.org/applications/games/kigo/"
@@ -14,7 +14,7 @@ depends=('kdebase-runtime' 'libkdegames' 'gnugo')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kigo-${pkgver}.tar.xz")
-sha1sums=('131ce0dec4d37dd17c13c365588123aeb661a4ff')
+sha1sums=('1e185eec9a5f9f1770fc9c12dc64cad7be68bd76')
 
 build() {
   mkdir build
