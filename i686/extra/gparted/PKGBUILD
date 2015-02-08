@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 230064 2015-01-27 11:36:24Z giovanni $
+# $Id: PKGBUILD 231127 2015-02-08 07:50:27Z giovanni $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Andrew Simmons <andrew.simmons@gmail.com>
 # Contributor: György Balló <ballogy@freestart.hu>
 
 pkgname=gparted
 pkgver=0.21.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A Partition Magic clone, frontend to GNU Parted"
 arch=('i686' 'x86_64')
 url="http://gparted.sourceforge.net"
@@ -42,7 +42,9 @@ build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
 
   ./configure --prefix=/usr \
-              --sbindir=/usr/bin
+              --sbindir=/usr/bin \
+              --enable-online-resize \
+              --enable-libparted-dmraid
   make
 }
 

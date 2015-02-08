@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 117577 2014-08-18 23:09:16Z thestinger $
+# $Id: PKGBUILD 127311 2015-02-08 19:22:44Z thestinger $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 # Contributor: Ivan Sichmann Freitas <ivansichfreitas@gmail.com>
 
 pkgname=qcachegrind
 _pkgname=kcachegrind
 pkgver=0.7.4
-pkgrel=3
+pkgrel=4
 pkgdesc='Visualization of Performance Profiling Data'
 arch=('i686' 'x86_64')
 url='http://kcachegrind.sourceforge.net'
 license=('GPL2')
-depends=('qt5-base' 'desktop-file-utils' 'hicolor-icon-theme')
+depends=('qt5-base' 'desktop-file-utils' 'hicolor-icon-theme' 'libxkbcommon-x11')
 optdepends=('graphviz: For drawing call graphs'
             'php: pprof2calltree'
             'python2: hotshot2calltree')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 126944 2015-02-01 18:29:25Z tpowa $
+# $Id: PKGBUILD 127284 2015-02-08 09:58:13Z tpowa $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Based on SUSE spec https://build.opensuse.org/package/files?package=rt3562sta&project=driver%3Awireless
 
 pkgname=rt3562sta
 pkgver=2.4.1.1_r1
 _patchrel=${pkgver/*_r/}
-pkgrel=18
+pkgrel=19
 pkgdesc="Ralink RT3562 PCI WLAN adaptors kernel module"
 arch=(i686 x86_64)
 url="http://www.mediatek.com/en/Products/support.php?sn=501"

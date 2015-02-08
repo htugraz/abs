@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 112744 2014-06-05 22:38:40Z aginiewicz $
+# $Id: PKGBUILD 127293 2015-02-08 11:23:10Z aginiewicz $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 # Contributor: Michael Schubert <mschu.dev at gmail>
 # Contributor: Panagiotis Mavrogiorgos (pmav99) <> (gmail)
 
 pkgbase=python-bottleneck
 pkgname=('python2-bottleneck' 'python-bottleneck')
-pkgver=0.8.0
+pkgver=1.0.0
 pkgrel=1
 pkgdesc="Fast NumPy array functions written in Cython"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ url="http://berkeleyanalytics.com/bottleneck/"
 license=('BSD')
 makedepends=('python2-setuptools' 'python-setuptools' 'python-numpy' 'python2-numpy')
 source=("https://pypi.python.org/packages/source/B/Bottleneck/Bottleneck-${pkgver}.tar.gz")
-md5sums=('1a363fa35ce521eebb838e1bd6520e24')
+md5sums=('380fa6f275bd24f27e7cf0e0d752f5d2')
 
 build() {
   cd "$srcdir"

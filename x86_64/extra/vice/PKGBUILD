@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 215170 2014-06-14 19:17:24Z andyrtr $
+# $Id: PKGBUILD 231131 2015-02-08 08:36:33Z giovanni $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=vice
 pkgver=2.4
-pkgrel=6
+pkgrel=7
 pkgdesc="The Versatile Commodore 8-bit Emulator"
 arch=('i686' 'x86_64')
 license=('GPL')
 url="http://vice-emu.sourceforge.net/"
-depends=('alsa-lib' 'giflib' 'libxxf86vm' 'vte' 'libnet' 'libpcap')
+depends=('alsa-lib' 'pulseaudio' 'giflib' 'libxxf86vm' 'vte' 'libnet' 'libpcap')
 makedepends=('xorg-font-utils')
 options=('!makeflags')
 install=vice.install
@@ -46,6 +46,7 @@ build() {
   ./configure --prefix=/usr \
               --enable-ethernet \
               --with-alsa \
+              --with-pulse \
               --enable-fullscreen \
               --enable-gnomeui \
               --disable-ffmpeg
