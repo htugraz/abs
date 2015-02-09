@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 127097 2015-02-04 15:59:44Z andyrtr $
+# $Id: PKGBUILD 127389 2015-02-09 13:20:07Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=freewrl
 pkgver=1.22.13.1
 _pkgver=1.22.13
-pkgrel=10
+pkgrel=11
 pkgdesc="VRML viewer"
 arch=('i686' 'x86_64')
 url="http://freewrl.sourceforge.net/"

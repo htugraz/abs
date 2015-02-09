@@ -1,9 +1,10 @@
+# $Id: PKGBUILD 127432 2015-02-09 20:46:58Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: spider-mario <spidermario@free.fr>
 # Contributor: Daniel Ehlers <danielehlers@mindeye.net>
 
 pkgname=coin-or-clp
-pkgver=1.16.0
+pkgver=1.16.3
 pkgrel=1
 pkgdesc="COIN-OR linear programming solver"
 arch=('i686' 'x86_64')
@@ -12,7 +13,7 @@ license=('EPL')
 groups=('coin-or')
 depends=('coin-or-osi' 'suitesparse')
 source=("http://www.coin-or.org/download/source/Clp/Clp-${pkgver}.tgz")
-sha1sums=('700eba68fbaa56a499e498e9bb6d6159b4a1d83f')
+sha1sums=('a0d9023479e082ade1a256c49686ffc096e24ee5')
 
 build() {
   cd Clp-$pkgver/Clp

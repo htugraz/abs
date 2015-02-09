@@ -1,9 +1,10 @@
+# $Id: PKGBUILD 127437 2015-02-09 21:15:49Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: spider-mario <spidermario@free.fr>
 # Contributor: Daniel Ehlers <danielehlers@mindeye.net>
 
 pkgname=coin-or-cgl
-pkgver=0.59.0
+pkgver=0.59.2
 pkgrel=1
 pkgdesc="COIN-OR Cut Generation Library"
 arch=('i686' 'x86_64')
@@ -12,7 +13,7 @@ license=('EPL')
 groups=('coin-or')
 depends=('coin-or-clp')
 source=("http://www.coin-or.org/download/source/Cgl/Cgl-${pkgver}.tgz")
-sha1sums=('13d15895bd8425c7c9d9fe2ae9cb92babc6c3a73')
+sha1sums=('f0635faecfb43c7140cb3f7b6fd09ab4372cdf2f')
 
 build() {
   cd Cgl-$pkgver/Cgl
