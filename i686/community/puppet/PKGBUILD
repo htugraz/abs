@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 126960 2015-02-02 08:53:49Z jsteel $
+# $Id: PKGBUILD 127464 2015-02-10 14:29:41Z jsteel $
 # Maintainer: Jonathan Steel <jsteel at archlinux.org>
 # Contributor: Greg Sutcliffe <puppet-aur (at) emeraldreverie (dot) org>
 # Contributor: Hyacinthe Cartiaux <hyacinthe (dot) cartiaux (at) free (dot) fr>
@@ -10,7 +10,7 @@
 
 pkgname=puppet
 pkgver=3.7.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Server automation framework and application"
 arch=('any')
 url="http://puppetlabs.com/puppet/puppet-open-source"

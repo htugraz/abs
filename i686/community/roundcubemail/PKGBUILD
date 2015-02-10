@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 126596 2015-01-26 09:41:10Z spupykin $
+# $Id: PKGBUILD 127476 2015-02-10 15:44:07Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=roundcubemail
-pkgver=1.0.5
-pkgrel=1
+pkgver=1.1.0
+pkgrel=2
 pkgdesc="A PHP web-based mail client"
 arch=('any')
 url="http://www.roundcube.net"
 license=('GPL')
-depends=('php')
+depends=('php' 'php-pear' 'pear-net-idna2')
 optdepends=('python2')
 backup=('etc/webapps/roundcubemail/.htaccess'
 	'etc/webapps/roundcubemail/apache.conf')
@@ -16,7 +16,7 @@ install=roundcubemail.install
 options=('!strip' 'emptydirs')
 source=(http://downloads.sourceforge.net/sourceforge/roundcubemail/roundcubemail-${pkgver/rc/-rc}.tar.gz
 	apache.conf)
-md5sums=('b982b0ba2bad01039337ca280faa86b6'
+md5sums=('784b001753cebb9d0db59142f22e1764'
          'f11b17e2a80b383cde4af963fb307541')
 
 prepare() {

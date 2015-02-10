@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 123692 2014-12-09 19:02:46Z bpiotrowski $
+# $Id: PKGBUILD 127482 2015-02-10 15:48:55Z foutrelis $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 
 pkgname=r8168-lts
 _pkgname=r8168
 pkgver=8.039.00
-pkgrel=5
+pkgrel=6
 pkgdesc="A kernel module for Realtek 8168 network cards for linux-lts"
 #url="http://www.realtek.com.tw"
 url="https://code.google.com/p/r8168/"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 104831 2014-01-27 09:59:59Z spupykin $
+# $Id: PKGBUILD 127498 2015-02-10 16:40:59Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=darkstat
 pkgver=3.0.718
-pkgrel=1
+pkgrel=2
 pkgdesc="Network statistics gatherer (packet sniffer)"
 url="http://dmr.ath.cx/net/darkstat/"
 license=("GPL")

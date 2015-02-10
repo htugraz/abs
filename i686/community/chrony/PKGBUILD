@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 124422 2014-12-23 22:18:28Z spupykin $
+# $Id: PKGBUILD 127512 2015-02-10 17:18:44Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Daniel Micay <danielmicay@gmail.com>
 # Contributor: Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
@@ -9,7 +9,7 @@
 
 pkgname=chrony
 pkgver=1.31
-pkgrel=1
+pkgrel=2
 pkgdesc='Lightweight NTP client and server'
 arch=('i686' 'x86_64')
 url="http://chrony.tuxfamily.org/"

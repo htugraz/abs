@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 117316 2014-08-12 17:00:28Z spupykin $
+# $Id: PKGBUILD 127522 2015-02-10 17:40:47Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Zerial <fernando@zerial.org>
 
 pkgname=unrealircd
 pkgver=3.2.10.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Open Source IRC Server"
 arch=('i686' 'x86_64')
 url="http://unrealircd.com"
