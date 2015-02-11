@@ -1,7 +1,7 @@
-# $Id: PKGBUILD 122635 2014-11-16 10:52:41Z stativ $
+# $Id: PKGBUILD 127578 2015-02-11 18:12:53Z stativ $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname=cdrtools
-pkgver=3.01a25
+pkgver=3.01a27
 pkgrel=1
 pkgdesc="Original cdrtools supporting CD, DVD and BluRay burning"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ provides=('cdrkit')
 options=(!makeflags)
 backup=('etc/default/cdrecord' 'etc/default/rscsi')
 source=(http://downloads.sourceforge.net/cdrtools/cdrtools-$pkgver.tar.bz2)
-md5sums=('9e5211656d950e1f5275346cdc4a92e0')
+md5sums=('2c2b8074d617f6380175aff3bca53e44')
 
 build() {
   cd "$srcdir"/cdrtools-${pkgver%%a*}

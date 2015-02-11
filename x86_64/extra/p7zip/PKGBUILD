@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 231210 2015-02-09 23:19:42Z bisson $
+# $Id: PKGBUILD 231300 2015-02-11 16:17:41Z bisson $
 # Contributor: Thayer Williams <thayer@archlinux.org>
 # Contributor: Hugo Doria <hugo@archlinux.org>
 # Contributor: TuxSpirit<tuxspirit@archlinux.fr>  2007/11/17 21:22:36 UTC
@@ -7,7 +7,7 @@
 
 pkgname=p7zip
 pkgver=9.38
-pkgrel=1
+pkgrel=2
 pkgdesc='Command-line version of the 7zip compressed file archiver'
 url='http://p7zip.sourceforge.net/'
 license=('GPL' 'custom')
@@ -34,6 +34,8 @@ prepare() {
 
 	patch -p1 -i ../osversion.patch
 	sed -i 's/x86_64-linux-gnu//g' CPP/7zip/*/*/*.depend
+
+	rm GUI/kde4/p7zip_compress.desktop # FS#43766
 }
 
 build() {

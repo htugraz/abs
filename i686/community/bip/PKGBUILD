@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 109598 2014-04-16 15:09:29Z flexiondotorg $
+# $Id: PKGBUILD 127555 2015-02-11 11:53:37Z flexiondotorg $
 # Maintainer: Martin Wimpress <code@flexion.org>
 
 pkgname=bip
 pkgver=0.8.9
-pkgrel=4
+pkgrel=5
 pkgdesc="Multiuser IRC proxy that supports replaying of logged conversations."
 arch=('i686' 'x86_64')
 url="http://bip.milkypond.org/"
