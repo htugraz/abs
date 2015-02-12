@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198245 2013-10-30 13:41:52Z allan $
+# $Id: PKGBUILD 231337 2015-02-12 14:26:01Z jgc $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Chaiwat Suttipongsakul <cwt114@gmail.com>
 
 pkgname=libthai
-pkgver=0.1.19
+pkgver=0.1.21
 pkgrel=1
 pkgdesc="Thai language support routines"
 url="http://linux.thai.net/projects/libthai"
@@ -13,7 +13,7 @@ depends=('libdatrie')
 makedepends=('pkgconfig')
 options=('!emptydirs')
 source=(http://linux.thai.net/pub/thailinux/software/${pkgname}/${pkgname}-${pkgver}.tar.xz)
-md5sums=('c4a6c3842257889f8f15ae192b66e797')
+md5sums=('cee51e8359a6a382788af304905ff804')
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"

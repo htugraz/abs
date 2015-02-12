@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 231301 2015-02-11 19:45:20Z bisson $
+# $Id: PKGBUILD 231317 2015-02-12 04:14:05Z bisson $
 # Contributor: Jeff Brodnax <tullyarcher@bellsouth.net>
 # Contributor: Paul Mattal <paul@archlinux.org>
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 
 pkgname=postfix
 pkgver=3.0.0
-pkgrel=1
+pkgrel=2
 url='http://www.postfix.org/'
 pkgdesc='Fast, easy to administer, secure mail server'
 license=('custom')
 arch=('i686' 'x86_64')
-depends=('openssl' 'pcre' 'libsasl' 'libldap' 'db'
+depends=('openssl' 'pcre' 'icu' 'libsasl' 'libldap' 'db'
          'libmariadbclient' 'postgresql-libs' 'sqlite' 'tinycdb')
 source=("ftp://ftp.porcupine.org/mirrors/postfix-release/official/${pkgname}-${pkgver}.tar.gz"
         'aliases.patch'
