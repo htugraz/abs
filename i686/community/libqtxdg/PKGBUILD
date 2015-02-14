@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 127407 2015-02-09 15:21:00Z jleclanche $
+# $Id: PKGBUILD 127689 2015-02-14 00:08:36Z jleclanche $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=libqtxdg

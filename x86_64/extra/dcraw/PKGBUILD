@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 215947 2014-07-01 06:24:38Z bisson $
+# $Id: PKGBUILD 231392 2015-02-14 17:11:36Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: tobias <tobias@archlinux.org>
 # Contributor: Tobias Kieslich <tobias@justdreams.de>
 
 pkgname=dcraw
-pkgver=9.22
+pkgver=9.23.0
 pkgrel=1
 pkgdesc='Decodes any raw image from any digital camera'
 url='http://www.cybercom.net/~dcoffin/dcraw/'
@@ -12,7 +12,7 @@ arch=('i686' 'x86_64')
 license=('custom')
 depends=('lcms2' 'jasper')
 source=("http://www.cybercom.net/~dcoffin/dcraw/archive/${pkgname}-${pkgver}.tar.gz")
-sha1sums=('aa012da4c7c295146cee22c3e3869b069e55d164')
+sha1sums=('6821b898e7e0a23c010937adcc50097e51bdf9d7')
 
 build() {
 	cd "${srcdir}/${pkgname}"
