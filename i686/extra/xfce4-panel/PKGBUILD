@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 198562 2013-10-30 15:37:22Z allan $
+# $Id: PKGBUILD 231644 2015-02-17 08:40:41Z jgc $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: tobias <tobias funnychar archlinux.org>
 
 pkgname=xfce4-panel
 pkgver=4.10.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Panel for the Xfce desktop environment"
 arch=('i686' 'x86_64')
 url="http://www.xfce.org/"
 license=('GPL2')
 groups=('xfce4')
-depends=('exo' 'garcon' 'libxfce4ui' 'libwnck' 'hicolor-icon-theme'
+depends=('exo' 'garcon' 'libxfce4ui' 'libwnck>=2.31.0' 'hicolor-icon-theme'
          'desktop-file-utils')
 makedepends=('intltool' 'gtk-doc')
 install=$pkgname.install
