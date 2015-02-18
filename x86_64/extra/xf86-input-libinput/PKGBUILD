@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 231617 2015-02-16 18:53:52Z andyrtr $
+# $Id: PKGBUILD 231669 2015-02-18 14:46:39Z lcarlier $
 # Maintainer: Laurent Carlier <lordheavym@gmail.com>
 
 pkgname=xf86-input-libinput

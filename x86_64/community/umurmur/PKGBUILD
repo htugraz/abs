@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 117111 2014-08-10 19:41:09Z bpiotrowski $
+# $Id: PKGBUILD 127957 2015-02-18 18:16:22Z kkeen $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Robert Knauer <robert@privatdemail.net>
 # Contributor: xav <xav at ethertricks dot net>
 
 pkgname=umurmur
 pkgver=0.2.15
-pkgrel=1
+pkgrel=2
 pkgdesc='Minimalistic Mumble server'
 arch=('i686' 'x86_64')
 url='http://code.google.com/p/umurmur/'
 license=('custom')
-depends=('polarssl' 'libconfig' 'protobuf-c')
+depends=('mbedtls' 'libconfig' 'protobuf-c')
 install=$pkgname.install
 backup=('etc/umurmur/umurmur.conf')
 source=(https://github.com/fatbob313/umurmur/archive/$pkgver.tar.gz

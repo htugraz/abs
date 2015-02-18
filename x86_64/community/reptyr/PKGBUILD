@@ -1,8 +1,8 @@
-$Id: PKGBUILD 95952 2013-08-19 02:21:16Z dwallace $
+# $Id: PKGBUILD 127945 2015-02-18 15:29:59Z dwallace $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 
 pkgname=reptyr
-pkgver=0.5
+pkgver=0.6.2
 pkgrel=1
 pkgdesc='Utility for taking an existing running program and attaching it to a new terminal'
 arch=('i686' 'x86_64')
@@ -10,7 +10,7 @@ license=('BSD')
 url="https://github.com/nelhage/reptyr"
 depends=('glibc')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/nelhage/$pkgname/tarball/$pkgname-$pkgver")
-md5sums=('837318cfbdee76267162297987a94b8c')
+md5sums=('b1ca1630518e6fa7ed353b8debfcf9e4')
 
 build() {
 	cd "$srcdir"/nelhage-$pkgname-*
