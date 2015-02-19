@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 113136 2014-06-14 07:24:37Z jsteel $
+# Maintainer: Jonathan Steel <jsteel at aur.archlinux.org>
+# Contrinutor: Dan Serban
+# Contributor: Franz Burgmann
+# Contributor: Todd Partridge (Gen2ly)
+# Contributor: Ivan Sichmann Freitas
+
+pkgname=partclone
+pkgver=0.2.70
+pkgrel=1
+pkgdesc="Utilities to save and restore used blocks on a partition"
+arch=('i686' 'x86_64')
+url="http://partclone.org"
+license=('GPL')
+depends=('progsreiserfs' 'ntfs-3g')
+source=(https://downloads.sourceforge.net/project/$pkgname/stable/$pkgver/src/$pkgname-$pkgver.tar.gz)
+md5sums=('92708a46e13f96544539f0073a162a67')
+
+build() {
+  cd "$srcdir"/$pkgname-$pkgver
+
+  ./configure --prefix=/usr --enable-extfs --enable-reiserfs --enable-fat \
+    --enable-hfsp --enable-btrfs --enable-ncursesw --enable-ntfs --sbindir=/usr/bin
+
+  make
+}
+
+package() {
+  cd "$srcdir"/$pkgname-$pkgver
+
+  make PREFIX=/usr DESTDIR="$pkgdir"/ install
+}

@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 121008 2014-10-20 05:45:52Z bpiotrowski $
+# Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: mlq <mlq@pwmt.org>
+
+pkgname=girara
+pkgver=0.2.3
+pkgrel=1
+pkgdesc="User interface library focused on simplicity and minimalism"
+arch=('i686' 'x86_64')
+url="http://pwmt.org/projects/girara"
+license=('custom')
+depends=('gtk3')
+replaces=('girara-gtk3' 'girara-common')
+provides=('girara-gtk3' 'girara-common')
+conflicts=('girara-gtk3' 'girara-common')
+source=(http://pwmt.org/projects/girara/download/girara-$pkgver.tar.gz)
+md5sums=('08463b087ba3ad28c38438b2cf716795')
+
+build() {
+  cd "$srcdir/girara-$pkgver"
+  touch colors.mk
+  make GIRARA_GTK_VERSION=3
+}
+
+package() {
+  cd "$srcdir/girara-$pkgver"
+  make GIRARA_GTK_VERSION=3 DESTDIR="$pkgdir/" install
+  install -D -m664 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}

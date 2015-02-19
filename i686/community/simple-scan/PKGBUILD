@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 125119 2015-01-01 11:28:48Z heftig $
+# Maintainer: Thomas Dziedzic < gostrc at gmail >
+# Contributor: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+# Contributor: Joeny Ang <ang(dot)joeny(at)gmail(dot)com>
+
+pkgname=simple-scan
+pkgver=3.14.2
+pkgrel=1
+pkgdesc='Simple scanning utility'
+arch=('i686' 'x86_64')
+url='http://launchpad.net/simple-scan'
+license=('GPL3')
+depends=('sane' 'dconf' 'gtk3' 'colord' 'hicolor-icon-theme')
+makedepends=('yelp-tools' 'intltool' 'vala')
+install=$pkgname.install
+source=(https://launchpad.net/$pkgname/${pkgver:0:4}/$pkgver/+download/$pkgname-$pkgver.tar.xz)
+sha256sums=('d46caaafd2dfe46cf7e022363842cf3da0721b70768de5d29c808d1e5953a6a3')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure \
+    --prefix=/usr \
+    --disable-schemas-compile
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

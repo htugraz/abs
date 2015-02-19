@@ -1,0 +1,55 @@
+# $Id: PKGBUILD 123334 2014-12-01 21:14:51Z thestinger $
+# Maintainer:
+# Contributor: Tom Newsom <Jeepster@gmx.co.uk>
+
+pkgbase=ettercap
+pkgname=('ettercap' 'ettercap-gtk')
+pkgver=0.8.1
+pkgrel=2
+arch=('i686' 'x86_64')
+url="http://ettercap.github.com/ettercap/"
+license=('GPL')
+depends=('openssl' 'libpcap' 'pcre' 'libltdl' 'libnet' 'ethtool' 'curl')
+makedepends=('ghostscript' 'cmake' 'libpcap' 'libltdl' 'libnet' 'gtk2')
+options=('!makeflags' '!emptydirs')
+source=("https://github.com/Ettercap/ettercap/archive/v$pkgver.tar.gz")
+md5sums=('1c6676b048137bdc4b5757b316d67bc8')
+
+build() {
+  cd "${srcdir}"
+
+  cp -r ${pkgbase}-${pkgver} ${pkgbase}-${pkgver}-gtk
+
+  cd ${pkgbase}-${pkgver}
+  mkdir build
+  cd build
+  cmake -D ENABLE_GTK=OFF -D CMAKE_INSTALL_PREFIX=/usr -D INSTALL_PREFIX=/usr -D CMAKE_BUILD_TYPE=Release ../
+  make
+
+  cd "$srcdir"/${pkgbase}-${pkgver}-gtk
+  mkdir build
+  cd build
+  cmake -D ENABLE_GTK=ON -D CMAKE_INSTALL_PREFIX=/usr -D INSTALL_PREFIX=/usr -D CMAKE_BUILD_TYPE=Release ../
+  make
+}
+
+package_ettercap() {
+  pkgdesc="A network sniffer/interceptor/logger for ethernet LANs - console"
+  backup=('etc/ettercap/etter.conf')
+  conflicts=('ettercap-gtk')
+
+  cd "${srcdir}"/${pkgbase}-${pkgver}/build
+  make DESTDIR="${pkgdir}" install
+}
+
+package_ettercap-gtk() {
+  pkgdesc="A network sniffer/interceptor/logger for ethernet LANs - GTK frontend"
+  depends+=('gtk2')
+  backup=('etc/ettercap/etter.conf')
+  conflicts=('ettercap')
+  provides=('ettercap')
+  optdepends=('polkit: to run ettercap directly from menu')
+
+  cd "${srcdir}"/${pkgbase}-${pkgver}-gtk/build
+  make DESTDIR="${pkgdir}" install
+}

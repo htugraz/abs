@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 123255 2014-11-28 15:37:15Z tredaelli $
+# Maintainer: Timothy Redaelli <timothy.redaelli@gmail.com>
+# Contributor: Cedric Girard <girard.cedric@gmail.com>
+# Contributor: foxbunny <bg.branko@gmail.com>
+
+pkgname=dispcalgui
+pkgver=2.6.0.0
+pkgrel=1
+pkgdesc="A GUI frontend for several utilities from the open source color management system Argyll CMS"
+arch=('i686' 'x86_64')
+url="http://hoech.net/dispcalGUI/"
+license=('GPL3')
+makedepends=('libx11' 'libxrandr' 'libxinerama' 'libxxf86vm' 'python2-setuptools' 'xdg-utils')
+depends=('argyllcms' 'wxpython' 'hicolor-icon-theme' 'desktop-file-utils' 'python2-numpy')
+optdepends=('gksu: For running as root')
+install=${pkgname}.install
+source=("http://downloads.sourceforge.net/project/dispcalgui/release/${pkgver}/dispcalGUI-${pkgver}.tar.gz")
+md5sums=('95b9bfbb911c184f8fcb0d9f5e126d1b')
+
+prepare() {
+  cd dispcalGUI-${pkgver}
+  find . -name "*.py" -exec sed -i 's!/usr/bin/env python!/usr/bin/env python2!g' {} +
+}
+
+package() {
+  cd dispcalGUI-${pkgver}
+  python2 setup.py install --root="${pkgdir}" --optimize=1
+  #udev rules are shipped with argyllcms
+  rm -rf "${pkgdir}"/etc/udev/
+}
+
+# vim:set ts=2 sw=2 et:

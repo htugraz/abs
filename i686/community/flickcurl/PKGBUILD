@@ -1,0 +1,25 @@
+# $Id: PKGBUILD 117715 2014-08-21 17:03:21Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+
+pkgname=flickcurl
+pkgver=1.26
+pkgrel=1
+pkgdesc="C library for the Flickr API"
+arch=(i686 x86_64)
+url="http://librdf.org/flickcurl/"
+license=('GPL')
+depends=('raptor' 'curl')
+source=(http://download.dajobe.org/flickcurl/flickcurl-$pkgver.tar.gz)
+md5sums=('7013a36656400dac398748a374c9104f')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+  sed -i 's|#include <curl/types.h>||' src/flickcurl_internal.h
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  make DESTDIR="$pkgdir/" install
+}

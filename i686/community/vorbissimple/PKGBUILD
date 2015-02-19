@@ -1,0 +1,25 @@
+# $Id: PKGBUILD 100299 2013-11-02 08:51:47Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: William Rea <sillywilly@gmail.com>
+
+pkgname=vorbissimple
+pkgver=0.0.2
+pkgrel=4
+pkgdesc="A Vorbis decoder"
+arch=('i686' 'x86_64')
+url="http://kamaelia.sourceforge.net"
+license=('GPL')
+depends=('libvorbis')
+source=(http://downloads.sourceforge.net/kamaelia/$pkgname-$pkgver.tar.gz)
+md5sums=('332077b25a4c9547947ab0922361ffda')
+
+build() {
+  cd $srcdir/$pkgname-$pkgver/libvorbissimple
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd $srcdir/$pkgname-$pkgver/libvorbissimple
+  make DESTDIR=$pkgdir install
+}

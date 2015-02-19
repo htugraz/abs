@@ -1,0 +1,31 @@
+# Maintainer : Martin Wimpress <code@flexion.org>
+
+pkgname=mate-notification-daemon
+pkgver=1.8.1
+pkgrel=1
+pkgdesc="Notification daemon for MATE"
+url="http://mate-desktop.org"
+arch=('i686' 'x86_64')
+license=('GPL' 'LGPL')
+depends=('dconf' 'dbus-glib' 'gtk2' 'libcanberra' 'libwnck' 'libnotify')
+makedepends=('mate-common' 'perl-xml-parser')
+groups=('mate')
+provides=('notification-daemon')
+source=("http://pub.mate-desktop.org/releases/1.8/${pkgname}-${pkgver}.tar.xz")
+sha1sums=('6f7cba78f3eb9f3e96b67e12bee35186b734a5cb')
+install=${pkgname}.install
+
+build() {
+    cd "${srcdir}/${pkgname}-${pkgver}"
+    ./configure \
+        --prefix=/usr \
+        --libexecdir=/usr/lib/${pkgname} \
+        --with-gtk=2.0 \
+        --disable-static
+    make
+}
+
+package() {
+    cd "${srcdir}/${pkgname}-${pkgver}"
+    make DESTDIR="${pkgdir}" install
+}

@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 123077 2014-11-24 17:47:32Z bgyorgy $
+# Maintainer: Balló György <ballogyor+arch at gmail dot com>
+# Contributor: Jan de Groot <jgc@archlinux.org>
+
+pkgname=metacity
+pkgver=3.14.3
+pkgrel=1
+pkgdesc="Legacy GNOME window manager"
+arch=('i686' 'x86_64')
+license=('GPL')
+depends=('dconf' 'libcanberra' 'libgtop' 'libsm' 'gsettings-desktop-schemas' 'gtk3' 'startup-notification' 'zenity')
+makedepends=('intltool' 'itstool')
+url="https://wiki.gnome.org/Projects/Metacity"
+install=metacity.install
+source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.xz)
+sha256sums=('a8295792ee3ff23d07833f60c979e8409fa8594245cef577c369b18be732812c')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/lib/$pkgname \
+              --disable-static --disable-schemas-compile
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

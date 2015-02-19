@@ -1,0 +1,9 @@
+[Unit]
+Description=ATD daemon
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/atd
+
+[Install]
+WantedBy=multi-user.target

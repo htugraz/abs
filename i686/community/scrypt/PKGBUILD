@@ -1,0 +1,27 @@
+# $Id: PKGBUILD 113933 2014-07-01 10:15:54Z thestinger $
+# Maintainer: Daniel Micay <danielmicay@gmail.com>
+# Contributor: Oliver Herold <oliver - at - akephalos - dot - de>
+
+pkgname=scrypt
+pkgver=1.1.6
+pkgrel=4
+pkgdesc="key derivation function and encryption utility"
+arch=('i686' 'x86_64')
+depends=(openssl)
+url="https://www.tarsnap.com/scrypt/"
+license=('BSD')
+source=(http://www.tarsnap.com/scrypt/scrypt-1.1.6.tgz LICENSE)
+md5sums=('a35523cd497f7283635ce881db39c2e2'
+         '46754c4c55dc7c70dbb3480dce6274da')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

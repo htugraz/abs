@@ -1,0 +1,27 @@
+# $Id: PKGBUILD 105015 2014-01-30 08:53:11Z spupykin $
+# Contributor: Thomas S Hatch <thatch45@gmail.com>
+# Contributor: Jon Nordby <jononor@gmail.com>
+
+pkgname=augeas
+pkgver=1.2.0
+pkgrel=1
+pkgdesc="A configuration editing tool that parses config files and transforms them into a tree"
+arch=('i686' 'x86_64')
+url="http://augeas.net"
+license=('LGPL')
+depends=('libxml2' 'gcc-libs')
+source=(http://download.augeas.net/augeas-$pkgver.tar.gz{,.sig})
+md5sums=('dce2f52cbd20f72c7da48e014ad48076'
+         'SKIP')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+  sed -i 's|Requires:.*|Requires: libxml-2.0|' augeas.pc.in
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  make DESTDIR="$pkgdir" install
+}

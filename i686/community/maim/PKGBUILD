@@ -1,0 +1,26 @@
+# $Id: PKGBUILD 123457 2014-12-04 20:56:19Z bpiotrowski $
+# Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
+# Contributor: naelstrof <naelstrof@gmail.com>
+
+pkgname=maim
+pkgver=3.3.41
+pkgrel=1
+pkgdesc='Utility to take a screenshot using imlib2'
+arch=('i686' 'x86_64')
+url='https://github.com/naelstrof/maim'
+license=('GPL3')
+depends=('freetype2' 'imlib2' 'libx11' 'libxext' 'libxfixes' 'libxrandr')
+makedepends=('cmake')
+optdepends=('slop: region selection support')
+source=($url/archive/v$pkgver.tar.gz)
+md5sums=('e1745aafeedc63821acbda60f7e9642f')
+
+build() {
+  cd $pkgname-$pkgver
+  cmake -DCMAKE_INSTALL_PREFIX=/usr .
+  make
+}
+
+package() {
+  make -C $pkgname-$pkgver DESTDIR="$pkgdir" install
+}

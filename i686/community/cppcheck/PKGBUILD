@@ -1,0 +1,43 @@
+# $Id: PKGBUILD 125769 2015-01-11 20:51:19Z jelle $
+# Maintainer: Stéphane Gaudreault <stephane@archlinux.org>
+
+pkgname=cppcheck
+pkgver=1.68
+pkgrel=1
+pkgdesc="A tool for static C/C++ code analysis"
+arch=('i686' 'x86_64')
+url="http://cppcheck.wiki.sourceforge.net/"
+license=('GPL')
+depends=('qt5-base' 'python-pygments')
+makedepends=('docbook-xsl' 'qt5-tools' 'python')
+source=(https://github.com/danmar/cppcheck/archive/${pkgver}.tar.gz)
+sha1sums=('f08ef07f750f92fafe4f960166072e9d1088d74e')
+
+build() {
+   cd "${pkgname}-${pkgver}"
+   # Unicode fix
+   LANG='en_US.UTF-8' make SRCDIR=build CFGDIR=/usr/share/cppcheck/cfg HAVE_RULES=yes
+   make DB2MAN=/usr/share/xml/docbook/xsl-stylesheets-1.78.1/manpages/docbook.xsl CFGDIR=/usr/share/cppcheck/cfg man
+
+   cd gui
+   qmake HAVE_RULES=yes
+   make SRCDIR=build CFGDIR=/usr/share/cppcheck/cfg HAVE_RULES=yes
+}
+
+check() {
+   cd "${pkgname}-${pkgver}"
+
+#   LANG='en_US.UTF-8' make SRCDIR=build CFGDIR=/usr/share/cppcheck/cfg HAVE_RULES=yes test
+}
+
+package() {
+   cd "${pkgname}-${pkgver}"
+   LANG='en_US.UTF-8' make DESTDIR=${pkgdir} CFGDIR=/usr/share/cppcheck/cfg SRCDIR=build HAVE_RULES=yes install 
+
+   install -D -p -m 644 cppcheck.1 "${pkgdir}"/usr/share/man/man1/cppcheck.1
+
+   install -m755 gui/cppcheck-gui "${pkgdir}"/usr/bin
+
+   install -d "${pkgdir}"/usr/share/cppcheck/cfg
+   install -D ./cfg/* -t "${pkgdir}"/usr/share/cppcheck/cfg
+}

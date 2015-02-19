@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 110370 2014-04-28 14:11:35Z arodseth $
+# Maintainer: Alexander Rødseth <rodseth@gmail.com>
+# Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
+# Contributor: Paulo Matias <matiasΘarchlinux-br·org>
+
+pkgname=libnsgif
+pkgver=0.1.1
+pkgrel=1
+pkgdesc='Decoding library for the GIF image file format'
+arch=('x86_64' 'i686')
+url='http://www.netsurf-browser.org/projects/libnsgif/'
+license=('MIT')
+depends=('glibc')
+makedepends=('netsurf-buildsystem')
+source=("http://download.netsurf-browser.org/libs/releases/$pkgname-$pkgver-src.tar.gz")
+sha256sums=('d450ea0a9da234486e997248b30a86524f75f1021ca67017b5597423cf6c0a15')
+
+build() {
+  cd "$pkgname-$pkgver"
+
+  CFLAGS="$CFLAGS -fno-strict-aliasing" 
+  make LIBDIR=lib PREFIX=/usr COMPONENT_TYPE="lib-shared" 
+}
+
+package() {
+  cd "$pkgname-$pkgver"
+
+  make install LIBDIR=lib PREFIX=/usr DESTDIR="$pkgdir" COMPONENT_TYPE="lib-shared"   
+  install -Dm644 COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
+}
+
+# vim:set ts=2 sw=2 et:

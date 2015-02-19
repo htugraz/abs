@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 126275 2015-01-20 05:35:15Z fyan $
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
+# Contributor: Jonathan Steel <jsteel@aur.archlinux.org>
+# Contributor: Justin "juster" Davis <jrcd83@gmail.com>
+# Contributor: François Charette <firmicus ατ gmx δοτ net>
+
+pkgname=perl-xml-libxslt
+pkgver=1.94
+pkgrel=1
+pkgdesc="Interface to the gnome libxslt library"
+arch=('i686' 'x86_64')
+url="http://search.cpan.org/dist/XML-LibXSLT"
+license=('GPL')
+depends=('perl-xml-libxml' 'libxslt')
+checkdepends=('perl-test-pod')
+options=('!emptydirs')
+source=(http://www.cpan.org/authors/id/S/SH/SHLOMIF/XML-LibXSLT-$pkgver.tar.gz)
+md5sums=('a32045699c001d960d6f94891f9e853c')
+
+build() {
+  cd XML-LibXSLT-$pkgver
+  perl Makefile.PL INSTALLDIRS=vendor
+  make
+}
+
+check() {
+  cd XML-LibXSLT-$pkgver
+  make test
+}
+
+package() {
+  cd XML-LibXSLT-$pkgver
+  make DESTDIR="$pkgdir" install
+}

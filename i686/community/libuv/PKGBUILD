@@ -1,0 +1,41 @@
+# $Id: PKGBUILD 125557 2015-01-07 13:10:33Z mtorromeo $
+# Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
+
+pkgname=libuv
+pkgver=1.2.0
+pkgrel=1
+pkgdesc="A new platform layer for Node.JS"
+arch=('i686' 'x86_64')
+url="https://github.com/libuv/libuv"
+license=('custom')
+depends=('glibc')
+source=("https://github.com/libuv/libuv/archive/v$pkgver.tar.gz")
+
+build() {
+	cd "$srcdir"/$pkgname-$pkgver
+	./autogen.sh
+	./configure --prefix=/usr
+	make
+}
+
+check() {
+	cd "$srcdir"/$pkgname-$pkgver
+	make check
+}
+
+package() {
+	cd "$srcdir"/$pkgname-$pkgver
+
+	make DESTDIR="$pkgdir" install
+
+	install -Dm644 LICENSE \
+		"$pkgdir"/usr/share/licenses/$pkgname/LICENSE
+	install -Dm644 AUTHORS \
+		"$pkgdir"/usr/share/doc/$pkgname/AUTHORS
+	install -Dm644 README.md \
+		"$pkgdir"/usr/share/doc/$pkgname/README.md
+	install -Dm644 ChangeLog \
+		"$pkgdir"/usr/share/doc/$pkgname/ChangeLog
+}
+
+sha256sums=('bebf424bb239867bbf609abad09a256cae7808c9d5cb346b779acd4b97a56693')

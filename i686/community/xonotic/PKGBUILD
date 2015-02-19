@@ -1,0 +1,65 @@
+# Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
+# Contributor: Alexander Suhoverhov <cy at ngs dot ru>
+# Contributor: Jookia <166291@gmail.com>
+pkgname=xonotic
+pkgver=0.8.0
+pkgrel=2
+pkgdesc="A free, fast-paced crossplatform first-person shooter"
+arch=('i686' 'x86_64')
+url="http://xonotic.org"
+license=('GPL')
+depends=('alsa-lib' 'curl' 'libjpeg>=8' 'libmodplug' 'libvorbis' 'libxpm' 'libxxf86dga'
+         'libxxf86vm' 'sdl2' 'libpng>=1.4.0' 'xonotic-data' 'hicolor-icon-theme'
+         'gtk-update-icon-cache' 'desktop-file-utils')
+makedepends=('unzip' 'mesa')
+source=("http://dl.xonotic.org/xonotic-${pkgver}-source.zip"
+        "xonotic-glx.desktop"
+        "xonotic-sdl.desktop")
+md5sums=('2715a0b219239211cff9bc24d693e1c5'
+         '129df417236445b086fe78cafd01756c'
+         '2d3367d90889112d73ac2b8c17fb5840')
+install=xonotic.install
+
+build() {
+  # compile Xonotic-flavored fteqcc
+  #make -C Xonotic/source/fteqcc
+
+  # compile QuakeC game code
+  #( cd Xonotic/source/qcsrc/server && ../../fteqcc/fteqcc.bin -O3 -Ono-c -Ono-cs )
+  #( cd Xonotic/source/qcsrc/client && ../../fteqcc/fteqcc.bin -O3 -Ono-c -Ono-cs )
+  #( cd Xonotic/source/qcsrc/menu && ../../fteqcc/fteqcc.bin -O3 -Ono-c -Ono-cs )
+
+  # compile engine
+	make -C Xonotic/source/darkplaces CPUOPTIMIZATIONS="${CFLAGS}" DP_FS_BASEDIR=/usr/share/xonotic/ DP_LINK_TO_LIBJPEG=1 cl-release
+	make -C Xonotic/source/darkplaces CPUOPTIMIZATIONS="${CFLAGS}" DP_FS_BASEDIR=/usr/share/xonotic/ DP_LINK_TO_LIBJPEG=1 sdl2-release
+	make -C Xonotic/source/darkplaces CPUOPTIMIZATIONS="${CFLAGS}" DP_FS_BASEDIR=/usr/share/xonotic/ DP_LINK_TO_LIBJPEG=1 sv-release
+
+  cd $srcdir/Xonotic/source/d0_blind_id
+  sh autogen.sh
+  ./configure --prefix=/usr --disable-rijndael
+  make
+}
+
+package() {
+	cd $srcdir/Xonotic
+
+	# binaries
+	install -Dm755 source/darkplaces/darkplaces-dedicated $pkgdir/usr/bin/xonotic-dedicated
+	install -Dm755 source/darkplaces/darkplaces-glx $pkgdir/usr/bin/xonotic-glx
+	install -Dm755 source/darkplaces/darkplaces-sdl $pkgdir/usr/bin/xonotic-sdl
+
+	# convenience files
+	mkdir -p $pkgdir/usr/share/applications
+	install -Dm644 $srcdir/*.desktop -t $pkgdir/usr/share/applications
+
+  for size in 16 22 24 32 48 64 128 256 512; do
+    install -Dm644 $srcdir/Xonotic/misc/logos/icons_png/xonotic_${size}.png \
+      "$pkgdir/usr/share/icons/hicolor/${size}x${size}/apps/xonotic.png"
+  done
+
+  # crypto stuff
+  cd $srcdir/Xonotic/source/d0_blind_id
+  make DESTDIR=$pkgdir install
+}
+
+# vim: ts=2:sw=2 et:

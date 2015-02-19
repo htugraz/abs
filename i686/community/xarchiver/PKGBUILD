@@ -1,0 +1,54 @@
+# $Id: PKGBUILD 119884 2014-09-30 14:21:34Z bgyorgy $
+# Maintainer: Balló György <ballogyor+arch at gmail dot com>
+# Contributor: Alexander Fehr <pizzapunk gmail com>
+# Contributor: Andrew Simmons <andrew.simmons@gmail.com>
+
+pkgname=xarchiver
+pkgver=0.5.4
+pkgrel=1
+pkgdesc="GTK+ frontend to various command line archivers"
+arch=('i686' 'x86_64')
+url="http://xarchiver.sourceforge.net/"
+license=('GPL')
+depends=('gtk2' 'desktop-file-utils')
+makedepends=('intltool')
+optdepends=('zip: ZIP support'
+            'unzip: ZIP support'
+            'p7zip: 7z support'
+            'arj: ARJ support'
+            'lzop: LZOP support'
+            'cpio: RPM support'
+            'unrar: RAR support')
+install=xarchiver.install
+source=(http://downloads.sourceforge.net/xarchiver/xarchiver-$pkgver.tar.bz2
+        fix-rpm-support.patch
+        fix-password-protected.patch
+        add-mime-types.patch)
+md5sums=('1b4cd37a6af03afc957a8e307417e8d0'
+         '812b93339f5e3332621f3c5abebfe277'
+         '35ab96d98521a0a36f3e9e9ec0969107'
+         '0cee887b3c989ba2cdce9154813843fb')
+
+prepare() {
+  cd $pkgname-$pkgver
+
+  # Fix RPM support
+  patch -Np1 -i ../fix-rpm-support.patch
+
+  # Fix segfault when handling password protected files
+  patch -Np1 -i ../fix-password-protected.patch
+
+  # Add more MIME types to the desktop file, fix exec line
+  patch -Np1 -i ../add-mime-types.patch
+}
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr --libexecdir=/usr/lib/xfce4
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}

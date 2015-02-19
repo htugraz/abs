@@ -1,0 +1,27 @@
+# $Id: PKGBUILD 121758 2014-11-03 20:40:44Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: dorphell <dorphell@archlinux.org>
+# Contributor: Tom Newsom <Jeepster@gmx.co.uk>
+
+pkgname=adns
+pkgver=1.5.0
+pkgrel=1
+pkgdesc="adns is an asyncronous replacement resolver library"
+arch=('i686' 'x86_64')
+url="http://www.chiark.greenend.org.uk/~ian/adns/"
+license=('GPL')
+depends=('glibc')
+source=(http://www.chiark.greenend.org.uk/~ian/$pkgname/ftp/$pkgname-$pkgver.tar.gz)
+md5sums=('261956cf66146afd292846df9af06978')
+
+build() {
+  cd $srcdir/$pkgname-$pkgver
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd $srcdir/$pkgname-$pkgver
+  mkdir -p $pkgdir/usr/{lib,include,bin}
+  make prefix=$pkgdir/usr install
+}

@@ -1,0 +1,27 @@
+#Maintainer: Alexandre Filgueira <alexfilgueira@antergos.com>
+
+pkgname=cinnamon-menus
+pkgver=2.4.1
+pkgrel=1
+pkgdesc="Cinnamon menu specifications"
+arch=('i686' 'x86_64')
+depends=('glib2')
+makedepends=('intltool' 'gobject-introspection' 'python2')
+license=('GPL' 'LGPL')
+url="http://www.linuxmint.com"
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/linuxmint/cinnamon-menus/archive/${pkgver}.tar.gz")
+sha256sums=('7ab04bb668c80c3a1acccaa07f1b5d22023f397841735f4c4243c10cda717e5c')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  ./configure \
+      --prefix=/usr --sysconfdir=/etc \
+      --localstatedir=/var  --disable-static \
+      --sbindir=/usr/bin
+  make
+}
+
+package(){
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  make DESTDIR="$pkgdir" install
+}

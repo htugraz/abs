@@ -1,0 +1,31 @@
+# $Id: PKGBUILD 127273 2015-02-08 04:25:15Z fyan $
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
+
+pkgname=pidgin-lwqq
+pkgver=0.4.1.20150208
+#_gitver="tag=v$pkgver"
+_gitver='commit=a0fa8bfe45308b5fc165ff7df6abf91c634904bd'
+pkgrel=1
+pkgdesc="A pidgin plugin based on lwqq, a excellent safe useful library for webqq protocol"
+arch=('i686' 'x86_64')
+url="https://github.com/xiehuc/pidgin-lwqq"
+license=('GPL3')
+depends=('lwqq' 'libpurple' 'hicolor-icon-theme' 'gtk-update-icon-cache')
+optdepends=('pidgin: Multi-protocol instant messaging client'
+            'telepathy-haze: Empathy plugin support')
+makedepends=('git' 'cmake')
+install=$pkgname.install
+source=("git://github.com/xiehuc/pidgin-lwqq.git#$_gitver")
+sha512sums=('SKIP')
+
+build() {
+  cd $pkgname
+
+  cmake -DCMAKE_INSTALL_PREFIX=/usr .
+  make
+}
+
+package() {
+  cd $pkgname
+  make DESTDIR="${pkgdir}" install
+}

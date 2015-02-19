@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 110043 2014-04-23 15:23:03Z arodseth $
+# Maintainer: Alexander Rødseth <rodseth@gmail.com>
+# Contributor: Thomas Dziedzic < gostrc at gmail >
+# Contributor: Sergio A. Morales <sergiomorales@archlinux.cl>
+# Contributor: soeren <nonick@posteo.de>
+
+pkgname=gummi
+pkgver=0.6.5
+pkgrel=2
+pkgdesc='Simple LaTex editor for GTK users'
+arch=('x86_64' 'i686')
+url='http://gummi.midnightcoding.org/'
+license=('MIT')
+depends=('texlive-core' 'gtkspell' 'gtksourceview2' 'poppler-glib' 'desktop-file-utils')
+makedepends=('glib2' 'gtk2' 'pango' 'poppler' 'intltool')
+install="$pkgname.install"
+source=("http://dev.midnightcoding.org/attachments/download/301/$pkgname-$pkgver.tar.gz")
+sha256sums=('b23c2958376ea43c701a276ad19ceac5b50d9cb32a489a10897b25aa5004fffb')
+ 
+build() {
+  cd "$pkgname-$pkgver"
+
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd "$pkgname-$pkgver"
+
+  make DESTDIR="$pkgdir" install
+  install -Dm644 COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
+}
+
+# vim:set ts=2 sw=2 et:

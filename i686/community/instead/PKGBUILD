@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 127197 2015-02-06 17:23:23Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Peter Kosyh <p.kosyhgmail.com>
+
+pkgname=instead
+pkgver=2.2.2
+pkgrel=1
+pkgdesc="a quest interpreter"
+arch=('i686' 'x86_64')
+url="http://sourceforge.net/projects/instead/"
+license=('GPL')
+depends=('sdl_image' 'sdl_mixer' 'sdl_ttf' 'lua')
+optdepends=('instead-launcher: install and update INSTEAD games from net')
+source=(http://downloads.sourceforge.net/project/instead/instead/${pkgver}/instead_${pkgver}.tar.gz)
+md5sums=('224a79e0c3a9c72c86ca90fd98f0d44f')
+
+build() {
+  cd "${srcdir}/instead-${pkgver}"
+  echo "2" | ./configure.sh
+  make PREFIX=/usr
+}
+
+package() {
+  cd "${srcdir}/instead-${pkgver}"
+  make DESTDIR="${pkgdir}" PREFIX=/usr install
+
+  cp -a doc/*.{html,pdf} doc/instead.txt doc/examples $pkgdir/usr/share/doc/instead/
+}

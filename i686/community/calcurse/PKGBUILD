@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 115334 2014-07-08 23:06:15Z lfleischer $
+# Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
+# Contributor: Ronald van Haren <ronald.archlinux.org>
+# Contributor: wain <wain.at.gmx.net>
+
+pkgname=calcurse
+pkgver=3.2.1
+pkgrel=1
+pkgdesc='A text-based personal organizer.'
+arch=('i686' 'x86_64')
+url='http://calcurse.org/'
+license=('BSD')
+depends=('ncurses')
+install='calcurse.install'
+source=("http://calcurse.org/files/${pkgname}-${pkgver}.tar.gz"{,.asc})
+md5sums=('427652c011bc5314c71c962233d59436'
+         'SKIP')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+
+  ./configure --enable-docs --without-asciidoc --prefix=/usr --mandir=/usr/share/man
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+
+  make DESTDIR="${pkgdir}" install
+
+  install -Dm0644 COPYING "${pkgdir}/usr/share/licenses/${pkgname}/COPYING"
+}

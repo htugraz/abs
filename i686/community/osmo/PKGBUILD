@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 121227 2014-10-22 15:58:27Z jlichtblau $
+# Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+# Contributor: Geoffroy Carrier <geoffroy.carrier@koon.fr>
+# Contributor: Benzo <mb_benzo@yahoo.es>
+
+pkgname=osmo
+pkgver=0.2.12
+pkgrel=2
+pkgdesc="A handy personal organizer"
+arch=('i686' 'x86_64')
+url="http://clayo.org/osmo/"
+license=('GPL')
+depends=('gtkspell' 'hicolor-icon-theme' 'libical' 'libnotify' 'webkitgtk2' 'libgringotts' 'libxml2')
+makedepends=('libarchive')
+optdepends=('sox: to play sounds')
+changelog=$pkgname.changelog
+install=$pkgname.install
+source=(http://sourceforge.net/projects/osmo-pim/files/osmo-pim/$pkgname-$pkgver/$pkgname-$pkgver.tar.gz)
+sha256sums=('93bda51614f92e4193840451612e792219f7d8c90d78bdc7ea6d6c14a2be6b78')
+
+build() {
+  cd "${srcdir}"/$pkgname-$pkgver
+
+  ./configure --prefix=/usr
+  make 
+}
+
+package() {
+  cd "${srcdir}"/$pkgname-$pkgver
+
+  make DESTDIR="${pkgdir}" install
+}

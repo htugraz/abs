@@ -1,0 +1,54 @@
+# $Id: PKGBUILD 124310 2014-12-21 14:57:35Z heftig $
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: Ray Rashif <schiv@archlinux.org>
+# Contributor: Mateusz Herych <heniekk@gmail.com>
+# Contributor: Charles Lindsay <charles@chaoslizard.org>
+
+pkgname=cdemu-daemon
+pkgver=3.0.2
+pkgrel=1
+pkgdesc="CD/DVD-ROM device emulator daemon"
+arch=(i686 x86_64)
+url="http://cdemu.sourceforge.net/"
+license=(GPL)
+depends=(dbus "vhba-module>=20140629" libao "libmirage>=3.0.2")
+makedepends=(cmake)
+optdepends=('alsa-lib: to enable the ALSA audio driver'
+            'pulseaudio: to enable the PA audio driver')
+backup=(etc/conf.d/cdemu-daemon
+        etc/dbus-1/system.d/cdemu-daemon-dbus.conf)
+install=cdemu-daemon.install
+source=("http://downloads.sourceforge.net/cdemu/$pkgname-$pkgver.tar.bz2"
+        system-arch.patch)
+sha256sums=('8c9a0d292e0fd71538f123f2b795f4490ff455f68b391b97812be369c34a4f06'
+            '29507da7367983bdc5f541e9f9252f189412041076842b8d08a5c4dac29f23cd')
+
+prepare() {
+  mkdir build
+  cd $pkgname-$pkgver
+
+  # Patch system daemon for Arch-friendlyness
+  # It's disabled by default. Should we even ship it?
+  patch -Np1 -i ../system-arch.patch
+}
+
+build() {
+  cd build
+  cmake ../$pkgname-$pkgver \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=/usr/lib \
+    -DCMAKE_INSTALL_SYSCONFDIR=/etc \
+    -DCMAKE_INSTALL_LIBEXECDIR=lib/$pkgname
+  make
+}
+
+package() {
+  cd build
+  make DESTDIR="$pkgdir" install
+
+  install -d "$pkgdir/usr/lib/modules-load.d"
+  echo vhba > "$pkgdir/usr/lib/modules-load.d/cdemu.conf"
+}
+
+# vim:set ts=2 sw=2 et:

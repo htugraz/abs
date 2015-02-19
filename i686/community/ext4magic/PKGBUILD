@@ -1,0 +1,26 @@
+# $Id: PKGBUILD 119063 2014-09-16 21:15:05Z seblu $
+# Maintainer: Sébastien Luttringer
+
+pkgname=ext4magic
+pkgver=0.3.2
+pkgrel=1
+pkgdesc='Recover deleted or overwritten files on ext3 and ext4 filesystems'
+arch=('i686' 'x86_64')
+url='http://sourceforge.net/projects/ext4magic/'
+license=('GPL2')
+depends=('bzip2' 'file' 'util-linux' 'e2fsprogs')
+source=("$url/files/$pkgname-$pkgver.tar.gz")
+md5sums=('8351cb27598fb8ffa7d2175ab74e7a53')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure --prefix=/usr --sbindir=/usr/bin
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" install
+}
+
+# vim:set ts=2 sw=2 et:

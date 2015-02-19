@@ -1,0 +1,70 @@
+# $Id: PKGBUILD 126388 2015-01-22 03:08:38Z fyan $
+# Maintainer: Alexander Rødseth <rodseth@gmail.com>
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
+# Contributor: T. Jameson Little <t.jameson.little at gmail dot com>
+# Contributor: Usagi Ito <usagi@WonderRabbitProject.net>
+# Contributor: siasia <http://pastebin.com/qsBEmNCw>
+# Contributor: Julien Nicoulaud <julien.nicoulaud@gmail.com>
+
+pkgname=dart
+pkgver=1.8.5
+pkgrel=1
+pkgdesc='The dart programming language SDK'
+arch=('x86_64' 'i686')
+url='http://www.dartlang.org/'
+license=('BSD')
+makedepends=('setconf')
+options=('!strip')
+source_x86_64+=("$pkgname-$pkgver-64.zip::http://storage.googleapis.com/dart-archive/channels/stable/release/latest/sdk/dartsdk-linux-x64-release.zip")
+source_i686+=("$pkgname-$pkgver-32.zip::http://storage.googleapis.com/dart-archive/channels/stable/release/latest/sdk/dartsdk-linux-ia32-release.zip")
+sha512sums_x86_64+=('6abc3f76d6327542c6e05043b814875ac9543b8da0e95b7fb11ac893799150c0feb9c6fd5a7638a96ed9ad0bc77a7912da13a0d94fd453f5c9478b4400bb1602')
+sha512sums_i686+=('87eb3a694311cb071f8d40993b764eaa7c6e07a3d025ecf0adecad776a2d8153dc930675dab69b4ba78235116fce189a3c49feb240d6e0ece3cecf92be7c869e')
+
+prepare() {
+  # Fix permissions
+  find "$pkgname-sdk" -type d -exec chmod 0755 '{}' + \
+    -or -type f -exec chmod 0644 '{}' +
+  chmod +x "$pkgname-sdk/bin/"*
+
+  cd "$pkgname-sdk/bin"
+  
+  # Workaround to add trailing newline, or setconf will eat the lines (FS#43008)
+  echo "" >> dartfmt
+
+  # Configure paths
+  setconf dart2js BIN_DIR "/opt/$pkgname-sdk/bin"
+  setconf dart2js PROG_NAME "/opt/$pkgname-sdk/bin/dart2js"
+  setconf dartanalyzer SCRIPT_DIR "/opt/$pkgname-sdk/bin"
+  setconf docgen BIN_DIR "/opt/$pkgname-sdk/bin"
+  setconf pub BIN_DIR "/opt/$pkgname-sdk/bin"
+  setconf pub SDK_DIR "/opt/$pkgname-sdk/"
+  setconf dartfmt BIN_DIR "/opt/$pkgname-sdk/bin"
+  setconf dartfmt SDK_DIR "/opt/$pkgname-sdk/"
+
+  # Extract license (AUTHORS and LICENSE files are missing)
+  head -n5 "../include/dart_api.h" > ../../LICENSE
+}
+
+package() {
+  # Create directories
+  install -d "$pkgdir"{"/opt/$pkgname-sdk",/usr/{bin,"share/doc/$pkgname-sdk"}}
+
+  # Package the files
+  cp -a "$pkgname-sdk/"* "$pkgdir/opt/$pkgname-sdk/"
+
+  # Set up symbolic links for the executables
+  for f in dart dart2js dartanalyzer docgen pub dartfmt; do
+    ln -s "/opt/$pkgname-sdk/bin/$f" "$pkgdir/usr/bin/$f"
+  done
+
+  # Package samples and documentation
+  for f in samples about.html about_files; do
+    echo mv "$pkgdir/opt/$pkgname-sdk/$f" "$pkgdir/usr/share/doc/$pkgname/"
+  done
+
+  # BSD License
+  install -Dm644 LICENSE \
+    "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
+
+# vim:set ts=2 sw=2 et:

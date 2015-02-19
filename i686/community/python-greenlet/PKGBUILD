@@ -1,0 +1,54 @@
+# $Id: PKGBUILD 120942 2014-10-18 17:30:26Z fyan $
+# Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
+# Contributor: Ralf Schmitt <ralf@systemexit.de>
+
+pkgbase=python-greenlet
+pkgname=(python-greenlet python2-greenlet)
+pkgver=0.4.5
+pkgrel=1
+pkgdesc="Lightweight in-process concurrent programming"
+license=("MIT")
+url="http://pypi.python.org/pypi/greenlet"
+makedepends=('python' 'python2')
+checkdepends=('python-setuptools' 'python2-setuptools')
+source=("http://pypi.python.org/packages/source/g/greenlet/greenlet-${pkgver}.zip")
+arch=('i686' 'x86_64')
+
+prepare() {
+    cp -a greenlet-$pkgver greenlet-$pkgver-py2
+}
+
+build() {
+	cd greenlet-$pkgver
+	python setup.py build
+
+    cd ../greenlet-$pkgver-py2
+    python2 setup.py build
+}
+
+check() {
+    cd greenlet-$pkgver
+    python setup.py test
+
+    cd ../greenlet-$pkgver-py2
+    python2 setup.py test
+}
+
+package_python-greenlet() {
+    depends=('python')
+
+    cd greenlet-$pkgver
+    python setup.py install -O1 --root="$pkgdir"
+    install -Dm0644 LICENSE.PSF "$pkgdir/usr/share/licenses/$pkgname/LICENSE.PSF"
+}
+
+package_python2-greenlet() {
+    depends=('python2')
+
+	cd greenlet-$pkgver-py2
+	python2 setup.py install -O1 --root="$pkgdir"
+	install -Dm0644 LICENSE.PSF "$pkgdir/usr/share/licenses/$pkgname/LICENSE.PSF"
+}
+
+sha512sums=('bdef004299e6d9ac457c0884aea69a882f7ee66135ea5da9a231c7f05024413db8ee5bc1e15c4bbc17379130eda5b38948662178fc34c00f96449a6ada6d3e78')

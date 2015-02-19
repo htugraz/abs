@@ -1,0 +1,33 @@
+# $Id: PKGBUILD 126970 2015-02-02 10:03:32Z bluewind $
+# Contributor: Alexander Fehr <pizzapunk gmail com>
+# Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
+
+pkgname=filezilla
+pkgver=3.10.1.1
+pkgrel=1
+pkgdesc="Fast and reliable FTP, FTPS and SFTP client"
+arch=('i686' 'x86_64')
+url="http://filezilla-project.org/"
+license=('GPL')
+depends=('dbus' 'xdg-utils' 'wxgtk' 'libidn' 'hicolor-icon-theme' 'sqlite' 'gnutls')
+install=filezilla.install
+source=("http://downloads.sourceforge.net/project/filezilla/FileZilla_Client/${pkgver}/FileZilla_${pkgver}_src.tar.bz2")
+
+build() {
+  cd "${pkgname}-${pkgver}"
+  ./configure \
+    --prefix=/usr \
+    --disable-manualupdatecheck \
+    --disable-autoupdatecheck \
+    --disable-static \
+    --with-tinyxml=builtin
+
+  make
+}
+
+package() {
+  cd "${pkgname}-${pkgver}"
+
+  make DESTDIR="${pkgdir}" install
+}
+md5sums=('5cefd40699388d66d27c0b04bd3e3f40')

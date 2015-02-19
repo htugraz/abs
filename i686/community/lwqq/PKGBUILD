@@ -1,0 +1,35 @@
+# $Id: PKGBUILD 127271 2015-02-08 04:23:09Z fyan $
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
+
+pkgname=lwqq
+pkgver=0.4.1.20150208
+#_gitver="tag=v$pkgver"
+_gitver='commit=6606519ed314ba9a2c4acc813696e29c7911af60'
+pkgrel=1
+pkgdesc="A library for webqq protocol"
+arch=('i686' 'x86_64')
+url="https://github.com/xiehuc/lwqq"
+license=('GPL3')
+depends=('curl' 'libev' 'js17' 'sqlite')
+makedepends=('git' 'cmake')
+source=("git://github.com/xiehuc/lwqq.git#$_gitver")
+sha512sums=('SKIP')
+
+prepare() {
+  cd $pkgname
+}
+
+build() {
+  cd $pkgname
+  
+  sed -e 's/set(LIBSUFFIX "64")/set(LIBSUFFIX "")/' \
+      -i CMakeLists.txt
+      
+  cmake -DCMAKE_INSTALL_PREFIX=/usr .
+  make
+}
+
+package() {
+  cd $pkgname
+  make DESTDIR="${pkgdir}" install
+}

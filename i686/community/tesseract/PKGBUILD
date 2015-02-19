@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 117911 2014-08-26 14:53:42Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Andreas Hauser <andy-aur@splashground.de>
+
+_langs=(afr ara aze bel ben bul cat ces chi_sim chi_tra chr dan deu ell
+eng enm epo epo_alt equ est eus fin fra frk frm glg grc heb hin hrv hun
+ind isl ita ita_old jpn kan kor lav lit mal mkd mlt msa nld nor pol por
+ron rus slk slv spa spa_old sqi srp swa swe tam tel tgl tha tur ukr vie)
+
+pkgname=tesseract
+pkgver=3.03rc1
+_pkgver=3.03
+pkgrel=1
+pkgdesc="An OCR programm"
+arch=(i686 x86_64)
+url="http://code.google.com/p/tesseract-ocr"
+license=("APACHE")
+depends=(libpng libtiff libjpeg zlib giflib gcc-libs leptonica)
+install=tesseract.install
+optdepends=($(for l in ${_langs[@]}; do echo tesseract-data-${l}; done))
+source=("http://arch.p5n.pp.ru/~sergej/dl/2014/$pkgname-$pkgver.tar.gz")
+md5sums=('d69ceca9ae70e0b7020d0f92d60b8565')
+
+build() {
+  cd $srcdir/$pkgname-${_pkgver}
+  [ -f Makefile ] || ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd $srcdir/$pkgname-${_pkgver}
+  make DESTDIR=$pkgdir install
+  mkdir -p $pkgdir/usr/share/tessdata
+}
