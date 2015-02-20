@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 121739 2014-11-03 04:26:36Z fyan $
+# $Id: PKGBUILD 128005 2015-02-20 05:03:35Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Timofey Titovets <Nefelim4ag@gmail.com>
 
 pkgname=systemd-swap
-pkgver=2.24.8
+pkgver=2.25
 pkgrel=1
 pkgdesc="Script for creating hybrid swap space from zram swaps, swap files and swap partitions."
 arch=('any')
