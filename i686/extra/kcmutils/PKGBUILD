@@ -1,8 +1,9 @@
-# $Id: PKGBUILD 228815 2015-01-09 07:50:19Z andrea $
-# Maintainer: Andrea Scarpino <andrea@archlinux.org>
+# $Id: PKGBUILD 231725 2015-02-21 15:01:05Z fyan $
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
+# Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kcmutils
-pkgver=5.6.0
+pkgver=5.7.0
 pkgrel=1
 pkgdesc='Utilities for interacting with KCModules'
 arch=('i686' 'x86_64')
@@ -12,7 +13,7 @@ depends=('kxmlgui')
 makedepends=('extra-cmake-modules' 'python')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('4c3571626b640edf393e4288fc3e6823')
+md5sums=('44d7f2b251cc4725d6ca52007cdd291d')
 
 prepare() {
   mkdir -p build

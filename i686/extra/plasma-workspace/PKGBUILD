@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 230238 2015-01-29 09:58:02Z andrea $
+# $Id: PKGBUILD 231776 2015-02-21 15:02:21Z fyan $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 # Contributor: Alexey D. <lq07829icatm at rambler.ru>
@@ -6,7 +6,7 @@
 pkgbase=plasma-workspace
 pkgname=('plasma-workspace' 'drkonqi')
 pkgver=5.2.0
-pkgrel=3
+pkgrel=5
 pkgdesc='KDE Plasma Workspace'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/plasma-workspace'

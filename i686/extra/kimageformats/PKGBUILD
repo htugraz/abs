@@ -1,8 +1,9 @@
-# $Id: PKGBUILD 228826 2015-01-09 07:52:09Z andrea $
-# Maintainer: Andrea Scarpino <andrea@archlinux.org>
+# $Id: PKGBUILD 231748 2015-02-21 15:01:32Z fyan $
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
+# Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kimageformats
-pkgver=5.6.0
+pkgver=5.7.0
 pkgrel=1
 pkgdesc='Image format plugins for Qt5'
 arch=('i686' 'x86_64')
@@ -12,7 +13,7 @@ depends=('qt5-base' 'jasper' 'openexr')
 makedepends=('extra-cmake-modules')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('69a1aa95fcacc915c90e62d754609362')
+md5sums=('d45ee89eabdb1d12a5a76cad60943084')
 
 prepare() {
   mkdir -p build

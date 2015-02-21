@@ -1,5 +1,5 @@
-# $Id: PKGBUILD 108643 2014-03-31 00:53:21Z fyan $
-# Maintainer: Felix Yan <felixonmars@gmail.com>
+# $Id: PKGBUILD 128060 2015-02-21 06:32:47Z fyan $
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Karol 'Kenji Takahashi' Woźniak <kenji.sx>
 # Contributor: Tianjiao Yin <ytj000+AUR@gmail.com>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
@@ -10,7 +10,7 @@ pkgbase=python-pyflakes
 pkgname=(python-pyflakes python2-pyflakes)
 _reponame=pyflakes
 pkgver=0.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc='A lint-like tool for Python to identify common errors quickly without executing code'
 arch=('any')
 url='http://pypi.python.org/pypi/pyflakes'
@@ -40,7 +40,7 @@ check() {
 }
 
 package_python-pyflakes() {
-  depends=('python')
+  depends=('python-setuptools')
 
   cd "${_reponame}-${pkgver}"
 
@@ -53,7 +53,7 @@ package_python-pyflakes() {
 }
 
 package_python2-pyflakes() {
-  depends=('python2')
+  depends=('python2-setuptools')
 
   cd "${_reponame}-${pkgver}-py2"
 
