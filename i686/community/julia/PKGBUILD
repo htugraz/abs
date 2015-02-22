@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 127043 2015-02-03 14:19:12Z arodseth $
+# $Id: PKGBUILD 128113 2015-02-22 15:43:38Z arodseth $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Lex Black <autumn-wind at web dot de>
 # Contributor: Michael Jakl <jakl.michael@gmail.com>
@@ -7,9 +7,9 @@
 
 pkgbase=julia
 pkgname=('julia' 'julia-docs')
-pkgver=0.3.5
-pkgrel=2
 epoch=2
+pkgver=0.3.6
+pkgrel=1
 pkgdesc='High-level, high-performance, dynamic programming language'
 arch=('x86_64' 'i686')
 url='http://julialang.org/'
@@ -22,7 +22,7 @@ source=("git://github.com/JuliaLang/julia.git#tag=v$pkgver")
 sha256sums=('SKIP')
 
 prepare() {
-  # for /etc/ld.so.conf.d/
+  # For /etc/ld.so.conf.d/
   echo '/usr/lib/julia' > julia.conf
 }
 
