@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 126092 2015-01-18 13:35:10Z speps $
+# $Id: PKGBUILD 128132 2015-02-23 15:48:41Z speps $
 # Maintainer: speps <speps at aur dot archlinux dot org>
 
 pkgname=guitarix2
-pkgver=0.32.2
+pkgver=0.32.3
 pkgrel=1
 pkgdesc="A simple mono guitar amplifier and FX for JACK using Faust"
 arch=('i686' 'x86_64')
@@ -17,7 +17,7 @@ conflicts=('guitarix' 'gx_head')
 replaces=('guitarix' 'gx_head')
 install="$pkgname.install"
 source=("http://download.sourceforge.net/project/guitarix/guitarix/$pkgname-$pkgver.tar.bz2")
-md5sums=('1e949602bd40ba08af85783c125dc981')
+md5sums=('fb0a853acf40aa8a26f0abe5f224989a')
 
 build() {
   cd guitarix-$pkgver
