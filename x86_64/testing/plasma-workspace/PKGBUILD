@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 231944 2015-02-25 04:03:05Z fyan $
+# $Id: PKGBUILD 232091 2015-02-27 16:10:15Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
@@ -7,7 +7,7 @@
 pkgbase=plasma-workspace
 pkgname=('plasma-workspace' 'drkonqi')
 pkgver=5.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc='KDE Plasma Workspace'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/plasma-workspace'
@@ -18,7 +18,7 @@ license=('LGPL')
 depends=('knewstuff' 'kjsembed' 'knotifyconfig' 'libxdamage' 'kwayland'
          'libksysguard' 'libkscreen-frameworks' 'ktexteditor' 'libqalculate'
          'qt5-tools' 'kded' 'kde-cli-tools' 'xorg-xrdb' 'xorg-xsetroot'
-         'xorg-xmessage' 'xorg-xprop')
+         'xorg-xmessage' 'xorg-xprop' 'milou')
 makedepends=('extra-cmake-modules' 'kdoctools' 'kwin' 'gpsd' 'baloo-frameworks'
              'krunner')
 groups=('plasma')
