@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 232051 2015-02-27 09:44:29Z fyan $
+# $Id: PKGBUILD 232102 2015-02-28 12:48:11Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Ronald van Haren <ronald.archlinux.org>
@@ -9,6 +9,7 @@ pkgname=('calligra-braindump'
          'calligra-extras'
          'calligra-filters'
          'calligra-flow'
+         'calligra-gemini'
          'calligra-handbook'
          'calligra-karbon'
          'calligra-kexi'
@@ -20,7 +21,7 @@ pkgname=('calligra-braindump'
          'calligra-stage'
          'calligra-words')
 pkgver=2.9.0
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url='http://www.calligra-suite.org/'
 license=('FDL1.2' 'GPL2' 'LGPL')
@@ -247,4 +248,16 @@ package_calligra-devtools() {
   cd build/devtools
   make DESTDIR="${pkgdir}" install
 }
+
+package_calligra-gemini() {
+  pkgdesc="QML interface for Calligra Words and Stage"
+  depends=('calligra-words' 'calligra-stage')
+  install=calligra-gemini.install
+
+  cd build/qtquick
+  make DESTDIR="${pkgdir}" install
+  cd "${srcdir}"/build/gemini
+  make DESTDIR="${pkgdir}" install
+}
+
 
