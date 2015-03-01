@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 226284 2014-11-15 14:56:07Z bpiotrowski $
+# $Id: PKGBUILD 232384 2015-03-01 16:56:38Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=audacious-plugins
-pkgver=3.5.2
+pkgver=3.6
 pkgrel=2
 pkgdesc='Plugins for Audacious'
 url='http://audacious-media-player.org/'
@@ -15,7 +15,7 @@ makedepends=("audacious>=${pkgver}"
              'glib2' 'python2' # for gdbus-codegen
              'alsa-lib' 'pulseaudio' 'jack2' 'lame' 'libvorbis' 'flac'
              'mpg123' 'faad2' 'ffmpeg' 'libmodplug' 'fluidsynth' 'libcdio-paranoia' 'libsidplayfp' 'wavpack'
-             'dbus-glib' 'libnotify' 'lirc-utils' 'curl' 'libmtp'
+             'dbus-glib' 'libnotify' 'lirc' 'curl' 'libmtp'
              'neon' 'libmms' 'libcue')
 
 optdepends=('alsa-lib: Advanced Linux Sound Arch. output'
@@ -36,7 +36,7 @@ optdepends=('alsa-lib: Advanced Linux Sound Arch. output'
 
             'dbus-glib: Gnome Shortcuts Plugin'
             'libnotify: libnotify OSD'
-            'lirc-utils: LIRC'
+            'lirc: LIRC'
             'curl: AudioScrobbler Client'
             'libmtp: Upload to MTP device'
 
@@ -45,7 +45,7 @@ optdepends=('alsa-lib: Advanced Linux Sound Arch. output'
             'libcue: CUE playlist format')
 
 source=("http://distfiles.audacious-media-player.org/${pkgname}-${pkgver}.tar.bz2")
-sha1sums=('470a9c009a92627fb824118762b156eb4604099f')
+sha1sums=('1a0d46f5e8b6ff6fcce0e441818da234b8f1f020')
 
 build() {
 	cd "${srcdir}/${pkgname}-${pkgver}"

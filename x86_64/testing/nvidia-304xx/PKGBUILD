@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 231179 2015-02-09 07:45:51Z fyan $
+# $Id: PKGBUILD 232372 2015-03-01 16:01:54Z svenstaro $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Thomas Baechler <thomas@archlinux.org>
 
 pkgname=nvidia-304xx
 pkgver=304.125
 _extramodules=extramodules-3.19-ARCH
-pkgrel=10
+pkgrel=11
 pkgdesc="NVIDIA drivers for linux, 304xx legacy branch"
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"
-depends=('linux>=3.19' 'linux<3.20' 'nvidia-304xx-libgl' "nvidia-304xx-utils=${pkgver}")
+depends=('linux>=3.19' 'linux<3.20' 'libgl' "nvidia-304xx-utils=${pkgver}")
 makedepends=('linux-headers>=3.19' 'linux-headers<3.20')
 conflicts=('nvidia')
 license=('custom')

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 107808 2014-03-19 20:59:30Z svenstaro $
+# $Id: PKGBUILD 128495 2015-03-01 12:48:28Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Christian Hesse <mail@eworm.de>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=nbd
 pkgver=3.8
-pkgrel=1
+pkgrel=2
 pkgdesc="tools for network block devices, allowing you to use remote block devices over TCP/IP"
 arch=('i686' 'x86_64')
 url="http://nbd.sourceforge.net"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 222995 2014-09-25 01:42:35Z dan $
+# $Id: PKGBUILD 232396 2015-03-01 19:51:07Z dan $
 # Maintainer: Dan McGee <dan@archlinux.org>
 # Contributor: Geoffroy Carrier <geoffroy.carrier@koon.fr>
 
 pkgname=nilfs-utils
-pkgver=2.2.2
+pkgver=2.2.3
 pkgrel=1
 pkgdesc="A log-structured file system supporting continuous snapshotting (userspace utils)"
 arch=('i686' 'x86_64')
@@ -11,8 +11,8 @@ url="http://nilfs.sourceforge.net/"
 license=('GPL2' 'LGPL2.1')
 backup=('etc/nilfs_cleanerd.conf')
 depends=('util-linux')
-source=(http://www.nilfs.org/download/$pkgname-$pkgver.tar.bz2)
-md5sums=('17033394c30515c41c8ae08f83d1cbbe')
+source=(http://nilfs.sourceforge.net/download/$pkgname-$pkgver.tar.bz2)
+md5sums=('50e904e41aee0a1463b01c9d0df8ee9d')
 
 build() {
   cd $pkgname-$pkgver

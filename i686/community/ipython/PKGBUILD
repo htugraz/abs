@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 127582 2015-02-11 20:13:00Z kkeen $
+# $Id: PKGBUILD 128447 2015-03-01 05:26:09Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: PepeSmith
 # Contributor: Aron Asor <aronasorman at gmail.com>
@@ -7,8 +7,8 @@
 
 pkgbase=ipython 
 pkgname=(ipython ipython2)
-pkgver=2.4.1
-pkgrel=1
+pkgver=3.0.0
+pkgrel=2
 pkgdesc="An enhanced Interactive Python shell."
 arch=('any')
 url="http://ipython.org"
@@ -22,10 +22,11 @@ optdepends=("python-nose: for IPython's test suite"
             "python-pyzmq: ipython notebook and ipython qtconsole"
             "python-tornado: for ipython notebook"
             "python-jinja: for ipython notebook"
+            "python-jsonschema: for ipython notebook"
             "haskell-pandoc: ipython notebook conversion")
 #source=("http://archive.ipython.org/release/$pkgver/ipython-$pkgver.tar.gz")
 source=("https://pypi.python.org/packages/source/i/ipython/$pkgbase-$pkgver.tar.gz")
-md5sums=('70149981d6515d77ecb3d7507de2d7d9')
+md5sums=('b3f00f3c0be036fafef3b0b9d663f27e')
 
 build() {
   cd "$srcdir"
@@ -61,6 +62,7 @@ package_ipython2() {
               "python2-pyzmq: ipython notebook and ipython qtconsole"
               "python2-tornado: for ipython notebook"
               "python2-jinja: for ipython notebook"
+              "python2-jsonschema: for ipython notebook"
               "haskell-pandoc: ipython notebook conversion")
 
   cd "$srcdir/ipython2-$pkgver"
