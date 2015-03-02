@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 126982 2015-02-02 11:26:56Z spupykin $
+# $Id: PKGBUILD 128522 2015-03-02 10:59:44Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer:  Christian Himpel <chressie at gmail dot com>
 # Contributor: Johannes Hanika <hanatos at gmail dot com>
 
 pkgname=darktable
-pkgver=1.6.2
+pkgver=1.6.3
 pkgrel=1
 pkgdesc="Utility to organize and develop raw images"
 arch=('i686' 'x86_64')
@@ -17,7 +17,7 @@ makedepends=('intltool>=0.40' 'cmake' 'librsvg')
 optdepends=('librsvg')
 install=darktable.install
 source=("$pkgname-$pkgver.tar.gz::https://github.com/darktable-org/darktable/archive/release-$pkgver.tar.gz")
-md5sums=('71f786a0bfce1b72e0a28ea560684205')
+md5sums=('631eec1dfa2071bbb56156d99ed164c2')
 
 prepare() {
   cd "$srcdir/$pkgname-release-$pkgver/cmake"

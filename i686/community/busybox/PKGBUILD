@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 128314 2015-02-26 19:33:54Z spupykin $
+# $Id: PKGBUILD 128562 2015-03-02 17:24:30Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Jens Pranaitis <jens@jenux.homelinux.org>
 
 pkgname=busybox
 pkgver=1.23.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Utilities for rescue and embedded systems"
 arch=("i686" "x86_64")
 url="http://www.busybox.net"
