@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 215997 2014-07-01 10:28:48Z fyan $
+# $Id: PKGBUILD 232466 2015-03-03 09:28:26Z jgc $
 # Maintainer: damir <damir@archlinux.org>
 
 pkgbase=libxml++
 pkgname=('libxml++' 'libxml++-docs')
-pkgver=2.36.0
-pkgrel=2
+pkgver=2.38.0
+pkgrel=1
 arch=('i686' 'x86_64')
 license=('LGPL')
 url="http://libxmlplusplus.sourceforge.net/"
 makedepends=('pkgconfig' 'glibmm-docs' 'libxml2' 'glibmm')
 options=('!emptydirs')
-source=(http://ftp.gnome.org/pub/GNOME/sources/${pkgbase}/2.36/${pkgbase}-${pkgver}.tar.xz)
-sha256sums=('bfdf327bf9ebd12946b7aa6a152045f209d5c9fecd06ebfcdf9b3e7c1af6e2e1')
+source=(http://ftp.gnome.org/pub/GNOME/sources/${pkgbase}/${pkgver:0:4}/${pkgbase}-${pkgver}.tar.xz)
+sha256sums=('5698b03f5d320fb8310e30780e328f03debca12c557434ee031aea9baf3b1346')
 
 build() {
   cd "${srcdir}/${pkgbase}-${pkgver}"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 231791 2015-02-21 21:38:37Z andyrtr $
+# $Id: PKGBUILD 232497 2015-03-03 21:03:20Z lcarlier $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 
@@ -6,7 +6,7 @@ pkgbase=libreoffice-still
 pkgname=('libreoffice-still-sdk' 'libreoffice-still')
 _LOver=4.3.6.2
 pkgver=4.3.6
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 license=('LGPL3')
 url="http://www.libreoffice.org/"

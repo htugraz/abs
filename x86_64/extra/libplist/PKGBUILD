@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 210552 2014-04-14 20:13:39Z jgc $
+# $Id: PKGBUILD 232462 2015-03-03 09:13:33Z jgc $
 # Maintainer : Tom Gundersen <teg@jklm.no>
 # Maintainer : Ionut Biru <ibiru@archlinux.org>
 # Contributor: Gabriel Martinez < reitaka at gmail dot com >
 
 pkgname=libplist
-pkgver=1.11
+pkgver=1.12
 pkgrel=1
 pkgdesc="A library to handle Apple Property List format whereas it's binary or XML"
 url="http://libimobiledevice.org/"
@@ -14,7 +14,7 @@ depends=('glib2' 'libxml2')
 makedepends=('python2')
 options=('!makeflags')
 source=(http://www.libimobiledevice.org/downloads/$pkgname-$pkgver.tar.bz2)
-md5sums=('82de65f38cb2f0a9fd0839679b46072b')
+md5sums=('8b04b0f09f2398022dcd4fba75012997')
 
 build() {
   cd libplist-$pkgver

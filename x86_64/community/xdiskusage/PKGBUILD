@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 125966 2015-01-15 12:24:06Z spupykin $
+# $Id: PKGBUILD 128647 2015-03-03 17:35:18Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 # Contributor: Jason Chu <jason@archlinux.org>
 
 pkgname=xdiskusage
-pkgver=1.50
+pkgver=1.51
 pkgrel=1
 pkgdesc="xdiskusage is a user-friendly program to show you what is using up all your disk space"
 arch=('i686' 'x86_64')
@@ -15,7 +15,7 @@ url="http://xdiskusage.sourceforge.net"
 options=(!emptydirs)
 source=(http://xdiskusage.sourceforge.net/$pkgname-$pkgver.tgz
 	'build-fix.patch')
-md5sums=('d31e15e439c2c4803c29dbedfe2aebd4'
+md5sums=('91ab7415a0dc8d53742eb9a9cc809cfd'
          '570eb00cb0999231620b67889325a81f')
 
 prepare() {
