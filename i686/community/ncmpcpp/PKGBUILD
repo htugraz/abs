@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 124332 2014-12-21 19:05:52Z bpiotrowski $
+# $Id: PKGBUILD 128691 2015-03-04 05:52:12Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: graysky <graysky AT archlinux DOT us>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 # Contributor: Army <uli[dot]armbruster[at]gmail[dot]com>
 
 pkgname=ncmpcpp
-pkgver=0.6.2
+pkgver=0.6.3
 pkgrel=1
 pkgdesc='Almost exact clone of ncmpc with some new features'
 arch=('i686' 'x86_64')
@@ -15,7 +15,7 @@ depends=('curl' 'libmpdclient' 'taglib' 'ncurses' 'fftw' 'boost-libs')
 makedepends=('boost')
 source=(http://ncmpcpp.rybczak.net/stable/ncmpcpp-$pkgver.tar.bz2
         missing-include.patch)
-md5sums=('323498bac479c026dbc2a8fd0d7ac1fa'
+md5sums=('b4af4c7405ce12033757c1cd1f9900c5'
          '14fa33349661c8e6c2a323970ef1e98c')
 
 prepare() {

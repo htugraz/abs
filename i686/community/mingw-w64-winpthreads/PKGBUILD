@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 128364 2015-02-27 14:00:58Z spupykin $
+# $Id: PKGBUILD 128722 2015-03-04 14:33:03Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: rubenvb vanboxem <dottie> ruben <attie> gmail <dottie> com
 
 _targets="i686-w64-mingw32 x86_64-w64-mingw32"
 
 pkgname=mingw-w64-winpthreads
-pkgver=4.0rc2
+pkgver=4.0rc3
 _pkgver=4.0-rc2
 pkgrel=1
 pkgdesc='MinGW-w64 winpthreads library'

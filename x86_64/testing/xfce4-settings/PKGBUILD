@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 232338 2015-03-01 11:53:49Z foutrelis $
+# $Id: PKGBUILD 232609 2015-03-04 10:53:57Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: tobias <tobias funnychar archlinux.org>
 # Contributor: Corrado Primier <bardo@aur.archlinux.org>
 
 pkgname=xfce4-settings
 pkgver=4.12.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Settings manager for xfce"
 arch=('i686' 'x86_64')
 url="http://www.xfce.org/"
 license=('GPL2')
 groups=('xfce4')
-depends=('exo' 'garcon' 'libxfce4ui' 'libnotify' 'libxklavier' 'upower'
+depends=('exo' 'garcon' 'libxfce4ui' 'libnotify' 'libxklavier'
          'gnome-icon-theme' 'gtk3')
 makedepends=('intltool' 'xf86-input-libinput')
 optdepends=('libcanberra: for sound control')
@@ -41,6 +41,7 @@ build() {
     --enable-libxklavier \
     --enable-pluggable-dialogs \
     --enable-sound-settings \
+    --disable-upower-glib \
     --disable-debug
   make
 }

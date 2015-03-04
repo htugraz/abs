@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 217469 2014-07-18 14:56:43Z lcarlier $
+# $Id: PKGBUILD 232861 2015-03-04 17:53:52Z lcarlier $
 # Maintainer: Laurent Carlier <lordheavym@gmail.com>
 
 pkgname=libepoxy
@@ -11,7 +11,7 @@ license=(MIT)
 depends=('glibc')
 makedepends=('xorg-util-macros' 'python' 'mesa-libgl')
 options=('!libtool')
-source=("https://github.com/anholt/${pkgname}/archive/v${pkgver}.tar.gz")
+source=(${pkgname}-${pkgver}.tar.gz::https://github.com/anholt/${pkgname}/archive/v${pkgver}.tar.gz)
 md5sums=('12d6b7621f086c0c928887c27d90bc30')
 
 build() {
