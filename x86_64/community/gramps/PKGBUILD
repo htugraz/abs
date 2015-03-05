@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 121471 2014-10-27 11:15:56Z spupykin $
+# $Id: PKGBUILD 128749 2015-03-05 10:24:24Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: William Rea <sillywilly@gmail.com>
 # Contributor: Cory Farmer <rbgkofi@ameritech.net>
 # Contributor: György Balló <ballogy@freestart.hu>
 
 pkgname=gramps
-pkgver=4.1.1
+pkgver=4.1.2
 pkgrel=1
 epoch=2
 pkgdesc="A genealogy program, which helps you track your family tree"
@@ -14,7 +14,7 @@ url="http://gramps-project.org/"
 license=('GPL')
 depends=('goocanvas' 'gtk3' 'python-gobject' 'librsvg' 'xdg-utils' 
 	 'python-bsddb' 'gnome-icon-theme' 'desktop-file-utils'
-	 'shared-mime-info')
+	 'shared-mime-info' 'python-cairo')
 makedepends=('intltool')
 optdepends=('graphviz: enable creation of graphs (required for tree reports)'
 	    'gtkspell3: enable spell checking in the notes'
@@ -28,7 +28,7 @@ optdepends=('graphviz: enable creation of graphs (required for tree reports)'
 install=$pkgname.install
 source=(http://downloads.sourceforge.net/project/gramps/Stable/$pkgver/gramps-$pkgver.tar.gz
 	block-changed.patch)
-md5sums=('3aa4d2646fac43bbe5a4f461bde2df39'
+md5sums=('270c7f0477424db8e65cc251ec85e572'
          'b2443587e08c4951f00e9401d47e1ccc')
 
 prepare() {

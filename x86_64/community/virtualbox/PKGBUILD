@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 128687 2015-03-04 00:14:45Z seblu $
+# $Id: PKGBUILD 128742 2015-03-05 00:02:43Z seblu $
 # Maintainer: Sébastien "Seblu" Luttringer
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 
@@ -290,7 +290,7 @@ package_virtualbox-guest-dkms() {
 package_virtualbox-guest-utils() {
     pkgdesc='VirtualBox Guest userspace utilities'
     depends=('virtualbox-guest-modules' 'glibc' 'pam' 'libx11' 'libxcomposite'
-             'libxdamage' 'libxext' 'libxfixes' 'libxmu' 'libxt' 'libxrandr'
+             'libxdamage' 'libxext' 'libxfixes' 'libxmu' 'libxt' 'xorg-xrandr'
              'X-ABI-VIDEODRV_VERSION=19')
     optdepends=('virtualbox-guest-dkms: Guest kernel source modules for non-stock kernels')
     replaces=('virtualbox-archlinux-additions' 'virtualbox-guest-additions')

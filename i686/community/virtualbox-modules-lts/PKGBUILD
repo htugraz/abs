@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 128477 2015-03-01 11:25:26Z andyrtr $
+# $Id: PKGBUILD 128743 2015-03-05 00:03:23Z seblu $
 # Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Sébastien Luttringer
 
 pkgbase=virtualbox-modules-lts
 pkgname=('virtualbox-host-modules-lts' 'virtualbox-guest-modules-lts')
-pkgver=4.3.22
-pkgrel=3
+pkgver=4.3.24
+pkgrel=1
 arch=('i686' 'x86_64')
 url='http://virtualbox.org'
 license=('GPL')
