@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 126616 2015-01-26 19:35:22Z heftig $
+# $Id: PKGBUILD 128840 2015-03-06 20:59:30Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=rubinius
 pkgname=(rubinius rubinius-ruby)
 pkgver=2.5.1
-pkgrel=1
+pkgrel=3
 pkgdesc="Ruby runtime written in Ruby, designed for concurrency"
 arch=(i686 x86_64)
 url="http://rubini.us"
@@ -40,7 +40,6 @@ build() {
     --appdir=/usr/lib/rubinius \
     --gemsdir=/usr/lib/rubinius/gems \
     --preserve-prefix \
-    --llvm-shared \
     --without-rpath \
     --bin-link bundle --bin-link bundler
   rake build

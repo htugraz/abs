@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 232495 2015-03-03 21:03:17Z lcarlier $
+# $Id: PKGBUILD 232913 2015-03-06 05:15:28Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Tobias Kieslich <tobias@justdreams.de>
 # Contributor: tobias <tobias@archlinux.org>
 
 pkgname=inkscape
 pkgver=0.91
-pkgrel=5
+pkgrel=6
 pkgdesc='Vector graphics editor using the SVG file format'
 url='http://inkscape.sourceforge.net/'
 license=('GPL' 'LGPL')
 arch=('i686' 'x86_64')
 makedepends=('boost' 'intltool')
 depends=('gc' 'gsl' 'gtkmm' 'gtkspell' 'imagemagick' 'libxslt' 'poppler-glib' 'popt'
-         'python2' 'desktop-file-utils' 'hicolor-icon-theme')
+         'ttf-dejavu' 'python2' 'desktop-file-utils' 'hicolor-icon-theme')
 optdepends=('pstoedit: latex formulas'
             'texlive-core: latex formulas'
             'python2-numpy: some extensions'

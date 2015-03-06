@@ -1,13 +1,13 @@
-# $Id: PKGBUILD 128758 2015-03-05 11:26:01Z spupykin $
+# $Id: PKGBUILD 128813 2015-03-06 13:15:50Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Marcin Karpezo <sirmacik at gmail dot com>
 
 pkgbase=scala
 pkgname=(scala scala-docs scala-sources)
 pkgver=2.11.6
-pkgrel=1
-_distdate=20150102-024700
-_distsha=3fafbc204f
+pkgrel=2
+_distdate=20150306-224600
+_distsha=092690e7bf
 pkgdesc="A Java-interoperable language with object-oriented and functional features"
 arch=('any')
 url="http://www.scala-lang.org"
