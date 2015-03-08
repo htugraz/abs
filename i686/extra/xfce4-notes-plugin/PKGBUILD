@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 221973 2014-09-18 19:41:16Z foutrelis $
+# $Id: PKGBUILD 233045 2015-03-08 08:14:30Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Andreas Radke <andyrtr at archlinux.org>
 # Contributor: Ben Mazer <contrasutra@myrealbox.com>
 
 pkgname=xfce4-notes-plugin
 pkgver=1.7.7
-pkgrel=6
+pkgrel=7
 pkgdesc="A notes plugin for the Xfce4 panel"
 arch=('i686' 'x86_64')
 license=('GPL2')

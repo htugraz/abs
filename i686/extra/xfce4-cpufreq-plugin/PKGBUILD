@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 227954 2014-12-23 14:21:25Z foutrelis $
+# $Id: PKGBUILD 233031 2015-03-08 08:14:14Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: AndyRTR <andyrtr@archlinux.org>
 # Contributor: tobias <tobias funnychar archlinux.org>
 
 pkgname=xfce4-cpufreq-plugin
 pkgver=1.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="CPU frequency plugin for the Xfce4 panel"
 arch=('i686' 'x86_64')
 license=('GPL2')

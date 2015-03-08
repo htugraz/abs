@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 202765 2013-12-27 11:06:12Z foutrelis $
+# $Id: PKGBUILD 233056 2015-03-08 08:14:45Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: tobias <tobias funnychar archlinux.org>
 # Contributor: Aurelien Foret <orelien@chez.com>
 
 pkgname=xfce4-terminal
 pkgver=0.6.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A modern terminal emulator primarly for the Xfce desktop environment"
 arch=('i686' 'x86_64')
 url="http://www.xfce.org/"

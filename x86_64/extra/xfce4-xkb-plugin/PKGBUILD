@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 198576 2013-10-30 15:42:50Z allan $
+# $Id: PKGBUILD 233062 2015-03-08 08:14:54Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: AndyRTR <andyrtr@archlinux.org>
 # Contributor: Tobias Kieslich <tobias (at) archlinux.org>
 
 pkgname=xfce4-xkb-plugin
 pkgver=0.5.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Plugin to switch keyboard layouts for the Xfce4 panel"
 arch=('i686' 'x86_64')
 url="http://goodies.xfce.org/projects/panel-plugins/xfce4-xkb-plugin"

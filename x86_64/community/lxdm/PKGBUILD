@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 123003 2014-11-23 17:04:56Z bgyorgy $
+# $Id: PKGBUILD 128930 2015-03-08 18:36:01Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 # Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: AndyRTR <andyrtr@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=lxdm
 pkgver=0.5.0
-pkgrel=3
+pkgrel=4
 pkgdesc='Lightweight X11 Display Manager'
 arch=('i686' 'x86_64')
 url="https://sourceforge.net/projects/lxdm/"

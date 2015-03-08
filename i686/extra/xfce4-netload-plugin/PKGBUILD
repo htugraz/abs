@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 227050 2014-11-24 15:15:01Z foutrelis $
+# $Id: PKGBUILD 233044 2015-03-08 08:14:29Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Aurelien Foret <orelien@chez.com>
 
 pkgname=xfce4-netload-plugin
 pkgver=1.2.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A netload plugin for the Xfce panel"
 arch=('i686' 'x86_64')
 url="http://goodies.xfce.org/projects/panel-plugins/xfce4-netload-plugin"

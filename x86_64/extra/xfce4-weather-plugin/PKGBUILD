@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 227950 2014-12-23 14:15:12Z foutrelis $
+# $Id: PKGBUILD 233061 2015-03-08 08:14:52Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Suzy Williams <suzanne.williams3@verizon.net>
 
 pkgname=xfce4-weather-plugin
 pkgver=0.8.5
-pkgrel=1
+pkgrel=2
 pkgdesc="A weather plugin for the Xfce4 panel"
 arch=('i686' 'x86_64')
 url="http://goodies.xfce.org/projects/panel-plugins/xfce4-weather-plugin"

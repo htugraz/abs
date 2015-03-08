@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 232057 2015-02-27 10:04:53Z foutrelis $
+# $Id: PKGBUILD 233051 2015-03-08 08:14:37Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Andreas Radke <andyrtr@archlinux.org>
 # Contributor: Merk Matthias <macem@chello.at>
 
 pkgname=xfce4-sensors-plugin
 pkgver=1.2.6
-pkgrel=1
+pkgrel=2
 pkgdesc="A lm_sensors plugin for the Xfce panel"
 arch=('i686' 'x86_64')
 url="http://goodies.xfce.org/projects/panel-plugins/xfce4-sensors-plugin"

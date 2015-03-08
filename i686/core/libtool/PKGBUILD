@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 230035 2015-01-27 09:20:01Z allan $
+# $Id: PKGBUILD 233004 2015-03-08 03:51:43Z allan $
 # Maintainer: Allan McRae <allan@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
 
 # NOTE: requires rebuilt with each new gcc version
 
 pkgname=libtool
-pkgver=2.4.5
+pkgver=2.4.6
 pkgrel=1
 _gccver=4.9.2
 pkgdesc="A generic library support script"
@@ -20,7 +20,7 @@ conflicts=('libltdl' 'libtool-multilib')
 replaces=('libltdl' 'libtool-multilib')
 install=libtool.install
 source=(ftp://ftp.gnu.org/pub/gnu/libtool/${pkgname}-${pkgver}.tar.xz{,.sig})
-md5sums=('ee9c087775aeb98ce53a9c69da865a55'
+md5sums=('1bfb9b923f2c1339b4d2ce1807064aa5'
          'SKIP')
 validpgpkeys=('CFE2BE707B538E8B26757D84151308092983D606')   # Gary Vaughan
 

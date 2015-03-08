@@ -1,20 +1,20 @@
-# $Id: PKGBUILD 198579 2013-10-30 15:43:53Z allan $
+# $Id: PKGBUILD 233065 2015-03-08 08:15:00Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: tobias <tobias funnychar archlinux.org>
 
 pkgname=xfwm4
-pkgver=4.10.1
+pkgver=4.12.0
 pkgrel=1
 pkgdesc="Xfce window manager"
 arch=('i686' 'x86_64')
 url="http://www.xfce.org/"
 license=('GPL2')
 groups=('xfce4')
-depends=('libxfce4ui' 'libwnck' 'hicolor-icon-theme')
+depends=('libxfce4ui' 'libwnck' 'libdrm' 'hicolor-icon-theme')
 makedepends=('intltool')
 install=$pkgname.install
-source=(http://archive.xfce.org/src/xfce/$pkgname/4.10/$pkgname-$pkgver.tar.bz2)
-sha256sums=('380c44fba6eb779e34be0fe94f3726cfa131803014d6073c45aec8a1257fa740')
+source=(http://archive.xfce.org/src/xfce/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.bz2)
+sha256sums=('29f4cbe2869ae32a6775877ed6bfc4ded7000f013ff7eb70b2639c49f415cc3a')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"

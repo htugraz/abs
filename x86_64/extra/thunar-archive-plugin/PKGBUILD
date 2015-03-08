@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 211709 2014-04-23 17:41:09Z foutrelis $
+# $Id: PKGBUILD 233024 2015-03-08 08:14:07Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Tobias Kieslich <tobias (at) archlinux.org>
 
 pkgname=thunar-archive-plugin
 pkgver=0.3.1
-pkgrel=4
+pkgrel=5
 pkgdesc="Create and extract archives in Thunar"
 arch=('i686' 'x86_64')
 url="http://goodies.xfce.org/projects/thunar-plugins/thunar-archive-plugin"
