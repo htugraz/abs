@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 215268 2014-06-18 06:00:49Z tpowa $
+# $Id: PKGBUILD 233136 2015-03-09 15:04:05Z anatolik $
 # Maintainer: judd <jvinet@zeroflux.org>
 
 pkgname=alsa-lib
-pkgver=1.0.28
+pkgver=1.0.29
 pkgrel=1
 pkgdesc="An alternative implementation of Linux sound support"
 arch=('i686' 'x86_64')
@@ -23,4 +23,4 @@ package() {
   cd "$srcdir/$pkgname-$pkgver"
   make DESTDIR="$pkgdir" install
 }
-md5sums=('c9e21b88a2b3e6e12ea7ba0f3b271fc3')
+md5sums=('de67e0eca72474d6b1121037dafe1024')
