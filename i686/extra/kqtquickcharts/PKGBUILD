@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 231076 2015-02-07 09:42:11Z fyan $
+# $Id: PKGBUILD 233294 2015-03-10 07:41:00Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kqtquickcharts
-pkgver=14.12.2
+pkgver=14.12.3
 pkgrel=1
 pkgdesc="A QtQuick plugin to render beautiful and interactive charts"
 url="https://projects.kde.org/projects/kde/kdeedu/kqtquickcharts"
@@ -12,7 +12,7 @@ license=('GPL' 'LGPL' 'FDL')
 depends=('kdelibs')
 makedepends=('cmake' 'automoc4')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
-sha1sums=('5a21d3070c2b8973483b6418b7b6a787a4e8f96a')
+sha1sums=('7f8931779490e89acd68ca7edfe5b9b6159a96ff')
 
 prepare() {
   mkdir build

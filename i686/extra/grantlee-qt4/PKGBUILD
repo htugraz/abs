@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 227083 2014-11-25 08:14:48Z andrea $
+# $Id: PKGBUILD 233311 2015-03-10 08:02:06Z fyan $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=grantlee-qt4
 pkgver=0.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A string template engine based on the Django template system and written in Qt4"
 arch=('i686' 'x86_64')
 url="https://www.gitorious.org/grantlee/pages/Home"
@@ -18,10 +18,12 @@ md5sums=('775f22dac0953029b414ed3b7379098c')
 
 prepare() {
   mkdir build
+
+  sed -e 's|INCLUDE_INSTALL_DIR include|INCLUDE_INSTALL_DIR include/grantlee-qt4|' -i grantlee-$pkgver/CMakeLists.txt
 }
 
 build() {
-  cd ../build
+  cd build
   cmake ../grantlee-${pkgver} \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_BUILD_TYPE=Release \

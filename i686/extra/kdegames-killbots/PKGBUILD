@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 230988 2015-02-07 09:38:48Z fyan $
+# $Id: PKGBUILD 233206 2015-03-10 07:38:29Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-killbots
-pkgver=14.12.2
+pkgver=14.12.3
 pkgrel=1
 pkgdesc="A simple game of evading killer robots"
 url="http://kde.org/applications/games/killbots/"
@@ -14,7 +14,7 @@ depends=('kdebase-runtime' 'libkdegames')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/killbots-${pkgver}.tar.xz")
-sha1sums=('3cb23cacc32ea9cef22a2077194abc62a3f2dfaf')
+sha1sums=('cfdb889a2246f51fd3233c5f6893df733034cc43')
 
 build() {
   mkdir build

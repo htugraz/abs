@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 126827 2015-01-30 16:45:38Z spupykin $
+# $Id: PKGBUILD 129009 2015-03-10 11:11:32Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andrea Zucchelli <zukka77@gmail.com>
 # Contributor: Daniel Micay <danielmicay@gmail.com>
@@ -8,7 +8,7 @@
 pkgname=lxc
 pkgver=1.1.0
 epoch=1
-pkgrel=2
+pkgrel=3
 pkgdesc="Linux Containers"
 arch=('i686' 'x86_64')
 url="http://linuxcontainers.org"
@@ -56,7 +56,7 @@ build() {
     --enable-capabilities \
     --enable-lua \
     --with-init-script=systemd \
-    --with-systemdsystemunitdir=/usr/lib
+    --with-systemdsystemunitdir=/usr/lib/systemd/system
   make
 }
 

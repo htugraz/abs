@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 231067 2015-02-07 09:41:52Z fyan $
+# $Id: PKGBUILD 233285 2015-03-10 07:40:46Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-ktimer
-pkgver=14.12.2
+pkgver=14.12.3
 pkgrel=1
 pkgdesc='Countdown Launcher'
 url='http://kde.org/applications/utilities/ktimer/'
@@ -14,7 +14,7 @@ makedepends=('cmake' 'automoc4')
 groups=('kde' 'kdeutils')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/ktimer-${pkgver}.tar.xz")
-sha1sums=('2bef52a8b84a1a35a18a4bb5dc274ee576ff5dff')
+sha1sums=('91c08d7153fd894182f41cf7541d9745a0ec6ab1')
 
 build() {
   cd "${srcdir}"

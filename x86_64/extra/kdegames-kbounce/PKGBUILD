@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 230982 2015-02-07 09:38:35Z fyan $
+# $Id: PKGBUILD 233200 2015-03-10 07:38:20Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kbounce
-pkgver=14.12.2
+pkgver=14.12.3
 pkgrel=1
 pkgdesc="A single player arcade game with the elements of puzzle"
 url="http://kde.org/applications/games/kbounce/"
@@ -14,7 +14,7 @@ depends=('kdebase-runtime' 'libkdegames')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kbounce-${pkgver}.tar.xz")
-sha1sums=('13321569c9c1f58d52f51b5194a6caa4894a3c0e')
+sha1sums=('3935247b39c22c5879fe5cf42c4f2f6d72a40684')
 
 build() {
   mkdir build

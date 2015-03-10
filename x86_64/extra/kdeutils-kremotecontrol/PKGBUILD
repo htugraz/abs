@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 231066 2015-02-07 09:41:50Z fyan $
+# $Id: PKGBUILD 233284 2015-03-10 07:40:44Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-kremotecontrol
-pkgver=14.12.2
+pkgver=14.12.3
 pkgrel=1
 pkgdesc='Configure your remote controls for use with applications'
 url='http://kde.org/applications/utilities/kremotecontrol/'
@@ -16,7 +16,7 @@ replaces=('kdeutils-kdelirc')
 conflicts=('kdeutils-kdelirc')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kremotecontrol-${pkgver}.tar.xz")
-sha1sums=('4f97bacfc3cf857ce9a6694012bdb51f00607349')
+sha1sums=('ea325aa63016ae5412c7307e4b1fa07e0db3d847')
 
 build() {
   cd "${srcdir}"
