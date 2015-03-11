@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 115814 2014-07-17 09:13:30Z spupykin $
+# $Id: PKGBUILD 129059 2015-03-11 11:24:03Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+aur@gmail.com>
 
 pkgname=perl-email-address
-pkgver=1.905
+pkgver=1.907
 pkgrel=1
 pkgdesc="RFC 2822 Address Parsing and Creation "
 arch=('any')
@@ -12,7 +12,7 @@ license=('GPL' 'PerlArtistic')
 depends=('perl')
 options=('!emptydirs')
 source=("http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/Email-Address-$pkgver.tar.gz")
-md5sums=('3ed17b42a797bbc0103eabbb2d130766')
+md5sums=('2257bc32a338196fef4f4bcb76cd1eb1')
 
 build() {
   cd  $srcdir/Email-Address-$pkgver

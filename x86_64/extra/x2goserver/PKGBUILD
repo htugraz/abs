@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 231972 2015-02-25 11:37:14Z andyrtr $
+# $Id: PKGBUILD 233361 2015-03-11 18:17:35Z andyrtr $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 
 # Contributor: Gerhard Brauer <gerbra@archlinux.de>
@@ -8,7 +8,7 @@
 
 pkgname=x2goserver
 pkgver=4.0.1.19
-pkgrel=1
+pkgrel=2
 pkgdesc="Open source terminal server"
 arch=('i686' 'x86_64')
 url="http://www.x2go.org/"
@@ -47,6 +47,7 @@ depends=(#'python' 'xorg-xauth'
          'perl-capture-tiny'
          'perl-config-simple'
          'perl-file-basedir' # FS#38551
+         'perl-file-which' # FS#44125
          
          'xorg-xwininfo' # FS#38558
          

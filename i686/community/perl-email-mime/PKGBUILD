@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 124438 2014-12-23 22:20:03Z spupykin $
+# $Id: PKGBUILD 129061 2015-03-11 11:24:14Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+aur@gmail.com>
 
 pkgname=perl-email-mime
-pkgver=1.928
+pkgver=1.929
 pkgrel=1
 pkgdesc="Easy MIME message parsing"
 arch=('any')
@@ -16,7 +16,7 @@ provides=("perl-email-mime-creator=$pkgver" "perl-email-mime-modifier=$pkgver")
 replaces=("perl-email-mime-creator" "perl-email-mime-modifier")
 options=('!emptydirs')
 source=(http://www.cpan.org/authors/id/R/RJ/RJBS/Email-MIME-$pkgver.tar.gz)
-md5sums=('3d5d8b4651f74ce08e9e598d0a92be5c')
+md5sums=('3766d7ec87740dd9318b2d36368401ea')
 
 build() {
   cd  $srcdir/Email-MIME-$pkgver
