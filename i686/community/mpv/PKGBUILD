@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 128862 2015-03-07 15:15:06Z bpiotrowski $
+# $Id: PKGBUILD 129133 2015-03-12 17:53:52Z eworm $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Eivind Uggedal <eivind@uggedal.com>
 
 pkgname=mpv
 pkgver=0.8.2
-pkgrel=2
+pkgrel=3
 pkgdesc='Video player based on MPlayer/mplayer2'
 arch=('i686' 'x86_64')
 license=('GPL')
@@ -13,7 +13,7 @@ depends=(
   'ffmpeg' 'lcms2' 'libdvdread' 'libcdio-paranoia' 'libgl' 'enca' 'libguess'
   'libxinerama' 'mpg123' 'libxv' 'libxkbcommon' 'libva' 'lirc' 'wayland'
   'desktop-file-utils' 'hicolor-icon-theme' 'xdg-utils' 'lua' 'libdvdnav'
-  'libguess' 'libxrandr' 'jack'
+  'libguess' 'libxrandr' 'jack' 'smbclient'
 )
 makedepends=('mesa' 'python-docutils' 'ladspa' 'hardening-wrapper')
 optdepends=('youtube-dl: for video-sharing websites playback')
