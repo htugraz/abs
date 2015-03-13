@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 126421 2015-01-22 19:12:28Z jlichtblau $
+# $Id: PKGBUILD 129179 2015-03-13 14:16:21Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
 # Contributor: dibblethewrecker dibblethewrecker.at.jiwe.dot.org
@@ -6,7 +6,7 @@
 
 pkgname=libgeotiff
 pkgver=1.4.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A TIFF based interchange format for georeferenced raster imagery"
 arch=('i686' 'x86_64')
 url="http://www.remotesensing.org/geotiff"

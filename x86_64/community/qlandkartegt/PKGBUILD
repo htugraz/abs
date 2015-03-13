@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 128994 2015-03-10 06:21:26Z jlichtblau $
+# $Id: PKGBUILD 129178 2015-03-13 14:15:29Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Matthias Maennich <arch@maennich.net>
 # Contributor: <boenki@gmx.de>
 
 pkgname=qlandkartegt
 pkgver=1.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Use your GPS with Linux"
 arch=('i686' 'x86_64')
 url="http://www.qlandkarte.org/"
 license=('GPL')
 depends=('gdal' 'gpsd' 'libdmtx' 'libexif' 'libmariadbclient' 'glu' 'postgresql-libs'
-         'shared-mime-info' 'qtwebkit')
+         'shared-mime-info' 'qtwebkit' 'proj')
 makedepends=('cmake' 'garmindev' 'mesa')
 optdepends=('garmindev: to connect garmin devices')
 install=$pkgname.install
