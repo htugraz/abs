@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 126312 2015-01-20 19:13:01Z jlichtblau $
+# $Id: PKGBUILD 129258 2015-03-14 14:45:38Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: dibblethewrecker dibblethewrecker.at.jiwe.dot.org
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=postgis
 pkgver=2.1.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Adds support for geographic objects to PostgreSQL"
 arch=('i686' 'x86_64')
 url="http://postgis.net/"
 license=('GPL')
-depends=('postgresql' 'gdal' 'json-c')
+depends=('postgresql' 'gdal' 'json-c' 'proj')
 changelog=$pkgname.changelog
 source=(http://download.osgeo.org/postgis/source/${pkgname}-${pkgver}.tar.gz)
 sha256sums=('0d0e27f72f12b8dba456fbde25ed0f6913f42baf57332a7f1b9bbc6f29fddbf4')
