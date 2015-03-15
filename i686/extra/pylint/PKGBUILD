@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 233359 2015-03-11 17:22:57Z fyan $
+# $Id: PKGBUILD 233855 2015-03-15 07:39:52Z fyan $
 # Maintainer: Angel Velasquez <angvp@archlinux.org>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgbase=pylint
 pkgname=('python2-pylint' 'python-pylint')
-pkgver=1.4.2
+pkgver=1.4.3
 pkgrel=1
 pkgdesc="Analyzes Python code looking for bugs and signs of poor quality"
 arch=('any')
@@ -15,7 +15,7 @@ license=('GPL')
 makedepends=('python2-astroid' 'python-astroid' 'python2-setuptools' 'python-setuptools' 'python2-six' 'python-six')
 optdepends=('tk: Pylint GUI')
 source=("http://pypi.python.org/packages/source/p/${pkgbase}/${pkgbase}-${pkgver}.tar.gz")
-sha1sums=('72e486d9db139e3ed2425ba589345043b877c229')
+sha1sums=('a8c0f3901a42d2cd82d34cb83bf669ee98c9c4c3')
 
 prepare() {
   cp -a ${pkgbase}-${pkgver}{,-py3}
