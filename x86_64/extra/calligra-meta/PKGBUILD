@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 206899 2014-03-05 17:54:16Z andrea $
+# $Id: PKGBUILD 233899 2015-03-15 23:55:33Z arojas $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=calligra-meta
-pkgver=2.8.0
+pkgver=2.9
 pkgrel=1
 arch=('any')
 url='http://www.calligra-suite.org/'
@@ -20,5 +20,6 @@ depends=('calligra-braindump'
          'calligra-plugins'
          'calligra-sheets'
          'calligra-stage'
-         'calligra-words')
-replaces=('koffice-meta-koffice')
+         'calligra-words'
+	 'calligra-gemini')
+

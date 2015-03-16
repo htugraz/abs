@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 232523 2015-03-04 04:02:39Z fyan $
+# $Id: PKGBUILD 233901 2015-03-16 07:11:49Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Ronald van Haren <ronald.archlinux.org>
@@ -20,8 +20,8 @@ pkgname=('calligra-braindump'
          'calligra-sheets'
          'calligra-stage'
          'calligra-words')
-pkgver=2.9.0
-pkgrel=4
+pkgver=2.9.1
+pkgrel=1
 arch=('i686' 'x86_64')
 url='http://www.calligra-suite.org/'
 license=('FDL1.2' 'GPL2' 'LGPL')
@@ -32,7 +32,7 @@ makedepends=('cmake' 'automoc4' 'boost' 'kdepimlibs' 'eigen' 'kdeedu-marble'
              'libetonyek' 'libpqxx' 'libspnav' 'postgresql')
 groups=('calligra')
 source=("http://download.kde.org/stable/${pkgbase}-${pkgver}/${pkgbase}-${pkgver}.tar.xz")
-md5sums=('78ca03bcd5e5a4aff23694fce3835735')
+md5sums=('3afd7afffbbb8078dcc1e339a85cf74c')
 
 prepare() {
   mkdir build

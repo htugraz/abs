@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 127093 2015-02-04 15:59:38Z andyrtr $
+# $Id: PKGBUILD 129345 2015-03-16 03:30:38Z foutrelis $
 # Contributor: John Sowiak <john@archlinux.org>
 # Contributor: tobias <tobias@archlinux.org>
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
@@ -17,7 +17,7 @@ _gittag=v2.73a
 pkgname=blender
 pkgver=2.73a
 [[ -n $_gitcommit ]] && pkgver=${pkgver}.git1.${_gitcommit}
-pkgrel=2
+pkgrel=4
 epoch=16
 pkgdesc="A fully integrated 3D graphics creation suite"
 arch=('i686' 'x86_64')
@@ -25,10 +25,10 @@ license=('GPL')
 url="http://www.blender.org"
 depends=('libpng' 'libtiff' 'openexr' 'python' 'desktop-file-utils' 'python-requests'
          'shared-mime-info' 'hicolor-icon-theme' 'xdg-utils' 'glew' 'openjpeg'
-         'freetype2' 'openal' 'ffmpeg' 'fftw' 'boost-libs' 'opencollada' 'llvm'
+         'freetype2' 'openal' 'ffmpeg' 'fftw' 'boost-libs' 'opencollada'
          'openimageio' 'libsndfile' 'jack' 'opencolorio' 'openshadinglanguage'
          'jemalloc')
-makedepends=('cmake' 'boost' 'mesa' 'git')
+makedepends=('cmake' 'boost' 'mesa' 'git' 'llvm35')
 [[ $CARCH == x86_64 ]] && makedepends+=('cuda')
 optdepends=('cuda: cycles renderer cuda support')
 options=(!strip)
@@ -77,7 +77,7 @@ build() {
     -DWITH_GL_PROFILE_CORE=OFF \
     -DWITH_GL_PROFILE_ES20=OFF \
     -DLLVM_VERSION=3.5 \
-    -DLLVM_STATIC=OFF \
+    -DLLVM_STATIC=ON \
     -DWITH_CYCLES_CUDA_BINARIES=$BUILDCUDA \
     -DWITH_CYCLES_OSL=ON \
     -DPYTHON_VERSION=3.4 \
