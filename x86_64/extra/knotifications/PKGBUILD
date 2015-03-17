@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 231758 2015-02-21 15:01:47Z fyan $
+# $Id: PKGBUILD 234021 2015-03-17 09:50:37Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=knotifications
-pkgver=5.7.0
+pkgver=5.8.0
 pkgrel=1
 pkgdesc='Abstraction for system notifications'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('phonon-qt5' 'libdbusmenu-qt5' 'kservice' 'kiconthemes')
 makedepends=('extra-cmake-modules' 'qt5-tools' 'python')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('b610f0a52530f6ced9ea5cc206c39d7a')
+md5sums=('cdcded8f150246437eced2ce5fface2f')
 
 prepare() {
   mkdir -p build

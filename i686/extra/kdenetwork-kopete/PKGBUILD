@@ -1,24 +1,30 @@
-# $Id: PKGBUILD 233253 2015-03-10 07:39:53Z fyan $
+# $Id: PKGBUILD 233966 2015-03-17 07:47:31Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-kopete
 pkgver=14.12.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Instant Messenger'
 url='http://kde.org/applications/internet/kopete/'
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
 groups=('kde' 'kdenetwork')
 depends=('kdebase-runtime' 'kdepimlibs' 'qca-ossl' 'libotr' 'libidn'
-         'qimageblitz' 'libgadu' 'mediastreamer' 'jsoncpp')
-makedepends=('cmake' 'automoc4' 'boost' 'kdepim-libkdepim')
+         'qimageblitz' 'libgadu' 'jsoncpp')
+makedepends=('cmake' 'automoc4' 'boost' 'kdepim-libkdepim' 'mediastreamer')
+optdepends=('mediastreamer: jingle support')
 install=${pkgname}.install
-source=("http://download.kde.org/stable/applications/${pkgver}/src/kopete-${pkgver}.tar.xz")
-sha1sums=('7582f0ee8198fa62a5f02c6e532b993258df6fd8')
+source=("http://download.kde.org/stable/applications/${pkgver}/src/kopete-${pkgver}.tar.xz" 'mediastreamer-2.11.patch')
+sha1sums=('7582f0ee8198fa62a5f02c6e532b993258df6fd8'
+          '7999bb62c2c228ef1ee9056e4f1b910b8cb02fcf')
 
 prepare() {
   mkdir build
+
+# fix compilation with mediastreamer 2.11
+  cd kopete-$pkgver
+  patch -p1 -i "$srcdir"/mediastreamer-2.11.patch
 }
 
 build() {

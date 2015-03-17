@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 231772 2015-02-21 15:02:14Z fyan $
+# $Id: PKGBUILD 234035 2015-03-17 09:51:01Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kxmlgui
-pkgver=5.7.0
+pkgver=5.8.0
 pkgrel=1
 pkgdesc='User configurable main windows'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('kglobalaccel' 'ktextwidgets' 'attica-qt5')
 makedepends=('extra-cmake-modules' 'python')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('8bcf5f6aabff251d3e722216c1ecfff2')
+md5sums=('b9525359ea0ff6bc8736599b608986da')
 
 prepare() {
   mkdir -p build

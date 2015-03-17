@@ -1,19 +1,19 @@
-# $Id: PKGBUILD 231733 2015-02-21 15:01:13Z fyan $
+# $Id: PKGBUILD 233996 2015-03-17 09:50:09Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeclarative
-pkgver=5.7.0
+pkgver=5.8.0
 pkgrel=1
 pkgdesc='Provides integration of QML and KDE Frameworks'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kdeclarative'
 license=('LGPL')
-depends=('kio' 'libepoxy')
+depends=('kio' 'libepoxy' 'kpackage')
 makedepends=('extra-cmake-modules')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('414cb5a4c26c5c3150c2867e29ec0181')
+md5sums=('04b6eedce4147f97c8d1ed7bb186fed3')
 
 prepare() {
   mkdir build

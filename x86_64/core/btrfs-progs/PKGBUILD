@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 230905 2015-02-06 18:52:59Z seblu $
+# $Id: PKGBUILD 234048 2015-03-17 14:47:43Z seblu $
 # Maintainer: Sébastien "Seblu" Luttringer <seblu@archlinux.org>
 # Contributor: Tom Gundersen <teg@jklm.no>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=btrfs-progs
-pkgver=3.18.2
+pkgver=3.19
 pkgrel=1
 pkgdesc='Btrfs filesystem utilities'
 arch=('i686' 'x86_64')
@@ -26,8 +26,9 @@ md5sums=('SKIP'
 
 build() {
   cd $pkgname
-  make CFLAGS="$CFLAGS"
-  make CFLAGS="$CFLAGS" btrfs-select-super
+  ./autogen.sh
+  ./configure --prefix=/usr
+  make
 }
 
 check() {
@@ -37,9 +38,7 @@ check() {
 
 package() {
   cd $pkgname
-
   make prefix="$pkgdir"/usr install
-  install -Dm755 btrfs-select-super "$pkgdir"/usr/bin
 
   # install mkinitcpio hooks
   cd "$srcdir"

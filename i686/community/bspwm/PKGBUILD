@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 126191 2015-01-18 23:39:50Z arodseth $
+# $Id: PKGBUILD 129393 2015-03-17 00:20:09Z arodseth $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Bastien Dejean <nihilhill@gmail.com>
 
 pkgname=bspwm
-pkgver=0.8.9
-pkgrel=5
+pkgver=0.9
+pkgrel=1
 pkgdesc='Tiling window manager based on binary space partitioning'
 arch=('x86_64' 'i686')
 url='https://github.com/baskerville/bspwm'

@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 229551 2015-01-18 21:09:35Z svenstaro $
+# $Id: PKGBUILD 234046 2015-03-17 12:10:02Z bpiotrowski $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libvdpau
-pkgver=0.9
+pkgver=1.1
 pkgrel=1
 pkgdesc="Nvidia VDPAU library"
 arch=(i686 x86_64)
@@ -11,7 +11,7 @@ depends=('gcc-libs' 'libxext')
 license=('custom')
 source=(http://people.freedesktop.org/~aplattner/vdpau/${pkgname}-${pkgver}.tar.gz)
 makedepends=('dri2proto')
-sha256sums=('e32957140835a545a01a3972db1143e01174db3d9c0017e51f6a3bf8b09c0e6e')
+sha256sums=('aea4e783f220bf26ba2139ccd866a0ee5005fa03af5e08c41fbc939118263919')
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
