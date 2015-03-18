@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 128907 2015-03-08 10:07:58Z foutrelis $
+# $Id: PKGBUILD 129537 2015-03-18 16:55:04Z tpowa $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 # Contributor: Charles Lindsay <charles@chaoslizard.org>
@@ -6,7 +6,7 @@
 pkgname=vhba-module
 pkgver=20140928
 _extramodules=extramodules-3.19-ARCH
-pkgrel=8
+pkgrel=9
 pkgdesc="Kernel module that emulates SCSI devices"
 arch=('i686' 'x86_64')
 url="http://cdemu.sourceforge.net/"

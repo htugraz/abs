@@ -1,17 +1,18 @@
-# $Id: PKGBUILD 100239 2013-11-02 08:40:36Z spupykin $
+# $Id: PKGBUILD 129522 2015-03-18 16:23:28Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=librcd
-pkgver=0.1.11
-pkgrel=4
+pkgver=0.1.14
+pkgrel=1
 pkgdesc="Charset Detection Library"
 arch=(i686 x86_64)
 url="http://rusxmms.sourceforge.net/"
 depends=(glibc)
 license=('GPL')
-source=(http://downloads.sourceforge.net/rusxmms/${pkgname}-${pkgver}.tar.bz2)
-md5sums=('17fcea35961f85c21c58a233d54a508c')
+#source=(http://downloads.sourceforge.net/rusxmms/${pkgname}-${pkgver}.tar.bz2)
+source=(http://darksoft.org/files/rusxmms/librcd-$pkgver.tar.bz2)
+md5sums=('f6eb72dbdbc97f6563f527a24253fc4a')
 
 build() {
   cd $srcdir/$pkgname-${pkgver}

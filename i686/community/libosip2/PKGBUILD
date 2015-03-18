@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 100213 2013-11-01 21:20:33Z spupykin $
+# $Id: PKGBUILD 129505 2015-03-18 15:32:55Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Michal Hybner <dta081@gmail.com>
 
 pkgname=libosip2
 epoch=1
-pkgver=4.0.0
-pkgrel=2
+pkgver=4.1.0
+pkgrel=1
 pkgdesc="oSIP is an implementation of SIP"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/osip/"
@@ -13,7 +13,7 @@ license=('LGPL')
 depends=(glibc)
 options=(!emptydirs)
 source=(http://ftp.gnu.org/gnu/osip/libosip2-${pkgver/_/-}.tar.gz)
-md5sums=('c6a2c175d39ce75c15026c5738732dab')
+md5sums=('756423628683c07f817432f046a26516')
 
 build() {
   cd $srcdir/libosip2-${pkgver/_/-}/

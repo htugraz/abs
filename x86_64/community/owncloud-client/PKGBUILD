@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 129449 2015-03-17 20:56:19Z arojas $
+# $Id: PKGBUILD 129551 2015-03-18 20:34:26Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Kuba Serafinowski <zizzfizzix(at)gmail(dot)com>
 
 _name=owncloudclient
 pkgname=owncloud-client
 pkgver=1.8.0
-pkgrel=1
+pkgrel=2
 pkgdesc='ownCloud client based on mirall'
 arch=(i686 x86_64)
 url='http://owncloud.org/'
 license=(GPL2)
-depends=(qtkeychain-qt5 qt5-webkit hicolor-icon-theme)
-makedepends=(cmake python-sphinx qt5-tools)
-optdepends=('python2-nautilus: integration with Nautilus')
+depends=(qtkeychain-qt4 qtwebkit neon)
+makedepends=(cmake python-sphinx)
+optdepends=('python-gobject: integration with Nautilus')
 install=$pkgname.install
 backup=('etc/ownCloud/sync-exclude.lst')
 source=("https://download.owncloud.com/desktop/stable/$_name-$pkgver.tar.bz2"{,.asc})
@@ -28,6 +28,7 @@ build() {
   cd build
 
   cmake ../$_name-$pkgver \
+	-DBUILD_WITH_QT4=ON \
         -DCMAKE_INSTALL_PREFIX=/usr \
         -DCMAKE_INSTALL_LIBDIR=lib \
         -DCMAKE_BUILD_TYPE=Release \

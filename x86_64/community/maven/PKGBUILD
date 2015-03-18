@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 124556 2014-12-25 13:16:20Z spupykin $
+# $Id: PKGBUILD 129507 2015-03-18 15:33:10Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=maven
-pkgver=3.2.5
+pkgver=3.3.1
 pkgrel=1
 pkgdesc="A Java project management and project comprehension tool"
 arch=('any')
@@ -14,7 +14,7 @@ makedepends=('apache-ant')
 backup=('opt/maven/conf/settings.xml')
 source=(http://apache-mirror.rbc.ru/pub/apache/maven/maven-3/$pkgver/source/apache-maven-$pkgver-src.tar.gz
 	maven.sh)
-md5sums=('ed598fe30acc52738cc5f62ef7869538'
+md5sums=('5ee431e9c6428b7b57a4d94c35ffe4e0'
          '5ed0bddbf5c5375fe5032a76a9506426')
 
 package() {

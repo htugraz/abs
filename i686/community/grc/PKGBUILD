@@ -1,23 +1,23 @@
-# $Id: PKGBUILD 95560 2013-08-14 08:50:51Z spupykin $
+# $Id: PKGBUILD 129500 2015-03-18 15:32:21Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Xilon <xilonmu@gmail.com>
 # Contributor: Edward Toroschin <edward.hades@gmail.com>
 
 pkgname=grc
-pkgver=1.5
+pkgver=1.7
 pkgrel=2
 pkgdesc='Yet another colouriser for beautifying your logfiles or output of commands.'
 arch=('any')
-url='http://kassiopeia.juls.savba.sk/~garabik/software/grc.html'
+url='https://github.com/garabik/grc'
 license=('GPL')
 depends=('python')
 backup=('etc/grc.conf')
-source=(http://kassiopeia.juls.savba.sk/~garabik/software/$pkgname/${pkgname}_$pkgver.tar.gz
+source=($pkgname-$pkgver.tar.gz::https://github.com/garabik/grc/archive/v$pkgver.tar.gz
 	install.sh.patch)
-md5sums=('8692db331e6461c5ec77e382d306d74d'
+md5sums=('8d60bbe162d5f007afd26719a781f914'
          '096bfb843ea779d1cf509f11d4fefffe')
 
-build() {
+prepare() {
   cd "$srcdir/$pkgname-$pkgver"
   patch -Np1 -i ../install.sh.patch
 }
