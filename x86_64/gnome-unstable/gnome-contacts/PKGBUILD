@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 234100 2015-03-18 14:38:12Z jgc $
+# $Id: PKGBUILD 234151 2015-03-19 13:10:50Z jgc $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=gnome-contacts
 pkgver=3.15.92
-pkgrel=1
+pkgrel=2
 pkgdesc="Contacts Manager for GNOME"
 arch=(i686 x86_64)
 url="http://www.gnome.org"
