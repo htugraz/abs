@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 233629 2015-03-14 09:53:02Z arojas $
+# $Id: PKGBUILD 234266 2015-03-20 20:40:04Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libksane
-pkgver=15.03.90
+pkgver=15.03.95
 pkgrel=1
 pkgdesc="An image scanning library"
 url="https://projects.kde.org/projects/kde/kdegraphics/libs/libksane"
@@ -15,7 +15,7 @@ replaces=('kdegraphics-libs')
 conflicts=('kdegraphics-libs')
 install=${pkgname}.install
 source=("http://download.kde.org/unstable/applications/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
-sha1sums=('e20f86aed8a46a758279982853e08c90ce962bb4')
+sha1sums=('9dfee622e0fad4bd2b7b33164019a534e00982fe')
 
 build() {
   cd "${srcdir}"

@@ -1,22 +1,22 @@
-# $Id: PKGBUILD 233672 2015-03-14 10:15:41Z arojas $
+# $Id: PKGBUILD 234309 2015-03-20 21:37:26Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=parley
-pkgver=15.03.90
+pkgver=15.03.95
 pkgrel=1
 pkgdesc="Vocabulary Trainer"
 url="http://kde.org/applications/education/parley/"
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
-groups=('kde' 'kdeedu')
+groups=('kde-applications' 'kdeedu')
 depends=('kross' 'knewstuff' 'libkeduvocdocument' 'khtml' 'qt5-multimedia' 'kcmutils')
 makedepends=('extra-cmake-modules' 'kdoctools' 'python')
 replaces=('kdeedu-parley')
 conflicts=('kdeedu-parley')
 install=${pkgname}.install
 source=("http://download.kde.org/unstable/applications/${pkgver}/src/parley-${pkgver}.tar.xz")
-sha1sums=('5c4582470ed6f0314149bb734c34ea1a42f8b662')
+sha1sums=('0eba9a615d70ef55bdf4c8493d33b17c6197bd3b')
 
 prepare() {
   mkdir -p build

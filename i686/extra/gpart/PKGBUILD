@@ -1,28 +1,28 @@
-# $Id: PKGBUILD 201253 2013-12-06 19:56:50Z giovanni $
+# $Id: PKGBUILD 234246 2015-03-20 16:26:08Z giovanni $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: dale <dale@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=gpart
-pkgver=0.2.1
+pkgver=0.2.2
 pkgrel=1
 pkgdesc="Partition table rescue/guessing tool"
 arch=('i686' 'x86_64')
 url="https://github.com/baruch/gpart"
 license=('GPL')
 depends=('glibc')
-source=("https://github.com/baruch/${pkgname}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.gz")
-md5sums=('465870b72b647a3aa22b335ba527e869')
+source=("https://github.com/baruch/${pkgname}/archive/v${pkgver}.tar.gz")
+md5sums=('39fda5dafb48a7a353f4c98347055dd8')
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
 
-  ./configure --prefix=/usr
+  ./autogen.sh
   make
 }
 
 package() {
   cd "${srcdir}/${pkgname}-${pkgver}"
 
-  make prefix=${pkgdir}/usr install
+  make prefix=${pkgdir}/usr sbindir=${pkgdir}/usr/bin install
 }
