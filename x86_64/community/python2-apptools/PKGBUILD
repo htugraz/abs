@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 105097 2014-01-31 14:24:59Z aginiewicz $
+# $Id: PKGBUILD 129680 2015-03-21 11:06:50Z aginiewicz $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 
 pkgname=python2-apptools
-pkgver=4.2.1
-pkgrel=1
+pkgver=4.3.0
+pkgrel=2
 pkgdesc="Application tools"
 arch=('any')
 url="https://github.com/enthought/apptools"
@@ -13,10 +13,14 @@ makedepends=('python2-setuptools')
 options=(!emptydirs)
 
 source=("$pkgname-$pkgver.tar.gz::https://github.com/enthought/apptools/archive/${pkgver}.tar.gz")
-md5sums=('83bbe5f26968a0a5e234aaf29281667b')
+md5sums=('2edc7cdb8ddd87536bfdfa899531bc55')
 
 build() {
   cd "$srcdir"/apptools-$pkgver
+
+  # force selection of wxpython 2.8
+  # (see https://github.com/enthought/pyface/issues/96)
+  sed -e "s/^\(.*\)import wx$/\1import wxversion\n\1wxversion.select(\"2.8\")\n\1import wx/g" -i $(find . -name '*.py')
 
   python2 setup.py build
 }

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 233415 2015-03-12 21:34:01Z andyrtr $
+# $Id: PKGBUILD 234424 2015-03-21 08:13:58Z andyrtr $
 # Maintainer: Laurent Carlier <lordheavym@gmail.com>
 
 pkgname=xf86-input-libinput
 pkgver=0.8.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Generic input driver for the X.Org server based on libinput"
 arch=('i686' 'x86_64')
 license=('custom')

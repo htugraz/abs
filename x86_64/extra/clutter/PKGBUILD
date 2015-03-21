@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 231665 2015-02-18 14:46:34Z lcarlier $
+# $Id: PKGBUILD 234425 2015-03-21 08:14:00Z andyrtr $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=clutter
 pkgver=1.20.0
-pkgrel=3
+pkgrel=4
 pkgdesc="A GObject based library for creating fast, visually rich graphical user interfaces"
 arch=('i686' 'x86_64')
 url="http://clutter-project.org/"

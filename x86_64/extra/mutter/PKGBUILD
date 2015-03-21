@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 231667 2015-02-18 14:46:37Z lcarlier $
+# $Id: PKGBUILD 234426 2015-03-21 08:14:01Z andyrtr $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Michael Kanis <mkanis_at_gmx_dot_de>
 
 pkgname=mutter
 pkgver=3.14.3
-pkgrel=2
+pkgrel=3
 pkgdesc="A window manager for GNOME"
 arch=(i686 x86_64)
 license=('GPL')
