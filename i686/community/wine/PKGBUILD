@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 129648 2015-03-21 03:39:28Z svenstaro $
+# $Id: PKGBUILD 129743 2015-03-22 05:52:06Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Jan "heftig" Steffens <jan.steffens@gmail.com>
 # Contributor: Eduardo Romero <eduardo@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=wine
 pkgver=1.7.39
-pkgrel=1
+pkgrel=2
 
 _pkgbasever=${pkgver/rc/-rc}
 
@@ -102,6 +102,8 @@ fi
 
 prepare() {
   cd $pkgname-$_pkgbasever
+
+  sed 's|OpenCL/opencl.h|CL/opencl.h|g' -i configure*
 }
 
 build() {
