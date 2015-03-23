@@ -1,18 +1,19 @@
-# $Id: PKGBUILD 114658 2014-07-02 15:35:47Z foutrelis $
+# $Id: PKGBUILD 129778 2015-03-23 06:55:53Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Tim Yang <tdy@gmx.com>
 # Contributor: StormBlast <stormblast@land.ru>
 
 pkgname=tangerine-icon-theme
 pkgver=0.27
-pkgrel=2
+pkgrel=3
 pkgdesc="Ubuntu's twist on the Tango icon theme"
 arch=('any')
 url="http://launchpad.net/tangerine-icon-theme/"
 license=('custom:cc-by-sa-2.5')
-depends=('gnome-icon-theme')
+depends=('gnome-icon-theme' 'gtk-update-icon-cache')
 makedepends=('intltool' 'gettext' 'imagemagick' 'icon-naming-utils' 'librsvg'
              'python2')
+install=$pkgname.install
 source=(http://archive.ubuntu.com/ubuntu/pool/main/t/$pkgname/${pkgname}_$pkgver.tar.gz
         archlinux-icon-crystal-48.svg)
 sha256sums=('4842f55143694a4d5b12517ff0b53d3dac1a67413b32c4a46bbf1b4b805f5489'

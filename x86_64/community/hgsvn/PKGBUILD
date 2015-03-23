@@ -1,18 +1,19 @@
-# $Id: PKGBUILD 106020 2014-02-21 10:15:16Z jelle $
+# $Id: PKGBUILD 129820 2015-03-23 19:57:00Z jelle $
 # Maintainer: Aaron Schaefer <aaron@elasticdog.com>
 # Contributor: Mathieu Clabaut <mathieu.clabaut@gmail.com>
 
 pkgname=hgsvn
-pkgver=0.1.9
-pkgrel=4
+pkgver=0.3.6
+pkgrel=2
 pkgdesc='A set of scripts to work locally on Subversion checkouts using Mercurial'
 arch=('any')
 url='http://pypi.python.org/pypi/hgsvn/'
 license=('GPL')
-depends=('python2' 'subversion' 'mercurial' 'python2-setuptools')
+depends=('python2' 'subversion' 'mercurial' 'python2-setuptools' 'python2-hglib')
 makedepends=('python2-nose')
-source=("http://pypi.python.org/packages/source/h/hgsvn/hgsvn-$pkgver.tar.gz")
-md5sums=('8cf1a9c4ac1554e8a15dc1c60710ea9c')
+checkdepends=('mercurial' 'subversion')
+source=("https://pypi.python.org/packages/source/h/hgsvn/hgsvn-$pkgver.zip")
+md5sums=('0ea23740135f9dea1f7d046d3f1c1d3c')
 
 package() {
   cd "$srcdir/$pkgname-$pkgver"
@@ -23,6 +24,4 @@ package() {
 check() {
   cd "$srcdir/$pkgname-$pkgver"
 #  python2 setup.py test
- 
 }
-md5sums=('901f2fb04faad5a1e7cf84abfad564fd')
