@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 232195 2015-03-01 07:47:55Z fyan $
+# $Id: PKGBUILD 234650 2015-03-24 20:07:21Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas <nqn1976 @ gmail.com>
 
 pkgname=polkit-kde-frameworks
-pkgver=5.2.1
+pkgver=5.2.2
 pkgrel=1
 pkgdesc='Daemon providing a polkit authentication UI for KDE'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ license=('LGPL')
 depends=('knotifications')
 makedepends=('extra-cmake-modules' 'git' 'kdoctools' 'python')
 source=("http://download.kde.org/stable/plasma/${pkgver}/polkit-kde-agent-1-$pkgver.tar.xz")
-md5sums=('837eec2b8885b6a25dfb649eb9481f3f')
+md5sums=('bf016c9827f8a6bb4bdafb46e26ebe82')
 
 prepare() {
   mkdir build

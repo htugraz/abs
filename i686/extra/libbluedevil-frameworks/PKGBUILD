@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 232186 2015-03-01 07:47:46Z fyan $
+# $Id: PKGBUILD 234651 2015-03-24 20:07:40Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=libbluedevil-frameworks
-pkgver=5.2.1
+pkgver=5.2.2
 pkgrel=1
 pkgdesc='KDE bluetooth framework libraries'
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ depends=('qt5-base' 'bluez')
 makedepends=('extra-cmake-modules')
 conflicts=('libbluedevil')
 source=("http://download.kde.org/stable/plasma/$pkgver/libbluedevil-$pkgver.tar.xz")
-md5sums=('8c306b22ec0e932e65cfa18b64452940')
+md5sums=('48847d68c880bb9b5e4a6dd5c2236349')
 
 prepare() {
   mkdir build

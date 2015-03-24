@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 232169 2015-03-01 07:47:26Z fyan $
+# $Id: PKGBUILD 234636 2015-03-24 20:00:48Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgbase=breeze
 pkgname=('breeze' 'breeze-kde4')
-pkgver=5.2.1
+pkgver=5.2.2
 pkgrel=1
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/breeze'
@@ -13,7 +13,7 @@ license=('LGPL')
 makedepends=('extra-cmake-modules' 'frameworkintegration' 'kdelibs'
              'automoc4' 'kdecoration')
 source=("http://download.kde.org/stable/plasma/${pkgver}/$pkgbase-$pkgver.tar.xz")
-md5sums=('0a0cd80e1c6aa6f428c4d7a7d4b06bfd')
+md5sums=('eab754e5ad4ee9f7e83bf6bbc40815c3')
 
 prepare() {
   mkdir build{,-kde4}

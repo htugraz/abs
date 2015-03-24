@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 100251 2013-11-02 08:42:36Z spupykin $
+# $Id: PKGBUILD 129845 2015-03-24 14:43:27Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=miredo
 pkgver=1.2.6
-pkgrel=2
+pkgrel=3
 pkgdesc="Teredo client and server."
 arch=('i686' 'x86_64')
 url="http://www.remlab.net/miredo/"
@@ -27,7 +27,8 @@ build() {
 	--localstatedir=/var \
 	--libexecdir=/usr/lib \
 	--sbindir=/usr/bin \
-	--with-Judy
+	--with-Judy \
+	--disable-assert
   make
 }
 
