@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 112615 2014-06-04 13:51:17Z bluewind $
+# $Id: PKGBUILD 129905 2015-03-25 15:07:21Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-data-structure-util
-pkgver=0.15
-pkgrel=8
+pkgver=0.16
+pkgrel=1
 pkgdesc="Perl/CPAN Module Data::Structure::Util"
 arch=("i686" "x86_64")
 url="http://search.cpan.org/dist/Data-Structure-Util"
 license=("GPL" "PerlArtistic")
 source=("http://search.cpan.org/CPAN/authors/id/A/AN/ANDYA/Data-Structure-Util-$pkgver.tar.gz")
-md5sums=('e12ba777c0abfbd79a131de28d542359')
+md5sums=('ada3241ff14e895e26e9a112bd5c3431')
 
 build() {
   cd $srcdir/Data-Structure-Util-$pkgver

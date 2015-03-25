@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 129851 2015-03-24 15:50:17Z mtorromeo $
+# $Id: PKGBUILD 129914 2015-03-25 17:41:53Z mtorromeo $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Contributor: Marcello "mererghost" Rocha <https://github.com/mereghost>
 # Refactored by Blaž "Speed" Hrastnik <https://github.com/archSeer>
 
 pkgname=elasticsearch
 pkgver=1.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Distributed RESTful search engine built on top of Lucene"
 arch=('i686' 'x86_64')
 url="http://www.elasticsearch.org/"
 license=('APACHE')
-depends=('java-runtime' 'systemd')
+depends=('java-runtime-headless' 'systemd')
 install='elasticsearch.install'
 source=(
   "http://download.elasticsearch.org/$pkgname/$pkgname/$pkgname-$pkgver.tar.gz"
