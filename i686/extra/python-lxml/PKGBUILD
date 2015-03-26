@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 231144 2015-02-08 12:23:21Z fyan $
+# $Id: PKGBUILD 234962 2015-03-26 13:59:48Z fyan $
 # Maintainer: Angel Velasquez <angvp@archlinux.org>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-lxml
 pkgname=('python-lxml' 'python2-lxml' 'python-lxml-docs')
 pkgver=3.4.2
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 license=('BSD' 'custom')
 url="http://lxml.de/"

@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 128174 2015-02-24 10:21:24Z spupykin $
+# $Id: PKGBUILD 129984 2015-03-26 17:32:48Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: ConnorBehan <connor.behan@gmail.com>
 
 pkgname=sk1
 pkgver=0.9.3
-pkgrel=2
+pkgrel=3
 pkgdesc="Fork of skencil with improved CMYK support"
 arch=(i686 x86_64)
 url="http://sk1project.org/modules.php?name=Products&product=sk1"
 depends=('tcl' 'tk' 'zenity'
 	 'python2-cairo' 'python2-lcms' 'python2-pillow')
-provides=('sk1sdk' 'sk1libs')
+provides=('sk1sdk')
 license=('GPL' 'LGPL')
 source=(http://downloads.sourceforge.net/project/sk1/sk1/sK1_v.$pkgver/sk1-$pkgver.tar.gz
 	python2-fix.patch)

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 127659 2015-02-13 12:16:16Z spupykin $
+# $Id: PKGBUILD 129948 2015-03-26 10:49:54Z fyan $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Igor Scabini <furester @ gmail.com>
 
 pkgname=('cython' 'cython2')
 pkgbase=cython
 pkgver=0.22
-pkgrel=1
+pkgrel=2
 pkgdesc="C-Extensions for Python "
 arch=(i686 x86_64)
 url="http://www.cython.org"

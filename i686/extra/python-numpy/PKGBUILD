@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 232891 2015-03-05 13:17:02Z fyan $
+# $Id: PKGBUILD 234960 2015-03-26 10:26:07Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Douglas Soares de Andrade <dsa@aur.archlinux.org>
 # Contributor: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve> 
@@ -6,7 +6,7 @@
 pkgbase=python-numpy
 pkgname=('python2-numpy' 'python-numpy')
 pkgver=1.9.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Scientific tools for Python"
 arch=('i686' 'x86_64')
 license=('custom')
