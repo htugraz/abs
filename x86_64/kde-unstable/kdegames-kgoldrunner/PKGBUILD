@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 234324 2015-03-20 21:55:25Z arojas $
+# $Id: PKGBUILD 235077 2015-03-27 08:44:42Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kgoldrunner
-pkgver=15.03.95
+pkgver=15.03.97
 pkgrel=1
 pkgdesc="A game of action and puzzle solving"
 url="http://kde.org/applications/games/kgoldrunner/"
@@ -14,7 +14,7 @@ depends=('kdebase-runtime' 'libkdegames4')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/unstable/applications/${pkgver}/src/kgoldrunner-${pkgver}.tar.xz")
-sha1sums=('b1a1fd7c98e0ccee1290b0ad1fcd1c31a07c6c81')
+sha1sums=('ef1fe809a4bcbbd1b80f0b443f0ee5c36d1be950')
 
 build() {
   mkdir build

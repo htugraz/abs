@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 234293 2015-03-20 21:09:34Z arojas $
+# $Id: PKGBUILD 235046 2015-03-27 08:31:09Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=cantor
-pkgver=15.03.95
+pkgver=15.03.97
 pkgrel=1
 pkgdesc="KDE Frontend to Mathematical Software"
 url="http://kde.org/applications/education/cantor/"
@@ -23,7 +23,7 @@ conflicts=('kdeedu-cantor')
 replaces=('kdeedu-cantor')
 install=${pkgname}.install
 source=("http://download.kde.org/unstable/applications/${pkgver}/src/cantor-${pkgver}.tar.xz")
-sha1sums=('ac89e0769f60d197ac29dd26b7b25ed5bf46c31a')
+sha1sums=('c6d3fcd7ea86bfe11153b3fd258b435fa025342a')
 
 prepare() {
   mkdir -p build

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 234271 2015-03-20 20:43:22Z arojas $
+# $Id: PKGBUILD 235024 2015-03-27 08:16:17Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkcddb
-pkgver=15.03.95
+pkgver=15.03.97
 pkgrel=1
 pkgdesc="KDE CDDB library"
 url='https://projects.kde.org/projects/kde/kdemultimedia/libkcddb'
@@ -14,7 +14,7 @@ makedepends=('cmake' 'automoc4')
 replaces=('kdemultimedia-kioslave')
 conflicts=('kdemultimedia-kioslave')
 source=("http://download.kde.org/unstable/applications/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
-sha1sums=('c421b7f768c5f7f20cffb3ab3497d60d9d6b120c')
+sha1sums=('06d6286237ac195684543c2f353f4b8f8bde0366')
 
 build() {
   cd "${srcdir}"

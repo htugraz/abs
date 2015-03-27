@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 123421 2014-12-03 21:57:33Z aginiewicz $
+# $Id: PKGBUILD 130041 2015-03-27 15:23:18Z aginiewicz $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 # Contributor: Oliver Sherouse <oliver DOT sherouse AT gmail DOT com>
 
 pkgbase=python-statsmodels
 pkgname=('python2-statsmodels' 'python-statsmodels')
 pkgver=0.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Statistical computations and models for use with SciPy"
 arch=('i686' 'x86_64')
 url="http://statsmodels.sourceforge.net/"
