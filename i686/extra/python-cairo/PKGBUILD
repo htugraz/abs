@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 208839 2014-03-27 14:43:25Z fyan $
+# $Id: PKGBUILD 235219 2015-03-28 14:33:22Z fyan $
 # Maintainer: Angel Velasquez <angvp@archlinux.org>  
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=python-cairo
 pkgver=1.10.0
-pkgrel=4
+pkgrel=5
 pkgdesc="Python bindings for the cairo graphics library"
 arch=('i686' 'x86_64')
 url="http://www.cairographics.org/pycairo"

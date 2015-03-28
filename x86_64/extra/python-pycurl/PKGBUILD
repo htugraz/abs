@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 228772 2015-01-09 04:00:09Z fyan $
+# $Id: PKGBUILD 235237 2015-03-28 16:54:21Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve> 
@@ -7,7 +7,7 @@ _pypiname=pycurl
 pkgbase=python-$_pypiname
 pkgname=('python-pycurl' 'python2-pycurl')
 pkgver=7.19.5.1
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url="http://pycurl.sourceforge.net/"
 license=('LGPL' 'MIT')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 127556 2015-02-11 12:08:16Z fyan $
+# $Id: PKGBUILD 130164 2015-03-28 17:43:21Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 
 pkgname=('python-tornado' 'python2-tornado')
 pkgver=4.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc='open source version of the scalable, non-blocking web server and tools'
 arch=('i686' 'x86_64')
 url='http://www.tornadoweb.org/'

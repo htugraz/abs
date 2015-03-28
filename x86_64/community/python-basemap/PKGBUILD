@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 108429 2014-03-27 14:47:34Z fyan $
+# $Id: PKGBUILD 130108 2015-03-28 11:52:29Z fyan $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 # Contributor: Matthias Ellmer <ellmer.matthias@gmail.com>
@@ -7,7 +7,7 @@
 pkgbase=python-basemap
 pkgname=('python-basemap' 'python2-basemap' 'python-basemap-common')
 pkgver=1.0.7
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 url="http://matplotlib.org/basemap/"
 license=('custom')

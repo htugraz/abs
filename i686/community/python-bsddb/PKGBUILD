@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 118068 2014-08-29 15:36:08Z spupykin $
+# $Id: PKGBUILD 130096 2015-03-28 10:41:03Z fyan $
 # Maintainer: Kaiting Chen <kaitocracy@gmail.com>
 # Maintainer: Stéphane Gaudreault <stephane@archlinux.org>
 # Contributor: Douglas Soares de Andrade <dsandrade@gmail.com>
@@ -7,7 +7,7 @@
 pkgbase=python-bsddb
 pkgname=('python2-bsddb' 'python-bsddb')
 pkgver=6.0.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Python interface for BerkeleyDB"
 license=('MIT')
 arch=('i686' 'x86_64')

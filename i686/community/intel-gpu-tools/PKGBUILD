@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 129162 2015-03-13 00:18:38Z thestinger $
+# $Id: PKGBUILD 130057 2015-03-28 09:36:08Z fyan $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 # Contributor: Mikael Eriksson <mikael_eriksson@miffe.org>
 # Originally by: Denis Smirnov <detanator@gmail.com>
 
 pkgname=intel-gpu-tools
 pkgver=1.10
-pkgrel=1
+pkgrel=2
 pkgdesc="Tools for development and testing of the Intel DRM driver"
 arch=(i686 x86_64)
 license=(MIT)

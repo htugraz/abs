@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 126380 2015-01-21 21:26:45Z arojas $
+# $Id: PKGBUILD 130114 2015-03-28 12:16:57Z fyan $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Maintainer: Omar Sandoval <osandov at cs dot washington dot edu>
 # Contributor: Alexander Slesarev <slesarew at gmail dot com>
@@ -6,7 +6,7 @@
 pkgbase=python-gmpy2
 pkgname=('python2-gmpy2' 'python-gmpy2')
 pkgver=2.0.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Provides C-coded Python modules for fast multiple-precision arithmetic."
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/gmpy/"

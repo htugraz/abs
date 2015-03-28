@@ -1,5 +1,5 @@
-# $Id: PKGBUILD 115132 2014-07-05 17:32:14Z jlichtblau $
-# Maintainer: Jaroslav Lichtblau <tu@dragonlord.cz>
+# $Id: PKGBUILD 130097 2015-03-28 10:44:46Z jlichtblau $
+# Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Michal Karas <largon@largon.net>
 
 pkgname=aspell-cs

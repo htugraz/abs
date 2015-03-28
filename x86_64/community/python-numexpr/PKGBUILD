@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 118244 2014-09-04 08:27:25Z aginiewicz $
+# $Id: PKGBUILD 130120 2015-03-28 14:20:45Z fyan $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 # Contributor: Sebastien Binet <binet@lblbox>
 
 pkgbase=python-numexpr
 pkgname=('python2-numexpr' 'python-numexpr')
 pkgver=2.4
-pkgrel=2
+pkgrel=3
 pkgdesc="Fast numerical array expression evaluator for Python, NumPy, PyTables, pandas"
 url="https://github.com/pydata/numexpr"
 arch=('i686' 'x86_64')
 license=('MIT')
 makedepends=('python2-setuptools' 'python-setuptools' 'python-numpy' 'python2-numpy')
-source=(https://github.com/pydata/numexpr/archive/v$pkgver.tar.gz)
+source=($pkgbase-$pkgver.tar.gz::https://github.com/pydata/numexpr/archive/v$pkgver.tar.gz)
 md5sums=('c9357862a304b9ad614afaf9e9c8dc78')
 
 prepare() {

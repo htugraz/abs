@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 124082 2014-12-18 18:50:14Z arcanis $
+# $Id: PKGBUILD 130092 2015-03-28 10:38:41Z fyan $
 # Maintainer: Evgeniy Alekseev <arcanis.arch at gmail dot com>
 # Contributor: Stunts <f.pinamartins at gmail dot com>
 # Contributor: damir <damir at archlinux dot org>
@@ -7,7 +7,7 @@ pkgbase=python-biopython
 pkgname=('python-biopython' 'python2-biopython')
 _pkgname=biopython
 pkgver=1.65
-pkgrel=1
+pkgrel=2
 pkgdesc="Freely available Python tools for computational molecular biology"
 arch=('i686' 'x86_64')
 url="http://www.biopython.org"

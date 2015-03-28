@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 123131 2014-11-26 08:13:48Z alucryd $
+# $Id: PKGBUILD 130055 2015-03-28 09:19:29Z fyan $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: TingPing <tingping@tingping.se>
 
 pkgname=hexchat
 pkgver=2.10.2
-pkgrel=1
+pkgrel=2
 pkgdesc='A popular and easy to use graphical IRC (chat) client'
 arch=('i686' 'x86_64')
 url='http://hexchat.github.io/'

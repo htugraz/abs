@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 230760 2015-02-04 15:54:49Z andyrtr $
+# $Id: PKGBUILD 235203 2015-03-28 09:45:35Z fyan $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Tobias Kieslich <tobias@archlinux.org>
 # Contributor: Giovanni Scafora <giovanni@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=hugin
 pkgver=2014.0.0
-pkgrel=4
+pkgrel=5
 pkgdesc='Panorama photo stitcher'
 url='http://hugin.sourceforge.net/'
 license=('GPL')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 231382 2015-02-13 18:14:57Z andyrtr $
+# $Id: PKGBUILD 235235 2015-03-28 16:51:32Z fyan $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: nesl247 <nesl247@gmail.com>
 
 pkgbase=pycups
 pkgname=('python2-pycups' 'python-pycups')
 pkgver=1.9.72
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url="http://cyberelk.net/tim/software/pycups/"
 license=('GPL')

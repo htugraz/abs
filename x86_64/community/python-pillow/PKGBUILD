@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 129544 2015-03-18 17:22:14Z kkeen $
+# $Id: PKGBUILD 130124 2015-03-28 14:30:16Z fyan $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: minder
 
@@ -7,7 +7,7 @@ pkgname=(python-pillow python2-pillow)
 pkgver=2.7.0
 # consider splitting out sane if this gets weird enough
 _sanever=2.8.0
-pkgrel=2
+pkgrel=3
 _appname=Pillow
 _py2basever=2.7
 _py3basever=3.4m

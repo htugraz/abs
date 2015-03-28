@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 234439 2015-03-21 09:14:56Z fyan $
+# $Id: PKGBUILD 235231 2015-03-28 16:32:38Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-cryptography
 pkgname=('python-cryptography' 'python2-cryptography')
 pkgver=0.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A package designed to expose cryptographic recipes and primitives to Python developers"
 arch=('i686' 'x86_64')
 license=('Apache')

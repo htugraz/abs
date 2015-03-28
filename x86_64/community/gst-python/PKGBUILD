@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 121820 2014-11-04 14:29:47Z spupykin $
+# $Id: PKGBUILD 130053 2015-03-28 09:00:11Z fyan $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gst-python
 pkgver=1.4.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Python bindings for GStreamer"
 arch=('i686' 'x86_64')
 license=('LGPL')

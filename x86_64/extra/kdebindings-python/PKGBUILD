@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 226881 2014-11-24 07:16:16Z andrea $
+# $Id: PKGBUILD 235207 2015-03-28 10:01:17Z fyan $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgbase=kdebindings-python
@@ -6,7 +6,7 @@ pkgname=('kdebindings-python'
          'kdebindings-python2'
          'kdebindings-python-common')
 pkgver=4.14.3
-pkgrel=1
+pkgrel=2
 url='https://projects.kde.org/projects/kde/kdebindings/pykde4'
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
