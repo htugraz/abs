@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 128962 2015-03-09 03:00:55Z bgyorgy $
+# $Id: PKGBUILD 130206 2015-03-29 19:43:31Z faidoc $
 # Maintainer: Alexandre Filgueira <alexfilgueira@cinnarch.com>
 # Based on gnome-control-center:
 # Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=cinnamon-control-center
 pkgver=2.4.2
-pkgrel=2
+pkgrel=3
 pkgdesc="The Control Center for Cinnamon"
 arch=('i686' 'x86_64')
 depends=('cinnamon-settings-daemon' 'cinnamon-translations' 'cinnamon-menus'

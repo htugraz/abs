@@ -1,22 +1,24 @@
-# $Id: PKGBUILD 232962 2015-03-07 09:07:55Z giovanni $
+# $Id: PKGBUILD 235251 2015-03-29 08:02:55Z giovanni $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=strace
 pkgver=4.10
-pkgrel=1
+pkgrel=2
 pkgdesc="A useful diagnositic, instructional, and debugging tool"
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/strace/"
 license=('custom')
-depends=('perl')
+depends=('perl' 'libunwind')
 source=("http://downloads.sourceforge.net/${pkgname}/${pkgname}-$pkgver.tar.xz")
 md5sums=('107a5be455493861189e9b57a3a51912')
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
 
-  ./configure --prefix=/usr
+  ./configure --prefix=/usr \
+              --with-libunwind
+
   make
 }
 
