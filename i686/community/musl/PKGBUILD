@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 129750 2015-03-22 07:43:08Z spupykin $
+# $Id: PKGBUILD 130387 2015-03-30 20:46:50Z spupykin $
 # Maintainer:  Sergej Pupykin <arch+pub@sergej.pp.ru>
 # Contributor: TJ Vanderpoel <tj@rubyists>
 
 pkgname=musl
-pkgver=1.1.7
+pkgver=1.1.8
 pkgrel=1
 pkgdesc='Lightweight implementation of C standard library'
 arch=('i686' 'x86_64')
@@ -11,7 +11,7 @@ url='http://www.musl-libc.org/'
 license=('MIT')
 options=('staticlibs' '!buildflags')
 source=(http://www.musl-libc.org/releases/musl-$pkgver.tar.gz)
-md5sums=('6fe9fc4d99a7d321432b3e179c138d73')
+md5sums=('d965d4bc873db4a3b56bbe7f31e47b4a')
 
 build() {
   cd $pkgname-$pkgver
