@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 227943 2014-12-23 10:22:46Z juergen $
+# $Id: PKGBUILD 235333 2015-04-01 18:21:47Z juergen $
 # Maintainer: Juergen Hoetzel <juergen@archlinux.org>
 # Contributor: Mark Schneider <queueRAM@gmail.com>
 
 pkgname=gnucash
-pkgver=2.6.5
+pkgver=2.6.6
 pkgrel=1
 pkgdesc="A personal and small-business financial-accounting application"
 arch=('i686' 'x86_64')
@@ -12,12 +12,13 @@ license=("GPL")
 depends=('slib' 'goffice0.8' 'libdbi-drivers' 'libmariadbclient' 'postgresql-libs' 'aqbanking' 'desktop-file-utils' 'webkitgtk2' 'libgnome-keyring' 'libgnomecanvas')
 makedepends=('intltool')
 optdepends=('evince: for print preview'
+	    'yelp: help browser'
             'perl-finance-quote: for stock information lookups'
             'perl-date-manip: for stock information lookups')
 options=('!makeflags' '!emptydirs')
 install=gnucash.install
 source=(http://downloads.sourceforge.net/sourceforge/${pkgname}/${pkgname}-${pkgver}.tar.bz2)
-sha1sums=('c9a5184603e41c6582f8342d4be9e392eceef33f')
+sha1sums=('7a508743047202cc4c648ff188f92741010105a1')
 
 prepare() {
   cd "${srcdir}/${pkgname}-${pkgver}"
