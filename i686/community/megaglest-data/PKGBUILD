@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 126699 2015-01-28 11:38:21Z svenstaro $
+# $Id: PKGBUILD 130520 2015-04-02 09:00:59Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 
 pkgname=megaglest-data
 _pkgbasename=megaglest
-pkgver=3.11.0
+pkgver=3.11.1
 pkgrel=1
 pkgdesc="Fork of Glest, a 3D real-time strategy game in a fantastic world (data files)"
 arch=('any')
