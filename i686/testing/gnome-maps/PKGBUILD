@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 234854 2015-03-25 15:36:19Z jgc $
+# $Id: PKGBUILD 235383 2015-04-03 12:26:40Z jgc $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-maps
 pkgver=3.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A simple GNOME 3 maps application"
 arch=(i686 x86_64)
 license=('GPL')
 url="https://live.gnome.org/Maps"
-depends=(geocode-glib geoclue2 gjs libchamplain gnome-themes-standard libgee folks)
+depends=(geocode-glib geoclue2 gjs libchamplain gnome-themes-standard libgee folks gfbgraph)
 makedepends=(intltool gobject-introspection)
 groups=('gnome-extra')
 install=gnome-maps.install

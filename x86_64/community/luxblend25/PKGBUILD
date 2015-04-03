@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 127780 2015-02-16 09:43:37Z stativ $
+# $Id: PKGBUILD 130596 2015-04-03 20:37:13Z stativ $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname=luxblend25
 pkgver=1.4
 _pkgver=a249c861c2f3
-_blender=2.73
-pkgrel=1
+_blender=2.74
+pkgrel=2
 pkgdesc="A LuxRender exporter for Blender."
 arch=('any')
 url="http://www.luxrender.net/"
