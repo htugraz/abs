@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 129551 2015-03-18 20:34:26Z arojas $
+# $Id: PKGBUILD 130719 2015-04-05 17:33:38Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Kuba Serafinowski <zizzfizzix(at)gmail(dot)com>
 
 _name=owncloudclient
 pkgname=owncloud-client
 pkgver=1.8.0
-pkgrel=2
+pkgrel=3
 pkgdesc='ownCloud client based on mirall'
 arch=(i686 x86_64)
 url='http://owncloud.org/'
 license=(GPL2)
 depends=(qtkeychain-qt4 qtwebkit neon)
 makedepends=(cmake python-sphinx)
-optdepends=('python-gobject: integration with Nautilus')
+optdepends=('python2-nautilus: integration with Nautilus')
 install=$pkgname.install
 backup=('etc/ownCloud/sync-exclude.lst')
 source=("https://download.owncloud.com/desktop/stable/$_name-$pkgver.tar.bz2"{,.asc})
