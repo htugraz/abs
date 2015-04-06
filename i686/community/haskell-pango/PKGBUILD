@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 128280 2015-02-26 14:49:36Z spupykin $
+# $Id: PKGBUILD 130817 2015-04-06 10:16:36Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=haskell-pango
-pkgver=0.13.0.5
-pkgrel=2
+pkgver=0.13.1.0
+pkgrel=1
 pkgdesc="Binding to the pango library for Gtk2Hs."
 url="http://hackage.haskell.org/package/pango"
 license=('LGPL2.1')
@@ -17,7 +17,7 @@ conflicts=('gtk2hs-pango')
 options=('strip' 'staticlibs')
 install=gtk2hs-pango.install
 source=(http://hackage.haskell.org/packages/archive/pango/${pkgver}/pango-${pkgver}.tar.gz)
-md5sums=('603f56b967ea25cd904aa2b5588ba68a')
+md5sums=('14ef94d811e8b32ce9626c5b289bd438')
 
 build() {
   cd ${srcdir}/pango-${pkgver}

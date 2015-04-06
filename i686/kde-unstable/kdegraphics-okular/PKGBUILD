@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 235011 2015-03-27 08:09:03Z arojas $
+# $Id: PKGBUILD 235548 2015-04-06 19:34:13Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-okular
 pkgver=15.03.97
-pkgrel=1
+pkgrel=2
 pkgdesc='Document Viewer'
 arch=('i686' 'x86_64')
 url="http://kde.org/applications/graphics/okular/"
 license=('GPL' 'LGPL' 'FDL')
 groups=('kde-applications' 'kdegraphics')
 depends=('kdebase-runtime' 'qimageblitz' 'chmlib' 'djvulibre' 'libspectre'
-         'libkexiv2' 'poppler-qt4' 'libkscreen')
+         'libkexiv2' 'poppler-qt4' 'libkscreen4')
 makedepends=('cmake' 'automoc4' 'ebook-tools' 'kdegraphics-mobipocket')
 optdepends=('ebook-tools: mobi and epub support'
             'kdegraphics-mobipocket: mobi support')

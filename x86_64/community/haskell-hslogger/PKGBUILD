@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 128083 2015-02-21 20:18:49Z spupykin $
+# $Id: PKGBUILD 130778 2015-04-06 04:21:58Z td123 $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Arch Haskell Team <arch-haskell@haskell.org>
 
 pkgname=haskell-hslogger
 pkgver=1.2.8
-pkgrel=1
+pkgrel=2
 pkgdesc="Versatile logging framework"
 url="http://hackage.haskell.org/package/hslogger"
 license=('LGPL')
 arch=('i686' 'x86_64')
-depends=('ghc' 'haskell-mtl' 'haskell-network')
+depends=('ghc' 'haskell-mtl' 'haskell-network' 'haskell-old-locale')
 options=('staticlibs')
 install=${pkgname}.install
 source=("http://hackage.haskell.org/packages/archive/hslogger/${pkgver}/hslogger-${pkgver}.tar.gz")
@@ -17,9 +17,6 @@ md5sums=('e5960e170f9809486ede60f8165bb770')
 
 build() {
   cd ${srcdir}/hslogger-${pkgver}
-
-  # upstream bug: https://github.com/jgoerzen/hslogger/pull/22
-#  patch -Np1 -i ${srcdir}/0001-relax-network-upper-bound-to-2.6.patch
 
   runhaskell Setup configure -p --prefix=/usr --docdir=/usr/share/doc/${pkgname} -O \
 	--enable-split-objs --enable-shared --libsubdir=\$compiler/site-local/\$pkgid \
