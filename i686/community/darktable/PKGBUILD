@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 129007 2015-03-10 11:11:09Z spupykin $
+# $Id: PKGBUILD 130898 2015-04-07 17:11:27Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer:  Christian Himpel <chressie at gmail dot com>
 # Contributor: Johannes Hanika <hanatos at gmail dot com>
 
 pkgname=darktable
-pkgver=1.6.3
-pkgrel=2
+pkgver=1.6.4
+pkgrel=3
 pkgdesc="Utility to organize and develop raw images"
 arch=('i686' 'x86_64')
 url=http://darktable.sf.net/
@@ -17,7 +17,7 @@ makedepends=('intltool>=0.40' 'cmake' 'librsvg')
 optdepends=('librsvg')
 install=darktable.install
 source=("$pkgname-$pkgver.tar.gz::https://github.com/darktable-org/darktable/archive/release-$pkgver.tar.gz")
-md5sums=('631eec1dfa2071bbb56156d99ed164c2')
+md5sums=('702a7e285edefb53365e0511bf17c92d')
 
 prepare() {
   cd "$srcdir/$pkgname-release-$pkgver/cmake"
@@ -40,10 +40,13 @@ build() {
       -DUSE_COLORD=On \
       ..
   make
+  make -C ../tools/basecurve
 }
 
 package() {
   cd "$srcdir/$pkgname-release-$pkgver/build"
   make DESTDIR="$pkgdir" install
+  install -Dm0755 ../tools/basecurve/dt-curve-tool $pkgdir/usr/bin/dt-curve-tool
+  install -Dm0755 ../tools/basecurve/dt-curve-tool-helper $pkgdir/usr/bin/dt-curve-tool-helper
   mv "${pkgdir}/usr/share/doc/darktable" "${pkgdir}/usr/share/doc/${pkgname}-${pkgver}"
 }

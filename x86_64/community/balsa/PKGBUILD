@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 91059 2013-05-18 15:38:27Z jlichtblau $
+# $Id: PKGBUILD 130867 2015-04-07 07:10:32Z jgc $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
@@ -6,13 +6,13 @@
 
 pkgname=balsa
 pkgver=2.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc="An e-mail client for GNOME"
 arch=('i686' 'x86_64')
 url='http://pawsa.fedorapeople.org/balsa/'
 license=('GPL')
-depends=('gmime' 'webkitgtk3' 'libesmtp' 'libnotify' 'gpgme' 'gtksourceview3' 'gtkspell3' 'gnome-icon-theme' 'desktop-file-utils')
-makedepends=('perl-xml-parser' 'gnome-doc-utils' 'intltool')
+depends=('gmime' 'webkitgtk' 'libesmtp' 'libnotify' 'gpgme' 'gtksourceview3' 'gtkspell3' 'desktop-file-utils')
+makedepends=('yelp-tools' 'intltool')
 install=$pkgname.install
 changelog=$pkgname.changelog
 source=(http://pawsa.fedorapeople.org/${pkgname}/${pkgname}-${pkgver}.tar.bz2)
