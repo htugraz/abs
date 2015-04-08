@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 234789 2015-03-25 15:34:12Z jgc $
+# $Id: PKGBUILD 235791 2015-04-08 21:00:34Z andyrtr $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=webkit2gtk
 pkgver=2.8.0
-pkgrel=1
+pkgrel=2
 pkgdesc="GTK+ Web content engine library"
 arch=('i686' 'x86_64')
 url="http://webkitgtk.org/"

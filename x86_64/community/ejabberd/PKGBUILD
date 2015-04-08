@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 129990 2015-03-26 19:12:11Z spupykin $
+# $Id: PKGBUILD 130938 2015-04-08 16:41:05Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Jeff 'codemac' Mickey <jeff@archlinux.org>
 # Contributor: Alexander Rødseth <rodseth@gmail.com>
 
 pkgname=ejabberd
 pkgver=15.03
-pkgrel=1
+pkgrel=3
 pkgdesc="Jabber server written in Erlang"
 arch=('x86_64' 'i686')
 url="http://www.ejabberd.im/"
@@ -38,17 +38,19 @@ source=("$pkgname-$pkgver.tar.gz::https://github.com/processone/ejabberd/archive
 	"git://github.com/esl/lhttpc"
 	"git://github.com/eproxus/meck"
 	"esip::git://github.com/processone/p1_sip"
-	"git://github.com/basho/riak_pb"
-	"riakc::git://github.com/basho/riak-erlang-client"
+	"git://github.com/basho/riak_pb#tag=1.4.4.0"
+	"riakc::git://github.com/basho/riak-erlang-client#tag=1.4.2"
 	"protobuffs::git://github.com/basho/erlang_protobuffs.git"
 	"git://github.com/processone/p1_utils"
 	"ehyperloglog::git://github.com/vaxelfel/eHyperLogLog.git"
 	"rebar_elixir_plugin::git://github.com/yrashk/rebar_elixir_plugin"
-	"elixir::git://github.com/elixir-lang/elixir"
+	"elixir::git://github.com/elixir-lang/elixir#branch=v1.0"
+	"git://github.com/wooga/eredis"
 	"$pkgname.logrotate"
 	"ejabberd.service"
 	"sysuser.conf")
 md5sums=('e4996f1192c5bae9e04ccf43ab3cda14'
+         'SKIP'
          'SKIP'
          'SKIP'
          'SKIP'
@@ -87,7 +89,7 @@ prepare() {
            p1_stringprep p1_tls p1_xml p1_yaml p1_zlib xmlrpc \
            p1_mysql p1_pgsql p1_stun jiffy ibrowse lhttpc \
            meck esip riak_pb riakc p1_utils protobuffs \
-           ehyperloglog rebar_elixir_plugin elixir; do
+           ehyperloglog rebar_elixir_plugin elixir eredis; do
     rm -rf "$srcdir/$pkgname-$pkgver/deps/$i"
     mv $srcdir/$i "$srcdir/$pkgname-$pkgver/deps"
   done
@@ -103,7 +105,7 @@ build() {
   [ -x configure ] || ./autogen.sh
   ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
     --enable-all
-  make
+  make debug=true
   make -C doc
 }
 

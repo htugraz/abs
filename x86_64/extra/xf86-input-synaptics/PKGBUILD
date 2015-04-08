@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 235124 2015-03-27 09:01:06Z lcarlier $
+# $Id: PKGBUILD 235626 2015-04-08 07:06:20Z lcarlier $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Tobias Powalowski  <tpowa@archlinux.org>
 # Contributor: Thomas Bächler <thomas@archlinux.org>
@@ -6,10 +6,10 @@
 
 pkgname=xf86-input-synaptics
 pkgver=1.8.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Synaptics driver for notebook touchpads"
 arch=('i686' 'x86_64')
-license=('custom')
+license=('MIT')
 url="http://xorg.freedesktop.org/"
 depends=('libxtst' 'mtdev' 'libevdev')
 makedepends=('xorg-server-devel' 'X-ABI-XINPUT_VERSION=21' 'libxi' 'libx11' 'resourceproto' 'scrnsaverproto')
