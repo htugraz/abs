@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 124696 2014-12-27 13:07:38Z fyan $
+# $Id: PKGBUILD 131061 2015-04-09 18:55:08Z heftig $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: SanskritFritz (gmail)
 # Contributor: Alexander Rødseth
@@ -10,8 +10,8 @@
 pkgbase=sword
 pkgname=(sword python-sword python2-sword)
 _mainver=1.7
-pkgver=$_mainver.4
-pkgrel=2
+pkgver=1.7.4
+pkgrel=3
 pkgdesc="Library for Bible study programs"
 arch=('x86_64' 'i686')
 url="http://www.crosswire.org/sword/"

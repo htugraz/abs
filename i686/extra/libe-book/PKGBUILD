@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 228871 2015-01-09 20:44:58Z andyrtr $
+# $Id: PKGBUILD 235950 2015-04-09 18:55:30Z heftig $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Contributor: Thomas Arnhold <thomas at arnhold dot org>
 
 pkgname=libe-book
 pkgver=0.1.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Library for import of reflowable e-book formats."
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/libebook/"

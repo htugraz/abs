@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 128459 2015-03-01 10:19:59Z fyan $
+# $Id: PKGBUILD 131059 2015-04-09 18:55:05Z heftig $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: grimsock <lord.grimsock at gmail dot com>
 # Contributor: Dieter Plaetinck <dieter@plaetinck.be>
@@ -7,7 +7,7 @@
 
 pkgname=phantomjs
 pkgver=2.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Headless WebKit with JavaScript API"
 url="http://www.phantomjs.org/"
 license=('BSD' 'LGPL' 'MIT')

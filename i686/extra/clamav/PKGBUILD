@@ -1,15 +1,16 @@
-# $Id: PKGBUILD 230224 2015-01-28 22:28:34Z bisson $
+# $Id: PKGBUILD 236010 2015-04-09 21:21:27Z bisson $
 # Contributor: Dale Blount <dale@archlinux.org>
 # Contributor: Gregor Ibic <gregor.ibic@intelicom.si>
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 
 pkgname=clamav
 pkgver=0.98.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Anti-virus toolkit for Unix'
 url='http://www.clamav.net/'
 license=('GPL')
 arch=('i686' 'x86_64')
+makedepends=('libmilter')
 depends=('bzip2' 'libltdl' 'gcc-libs')
 validpgpkeys=('B964E6D7BC7D7C82CCB8D45840B8EA2364221D53')
 source=("http://downloads.sourceforge.net/project/${pkgname}/${pkgname}/${pkgver}/${pkgname}-${pkgver}.tar.gz"{,.sig}
@@ -41,6 +42,7 @@ build() {
 		--sysconfdir=/etc/clamav \
 		--with-dbdir=/var/lib/clamav \
 		--disable-clamav \
+		--enable-milter \
 
 	make
 }

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 127368 2015-02-09 10:10:33Z spupykin $
+# $Id: PKGBUILD 131058 2015-04-09 18:55:03Z heftig $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: mpie <michael.kyne-phillips1@ntlworld.com>
 
@@ -6,7 +6,7 @@ pkgname=parrot
 pkgver=7.0.2
 _rel=stable
 #_rel=devel
-pkgrel=1
+pkgrel=2
 pkgdesc="Standalone VM that can execute bytecode compiled dynamic languages"
 arch=('x86_64' 'i686')
 url="http://www.parrotcode.org/"

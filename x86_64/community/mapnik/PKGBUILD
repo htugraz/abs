@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 129437 2015-03-17 18:44:15Z spupykin $
+# $Id: PKGBUILD 131055 2015-04-09 18:54:56Z heftig $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: David Dent <thewinch@gmail.com>
 # Contributor: orbisvicis <orbisvicis@gmail.com>
 
 pkgname=mapnik
 pkgver=2.2.0.654.g718a8b3
-pkgrel=3
+pkgrel=4
 pkgdesc="Free Toolkit for developing mapping applications. Above all Mapnik is about rendering beautiful maps"
 arch=('i686' 'x86_64')
 url="http://mapnik.org/"

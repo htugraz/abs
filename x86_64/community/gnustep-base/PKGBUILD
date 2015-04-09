@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 121097 2014-10-20 18:02:41Z andyrtr $
+# $Id: PKGBUILD 131050 2015-04-09 18:54:44Z heftig $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Vesa Kaihlavirta <vegai@iki.fi>
 # Contributor: Sebastian Sareyko <public@nooms.de>
 
 pkgname=gnustep-base
 pkgver=1.24.6
-pkgrel=2
+pkgrel=3
 pkgdesc="The GNUstep base package"
 arch=('i686' 'x86_64')
 url="http://www.gnustep.org/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 234929 2015-03-25 19:16:23Z heftig $
+# $Id: PKGBUILD 235947 2015-04-09 18:55:25Z heftig $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgbase=(harfbuzz)
 pkgname=(harfbuzz harfbuzz-icu)
 pkgver=0.9.40
-pkgrel=1
+pkgrel=2
 pkgdesc="OpenType text shaping engine"
 arch=(i686 x86_64)
 url="http://www.freedesktop.org/wiki/Software/HarfBuzz"

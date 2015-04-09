@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 235343 2015-04-02 04:35:42Z foutrelis $
+# $Id: PKGBUILD 235946 2015-04-09 18:55:23Z heftig $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 # Contributor: Jan "heftig" Steffens <jan.steffens@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=chromium
 pkgver=41.0.2272.118
-pkgrel=1
+pkgrel=2
 pkgdesc="The open-source project behind Google Chrome, an attempt at creating a safer, faster, and more stable browser"
 arch=('i686' 'x86_64')
 url="http://www.chromium.org/"

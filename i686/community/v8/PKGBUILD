@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 127542 2015-02-10 22:02:29Z anatolik $
+# $Id: PKGBUILD 131063 2015-04-09 18:55:11Z heftig $
 # Maintainer: Anatol Pomozov <anatol.pomozov@gmail.com>
 # Contributor:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
 # Contributor: Kaiting Chen <kaitocracy@gmail.com>
@@ -7,7 +7,7 @@
 pkgname=v8
 # use http://omahaproxy.appspot.com/ to find stable v8 version
 pkgver=3.30.33.16
-pkgrel=1
+pkgrel=2
 pkgdesc='Fast and modern Javascript engine'
 arch=(i686 x86_64)
 url='http://code.google.com/p/v8'
