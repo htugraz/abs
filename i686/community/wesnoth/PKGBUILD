@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 126697 2015-01-28 11:36:04Z svenstaro $
+# $Id: PKGBUILD 131185 2015-04-11 20:49:12Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
@@ -6,7 +6,7 @@
 # Contributor: Douglas Soares de Andrade <douglas@archlinux.org>
 
 pkgname=wesnoth
-pkgver=1.12.1
+pkgver=1.12.2
 pkgrel=1
 pkgdesc="A turn-based strategy game on a fantasy world"
 arch=('i686' 'x86_64')

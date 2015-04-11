@@ -1,15 +1,14 @@
-# $Id: PKGBUILD 236241 2015-04-10 19:50:06Z arojas $
+# $Id: PKGBUILD 236249 2015-04-10 23:01:50Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kde-wallpapers
 pkgver=15.04.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A set of wallpapers for KDE"
 arch=('any')
 url='http://www.kde.org'
 license=('GPL' 'LGPL' 'FDL')
-groups=('kde' 'kde-meta' 'kdebase')
 makedepends=('kdelibs' 'cmake' 'automoc4')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
 sha1sums=('2db123a59c234715d21cff630671cb42c25b56bf')
