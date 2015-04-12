@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 122874 2014-11-21 17:57:17Z fyan $
+# $Id: PKGBUILD 131218 2015-04-12 04:44:07Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
@@ -9,8 +9,8 @@
 
 pkgbase=python-httplib2
 pkgname=(python-httplib2 python2-httplib2)
-pkgver=0.9
-pkgrel=3
+pkgver=0.9.1
+pkgrel=1
 pkgdesc='Comprehensive HTTP client library, supporting many features'
 url='https://github.com/jcgregorio/httplib2'
 license=('MIT')
@@ -19,8 +19,7 @@ makedepends=('python-setuptools' 'python2-setuptools' 'git')
 depends=('ca-certificates')
 provides=('httplib2')
 replaces=('httplib2')
-#source=("git://github.com/jcgregorio/httplib2.git#tag=v$pkgver"
-source=("git://github.com/jcgregorio/httplib2.git#commit=7d1b88a3cf"
+source=("git://github.com/jcgregorio/httplib2.git#tag=v$pkgver"
         'ssl_hostname.patch'
         'cert.patch')
 sha256sums=('SKIP'
