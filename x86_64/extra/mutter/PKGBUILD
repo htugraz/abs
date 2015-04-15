@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 235909 2015-04-09 18:47:05Z heftig $
+# $Id: PKGBUILD 236650 2015-04-15 13:27:37Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Michael Kanis <mkanis_at_gmx_dot_de>
 
 pkgname=mutter
-pkgver=3.16.0
-pkgrel=2
+pkgver=3.16.1.1
+pkgrel=1
 pkgdesc="A window manager for GNOME"
 arch=(i686 x86_64)
 license=('GPL')
@@ -18,7 +18,11 @@ groups=('gnome')
 options=('!emptydirs')
 install=mutter.install
 source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver:0:4}/$pkgname-$pkgver.tar.xz)
-sha256sums=('b2c052cee7edd1ef34d501c4203ec9bc5f15a52a157d1595f3bc5268ca840695')
+sha256sums=('795084f6b642ab45e9f73b82b185949a110f2149bc0bce9f70ff30c8ab4c051c')
+
+prepare() {
+  cd "$pkgname-$pkgver"
+}
 
 build() {
   cd "$pkgname-$pkgver"

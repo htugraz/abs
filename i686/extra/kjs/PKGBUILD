@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 234065 2015-03-17 20:12:23Z arojas $
+# $Id: PKGBUILD 236600 2015-04-15 03:26:41Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kjs
-pkgver=5.8.0
+pkgver=5.9.0
 pkgrel=1
 pkgdesc='Support for JS scripting in applications'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('qt5-base')
 makedepends=('extra-cmake-modules' 'kdoctools')
 groups=('kf5-aids')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/portingAids/${pkgname}-${pkgver}.tar.xz")
-md5sums=('a4ca427862d70bd748b1c49f50b9d43b')
+md5sums=('7aa8b37c1fd45b61d3a267f65ea32d14')
 
 prepare() {
   mkdir -p build

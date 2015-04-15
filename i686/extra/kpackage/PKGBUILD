@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 234023 2015-03-17 09:50:42Z fyan $
+# $Id: PKGBUILD 236606 2015-04-15 03:26:48Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
 
 pkgname=kpackage
-pkgver=5.8.0
+pkgver=5.9.0
 pkgrel=1
 pkgdesc='Framework that lets applications manage user installable packages of non-binary assets'
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ depends=('karchive' 'ki18n' 'kcoreaddons' 'kconfig')
 makedepends=('extra-cmake-modules' 'qt5-tools' 'python' 'kdoctools')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('c30bb0ce023cc7f22dd2c3c092f4da56')
+md5sums=('1130a0a17bcfeb4460ce845dd01fa6cb')
 
 prepare() {
   mkdir -p build

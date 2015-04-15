@@ -1,13 +1,14 @@
-# $Id: PKGBUILD 236463 2015-04-14 02:05:35Z heftig $
+# $Id: PKGBUILD 237210 2015-04-15 22:02:27Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=dconf-editor
 pkgver=3.16.1
-pkgrel=1
+pkgrel=2
 pkgdesc="dconf Editor"
 arch=(i686 x86_64)
 url="http://live.gnome.org/dconf"
 license=('LGPL2.1')
+groups=('gnome')
 depends=('gtk3' 'dconf')
 makedepends=('vala' 'intltool')
 install=dconf-editor.install

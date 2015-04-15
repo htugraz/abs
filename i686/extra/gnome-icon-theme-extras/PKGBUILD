@@ -1,18 +1,17 @@
-# $Id: PKGBUILD 210465 2014-04-14 20:06:34Z jgc $
+# $Id: PKGBUILD 237211 2015-04-15 22:03:07Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-icon-theme-extras
 pkgver=3.12.0
-pkgrel=1
+pkgrel=2
 pkgdesc="GNOME icon theme, extra icons"
 arch=(any)
 depends=('gnome-icon-theme')
-makedepends=('intltool')
+makedepends=('intltool' 'icon-naming-utils')
 url="http://www.gnome.org"
 license=('GPL')
 install=gnome-icon-theme-extras.install
-groups=('gnome')
 source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.xz)
 sha256sums=('4eec6cea8a7b09c4ed6ebab1a3b42539b9c61a53bec4b8872e774611cc619608')
 

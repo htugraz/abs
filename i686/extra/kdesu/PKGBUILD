@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 234591 2015-03-23 21:37:05Z arojas $
+# $Id: PKGBUILD 236583 2015-04-15 03:26:22Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesu
-pkgver=5.8.0
-pkgrel=2
+pkgver=5.9.0
+pkgrel=1
 pkgdesc='Integration with su for elevated privileges'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kdesu'
@@ -13,7 +13,7 @@ depends=('kservice' 'kpty')
 makedepends=('extra-cmake-modules' 'python')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('b47ba38043952502127431910d920b50')
+md5sums=('faf0a80cbdd93aac34f372bd325612b5')
 
 prepare() {
   mkdir -p build

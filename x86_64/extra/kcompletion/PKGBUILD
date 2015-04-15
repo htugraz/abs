@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 233990 2015-03-17 09:50:03Z fyan $
+# $Id: PKGBUILD 236573 2015-04-15 03:26:11Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kcompletion
-pkgver=5.8.0
+pkgver=5.9.0
 pkgrel=1
 pkgdesc='Text completion helpers and widgets'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('kwidgetsaddons' 'kconfig')
 makedepends=('extra-cmake-modules' 'qt5-tools')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('d8c49357e334f5992df7a0863b08bed7')
+md5sums=('136ae86de0790101bb48f72580cd9923')
 
 prepare() {
   mkdir -p build

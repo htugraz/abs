@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 234030 2015-03-17 09:50:54Z fyan $
+# $Id: PKGBUILD 236613 2015-04-15 03:27:04Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=ktextwidgets
-pkgver=5.8.0
+pkgver=5.9.0
 pkgrel=1
 pkgdesc='Advanced text editing widgets'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('kcompletion' 'kservice' 'kiconthemes' 'sonnet')
 makedepends=('extra-cmake-modules' 'python')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('b033eacbea5aafc024302fc847bf3f53')
+md5sums=('b840b38a9cc17f1981cf4e527ee18c97')
 
 prepare() {
   mkdir -p build
