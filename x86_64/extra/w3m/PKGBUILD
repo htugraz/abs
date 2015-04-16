@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 199274 2013-11-09 05:21:55Z bisson $
+# $Id: PKGBUILD 237242 2015-04-16 16:14:17Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: dorphell <dorphell@archlinux.org>
 
 pkgname=w3m
 pkgver=0.5.3
-pkgrel=5
+pkgrel=6
 pkgdesc='Text-based Web browser, as well as pager'
 url='http://w3m.sourceforge.net/'
 license=('custom')
@@ -33,12 +33,13 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
-		--enable-image=x11,fb \
+		--enable-image=X11,fb \
 		--with-imagelib=imlib2 \
 		--with-termlib=ncurses \
 		--disable-w3mmailer \
 		--disable-mouse \
 
+	sed 's/@my_libs@/-lX11/g' -i Makefile
 	make
 }
 
