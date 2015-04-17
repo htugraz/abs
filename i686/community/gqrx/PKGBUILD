@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 127013 2015-02-03 01:55:40Z kkeen $
+# $Id: PKGBUILD 131520 2015-04-16 22:36:01Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Dominik Heidler <dheidler@gmail.com>
 
 pkgname=gqrx
 pkgver=2.3.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Interactive SDR receiver waterfall for many devices."
 arch=('i686' 'x86_64')
 url="http://gqrx.dk/"
 license=('GPL')
 depends=('qt5-svg' 'libpulse' 'gnuradio-osmosdr' 'libxkbcommon-x11')
 makedepends=('boost')
-source=("https://github.com/csete/gqrx/archive/v$pkgver.tar.gz"
+source=("$pkgname-$pkgver.tar.gz::https://github.com/csete/gqrx/archive/v$pkgver.tar.gz"
         "$pkgname.png"
         "$pkgname.desktop")
 md5sums=('f77dd4d3ee02bd142be5f17a926c21c7'

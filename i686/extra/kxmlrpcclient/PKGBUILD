@@ -1,19 +1,20 @@
-# $Id: PKGBUILD 234044 2015-03-17 11:00:12Z arojas $
+# $Id: PKGBUILD 237272 2015-04-17 08:00:39Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=kxmlrpcclient
-pkgver=5.8.0
-pkgrel=1
+pkgver=5.9.0
+pkgrel=3
 pkgdesc="XML-RPC client library for KDE"
 arch=('i686' 'x86_64')
 url="https://projects.kde.org/projects/kde/pim/kxmlrpcclient"
 license=('LGPL')
 depends=('kio')
 makedepends=('extra-cmake-modules' 'python')
+conflicts=('plasma-workspace<5.2.95')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('0603953cd62226ee9e3f034419bb88e5')
+md5sums=('168f6a5e91bf3a780d1a4beb6e4c8b4a')
 
 prepare() {
   mkdir -p build

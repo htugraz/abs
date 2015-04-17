@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 237190 2015-04-15 19:44:52Z arojas $
+# $Id: PKGBUILD 237269 2015-04-17 06:52:25Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgname=kde-cli-tools
 pkgver=5.2.95
-pkgrel=2
+pkgrel=3
 pkgdesc="Tools based on KDE Frameworks 5 to better interact with the system"
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/kde-cli-tools'
@@ -34,4 +34,6 @@ build() {
 package() {
   cd build
   make DESTDIR="$pkgdir" install
+
+  ln -s /usr/lib/kf5/kdesu "$pkgdir"/usr/bin/
 }

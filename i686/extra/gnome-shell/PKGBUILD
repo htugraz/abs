@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 236641 2015-04-15 07:56:24Z heftig $
+# $Id: PKGBUILD 237276 2015-04-17 13:51:40Z heftig $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Flamelab <panosfilip@gmail.com
 
 pkgname=gnome-shell
 pkgver=3.16.1
-pkgrel=1
+pkgrel=2
 pkgdesc="The next generation GNOME Shell"
 arch=(i686 x86_64)
 url="http://live.gnome.org/GnomeShell"
 license=(GPL2)
 depends=(accountsservice caribou gcr gjs gnome-bluetooth gnome-menus upower
          gnome-session gnome-settings-daemon gnome-themes-standard gsettings-desktop-schemas
-         libcanberra-pulse libcroco libgdm libsecret mutter network-manager-applet
+         libcanberra-pulse libcroco libgdm libsecret mutter libnm-glib
          telepathy-logger telepathy-mission-control unzip gstreamer)
 makedepends=(intltool gtk-doc gnome-control-center evolution-data-server python gobject-introspection)
 optdepends=('gnome-control-center: System settings'
