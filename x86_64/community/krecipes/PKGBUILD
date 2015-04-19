@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 131015 2015-04-09 07:24:20Z lcarlier $
+# $Id: PKGBUILD 131719 2015-04-19 16:07:08Z arojas $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: shamrok <szamrok@gmail.com>
 # Contributor: G_Syme <demichan(at)mail(dot)upb(dot)de>
@@ -6,7 +6,7 @@
 
 pkgname=krecipes
 pkgver=2.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A tool designed to make organizing your personal recipes collection fast and easy"
 arch=('i686' 'x86_64')
 url="http://extragear.kde.org/apps/krecipes/"

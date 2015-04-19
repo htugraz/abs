@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 120343 2014-10-07 07:02:23Z andrea $
+# $Id: PKGBUILD 131724 2015-04-19 16:07:16Z arojas $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: birdflesh <antkoul at gmail dot com>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=skanlite
 pkgver=1.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Image Scanning Application for KDE"
 arch=('i686' 'x86_64')
 url='http://www.kde.org/applications/graphics/skanlite'

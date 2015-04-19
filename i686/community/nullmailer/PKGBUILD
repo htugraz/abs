@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 127558 2015-02-11 12:26:04Z flexiondotorg $
+# $Id: PKGBUILD 131697 2015-04-19 11:29:58Z andyrtr $
 # Maintainer : Martin Wimpress <code@flexion.org>
 # Contributor: Roberto Alsina <ralsina at kde.org>
 # Contributor: Kurt J. Bosch <kjb-temp-2009 at alpenjodel.de>
 
 pkgname=nullmailer
 pkgver=1.13
-pkgrel=4
+pkgrel=5
 pkgdesc="Simple relay-only mail transport agent."
 arch=('i686' 'x86_64')
 url="http://www.untroubled.org/nullmailer/"

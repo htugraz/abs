@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 235930 2015-04-09 18:47:40Z heftig $
+# $Id: PKGBUILD 237453 2015-04-19 11:26:33Z andyrtr $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgbase=vte3
 pkgname=(vte3 vte-common)
 pkgver=0.40.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Virtual Terminal Emulator widget for use with GTK3"
 arch=('i686' 'x86_64')
 license=('LGPL')

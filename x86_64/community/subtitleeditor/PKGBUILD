@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 131630 2015-04-18 16:13:01Z jlichtblau $
+# $Id: PKGBUILD 131710 2015-04-19 15:43:02Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 
 pkgname=subtitleeditor
 pkgver=0.51.0
 pkgrel=1
-pkgdesc="A GTK+2 tool to edit subtitles for GNU/Linux/*BSD"
+pkgdesc="A GTK+3 tool to edit subtitles for GNU/Linux/*BSD"
 arch=('i686' 'x86_64')
 url="http://home.gna.org/subtitleeditor/"
 license=('GPL3')

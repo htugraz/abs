@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 127810 2015-02-16 18:56:45Z jlichtblau $
+# $Id: PKGBUILD 131726 2015-04-19 16:07:18Z arojas $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Ray Rashif <schiv@archlinux.org
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=tellico
 pkgver=2.3.10
-pkgrel=1
+pkgrel=2
 pkgdesc="A collection manager for KDE"
 arch=('i686' 'x86_64')
 url="http://tellico-project.org/"

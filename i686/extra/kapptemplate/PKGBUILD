@@ -1,22 +1,22 @@
-# $Id: PKGBUILD 233158 2015-03-10 07:37:20Z fyan $
+# $Id: PKGBUILD 237608 2015-04-19 15:56:29Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kapptemplate
-pkgver=14.12.3
+pkgver=15.04.0
 pkgrel=1
 pkgdesc='KDE Template Generator'
 url='http://kde.org/applications/development/kapptemplate/'
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
-groups=('kde' 'kdesdk')
+groups=('kde-applications' 'kdesdk')
 depends=('kio')
 makedepends=('extra-cmake-modules' 'kdoctools' 'python')
 replaces=('kdesdk-kapptemplate')
 conflicts=('kdesdk-kapptemplate')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kapptemplate-${pkgver}.tar.xz")
-sha1sums=('dcf1b2be9adcab6740b52e034ae7d64f36ec4606')
+sha1sums=('262a56f340bccb03e6b5d0a11d6547500a2c4f6f')
 
 build() {
   mkdir build

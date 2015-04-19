@@ -1,20 +1,20 @@
-# $Id: PKGBUILD 233254 2015-03-10 07:39:55Z fyan $
+# $Id: PKGBUILD 237588 2015-04-19 15:55:53Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-kppp
-pkgver=14.12.3
+pkgver=15.04.0
 pkgrel=1
 pkgdesc='Internet Dial-Up Tool'
 url='http://kde.org/applications/internet/kppp/'
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
-groups=('kde' 'kdenetwork')
+groups=('kde-applications' 'kdenetwork')
 depends=('kdebase-runtime' 'ppp')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kppp-${pkgver}.tar.xz")
-sha1sums=('f009b7242915a5a0ddd2124336e64e23ac849c3c')
+sha1sums=('bbc0e3c6b3196eb309a5c5de57dd647396618b82')
 
 build() {
   mkdir build

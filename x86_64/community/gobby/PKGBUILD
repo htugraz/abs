@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 118127 2014-09-01 12:39:46Z spupykin $
+# $Id: PKGBUILD 131686 2015-04-19 11:29:39Z andyrtr $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 # Maintainer: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve>
 
 pkgname=gobby
 pkgver=0.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A collaborative text editor"
 arch=('i686' 'x86_64')
 url="http://gobby.github.io/"

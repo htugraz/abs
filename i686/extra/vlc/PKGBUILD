@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 233386 2015-03-12 10:45:35Z foutrelis $
+# $Id: PKGBUILD 237448 2015-04-19 11:26:28Z andyrtr $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Sarah Hay <sarahhay@mb.sympatico.ca>
 # Contributor: Martin Sandsmark <martin.sandsmark@kde.org>
 
 pkgname=vlc
-pkgver=2.2.0
-pkgrel=2
+pkgver=2.2.1
+pkgrel=1
 pkgdesc="A multi-platform MPEG, VCD/DVD, and DivX player"
 arch=('i686' 'x86_64')
 url="http://www.videolan.org/vlc/"
@@ -57,7 +57,7 @@ backup=('usr/share/vlc/lua/http/.hosts'
 options=('!emptydirs')
 install=vlc.install
 source=("http://download.videolan.org/${pkgname}/${pkgver}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('faeceb614bf3946e5f90ef0d1f51db45')
+md5sums=('42273945758b521c408fabc7fd6d9946')
 
 prepare() {
   cd "${srcdir}/${pkgname}-${pkgver}"

@@ -1,20 +1,20 @@
-# $Id: PKGBUILD 233219 2015-03-10 07:38:53Z fyan $
+# $Id: PKGBUILD 237554 2015-04-19 15:54:59Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kreversi
-pkgver=14.12.3
+pkgver=15.04.0
 pkgrel=1
 pkgdesc="A simple one player strategy game played against the computer"
 url="http://kde.org/applications/games/kreversi/"
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
-groups=('kde' 'kdegames')
-depends=('kdebase-runtime' 'libkdegames')
+groups=('kde-applications' 'kdegames')
+depends=('kdebase-runtime' 'libkdegames4')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kreversi-${pkgver}.tar.xz")
-sha1sums=('8cb33739342798336bcd67fb0075f5eb6e3ea6bf')
+sha1sums=('4999cbe0c2512bd9d830f1b410ec5b04608469c3')
 
 build() {
   mkdir build

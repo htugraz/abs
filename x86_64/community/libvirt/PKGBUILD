@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 130526 2015-04-02 11:24:30Z spupykin $
+# $Id: PKGBUILD 131692 2015-04-19 11:29:49Z andyrtr $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Jonathan Wiersma <archaur at jonw dot org>
 
 pkgname=libvirt
 pkgver=1.2.14
-pkgrel=1
+pkgrel=2
 pkgdesc="API for controlling virtualization engines (openvz,kvm,qemu,virtualbox,xen,etc)"
 arch=('i686' 'x86_64')
 url="http://libvirt.org/"

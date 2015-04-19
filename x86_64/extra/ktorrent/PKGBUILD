@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 223977 2014-10-07 07:04:04Z andrea $
+# $Id: PKGBUILD 237644 2015-04-19 15:57:38Z arojas $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Travis Willard <travisw@wmpub.ca>
 # Contributor: Georg Grabler <ggrabler@gmail.com>
 
 pkgname=ktorrent
 pkgver=4.3.1
-pkgrel=3
+pkgrel=4
 pkgdesc="A powerful BitTorrent client for KDE"
 arch=('i686' 'x86_64')
 url='http://ktorrent.pwsp.net/'

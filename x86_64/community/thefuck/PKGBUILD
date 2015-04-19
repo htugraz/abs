@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 131611 2015-04-18 07:31:29Z fyan $
+# $Id: PKGBUILD 131669 2015-04-19 04:50:20Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=thefuck
-pkgver=1.7
-pkgrel=1
+pkgver=1.12
+pkgrel=2
 pkgdesc="Magnificent app which corrects your previous console command"
 arch=('any')
 url="https://github.com/nvbn/thefuck"
 license=('MIT')
-depends=('python-setuptools' 'python-pathlib')
+depends=('python-setuptools' 'python-pathlib' 'python-psutil')
 checkdepends=('python-pytest' 'python-mock')
 source=("https://pypi.python.org/packages/source/t/thefuck/thefuck-$pkgver.tar.gz")
-sha256sums=('aa2b4547479b1cd61f21e9fd42e37b37f67c64fa34e9e6119d5f64d976498b40')
+sha256sums=('e960ccb4181be01668815580d69e3eb42380a8b9989ba408ad31aa0f5bfe5c15')
 
 build() {
   cd "${srcdir}/thefuck-$pkgver"
@@ -27,6 +27,7 @@ check() {
 package() {
   cd thefuck-$pkgver
   python3 setup.py install -O1 --prefix=/usr --root="$pkgdir/"
+  # install LICENSE.md "$pkgdir/usr/share/licenses/$pkgname/LICENSE.md"
 }
 
 # vim:set ts=2 sw=2 et:

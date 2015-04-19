@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 235850 2015-04-09 18:45:20Z heftig $
+# $Id: PKGBUILD 237432 2015-04-19 11:25:59Z andyrtr $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=glib-networking
 pkgver=2.44.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Network-related giomodules for glib"
 arch=(i686 x86_64)
 url="http://www.gtk.org/"

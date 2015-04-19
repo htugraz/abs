@@ -1,20 +1,20 @@
-# $Id: PKGBUILD 233247 2015-03-10 07:39:41Z fyan $
+# $Id: PKGBUILD 237580 2015-04-19 15:55:42Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdemultimedia-juk
-pkgver=14.12.3
+pkgver=15.04.0
 pkgrel=1
 pkgdesc='A jukebox, tagger and music collection manager'
 url='http://kde.org/applications/multimedia/juk/'
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
-groups=('kde' 'kdemultimedia')
+groups=('kde-applications' 'kdemultimedia')
 depends=('kdebase-runtime' 'taglib')
 makedepends=('cmake' 'automoc4')
 install="${pkgname}.install"
 source=("http://download.kde.org/stable/applications/${pkgver}/src/juk-${pkgver}.tar.xz")
-sha1sums=('d158801ee57b5ede595e65e2048c7b075564fa73')
+sha1sums=('43a968cae84035532e265ab7c23694d12f6dbf26')
 
 build() {
   cd "${srcdir}"

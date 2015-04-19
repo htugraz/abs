@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 129809 2015-03-23 11:27:31Z tredaelli $
+# $Id: PKGBUILD 131713 2015-04-19 16:07:01Z arojas $
 # Maintainer: Peter Richard Lewis <plewis@aur.archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Emanuele Rossi <newdna1510@yahoo.it>
@@ -6,7 +6,7 @@
 
 pkgname=choqok
 pkgver=1.5
-pkgrel=2
+pkgrel=3
 pkgdesc="A Twitter/Pump.io/GNU social client for KDE"
 url='http://choqok.gnufolks.org/'
 license=('GPL')

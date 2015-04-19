@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 99989 2013-10-31 02:52:02Z allan $
+# $Id: PKGBUILD 131704 2015-04-19 11:30:08Z andyrtr $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Kaiting Chen <kaitocracy@gmail.com>
 # Contributor: mrshpot <mrshpot at gmail dot com>
@@ -6,7 +6,7 @@
 
 pkgname=smalltalk
 pkgver=3.2.5
-pkgrel=2
+pkgrel=3
 pkgdesc='Implementation of Smalltalk-80'
 url='http://smalltalk.gnu.org/'
 license=('GPL' 'LGPL')
@@ -37,14 +37,13 @@ build() {
     --with-tk \
     --with-x \
     --without-emacs
+
   echo '#define USE_INTERP_RESULT 1' >> config.h
   make
 }
 
 check() {
-  cd "$pkgname-$pkgver"
-
-  make check || return 1
+  make -C "$pkgname-$pkgver" check
 }
 
 package() {

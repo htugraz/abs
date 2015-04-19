@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 233242 2015-03-10 07:39:33Z fyan $
+# $Id: PKGBUILD 237576 2015-04-19 15:55:36Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-thumbnailers
-pkgver=14.12.3
+pkgver=15.04.0
 pkgrel=1
 pkgdesc="Thumbnailers for various graphics file formats"
 url="https://projects.kde.org/projects/kde/kdegraphics/kdegraphics-thumbnailers"
@@ -14,7 +14,7 @@ makedepends=('cmake' 'automoc4')
 replaces=('kdegraphics-libs')
 conflicts=('kdegraphics-libs')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
-sha1sums=('f97c13095f3aeb636d0ee1f320a3648a0a8924bb')
+sha1sums=('55e797d2e2325fb1f66a10f2921d53bce3e3b8b5')
 
 build() {
   cd "${srcdir}"

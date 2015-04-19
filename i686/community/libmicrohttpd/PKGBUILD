@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 129899 2015-03-25 12:48:48Z spupykin $
+# $Id: PKGBUILD 131690 2015-04-19 11:29:46Z andyrtr $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Norberto Lopes <shelika@mail.telepac.pt>
 # Contributor: Kao Dome <kaodome@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=libmicrohttpd
 pkgver=0.9.39
-pkgrel=1
+pkgrel=2
 pkgdesc="a small C library that is supposed to make it easy to run an HTTP server as part of another application."
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/libmicrohttpd/"

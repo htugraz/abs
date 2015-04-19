@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 130001 2015-03-26 20:41:30Z thestinger $
+# $Id: PKGBUILD 131700 2015-04-19 11:30:02Z andyrtr $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 pkgname=openvas-manager
 pkgver=5.0.9
-pkgrel=1
+pkgrel=2
 pkgdesc='A layer between the OpenVAS Scanner and various client applications'
 arch=('i686' 'x86_64')
 url='http://www.openvas.org/'

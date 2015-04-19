@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 233289 2015-03-10 07:40:52Z fyan $
+# $Id: PKGBUILD 237633 2015-04-19 15:57:16Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-sweeper
-pkgver=14.12.3
+pkgver=15.04.0
 pkgrel=1
 pkgdesc='System Cleaner'
 url='http://kde.org/applications/utilities/sweeper'
@@ -11,9 +11,9 @@ arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
 depends=('kdebase-runtime')
 makedepends=('cmake' 'automoc4')
-groups=('kde' 'kdeutils')
+groups=('kde-applications' 'kdeutils')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/sweeper-${pkgver}.tar.xz")
-sha1sums=('81966a624574cb75880df9a3e5bce4710920aa97')
+sha1sums=('fdb08058b83f29f020e892e971a75626e33e1fea')
 
 prepare() {
   mkdir build

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 95562 2013-08-14 09:31:13Z lfleischer $
-# Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
+# $Id: PKGBUILD 131694 2015-04-19 11:29:53Z andyrtr $
+# Maintainer: Lukas Fleischer <lfleischer@archlinux.org>
 # Contributor: AkiraYB <brunoyb!yahoo,com,br>
 
 pkgname=minbif
 pkgver=1.0.5
-pkgrel=4
+pkgrel=5
 pkgdesc='An IRC gateway to IM networks that uses libpurple.'
 arch=('i686' 'x86_64')
 url='http://minbif.im/'

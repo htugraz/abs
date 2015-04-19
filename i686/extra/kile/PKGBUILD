@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 223974 2014-10-07 07:03:58Z andrea $
+# $Id: PKGBUILD 237643 2015-04-19 15:57:36Z arojas $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 
 pkgname=kile
 pkgver=2.1.3
-pkgrel=4
+pkgrel=5
 pkgdesc="A user friendly TeX/LaTeX frontend for KDE"
 arch=("i686" "x86_64")
 license=('GPL2')

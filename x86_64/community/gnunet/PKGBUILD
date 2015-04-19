@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 118970 2014-09-14 17:54:45Z eric $
+# $Id: PKGBUILD 131684 2015-04-19 11:29:36Z andyrtr $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: wahnby <wahnby@yahoo.fr>
 
 pkgname=gnunet
 pkgver=0.10.1
-pkgrel=2
+pkgrel=3
 pkgdesc="A framework for secure peer-to-peer networking"
 arch=('i686' 'x86_64')
 url="http://gnunet.org"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 131451 2015-04-15 21:47:55Z bluewind $
+# $Id: PKGBUILD 131681 2015-04-19 11:29:28Z andyrtr $
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 # Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=filezilla
 pkgver=3.10.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Fast and reliable FTP, FTPS and SFTP client"
 arch=('i686' 'x86_64')
 url="http://filezilla-project.org/"

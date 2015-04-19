@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 234670 2015-03-25 07:29:22Z fyan $
+# $Id: PKGBUILD 237444 2015-04-19 11:26:22Z andyrtr $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=openconnect
 pkgver=7.06
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc="Open client for Cisco AnyConnect VPN"
 arch=('i686' 'x86_64')

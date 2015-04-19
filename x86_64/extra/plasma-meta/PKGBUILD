@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 230214 2015-01-28 17:53:45Z andrea $
+# $Id: PKGBUILD 237656 2015-04-19 15:57:57Z arojas $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=plasma-meta
 pkgver=5.2.0
-pkgrel=4
+pkgrel=5
 pkgdesc='Meta package to install KDE Plasma'
 arch=('any')
 url='https://www.archlinux.org/'

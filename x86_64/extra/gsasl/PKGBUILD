@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 203576 2014-01-13 17:12:07Z andyrtr $
+# $Id: PKGBUILD 237434 2015-04-19 11:26:05Z andyrtr $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=gsasl
 pkgver=1.8.0
-pkgrel=4
+pkgrel=5
 pkgdesc="Simple Authentication and Security Layer framework and a few common SASL mechanisms"
 arch=('i686' 'x86_64')
 url="http://josefsson.org/gsasl/"

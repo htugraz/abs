@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 129385 2015-03-16 17:55:20Z thestinger $
+# $Id: PKGBUILD 131687 2015-04-19 11:29:41Z andyrtr $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 pkgname=greenbone-security-assistant
 pkgver=5.0.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Greenbone Security Assistant (gsa) - OpenVAS web frontend'
 url='http://www.openvas.org/'
 license=(GPL)

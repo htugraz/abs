@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 128130 2015-02-23 15:41:12Z fyan $
+# $Id: PKGBUILD 131674 2015-04-19 11:29:11Z andyrtr $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
@@ -8,7 +8,7 @@
 
 pkgname=aria2
 pkgver=1.18.10
-pkgrel=1
+pkgrel=2
 pkgdesc='Download utility that supports HTTP(S), FTP, BitTorrent, and Metalink'
 arch=('i686' 'x86_64')
 url='http://aria2.sourceforge.net/'

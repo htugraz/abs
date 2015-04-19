@@ -1,20 +1,20 @@
-# $Id: PKGBUILD 233185 2015-03-10 07:37:54Z fyan $
+# $Id: PKGBUILD 237520 2015-04-19 15:53:57Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-ktouch
-pkgver=14.12.3
+pkgver=15.04.0
 pkgrel=1
 pkgdesc="Touch Typing Tutor"
 url="http://kde.org/applications/education/ktouch/"
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
-groups=('kde' 'kdeedu')
-depends=('kdebase-runtime' 'kqtquickcharts')
+groups=('kde-applications' 'kdeedu')
+depends=('kdebase-runtime' 'kqtquickcharts' 'libxkbfile')
 makedepends=('cmake' 'automoc4' 'mesa')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/ktouch-${pkgver}.tar.xz")
-sha1sums=('245dd89f19604ccca7aa264c902b5e6d5017d984')
+sha1sums=('11710a4496d437b9ecfa0a0963809dbbe357c21f')
 
 prepare() {
   mkdir build

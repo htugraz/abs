@@ -1,10 +1,10 @@
-#$Id: PKGBUILD 127915 2015-02-18 14:48:46Z dwallace $
+#$Id: PKGBUILD 131679 2015-04-19 11:29:24Z andyrtr $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contributor: Lucas De Marchi <lucas.de.marchi@gmail.com>
 
 pkgname=connman
 pkgver=1.28
-pkgrel=1
+pkgrel=2
 pkgdesc="Wireless LAN network manager"
 url="https://01.org/connman"
 arch=('i686' 'x86_64')

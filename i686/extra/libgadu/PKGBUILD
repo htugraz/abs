@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 228347 2015-01-02 16:47:34Z bpiotrowski $
+# $Id: PKGBUILD 237439 2015-04-19 11:26:11Z andyrtr $
 # Maintainer:
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 
 pkgname=libgadu
 pkgver=1.12.1
-pkgrel=1
+pkgrel=2
 pkgdesc="This library implements the client side of the Gadu-Gadu protocol"
 arch=('i686' 'x86_64')
 url="http://libgadu.net/"

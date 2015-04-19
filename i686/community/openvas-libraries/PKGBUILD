@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 129999 2015-03-26 20:37:42Z thestinger $
+# $Id: PKGBUILD 131699 2015-04-19 11:30:00Z andyrtr $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 pkgname=openvas-libraries
 pkgver=7.0.9
-pkgrel=1
+pkgrel=2
 pkgdesc='The OpenVAS libraries'
 arch=('i686' 'x86_64')
 url="http://www.openvas.org/"
