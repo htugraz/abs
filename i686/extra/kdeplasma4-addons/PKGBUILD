@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 235535 2015-04-06 07:28:13Z arojas $
+# $Id: PKGBUILD 237778 2015-04-20 08:52:42Z arojas $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
@@ -79,7 +79,7 @@ pkgname=('kdeplasma-addons-applets-bball'
          'kdeplasma-addons-wallpapers-virus'
          'kdeplasma-addons-wallpapers-weather')
 pkgver=4.14.3
-pkgrel=4
+pkgrel=5
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/kdeplasma-addons'
 license=('GPL' 'LGPL')
