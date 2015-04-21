@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 129910 2015-03-25 16:16:49Z spupykin $
+# $Id: PKGBUILD 131841 2015-04-21 10:55:57Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sander Jansen <sander@knology.net>
 
 pkgname=gogglesmm
 pkgver=1.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Music Manager and Player"
 arch=('i686' 'x86_64')
 url="http://gogglesmm.github.io/"

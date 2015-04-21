@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 129011 2015-03-10 11:11:42Z spupykin $
+# $Id: PKGBUILD 131850 2015-04-21 15:24:06Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Norberto Lopes <shelika@mail.telepac.pt>
 
 pkgname=wanderlust
 #pkgver=2.15.9
-pkgver=20150310
+pkgver=20150421
 pkgrel=1
 pkgdesc="Mail/News reader supporting IMAP4rev1 for emacs."
 arch=(any)

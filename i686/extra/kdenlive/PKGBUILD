@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 237581 2015-04-19 15:55:44Z arojas $
+# $Id: PKGBUILD 237883 2015-04-21 20:45:03Z arojas $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Zuf <kontakt.zuf@gmail.com>
 # Contributor: Darwin Bautista <djclue917@gmail.com>
@@ -6,13 +6,13 @@
 
 pkgname=kdenlive
 pkgver=15.04.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A non-linear video editor for Linux using the MLT video framework"
 arch=('i686' 'x86_64')
 url="http://www.kdenlive.org/"
 license=('GPL')
 groups=('kde-applications' 'kdemultimedia')
-depends=('knewstuff' 'kplotting' 'knotifyconfig' 'mlt' 'glu' 'hicolor-icon-theme')
+depends=('knewstuff' 'kplotting' 'knotifyconfig' 'mlt' 'glu' 'sdl_image' 'hicolor-icon-theme')
 makedepends=('extra-cmake-modules' 'kdoctools' 'v4l-utils')
 optdepends=('ffmpeg: for FFmpeg plugin'
             'cdrkit: for creation of DVD ISO images'

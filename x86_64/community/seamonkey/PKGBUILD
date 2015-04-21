@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 129930 2015-03-26 02:38:35Z kkeen $
+# $Id: PKGBUILD 131814 2015-04-21 08:33:04Z foutrelis $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 
 pkgname=seamonkey
 pkgver=2.33.1
-pkgrel=1
+pkgrel=2
 pkgdesc="SeaMonkey internet suite"
 arch=('i686' 'x86_64')
 license=('MPL')

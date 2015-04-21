@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 129699 2015-03-21 14:42:01Z seblu $
+# $Id: PKGBUILD 131815 2015-04-21 08:33:08Z foutrelis $
 # Maintainer: Sébastien "Seblu" Luttringer
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 
@@ -11,7 +11,7 @@ pkgname=('virtualbox'
          'virtualbox-guest-utils-nox'
          'virtualbox-ext-vnc')
 pkgver=4.3.26
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 url='http://virtualbox.org'
 license=('GPL' 'custom')
