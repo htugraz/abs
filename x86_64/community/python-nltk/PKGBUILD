@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 123379 2014-12-03 10:10:57Z arodseth $
+# $Id: PKGBUILD 131944 2015-04-22 12:58:35Z arodseth $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 # Contributor: Chris Baker <baker.chris.3@gmail.com>
 
 pkgbase=python-nltk
 pkgname=('python2-nltk' 'python-nltk')
-pkgver=3.0.0
+pkgver=3.0.2
 pkgrel=1
 pkgdesc='Natural language processing in Python'
 arch=('any')
 url='http://www.nltk.org/'
 license=('APACHE')
-makedepends=('python-setuptools' 'python2-setuptools')
+makedepends=('python-setuptools' 'python2-setuptools' 'git')
 source=("git+https://github.com/nltk/nltk#tag=$pkgver")
 md5sums=('SKIP')
 

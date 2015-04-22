@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 229518 2015-01-18 10:12:51Z jgc $
+# $Id: PKGBUILD 237889 2015-04-22 06:35:25Z bpiotrowski $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Thomas Baechler <thomas@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=libdvdread
-pkgver=5.0.1
+pkgver=5.0.3
 pkgrel=1
 pkgdesc="Provides a simple foundation for reading DVD video disks"
 arch=(i686 x86_64)

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 114281 2014-07-01 14:16:15Z spupykin $
+# $Id: PKGBUILD 131911 2015-04-22 08:40:02Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Francois Charette <firmicus@gmx.net>
 
 pkgname=perl-sub-uplevel
-pkgver=0.24
-pkgrel=2
+pkgver=0.25
+pkgrel=1
 pkgdesc="apparently run a function in a higher stack frame "
 arch=('any')
 url="http://search.cpan.org/dist/Sub-Uplevel"
@@ -12,7 +12,7 @@ license=('GPL' 'PerlArtistic')
 depends=('perl')
 options=('!emptydirs')
 source=(http://www.cpan.org/authors/id/D/DA/DAGOLDEN/Sub-Uplevel-$pkgver.tar.gz)
-md5sums=('bea4037e8b2a0df563e25e6e44cb2e73')
+md5sums=('5d0752dbfa94d0c91b25a264f47f5675')
 
 build() {
   cd  $srcdir/Sub-Uplevel-$pkgver
