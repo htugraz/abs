@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 131095 2015-04-10 10:18:20Z fyan $
+# $Id: PKGBUILD 132406 2015-04-28 11:44:13Z bpiotrowski $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
@@ -7,7 +7,7 @@
 
 pkgname=mongodb
 pkgver=3.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc='A high-performance, open source, schema-free document-oriented database'
 arch=('i686' 'x86_64')
 url='http://www.mongodb.org'

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 125796 2015-01-12 09:41:56Z arodseth $
+# $Id: PKGBUILD 132377 2015-04-28 11:43:26Z bpiotrowski $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
 # Contributor: Douglas Soares de Andrade <douglas@archlinux.org>
@@ -6,7 +6,7 @@
 # Contributor: Hexchain Tong <richard0053@gmail.com>
 
 pkgname=botan
-pkgver=1.11.13
+pkgver=1.11.16
 pkgrel=1
 pkgdesc='Crypto library written in C++'
 license=('BSD')
@@ -15,9 +15,11 @@ url='http://botan.randombit.net/'
 depends=('gcc-libs' 'sh' 'asio')
 makedepends=('python2' 'asio')
 source=("http://botan.randombit.net/releases/Botan-${pkgver}.tgz"{,.asc})
-sha256sums=('81f826a609ec1eed8b0ede1b870b8dea1294f5314de807cf33cd7073c634e3c9'
+sha256sums=('a31a4e5e874aee6d1a5242b153b4ad7d2b2dda575d30f857bd317110ae3c6a7c'
             'SKIP')
 validpgpkeys=('621DAF6411E1851C4CF9A2E16211EBF1EFBADFBC') # Botan Distribution Key
+
+# To import the key: gpg --import botan.key
 
 prepare() {
   cd "Botan-$pkgver/src"

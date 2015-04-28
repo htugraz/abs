@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 130147 2015-03-28 16:32:14Z fyan $
+# $Id: PKGBUILD 132428 2015-04-28 11:44:51Z bpiotrowski $
 # Maintainer: Stéphane Gaudreault <stephane@archlinux.org>
 
 pkgbase=python-pyopencl
 pkgname=('python2-pyopencl' 'python-pyopencl' 'pyopencl-headers')
 pkgver=2014.1
-pkgrel=2
+pkgrel=3
 pkgdesc="A complete, object-oriented language binding of OpenCL to Python"
 arch=('i686' 'x86_64')
 url="http://mathema.tician.de/software/pyopencl"

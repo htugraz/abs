@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 130701 2015-04-05 04:32:38Z svenstaro $
+# $Id: PKGBUILD 132438 2015-04-28 11:45:13Z bpiotrowski $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Denis Martinez <deuns.martinez@gmail.com>
@@ -6,7 +6,7 @@
 pkgname=wt
 pkgver=3.3.4
 _pkgver=3.3.4
-pkgrel=2
+pkgrel=3
 pkgdesc="a C++ library and application server for developing and deploying web applications"
 arch=('i686' 'x86_64')
 url="http://www.webtoolkit.eu/"
@@ -37,15 +37,17 @@ build() {
       -DWEBGROUP=http \
       -DUSE_SYSTEM_SQLITE3=ON \
       -DINSTALL_EXAMPLES=ON \
+      -DBUILD_EXAMPLES=OFF \
+      -DINSTALL_FINDWT_CMAKE_FILE=ON \
       ..
   make
 }
 
 package() {
   cd ${srcdir}/${pkgname}-${_pkgver}/build
+
   make DESTDIR=${pkgdir} install
 
-  install -Dm644 ${pkgdir}/usr/cmake/FindWt.cmake ${pkgdir}/usr/share/cmake-3.2/Modules/FindWt.cmake
   rm -r ${pkgdir}/usr/cmake
   rm -rf $pkgdir/var/run
 }

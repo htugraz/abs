@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 131643 2015-04-18 19:07:50Z jlichtblau $
+# $Id: PKGBUILD 132384 2015-04-28 11:43:35Z bpiotrowski $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Jaroslaw Swierczynski <swiergot@aur.archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=encfs
 pkgver=1.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Encrypted filesystem in user-space'
 arch=('i686' 'x86_64')
 url='https://vgough.github.io/encfs/'

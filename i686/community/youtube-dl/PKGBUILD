@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 132015 2015-04-22 23:16:38Z eric $
+# $Id: PKGBUILD 132364 2015-04-28 03:31:00Z eric $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=youtube-dl
-pkgver=2015.04.17
+pkgver=2015.04.26
 pkgrel=1
 pkgdesc="A small command-line program to download videos from YouTube.com and a few more sites"
 arch=('any')
@@ -13,7 +13,7 @@ optdepends=('ffmpeg: for video post-processing'
             'rtmpdump: for rtmp streams support')
 source=(http://youtube-dl.org/downloads/${pkgver}/${pkgname}-${pkgver}.tar.gz
         http://youtube-dl.org/downloads/${pkgver}/${pkgname}-${pkgver}.tar.gz.sig)
-sha1sums=('ae22e3d0a0b58d621d42ba6ed5cb1a198fe6b7f2'
+sha1sums=('868f37b40727d6d533ddfaf9305f9bf1a05a7c21'
           'SKIP')
 validpgpkeys=('7D33D762FD6C35130481347FDB4B54CBA4826A18')
 
@@ -27,6 +27,7 @@ package() {
   cd ${pkgname}
   python setup.py install --root="${pkgdir}/" --optimize=1
   mv "${pkgdir}/usr/share/bash-completion/completions/youtube-dl.bash-completion" \
-    "${pkgdir}/usr/share/bash-completion/completions/youtube-dl"
+     "${pkgdir}/usr/share/bash-completion/completions/youtube-dl"
+  install -Dm644 youtube-dl.zsh "${pkgdir}/usr/share/zsh/site-functions/_youtube-dl"
   install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }

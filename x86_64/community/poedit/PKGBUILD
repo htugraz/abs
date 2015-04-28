@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 131060 2015-04-09 18:55:07Z heftig $
+# $Id: PKGBUILD 132420 2015-04-28 11:44:40Z bpiotrowski $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Giovanni Scafora <giovanni@archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=poedit
 pkgver=1.7.5
-pkgrel=2
+pkgrel=3
 pkgdesc="Cross-platform gettext catalogs (.po files) editor"
 arch=('i686' 'x86_64')
 url="http://www.poedit.net/"
