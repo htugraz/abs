@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 132414 2015-04-28 11:44:31Z bpiotrowski $
+# $Id: PKGBUILD 132482 2015-04-29 01:53:14Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 pkgname=openshadinglanguage
 pkgver=1.5.12
-pkgrel=5
+pkgrel=6
 pkgdesc="Advanced shading language for production GI renderers"
 arch=(i686 x86_64)
 url="https://github.com/imageworks/OpenShadingLanguage"
