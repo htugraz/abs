@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 130011 2015-03-27 01:58:17Z fyan $
+# $Id: PKGBUILD 132637 2015-05-02 09:45:39Z andyrtr $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 # Contributor: mortzu <me@mortzu.de>
 # Contributor: fnord0 <fnord0@riseup.net>
 
 pkgname=acpi_call-lts
 pkgver=1.1.0
-pkgrel=16
+pkgrel=17
 _extramodules=extramodules-3.14-lts
 pkgdesc='A linux kernel module that enables calls to ACPI methods through /proc/acpi/call'
 arch=('i686' 'x86_64')
 url="http://github.com/mkottman/${pkgname%-*}"
 license=('GPL')
-depends=('linux-lts>=3.14.36')
-makedepends=('linux-lts-headers>=3.14.36')
+depends=('linux-lts>=3.14.40')
+makedepends=('linux-lts-headers>=3.14.40')
 provides=("${pkgname%-*}")
 install="${pkgname%-*}.install"
 source=("acpi_call-$pkgver.tar.gz::${url}/archive/v${pkgver}.tar.gz")
