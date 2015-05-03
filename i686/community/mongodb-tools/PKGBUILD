@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 131083 2015-04-10 05:59:18Z fyan $
+# $Id: PKGBUILD 132661 2015-05-03 16:21:49Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=mongodb-tools
-pkgver=3.1.1
+pkgver=3.1.2
 pkgrel=1
 pkgdesc="The MongoDB tools provide import, export, and diagnostic capabilities."
 arch=('i686' 'x86_64')
