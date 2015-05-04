@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 235347 2015-04-02 15:13:46Z giovanni $
+# $Id: PKGBUILD 238477 2015-05-04 19:28:19Z giovanni $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Douglas Soares de Andrade <douglas@archlinux.org>
 
 pkgname=mercurial
-pkgver=3.3.3
+pkgver=3.4
 pkgrel=1
 pkgdesc="A scalable distributed SCM tool"
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ optdepends=('tk: for the hgk GUI')
 backup=('etc/mercurial/hgrc')
 source=("http://mercurial.selenic.com/release/${pkgname}-${pkgver}.tar.gz"
         'mercurial.profile')
-md5sums=('8648a6980fc12a5a424abe809ab4c6e5'
+md5sums=('4a2dcf2bd9fa11e758d44e481136eab7'
          '43e1d36564d4c7fbe9a091d3ea370a44')
 
 prepare() {

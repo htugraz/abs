@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 127776 2015-02-16 09:37:08Z bluewind $
+# $Id: PKGBUILD 132688 2015-05-04 09:37:39Z bluewind $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 _pkgbasename=libcups
 pkgname=lib32-$_pkgbasename
 pkgver=2.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="The CUPS Printing System - client libraries (32-bit)"
 arch=('x86_64')
 license=('GPL')

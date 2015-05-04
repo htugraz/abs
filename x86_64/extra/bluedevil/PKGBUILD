@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 238414 2015-05-03 18:39:30Z arojas $
+# $Id: PKGBUILD 238456 2015-05-04 07:12:53Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas <arojas@archlinux.org>
@@ -12,7 +12,7 @@ arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/bluedevil'
 license=('GPL2')
 depends=('bluez-qt' 'kio')
-makedepends=('extra-cmake-modules')
+makedepends=('extra-cmake-modules' 'plasma-framework' 'kded')
 conflicts=('bluedevil-frameworks')
 replaces=('bluedevil-frameworks')
 install="$pkgname.install"

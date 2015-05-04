@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 132633 2015-05-01 21:49:34Z svenstaro $
+# $Id: PKGBUILD 132704 2015-05-04 10:44:48Z bluewind $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Jan "heftig" Steffens <jan.steffens@gmail.com>
 # Contributor: Eduardo Romero <eduardo@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=wine
 pkgver=1.7.42
-pkgrel=1
+pkgrel=2
 
 _pkgbasever=${pkgver/rc/-rc}
 
