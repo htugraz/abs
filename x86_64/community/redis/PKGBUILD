@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 130489 2015-04-01 16:23:01Z spupykin $
+# $Id: PKGBUILD 132787 2015-05-05 14:09:34Z spupykin $
 # Maintainer:  Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Jan-Erik Rediger <badboy at archlinux dot us>
 # Contributor: nofxx <x@<nick>.com>
 
 pkgname=redis
-pkgver=3.0.0
+pkgver=3.0.1
 pkgrel=1
 pkgdesc='Advanced key-value store'
 arch=('i686' 'x86_64')
@@ -20,7 +20,7 @@ source=(http://download.redis.io/releases/redis-$pkgver.tar.gz
         redis.logrotate
         redis.conf-sane-defaults.patch
         redis-2.8.11-use-system-jemalloc.patch)
-md5sums=('cd8487159459d7575ba2664cb2a4819e'
+md5sums=('dd2bf1f65d75ed518313158086d4219b'
          'b557e370dcf35d8844b77d278e7be0a5'
          '9e2d75b7a9dc421122d673fe520ef17f'
          'b1beae6954b780da261b4056fd7f918a'
