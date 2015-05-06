@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 125119 2015-01-01 11:28:48Z heftig $
+# $Id: PKGBUILD 132818 2015-05-05 23:22:16Z heftig $
 # Maintainer: Thomas Dziedzic < gostrc at gmail >
 # Contributor: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Joeny Ang <ang(dot)joeny(at)gmail(dot)com>
 
 pkgname=simple-scan
-pkgver=3.14.2
+pkgver=3.16.1.1
 pkgrel=1
 pkgdesc='Simple scanning utility'
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ depends=('sane' 'dconf' 'gtk3' 'colord' 'hicolor-icon-theme')
 makedepends=('yelp-tools' 'intltool' 'vala')
 install=$pkgname.install
 source=(https://launchpad.net/$pkgname/${pkgver:0:4}/$pkgver/+download/$pkgname-$pkgver.tar.xz)
-sha256sums=('d46caaafd2dfe46cf7e022363842cf3da0721b70768de5d29c808d1e5953a6a3')
+sha256sums=('6917cf5eecfcd453822dabe824a7a48381b00dd85fe241e15407f584ba8e060c')
 
 build() {
   cd $pkgname-$pkgver

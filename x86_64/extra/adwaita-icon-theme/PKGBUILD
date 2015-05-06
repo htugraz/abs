@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 235813 2015-04-09 18:44:33Z heftig $
+# $Id: PKGBUILD 238549 2015-05-06 13:23:10Z heftig $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=adwaita-icon-theme
 pkgver=3.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Adwaita icon theme"
 arch=(any)
-depends=('hicolor-icon-theme' 'gtk-update-icon-cache')
+depends=('hicolor-icon-theme' 'gtk-update-icon-cache' 'librsvg')
 makedepends=('intltool' 'icon-naming-utils')
 url="http://www.gnome.org"
 license=('GPL')
