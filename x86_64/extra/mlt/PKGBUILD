@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 238492 2015-05-04 20:46:20Z arojas $
+# $Id: PKGBUILD 238734 2015-05-08 19:52:37Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Fabian Schoelzel <myfirstname.mylastname@googlemail.com>
@@ -31,7 +31,8 @@ build() {
   msg "SSE2=$SSE2"
   ./configure --prefix=/usr \
 	--avformat-swscale \
-	--enable-gpl --enable-gpl3
+	--enable-gpl --enable-gpl3 \
+	--qt-libdir=/usr/lib --qt-includedir=/usr/include/qt
   make
 
   # mlt python bindings

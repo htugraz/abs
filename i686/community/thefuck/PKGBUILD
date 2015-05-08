@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 132730 2015-05-04 14:21:05Z fyan $
+# $Id: PKGBUILD 132941 2015-05-08 06:48:07Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=thefuck
-pkgver=1.35
+pkgver=1.37
 pkgrel=1
 pkgdesc="Magnificent app which corrects your previous console command"
 arch=('any')
@@ -10,7 +10,7 @@ url="https://github.com/nvbn/thefuck"
 license=('MIT')
 depends=('python-setuptools' 'python-pathlib' 'python-psutil' 'python-six' 'python-colorama')
 makedepends=('git')
-checkdepends=('python-pytest' 'python-mock')
+checkdepends=('python-pytest-mock' 'python-mock')
 install=thefuck.install
 source=("git+https://github.com/nvbn/thefuck.git#tag=$pkgver")
 sha256sums=('SKIP')

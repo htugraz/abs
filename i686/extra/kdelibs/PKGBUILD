@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 238286 2015-04-30 08:31:51Z arojas $
+# $Id: PKGBUILD 238728 2015-05-08 19:06:40Z svenstaro $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
@@ -6,7 +6,7 @@
 pkgname=kdelibs
 pkgver=4.14.7
 _kdeappver=15.04.0
-pkgrel=2
+pkgrel=3
 pkgdesc="KDE Core Libraries"
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/kdelibs'

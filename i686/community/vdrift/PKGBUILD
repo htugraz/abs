@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 132485 2015-04-29 02:17:54Z svenstaro $
+# $Id: PKGBUILD 132986 2015-05-08 18:28:57Z ronald $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Anton Bazhenov <anton.bazhenov at gmail>
 # Contributor: Lone_Wolf lonewolf@xs4all.nl
 
 pkgname=vdrift
 pkgver=2014.10.20
-pkgrel=2
+pkgrel=3
 pkgdesc="Open source driving simulation made with drift racing in mind"
 arch=('i686' 'x86_64')
 url="http://vdrift.net/"
