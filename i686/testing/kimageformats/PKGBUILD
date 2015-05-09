@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 238667 2015-05-08 06:56:09Z arojas $
+# $Id: PKGBUILD 238740 2015-05-08 23:59:48Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kimageformats
 pkgver=5.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Image format plugins for Qt5'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kimageformats'

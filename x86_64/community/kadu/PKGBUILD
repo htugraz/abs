@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 129547 2015-03-18 18:46:34Z bpiotrowski $
+# $Id: PKGBUILD 133098 2015-05-09 15:42:52Z bpiotrowski $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Mateusz Herych
 # Contributor: Jaroslaw Swierczynski <swiergot@aur.archlinux.org>
 
 pkgname=kadu
 pkgver=2.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Qt-based Jabber/XMPP and Gadu-Gadu client'
 arch=('i686' 'x86_64')
 url='http://www.kadu.net/'
 license=('GPL')
 depends=('libgadu' 'libxss' 'enchant' 'phonon-qt5' 'qca-ossl' 'qca-qt5' 'libidn'
          'libmpdclient' 'libotr' 'libarchive' 'injeqt' 'xdg-utils' 'qt5-multimedia'
-         'qt5-quick1' 'qt5-declarative' 'qt5-webkit' 'qt5-x11extras')
+         'qt5-quick1' 'qt5-declarative' 'qt5-webkit' 'qt5-x11extras' 'qt5-svg')
 makedepends=('cmake' 'libao' 'libsndfile' 'libxtst' 'curl' 'chrpath' 'ninja'
              'qt5-tools')
 install=kadu.install
