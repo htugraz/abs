@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 128288 2015-02-26 16:30:30Z spupykin $
+# $Id: PKGBUILD 133212 2015-05-10 20:07:33Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Hans Janssen <janserv@gmail.com>
 # Contributor: my64 <packages@obordes.com>
@@ -6,7 +6,7 @@
 
 pkgname=openscenegraph
 pkgver=3.2.1
-pkgrel=4
+pkgrel=5
 pkgdesc="An Open Source, high performance real-time graphics toolkit"
 arch=('i686' 'x86_64')
 license=('custom:OSGPL')

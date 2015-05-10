@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 238390 2015-05-03 18:39:04Z arojas $
+# $Id: PKGBUILD 238903 2015-05-10 13:34:53Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kwin
 pkgver=5.3.0
-pkgrel=1
+pkgrel=3
 pkgdesc='KDE Window manager'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/kwin'

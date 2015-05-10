@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 230199 2015-01-28 16:09:52Z heftig $
+# $Id: PKGBUILD 238944 2015-05-10 18:55:14Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: György Balló <ballogy@freestart.hu>
 
 pkgname=gupnp
-pkgver=0.20.13
+pkgver=0.20.14
 pkgrel=1
 pkgdesc="An object-oriented UPNP framework"
 arch=(i686 x86_64)
@@ -13,7 +13,7 @@ depends=(gssdp util-linux)
 makedepends=(gobject-introspection gtk-doc vala) 
 optdepends=('python2: gupnp-binding-tool')
 source=(http://ftp.gnome.org/pub/gnome/sources/${pkgname}/${pkgver:0:4}/${pkgname}-${pkgver}.tar.xz)
-sha256sums=('d779b094f13097a5900689b3587e5b495d79112d0855ed842577acba25c902b3')
+sha256sums=('77ffb940ba77c4a6426d09d41004c75d92652dcbde86c84ac1c847dbd9ad59bd')
 
 prepare() {
   cd $pkgname-$pkgver

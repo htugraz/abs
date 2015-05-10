@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 238416 2015-05-03 18:39:33Z arojas $
+# $Id: PKGBUILD 238929 2015-05-10 13:35:21Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=kscreen
 pkgver=5.3.0
-pkgrel=1
+pkgrel=3
 pkgdesc="KDE's screen management software"
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/kscreen'

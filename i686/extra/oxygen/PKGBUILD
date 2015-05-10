@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 238391 2015-05-03 18:39:05Z arojas $
+# $Id: PKGBUILD 238904 2015-05-10 13:34:54Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
@@ -6,7 +6,7 @@
 pkgbase=oxygen
 pkgname=('oxygen' 'oxygen-cursors' 'oxygen-kde4')
 pkgver=5.3.0
-pkgrel=1
+pkgrel=3
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/oxygen'
 license=('LGPL')

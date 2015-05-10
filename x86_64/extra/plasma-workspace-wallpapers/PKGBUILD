@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 238408 2015-05-03 18:39:25Z arojas $
+# $Id: PKGBUILD 238921 2015-05-10 13:35:10Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgname=plasma-workspace-wallpapers
 pkgver=5.3.0
-pkgrel=1
+pkgrel=3
 pkgdesc='Additional wallpapers for the Plasma Workspace'
 arch=('any')
 url='https://projects.kde.org/projects/kde/workspace/plasma-workspace'

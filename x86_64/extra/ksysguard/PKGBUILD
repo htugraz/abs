@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 238402 2015-05-03 18:39:16Z arojas $
+# $Id: PKGBUILD 238915 2015-05-10 13:35:04Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgname=ksysguard
 pkgver=5.3.0
-pkgrel=1
+pkgrel=3
 pkgdesc='Track and control the processes running in your system'
 arch=('i686' 'x86_64')
 url='https://userbase.kde.org/KSysGuard'

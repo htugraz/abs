@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 238387 2015-05-03 18:39:01Z arojas $
+# $Id: PKGBUILD 238900 2015-05-10 13:34:50Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kfilemetadata
 pkgver=5.9.0
 _pkgver=5.3.0
-pkgrel=1
+pkgrel=3
 pkgdesc="A library for extracting file metadata"
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/kdelibs/kfilemetadata'

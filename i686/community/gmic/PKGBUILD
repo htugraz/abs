@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 132212 2015-04-24 21:31:30Z spupykin $
+# $Id: PKGBUILD 133210 2015-05-10 20:07:15Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Jan "heftig" Steffens <jan.steffens@gmail.com>
 # Contributor: farid <farid at archlinuc-br.org>
@@ -7,7 +7,7 @@
 pkgbase=gmic
 pkgname=("gmic" "gimp-plugin-gmic" "zart")
 pkgver=1.6.2.0
-pkgrel=2
+pkgrel=3
 arch=("i686" "x86_64")
 url="http://gmic.sourceforge.net"
 license=("custom:CeCILL")

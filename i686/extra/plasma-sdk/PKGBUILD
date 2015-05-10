@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 238420 2015-05-03 18:39:37Z arojas $
+# $Id: PKGBUILD 238933 2015-05-10 13:35:27Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=plasma-sdk
 pkgver=5.3.0
-pkgrel=1
+pkgrel=3
 pkgdesc="Applications useful for Plasma development"
 arch=(i686 x86_64)
 url='https://projects.kde.org/projects/extragear/sdk/plasma-sdk'

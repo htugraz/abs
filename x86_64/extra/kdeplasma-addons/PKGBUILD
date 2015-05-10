@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 238413 2015-05-03 18:39:30Z arojas $
+# $Id: PKGBUILD 238926 2015-05-10 13:35:15Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeplasma-addons
 pkgver=5.3.0
-pkgrel=1
+pkgrel=3
 pkgdesc='All kind of addons to improve your Plasma experience'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/kdeplasma-addons'
