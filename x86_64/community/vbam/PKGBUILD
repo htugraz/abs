@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 131020 2015-04-09 09:22:27Z alucryd $
+# $Id: PKGBUILD 133230 2015-05-11 12:57:41Z alucryd $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
 
 pkgbase=vbam
 pkgname=('vbam-sdl' 'vbam-gtk' 'vbam-wx')
 pkgver=1.8.0.1292
-pkgrel=1
+pkgrel=2
 pkgdesc='Nintendo GameBoy Advance emulator'
 arch=('i686' 'x86_64')
 url='http://vba-m.com'
