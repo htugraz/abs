@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 237564 2015-04-19 15:55:16Z arojas $
+# $Id: PKGBUILD 239072 2015-05-12 07:55:24Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-palapeli
-pkgver=15.04.0
+pkgver=15.04.1
 pkgrel=1
 pkgdesc="A single-player jigsaw puzzle game"
 url="http://kde.org/applications/games/palapeli/"
@@ -14,7 +14,7 @@ depends=('kdebase-runtime' 'libkdegames4' 'qhull')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/palapeli-${pkgver}.tar.xz")
-sha1sums=('afa909a2f20eb0b51a626afb9370b5fadb6ff866')
+sha1sums=('4a84b31498e81c1b7d15d714d525d23d970cdc02')
 
 build() {
   mkdir build

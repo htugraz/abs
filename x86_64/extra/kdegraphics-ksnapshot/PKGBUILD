@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 237573 2015-04-19 15:55:29Z arojas $
+# $Id: PKGBUILD 239081 2015-05-12 07:58:37Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-ksnapshot
-pkgver=15.04.0
+pkgver=15.04.1
 pkgrel=1
 pkgdesc="Screen Capture Program"
 url="http://kde.org/applications/graphics/ksnapshot/"
@@ -15,7 +15,7 @@ makedepends=('cmake' 'automoc4')
 optdepends=('kipi-plugins')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/ksnapshot-${pkgver}.tar.xz")
-sha1sums=('a0d65abf7a50250027491c1ceb7e4ab98bbb8ec2')
+sha1sums=('d4a405d034f6e1f18465072d43c78e900258ca99')
 
 build() {
   cd "${srcdir}"

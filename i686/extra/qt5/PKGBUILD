@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 238860 2015-05-10 08:32:12Z foutrelis $
+# $Id: PKGBUILD 239192 2015-05-12 15:36:53Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
@@ -28,7 +28,7 @@ pkgname=('qt5-base'
          'qt5-x11extras'
          'qt5-xmlpatterns')
 pkgver=5.4.1
-pkgrel=6
+pkgrel=7
 arch=('i686' 'x86_64')
 url='http://qt-project.org/'
 license=('GPL3' 'LGPL' 'FDL' 'custom')
@@ -120,6 +120,7 @@ build() {
     -dbus-linked \
     -system-harfbuzz \
     -journald \
+    -no-use-gold-linker \
     -reduce-relocations ${SSE2}
 
   make

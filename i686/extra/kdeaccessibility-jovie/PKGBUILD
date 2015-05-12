@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 237496 2015-04-19 15:53:20Z arojas $
+# $Id: PKGBUILD 239002 2015-05-12 07:20:31Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeaccessibility-jovie
-pkgver=15.04.0
+pkgver=15.04.1
 pkgrel=1
 arch=('i686' 'x86_64')
 pkgdesc='A text to speech application'
@@ -15,7 +15,7 @@ makedepends=('cmake' 'automoc4')
 replaces=('kdeaccessibility-kttsd')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/jovie-${pkgver}.tar.xz")
-sha1sums=('14d4262747e20200cc42734739fab098c19bb9ff')
+sha1sums=('2d4bf6ddd91fd55926a65fba99ac249de4cf9f5e')
 
 build() {
   mkdir build

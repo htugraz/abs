@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 237617 2015-04-19 15:56:48Z arojas $
+# $Id: PKGBUILD 239171 2015-05-12 15:01:42Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-umbrello
-pkgver=15.04.0
+pkgver=15.04.1
 pkgrel=1
 pkgdesc='UML Modeller'
 url='http://kde.org/applications/development/umbrello/'
@@ -15,7 +15,7 @@ makedepends=('cmake' 'automoc4' 'boost')
 optdepends=('ruby')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/umbrello-${pkgver}.tar.xz")
-sha1sums=('25c9fe364434ed204d12c213640794150d7a0251')
+sha1sums=('93c007b788a59b705700abca28a4393cac012b11')
 
 build() {
   mkdir build

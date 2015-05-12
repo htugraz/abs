@@ -1,21 +1,21 @@
-# $Id: PKGBUILD 237597 2015-04-19 15:56:03Z arojas $
+# $Id: PKGBUILD 239105 2015-05-12 08:07:21Z arojas $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=telepathy-kde-contact-runner
 _pkgname=ktp-contact-runner
-pkgver=15.04.0
+pkgver=15.04.1
 pkgrel=1
 pkgdesc='KRunner plugin for KDE Telepathy'
 arch=('i686' 'x86_64')
 url='http://community.kde.org/Real-Time_Communication_and_Collaboration'
 license=('GPL')
-groups=('kde-applications' 'kdenetwork')
+groups=('kde-applications' 'kdenetwork' 'telepathy-kde')
 depends=('telepathy-kde-common-internals' 'krunner')
 makedepends=('extra-cmake-modules' 'kdoctools' 'python')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/$_pkgname-${pkgver}.tar.xz")
-md5sums=('c30efcf8c5388d190410963a087a7bb4')
+md5sums=('e014f7d0a50335f6821a8131d5b47acb')
 
 prepare() {
   mkdir -p build

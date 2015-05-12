@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 237565 2015-04-19 15:55:18Z arojas $
+# $Id: PKGBUILD 239073 2015-05-12 07:55:48Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-picmi
-pkgver=15.04.0
+pkgver=15.04.1
 pkgrel=1
 pkgdesc="A nonogram logic game for KDE"
 url="http://kde.org/applications/games/picmi/"
@@ -16,7 +16,7 @@ replaces=('picmi')
 conflicts=('picmi')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/picmi-${pkgver}.tar.xz")
-sha1sums=('eae0975bd7caccb3e6e8900f75299d12af904294')
+sha1sums=('864036a835171c1bab53cf9866ab3734832d1f8c')
 
 build() {
   mkdir build

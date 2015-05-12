@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 102366 2013-12-09 14:03:20Z spupykin $
+# $Id: PKGBUILD 133333 2015-05-12 16:52:10Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=fbreader
 pkgver=0.99.4
-pkgrel=4
+pkgrel=5
 pkgdesc="An e-book reader for Linux"
 arch=('i686' 'x86_64')
 url="http://www.fbreader.org/"

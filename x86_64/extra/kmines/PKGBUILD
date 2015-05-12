@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 237547 2015-04-19 15:54:49Z arojas $
+# $Id: PKGBUILD 239055 2015-05-12 07:49:19Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kmines
-pkgver=15.04.0
+pkgver=15.04.1
 pkgrel=1
 pkgdesc="The classic Minesweeper game"
 url="http://kde.org/applications/games/kmines/"
@@ -16,7 +16,7 @@ install=${pkgname}.install
 conflicts=('kdegames-kmines')
 replaces=('kdegames-kmines')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kmines-${pkgver}.tar.xz")
-sha1sums=('86e74c65409fc6903de6d2da28b63328cc7290d7')
+sha1sums=('e44b3d9cacf97aef8330f3e84871b070f632dca8')
 
 build() {
   mkdir build

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 237521 2015-04-19 15:53:59Z arojas $
+# $Id: PKGBUILD 239029 2015-05-12 07:39:02Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kturtle
-pkgver=15.04.0
+pkgver=15.04.1
 pkgrel=1
 pkgdesc="Educational Programming Environment"
 url="http://kde.org/applications/education/kturtle/"
@@ -16,7 +16,7 @@ install=${pkgname}.install
 conflicts=('kdeedu-kturtle')
 replaces=('kdeedu-kturtle')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kturtle-${pkgver}.tar.xz")
-sha1sums=('9660ba50f35ac531025f870aaa5d82cb4e2012db')
+sha1sums=('67a04ac40e23dcf940291649318d865b88de005d')
 
 build() {
   cd "${srcdir}"

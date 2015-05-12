@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 237589 2015-04-19 15:55:54Z arojas $
+# $Id: PKGBUILD 239097 2015-05-12 08:04:40Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-krdc
-pkgver=15.04.0
+pkgver=15.04.1
 pkgrel=1
 pkgdesc='Remote Desktop Client'
 url='http://kde.org/applications/internet/krdc/'
@@ -16,7 +16,7 @@ optdepends=('libvncserver: VNC support'
             'freerdp: RDP support'
             'kdebase-keditbookmarks: to edit bookmarks')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/krdc-${pkgver}.tar.xz")
-sha1sums=('3012df211ccf84b5c5077c2ccc8d20f6270a1ee7')
+sha1sums=('5ce228309d4902425811c2e260a8d338e4a00a20')
 
 prepare() {
   mkdir build

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 237523 2015-04-19 15:54:02Z arojas $
+# $Id: PKGBUILD 239031 2015-05-12 07:39:49Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-pairs
-pkgver=15.04.0
+pkgver=15.04.1
 pkgrel=1
 pkgdesc="A memory and pairs game for KDE"
 url="https://projects.kde.org/projects/kde/kdeedu/pairs"
@@ -14,7 +14,7 @@ depends=('kdebase-runtime')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/pairs-${pkgver}.tar.xz")
-sha1sums=('068b7218b683dc2c80ee1ef8e14679a6610388a8')
+sha1sums=('a196ebc5d4a0996538da04755355bdf86998b51d')
 
 build() {
   cd "${srcdir}"

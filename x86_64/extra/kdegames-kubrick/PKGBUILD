@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 237562 2015-04-19 15:55:13Z arojas $
+# $Id: PKGBUILD 239070 2015-05-12 07:54:45Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kubrick
-pkgver=15.04.0
+pkgver=15.04.1
 pkgrel=1
 pkgdesc="Based on the famous Rubik's Cube"
 url="http://kde.org/applications/games/kubrick/"
@@ -14,7 +14,7 @@ depends=('kdebase-runtime' 'libkdegames4' 'glu')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kubrick-${pkgver}.tar.xz")
-sha1sums=('6670d51f3c861f94ea01c06411ed89e29600bde0')
+sha1sums=('021ededf1c720fecafd8b0ea78c38259ad5bf1ea')
 
 prepare() {
   mkdir build

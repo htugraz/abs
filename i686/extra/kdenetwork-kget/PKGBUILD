@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 237586 2015-04-19 15:55:50Z arojas $
+# $Id: PKGBUILD 239094 2015-05-12 08:03:11Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-kget
-pkgver=15.04.0
+pkgver=15.04.1
 pkgrel=1
 pkgdesc='Download Manager'
 url='http://kde.org/applications/internet/kget/'
@@ -14,7 +14,7 @@ depends=('kdebase-runtime' 'kdebase-lib' 'libktorrent' 'libmms' 'kdepimlibs')
 makedepends=('cmake' 'automoc4' 'boost')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kget-${pkgver}.tar.xz")
-sha1sums=('b3a27541e472bdb79518f9f8e23b177fdda8f43e')
+sha1sums=('138bbf03492066f0859f99bd2a485e38f298762d')
 
 prepare() {
   mkdir build

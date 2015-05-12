@@ -1,21 +1,21 @@
-# $Id: PKGBUILD 237598 2015-04-19 15:56:04Z arojas $
+# $Id: PKGBUILD 239106 2015-05-12 08:07:41Z arojas $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=telepathy-kde-desktop-applets
 _pkgname=ktp-desktop-applets
-pkgver=15.04.0
+pkgver=15.04.1
 pkgrel=1
 pkgdesc='The KDE-Telepathy Plasma desktop applets'
 arch=('i686' 'x86_64')
 url='http://community.kde.org/Real-Time_Communication_and_Collaboration'
 license=('GPL')
-groups=('kde-applications' 'kdenetwork')
+groups=('kde-applications' 'kdenetwork' 'telepathy-kde')
 depends=('telepathy-kde-common-internals' 'telepathy-kde-accounts-kcm')
 makedepends=('extra-cmake-modules' 'plasma-framework')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/$_pkgname-${pkgver}.tar.xz")
-md5sums=('17cccad5ff7addddfb8ca4d3d6b32838')
+md5sums=('97a8e55c83d961bd7223587e8c33db49')
 
 prepare() {
   mkdir -p build

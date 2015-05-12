@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 237546 2015-04-19 15:54:48Z arojas $
+# $Id: PKGBUILD 239054 2015-05-12 07:48:59Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kmahjongg
-pkgver=15.04.0
+pkgver=15.04.1
 pkgrel=1
 pkgdesc="A tile matching game for one or two players"
 url="http://kde.org/applications/games/kmahjongg/"
@@ -14,7 +14,7 @@ depends=('kdebase-runtime' 'libkmahjongg4' 'libkdegames4')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kmahjongg-${pkgver}.tar.xz")
-sha1sums=('a13fd83565dce8fb64e8797de46485c201e42b33')
+sha1sums=('850c5a7252fad74d7769f74606f210b022d4767a')
 
 build() {
   mkdir build
