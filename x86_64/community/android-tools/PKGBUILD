@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 131078 2015-04-09 19:35:54Z anatolik $
+# $Id: PKGBUILD 133390 2015-05-14 04:16:32Z anatolik $
 # Maintainer: Anatol Pomozov
 # Contributor: 謝致邦 <Yeking@Red54.com>
 # Contributor: Alucryd <alucryd at gmail dot com>
 
 pkgname=android-tools
-pkgver=5.1.0_r3
+pkgver=5.1.1_r2
 pkgrel=1
 pkgdesc='Android platform tools'
 arch=(i686 x86_64)
