@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 108692 2014-04-01 11:51:44Z flexiondotorg $
+# $Id: PKGBUILD 133583 2015-05-16 16:23:36Z anatolik $
 # Maintainer : Martin Wimpress <code@flexion.org>
 
 pkgname=gpick
 pkgver=0.2.5
-pkgrel=3
+pkgrel=4
 pkgdesc="Advanced color picker written in C++ using GTK+ toolkit"
 arch=('i686' 'x86_64')
 url="http://gpick.googlecode.com/"

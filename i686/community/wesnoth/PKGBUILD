@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 132437 2015-04-28 11:45:11Z bpiotrowski $
+# $Id: PKGBUILD 133605 2015-05-16 16:24:07Z anatolik $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
@@ -7,12 +7,12 @@
 
 pkgname=wesnoth
 pkgver=1.12.2
-pkgrel=2
+pkgrel=3
 pkgdesc="A turn-based strategy game on a fantasy world"
 arch=('i686' 'x86_64')
 license=('GPL')
 url="http://www.wesnoth.org/"
-depends=('sdl_ttf' 'sdl_net' 'sdl_mixer' 'sdl_image' 'fribidi' 'boost-libs' 'pango' 'lua' 'wesnoth-data' 'dbus' 'python2')
+depends=('sdl_ttf' 'sdl_net' 'sdl_mixer' 'sdl_image' 'fribidi' 'boost-libs' 'pango' 'lua52' 'wesnoth-data' 'dbus' 'python2')
 makedepends=('boost' 'cmake'' git')
 install=wesnoth.install
 options=(!emptydirs)

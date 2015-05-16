@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 130071 2015-03-28 09:51:05Z jlichtblau $
+# $Id: PKGBUILD 133587 2015-05-16 16:23:40Z anatolik $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Sébastien Luttringer
 
 pkgname=ldoc
 pkgver=1.4.3
-pkgrel=1
+pkgrel=2
 pkgdesc='LuaDoc-compatible documentation generation system'
 arch=('any')
 url='http://stevedonovan.github.com/ldoc/'
@@ -18,8 +18,8 @@ package() {
   cd LDoc-$pkgver
 
   # install library
-  install -dm755 "$pkgdir/usr/share/lua/5.2"
-  cp -a ldoc "$pkgdir/usr/share/lua/5.2"
+  install -dm755 "$pkgdir/usr/share/lua/5.3"
+  cp -a ldoc "$pkgdir/usr/share/lua/5.3"
 
   # install binaries
   install -Dm755 ldoc.lua "$pkgdir/usr/bin/ldoc.lua"

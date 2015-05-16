@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 129158 2015-03-12 22:31:06Z stativ $
+# $Id: PKGBUILD 133574 2015-05-16 10:21:07Z stativ $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname=luxmark
 pkgver=3.0
 _scenever=3.0beta2
 _pkgver=985b948aa5c7
-pkgrel=1
+pkgrel=2
 pkgdesc="OpenCL benchmark tool"
 arch=('x86_64') # because of embree only x86_64 is supported
 url="http://www.luxrender.net/"
 license=('GPL3')
-depends=('boost-libs' 'freetype2' 'glew' 'libcl' 'libgl' 'libpng' 'openimageio' 'qt4')
+depends=('boost-libs' 'freetype2' 'freeglut' 'glew' 'libcl' 'libgl' 'libpng' 'openimageio' 'qt4')
 makedepends=('cmake' 'boost' 'luxrays' 'mesa' 'opencl-headers' 'embree' 'freeglut')
 optdepends=('opencl-nvidia: OpenCL support for nVidia GPUs' \
             'amdapp-sdk: OpenCL support for AMD GPUs' \

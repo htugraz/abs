@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 235896 2015-04-09 18:46:43Z heftig $
+# $Id: PKGBUILD 239469 2015-05-16 16:22:39Z anatolik $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=grilo-plugins
 pkgver=0.2.14
-pkgrel=1
+pkgrel=2
 pkgdesc="Plugins for Grilo"
 url="http://www.gnome.org"
 arch=(i686 x86_64)

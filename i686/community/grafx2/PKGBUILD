@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 116844 2014-08-04 11:16:26Z arodseth $
+# $Id: PKGBUILD 133584 2015-05-16 16:23:37Z anatolik $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Simon Parzer <simon.parzer@gmail.com>
 
 pkgname=grafx2
 pkgver=2.4
-pkgrel=6
+pkgrel=7
 _pkgrev=2035
 pkgdesc='Pixelart-oriented painting program'
 arch=('x86_64' 'i686')

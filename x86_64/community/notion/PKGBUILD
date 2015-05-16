@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 126150 2015-01-18 20:56:14Z spupykin $
+# $Id: PKGBUILD 133600 2015-05-16 16:24:00Z anatolik $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Eugen Zagorodniy e dot zagorodniy at gmail dot com
 # Contributor: aunoor
 
 pkgname=notion
-pkgver=20150118
+pkgver=20150505
 pkgrel=1
 pkgdesc="Tabbed tiling, window manager. Fork of Ion3"
 url="http://sourceforge.net/projects/notion/"
@@ -54,12 +54,13 @@ md5sums=('SKIP'
 prepare() {
   cd ${srcdir}
   cat >notion/build/lua-detect.mk <<EOF
-LUA_VERSION := 5.2
+LUA_VERSION := 5.3
 LUA_LIBS     := $(pkg-config --libs lua)
 LUA_INCLUDES := $(pkg-config --cflags lua)
 LUA          := $(which lua)
 LUAC         := $(which luac)
 EOF
+  sed -i 's|return \(lua_sethook.*\)|\1 return 0;|g' notion/libextl/luaextl.c
 }
 
 build() {

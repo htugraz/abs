@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 125716 2015-01-10 23:20:22Z bpiotrowski $
+# $Id: PKGBUILD 133580 2015-05-16 16:23:32Z anatolik $
 # Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Sébastien Luttringer
@@ -8,7 +8,7 @@
 
 pkgname=awesome
 pkgver=3.5.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Highly configurable framework window manager'
 arch=('i686' 'x86_64')
 url='http://awesome.naquadah.org/'
@@ -35,7 +35,7 @@ build() {
     -DCMAKE_BUILD_TYPE=RELEASE \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DSYSCONFDIR=/etc \
-    -DLUA_LIBRARY=/usr/lib/liblua.so.5.2
+    -DLUA_LIBRARY=/usr/lib/liblua.so.5.3
   make
 }
 
