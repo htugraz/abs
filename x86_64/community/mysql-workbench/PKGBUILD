@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 132235 2015-04-25 16:25:23Z eworm $
+# $Id: PKGBUILD 133734 2015-05-18 16:20:57Z lcarlier $
 # Maintainer: Christian Hesse <mail@eworm.de>
 # Contributor: Alexandre Boily <alexandreboily@gmail.com>
 # Contributor: Illarion Kovalchuk <illarion.kovalchuk@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=mysql-workbench
 pkgver=6.3.3
-pkgrel=1
+pkgrel=2
 pkgdesc='A cross-platform, visual database design tool developed by MySQL'
 arch=('i686' 'x86_64')
 url='https://www.mysql.com/products/workbench/'

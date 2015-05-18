@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 216456 2014-07-04 04:07:16Z fyan $
+# $Id: PKGBUILD 239529 2015-05-18 16:20:13Z lcarlier $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 
 pkgname=ebook-tools
 pkgver=0.2.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Tools for accessing and converting various ebook file formats"
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/ebook-tools/"

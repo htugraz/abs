@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 129686 2015-03-21 13:00:28Z svenstaro $
+# $Id: PKGBUILD 133735 2015-05-18 16:20:58Z lcarlier $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Johan Rehnberg <cleanrock@gmail.com>
 
 pkgname=naev
 pkgver=0.6.0
-pkgrel=1
+pkgrel=2
 pkgdesc='2D action/rpg space game'
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/naev/"
