@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 204253 2014-01-15 16:22:15Z lcarlier $
+# $Id: PKGBUILD 239570 2015-05-19 21:07:13Z foutrelis $
 # Maintainer: Laurent Carlier <lordheavym@gmail.com>
 
 pkgname=wxpython2.8
 pkgver=2.8.12.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A wxWidgets GUI toolkit for Python"
 arch=('i686' 'x86_64')
 license=('custom:wxWindows')
