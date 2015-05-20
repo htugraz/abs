@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 132056 2015-04-23 14:58:59Z giovanni $
+# $Id: PKGBUILD 133885 2015-05-20 14:25:32Z giovanni $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Alessio 'mOLOk' Bolognino <themolok@gmail.com>
 
 pkgname=man-pages-it
-pkgver=3.80
+pkgver=4.00
 pkgrel=1
 pkgdesc="Italian man pages"
 arch=('any')
@@ -12,7 +12,7 @@ license=('GPL')
 depends=('man-pages')
 options=('!emptydirs')
 source=("ftp://ftp.pluto.it/pub/pluto/ildp/man/$pkgname-$pkgver.tar.xz")
-md5sums=('d386f809a0d61a99b53d3a7cfb85a3d9')
+md5sums=('f73eb8ef8f758e83d4f04dec70ba34b0')
 
 package() {
   cd ${srcdir}/${pkgname}-${pkgver}
