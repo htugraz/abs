@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 234437 2015-03-21 09:02:13Z andyrtr $
+# $Id: PKGBUILD 239639 2015-05-21 18:22:33Z andyrtr $
 #Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xorg-fonts-misc
 pkgver=1.0.3
-pkgrel=3
+pkgrel=4
 pkgdesc="X.org misc fonts"
 arch=(any)
 url="http://xorg.freedesktop.org/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 123260 2014-11-28 17:08:25Z tredaelli $
+# $Id: PKGBUILD 133919 2015-05-21 13:21:04Z tredaelli $
 # Maintainer: Timothy Redaelli <timothy.redaelli@gmail.com>
 # Contributor: Sébastien Luttringer
 # Contributor: kevku <kevku@msn.com>
 
 pkgname=opensc
-pkgver=0.14.0
+pkgver=0.15.0
 pkgrel=1
 pkgdesc='Tools and libraries for smart cards'
 arch=('x86_64' 'i686')
@@ -15,7 +15,7 @@ makedepends=('docbook-xsl')
 depends=('openssl' 'pcsclite' 'libltdl')
 options=('!emptydirs')
 source=("http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.gz")
-md5sums=('8e99885dbe28a9c71d5140f0105c56ff')
+md5sums=('01e6b803865f7b7574ee65a7b2d63c17')
 
 build() {
   cd $pkgname-$pkgver
