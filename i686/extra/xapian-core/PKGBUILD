@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 232895 2015-03-05 13:25:37Z fyan $
+# $Id: PKGBUILD 239647 2015-05-21 23:12:32Z allan $
 # Contributor: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
@@ -8,7 +8,7 @@
 pkgname=xapian-core
 epoch=1
 pkgver=1.2.20
-pkgrel=1
+pkgrel=2
 pkgdesc='Open source search engine library.'
 arch=('i686' 'x86_64')
 url='http://www.xapian.org/'

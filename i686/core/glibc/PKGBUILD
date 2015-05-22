@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 237947 2015-04-23 05:23:12Z allan $
+# $Id: PKGBUILD 239642 2015-05-21 23:12:03Z allan $
 # Maintainer: Allan McRae <allan@archlinux.org>
 
 # toolchain build order: linux-api-headers->glibc->binutils->gcc->binutils->glibc
@@ -8,13 +8,13 @@
 
 pkgname=glibc
 pkgver=2.21
-pkgrel=3
+pkgrel=4
 pkgdesc="GNU C Library"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/libc"
 license=('GPL' 'LGPL')
 groups=('base')
-depends=('linux-api-headers>=3.18' 'tzdata' 'filesystem')
+depends=('linux-api-headers>=4.0' 'tzdata' 'filesystem')
 makedepends=('gcc>=4.9')
 backup=(etc/gai.conf
         etc/locale.gen
