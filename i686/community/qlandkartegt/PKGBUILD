@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 129178 2015-03-13 14:15:29Z jlichtblau $
+# $Id: PKGBUILD 134028 2015-05-24 09:20:05Z arojas $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Matthias Maennich <arch@maennich.net>
 # Contributor: <boenki@gmx.de>
 
 pkgname=qlandkartegt
 pkgver=1.8.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Use your GPS with Linux"
 arch=('i686' 'x86_64')
 url="http://www.qlandkarte.org/"
