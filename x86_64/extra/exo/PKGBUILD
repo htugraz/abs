@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 234955 2015-03-26 07:54:29Z foutrelis $
+# $Id: PKGBUILD 239748 2015-05-25 19:27:49Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: tobias <tobias funnychar archlinux.org>
 # Contributor: Aurelien Foret <orelien@chez.com>
 
 pkgname=exo
-pkgver=0.10.4
-pkgrel=3
+pkgver=0.10.6
+pkgrel=1
 pkgdesc="Extensions to Xfce by os-cillation"
 arch=('i686' 'x86_64')
 url="http://www.xfce.org/"
@@ -14,26 +14,11 @@ groups=('xfce4')
 depends=('libxfce4ui' 'gtk2' 'perl-uri' 'hicolor-icon-theme')
 makedepends=('intltool' 'gtk-doc')
 install=$pkgname.install
-source=(http://archive.xfce.org/src/xfce/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.bz2
-        0001-Fix-StartupNotify-Bug-9570-thanks-Thaddaeus.patch
-        0001-Fix-implicit-declaration-of-function-xfce_spawn_on_s.patch
-        0001-Do-not-use-x-scheme-handler-file-mimetype-bug-7257.patch)
-sha256sums=('cced5fdbc0b61a5d976210ff71ecdd81b89fcd15e5860a44f50da7b83fb2deaa'
-            'a8f8970b4abd2b8306f402208ddea96088fdc2a804502429ba17aac65cac127d'
-            'cf5f87b3a0d7bf480434f76133473171d36fdcec3cdf79ffcdc6b673b09eb9c8'
-            'c88e796ae965db83ec340a1530dbcc48aab39062b7499bf7834cf3459555bdb9')
+source=(http://archive.xfce.org/src/xfce/$pkgname/${pkgver%.*}/$pkgname-$pkgver.tar.bz2)
+sha256sums=('1cc0e5a432e050a5e5aa64d126b988f4440da4f27474aaf42a4d8e13651d0752')
 
 prepare() {
   cd "$srcdir/$pkgname-$pkgver"
-
-  # Revert startup notification support; prevents some applications started by
-  # exo-helper to receive focus (FS#44282)
-  # https://bugzilla.xfce.org/show_bug.cgi?id=9570#c18
-  patch -Rp1 -i ../0001-Fix-implicit-declaration-of-function-xfce_spawn_on_s.patch
-  patch -Rp1 -i ../0001-Fix-StartupNotify-Bug-9570-thanks-Thaddaeus.patch
-
-  # https://bugzilla.xfce.org/show_bug.cgi?id=7257
-  patch -Np1 -i ../0001-Do-not-use-x-scheme-handler-file-mimetype-bug-7257.patch
 }
 
 build() {
@@ -42,9 +27,6 @@ build() {
   ./configure \
     --prefix=/usr \
     --sysconfdir=/etc \
-    --libexecdir=/usr/lib/xfce4 \
-    --localstatedir=/var  \
-    --disable-static \
     --enable-gtk-doc \
     --disable-debug
   make
