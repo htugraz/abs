@@ -1,22 +1,27 @@
-# $Id: PKGBUILD 235221 2015-03-28 14:44:03Z fyan $
+# $Id: PKGBUILD 239761 2015-05-26 09:37:06Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: lilydjwg <lilydjwg@gmail.com>
 
 _name=cffi
 pkgbase=python-$_name
 pkgname=(python-$_name python2-$_name)
-pkgver=0.9.2
-pkgrel=2
+pkgver=1.0.3
+pkgrel=1
 pkgdesc="Foreign Function Interface for Python calling C code"
 arch=('i686' 'x86_64')
 url="http://cffi.readthedocs.org/"
 license=('MIT')
 makedepends=('python-setuptools' 'python2-setuptools' 'python-pycparser' 'python2-pycparser')
 checkdepends=('python-pytest' 'python2-pytest')
-source=("http://pypi.python.org/packages/source/c/${_name}/${_name}-${pkgver}.tar.gz")
-sha512sums=('93371a1189955d3f794915f8e7c6f6b9ab36cd531ff0ddeeb2108364c94dbf4dbe5d7d3f75e0aa52576d1a59559c13ec3e0f68dec4d52e6221e683ac519b850c')
+source=("https://pypi.python.org/packages/source/c/${_name}/${_name}-$pkgver.tar.gz"
+        gcc-5.1.patch)
+sha512sums=('a5f2b0ab356fe51b1d9f3f2e4bfadbc11bb10ec7f9458c019f3707b738dded1953723f797a8b37ed768cd14fe86f674d07d2cd5ce166406abaa1a68b443293b1'
+            '5dec42879a0ec443d6546594f4f78803b2aa83a5c02916864dca1c8c7c86bb69ee04269d5bce07ccfce750c7500acdc2fc037019e181321dfb7bf539bf74b91e')
 
 prepare() {
+  # https://bitbucket.org/cffi/cffi/issue/195/test-failures-with-cffi-102
+  (cd $_name-$pkgver; patch -p1 -i ../gcc-5.1.patch)
+
   cp -a $_name-$pkgver{,-py2}
 }
 

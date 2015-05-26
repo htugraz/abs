@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 128620 2015-03-03 13:02:47Z lcarlier $
+# $Id: PKGBUILD 134173 2015-05-26 13:58:30Z mtorromeo $
 # Maintainer: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Konsta Kokkinen <kray@tsundere.fi>
 
 pkgname=('minetest' 'minetest-server' 'minetest-common')
 pkgver=0.4.12
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url='http://minetest.net/'
 license=('GPL')

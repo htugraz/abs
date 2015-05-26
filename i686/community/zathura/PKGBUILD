@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 131640 2015-04-18 18:06:24Z bpiotrowski $
+# $Id: PKGBUILD 134165 2015-05-26 13:34:45Z dwallace $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: ML <neldoreth>
@@ -10,7 +10,7 @@ pkgdesc="Minimalistic document viewer"
 arch=('i686' 'x86_64')
 url="http://pwmt.org/projects/zathura/"
 license=('custom')
-depends=('girara' 'sqlite' 'desktop-file-utils' 'file')
+depends=('girara>=0.2.4' 'sqlite' 'desktop-file-utils' 'file')
 makedepends=('python2-docutils')
 optdepends=('zathura-djvu: DjVu support'
             'zathura-pdf-poppler: PDF support using Poppler'

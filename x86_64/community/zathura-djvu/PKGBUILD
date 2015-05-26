@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 121012 2014-10-20 05:49:20Z bpiotrowski $
+# $Id: PKGBUILD 134169 2015-05-26 13:46:10Z dwallace $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: karnath <karnathtorjian@gmail.com>
 
 pkgname=zathura-djvu
 pkgver=0.2.4
-pkgrel=1
+pkgrel=2
 pkgdesc="DjVu support for Zathura"
 arch=('i686' 'x86_64')
 url="https://pwmt.org/projects/zathura-djvu/"
