@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 237255 2015-04-16 20:23:12Z heftig $
+# $Id: PKGBUILD 239853 2015-05-28 13:15:03Z jgc $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgbase=gdm
 pkgname=(gdm libgdm)
 pkgver=3.16.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Gnome Display Manager"
 arch=(i686 x86_64)
 license=(GPL)

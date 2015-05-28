@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 236415 2015-04-14 01:19:25Z heftig $
+# $Id: PKGBUILD 239846 2015-05-28 12:47:35Z jgc $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-music
 pkgver=3.16.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Music player and management application"
 arch=(i686 x86_64)
 license=('GPL')
 url="https://wiki.gnome.org/Apps/Music"
-depends=(grilo grilo-plugins tracker python gobject-introspection libdmapsharing python-dbus dbus-glib gnome-themes-standard gtk3 gvfs python-gobject python-cairo gst-plugins-base)
-makedepends=(intltool itstool python2)
+depends=(grilo grilo-plugins tracker libdmapsharing python-dbus dbus-glib gnome-themes-standard gtk3 gvfs python-gobject python-cairo gst-plugins-base)
+makedepends=(intltool itstool python2 gobject-introspection)
 optdepends=('gst-plugins-good: Extra media codecs'
             'gst-plugins-ugly: Extra media codecs'
             'gst-plugins-bad: Extra media codecs'
