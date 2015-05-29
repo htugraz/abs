@@ -1,21 +1,21 @@
-# $Id: PKGBUILD 211657 2014-04-22 13:55:57Z heftig $
+# $Id: PKGBUILD 239874 2015-05-29 08:25:20Z jgc $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: György Balló <ballogy@freestart.hu>
 
 pkgname=zeitgeist
 pkgver=0.9.15
-pkgrel=1
+pkgrel=2
 pkgdesc="Service logging user activities and events"
 arch=(i686 x86_64)
 url="http://zeitgeist-project.com/"
 license=(GPL2 LGPL2.1)
-depends=(json-glib telepathy-glib gtk3)
+depends=(json-glib telepathy-glib gtk3 xapian-core)
 makedepends=(intltool gobject-introspection vala raptor python2-rdflib gnome-common git)
 provides=(zeitgeist-datahub)
 conflicts=(zeitgeist-datahub)
 replaces=(zeitgeist-datahub)
-source=("$pkgname::git://anongit.freedesktop.org/$pkgname/$pkgname#commit=d2c966f")
+source=("$pkgname::git://anongit.freedesktop.org/$pkgname/$pkgname#commit=63dba18c")
 sha256sums=('SKIP')
 
 prepare() {
@@ -32,7 +32,7 @@ build() {
   cd $pkgname
   export PYTHON=/usr/bin/python2
   ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
-    --libexecdir=/usr/lib/$pkgname
+    --libexecdir=/usr/lib/$pkgname --enable-fts
   make
 }
 
