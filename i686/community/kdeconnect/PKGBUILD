@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 128030 2015-02-20 14:57:24Z arojas $
+# $Id: PKGBUILD 134338 2015-05-30 08:30:54Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Kuba Serafinowski <zizzfizzix(at)gmail(dot)com>
 
 pkgname=kdeconnect
 pkgver=0.8
-pkgrel=1
+pkgrel=2
 pkgdesc='Adds communication between KDE and your smartphone'
 url='https://projects.kde.org/projects/playground/base/kdeconnect-kde'
 license=(GPL)
 arch=(i686 x86_64)
-depends=(kdebase-runtime qca-ossl libfakekey)
+depends=(kdebase-runtime qca-ossl libfakekey qjson)
 makedepends=(automoc4 cmake)
 optdepends=('sshfs: remote filesystem browser')
 install="${pkgname}.install"
