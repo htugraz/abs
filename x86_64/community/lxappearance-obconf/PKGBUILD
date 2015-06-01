@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 120350 2014-10-07 11:52:38Z bgyorgy $
+# $Id: PKGBUILD 134488 2015-06-01 18:56:46Z bluewind $
 # Maintainer: Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
 
 pkgname=lxappearance-obconf
 pkgver=0.2.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Plugin for LXAppearance to configure Openbox'
 arch=('i686' 'x86_64')
 license=('GPL2')

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 95455 2013-08-12 10:25:42Z bluewind $
+# $Id: PKGBUILD 134481 2015-06-01 15:55:12Z bluewind $
 # Maintainer:
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Tobias Kieslich <tobias@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=obconf
 pkgver=2.0.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A GTK2 based configuration tool for the Openbox windowmanager"
 arch=('i686' 'x86_64')
 url="http://openbox.org/wiki/ObConf:About"
