@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 239175 2015-05-12 15:02:39Z arojas $
+# $Id: PKGBUILD 240161 2015-06-02 07:24:57Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-ark
-pkgver=15.04.1
+pkgver=15.04.2
 pkgrel=1
 pkgdesc='Archiving Tool'
 url='http://kde.org/applications/utilities/ark/'
@@ -15,7 +15,7 @@ makedepends=('cmake' 'automoc4')
 optdepends=('p7zip' 'zip' 'unzip' 'unrar')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/ark-${pkgver}.tar.xz")
-sha1sums=('dcfe0c465c9c51b402d2192058126caee206ad8c')
+sha1sums=('24d24d72225d99debca98a92edee03bef78fde85')
 
 build() {
   cd "${srcdir}"

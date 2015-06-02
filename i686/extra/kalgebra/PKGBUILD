@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 239017 2015-05-12 07:32:16Z arojas $
+# $Id: PKGBUILD 240048 2015-06-02 06:55:31Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kalgebra
-pkgver=15.04.1
+pkgver=15.04.2
 pkgrel=1
 pkgdesc="Graph Calculator"
 url="http://kde.org/applications/education/kalgebra/"
@@ -16,7 +16,7 @@ replaces=('kdeedu-kalgebra')
 conflicts=('kdeedu-kalgebra' 'kdeedu-analitza')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kalgebra-${pkgver}.tar.xz")
-sha1sums=('5d7de0c69230333cd61f02cde11e04b286bd4cae')
+sha1sums=('ac110d857372018f877e8c635d67998101690442')
 
 prepare() {
   mkdir build

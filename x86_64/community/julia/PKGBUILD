@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 133143 2015-05-09 20:43:24Z arodseth $
+# $Id: PKGBUILD 134638 2015-06-02 19:58:43Z arodseth $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Lex Black <autumn-wind at web dot de>
 # Contributor: Michael Jakl <jakl.michael@gmail.com>
@@ -8,7 +8,7 @@
 pkgbase=julia
 pkgname=('julia' 'julia-docs')
 epoch=2
-pkgver=0.3.8
+pkgver=0.3.9
 pkgrel=1
 pkgdesc='High-level, high-performance, dynamic programming language'
 arch=('x86_64' 'i686')
@@ -104,5 +104,5 @@ package_julia-docs() {
   cp -rv "$srcdir/$pkgbase/examples" "$pkgdir/usr/share/doc/$pkgbase/examples"
 }
 
-# getver: julialang.org/downloads #
+# getver: julialang.org/downloads
 # vim:set ts=2 sw=2 et:

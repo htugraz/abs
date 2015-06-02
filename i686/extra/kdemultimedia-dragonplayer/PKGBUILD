@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 239086 2015-05-12 08:00:16Z arojas $
+# $Id: PKGBUILD 240118 2015-06-02 07:13:28Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdemultimedia-dragonplayer
-pkgver=15.04.1
+pkgver=15.04.2
 pkgrel=1
 pkgdesc="A multimedia player where the focus is on simplicity, instead of
 features"
@@ -15,7 +15,7 @@ depends=('kdebase-runtime')
 makedepends=('cmake' 'automoc4')
 install="${pkgname}.install"
 source=("http://download.kde.org/stable/applications/${pkgver}/src/dragon-${pkgver}.tar.xz")
-sha1sums=('130b24478fc0ade5482bbe7d154cf398ac4c7f51')
+sha1sums=('9851a52942f3342272000c038d5798871bd0cf63')
 
 build() {
   cd "${srcdir}"

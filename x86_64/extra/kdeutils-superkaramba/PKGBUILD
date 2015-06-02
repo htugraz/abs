@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 239186 2015-05-12 15:05:19Z arojas $
+# $Id: PKGBUILD 240172 2015-06-02 07:27:52Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-superkaramba
-pkgver=15.04.1
+pkgver=15.04.2
 pkgrel=1
 pkgdesc='An engine for cool desktop eyecandy'
 url='http://kde.org/applications/utilities/superkaramba/'
@@ -14,7 +14,7 @@ makedepends=('cmake' 'automoc4')
 groups=('kde-applications' 'kdeutils')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/superkaramba-${pkgver}.tar.xz")
-sha1sums=('6e950591662ff09c7f715f84f91fd5de07529036')
+sha1sums=('a073eaf936944f786408a7783f91dfd82cf2a748')
 
 build() {
   cd "${srcdir}"

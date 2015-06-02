@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 239104 2015-05-12 08:06:59Z arojas $
+# $Id: PKGBUILD 240136 2015-06-02 07:18:11Z arojas $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=telepathy-kde-contact-list
 _pkgname=ktp-contact-list
-pkgver=15.04.1
+pkgver=15.04.2
 pkgrel=1
 pkgdesc='KDE Telepathy contact list application'
 arch=('i686' 'x86_64')
@@ -16,7 +16,7 @@ depends=('telepathy-kde-common-internals')
 makedepends=('extra-cmake-modules' 'kdoctools' 'python')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/$_pkgname-${pkgver}.tar.xz")
 install=$pkgname.install
-md5sums=('ab3568e42330ea94a3f2d3f53f7d2e1f')
+md5sums=('fcfc3d1a35c1261541e64bbfaaa0a50d')
 
 prepare() {
   mkdir -p build

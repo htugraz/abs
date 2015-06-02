@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 239019 2015-05-12 07:33:07Z arojas $
+# $Id: PKGBUILD 240050 2015-06-02 06:56:05Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kanagram
-pkgver=15.04.1
+pkgver=15.04.2
 pkgrel=1
 pkgdesc="Letter Order Game"
 url="http://kde.org/applications/education/kanagram/"
@@ -16,7 +16,7 @@ replaces=('kdeedu-kanagram')
 conflicts=('kdeedu-kanagram')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kanagram-${pkgver}.tar.xz")
-sha1sums=('d0dc48fef9dcf854fa6888f00cea4bbab33113a5')
+sha1sums=('f1f817dec131ab3e9396e4c5445498b9a4a8dd3a')
 
 build() {
   cd "${srcdir}"

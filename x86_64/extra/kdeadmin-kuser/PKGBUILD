@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 239009 2015-05-12 07:22:47Z arojas $
+# $Id: PKGBUILD 240041 2015-06-02 06:53:07Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeadmin-kuser
-pkgver=15.04.1
+pkgver=15.04.2
 pkgrel=1
 pkgdesc='User Manager'
 url='http://kde.org/applications/system/kuser/'
@@ -14,7 +14,7 @@ depends=('kdebase-runtime' 'kdepimlibs')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kuser-${pkgver}.tar.xz")
-sha1sums=('9cb343705e9b30e799947dadd0b135e069457620')
+sha1sums=('264921d5bc3bd33921abac7fc4cfd0d19862f204')
 
 build() {
   mkdir build

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 239026 2015-05-12 07:37:08Z arojas $
+# $Id: PKGBUILD 240057 2015-06-02 06:57:59Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kmplot
-pkgver=15.04.1
+pkgver=15.04.2
 pkgrel=1
 pkgdesc="Mathematical Function Plotter"
 url="http://kde.org/applications/education/kmplot/"
@@ -16,7 +16,7 @@ install=${pkgname}.install
 replaces=('kdeedu-kmplot')
 conflicts=('kdeedu-kmplot')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kmplot-${pkgver}.tar.xz")
-sha1sums=('ec16d50c5aad05522601c06deee55db7f899e67a')
+sha1sums=('95b6848bd676a716ee4ebb8a0634e12ffc0913a1')
 
 build() {
   cd "${srcdir}"

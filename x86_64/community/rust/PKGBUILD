@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 133676 2015-05-17 21:09:13Z arodseth $
+# $Id: PKGBUILD 134525 2015-06-02 09:52:58Z arodseth $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Daniel Micay <danielmicay@gmail.com>
 
 pkgname=rust
 pkgver=1.0.0
 epoch=1
-pkgrel=2
+pkgrel=3
 arch=('x86_64' 'i686')
 pkgdesc='Systems programming language focused on safety, speed and concurrency'
 url='http://www.rust-lang.org/'
@@ -28,7 +28,7 @@ prepare() {
 build() {
   cd "rustc-$pkgver"
 
-  ./configure --prefix=/usr --disable-docs
+  ./configure --prefix=/usr --disable-docs --release-channel=stable
   make
 }
 

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 239027 2015-05-12 07:37:33Z arojas $
+# $Id: PKGBUILD 240058 2015-06-02 06:58:15Z arojas $
 # Maintainer: Felix Yan <felixonamrs@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kstars
-pkgver=15.04.1
+pkgver=15.04.2
 pkgrel=1
 pkgdesc="Desktop Planetarium"
 url="http://kde.org/applications/education/kstars/"
@@ -17,7 +17,7 @@ install=${pkgname}.install
 replaces=('kdeedu-kstars')
 conflicts=('kdeedu-kstars')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kstars-${pkgver}.tar.xz")
-sha1sums=('0bb3c04a1bf56df07538933af0c5159aa941861c')
+sha1sums=('c4956085798baa9ba97caa1cf2066c0b771f85f2')
 
 prepare() {
   mkdir build

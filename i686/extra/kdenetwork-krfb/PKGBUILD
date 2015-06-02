@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 239098 2015-05-12 08:05:01Z arojas $
+# $Id: PKGBUILD 240130 2015-06-02 07:16:36Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-krfb
-pkgver=15.04.1
+pkgver=15.04.2
 pkgrel=1
 pkgdesc='Desktop Sharing'
 url='http://www.kde.org/applications/system/krfb'
@@ -16,7 +16,7 @@ groups=('kde-applications' 'kdenetwork')
 depends=('kdebase-runtime' 'libvncserver' 'libxdamage' 'telepathy-qt4')
 makedepends=('cmake' 'automoc4')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/krfb-${pkgver}.tar.xz")
-sha1sums=('fafcef1104ad7291af951a79e47a82aebbff8540')
+sha1sums=('25f1650193cc0f520a6367afb0e6b1581d55ce3d')
 
 prepare() {
   mkdir build

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 239112 2015-05-12 08:09:43Z arojas $
+# $Id: PKGBUILD 240145 2015-06-02 07:20:53Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-dev-utils
-pkgver=15.04.1
+pkgver=15.04.2
 pkgrel=1
 pkgdesc='Small utilities for developers using KDE/Qt libs/frameworks'
 url='https://projects.kde.org/projects/kde/kdesdk/kde-dev-utils'
@@ -18,7 +18,7 @@ replaces=('kdesdk-kmtrace' 'kdesdk-kpartloader' 'kdesdk-kprofilemethod'
           'kdesdk-kstartperf' 'kdesdk-kuiviewer')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kde-dev-utils-${pkgver}.tar.xz")
-sha1sums=('c8cd9910374e13a157c6f33b6d1e014864b7237f')
+sha1sums=('527172c6270560d9d81eb9373814dd13a4191ace')
 
 build() {
   mkdir build
