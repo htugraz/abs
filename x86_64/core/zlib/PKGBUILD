@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 197152 2013-10-23 13:04:17Z allan $
+# $Id: PKGBUILD 240357 2015-06-05 05:11:19Z pierre $
 # Maintainer: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=zlib
 pkgver=1.2.8
-pkgrel=3
+pkgrel=4
 pkgdesc='Compression library implementing the deflate compression method found in gzip and PKZIP'
 arch=('i686' 'x86_64')
 license=('custom')
