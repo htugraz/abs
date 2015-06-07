@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 133387 2015-05-14 03:21:20Z fyan $
+# $Id: PKGBUILD 134956 2015-06-07 14:59:39Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-cryptography-vectors
 pkgname=('python-cryptography-vectors' 'python2-cryptography-vectors')
-pkgver=0.9
+pkgver=0.9.1
 pkgrel=1
 pkgdesc="Test vectors for the cryptography package"
 arch=('any')
@@ -11,7 +11,7 @@ license=('Apache')
 url="http://pypi.python.org/pypi/cryptography-vectors"
 makedepends=('python-setuptools' 'python2-setuptools')
 source=("http://pypi.python.org/packages/source/c/cryptography-vectors/cryptography_vectors-${pkgver}.tar.gz")
-md5sums=('2e41fbfa64f2e75bf742b12af4b5ae4d')
+md5sums=('75458f08804aafe4585a10f751c9c51a')
 
 prepare() {
    cp -a cryptography_vectors-$pkgver{,-python2}
