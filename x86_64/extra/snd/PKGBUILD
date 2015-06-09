@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 229587 2015-01-19 16:56:48Z schiv $
+# $Id: PKGBUILD 240461 2015-06-09 21:32:08Z schiv $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Juergen Hoetzel <juergen@archlinux.org>
 # Contributor: see .contrib
 
 pkgname=snd
-pkgver=15.2
+pkgver=15.6
 pkgrel=1
 pkgdesc="An advanced sound editor"
 arch=('i686' 'x86_64')
@@ -16,7 +16,7 @@ makedepends=('ladspa' 'wavpack' 'flac' 'speex' 'gmp'
 optdepends=('wavpack' 'flac' 'speex' 'mpg123'
             'timidity++' 'vorbis-tools')
 source=("ftp://ccrma-ftp.stanford.edu/pub/Lisp/$pkgname-$pkgver.tar.gz")
-md5sums=('6a6186648aada854f759e86ab97024a9')
+md5sums=('25344a581c521a8359ceeffc95e2fe4c')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"

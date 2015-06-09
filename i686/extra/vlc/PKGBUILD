@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 240403 2015-06-07 11:43:34Z bpiotrowski $
+# $Id: PKGBUILD 240440 2015-06-09 09:39:21Z giovanni $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Sarah Hay <sarahhay@mb.sympatico.ca>
 # Contributor: Martin Sandsmark <martin.sandsmark@kde.org>
 
 pkgname=vlc
 pkgver=2.2.1
-pkgrel=5
+pkgrel=6
 pkgdesc="A multi-platform MPEG, VCD/DVD, and DivX player"
 arch=('i686' 'x86_64')
 url="http://www.videolan.org/vlc/"
