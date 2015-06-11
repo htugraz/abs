@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 203068 2014-01-03 09:30:10Z bpiotrowski $
+# $Id: PKGBUILD 240614 2015-06-11 20:45:56Z juergen $
 # Contributor: John Proctor <jproctor@prium.net>
 # Maintainer: juergen <juergen@archlinux.org>
 
 pkgname=ecl
-pkgver=13.5.1
-pkgrel=2
+pkgver=15.3.7
+pkgrel=1
 pkgdesc="Embeddable Common Lisp"
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/ecls/"
@@ -13,8 +13,8 @@ depends=('bash' 'gmp')
 makedepends=('texinfo')
 provides=('common-lisp' 'cl-asdf')
 options=('!makeflags')
-source=(http://downloads.sourceforge.net/project/ecls/ecls/13.5/ecl-${pkgver}.tgz)
-md5sums=('f6bb59d9383c51fc94e1c7ca5cf1c586')
+source=(http://downloads.sourceforge.net/project/ecls/ecls/15.3/ecl-${pkgver}.tgz)
+md5sums=('39f4fb924c88e47ce31e6d57ac2a6de8')
 
 build() {
   cd $srcdir/$pkgname-$pkgver
