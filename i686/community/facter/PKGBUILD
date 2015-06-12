@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 133970 2015-05-22 10:58:42Z jsteel $
+# $Id: PKGBUILD 135250 2015-06-12 18:01:59Z jsteel $
 # Maintainer: Jonathan Steel <jsteel at archlinux.org>
 # Contributor: Greg Sutcliffe <facter_aur (at) emeraldreverie.orgr>
 # Contributor: Hyacinthe Cartiaux <hyacinthe.cartiaux@free.fr>
@@ -8,12 +8,13 @@
 
 pkgname=facter
 pkgver=2.4.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Collect and display system facts"
 arch=('any')
 url="http://puppetlabs.com/facter"
 license=('APACHE')
 depends=('ruby' 'inetutils' 'net-tools')
+replaces=('cfacter')
 source=(http://downloads.puppetlabs.com/$pkgname/$pkgname-$pkgver.tar.gz)
 md5sums=('97e5daae4c9571013506867f1ba8da0a')
 
