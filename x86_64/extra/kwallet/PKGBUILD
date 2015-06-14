@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 238822 2015-05-10 08:28:47Z arojas $
+# $Id: PKGBUILD 240801 2015-06-14 20:30:42Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kwallet
-pkgver=5.10.0
+pkgver=5.11.0
 pkgrel=1
 pkgdesc='Secure and unified container for user passwords'
 arch=('i686' 'x86_64')
@@ -15,7 +15,7 @@ groups=('kf5')
 conflicts=('kwalletframeworks')
 replaces=('kwalletframeworks')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('0cbab8b03b31becab0ff475d7c19662d')
+md5sums=('15bd67e33adc2fce5fdabb580b4a408a')
 
 prepare() {
   mkdir -p build

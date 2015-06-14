@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 238796 2015-05-10 08:28:13Z arojas $
+# $Id: PKGBUILD 240775 2015-06-14 20:30:17Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kcoreaddons
-pkgver=5.10.0
+pkgver=5.11.0
 pkgrel=1
 pkgdesc='Addons to QtCore'
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ makedepends=('extra-cmake-modules' 'qt5-tools')
 groups=('kf5')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('17142e16ed6e396771f5ae7e890d1084')
+md5sums=('1d17806d243683ac89c95352f82b0da3')
 
 prepare() {
   mkdir -p build

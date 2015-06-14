@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 238809 2015-05-10 08:28:30Z arojas $
+# $Id: PKGBUILD 240788 2015-06-14 20:30:28Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdbusaddons
-pkgver=5.10.0
+pkgver=5.11.0
 pkgrel=1
 pkgdesc='Addons to QtDBus'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('qt5-x11extras')
 makedepends=('extra-cmake-modules' 'qt5-tools')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('722b7b6712c30282d071dd5c37e915a9')
+md5sums=('4c40d991d4c96bc128dd7b31449951ea')
 
 prepare() {
   mkdir -p build

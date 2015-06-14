@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 238850 2015-05-10 08:29:26Z arojas $
+# $Id: PKGBUILD 240832 2015-06-14 20:31:20Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=networkmanager-qt
-pkgver=5.10.0
+pkgver=5.11.0
 pkgrel=1
 pkgdesc='Qt wrapper for NetworkManager API'
 arch=('i686' 'x86_64')
@@ -15,7 +15,7 @@ groups=('kf5')
 replaces=('libnm-qt5')
 conflicts=('libnm-qt5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('43e025461609f3a5d9b35af3f1aace55')
+md5sums=('ccfb2950c7ae9a1022aba4fa4eb5d5a2')
 
 prepare() {
   mkdir -p build
