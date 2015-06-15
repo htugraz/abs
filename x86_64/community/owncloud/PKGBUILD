@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 134760 2015-06-04 10:50:55Z spupykin $
+# $Id: PKGBUILD 135411 2015-06-15 13:41:38Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Antonio Rojas <nqn1976 @ gmail.com>
 # Based on owncloud-git PKGBUILD by Alexander Ovsyannikov
 
 pkgname=owncloud
 pkgver=8.0.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A cloud server to store your files centrally on a hardware controlled by you"
 arch=('any')
 url="http://owncloud.org/"
@@ -94,4 +94,6 @@ package() {
   find ${pkgdir}/usr/share/webapps/owncloud -type d -exec chmod 0755 {} \;
 #  find ${pkgdir}/etc/webapps/owncloud -type f -print0 | xargs -0 chmod 0640
 #  find ${pkgdir}/etc/webapps/owncloud -type d -print0 | xargs -0 chmod 0750
+
+  chmod a+x ${pkgdir}/usr/share/webapps/${pkgname}/occ
 }

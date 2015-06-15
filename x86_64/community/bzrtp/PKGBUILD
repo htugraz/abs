@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 129447 2015-03-17 19:38:38Z arojas $
+# $Id: PKGBUILD 135452 2015-06-15 20:07:16Z kkeen $
 # Maintainer:
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=bzrtp
 pkgver=1.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Opensource implementation of ZRTP keys exchange protocol"
 arch=('i686' 'x86_64')
 url="http://www.linphone.org/"

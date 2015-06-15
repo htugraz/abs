@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 130896 2015-04-07 16:21:50Z spupykin $
+# $Id: PKGBUILD 135419 2015-06-15 14:19:27Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Darwin Bautista <djclue917@gmail.com>
 # Contributor: Mark Lee <mark@markelee.com>
 
 pkgname=linphone
-pkgver=3.8.1
-pkgrel=2
+pkgver=3.8.4
+pkgrel=1
 pkgdesc="A Voice-over-IP phone"
 arch=('i686' 'x86_64')
 url="http://www.linphone.org/index.php/eng"
@@ -17,7 +17,7 @@ makedepends=('pkg-config' 'perl-xml-parser' 'intltool' 'sgmltools-lite')
 optdepends=('pulseaudio')
 options=('!emptydirs')
 source=("http://download-mirror.savannah.gnu.org/releases/${pkgname}/3.8.x/sources/${pkgname}-$pkgver.tar.gz")
-md5sums=('9f2a8e27c4f33169e1673f85b6591f8b')
+md5sums=('d1f477cfb78b2079c9b3cdbad81e4d80')
 
 build() {
   cd $pkgname-$pkgver
