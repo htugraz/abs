@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 239799 2015-05-26 16:49:58Z arojas $
+# $Id: PKGBUILD 240951 2015-06-16 15:26:31Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgname=plasma-desktop
 pkgver=5.3.1
-pkgrel=2
+pkgrel=3
 pkgdesc='KDE Plasma Desktop'
 arch=('i686' 'x86_64')
 url='https://www.kde.org/workspaces/plasmadesktop/'
@@ -19,11 +19,16 @@ conflicts=('kdebase-workspace' 'kcm-touchpad-frameworks')
 replaces=('kcm-touchpad-frameworks')
 install="${pkgname}.install"
 groups=('plasma')
-source=("http://download.kde.org/stable/plasma/${pkgver}/$pkgname-$pkgver.tar.xz")
-md5sums=('df4a3fabb26c7aa4f87405185835c20c')
+source=("http://download.kde.org/stable/plasma/${pkgver}/$pkgname-$pkgver.tar.xz" 'trash-applet.patch')
+md5sums=('df4a3fabb26c7aa4f87405185835c20c'
+         '1e13230b7b5858e6c2c9b327095917e7')
 
 prepare() {
   mkdir build
+
+# Fix trash applet loading with plasma-framework 5.11 https://bugs.kde.org/show_bug.cgi?id=349207
+  cd $pkgname-$pkgver
+  patch -p1 -i "$srcdir"/trash-applet.patch
 }
 
 build() {

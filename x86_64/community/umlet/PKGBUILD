@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 135413 2015-06-15 13:41:56Z spupykin $
+# $Id: PKGBUILD 135485 2015-06-16 14:40:24Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Gleidson Echeli <gleidson dot echeli at gmail dot com>
 
 pkgname=umlet
 pkgver=13.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Free UML Tool for Fast UML Diagrams (stand-alone version)"
 arch=('any')
 url="http://www.umlet.com"
@@ -35,4 +35,5 @@ package() {
   install -d -m755 ${pkgdir}/usr/share
   mv ${srcdir}/Umlet ${pkgdir}/usr/share/umlet
   install -D -m644 ${srcdir}/umlet.desktop $pkgdir/usr/share/applications/umlet.desktop
+  chmod a+x ${pkgdir}/usr/share/umlet/umlet.sh
 }
