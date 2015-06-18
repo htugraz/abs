@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 131125 2015-04-10 16:17:05Z spupykin $
+# $Id: PKGBUILD 135558 2015-06-18 10:32:32Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Aurélien Wailly <aurelien.wailly@gmail.com>
 
 pkgname=netcf
 pkgver=0.2.8
-pkgrel=1
+pkgrel=2
 pkgdesc="A library for configuring network interfaces"
 arch=('i686' 'x86_64')
 license=('LGPL')
@@ -22,7 +22,8 @@ build() {
   ./configure --prefix=/usr \
 	--disable-static \
 	--with-init-script=none \
-	--with-driver=redhat
+	--with-driver=redhat \
+	--libexecdir=/usr/lib/$pkgname
   make
 }
 
