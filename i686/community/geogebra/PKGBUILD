@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 134044 2015-05-25 10:52:03Z arcanis $
+# $Id: PKGBUILD 135650 2015-06-21 12:53:40Z arcanis $
 # Maintainer: Evgeniy Alekseev <arcanis at archlinux dot org>
 # Contributor: Bartłomiej Piotrowski <bpiotrowski at archlinux dot org>
 # Contributor: Felipe Hommen <felibank at gmail dot com>
 # Contributor: moostik <mooostik at gmail dot com>
 
 pkgname=geogebra
-pkgver=5.0.119.0
+pkgver=5.0.128.0
 pkgrel=1
 pkgdesc="Dynamic mathematics software with interactive graphics, algebra and spreadsheet"
 arch=('any')
@@ -37,5 +37,5 @@ package() {
   #install -Dm644 "geogebra.png" "${pkgdir}/usr/share/pixmaps/geogebra.png"
 }
 
-md5sums=('49a06de33fcba2620e7027b80a6c201b'
+md5sums=('077a3daf0041e371dd8c7d6703f89f5c'
          'fc4a3140ceb50967598a620eb85219f4')
