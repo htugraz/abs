@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 239489 2015-05-17 10:59:05Z foutrelis $
+# $Id: PKGBUILD 241215 2015-06-22 21:18:17Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Tobias Kieslich <tobias funnychar archlinux.org>
 # Contributor: Alois Nespor alois.nespor@gmail.com
 
 pkgname=xfburn
 pkgver=0.5.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A simple CD/DVD burning tool based on libburnia libraries"
 arch=('i686' 'x86_64')
 url="http://goodies.xfce.org/projects/applications/xfburn"
 license=('GPL')
 depends=('libburn' 'libisofs' 'gtk2' 'libxfce4ui' 'exo' 'gst-plugins-base-libs'
-         'desktop-file-utils')
+         'libgudev' 'desktop-file-utils')
 makedepends=('intltool')
 groups=('xfce4-goodies')
 install=xfburn.install

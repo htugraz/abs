@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 237869 2015-04-21 08:33:02Z foutrelis $
+# $Id: PKGBUILD 241201 2015-06-22 21:18:00Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gst-plugins-good
 pkgver=1.4.5
-pkgrel=2
+pkgrel=3
 pkgdesc="GStreamer Multimedia Framework Good Plugins"
 arch=('i686' 'x86_64')
 license=('LGPL')
 url="http://gstreamer.freedesktop.org/"
-depends=('libpulse' 'jack' 'libsoup' 'gst-plugins-base-libs' 'wavpack' 'aalib' 'taglib' 'libdv' 'libshout' 'libvpx' 'gdk-pixbuf2' 'libcaca' 'libavc1394' 'libiec61883' 'libxdamage' 'v4l-utils' 'cairo')
+depends=('libpulse' 'jack' 'libsoup' 'gst-plugins-base-libs' 'wavpack' 'aalib' 'taglib' 'libdv' 'libshout' 'libvpx' 'gdk-pixbuf2' 'libcaca' 'libavc1394' 'libiec61883' 'libxdamage' 'v4l-utils' 'cairo' 'libgudev')
 makedepends=('gstreamer' 'speex' 'flac' 'libraw1394' 'python' 'gtk-doc')
 options=(!emptydirs)
 source=(${url}/src/$pkgname/$pkgname-$pkgver.tar.xz)

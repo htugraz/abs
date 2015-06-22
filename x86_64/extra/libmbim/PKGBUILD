@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 231238 2015-02-10 20:38:20Z heftig $
+# $Id: PKGBUILD 241204 2015-06-22 21:18:05Z foutrelis $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=libmbim
 pkgver=1.12.2
-pkgrel=1
+pkgrel=2
 pkgdesc="MBIM modem protocol helper library"
 arch=(i686 x86_64)
 url="http://www.freedesktop.org/wiki/Software/libmbim/"
 license=(GPL2)
-depends=(glib2 bash systemd)
+depends=(glib2 bash systemd libgudev)
 makedepends=(gtk-doc python)
 source=(http://www.freedesktop.org/software/$pkgname/$pkgname-$pkgver.tar.xz)
 sha256sums=('949351d3e3d69b81e40a49f1d187944c26149e0647a415f0227ccdc112047b29')

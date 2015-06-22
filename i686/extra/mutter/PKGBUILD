@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 239358 2015-05-14 18:43:05Z heftig $
+# $Id: PKGBUILD 241207 2015-06-22 21:18:08Z foutrelis $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Michael Kanis <mkanis_at_gmx_dot_de>
 
 pkgname=mutter
 pkgver=3.16.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A window manager for GNOME"
 arch=(i686 x86_64)
 license=('GPL')
-depends=('clutter' 'dconf' 'gobject-introspection-runtime' 'gsettings-desktop-schemas' 'libcanberra' 'startup-notification' 'zenity' 'libsm' 'gnome-desktop' 'upower' 'libxkbcommon-x11' 'gnome-settings-daemon')
+depends=('clutter' 'dconf' 'gobject-introspection-runtime' 'gsettings-desktop-schemas' 'libcanberra' 'startup-notification' 'zenity' 'libsm' 'gnome-desktop' 'upower' 'libxkbcommon-x11' 'gnome-settings-daemon' 'libgudev')
 makedepends=('intltool' 'libxkbcommon-x11' 'gobject-introspection')
 conflicts=('mutter-wayland')
 replaces=('mutter-wayland')
