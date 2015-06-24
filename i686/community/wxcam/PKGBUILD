@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 128395 2015-02-27 18:34:15Z svenstaro $
+# $Id: PKGBUILD 135798 2015-06-24 04:14:26Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 pkgname=wxcam
 pkgver=1.1
@@ -10,7 +10,7 @@ url="http://wxcam.sourceforge.net"
 makedepends=('intltool>=0.35.0' 'libsm')
 depends=('libglade' 'mjpegtools' 'perl-xml-parser' 'wxgtk' 'xvidcore' 'v4l-utils' 'alsa-lib' 'cimg')
 source=(wxcam.tar.gz::"http://wxcam.cvs.sourceforge.net/viewvc/wxcam/wxcam/?view=tar")
-md5sums=('5f7058b199b93e9e3d94bca6166c1f46')
+md5sums=('SKIP')
 
 build() {
     cd "$srcdir"/$pkgname
