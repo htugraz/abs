@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 238272 2015-04-29 18:55:01Z schiv $
+# $Id: PKGBUILD 241282 2015-06-25 20:01:34Z schiv $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: SpepS <dreamspepser at yahoo dot it>
 # Contributor: see .contrib
 
 pkgname=ardour
-pkgver=4.0
-pkgrel=2
+pkgver=4.1
+pkgrel=1
 pkgdesc="Professional-grade digital audio workstation"
 arch=('i686' 'x86_64')
 url="http://ardour.org/"
