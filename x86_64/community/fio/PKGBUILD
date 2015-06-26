@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 133220 2015-05-10 20:40:56Z anatolik $
+# $Id: PKGBUILD 135898 2015-06-26 12:22:17Z anatolik $
 # Maintainer: Anatol Pomozov <anatol dot pomozov at gmail>
 # Contributor: Mariusz Libera <mariusz.libera@gmail.com>
 # Contributor: John Williams <jwilliams4200 liamg reverse&remove moc>
 
 pkgname=fio
-pkgver=2.2.8
+pkgver=2.2.9
 pkgrel=1
 pkgdesc='Scriptable I/O tool for storage benchmarks and drive testing'
 arch=(i686 x86_64)
@@ -17,7 +17,7 @@ optdepends=(
   'gnuplot: generating plots using fio_generate_plots'
 )
 source=(http://brick.kernel.dk/snaps/fio-$pkgver.tar.bz2)
-sha256sums=('671a1166e098a8f103d6f41051a90ebac1d5f32e125f598c97d110ed32e59998')
+sha256sums=('c881d9cf15500bd4436970d0467c356c5c021417131587931ba78845e965bf56')
 
 prepare() {
   cd fio-$pkgver
