@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 122853 2014-11-21 03:23:49Z bisson $
+# $Id: PKGBUILD 135944 2015-06-28 09:41:21Z bluewind $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 
 pkgname=liboping
 pkgver=1.8.0
-pkgrel=1
+pkgrel=2
 pkgdesc='C library to generate ICMP echo requests, better known as "ping packets"'
 url='http://noping.cc/'
 arch=('i686' 'x86_64')

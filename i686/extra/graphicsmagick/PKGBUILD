@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 232433 2015-03-03 00:21:37Z bisson $
+# $Id: PKGBUILD 241321 2015-06-28 09:37:32Z bluewind $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=graphicsmagick
 pkgver=1.3.21
-pkgrel=1
+pkgrel=2
 pkgdesc='Image processing system'
 url='http://www.graphicsmagick.org/'
 arch=('i686' 'x86_64')

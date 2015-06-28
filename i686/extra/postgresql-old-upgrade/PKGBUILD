@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 240632 2015-06-12 16:16:42Z dan $
+# $Id: PKGBUILD 241363 2015-06-28 09:38:17Z bluewind $
 # Maintainer: Dan McGee <dan@archlinux.org>
 
 pkgname=postgresql-old-upgrade
 pkgver=9.3.9
 _majorver=${pkgver%.*}
-pkgrel=1
+pkgrel=2
 pkgdesc="PostgreSQL build for migrating between major versions with pg_upgrade"
 arch=('i686' 'x86_64')
 url="http://www.postgresql.org/"

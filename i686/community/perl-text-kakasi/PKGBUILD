@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 112650 2014-06-04 13:52:26Z bluewind $
+# $Id: PKGBUILD 135998 2015-06-28 09:42:24Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Allan McRae <mcrae_allan@hotmail.com>
 # Contributor: François Charette <firmicus ατ gmx δοτ net>
 
 pkgname=perl-text-kakasi
 pkgver=2.04
-pkgrel=11
+pkgrel=12
 pkgdesc="Perl frontend to kakasi"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/Text-Kakasi"
@@ -30,4 +30,11 @@ package() {
 
   find ${pkgdir} -name '.packlist' -delete
   find ${pkgdir} -name '*.pod' -delete
+# template start; name=perl-binary-module-dependency; version=1;
+if [[ $(find "$pkgdir/usr/lib/perl5/" -name "*.so") ]]; then
+	_perlver_min=$(perl -e '$v = $^V->{version}; print $v->[0].".".($v->[1]);')
+	_perlver_max=$(perl -e '$v = $^V->{version}; print $v->[0].".".($v->[1]+1);')
+	depends+=("perl>=$_perlver_min" "perl<$_perlver_max")
+fi
+# template end;
 }

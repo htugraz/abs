@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 229563 2015-01-19 04:05:07Z eric $
+# $Id: PKGBUILD 241359 2015-06-28 09:38:12Z bluewind $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=perl-xml-parser
 pkgver=2.44
-pkgrel=1
+pkgrel=2
 pkgdesc="Expat-based XML parser module for perl"
 arch=('i686' 'x86_64')
 license=('GPL' 'PerlArtistic')
@@ -27,4 +27,12 @@ check() {
 package() {
   cd XML-Parser-${pkgver}
   make DESTDIR="${pkgdir}" install
+
+# template start; name=perl-binary-module-dependency; version=1;
+if [[ $(find "$pkgdir/usr/lib/perl5/" -name "*.so") ]]; then
+	_perlver_min=$(perl -e '$v = $^V->{version}; print $v->[0].".".($v->[1]);')
+	_perlver_max=$(perl -e '$v = $^V->{version}; print $v->[0].".".($v->[1]+1);')
+	depends+=("perl>=$_perlver_min" "perl<$_perlver_max")
+fi
+# template end;
 }

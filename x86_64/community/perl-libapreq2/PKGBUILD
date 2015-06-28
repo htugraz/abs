@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 112822 2014-06-08 16:40:00Z anatolik $
+# $Id: PKGBUILD 135982 2015-06-28 09:42:05Z bluewind $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Tom K <tomk@runbox.com>
 
 pkgname=perl-libapreq2
 pkgver=2.13
-pkgrel=7
+pkgrel=8
 pkgdesc="A safe, standards-compliant, high-performance library used for parsing HTTP cookies, query-strings and POST data."
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/libapreq2"
@@ -30,10 +30,17 @@ build() {
   make LD_RUN_PATH="/usr/lib"  # build sets RPATH to non-sanitized path, force correct rpath
 }
 
-package(){
+package() {
   cd  $srcdir/libapreq2-$pkgver
   make install DESTDIR=$pkgdir
   sed -i "s#$srcdir#/usr/src#" $pkgdir/usr/bin/apreq2-config
   find $pkgdir -name '.packlist' -delete
   find $pkgdir -name '*.pod' -delete
+# template start; name=perl-binary-module-dependency; version=1;
+if [[ $(find "$pkgdir/usr/lib/perl5/" -name "*.so") ]]; then
+	_perlver_min=$(perl -e '$v = $^V->{version}; print $v->[0].".".($v->[1]);')
+	_perlver_max=$(perl -e '$v = $^V->{version}; print $v->[0].".".($v->[1]+1);')
+	depends+=("perl>=$_perlver_min" "perl<$_perlver_max")
+fi
+# template end;
 }

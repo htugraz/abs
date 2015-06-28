@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 125123 2015-01-01 12:03:35Z seblu $
+# $Id: PKGBUILD 136006 2015-06-28 09:42:33Z bluewind $
 # Maintainer: Sébastien Luttringer
 # Contributor: Angel Velasquez <angvp@archlinux.org>
 # Contributor: tobias <tobias@archlinux.org>
@@ -7,7 +7,7 @@
 pkgbase=rxvt-unicode
 pkgname=('rxvt-unicode' 'rxvt-unicode-terminfo')
 pkgver=9.21
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url='http://software.schmorp.de/pkg/rxvt-unicode.html'
 license=('GPL')

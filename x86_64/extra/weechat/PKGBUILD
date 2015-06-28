@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 239467 2015-05-16 16:21:33Z anatolik $
+# $Id: PKGBUILD 241368 2015-06-28 09:38:24Z bluewind $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: lucke <lucke at o2 dot pl>
 
 pkgname=weechat
 pkgver=1.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Fast, light and extensible IRC client (curses UI)"
 arch=('i686' 'x86_64')
 url="http://www.weechat.org/"

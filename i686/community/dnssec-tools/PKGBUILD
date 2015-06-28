@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 124367 2014-12-22 16:48:56Z fyan $
+# $Id: PKGBUILD 135939 2015-06-28 09:41:14Z bluewind $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Luca Fulchir <luca@fulchir.it>
 
 pkgname=dnssec-tools
 pkgver=2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="libval & dnssec management tools"
 arch=('i686' 'x86_64')
 url="http://www.dnssec-tools.org"
@@ -82,4 +82,11 @@ package() {
     .   dlv.isc.org.
 ;
 EOF
+# template start; name=perl-binary-module-dependency; version=1;
+if [[ $(find "$pkgdir/usr/lib/perl5/" -name "*.so") ]]; then
+	_perlver_min=$(perl -e '$v = $^V->{version}; print $v->[0].".".($v->[1]);')
+	_perlver_max=$(perl -e '$v = $^V->{version}; print $v->[0].".".($v->[1]+1);')
+	depends+=("perl>=$_perlver_min" "perl<$_perlver_max")
+fi
+# template end;
 }
