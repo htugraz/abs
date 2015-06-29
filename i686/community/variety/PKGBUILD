@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 134985 2015-06-08 15:44:34Z flexiondotorg $
+# $Id: PKGBUILD 136101 2015-06-29 08:38:32Z flexiondotorg $
 # Maintainer : Martin Wimpress <code@flexion.org>
 
 pkgname=variety
 pkgver=0.5.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Changes the wallpaper on a regular interval using user-specified or automatically downloaded images.'
 url="http://peterlevi.com/variety/"
 arch=('any')

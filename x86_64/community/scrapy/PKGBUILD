@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 132951 2015-05-08 10:19:12Z fyan $
+# $Id: PKGBUILD 136104 2015-06-29 10:12:16Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: PyroDevil <p dot devil at gmail dot com>
 # Contributor: Anibal Pacheco <apacheco.uy@gmail.com>
 
 pkgname=scrapy
-pkgver=0.24.6
-pkgrel=2
+pkgver=1.0.0
+pkgrel=1
 pkgdesc="A fast high-level scraping and web crawling framework."
 arch=(any)
 license=('BSD')
@@ -14,7 +14,6 @@ depends=('python2-twisted' 'libxml2' 'python2-w3lib' 'python2-lxml' 'python2-six
          'python2-setuptools' 'python2-cssselect' 'python2-pyopenssl')
 makedepends=('git')
 optdepends=('ipython2: for enhanced support of the interactive scraping shell')
-conflicts=('scrapy-hg' 'scrapy-git')
 source=("git+https://github.com/scrapy/scrapy.git#tag=${pkgver}")
 md5sums=('SKIP')
 
