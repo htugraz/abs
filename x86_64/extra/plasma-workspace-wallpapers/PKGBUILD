@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 239784 2015-05-26 09:43:48Z arojas $
+# $Id: PKGBUILD 241461 2015-06-30 17:44:21Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgname=plasma-workspace-wallpapers
-pkgver=5.3.1
+pkgver=5.3.2
 pkgrel=1
 pkgdesc='Additional wallpapers for the Plasma Workspace'
 arch=('any')
@@ -13,7 +13,7 @@ license=('LGPL')
 makedepends=('extra-cmake-modules')
 groups=('plasma')
 source=("http://download.kde.org/stable/plasma/${pkgver}/$pkgname-$pkgver.tar.xz")
-md5sums=('a4bbe5510e26e04bf328aa173909fa29')
+md5sums=('efb3cde527a0cdd081475356172bb3fb')
 
 prepare() {
   mkdir build

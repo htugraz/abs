@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 239771 2015-05-26 09:40:32Z arojas $
+# $Id: PKGBUILD 241449 2015-06-30 17:41:19Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgname=kio-extras
-pkgver=5.3.1
+pkgver=5.3.2
 pkgrel=1
 pkgdesc="Additional components to increase the functionality of KIO"
 arch=('i686' 'x86_64')
@@ -16,7 +16,7 @@ makedepends=('extra-cmake-modules' 'kdoctools' 'python')
 groups=('plasma')
 install="${pkgname}.install"
 source=("http://download.kde.org/stable/plasma/${pkgver}/$pkgname-$pkgver.tar.xz")
-md5sums=('8c53fd7088ae1c6a0a0054a6646bd4ac')
+md5sums=('ee6f6308723206dbc871b3888317484b')
 
 prepare() {
   mkdir build

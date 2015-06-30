@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 135258 2015-06-13 10:02:01Z fyan $
+# $Id: PKGBUILD 136140 2015-06-30 02:46:54Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=gost
-pkgver=1.6
+pkgver=1.7
 pkgrel=1
 pkgdesc="GO Simple Tunnel"
 arch=('i686' 'x86_64')
