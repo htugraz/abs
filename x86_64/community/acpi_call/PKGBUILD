@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 133369 2015-05-13 13:25:35Z tpowa $
+# $Id: PKGBUILD 136231 2015-07-02 01:21:32Z foutrelis $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: mortzu <me@mortzu.de>
 # Contributor: fnord0 <fnord0@riseup.net>
 
 pkgname=acpi_call
 pkgver=1.1.0
-pkgrel=29
+pkgrel=30
 _extramodules=extramodules-4.0-ARCH
 pkgdesc='A linux kernel module that enables calls to ACPI methods through /proc/acpi/call'
 arch=('i686' 'x86_64')
