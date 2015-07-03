@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 135900 2015-06-26 13:10:13Z fyan $
+# $Id: PKGBUILD 136344 2015-07-03 16:53:49Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=npm
-pkgver=2.12.0
+pkgver=2.12.1
 pkgrel=1
 pkgdesc='A package manager for javascript'
 arch=('any')
