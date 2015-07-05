@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 225972 2014-11-10 23:29:49Z heftig $
+# $Id: PKGBUILD 241816 2015-07-05 06:29:19Z jgc $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=gnome-photos
 pkgver=3.14.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Access, organize, and share your photos on GNOME"
 arch=(i686 x86_64)
 url="https://www.gnome.org/"

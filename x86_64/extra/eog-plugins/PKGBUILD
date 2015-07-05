@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 235831 2015-04-09 18:44:56Z heftig $
+# $Id: PKGBUILD 241820 2015-07-05 06:29:23Z jgc $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=eog-plugins
 pkgver=3.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Plugins for Eye of Gnome"
 arch=('i686' 'x86_64')
 url="https://wiki.gnome.org/Apps/EyeOfGnome/Plugins"

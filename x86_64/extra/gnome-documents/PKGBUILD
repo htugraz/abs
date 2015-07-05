@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 239218 2015-05-12 20:14:56Z heftig $
+# $Id: PKGBUILD 241818 2015-07-05 06:29:21Z jgc $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=gnome-documents
 pkgver=3.16.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Documents Manager for GNOME"
 arch=(i686 x86_64)
 url="http://www.gnome.org"
