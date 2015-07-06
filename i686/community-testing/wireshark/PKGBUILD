@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 136296 2015-07-02 19:39:55Z anatolik $
+# $Id: PKGBUILD 136476 2015-07-06 18:47:58Z anatolik $
 # Maintainer: Timothy Redaelli <timothy.redaelli@gmail.com>
 # Contributor: Guillaume ALAUX <guillaume@archlinux.org>
 # Contributor: Florian Pritz <bluewind at jabber dot ccc dot de>
 pkgname=('wireshark-cli' 'wireshark-gtk' 'wireshark-qt')
 pkgbase=wireshark
 pkgver=1.12.6
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 license=('GPL2')
 makedepends=('qt4' 'gtk3' 'krb5' 'libpcap' 'bash' 'gnutls' 'portaudio'
