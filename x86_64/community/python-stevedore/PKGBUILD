@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 134828 2015-06-05 08:05:17Z foutrelis $
+# $Id: PKGBUILD 136535 2015-07-07 18:48:24Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com
 
 pkgname=('python-stevedore' 'python2-stevedore')
-pkgver=1.5.0
+pkgver=1.6.0
 pkgrel=1
 pkgdesc="Manage dynamic plugins for Python applications"
 arch=('any')
-url="https://github.com/dreamhost/stevedore"
+url="https://github.com/openstack/stevedore"
 license=('Apache')
 makedepends=('python-setuptools' 'python2-setuptools')
 options=('!emptydirs')
 source=(http://pypi.python.org/packages/source/s/stevedore/stevedore-$pkgver.tar.gz)
-sha256sums=('095d71a92518f3eec4c26e531e22fd4053caf3fc52ac6c0afa80a8a0e689da45')
+sha256sums=('dab2aa31ec742f651e6a2fe0429560aebbbe0fb7fc462fa0ff565c8f5ff2ec25')
 
 prepare() {
   cd "$srcdir/stevedore-$pkgver"
