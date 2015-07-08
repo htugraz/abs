@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 230053 2015-01-27 10:39:41Z ronald $
+# $Id: PKGBUILD 241877 2015-07-08 14:50:40Z arojas $
 # Maintainer: Ronald van Haren <ronald@archlinux.org>
 # Contributor: Chirantan Ekbote <chirantan.ekbote at gmail.com>
 # Contributor: Kringel
 
 pkgname=eigen
-pkgver=3.2.4
+pkgver=3.2.5
 pkgrel=1
 pkgdesc="Lightweight C++ template library for vector and matrix math, a.k.a. linear algebra."
 arch=('any')
@@ -18,7 +18,7 @@ optdepends=('qt4: for example programs'
 replaces=('eigen3')
 provides=('eigen3')
 source=("${pkgname}-${pkgver}.tar.bz2::http://bitbucket.org/eigen/eigen/get/${pkgver}.tar.bz2")
-sha1sums=('64ea809acc449adbd8fe616def7d48ff4f0776a8')
+sha1sums=('aa4667f0b134f5688c5dff5f03335d9a19aa9b3d')
 
 build() {
 	mkdir -p build
