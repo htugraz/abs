@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 240780 2015-06-14 20:30:21Z arojas $
+# $Id: PKGBUILD 242014 2015-07-10 13:34:31Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kcodecs
-pkgver=5.11.0
+pkgver=5.12.0
 pkgrel=1
 pkgdesc='Provide a collection of methods to manipulate strings using various encodings'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('qt5-base')
 makedepends=('extra-cmake-modules' 'qt5-tools')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('5cfbb6836dbbdeddef9d889cf824f1bd')
+md5sums=('7130e5d439afcfd0f558957a2ff33ee3')
 
 prepare() {
   mkdir -p build

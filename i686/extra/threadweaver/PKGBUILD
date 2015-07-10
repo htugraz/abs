@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 240812 2015-06-14 20:30:52Z arojas $
+# $Id: PKGBUILD 242046 2015-07-10 13:35:04Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=threadweaver
-pkgver=5.11.0
+pkgver=5.12.0
 pkgrel=1
 pkgdesc='High-level multithreading framework'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('qt5-base')
 makedepends=('extra-cmake-modules')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('5ffac7ee80aa144de5719cae044878b0')
+md5sums=('e7bec854878b5e1a874999691ff2ed19')
 
 prepare() {
   mkdir -p build

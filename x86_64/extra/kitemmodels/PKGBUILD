@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 240825 2015-06-14 20:31:10Z arojas $
+# $Id: PKGBUILD 242059 2015-07-10 13:35:20Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kitemmodels
-pkgver=5.11.0
+pkgver=5.12.0
 pkgrel=1
 pkgdesc='Models for Qt Model/View system'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('qt5-base')
 makedepends=('extra-cmake-modules')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('2021d6412691454b794c7929e1f80c17')
+md5sums=('ce9f3e3adefc17848c51f06e96572947')
 
 prepare() {
   mkdir -p build

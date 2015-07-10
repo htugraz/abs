@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 136328 2015-07-03 14:45:42Z speps $
+# $Id: PKGBUILD 136661 2015-07-10 19:00:02Z schiv $
 # Maintainer: speps <speps at aur dot archlinux dot org>
 
 pkgname=nomacs
