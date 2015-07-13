@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 114335 2014-07-01 14:40:11Z spupykin $
+# $Id: PKGBUILD 136768 2015-07-13 10:01:28Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # This PKGBUILD was autocreated.  See http://xtermin.us/archperl/ for details
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 
 pkgname=perl-xml-stream
-pkgver=1.23
-pkgrel=3
+pkgver=1.24
+pkgrel=1
 pkgdesc="Perl/CPAN Module XML::Stream : Module for handling XML Streams"
 arch=(any)
 url="http://search.cpan.org/dist/XML-Stream"
@@ -13,7 +13,7 @@ license=("GPL" "PerlArtistic")
 makedepends=("perl-authen-sasl")
 depends=("perl-authen-sasl")
 source=("http://search.cpan.org/CPAN/authors/id/D/DA/DAPATRICK/XML-Stream-$pkgver.tar.gz")
-md5sums=('1c0908384fe57a1c3c529071a8b882af')
+md5sums=('62717494479cba3746bfeab73d2f955c')
 
 build() {
   cd $srcdir/XML-Stream-$pkgver
