@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 242112 2015-07-11 07:22:19Z arojas $
+# $Id: PKGBUILD 242244 2015-07-15 06:35:55Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Christian Bühler <christian.buehler@ipoplan.de>
@@ -7,7 +7,7 @@
 
 pkgname=qca-qt5
 pkgver=2.1.0.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Qt Cryptographic Architecture"
 arch=('i686' 'x86_64')
 url="http://delta.affinix.com/qca/"

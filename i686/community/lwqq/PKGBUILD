@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 135160 2015-06-10 16:48:48Z fyan $
+# $Id: PKGBUILD 136952 2015-07-15 08:56:22Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=lwqq
-pkgver=0.6.0
+pkgver=0.6.1
 _gitver="tag=v$pkgver"
 #_gitver='commit=4257454b08cdd15097fbefeca4a6ad580c28a4a0'
 pkgrel=1
