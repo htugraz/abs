@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 133155 2015-05-10 08:11:15Z svenstaro $
+# $Id: PKGBUILD 136977 2015-07-16 09:08:06Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Ondrej Martinak <omartinak@gmail.com>
 
 pkgname=sfml
-pkgver=2.3
+pkgver=2.3.1
 pkgrel=1
 pkgdesc='A simple, fast, cross-platform, and object-oriented multimedia API'
 arch=('i686' 'x86_64')

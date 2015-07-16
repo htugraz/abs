@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 241206 2015-06-22 21:18:07Z foutrelis $
+# $Id: PKGBUILD 242290 2015-07-16 19:37:17Z heftig $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=modemmanager
 pkgname=(modemmanager libmm-glib)
-pkgver=1.4.8
+pkgver=1.4.10
 pkgrel=2
 pkgdesc="Mobile broadband modem management service"
 arch=(i686 x86_64)
@@ -12,8 +12,15 @@ url="http://www.freedesktop.org/wiki/Software/ModemManager/"
 license=(GPL2 LGPL2.1)
 depends=(systemd libgudev polkit ppp libqmi libmbim hicolor-icon-theme)
 makedepends=(intltool gtk-doc gobject-introspection vala)
-source=(http://www.freedesktop.org/software/ModemManager/ModemManager-$pkgver.tar.xz)
-sha256sums=('d951eaffbe513bcde54f90602c6c423a49593f656d6485ba95f6fcb4bc1e8003')
+source=(http://www.freedesktop.org/software/ModemManager/ModemManager-${pkgver}.tar.xz
+        bus-signals.patch)
+sha256sums=('107ba0b4d0749aebb0347691a39f60891cc6004aeca8b2128d69c50557049a63'
+            '2bf544ace3e79276f8e9c113fe3468506da74eb7f4ce1de5b33ea0e955dfd09e')
+
+prepare() {
+  cd ModemManager-$pkgver
+  patch -Np1 -i ../bus-signals.patch
+}
 
 build() {
   cd ModemManager-$pkgver
