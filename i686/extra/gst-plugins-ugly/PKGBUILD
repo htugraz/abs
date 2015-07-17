@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 233382 2015-03-12 10:45:27Z foutrelis $
+# $Id: PKGBUILD 242314 2015-07-17 14:57:54Z alucryd $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gst-plugins-ugly
 pkgver=1.4.5
-pkgrel=2
+pkgrel=3
 pkgdesc="GStreamer Multimedia Framework Ugly Plugins"
 arch=('i686' 'x86_64')
 license=('LGPL')
