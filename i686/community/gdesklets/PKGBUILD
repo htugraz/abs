@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 111943 2014-05-27 08:42:54Z jgc $
+# $Id: PKGBUILD 137089 2015-07-18 08:28:22Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 # Contributor: nifan <carlos@nifan.tk>
 # Contributor: Roman Kyrylych <roman@archlinux.org>
 
 pkgname=gdesklets
 pkgver=0.36.3
-pkgrel=5
+pkgrel=6
 pkgdesc="System for bringing mini programs (desklets) onto your desktop"
 arch=('i686' 'x86_64')
 url="https://launchpad.net/gdesklets"
 license=('GPL') 
-depends=('libgtop' 'librsvg' 'pygtk' 'desktop-file-utils' 'gnome-icon-theme' 'xdg-utils')
+depends=('libgtop' 'librsvg' 'pygtk' 'desktop-file-utils')
 makedepends=('gnome-python' 'intltool')
 install=$pkgname.install
 source=(https://launchpad.net/gdesklets/0.3x/release-of-$pkgver/+download/$pkgname-$pkgver.tar.bz2
