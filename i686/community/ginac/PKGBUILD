@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 125131 2015-01-01 17:42:55Z jlichtblau $
+# $Id: PKGBUILD 137157 2015-07-20 16:54:21Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 # Contributor: Thomas Baechler <thomas@archlinux.org>
 
 pkgname=ginac
-pkgver=1.6.3
+pkgver=1.6.4
 pkgrel=1
 pkgdesc="C++ library for symbolic calculations"
 arch=('i686' 'x86_64')
@@ -15,7 +15,7 @@ depends=('cln')
 makedepends=('transfig' 'doxygen' 'texlive-bin' 'python')
 install=${pkgname}.install
 source=(http://www.ginac.de/${pkgname}-${pkgver}.tar.bz2)
-sha256sums=('6756c7de3485bc5245f8b0e4b3c046ac75406b93e9205b4180b096846932d9bd')
+sha256sums=('6241158216b4f68c625ce7d843d5b6b070304f87e7fc8f4075b76501ca0f3c60')
 
 build() {
   cd "${srcdir}"/${pkgname}-${pkgver}

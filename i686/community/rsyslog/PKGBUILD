@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 134971 2015-06-08 13:00:58Z spupykin $
+# $Id: PKGBUILD 137154 2015-07-20 16:01:40Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=rsyslog
 pkgver=8.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc="An enhanced multi-threaded syslogd with a focus on security and reliability"
 url="http://www.rsyslog.com/"
 arch=('i686' 'x86_64')
@@ -49,6 +49,7 @@ build() {
               --enable-imjournal \
               --enable-omjournal \
               --enable-relp \
+              --enable-impstats \
               --with-systemdsystemunitdir=/usr/lib/systemd/system
   make
 }
