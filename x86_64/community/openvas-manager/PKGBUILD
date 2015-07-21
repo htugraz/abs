@@ -1,24 +1,31 @@
-# $Id: PKGBUILD 131700 2015-04-19 11:30:02Z andyrtr $
+# $Id: PKGBUILD 137184 2015-07-20 23:57:35Z thestinger $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 pkgname=openvas-manager
-pkgver=5.0.9
-pkgrel=2
+pkgver=6.0.4
+pkgrel=3
 pkgdesc='A layer between the OpenVAS Scanner and various client applications'
 arch=('i686' 'x86_64')
 url='http://www.openvas.org/'
 license=('GPL')
-depends=('openvas-libraries' 'rsync' 'sqlite3')
+depends=('libxslt' 'openvas-libraries' 'rsync' 'sqlite3')
 makedepends=('cmake' 'doxygen' 'xmltoman')
+optdepends=('python2: SPLIT_PART_SIZE feature via xml_split script')
 groups=(openvas)
+install=$pkgname.install
 # These URLs need to be manually updated on every pkgver upgrade.
 # http://wald.intevation.org/frs/?group_id=29
-source=("http://wald.intevation.org/frs/download.php/1963/$pkgname-${pkgver}.tar.gz"
-        "http://wald.intevation.org/frs/download.php/1964/$pkgname-${pkgver}.tar.gz.asc")
-md5sums=('da37223106a4f0b6dbefd090e9703feb'
+source=("http://wald.intevation.org/frs/download.php/2133/$pkgname-${pkgver}.tar.gz"
+        "http://wald.intevation.org/frs/download.php/2134/$pkgname-${pkgver}.tar.gz.asc")
+md5sums=('a9cad4bd95bf8cf126b52f2f5325d801'
          'SKIP')
 validpgpkeys=(
               'C3B468D2288C68B9D526452248479FF648DB4530' # OpenVAS Transfer Integrity
 )
+
+prepare() {
+  cd $pkgname-$pkgver
+  sed -i '1c#!/usr/bin/python2' tools/extra/xml_split
+}
 
 build() {
   cd $pkgname-$pkgver
