@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 137193 2015-07-21 03:57:26Z fyan $
+# $Id: PKGBUILD 137273 2015-07-22 08:01:51Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=thefuck
-pkgver=2.1
+pkgver=2.3
 pkgrel=1
 pkgdesc="Magnificent app which corrects your previous console command"
 arch=('any')

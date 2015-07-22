@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 242395 2015-07-21 12:15:10Z foutrelis $
+# $Id: PKGBUILD 242437 2015-07-22 15:36:04Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=sudo
-_sudover=1.8.14p2
+_sudover=1.8.14p3
 pkgver=${_sudover/p/.p}
-pkgrel=1
+pkgrel=2
 pkgdesc="Give certain users the ability to run some commands as root"
 arch=('i686' 'x86_64')
 url="http://www.sudo.ws/sudo/"
@@ -17,7 +17,7 @@ backup=('etc/sudoers' 'etc/pam.d/sudo')
 install=$pkgname.install
 source=(http://www.sudo.ws/sudo/dist/$pkgname-$_sudover.tar.gz{,.sig}
         sudo.pam)
-sha256sums=('b4bca9cca52fc6a409709995014af5e9fb905a4a6c5bda977f78e568954dfe21'
+sha256sums=('a8a697cbb113859058944850d098464618254804cf97961dee926429f00a1237'
             'SKIP'
             'd1738818070684a5d2c9b26224906aad69a4fea77aabd960fc2675aee2df1fa2')
 validpgpkeys=('CCB24BE9E9481B15D34159535A89DFA27EE470C4')
