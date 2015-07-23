@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 137258 2015-07-22 06:11:09Z fyan $ 
+# $Id: PKGBUILD 137312 2015-07-23 10:22:25Z fyan $ 
 # Maintainer: Angel Velasquez <angvp@archlinux.org>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Sébastien Luttringer <seblu@aur.archlinux.org>
 
 pkgbase=python-sqlalchemy
 pkgname=('python-sqlalchemy' 'python2-sqlalchemy')
-pkgver=1.0.7
+pkgver=1.0.8
 pkgrel=1
 arch=('i686' 'x86_64') # python2 package contain .so
 url="http://www.sqlalchemy.org/"
@@ -14,7 +14,7 @@ makedepends=('python-setuptools' 'python2-setuptools')
 checkdepends=('python-pytest' 'python2-pytest' 'python-mock' 'python2-mock')
 source=("https://pypi.python.org/packages/source/S/SQLAlchemy/SQLAlchemy-$pkgver.tar.gz"{,.asc})
 validpgpkeys=('83AF7ACE251C13E6BB7DEFBD330239C1C4DAFEE1')
-md5sums=('beba858557f422d3c1d7f8f9154dc07a'
+md5sums=('7cfd005be63945c96a78c67764ac3a85'
          'SKIP')
 
 prepare() {
