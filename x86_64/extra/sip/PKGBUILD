@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 240848 2015-06-15 02:52:07Z fyan $
+# $Id: PKGBUILD 242473 2015-07-24 03:26:19Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Douglas Soares de Andrade <douglas@archlinux.org>
@@ -6,14 +6,14 @@
 
 pkgbase=sip
 pkgname=('sip' 'python-sip' 'python2-sip')
-pkgver=4.16.8
+pkgver=4.16.9
 pkgrel=1
 arch=('i686' 'x86_64')
 url='http://www.riverbankcomputing.com/software/sip/intro'
 license=('custom:"sip"')
 makedepends=('python' 'python2')
-source=("http://downloads.sourceforge.net/pyqt/${pkgbase}-${pkgver}.tar.gz")
-md5sums=('8e48cd78bcd31f9310a701a4111c2739')
+source=("http://www.riverbankcomputing.com/static/Downloads/sip4/sip-$pkgver.tar.gz")
+md5sums=('7a1dfff4e6fade0e4adee2c4e3d3aa9a')
 
 build() {
   cp -r ${pkgbase}-${pkgver} python2-${pkgbase}-${pkgver}
