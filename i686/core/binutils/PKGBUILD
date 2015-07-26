@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 239643 2015-05-21 23:12:04Z allan $
+# $Id: PKGBUILD 242520 2015-07-26 13:01:27Z allan $
 # Maintainer: Allan McRae <allan@archlinux.org>
 
 # toolchain build order: linux-api-headers->glibc->binutils->gcc->binutils->glibc
@@ -6,9 +6,9 @@
 # build from head of release branch as bug fix releases are rare
 
 pkgname=binutils
-pkgver=2.25
-pkgrel=5
-_commit=69352378
+pkgver=2.25.1
+pkgrel=1
+_commit=2bd25930
 pkgdesc="A set of programs to assemble and manipulate binary and object files"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/binutils/"
