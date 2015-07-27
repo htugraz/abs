@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 132494 2015-04-29 08:27:50Z spupykin $
+# $Id: PKGBUILD 137492 2015-07-27 09:57:20Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=maven
 pkgver=3.3.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A Java project management and project comprehension tool"
 arch=('any')
 url="http://maven.apache.org"
@@ -36,4 +36,5 @@ package() {
   rm $pkgdir/opt/maven/*.txt
   mkdir -p $pkgdir/usr/bin
   ln -s /opt/maven/bin/mvn $pkgdir/usr/bin/mvn
+  ln -s /opt/maven/bin/mvnDebug $pkgdir/usr/bin/mvnDebug
 }

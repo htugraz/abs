@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 127510 2015-02-10 17:04:17Z spupykin $
+# $Id: PKGBUILD 137490 2015-07-27 09:57:06Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=dspam
 pkgver=3.10.2
-pkgrel=11
+pkgrel=12
 pkgdesc="A scalable, open-source statistical anti-spam filter"
 arch=('i686' 'x86_64')
 url="http://dspam.nuclearelephant.com/"
