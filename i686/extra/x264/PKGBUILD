@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 242308 2015-07-17 14:09:49Z alucryd $
+# $Id: PKGBUILD 242625 2015-07-28 21:57:59Z alucryd $
 # Maintainer:  Ionut Biru <ibiru@archlinux.org>
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Maintainer:  Maxime Gauduin <alucryd@archlinux.org>
@@ -6,7 +6,7 @@
 # Contributor: Paul Mattal <paul@archlinux.org>
 
 pkgname=('x264' 'libx264' 'libx264-10bit')
-pkgver=148.20150717
+pkgver=148.20150725
 pkgrel=1
 epoch=2
 arch=('i686' 'x86_64')
@@ -14,7 +14,8 @@ url='http://www.videolan.org/developers/x264.html'
 license=('GPL')
 depends=('glibc')
 makedepends=('yasm' 'git' 'ffmpeg' 'l-smash')
-source=(x264::git://git.videolan.org/x264/x264-sandbox.git#commit=e6d2a36bb)
+_commit=73ae2d11d472d0eb3b7c218dc1659db32f649b14
+source=(git://git.videolan.org/x264.git#commit=${_commit})
 md5sums=('SKIP')
 
 pkgver() {

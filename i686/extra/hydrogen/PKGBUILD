@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 229601 2015-01-19 21:35:13Z schiv $
+# $Id: PKGBUILD 242596 2015-07-28 18:14:14Z schiv $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: tobias <tobias@archlinux.org>
 # Contributor: see .contrib
 
 pkgname=hydrogen
 pkgver=0.9.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc="An advanced drum machine"
 arch=('i686' 'x86_64')
 license=('GPL')
@@ -31,6 +31,10 @@ package() {
   cd "$srcdir/$pkgname-$pkgver"
 
   make DESTDIR="$pkgdir" install
+
+  # TODO: tell upstream to comply with freedesktop.org icon conventions
+  sed -i 's:Icon=h2-icon:Icon=/usr/share/hydrogen/data/img/gray/h2-icon.svg:' \
+    "$pkgdir/usr/share/applications/$pkgname.desktop"
 }
 
 # vim:set ts=2 sw=2 et:
