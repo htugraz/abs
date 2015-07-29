@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 242511 2015-07-26 08:52:01Z arojas $
+# $Id: PKGBUILD 242809 2015-07-29 08:41:28Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=dolphinpart4
 pkgver=15.04.3
-pkgrel=1
+pkgrel=3
 arch=(i686 x86_64)
 url='http://kde.org/applications/system/dolphin/'
 pkgdesc='KDE4 Dolphin KPart'
