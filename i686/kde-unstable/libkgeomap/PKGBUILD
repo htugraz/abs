@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 242743 2015-07-29 07:56:15Z arojas $
+# $Id: PKGBUILD 242882 2015-07-30 18:51:09Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkgeomap
 pkgver=15.07.80
-pkgrel=1
+pkgrel=2
 pkgdesc="A wrapper around world map components for browsing and arranging photos on a map"
 url="https://projects.kde.org/projects/kde/kdegraphics/libs/libkgeomap"
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
-depends=('libmarble4')
+depends=('kdelibs' 'libmarble4')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/unstable/applications/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")

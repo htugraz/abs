@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 126600 2015-01-26 10:32:25Z spupykin $
+# $Id: PKGBUILD 137613 2015-07-30 10:34:39Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Alessio 'mOLOk' Bolognino <themolok@gmail.com>
 
 pkgname=moreutils
-pkgver=0.55
+pkgver=0.57
 pkgrel=1
 pkgdesc="A growing collection of the unix tools that nobody thought to write thirty years ago"
 arch=('i686' 'x86_64')
