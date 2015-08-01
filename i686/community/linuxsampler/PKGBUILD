@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 137568 2015-07-28 19:13:41Z schiv $
+# $Id: PKGBUILD 137654 2015-08-01 10:38:45Z schiv $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: svoufff <svoufff at gmail dot com>
 # Contributor: Shinlun Hsieh <yngwiexx@yahoo.com.tw>
 
 pkgname=linuxsampler
 pkgver=2.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Professional-grade audio sampler alternative to Gigasampler"
 arch=('i686' 'x86_64')
 url="http://www.linuxsampler.org/"
@@ -33,6 +33,10 @@ package() {
   # install GPL exception statement
   install -Dm644 "$srcdir/license.txt" \
     "$pkgdir/usr/share/licenses/$pkgname/GPL-EXCEPTION"
+
+  # lscp bin conflicts with lscp from nilfs-utils
+  # see https://bugs.archlinux.org/task/45827
+  mv "$pkgdir/usr/bin/lscp" "$pkgdir/usr/bin/lscp-lsampler"
 }
 
 # vim:set ts=2 sw=2 et:
