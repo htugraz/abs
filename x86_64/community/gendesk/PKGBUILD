@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 110817 2014-05-07 16:32:25Z arodseth $
-# Maintainer: Alexander Rødseth <rodseth@gmail.com>
+# $Id: PKGBUILD 137744 2015-08-02 17:55:25Z arodseth $
+# Maintainer: Alexander F Rødseth <xyproto@archlinux.org>
 
 pkgname=gendesk
 pkgver=0.6.2
-pkgrel=1
-pkgdesc='Utility to generate .desktop files and download icons'
+pkgrel=2
+pkgdesc='Utility for generating desktop files'
 arch=('x86_64' 'i686')
 url='http://roboticoverlords.org/gendesk/'
 license=('MIT')
