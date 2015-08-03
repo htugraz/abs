@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 130094 2015-03-28 10:39:47Z fyan $
+# $Id: PKGBUILD 137783 2015-08-03 06:31:08Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: kreed <kreed@kreed.org>
 
 pkgname=doge
-pkgver=3.3.0
-pkgrel=2
+pkgver=3.5.0
+pkgrel=1
 pkgdesc="doge meme motd script"
 url="https://github.com/thiderman/doge"
 arch=('any')
 license=('MIT')
 depends=('python')
 source=("https://pypi.python.org/packages/source/d/doge/doge-$pkgver.tar.gz")
-md5sums=('c17589c22479a0e33e5259f8cbbb6f5f')
+md5sums=('29642ad2903f73ffc939c04689c695cb')
 
 package() {
   cd doge-$pkgver

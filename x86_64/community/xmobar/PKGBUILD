@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 131413 2015-04-15 14:12:28Z jelle $
+# $Id: PKGBUILD 137861 2015-08-03 19:12:33Z jelle $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 pkgname=xmobar
 pkgver=0.23.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A Minimalistic Text Based Status Bar"
 url="http://hackage.haskell.org/package/xmobar"
 license=('custom:BSD3')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 137284 2015-07-22 14:47:41Z fyan $
+# $Id: PKGBUILD 137802 2015-08-03 10:15:10Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Yangtse <yangtsesu@gmail.com> 
 # Contributor: WU Jun <quark at lihdd dot net>
 
 pkgname=libpinyin
-pkgver=1.1.91
+pkgver=1.2.0
 _modelver=10
 pkgrel=1
 pkgdesc="Library to deal with pinyin"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 130772 2015-04-06 04:21:50Z td123 $
+# $Id: PKGBUILD 137822 2015-08-03 13:38:20Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=haskell-glib
 pkgver=0.13.1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Binding to the GLIB library for Gtk2Hs."
 url="http://hackage.haskell.org/package/glib"
 license=('LGPL2.1')
