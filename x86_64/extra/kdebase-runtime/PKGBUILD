@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 242134 2015-07-11 22:25:56Z arojas $
+# $Id: PKGBUILD 243005 2015-08-04 06:36:14Z bpiotrowski $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
@@ -6,7 +6,7 @@
 pkgbase=kdebase-runtime
 pkgname=('kdebase-runtime' 'khelpcenter4' 'kdebase-runtime-doc' 'kdesu4')
 pkgver=15.04.3
-pkgrel=3
+pkgrel=4
 pkgdesc="Plugins and applications necessary for the running of KDE applications"
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/kde-runtime'

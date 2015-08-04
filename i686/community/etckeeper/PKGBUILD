@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 131043 2015-04-09 18:53:46Z eworm $
+# $Id: PKGBUILD 137951 2015-08-04 20:23:16Z eworm $
 # Maintainer: Christian Hesse <mail@eworm.de>
 # Contributor: mathieu.clabaut <mathieu.clabaut@gmail.com>
 # Contributor: Buce <dmbuce@gmail.com>
 # Contributor: Danie Roux <accounts@danieroux.com>
 
 pkgname=etckeeper
-pkgver=1.18.1
-pkgrel=4
+pkgver=1.18.2
+pkgrel=1
 pkgdesc='collection of tools to let /etc be stored in a git, hg or bzr repository'
 arch=('any')
 url='http://kitenet.net/~joey/code/etckeeper/'

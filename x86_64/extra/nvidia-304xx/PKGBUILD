@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 242496 2015-07-25 09:39:36Z seblu $
+# $Id: PKGBUILD 242996 2015-08-04 06:30:45Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Thomas Baechler <thomas@archlinux.org>
 
@@ -6,7 +6,7 @@ pkgbase=nvidia-304xx
 pkgname=(nvidia-304xx nvidia-304xx-dkms)
 pkgver=304.125
 _extramodules=extramodules-4.1-ARCH
-pkgrel=21
+pkgrel=22
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"
 makedepends=('libgl' "nvidia-304xx-utils=${pkgver}" 'linux' 'linux-headers>=4.1' 'linux-headers<4.2')

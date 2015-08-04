@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 120334 2014-10-07 07:02:12Z andrea $
+# $Id: PKGBUILD 137899 2015-08-04 06:37:13Z bpiotrowski $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=krename
 pkgver=4.0.9
-pkgrel=4
+pkgrel=5
 pkgdesc="A very powerful batch file renamer for KDE"
 arch=('i686' 'x86_64')
 url="http://www.krename.net"
