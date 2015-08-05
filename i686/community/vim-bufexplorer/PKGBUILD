@@ -1,9 +1,9 @@
-#$Id: PKGBUILD 117995 2014-08-28 05:24:46Z svenstaro $
+#$Id: PKGBUILD 137959 2015-08-05 01:23:01Z svenstaro $
 #Contributor: Aaron Griffin <aaron@archlinux.org>
 #Maintainer: 
 
 pkgname=vim-bufexplorer
-pkgver=7.4.4
+pkgver=7.4.6
 pkgrel=1
 pkgdesc="A simple buffer list/switcher for vim "
 arch=('any')
