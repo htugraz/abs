@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 134963 2015-06-08 12:17:58Z mtorromeo $
+# $Id: PKGBUILD 138013 2015-08-06 09:54:31Z mtorromeo $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 
 pkgname=libuv
-pkgver=1.6.1
+pkgver=1.7.0
 pkgrel=1
 pkgdesc="Multi-platform support library with a focus on asynchronous I/O"
 arch=('i686' 'x86_64')
@@ -42,4 +42,4 @@ package() {
 		"$pkgdir"/usr/share/man/man1/libuv.1
 }
 
-sha256sums=('f558ede285878d6a69f6a6d43b5df0241f3c35d62ac989477bdbd418badd83d7')
+sha256sums=('27a66f944c8cf1baf0fb53f5cfe11f01035cc80622d8ecc8e18bd1b2ae35ef5f')

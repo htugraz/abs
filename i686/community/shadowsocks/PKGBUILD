@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 137684 2015-08-02 10:47:26Z fyan $
+# $Id: PKGBUILD 138033 2015-08-06 17:19:23Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=shadowsocks
-pkgver=2.7
+pkgver=2.8.1
 pkgrel=1
 pkgdesc="A lightweight tunnel proxy"
 license=('Apache')

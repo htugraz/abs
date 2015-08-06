@@ -1,19 +1,19 @@
-# $Id: PKGBUILD 112233 2014-05-30 11:54:15Z spupykin $
+# $Id: PKGBUILD 138039 2015-08-06 18:56:28Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Roman Kyrylych <roman@archlinux.org>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=gimmage
 pkgver=0.2.3
-pkgrel=5
+pkgrel=6
 pkgdesc="A gtkmm image viewer"
 arch=('i686' 'x86_64')
-url="http://gimmage.berlios.de"
+url="http://sourceforge.net/projects/gimmage.berlios/"
 license=('GPL')
 depends=('gtkmm' 'curl' 'file')
 makedepends=('pkgconfig')
 changelog=ChangeLog
-source=(http://download.berlios.de/$pkgname/$pkgname-$pkgver.tar.gz)
+source=(http://sourceforge.net/projects/gimmage.berlios/files/gimmage-$pkgver.tar.gz)
 md5sums=('f51cca53b3d33415e75a91cf81b6ac39')
 
 prepare() {
