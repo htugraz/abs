@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 136217 2015-07-01 17:05:30Z fyan $
+# $Id: PKGBUILD 138041 2015-08-07 02:38:45Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: PyroDevil <p dot devil at gmail dot com>
 # Contributor: Anibal Pacheco <apacheco.uy@gmail.com>
 
 pkgname=scrapy
-pkgver=1.0.1
+pkgver=1.0.2
 pkgrel=1
 pkgdesc="A fast high-level scraping and web crawling framework."
 arch=(any)
