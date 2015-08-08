@@ -1,19 +1,19 @@
-# $Id: PKGBUILD 233959 2015-03-16 21:39:55Z bisson $
+# $Id: PKGBUILD 243127 2015-08-08 13:52:35Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Firmicus <francois.archlinux.org>
 # Contributor: dorphell <dorphell@archlinux.org>
 
 pkgname=gsfonts
 _pkgname=urw-core35-fonts
-pkgver=20150122
+pkgver=20150808
 pkgrel=1
-pkgdesc='URW and Postscript core35 fonts'
+pkgdesc='URW+ Postscript core35 fonts'
 url='http://git.ghostscript.com/?p=urw-core35-fonts.git'
 arch=('any')
 license=('AGPL3')
 makedepends=('git')
 depends=('xorg-font-utils' 'fontconfig')
-source=("git://git.ghostscript.com/${_pkgname}.git#commit=8ddd6b336d95c43279efcc935cbe4180958b8a31")
+source=("git://git.ghostscript.com/${_pkgname}.git#commit=e5b3fce0aadb091699b409be325468c682bd436d")
 sha1sums=('SKIP')
 
 install=install

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 134378 2015-05-30 15:36:25Z kkeen $
+# $Id: PKGBUILD 138105 2015-08-08 03:37:54Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Dominik Heidler <dheidler@gmail.com>
 pkgname=gnuradio-fcdproplus
 _pkgname=gr-fcdproplus
 pkgver=3.7.4
-pkgrel=13
+pkgrel=15
 _tag=v3.7_hidraw
 pkgdesc="GNU Radio source block for Funcube Dongle Pro +"
 arch=('i686' 'x86_64')
