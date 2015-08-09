@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137702 2015-08-02 14:40:11Z jlichtblau $
+# $Id: PKGBUILD 138161 2015-08-09 20:49:51Z jlichtblau $
 # Maintainer : Martin Wimpress <code@flexion.org>
 # Maintainer : Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Sauyon Lee <sauyonl@sauyon.com>
@@ -6,7 +6,7 @@
 # Contributor: korjjj <korjjj+aur@gmail.com>
 
 pkgname=syncthing
-pkgver=0.11.18
+pkgver=0.11.19
 pkgrel=1
 pkgdesc="Open Source Continuous Replication / Cluster Synchronization Thing"
 url="http://syncthing.net/"
