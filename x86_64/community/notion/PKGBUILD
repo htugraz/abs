@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 133600 2015-05-16 16:24:00Z anatolik $
+# $Id: PKGBUILD 138278 2015-08-12 12:49:09Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Eugen Zagorodniy e dot zagorodniy at gmail dot com
 # Contributor: aunoor
 
 pkgname=notion
-pkgver=20150505
+pkgver=20150812
 pkgrel=1
 pkgdesc="Tabbed tiling, window manager. Fork of Ion3"
 url="http://sourceforge.net/projects/notion/"
@@ -61,12 +61,30 @@ LUA          := $(which lua)
 LUAC         := $(which luac)
 EOF
   sed -i 's|return \(lua_sethook.*\)|\1 return 0;|g' notion/libextl/luaextl.c
+  sed -i 's|mkdir|mkdir -p|g' notion-doc/Makefile
 }
 
 build() {
   cd ${srcdir}/notion
   make INCLUDES=-I${srcdir}/notion LUA_VERSION=5.2 PREFIX=/usr ETCDIR=/etc/notion
   cd ${srcdir}/notion-doc
+
+  # uggly rubber/makeindex workaround
+  make -j1 all || true
+  makeindex -o notionconf.ind notionconf.idx
+  make -j1 all || true
+  makeindex -o notionconf.ind notionconf.idx
+  makeindex -o notionnotes.ind notionnotes.idx
+  make -j1 all || true
+  makeindex -o notionconf.ind notionconf.idx
+  makeindex -o notionnotes.ind notionnotes.idx
+  make -j1 all || true
+  makeindex -o notionconf.ind notionconf.idx
+  makeindex -o notionnotes.ind notionnotes.idx
+  make -j1 all || true
+  makeindex -o notionconf.ind notionconf.idx
+  makeindex -o notionnotes.ind notionnotes.idx
+
   make -j1 all
 }
 

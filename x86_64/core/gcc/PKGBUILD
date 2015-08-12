@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 242454 2015-07-23 04:15:18Z allan $
+# $Id: PKGBUILD 243190 2015-08-12 04:49:45Z allan $
 # Maintainer: Allan McRae <allan@archlinux.org>
 
 # toolchain build order: linux-api-headers->glibc->binutils->gcc->binutils->glibc
@@ -8,7 +8,7 @@ pkgname=('gcc' 'gcc-libs' 'gcc-fortran' 'gcc-objc' 'gcc-ada' 'gcc-go')
 pkgver=5.2.0
 _pkgver=5
 _islver=0.14.1
-pkgrel=1
+pkgrel=2
 #_snapshot=5-20150623
 pkgdesc="The GNU Compiler Collection"
 arch=('i686' 'x86_64')
@@ -102,7 +102,7 @@ package_gcc-libs()
 {
   pkgdesc="Runtime libraries shipped by GCC"
   groups=('base')
-  depends=('glibc>=2.21')
+  depends=('glibc>=2.22')
   options=('!emptydirs' '!strip')
   install=gcc-libs.install
 
