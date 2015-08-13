@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 243363 2015-08-12 11:56:19Z fyan $
+# $Id: PKGBUILD 243416 2015-08-13 17:47:40Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=baloo
 pkgver=5.13.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A framework for searching and managing metadata"
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/kdelibs/baloo'
 license=('LGPL')
-depends=('xapian-core' 'kfilemetadata' 'kidletime' 'kdelibs4support' 'lmdb')
+depends=('kfilemetadata' 'kidletime' 'kio' 'lmdb')
 makedepends=('extra-cmake-modules' 'kdoctools' 'python')
 conflicts=('baloo-frameworks')
 replaces=('baloo-frameworks')
