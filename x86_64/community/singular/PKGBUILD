@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 137516 2015-07-27 18:29:03Z arojas $
+# $Id: PKGBUILD 138333 2015-08-14 04:47:01Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Rémy Oudompheng <oudomphe@clipper.ens.fr>
 
 pkgname=singular
 pkgver=3.1.7.p1
 _majver=3-1-7
-pkgrel=7
+pkgrel=8
 pkgdesc="Computer Algebra System for polynomial computations"
 arch=(i686 x86_64)
 url="http://www.singular.uni-kl.de/"

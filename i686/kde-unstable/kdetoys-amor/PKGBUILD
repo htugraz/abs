@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 242785 2015-07-29 08:09:12Z arojas $
+# $Id: PKGBUILD 243610 2015-08-14 05:37:14Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdetoys-amor
-pkgver=15.07.80
+pkgver=15.07.90
 pkgrel=1
 pkgdesc='On-Screen Creature'
 url='https://projects.kde.org/projects/kde/kdetoys/amor'
@@ -14,7 +14,7 @@ depends=('kdebase-runtime')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/unstable/applications/${pkgver}/src/amor-${pkgver}.tar.xz")
-sha1sums=('2b8059700e7821f000fbb0f4ec31691a652f06ca')
+sha1sums=('525117792d1d21e6e70e76aef877469c7123995f')
 
 build() {
   mkdir build

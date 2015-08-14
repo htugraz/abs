@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 242679 2015-07-29 07:35:25Z arojas $
+# $Id: PKGBUILD 243498 2015-08-14 04:35:43Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kbruch
-pkgver=15.07.80
+pkgver=15.07.90
 pkgrel=1
 pkgdesc="Exercise Fractions"
 url="http://kde.org/applications/education/kbruch/"
@@ -16,7 +16,7 @@ install=${pkgname}.install
 conflicts=('kdeedu-kbruch')
 replaces=('kdeedu-kbruch')
 source=("http://download.kde.org/unstable/applications/${pkgver}/src/kbruch-${pkgver}.tar.xz")
-sha1sums=('f9da3048e01dfc4ab4e11ed17f2249836ba411f2')
+sha1sums=('ea3f092278c7ba9d0aa358cfb0ced068f946decc')
 
 prepare() {
   mkdir build
