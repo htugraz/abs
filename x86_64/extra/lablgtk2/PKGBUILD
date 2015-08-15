@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 227330 2014-12-06 20:45:50Z bpiotrowski $
+# $Id: PKGBUILD 243764 2015-08-15 21:24:26Z juergen $
 #Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=lablgtk2
 pkgver=2.18.3
-pkgrel=1
+pkgrel=2
 pkgdesc="An Objective Caml interface to gtk2"
 arch=(i686 x86_64)
 license=('LGPL')

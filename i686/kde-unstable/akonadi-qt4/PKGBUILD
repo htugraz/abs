@@ -1,20 +1,18 @@
-# $Id: PKGBUILD 242578 2015-07-28 17:20:17Z arojas $
+# $Id: PKGBUILD 243727 2015-08-15 08:14:37Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
-pkgbase=libakonadi-qt4
-pkgname=(libakonadi-qt4 akonadi-qt4-dbus)
+pkgbase=akonadi-qt4
+pkgname=(libakonadi-qt4 akonadi-qt4)
 pkgver=1.13.0
-pkgrel=2
-pkgdesc="Qt4 akonadi libraries"
+pkgrel=3
+pkgdesc="PIM layer, which provides an asynchronous API to access all kind of PIM data (Qt4 version)"
 arch=('i686' 'x86_64')
 url='http://community.kde.org/KDE_PIM/Akonadi'
 license=('LGPL')
-depends=('boost-libs' 'qt4' 'libxslt')
-makedepends=('cmake' 'automoc4' 'boost' 'postgresql' 'mariadb')
-conflicts=('akonadi<2')
-install="${pkgname}.install"
+makedepends=('cmake' 'automoc4' 'boost' 'postgresql' 'mariadb' 'qt4' 'libxslt')
+install="$pkgbase.install"
 source=("http://download.kde.org/stable/akonadi/src/akonadi-${pkgver}.tar.bz2"
         dont-leak-old-external-payload-files.patch)
 md5sums=('84eb2e471bd6bdfe54a2a2f1d858c07d'
@@ -30,7 +28,7 @@ prepare() {
 
 build() {
   cd build
-  cmake ../akonadi-${pkgver} \
+  cmake ../akonadi-$pkgver \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DINSTALL_QSQLITE_IN_QT_PREFIX=TRUE \
@@ -41,17 +39,23 @@ build() {
 }
 
 package_libakonadi-qt4() {
+  pkgdesc='Qt4 akonadi libraries'
+  depends=('qt4')
+
   cd build
-  make DESTDIR="${pkgdir}" install
+  make DESTDIR="$pkgdir" install
 
 # conflicts with akonadi
   rm -r "$pkgdir"/usr/{bin,share}
 }
 
-package_akonadi-qt4-dbus() {
-  depends=()
+package_akonadi-qt4() {
+  depends=(libakonadi-qt4 boost-libs)
   conflicts=(akonadi)
 
-  mkdir -p "$pkgdir"/usr/share/dbus-1/interfaces
-  install -m644 "$srcdir"/akonadi-$pkgver/interfaces/*.xml "$pkgdir"/usr/share/dbus-1/interfaces/
+  cd build
+  make DESTDIR="$pkgdir" install
+
+# provided by libakonadi-qt4
+  rm -r "$pkgdir"/usr/{lib,include}
 }

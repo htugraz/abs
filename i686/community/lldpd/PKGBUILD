@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 133951 2015-05-21 23:18:00Z seblu $
+# $Id: PKGBUILD 138395 2015-08-15 20:10:38Z seblu $
 # Maintainer: Sébastien "Seblu" Luttringer
 # Contributor: Brian Bidulock <bidulock@openss7.org>
 
 pkgname=lldpd
-pkgver=0.7.15
+pkgver=0.7.16
 pkgrel=1
 pkgdesc='802.1ab implementation (LLDP) to help you locate neighbors'
 arch=('i686' 'x86_64')
@@ -18,7 +18,7 @@ source=("http://media.luffy.cx/files/lldpd/lldpd-$pkgver.tar.gz"
         'lldpd.service'
         'lldpd.sysusers'
         'lldpd.tmpfiles')
-md5sums=('46f7ad97fc1d04084ab11b32fc0ed708'
+md5sums=('49a10a89223e24150579246e9ed6f665'
          '8ae98663bac55afe5d989919d296f28a'
          'a650af7390db0632480184f9f2e7ee4a'
          '8623610442a9d553de764b50046cd6d3'

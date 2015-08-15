@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137945 2015-08-04 18:06:34Z seblu $
+# $Id: PKGBUILD 138388 2015-08-15 17:33:07Z seblu $
 # Maintainer: Sébastien Luttringer
 # Contributor: Kaiting Chen <kaitocracy@gmail.com>
 # Contributor: mickael9 <mickael9 at gmail dot com>
@@ -20,7 +20,7 @@ install=$pkgname.install
 source=("http://znc.in/releases/$pkgname-$pkgver.tar.gz"
         "$pkgname.sysusers")
 md5sums=('8e29289e6229b6d2473de202170745ab'
-         '48dd51ac68c52d9700f38e3db1a2a7be')
+         '919705dccc42d3bff1549d3b3680e55a')
 
 build() {
   cd $pkgname-$pkgver

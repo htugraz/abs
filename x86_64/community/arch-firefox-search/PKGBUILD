@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 90961 2013-05-16 17:35:01Z spupykin $
+# $Id: PKGBUILD 138383 2015-08-15 12:26:51Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=arch-firefox-search
 pkgver=0.8.2
-pkgrel=6
+pkgrel=7
 pkgdesc="Firefox Arch search engines (AUR, Pkgs, BBS, Wiki, etc.)"
 arch=('any')
 url="http://archlinux.org/"
@@ -31,7 +31,7 @@ package() {
 #  depends=("firefox>=${_ffver}" "firefox<=${_ffver/0/99}")
 
   cd "${srcdir}"
-  local _prefix="${pkgdir}"/usr/lib/firefox/browser/searchplugins
+  local _prefix="${pkgdir}"/usr/lib/firefox/distribution/searchplugins/common
 
   for i in ${source[@]}; do
     install -D -m 0644 "${srcdir}"/$i ${_prefix}/$i
