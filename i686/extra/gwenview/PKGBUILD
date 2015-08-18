@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 243003 2015-08-04 06:36:12Z bpiotrowski $
+# $Id: PKGBUILD 243944 2015-08-18 17:13:45Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=gwenview
 pkgver=15.04.3
-pkgrel=2
+pkgrel=3
 pkgdesc="A fast and easy to use image viewer for KDE"
 url='http://kde.org/applications/graphics/gwenview/'
 arch=('i686' 'x86_64')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 242021 2015-07-10 13:34:37Z arojas $
+# $Id: PKGBUILD 243881 2015-08-18 13:37:15Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kcrash
-pkgver=5.12.0
+pkgver=5.13.0
 pkgrel=1
 pkgdesc='Support for application crash analysis and bug report from apps'
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ makedepends=('extra-cmake-modules')
 optdepends=('drkonqi: KDE crash handler application')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('47ae59a330ec700e0912382ddb951c25')
+md5sums=('f261f5f1aff9bfce0abea333ce3aa89a')
 
 prepare() {
   mkdir build

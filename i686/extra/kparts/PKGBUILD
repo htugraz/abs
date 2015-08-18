@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 242040 2015-07-10 13:34:57Z arojas $
+# $Id: PKGBUILD 243900 2015-08-18 13:37:35Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kparts
-pkgver=5.12.0
+pkgver=5.13.0
 pkgrel=1
 pkgdesc='Document centric plugin system'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('kio')
 makedepends=('extra-cmake-modules')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('ad9bd1946aaca8320f3e71f43184c699')
+md5sums=('69f5de80479bc7f0e3cffc9a0b9aa1b1')
 
 prepare() {
   mkdir -p build

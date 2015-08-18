@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 243636 2015-08-14 06:36:19Z arojas $
+# $Id: PKGBUILD 243854 2015-08-18 07:24:51Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgname=kwayland
 pkgver=5.3.95
-pkgrel=1
+pkgrel=2
 pkgdesc='Qt-style Client and Server library wrapper for the Wayland libraries'
 arch=('i686' 'x86_64')
 url='http://www.kde.org'
@@ -25,6 +25,7 @@ build() {
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLIB_INSTALL_DIR=lib \
+    -DKDE_INSTALL_USE_QT_SYS_PATHS=ON \
     -DBUILD_TESTING=OFF
   make
 }

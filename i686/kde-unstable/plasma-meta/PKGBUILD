@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 243679 2015-08-14 08:16:46Z arojas $
+# $Id: PKGBUILD 243863 2015-08-18 08:58:44Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=plasma-meta
 pkgver=5.4
-pkgrel=0.1
+pkgrel=0.2
 pkgdesc='Meta package to install KDE Plasma'
 arch=('any')
 url='https://www.archlinux.org/'
@@ -31,5 +31,6 @@ depends=('bluedevil'
 	'kwallet-pam'
 	'kgamma5'
 	'user-manager'
+	'sddm-kcm'
 )
 
