@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 244224 2015-08-19 17:15:56Z arojas $
+# $Id: PKGBUILD 244468 2015-08-21 11:57:34Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
@@ -6,7 +6,7 @@
 pkgbase=kdepimlibs
 pkgname=(akonadi-client akonadi-contact akonadi-mime akonadi-notes akonadi-socialutils kio-pim)
 pkgver=15.08.0
-pkgrel=1
+pkgrel=2
 pkgdesc="KDE PIM Libraries"
 arch=(i686 x86_64)
 url='https://projects.kde.org/kdepimlibs'
