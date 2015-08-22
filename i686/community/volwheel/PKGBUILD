@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 114538 2014-07-01 19:49:53Z jelle $
+# $Id: PKGBUILD 138631 2015-08-22 10:17:57Z jelle $
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 # Contributor: Olivier Duclos <oliwer@free.fr>
 # Maintainer : Daniel J Griffiths <griffithsdj@archlinux.us>
 
 pkgname=volwheel
 pkgver=0.2.8
-pkgrel=4
+pkgrel=5
 pkgdesc="Tray icon to change volume with the mouse"
 arch=('any')
 url="http://oliwer.net/b/volwheel.html"
@@ -37,6 +37,7 @@ package() {
         cp -r  icons/* $pkgdir/usr/share/$pkgname/icons/
 
         install -Dm644 icons/volwheel.svg $pkgdir/usr/share/icons/scalable/apps/$pkgname.svg
+        install -Dm644 icons/volwheel.svg $pkgdir/usr/share/icons/hicolor/scalable/apps/$pkgname.svg
 
         install -Dm644 volwheel.desktop  $pkgdir/usr/share/applications/volwheel.desktop
 
