@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 241537 2015-06-30 20:30:22Z arojas $
+# $Id: PKGBUILD 244587 2015-08-23 08:54:37Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=bomber
-pkgver=15.04.3
+pkgver=15.08.0
 pkgrel=1
 pkgdesc="A single player arcade game"
 url="http://kde.org/applications/games/bomber/"
@@ -16,7 +16,7 @@ install=${pkgname}.install
 conflicts=('kdegames-bomber')
 replaces=('kdegames-bomber')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/bomber-${pkgver}.tar.xz")
-sha1sums=('38544cd42b3e198c71448ff8dec758aea5ad1bf1')
+sha1sums=('6729eb29c22ec34a0fa67a924bd0dfda8ac0d648')
 
 build() {
   mkdir build

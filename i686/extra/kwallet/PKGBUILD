@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 243895 2015-08-18 13:37:29Z fyan $
+# $Id: PKGBUILD 244731 2015-08-23 09:37:26Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kwallet
 pkgver=5.13.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Secure and unified container for user passwords'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kwallet'
 license=('LGPL')
-depends=('knotifications' 'kiconthemes' 'kservice') # qgpgme
-makedepends=('extra-cmake-modules' 'python' 'kdoctools')
+depends=('knotifications' 'kiconthemes' 'kservice' 'gpgmepp')
+makedepends=('extra-cmake-modules' 'python' 'kdoctools' 'boost')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
 md5sums=('df67412fef04c891c98facf870ec370f')

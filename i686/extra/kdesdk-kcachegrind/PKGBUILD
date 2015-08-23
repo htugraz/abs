@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 241624 2015-06-30 21:10:39Z arojas $
+# $Id: PKGBUILD 244672 2015-08-23 08:56:30Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-kcachegrind
-pkgver=15.04.3
+pkgver=15.08.0
 pkgrel=1
 pkgdesc='Visualization of Performance Profiling Data'
 url='http://kde.org/applications/development/kcachegrind/'
@@ -15,7 +15,7 @@ makedepends=('cmake' 'automoc4')
 optdepends=('php: PHP support')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kcachegrind-${pkgver}.tar.xz")
-sha1sums=('393c72269ab97f5f9cf81f9ccf8589cfcecff2c5')
+sha1sums=('dfce6fa1bf58bc80c05a424bb9e2ab10410c0a4b')
 
 prepare() {
   mkdir build

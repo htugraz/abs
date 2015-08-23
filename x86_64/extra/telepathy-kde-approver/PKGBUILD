@@ -1,21 +1,21 @@
-# $Id: PKGBUILD 241608 2015-06-30 21:06:28Z arojas $
+# $Id: PKGBUILD 244657 2015-08-23 08:56:11Z arojas $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=telepathy-kde-approver
 _pkgname=ktp-approver
-pkgver=15.04.3
+pkgver=15.08.0
 pkgrel=1
 pkgdesc='KDE Channel Approver for Telepathy'
 arch=('i686' 'x86_64')
 url='http://community.kde.org/Real-Time_Communication_and_Collaboration'
 license=('GPL')
 groups=('kde-applications' 'kdenetwork' 'telepathy-kde')
-depends=('telepathy-qt5' 'knotifications')
+depends=('telepathy-qt5' 'knotifications' 'kservice')
 makedepends=('extra-cmake-modules' 'kdoctools' 'python')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/$_pkgname-${pkgver}.tar.xz")
-md5sums=('c65364900b85382def07e2c8f8808edc')
+md5sums=('221b08426997743b9ac8b648e8da896a')
 
 prepare() {
   mkdir -p build

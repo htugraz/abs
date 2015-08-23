@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 136806 2015-07-14 02:34:29Z bisson $
+# $Id: PKGBUILD 138663 2015-08-23 04:26:43Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Gerhard Brauer <gerhard.brauer@web.de>
 
 pkgname=collectd
 pkgver=5.5.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Daemon which collects system performance statistics periodically'
 url='http://collectd.org/'
 arch=('i686' 'x86_64')
@@ -29,12 +29,13 @@ optdepends=('curl: apache, ascent, curl, nginx, and write_http plugins'
             'libvirt: libvirt plugin'
             'libxml2: ascent and libvirt plugins'
             'yajl: curl_json plugin'
-            'libatasmart: smart plugin')
+            'libatasmart: smart plugin'
+            'lvm2: lvm plugin')
 
 makedepends=('curl' 'libdbi' 'libesmtp' 'libgcrypt' 'libmemcached'
              'libmariadbclient' 'iproute2' 'net-snmp' 'libnotify' 'liboping'
              'libpcap' 'postgresql-libs' 'python2' 'rrdtool' 'lm_sensors'
-             'libvirt' 'libxml2' 'yajl' 'libatasmart')
+             'libvirt' 'libxml2' 'yajl' 'libatasmart' 'lvm2')
 
 depends=('libltdl' 'iptables')
 

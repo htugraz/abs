@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 241553 2015-06-30 20:34:18Z arojas $
+# $Id: PKGBUILD 244603 2015-08-23 08:54:58Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kjumpingcube
-pkgver=15.04.3
+pkgver=15.08.0
 pkgrel=1
 pkgdesc="A simple tactical game"
 url="http://kde.org/applications/games/kjumpingcube/"
@@ -16,7 +16,7 @@ install=${pkgname}.install
 conflicts=('kdegames-kjumpingcube')
 replaces=('kdegames-kjumpingcube')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kjumpingcube-${pkgver}.tar.xz")
-sha1sums=('4e06e01927291c6ffce551d97ed298f82818547a')
+sha1sums=('f8eebf1eba8d71f049e8a9bd9c6996369e94ebe0')
 
 build() {
   mkdir build

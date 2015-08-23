@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 241609 2015-06-30 21:06:44Z arojas $
+# $Id: PKGBUILD 244658 2015-08-23 08:56:12Z arojas $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=telepathy-kde-auth-handler
 _pkgname=ktp-auth-handler
-pkgver=15.04.3
+pkgver=15.08.0
 pkgrel=1
 pkgdesc='Provide UI/KWallet Integration For Passwords and SSL Errors on Account Connect'
 arch=('i686' 'x86_64')
@@ -15,7 +15,7 @@ groups=('kde-applications' 'kdenetwork' 'telepathy-kde')
 depends=('qca-qt5' 'telepathy-kde-common-internals' 'kdewebkit')
 makedepends=('extra-cmake-modules')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/$_pkgname-${pkgver}.tar.xz")
-md5sums=('07ae65aeb046dc617438aa05b69a186f')
+md5sums=('726e90cf5ea0969dcac5ad2e8ee8afae')
 
 prepare() {
   mkdir -p build
