@@ -1,0 +1,35 @@
+# $Id: PKGBUILD 130073 2015-03-28 10:00:18Z jlichtblau $
+# Maintainer: Alexander Rødseth <rodseth@gmail.com>
+# Contributor: Kevin Piche <kevin@archlinux.org>
+# Contributor: Jaroslav Lichtblau <svetlemodry@archlinux.org>
+# Contributor: Tom Newsom <Jeepster@gmx.co.uk>
+
+pkgname=hercules
+pkgver=3.11
+pkgrel=1
+pkgdesc='Software implementation of System/370 and ESA/390'
+arch=('i686' 'x86_64')
+url='http://www.hercules-390.eu/'
+license=('custom')
+depends=('bzip2' 'libgcrypt' 'zlib' 'perl')
+options=('!makeflags')
+source=("http://downloads.hercules-390.eu/$pkgname-$pkgver.tar.gz")
+sha256sums=('a75fa0138548f93749991adab954c4a473b961bae23ad06822903df0cf2fd2ca')
+
+build() {
+  cd $pkgname-$pkgver
+  # Change module extension from .la to .so.
+  sed '/HDL_MODULE_SUFFIX/ s/\.la/.so/' -i hdl.h
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+
+  make DESTDIR="$pkgdir" install
+  install -Dm644 COPYRIGHT \
+    "$pkgdir/usr/share/licenses/hercules/qpl1"
+}
+
+# vim:set ts=2 sw=2 et:

@@ -1,0 +1,29 @@
+# $Id: PKGBUILD 136316 2015-07-03 12:22:02Z stativ $
+# Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
+pkgname=intellij-idea-libs
+pkgver=14.1.4
+_pkgver=141.1532.4
+pkgrel=1
+epoch=1
+pkgdesc="Architecture dependent libraries needed by the Intellij Idea IDE"
+arch=('i686' 'x86_64')
+url="http://www.jetbrains.org/"
+license=('Apache')
+depends=('glibc')
+options=(!strip)
+source=(http://download.jetbrains.com/idea/ideaIC-$pkgver.tar.gz)
+md5sums=('2bb2528fa0747593fa67c3d1daede14d')
+
+package() {
+  cd "idea-IC-$_pkgver"
+
+  [ $CARCH == "x86_64" ] && SUFFIX=64
+  install -D -m755 bin/fsnotifier${SUFFIX} "$pkgdir"/usr/share/intellijidea-ce/bin/fsnotifier${SUFFIX}
+  install -D -m644 bin/libbreakgen${SUFFIX}.so "$pkgdir"/usr/lib/libbreakgen${SUFFIX}.so
+  
+  # libpty
+  [ $CARCH == "x86_64" ] && _ARCH=x86_64 || _ARCH=x86
+  install -D -m644 lib/libpty/linux/$_ARCH/libpty.so "$pkgdir"/usr/share/intellijidea-ce/lib/libpty/linux/$_ARCH/libpty.so
+}
+
+# vim:set ts=2 sw=2 et:

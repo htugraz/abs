@@ -1,0 +1,29 @@
+# $Id: PKGBUILD 133104 2015-05-09 18:11:16Z arojas $
+# Maintainer: Bartłomiej Piotrowski <barthalion@gmail.com>
+# Contributor: Jaroslaw Swierczynski <swiergot@aur.archlinux.org>
+# Contributor: Arkadiusz Laczynski <alaczynski@gmail.com>
+# Contributor: Jaroslav Lichtblau <svetlemodry@archlinux.org>
+
+pkgname=aspell-pl
+pkgver=20150428
+pkgrel=1
+pkgdesc='Polish dictionary for aspell'
+arch=('i686' 'x86_64')
+url="http://www.sjp.pl/slownik/en/"
+license=('GPL' 'LGPL' 'MPL' 'CC SA' 'Apache')
+depends=('aspell')
+source=(http://sjp.pl/slownik/ort/sjp-aspell6-pl-6.0_$pkgver-0.tar.bz2)
+md5sums=('ec91a90778326fcf4470ddfdcb6ce818')
+
+build() {
+  cd aspell6-pl-6.0_$pkgver-0
+
+  ./configure
+  make
+}
+
+package() {
+  cd aspell6-pl-6.0_$pkgver-0
+
+  make DESTDIR="$pkgdir" install
+}

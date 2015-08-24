@@ -1,0 +1,37 @@
+# $Id: PKGBUILD 109301 2014-04-12 23:46:12Z anatolik $
+# Maintainer: Anatol Pomozov <anatol dot pomozov at gmail>
+# Contributor: Gustavo Alvarez <s1pkn07@gmail.com>
+# Contributor: Kristjan Reinloo <mail at kreinloo dot net>
+# Contributor: Pierre Bourdon <delroth@gmail.com>
+
+pkgname=libnatpmp
+pkgver=20140401
+pkgrel=2
+pkgdesc='A portable and fully compliant implementation of the NAT-PMP protocol'
+arch=(i686 x86_64)
+url='http://miniupnp.free.fr/libnatpmp.html'
+license=(BSD)
+depends=(glibc)
+source=(http://miniupnp.tuxfamily.org/files/libnatpmp-$pkgver.tar.gz
+        fix_header_issue.diff)
+sha1sums=('e9511edecb9a75dbe8c9ed39c0469a18dc7e950b'
+          '58baa3fe61edfc117ae92452fbc8176d095bd7d2')
+
+prepare() {
+  cd $pkgname-$pkgver
+  sed -e 's/CFLAGS = /CFLAGS += /' -i Makefile
+  # The patch comes from upstream https://github.com/miniupnp/libnatpmp/commit/f376ab72bc4de0b45f4e10c9b287b7ffe2a1fcd1
+  patch -p1 < "$srcdir"/fix_header_issue.diff 
+}
+
+build() {
+  cd $pkgname-$pkgver
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make INSTALLPREFIX="$pkgdir/usr" INSTALLDIRINC="$pkgdir/usr/include" install
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  install -Dm644 natpmpc.1 "$pkgdir/usr/share/man/man1/natpmpc.1"
+}

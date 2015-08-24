@@ -1,0 +1,139 @@
+# $Id: PKGBUILD 135424 2015-06-15 15:29:00Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Jeff 'codemac' Mickey <jeff@archlinux.org>
+# Contributor: Alexander Rødseth <rodseth@gmail.com>
+
+pkgname=ejabberd
+pkgver=15.04
+pkgrel=2
+pkgdesc="Jabber server written in Erlang"
+arch=('x86_64' 'i686')
+url="http://www.ejabberd.im/"
+license=("GPL")
+depends=('expat' 'openssl' 'zlib' 'erlang-nox' 'pam' 'iproute2' 'erlang-unixodbc'
+	 'libyaml' 'sqlite')
+makedepends=('git' 'rebar' 'hevea' 'texlive-bin' 'texlive-core' 'texlive-latexextra')
+backup=('etc/ejabberd/ejabberd.yml'
+	'etc/ejabberd/ejabberdctl.cfg'
+	'etc/logrotate.d/ejabberd')
+install=$pkgname.install
+replaces=('ejabberd-mod_mysql' 'ejabberd-mod_mysql-svn'
+	  'ejabberd-mod_pgsql' 'ejabberd-mod_pgsql-svn')
+source=("$pkgname-$pkgver.tar.gz::https://github.com/processone/ejabberd/archive/$pkgver.tar.gz"
+	"p1_cache_tab::git://github.com/processone/cache_tab#commit=cca096330ce39e8b56fe0e0c478df1ff452e7751"
+	"p1_tls::git://github.com/processone/tls#commit=e231cbde546c2e2200f6dae01d13cf743d253c6d"
+	"p1_stringprep::git://github.com/processone/stringprep#commit=3c640237a3a7831dc39de6a6d329d3a9af25c579"
+	"p1_xml::git://github.com/processone/xml#commit=3db0b2f2b96c9fa2f601f96794cc6e8a480615b4"
+	"p1_yaml::git://github.com/processone/p1_yaml#commit=e1f081e1bbf34c35fc60c1b988d62a07fbead3e8"
+	"git://github.com/rds13/xmlrpc"
+	"p1_pam::git://github.com/processone/epam"
+	"p1_zlib::git://github.com/processone/zlib"
+	"git://github.com/basho/lager"
+	"p1_iconv::git://github.com/processone/eiconv"
+	"git://github.com/DeadZen/goldrush.git#tag=0.1.6"
+	"p1_mysql::git://github.com/processone/mysql.git"
+	"p1_pgsql::git://github.com/processone/pgsql.git"
+	"p1_stun::git://github.com/processone/stun#commit=d98c71e22492bd5cf95f6a3227de302ace0f70b3"
+	"git://github.com/davisp/jiffy"
+	"git://github.com/cmullaparthi/ibrowse"
+	"git://github.com/esl/lhttpc"
+	"git://github.com/eproxus/meck#tag=0.8.2"
+	"esip::git://github.com/processone/p1_sip#commit=a9b725df78ee44c0f118908eef07395654767d62"
+	"git://github.com/basho/riak_pb#tag=1.4.4.0"
+	"riakc::git://github.com/basho/riak-erlang-client#tag=1.4.2"
+	"protobuffs::git://github.com/basho/erlang_protobuffs.git"
+	"git://github.com/processone/p1_utils#commit=1bf99f9c8daed3b03f76e2714ca102c520c88b26"
+	"ehyperloglog::git://github.com/vaxelfel/eHyperLogLog.git#commit=efd14f262c663cde76d8ed48007826dabe9aca41"
+	"rebar_elixir_plugin::git://github.com/yrashk/rebar_elixir_plugin"
+	"elixir::git://github.com/elixir-lang/elixir#branch=v1.0"
+	"git://github.com/wooga/eredis"
+	"sqlite3::git://github.com/alexeyr/erlang-sqlite3"
+	"$pkgname.logrotate"
+	"ejabberd.service"
+	"sysuser.conf")
+md5sums=('f9d047866033ee6af04de7dcd25a33ab'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'SKIP'
+         'f97c8a96160f30e0aecc9526c12e6606'
+         'a437aff9d7d477fb036d527205617e18'
+         '458fc41be4adb9554a53b8f9ae05fbee')
+
+prepare() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  mkdir -p "$srcdir/$pkgname-$pkgver/deps"
+  for i in goldrush lager p1_cache_tab p1_iconv p1_pam \
+           p1_stringprep p1_tls p1_xml p1_yaml p1_zlib xmlrpc \
+           p1_mysql p1_pgsql p1_stun jiffy ibrowse lhttpc \
+           meck esip riak_pb riakc p1_utils protobuffs \
+           ehyperloglog rebar_elixir_plugin elixir eredis \
+           sqlite3; do
+    rm -rf "$srcdir/$pkgname-$pkgver/deps/$i"
+    mv $srcdir/$i "$srcdir/$pkgname-$pkgver/deps"
+  done
+
+  pushd deps/lhttpc/src/
+  mv lhttpc.app.src lhttpc.app.src.bak
+  cat lhttpc.app.src.bak | iconv -f utf8 -c >lhttpc.app.src
+  popd
+}
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+  [ -x configure ] || ./autogen.sh
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+    --enable-all
+  make debug=true
+  make -C doc
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  # make install workaround
+  rm -f deps/sqlite3/include/sqlite3.hrl
+
+  make DESTDIR="$pkgdir" install
+
+  install -Dm04750 deps/p1_pam/priv/bin/epam $pkgdir/usr/lib/ejabberd/priv/bin/epam
+  install -d "$pkgdir/var/lib/$pkgname"
+  install -D -m0644 "$srcdir/$pkgname.logrotate" "$pkgdir/etc/logrotate.d/$pkgname"
+  chmod ug+r "$pkgdir/etc/$pkgname/"*
+  mkdir -p $pkgdir/usr/bin
+  mv $pkgdir/usr/sbin/ejabberdctl $pkgdir/usr/bin/ejabberdctl
+  chmod a+rx "$pkgdir/usr/bin/ejabberdctl" "$pkgdir/usr/lib/ejabberd/priv/bin/captcha.sh"
+  rm -rf "$pkgdir/var/lock" "$pkgdir/usr/sbin"
+  install -Dm0644 $srcdir/ejabberd.service $pkgdir/usr/lib/systemd/system/ejabberd.service
+  install -Dm644 $srcdir/sysuser.conf "$pkgdir"/usr/lib/sysusers.d/ejabberd.conf
+  # workaround
+  ln -s mod_configure.beam $pkgdir/usr/lib/ejabberd/ebin/configure.beam
+  rm -f $pkgdir/usr/bin/{elixir,iex,mix}
+}
+
+# vim:set ts=2 sw=2 et:

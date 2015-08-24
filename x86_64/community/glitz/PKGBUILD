@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 114802 2014-07-04 06:56:03Z fyan $
+# Maintainer: Alexander Rødseth <rodseth@gmail.com>
+
+pkgname=glitz
+pkgver=0.5.6
+pkgrel=5
+pkgdesc='OpenGL image compositing library'
+arch=('x86_64' 'i686')
+url='http://cairographics.org/'
+license=('BSD')
+depends=('libgl' 'glibc')
+makedepends=('mesa-libgl')
+source=("http://cairographics.org/snapshots/$pkgname-$pkgver.tar.gz")
+sha256sums=('132adf06e48531f4c01b6ba5843881e2b584a170c5222353d03cbef736d4a471')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  make DESTDIR="$pkgdir" install
+  install -Dm644 COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
+}
+
+# vim:set ts=2 sw=2 et:

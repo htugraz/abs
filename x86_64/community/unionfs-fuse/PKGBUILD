@@ -1,0 +1,26 @@
+# $Id: PKGBUILD 126402 2015-01-22 09:57:42Z aginiewicz $
+# Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
+# Contributor: Smith Dhumbumroong <zodmaner at gmail dot com>
+
+pkgname=unionfs-fuse
+pkgver=1.0
+pkgrel=1
+pkgdesc="A user space unionfs implementation"
+arch=('i686' 'x86_64')
+url="https://github.com/rpodgorny/unionfs-fuse"
+license=('BSD')
+depends=('fuse')
+source=("https://github.com/rpodgorny/unionfs-fuse/archive/v${pkgver}.tar.gz")
+md5sums=('598590fb452129c413572ed79824c68a')
+
+build() {
+  cd "$srcdir"/$pkgname-$pkgver
+  make
+}
+
+package() {
+  cd "$srcdir"/$pkgname-$pkgver
+  make SBINDIR="/bin" DESTDIR="$pkgdir" PREFIX=/usr install
+  install -Dm644 "$srcdir"/$pkgname-$pkgver/LICENSE "$pkgdir"/usr/share/licenses/$pkgname/LICENSE
+}
+

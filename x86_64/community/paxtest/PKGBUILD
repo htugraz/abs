@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 123700 2014-12-10 01:30:48Z thestinger $
+# Maintainer: Daniel Micay <danielmicay@gmail.com>
+# Contributor: Lubomir Krajcovic <lubomir.krajcovic(AT)gmail(DOT)com>
+# Contributor: sh0 <mee(AT)sh0(DOT)org>
+# Contributor: leoarcher <carvalho.inacio(AT)gmail(DOT)com>
+
+pkgname=paxtest
+pkgver=0.9.13
+pkgrel=1
+pkgdesc='PaX regression test suite'
+url='http://pax.grsecurity.net'
+arch=('i686' 'x86_64')
+license=('GPL')
+depends=(sh)
+source=("http://grsecurity.net/~spender/${pkgname}-${pkgver}.tar.gz")
+md5sums=('aabe9eb3af44d385f590c2e3fc75d5aa')
+
+_make="make -f Makefile.psm BINDIR=/usr/bin RUNDIR=/usr/lib/$pkgname"
+
+build() {
+  cd $pkgname-$pkgver
+  $_make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  $_make DESTDIR="$pkgdir" install
+}

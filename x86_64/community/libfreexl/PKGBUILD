@@ -1,0 +1,28 @@
+# $Id: PKGBUILD 137221 2015-07-21 16:53:35Z jlichtblau $
+# Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
+# Contributor: Brian Galey <bkgaley at gmail dot com>
+# Contributor: Bruno Gola <brunogola at gmail dot com>
+
+pkgname=libfreexl
+pkgver=1.0.2
+pkgrel=1
+pkgdesc="Library to extract valid data from within an Excel (.xls) spreadsheet"
+arch=('i686' 'x86_64')
+url="https://www.gaia-gis.it/fossil/freexl/‎"
+license=('MPL' 'GPL' 'LGPL')
+depends=('glibc')
+source=(http://www.gaia-gis.it/gaia-sins/${pkgname/lib/}-$pkgver.tar.gz)
+sha256sums=('b39a4814a0f53f5e09a9192c41e3e51bd658843f770399023a963eb064f6409d')
+
+build() {
+  cd "${srcdir}"/${pkgname/lib/}-$pkgver
+
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd "${srcdir}"/${pkgname/lib/}-$pkgver
+
+  make DESTDIR="${pkgdir}" install
+}

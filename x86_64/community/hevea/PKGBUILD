@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 129795 2015-03-23 10:26:17Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Contributor: Brian Nguyen <bhnguyen@gmail.com>
+# Original Packager: Tom K <tomk@runbox.com>
+
+pkgname=hevea
+pkgver=2.23
+pkgrel=1
+pkgdesc="A quite complete and fast LATEX to HTML translator"
+arch=(i686 x86_64)
+depends=('ocaml')
+license=('GPL')
+url="http://pauillac.inria.fr/~maranget/hevea/"
+install=hevea.install
+source=(http://pauillac.inria.fr/~maranget/$pkgname/distri/$pkgname-$pkgver.tar.gz)
+md5sums=('38b157e78e8171dc6a47f9ea10d2bd60')
+
+build() {
+  cd $srcdir/$pkgname-$pkgver
+  sed -i 's:usr/local:usr:' Makefile
+  make
+}
+
+package() {
+  cd $srcdir/$pkgname-$pkgver
+  sed -i 's:/usr:$PREFIX:' config.sh
+  make install PREFIX=$pkgdir/usr
+  mkdir -p $pkgdir/usr/share/texmf/tex/latex
+  ln -s /usr/lib/hevea/hevea.sty $pkgdir/usr/share/texmf/tex/latex/hevea.sty
+}

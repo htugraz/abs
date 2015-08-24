@@ -1,0 +1,47 @@
+# $Id: PKGBUILD 136201 2015-07-01 12:46:36Z kkeen $
+# Maintainer: Kyle Keen <keenerd@gmail.com>
+pkgname=zeromq
+pkgver=4.1.2
+pkgrel=3
+pkgdesc="Fast messaging system built on sockets.  C and C++ bindings.  aka 0MQ, ZMQ."
+arch=('i686' 'x86_64')
+url="http://www.zeromq.org"
+license=('LGPL')
+depends=('gcc-libs' 'util-linux' 'libsodium' 'libpgm')
+makedepends=('asciidoc' 'xmlto')
+options=('staticlibs')
+source=("http://download.zeromq.org/$pkgname-$pkgver.tar.gz"
+        'https://raw.githubusercontent.com/zeromq/cppzmq/ac705f6047/zmq.hpp'
+        'https://github.com/zeromq/zeromq4-1/commit/81464652.patch')
+md5sums=('159c0c56a895472f02668e692d122685'
+         'c1388ca58d417610b6c00d66c81a93f2'
+         'b6b2f8d633b05bcbe970aab089f17d9b')
+
+prepare() {
+  cd "$srcdir/$pkgname-$pkgver"
+  # temporary ipv6 fix for 4.1.2 (FS#45345)
+  patch -Np1 -i  "$srcdir/81464652.patch"
+}
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+  ./configure prefix=/usr --with-pgm --with-libsodium \
+    --with-documentation --enable-static
+  make
+}
+
+check() {
+  cd "$srcdir/$pkgname-$pkgver"
+  if [[ $CARCH == 'i686' ]]; then
+    return 0
+  fi
+  make -k check
+}
+
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  make DESTDIR="$pkgdir" install
+  install -Dm644 "$srcdir/zmq.hpp" "$pkgdir/usr/include/zmq.hpp"
+}
+

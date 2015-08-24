@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 241274 2015-06-25 06:45:44Z tpowa $
+# $Id: PKGBUILD 244760 2015-08-24 05:56:58Z tpowa $
 # Maintainer : Tobias Powalowski <tpowa@archlinux.org>
 # Contributor : Keshav Amburay <(the ddoott ridikulus ddoott rat) (aatt) (gemmaeiil) (ddoott) (ccoomm)>
 
 pkgname="efivar"
 pkgdesc="Tools and library to manipulate EFI variables"
-pkgver=0.20
+pkgver=0.21
 pkgrel=1
 arch=('x86_64' 'i686')
 url="https://github.com/vathpela/efivar"

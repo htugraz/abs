@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 122849 2014-11-20 23:27:06Z bgyorgy $
+# $Id: PKGBUILD 138708 2015-08-24 02:43:21Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 # Contributor: Anton Bazhenov <anton.bazhenov at gmail>
 # Contributor: JD Steffen <jd at steffennet dot org>
@@ -6,14 +6,16 @@
 pkgname=simutrans-pak64
 pkgver=120.0.1
 _pkgver=120-0-1
-pkgrel=1
+pkgrel=2
 pkgdesc="Low resolution graphics set for Simutrans"
 arch=('any')
 url="http://simutrans.com/"
-license=('PerlArtistic')
+license=('custom:Artistic')
 options=('!strip')
-source=(http://downloads.sourceforge.net/simutrans/simupak64-$_pkgver.zip)
-md5sums=('9d1068881b277bc2110b7c71c7d0d613')
+source=(http://downloads.sourceforge.net/simutrans/simupak64-$_pkgver.zip
+        licence.txt)
+md5sums=('9d1068881b277bc2110b7c71c7d0d613'
+         '9cf3801b1349ac93b24c1515c9e5bb0a')
 
 package() {
   cd "$srcdir"
@@ -25,4 +27,7 @@ package() {
 
   find "$pkgdir" -type f -exec chmod 644 {} \;
   find "$pkgdir" -type d -exec chmod 755 {} \;
+
+  #license
+  install -Dm644 licence.txt "$pkgdir/usr/share/licenses/simutrans-pak64/licence.txt"
 }

@@ -1,0 +1,45 @@
+# $Id: PKGBUILD 138568 2015-08-20 20:13:51Z mtorromeo $
+# Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
+
+pkgname=libuv
+pkgver=1.7.1
+pkgrel=1
+pkgdesc="Multi-platform support library with a focus on asynchronous I/O"
+arch=('i686' 'x86_64')
+url="https://github.com/libuv/libuv"
+license=('custom')
+depends=('glibc')
+makedepends=('python-sphinx')
+source=("https://github.com/libuv/libuv/archive/v$pkgver/$pkgname-$pkgver.tar.gz")
+
+build() {
+	cd "$srcdir"/$pkgname-$pkgver
+	./autogen.sh
+	./configure --prefix=/usr
+	make
+	make man -C docs
+}
+
+check() {
+	cd "$srcdir"/$pkgname-$pkgver
+	make check
+}
+
+package() {
+	cd "$srcdir"/$pkgname-$pkgver
+
+	make DESTDIR="$pkgdir" install
+
+	install -Dm644 LICENSE \
+		"$pkgdir"/usr/share/licenses/$pkgname/LICENSE
+	install -Dm644 AUTHORS \
+		"$pkgdir"/usr/share/doc/$pkgname/AUTHORS
+	install -Dm644 README.md \
+		"$pkgdir"/usr/share/doc/$pkgname/README.md
+	install -Dm644 ChangeLog \
+		"$pkgdir"/usr/share/doc/$pkgname/ChangeLog
+	install -Dm644 docs/build/man/libuv.1 \
+		"$pkgdir"/usr/share/man/man1/libuv.1
+}
+
+sha256sums=('a515145a34672d26527c7555e73315c66a9213ab445ba591864efc11f91fc340')

@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 137936 2015-08-04 14:12:10Z anatolik $
+# Maintainer: Anatol Pomozov <anatol.pomozov@gmail.com>
+# Contributor: KokaKiwi <admin@kokaelkiwi.eu>
+# Contributor: James Bulmer <nekinie@gmail.com>
+
+pkgname=nanomsg
+pkgver=0.6
+_tag=$pkgver-beta
+pkgrel=1
+pkgdesc='Simple high-performance implementation of several "scalability protocols"'
+url='http://nanomsg.org/'
+license=(MIT)
+arch=(i686 x86_64)
+depends=(glibc)
+source=(nanomsg-$pkgver.tar.gz::https://github.com/nanomsg/nanomsg/archive/$_tag.tar.gz)
+sha1sums=('637d3844c8928faf73aa6f8caaadd270c8c27dfd')
+
+build() {
+  cd nanomsg-$_tag
+  ./autogen.sh
+  ./configure --prefix=/usr
+  make
+}
+
+check() {
+  cd nanomsg-$_tag
+  make check
+}
+
+package() {
+  cd nanomsg-$_tag
+  make DESTDIR="$pkgdir" install
+  install -Dm644 COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
+}

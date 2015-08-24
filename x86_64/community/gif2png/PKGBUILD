@@ -1,0 +1,33 @@
+# $Id: PKGBUILD 121290 2014-10-23 11:56:26Z giovanni $
+# Maintainer: Giovanni Scafora <giovanni@archlinux.org>
+# Contributor: eric <eric@archlinux.org>
+# Contributor: Andrew Rose <ody@netrux.com>
+
+pkgname=gif2png
+pkgver=2.5.9
+pkgrel=1
+pkgdesc="A GIF to PNG image format converter"
+arch=('i686' 'x86_64')
+url="http://www.catb.org/~esr/gif2png/"
+license=('ZLIB')
+depends=('libpng')
+optdepends=('python2: for using web2png')
+source=("http://www.catb.org/~esr/${pkgname}/${pkgname}-${pkgver}.tar.gz")
+md5sums=('fff45072725c13927ceb5f498e8d4d17')
+
+build() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+
+  sed -i 's#env python#env python2#' web2png
+
+  ./configure --prefix=/usr \
+              --mandir=/usr/share/man
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+
+  make DESTDIR="${pkgdir}" install
+  install -D -m644 COPYING "${pkgdir}/usr/share/licenses/$pkgname/LICENSE"
+}

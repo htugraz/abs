@@ -1,0 +1,46 @@
+# $Id: PKGBUILD 135898 2015-06-26 12:22:17Z anatolik $
+# Maintainer: Anatol Pomozov <anatol dot pomozov at gmail>
+# Contributor: Mariusz Libera <mariusz.libera@gmail.com>
+# Contributor: John Williams <jwilliams4200 liamg reverse&remove moc>
+
+pkgname=fio
+pkgver=2.2.9
+pkgrel=1
+pkgdesc='Scriptable I/O tool for storage benchmarks and drive testing'
+arch=(i686 x86_64)
+url='https://github.com/axboe/fio'
+license=(GPL2)
+depends=(bash libaio python2 numactl)
+makedepends=(gtk2)
+optdepends=(
+  'gtk2: for gfio - fio GUI frontend' 
+  'gnuplot: generating plots using fio_generate_plots'
+)
+source=(http://brick.kernel.dk/snaps/fio-$pkgver.tar.bz2)
+sha256sums=('c881d9cf15500bd4436970d0467c356c5c021417131587931ba78845e965bf56')
+
+prepare() {
+  cd fio-$pkgver
+
+  sed -e 's|#!/usr/bin/env python|#!/usr/bin/env python2|' -i tools/plot/fio2gnuplot 
+}
+
+# TODO: enable rdma, need to move the libraries from AUR
+build() {
+  cd fio-$pkgver
+  ./configure --enable-gfio --extra-cflags="$CFLAGS"
+}
+
+package() {
+  cd fio-$pkgver
+  make DESTDIR="$pkgdir" prefix=/usr mandir=/usr/share/man install
+
+  # documentation
+  install -dm755 "$pkgdir/usr/share/doc/$pkgname"
+  install -m644 HOWTO README REPORTING-BUGS SERVER-TODO "$pkgdir/usr/share/doc/$pkgname"
+  install -Dm644 COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
+
+  # examples
+  install -dm755 "$pkgdir/usr/share/doc/$pkgname/examples"
+  install -m644 examples/* "$pkgdir/usr/share/doc/$pkgname/examples"
+}

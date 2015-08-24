@@ -1,0 +1,33 @@
+# $Id: PKGBUILD 120056 2014-10-02 12:30:47Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Alexander Fehr <pizzapunk gmail com>
+
+pkgname=parcellite
+pkgver=1.1.9
+pkgrel=1
+pkgdesc="Lightweight GTK+ clipboard manager"
+arch=('i686' 'x86_64')
+url="http://parcellite.sourceforge.net/"
+license=('GPL3')
+depends=('gtk2')
+makedepends=('intltool')
+source=(http://downloads.sourceforge.net/parcellite/parcellite-$pkgver.tar.gz
+	fix-crash.patch)
+md5sums=('6c3b70165c2dee9341a81a2a8481e446'
+         'f2cc1986e573d49c92ea3d81efd5d574')
+
+prepare() {
+  cd "$srcdir/parcellite-$pkgver"
+  patch -Np1 <$srcdir/fix-crash.patch
+}
+
+build() {
+  cd "$srcdir/parcellite-$pkgver"
+  ./configure --prefix=/usr --sysconfdir=/etc
+  make
+}
+
+package() {
+  cd "$srcdir/parcellite-$pkgver"
+  make DESTDIR="$pkgdir" install
+}

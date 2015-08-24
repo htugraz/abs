@@ -1,0 +1,42 @@
+# $Id: PKGBUILD 126386 2015-01-22 02:46:46Z bgyorgy $
+# Maintainer: Balló György <ballogyor+arch at gmail dot com>
+
+pkgname=gnac
+pkgver=0.2.4.1
+pkgrel=3
+pkgdesc="Audio converter for GNOME"
+arch=('i686' 'x86_64')
+url="http://gnac.sourceforge.net/"
+license=('GPL')
+depends=('libnotify' 'libunique3' 'gst-plugins-base' 'dconf' 'desktop-file-utils')
+makedepends=('intltool' 'gnome-doc-utils' 'gnome-common')
+optdepends=('gst-plugins-good: Extra media codecs'
+            'gst-plugins-bad: Extra media codecs'            
+            'gst-plugins-ugly: Extra media codecs'
+            'gst-libav: Extra media codecs')
+install=$pkgname.install
+source=(http://downloads.sourceforge.net/$pkgname/$pkgname-$pkgver.tar.bz2
+        gstreamer-1.0.patch)
+sha256sums=('8f9c4731bbc40fde57c311a2a7fabe4e3200198abfe7415c659b98a2d54869da'
+            '57331aaf1987e8920594a4a753bed2c719d2152c7448ab53ba09ec208521abae')
+
+prepare() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  # Port to GStreamer 1.0
+  patch -Np1 -i ../gstreamer-1.0.patch
+}
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+  autoreconf -fi
+  intltoolize --force
+  ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+              --disable-static --disable-schemas-compile
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  make DESTDIR="$pkgdir" install
+}

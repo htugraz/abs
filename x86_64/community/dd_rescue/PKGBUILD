@@ -1,0 +1,37 @@
+# $Id: PKGBUILD 134408 2015-05-31 10:14:16Z fyan $
+# Maintainer: Felix Yan <felixonmars@gmail.com>
+# Contributor: Zerial <fernando@zerial.org>
+# Contributor: Patrick Leslie Polzer <leslie.polzer@gmx.net>
+# Contributor: Jose Riha <jose1711 gmail com>
+
+pkgname=dd_rescue
+pkgver=1.98
+pkgrel=1
+pkgdesc="A dd version that is very useful for data-recovery"
+url="http://www.garloff.de/kurt/linux/ddrescue/"
+license=("GPL")
+depends=('glibc')
+makedepends=('openssl')
+optdepends=('lzo: for libddr_lzo'
+            'openssl: for libddr_crypt')
+arch=('x86_64' 'i686')
+source=("http://www.garloff.de/kurt/linux/ddrescue/$pkgname-${pkgver}.tar.bz2")
+sha512sums=('f09626504de4148b245565250a0a4b59897de58da64438f3d540e712838f265f90ab1b436021ca7d28e588c878e3b12dead05f7dd8bbe30906518c4b5df480db')
+
+prepare() {
+  cd $pkgname-$pkgver
+
+  # Don't install to /usr/lib64
+  sed -i '/LIB = lib64/d' Makefile
+}
+
+build() {
+  cd $pkgname-$pkgver
+  ./autogen.sh
+  make
+}
+
+package() {
+  cd $pkgname-$pkgver
+  make DESTDIR="$pkgdir" INSTALLDIR="$pkgdir/usr/bin" install
+}

@@ -1,0 +1,38 @@
+# $Id: PKGBUILD 132366 2015-04-28 07:19:17Z alucryd $
+# Maintainer: Maxime Gauduin <alucryd@archlinux.org>
+# Contributor: Balló György <ballogyor+arch@gmail.com>
+
+pkgname=bamf
+pkgver=0.5.1
+pkgrel=1
+pkgdesc='Application matching framework'
+arch=('i686' 'x86_64')
+url='https://launchpad.net/bamf'
+license=('GPL')
+depends=('libgtop' 'libwnck3')
+makedepends=('gobject-introspection' 'python2-lxml' 'vala')
+source=("http://launchpad.net/bamf/${pkgver%.*}/${pkgver}/+download/bamf-${pkgver}.tar.gz")
+sha256sums=('fb65e6d0d7330f06626e43b0f3828bdeb5678d69133396e770a8781b9988fd16')
+
+build() {
+  cd bamf-${pkgver}
+
+  export PYTHON='/usr/bin/python2'
+
+  ./configure \
+    --prefix='/usr' \
+    --libexecdir='/usr/lib' \
+    --localstatedir='/var' \
+    --sysconfdir='/etc' \
+    --disable-static \
+    --disable-webapps
+  make
+}
+
+package() {
+  cd bamf-${pkgver}
+
+  make DESTDIR="${pkgdir}" install
+}
+
+# vim: ts=2 sw=2 et:

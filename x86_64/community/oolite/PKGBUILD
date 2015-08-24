@@ -1,0 +1,40 @@
+# $Id: PKGBUILD 134804 2015-06-04 17:20:31Z svenstaro $
+# Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
+# Contributor: Lone_Wolf <lonewolf@xs4all.nl>
+pkgname=oolite
+pkgver=1.82
+pkgrel=2
+pkgdesc="A space-sim based on the classic Elite"
+arch=('i686' 'x86_64')
+url="http://www.oolite.org/"
+license=('GPL2')
+depends=('gnustep-gui' 'sdl_mixer' 'glu' 'espeak' 'nspr' 'python2' 'icu' 'gnustep-base' 'openal')
+makedepends=('gcc-objc' 'gnustep-make' 'curl' 'zip' 'mesa')
+#options=(makeflags)
+source=(oolite
+        "https://github.com/OoliteProject/oolite/releases/download/1.82/oolite-source-${pkgver}.tar.bz2")
+md5sums=('ade14e17fe9d52d16b35f2e97046362c'
+         '8cac3638a887efc7715b8a8982bc4f55')
+
+build() {
+  cd oolite-source-${pkgver}
+  unset CPPFLAGS
+  #sed -i '/void png_error/d' src/Core/Materials/OOPNGTextureLoader.m
+  sed -i "/ADDITIONAL_OBJCFLAGS/s/=/= -fobjc-exceptions/" GNUmakefile
+  make -f Makefile release-deployment
+}
+
+package() {
+  cd oolite-source-${pkgver}
+
+  mkdir -p ${pkgdir}/usr/bin
+  mkdir -p ${pkgdir}/usr/share/{oolite,applications,pixmaps,doc/oolite}
+
+  cp -r oolite.app/* ${pkgdir}/usr/share/oolite/
+
+  install -D -m755 ../oolite ${pkgdir}/usr/bin/oolite
+  install -D -m644 installers/FreeDesktop/oolite-icon.png ${pkgdir}/usr/share/pixmaps/oolite-icon.png
+  install -D -m644 installers/FreeDesktop/oolite.desktop ${pkgdir}/usr/share/applications/oolite.desktop
+  install -D -m644 Doc/AdviceForNewCommanders.pdf Doc/OoliteReadMe.pdf Doc/OoliteRS.pdf ${pkgdir}/usr/share/doc/oolite/
+ }
+# vim:set ts=2 sw=2 et:

@@ -1,0 +1,38 @@
+# $Id:
+# Maintainer : Martin Wimpress <code@flexion.org>
+# Contributor: Sauyon Lee <arch@sauyon.com>
+
+pkgname=godep
+pkgver=116.20150528
+pkgrel=1
+epoch=1
+pkgdesc="Dependency tool for go"
+arch=('i686' 'x86_64')
+url="http://github.com/tools/godep"
+license=('BSD')
+depends=('glibc')
+makedepends=('git' 'go' 'mercurial')
+source=("${pkgname}::git+https://github.com/tools/godep#commit=e28aafa1c4a9ab9108ae98211f12bbcc43e24510")
+md5sums=('SKIP')
+
+pkgver() {
+	cd "${srcdir}/${pkgname}"
+    printf "%s.%s" "$(git rev-list --count HEAD)" "$(git log -1 --format=%cd --date=short | tr -d -)"
+}
+
+prepare() {
+	export GOPATH="${srcdir}"
+    go get golang.org/x/tools/go/vcs
+	go get github.com/kr/fs
+}
+
+build() {
+	cd "${srcdir}/${pkgname}"
+	GOPATH="${srcdir}" go build
+}
+
+package() {
+	cd "${srcdir}/${pkgname}"
+	install -Dm755 "${pkgname}" "${pkgdir}/usr/bin/godep"
+	install -Dm644 License "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}

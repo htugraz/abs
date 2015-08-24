@@ -1,0 +1,38 @@
+# $Id: PKGBUILD 137427 2015-07-26 15:33:59Z bgyorgy $
+# Maintainer : Martin Wimpress <code@flexion.org>
+
+_ver=1.10
+_pkgbase=eom
+pkgname=(${_pkgbase}-gtk3)
+pkgver=${_ver}.3
+pkgrel=2
+pkgdesc="An image viewing and cataloging program for MATE (GTK3 version [EXPERIMENTAL])"
+url="http://mate-desktop.org"
+arch=('i686' 'x86_64')
+license=('GPL')
+depends=('dbus-glib' 'desktop-file-utils' 'gobject-introspection-runtime' 'gtk3' 'exempi'
+         'lcms2' 'libexif' 'libjpeg-turbo' 'librsvg' 'mate-desktop-gtk3>=1.10'
+         'mate-icon-theme' 'startup-notification' 'zlib')
+makedepends=('mate-common' 'gobject-introspection' 'yelp-tools')
+optdepends=('yelp: for reading MATE help documents')
+groups=('mate-extra-gtk3')
+conflicts=("${_pkgbase}")
+source=("http://pub.mate-desktop.org/releases/${_ver}/${_pkgbase}-${pkgver}.tar.xz")
+sha1sums=('b5c4b9a921183af37cfdf7cc91c3144138c6b2d5')
+install=${_pkgbase}.install
+
+build() {
+    cd "${srcdir}/${_pkgbase}-${pkgver}"
+    ./configure \
+        --prefix=/usr \
+        --localstatedir=/var \
+        --with-gtk=3.0 \
+        --with-librsvg \
+        --disable-python
+    make
+}
+
+package() {
+    cd "${srcdir}/${_pkgbase}-${pkgver}"
+    make DESTDIR="${pkgdir}" install
+}

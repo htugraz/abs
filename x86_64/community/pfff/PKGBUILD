@@ -1,0 +1,34 @@
+# $Id: PKGBUILD 138553 2015-08-20 15:14:02Z mtorromeo $
+# Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
+# Contributor: David Stelter <david.stelter@gmail.com>
+# Contributor: Francisco Lopes <chico.lopes@gmail.com>
+
+pkgname='pfff'
+pkgver=0.29
+pkgrel=1
+
+pkgdesc='Tools and APIs for code analysis, visualization and transformation'
+arch=('i686' 'x86_64')
+url='https://github.com/facebook/pfff'
+license=('LGPL2.1')
+depends=('ocaml' 'ocaml-findlib' 'camlp4' 'zlib')
+optdepends=('gtk2: required by codegraph and codemap')
+options=(!makeflags staticlibs) # parallel build fails, need *.a files
+source=("$pkgname-$pkgver.tar.gz::https://github.com/facebook/pfff/archive/v$pkgver.tar.gz")
+sha256sums=('d31c68f1ebb1770297eb26441d21d83728c0fbdb9c7bb3be27625db45fae72d1')
+
+build() {
+	cd "$srcdir"/$pkgname-$pkgver
+	./configure --prefix=/usr
+	make clean
+	make depend
+	make
+	make opt
+}
+
+package() {
+	cd "$srcdir"/$pkgname-$pkgver
+	make DESTDIR=$pkgdir install
+	install -dm755 "$pkgdir"/usr/lib/ocaml
+	make OCAMLFIND_LDCONF="$pkgdir"/tmp/ld.conf OCAMLFIND_DESTDIR="$pkgdir"/usr/lib/ocaml install-findlib
+}

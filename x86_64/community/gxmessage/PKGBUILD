@@ -1,0 +1,32 @@
+# $Id: PKGBUILD 108153 2014-03-24 07:45:55Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Geoffroy Carrier <geoffroy.carrier@koon.fr>
+# Contributor: Jaroslav Lichtblau <tu@dragonlord.cz>
+
+pkgname=gxmessage
+pkgver=3.4.0
+pkgrel=1
+pkgdesc="A GTK3 based xmessage clone."
+arch=('i686' 'x86_64')
+url="http://homepages.ihug.co.nz/~trmusson/programs.html#gxmessage"
+license=('GPL')
+depends=('gtk3' 'desktop-file-utils')
+makedepends=('pkgconfig' 'intltool')
+install=$pkgname.install
+source=(http://homepages.ihug.co.nz/~trmusson/stuff/$pkgname-$pkgver.tar.gz
+        $pkgname.desktop)
+md5sums=('f1bc61bbaee0c7c0067f65b9b765be08'
+         'af92506581c1aae70e3845a66a983f22')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+  ./configure --prefix=/usr --mandir=/usr/share/man
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  make DESTDIR="$pkgdir" install
+  install -D -m644 "$srcdir/$pkgname.desktop" \
+    "${pkgdir}/usr/share/applications/$pkgname.desktop"
+}

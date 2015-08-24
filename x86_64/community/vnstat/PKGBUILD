@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 132352 2015-04-27 19:12:56Z spupykin $
+# Maintainer:  Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
+# Contributor: Thorsten Töpper <atsutane-tu@freethoughts.de>
+
+pkgname=vnstat
+pkgver=1.14
+pkgrel=1
+pkgdesc="A console-based network traffic monitor"
+arch=('i686' 'x86_64')
+url="http://humdi.net/vnstat/"
+license=('GPL')
+depends=('bash')
+makedepends=('gd')
+optdepends=('gd: image output')
+backup=(etc/vnstat.conf)
+source=(http://humdi.net/vnstat/$pkgname-$pkgver.tar.gz)
+md5sums=('1df5dccff4d84f2995f840db4cac2ed0')
+
+build() {
+  cd $srcdir/$pkgname-$pkgver
+  make all SBIN=/usr/bin
+}
+
+package() {
+  cd $srcdir/$pkgname-$pkgver
+  make DESTDIR=$pkgdir install SBIN=$pkgdir/usr/bin
+  install -Dm0755 examples/vnstat.cgi $pkgdir/usr/share/doc/vnstat/examples/vnstat.cgi
+  install -Dm0644 examples/systemd/vnstat.service $pkgdir/usr/lib/systemd/system/vnstat.service
+}

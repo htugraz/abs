@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 136052 2015-06-28 18:58:51Z jlichtblau $
+# Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
+# Contributor: Douglas Soares de Andrade <dsa@aur.archlinux.org>
+# Contributor: William Rea <sillywilly@gmail.com>
+
+pkgname=tilda
+pkgver=1.2.4
+pkgrel=1
+pkgdesc="A Gtk based drop down terminal for Linux and Unix"
+arch=('i686' 'x86_64')
+url="https://github.com/lanoxx/tilda"
+license=('GPL')
+depends=('vte290' 'confuse')
+changelog=$pkgname.changelog
+source=(https://github.com/lanoxx/$pkgname/archive/$pkgname-$pkgver.tar.gz)
+sha256sums=('1f7b52c5d8cfd9038ad2e41fc633fce935f420fa657ed15e3942722c8570751e')
+
+build() {
+  cd $pkgname-$pkgname-$pkgver
+
+  ./autogen.sh
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd $pkgname-$pkgname-$pkgver
+
+  make DESTDIR="${pkgdir}" install
+}

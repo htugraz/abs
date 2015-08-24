@@ -1,0 +1,56 @@
+# $Id: PKGBUILD 137675 2015-08-01 23:35:28Z arodseth $
+# Maintainer: Alexander Rødseth <rodseth@gmail.com>
+# Contributor: yugrotavele <yugrotavele at archlinux dot us>
+# Contributor: Paolo Stivanin <admin AT polslinux DOT it>
+
+pkgname=winff
+pkgver=1.5.4
+pkgrel=1
+pkgdesc='GUI for ffmpeg'
+url='https://github.com/WinFF/winff/'
+license=('GPL3')
+arch=('x86_64' 'i686')
+depends=('ffmpeg' 'gtk2' 'hicolor-icon-theme')
+optdepends=('xterm: terminal emulator')
+makedepends=('lazarus' 'lazarus-gtk2' 'gendesk' 'tar' 'git')
+install='winff.install'
+source=("git://github.com/WinFF/winff.git#commit=86c3560848")
+md5sums=('SKIP')
+
+prepare() {
+  gendesk -n -f \
+    --pkgname "$pkgname" \
+    --pkgdesc "$pkgdesc" \
+    --genericname 'Video converter' \
+    --categories 'AudioVideo;AudioVideoEditing;GTK'
+}
+
+build() {
+  cd "$pkgname/$pkgname"
+
+  lazbuild --lazarusdir=/usr/lib/lazarus winff.lpr --ws=gtk2
+}
+
+package() {
+  cd "$pkgname/$pkgname"
+  
+  install -Dm755 "$pkgname" "$pkgdir/usr/bin/$pkgname"
+  install -d "$pkgdir/usr/share/winff/"
+  find . -name "*.xml" \
+    -exec install -Dm644 {} "$pkgdir/usr/share/winff/" \; &> /dev/null
+  install -Dm644 "$srcdir/winff.desktop" \
+    "$pkgdir/usr/share/applications/winff.desktop"
+  install -Dm644 'winff-icons/48x48/winff.png' \
+    "$pkgdir/usr/share/pixmaps/winff.png"
+  for size in 16x16 24x24 32x32 48x48; do
+    install -Dm644 "winff-icons/$size/winff.png" \
+      "$pkgdir/usr/share/icons/hicolor/$size/apps/winff.png"
+  done
+  install -dm755 "$pkgdir/usr/share/winff/languages/"
+  find . -name "*.po" \
+    -exec install -Dm644 {} "$pkgdir/usr/share/winff/languages/" \; &> /dev/null
+  rm -f 'presets.xml'
+}
+
+# getver: -u 2 github.com/WinFF/winff/tree/master/winff
+# vim:set ts=2 sw=2 et:

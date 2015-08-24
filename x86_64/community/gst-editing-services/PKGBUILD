@@ -1,0 +1,29 @@
+# $Id: PKGBUILD 121782 2014-11-04 09:34:57Z spupykin $
+# Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
+# Maintainer: Lubosz Sarnecki <lubosz@gmail.com>
+# Contributor: Kerrick Staley <mail@kerrickstaley.com>
+# Contributor: Thijs Vermeir <thijsvermeir@gmail.com>
+
+pkgname=gst-editing-services
+pkgver=1.4.0
+pkgrel=1
+pkgdesc='GStreamer editing services'
+arch=('i686' 'x86_64')
+license=('LGPL')
+url='http://gstreamer.freedesktop.org/modules/gst-editing-services.html'
+depends=('gst-plugins-base')
+makedepends=('intltool' 'pkgconfig' 'gtk-doc' 'gobject-introspection')
+source=("http://gstreamer.freedesktop.org/src/gstreamer-editing-services/gstreamer-editing-services-$pkgver.tar.xz")
+sha256sums=('6025842f3f83d18794576fbf181a7d6eb7470854efd1529c4acaf28d33e2f6d8')
+sha256sums=('cc20b90fb7bcec257b2afda7474664d493b1acece66da675d7df584588808bb3')
+
+build() {
+  cd $srcdir/gstreamer-editing-services-$pkgver
+  ./configure --prefix=/usr
+  make
+}
+
+package() {
+  cd $srcdir/gstreamer-editing-services-$pkgver
+  make DESTDIR="$pkgdir" install
+}

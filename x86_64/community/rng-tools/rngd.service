@@ -1,0 +1,10 @@
+[Unit]
+Description=Hardware RNG Entropy Gatherer Daemon
+
+[Service]
+Type=forking
+EnvironmentFile=/etc/conf.d/rngd
+ExecStart=/usr/bin/rngd $RNGD_OPTS
+
+[Install]
+WantedBy=multi-user.target

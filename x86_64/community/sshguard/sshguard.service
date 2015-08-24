@@ -1,0 +1,9 @@
+[Unit]
+Description=Block hacking attempts
+After=iptables.service ip6tables.service ufw.service shorewall.service shorewall6.service network.target
+
+[Service]
+ExecStart=/usr/lib/systemd/scripts/sshguard-journalctl "-b /var/db/sshguard/blacklist.db" SYSLOG_FACILITY=4 SYSLOG_FACILITY=10
+
+[Install]
+WantedBy=multi-user.target

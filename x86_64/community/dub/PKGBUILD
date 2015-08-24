@@ -1,0 +1,40 @@
+# Maintainer:  Mihails Strasuns <public@dicebot.lv>
+# Contributor: Moritz Maxeiner <moritz@ucworks.org>
+pkgname=dub
+pkgver=0.9.23
+pkgrel=2
+pkgdesc="Developer package manager for D programming language"
+arch=('i686' 'x86_64')
+url="https://github.com/D-Programming-Language/dub"
+license=('MIT')
+makedepends=('dmd' 'libphobos-devel' 'git')
+depends=('curl')
+source=(
+  "git+https://github.com/D-Programming-Language/dub.git#tag=v$pkgver"
+)
+sha256sums=(
+  'SKIP'
+)
+
+build()
+{
+  # DC=`$srcdir/Arch-PKGBUILDs/d-compiler.sh`
+  DC=dmd
+  cd "${srcdir}/${pkgname}"
+
+  echo Generating version file...
+  GITVER=$(git describe) || GITVER=unknown
+  echo "module dub.version_;" > source/dub/version_.d
+  echo "enum dubVersion = \"$GITVER\";" >> source/dub/version_.d
+  echo "enum initialCompilerBinary = \"$DC\";" >> source/dub/version_.d
+
+  $DC -ofbin/dub -w -g -version=DubUseCurl -Isource -L-lcurl @build-files.txt
+}
+
+package()
+{
+  cd "${srcdir}/${pkgname}"
+  install -D -m755 bin/dub "${pkgdir}/usr/bin/dub"
+  install -D -m644 scripts/bash-completion/dub.bash $pkgdir/usr/share/bash-completion/completions/dub
+  install -D -m644 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE.txt"
+}

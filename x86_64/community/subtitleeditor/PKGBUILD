@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 135891 2015-06-26 05:48:03Z jlichtblau $
+# Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
+
+pkgname=subtitleeditor
+pkgver=0.52.1
+pkgrel=1
+pkgdesc="A GTK+3 tool to edit subtitles for GNU/Linux/*BSD"
+arch=('i686' 'x86_64')
+url="http://home.gna.org/subtitleeditor/"
+license=('GPL3')
+depends=('desktop-file-utils' 'enchant' 'gst-plugins-base' 'gstreamermm' 'gst-libav'
+         'gtkmm3' 'hicolor-icon-theme' 'libsigc++' 'libxml++' 'xdg-utils')
+makedepends=('intltool')
+install=$pkgname.install
+changelog=$pkgname.changelog
+source=(http://download.gna.org/$pkgname/0.52/$pkgname-$pkgver.tar.gz)
+sha256sums=('5b3e5fc1f12bcf0d4bcf5014249b6832181bd3b513ac04ee665ec979441412d5')
+
+build() {
+  cd "${srcdir}"/$pkgname-$pkgver
+
+  ./configure --prefix=/usr
+  make
+}
+
+package () {
+  cd "${srcdir}"/$pkgname-$pkgver
+
+  make DESTDIR="${pkgdir}" install
+}
