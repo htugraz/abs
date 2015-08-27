@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 238507 2015-05-05 15:54:16Z heftig $
+# $Id: PKGBUILD 244931 2015-08-27 17:23:33Z heftig $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=networkmanager-openconnect
 pkgver=1.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="NetworkManager VPN integration for openconnect"
 arch=('i686' 'x86_64')
 license=('GPL')

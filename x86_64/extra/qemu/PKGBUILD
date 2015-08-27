@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 244413 2015-08-20 09:51:39Z seblu $
+# $Id: PKGBUILD 244911 2015-08-27 15:33:19Z seblu $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Sébastien "Seblu" Luttringer <seblu@seblu.net>
 
@@ -11,7 +11,7 @@ pkgname=('qemu'
          'qemu-guest-agent'
          'libcacard')
 pkgver=2.4.0
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 license=('GPL2' 'LGPL2.1')
 url='http://wiki.qemu.org/'
@@ -171,7 +171,7 @@ package_qemu-guest-agent() {
   depends=('glibc' 'gcc-libs' 'glib2')
 
   install -D qemu-${pkgver}/qemu-ga "${pkgdir}"/usr/bin/qemu-ga
-  install -D qemu-ga.service "${pkgdir}"/usr/lib/systemd/system/qemu-ga.service
+  install -Dm644 qemu-ga.service "${pkgdir}"/usr/lib/systemd/system/qemu-ga.service
 }
 
 package_libcacard() {
