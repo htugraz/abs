@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 244930 2015-08-27 17:23:04Z heftig $
+# $Id: PKGBUILD 244958 2015-08-28 10:17:50Z heftig $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=networkmanager-openvpn
 pkgver=1.0.6
-pkgrel=1
+pkgrel=2
 pkgdesc="NetworkManager VPN plugin for OpenVPN"
 arch=('i686' 'x86_64')
 license=('GPL')
