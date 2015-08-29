@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 239902 2015-05-30 09:12:31Z bpiotrowski $
+# $Id: PKGBUILD 245066 2015-08-29 17:18:00Z anatolik $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 # Contributor: kevin <kevin@archlinux.org>
@@ -10,7 +10,7 @@ pkgbase=boost
 pkgname=('boost-libs' 'boost')
 pkgver=1.58.0
 _boostver=${pkgver//./_}
-pkgrel=2
+pkgrel=3
 url='http://www.boost.org/'
 arch=('i686' 'x86_64')
 license=('custom')

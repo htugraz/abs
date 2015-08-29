@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 138750 2015-08-25 07:04:33Z arojas $
+# $Id: PKGBUILD 138914 2015-08-29 08:51:21Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org> 
 
 pkgname=muon

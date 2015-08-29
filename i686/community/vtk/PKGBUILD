@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 128366 2015-02-27 14:40:52Z jgc $
+# $Id: PKGBUILD 138932 2015-08-29 17:18:32Z anatolik $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 # Contributor: Christofer Bertonha <christoferbertonha at gmail dot com>
@@ -13,7 +13,7 @@
 pkgname=vtk
 pkgver=6.1.0
 _majorver=6.1
-pkgrel=8
+pkgrel=9
 pkgdesc='A software system for 3D computer graphics, image processing, and visualization.'
 arch=('i686' 'x86_64')
 url='http://www.vtk.org/'

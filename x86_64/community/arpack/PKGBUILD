@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 132562 2015-04-30 10:01:24Z arodseth $
-# Maintainer: Alexander Rødseth <rodseth@gmail.com>
+# $Id: PKGBUILD 138933 2015-08-29 17:18:33Z anatolik $
+# Maintainer: Alexander F Rødseth <rodseth@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 # Contributor: Stefan Husmann <stefan-husmann@t-online.de>
 
 pkgname=arpack
 pkgver=3.2.0
-pkgrel=1
+pkgrel=2
 arch=('x86_64' 'i686')
 pkgdesc='Fortran77 subroutines designed to solve large scale eigenvalue problems'
 url='https://github.com/opencollab/arpack-ng'
@@ -33,4 +33,5 @@ package() {
   install -Dm644 COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
 }
 
+# getver ok
 # vim:set ts=2 sw=2 et:

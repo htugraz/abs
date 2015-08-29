@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 241448 2015-06-30 17:41:03Z arojas $
+# $Id: PKGBUILD 245010 2015-08-29 08:49:52Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgname=kde-cli-tools
-pkgver=5.3.2
+pkgver=5.4.0
 pkgrel=1
 pkgdesc="Tools based on KDE Frameworks 5 to better interact with the system"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ license=('LGPL')
 depends=('kdesu' 'kdelibs4support' 'kcmutils')
 makedepends=('extra-cmake-modules' 'kdoctools' 'python')
 source=("http://download.kde.org/stable/plasma/${pkgver}/$pkgname-$pkgver.tar.xz")
-md5sums=('17ec549a653a89c694eb03bbe0d053d2')
+md5sums=('65fc93f60161988783a0c78e12640aa5')
 
 prepare() {
   mkdir build

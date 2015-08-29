@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 241470 2015-06-30 17:46:45Z arojas $
+# $Id: PKGBUILD 245032 2015-08-29 08:50:18Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: schuay <jakob.gruber@gmail.com>
 
 pkgname=ksshaskpass
-pkgver=5.3.2
+pkgver=5.4.0
 pkgrel=1
 pkgdesc='ssh-add helper that uses kwallet and kpassworddialog'
 url='https://projects.kde.org/projects/kde/workspace/ksshaskpass'
@@ -18,7 +18,7 @@ replaces=('ksshaskpass-frameworks')
 groups=('plasma')
 source=("http://download.kde.org/stable/plasma/${pkgver}/${pkgname}-${pkgver}.tar.xz"
         "$pkgname.sh")
-md5sums=('946fec9696dc36119d3cb62b49d358c0'
+md5sums=('977d67b867ecfe35dc9932f243d6d0f1'
          '70396ba019ae05cc91502456f548caff')
 
 prepare() {
