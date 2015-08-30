@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 137902 2015-08-04 06:37:16Z bpiotrowski $
+# $Id: PKGBUILD 138995 2015-08-30 20:09:13Z arojas $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 # Contributor: Dmitry N. Shilov <stormblast@land.ru>
 
 pkgname=luminancehdr
 pkgver=2.4.0
-pkgrel=4
+pkgrel=5
 pkgdesc='Open source graphical user interface application that aims to provide a workflow for HDR imaging'
 arch=('i686' 'x86_64')
 url='http://qtpfsgui.sourceforge.net/'

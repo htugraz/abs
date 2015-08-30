@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 135738 2015-06-22 21:17:53Z foutrelis $
+# $Id: PKGBUILD 138997 2015-08-30 20:09:16Z arojas $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer : Ionut Biru <ibiru@archlinux.org>
 # Contributor: Joeny Ang <ang(dot)joeny(at)gmail(dot)com>
@@ -7,7 +7,7 @@ pkgname=shotwell
 epoch=1
 pkgver=0.22.0
 _basever=$(echo $pkgver | cut -f1-2 -d.)
-pkgrel=2
+pkgrel=3
 pkgdesc="A digital photo organizer designed for the GNOME desktop environment"
 arch=('i686' 'x86_64')
 url="http://yorba.org/shotwell/"
