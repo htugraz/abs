@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 138770 2015-08-26 02:49:27Z fyan $
+# $Id: PKGBUILD 139087 2015-09-02 03:41:15Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andy Weidenbaum <archbaum@gmail.com>
 # Contributor: Aurélien Chabot <contact@aurelienchabot.fr>
@@ -6,7 +6,7 @@
 
 pkgname=progress
 pkgdesc="Shows running coreutils basic commands and displays stats"
-pkgver=0.8
+pkgver=0.9
 pkgrel=1
 arch=('i686' 'x86_64')
 license=('GPL3')
