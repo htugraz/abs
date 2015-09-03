@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 243924 2015-08-18 13:38:02Z fyan $
+# $Id: PKGBUILD 245220 2015-09-03 05:38:33Z bisson $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=ktexteditor
 pkgver=5.13.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Advanced embeddable text editor'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/ktexteditor'

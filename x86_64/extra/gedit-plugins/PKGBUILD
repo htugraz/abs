@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 237464 2015-04-19 15:27:54Z heftig $
+# $Id: PKGBUILD 245216 2015-09-03 05:38:25Z bisson $
 # Maintainer:  Ionut Biru <ibiru@archlinux.org>
 # Contributor: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Hugo Doria <hugo@archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=gedit-plugins
 pkgver=3.16.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Plugins for gedit"
 arch=(x86_64 i686)
 license=(GPL)

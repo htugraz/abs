@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 122851 2014-11-20 23:42:17Z bgyorgy $
+# $Id: PKGBUILD 139144 2015-09-03 15:23:31Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 # Contributor: JD Steffen <jd at steffennet dot org>
 
 pkgname=simutrans-pak128
-pkgver=2.5.2
-_pkgver=RC_120
+pkgver=2.5.3
+_pkgver=ST120
 pkgrel=1
 pkgdesc="High resolution graphics set for Simutrans"
 arch=('any')
@@ -13,7 +13,7 @@ license=('Artistic2.0')
 provides=('simutrans-pak64')
 options=('!strip')
 source=(http://downloads.sourceforge.net/simutrans/pak128-$pkgver--$_pkgver.zip)
-md5sums=('5ef83e7bab077b9aa68f1466fd71d141')
+md5sums=('cd5dbf7b1c53700d66c55f9533f09d68')
 
 package() {
   cd "$srcdir"
