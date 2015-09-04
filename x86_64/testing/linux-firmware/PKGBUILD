@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 245236 2015-09-03 14:34:54Z tpowa $
+# $Id: PKGBUILD 245282 2015-09-04 13:41:27Z heftig $
 # Maintainer: Thomas Bächler <thomas@archlinux.org>
 
 pkgname=linux-firmware
 # Commit date + git rev-parse --short origin/master
-_rev=dc00519
-pkgver=20150812.${_rev}
+_rev=6ebf5d5
+pkgver=20150904.${_rev}
 pkgrel=1
 pkgdesc="Firmware files for Linux"
 makedepends=('git')

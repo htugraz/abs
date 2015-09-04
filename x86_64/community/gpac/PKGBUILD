@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 139174 2015-09-03 20:56:20Z tpowa $
+# $Id: PKGBUILD 139201 2015-09-04 11:46:11Z tpowa $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=gpac
 pkgver=0.5.2
-pkgrel=2
+pkgrel=4
 epoch=1
 pkgdesc="A multimedia framework based on the MPEG-4 Systems standard"
 arch=('i686' 'x86_64')
@@ -17,7 +17,7 @@ optdepends=('jack: for jack support'
 	    'libmad: for mp3 support'
 	    'sdl2: for sdl support')
 options=('staticlibs' '!makeflags')
-source=(git://github.com/gpac/gpac.git)
+source=(git://github.com/gpac/gpac.git#tag=v$pkgver)
 sha1sums=('SKIP')
 
 build() {
