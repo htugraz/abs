@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 138784 2015-08-26 10:49:23Z alucryd $
+# $Id: PKGBUILD 139431 2015-09-07 07:34:24Z alucryd $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Steven Allen <steven@stebalien.com>
 # Contributor: Limao Luo <luolimao+AUR@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgbase=python-pylast
 pkgname=('python-pylast' 'python2-pylast')
-pkgver=1.3.0
+pkgver=1.4.0
 pkgrel=1
 pkgdesc='A Python interface to Last.fm and Libre.fm'
 arch=('any')
@@ -15,7 +15,7 @@ url='https://github.com/pylast/pylast'
 license=('Apache')
 makedepends=('python-setuptools' 'python2-setuptools')
 source=("http://pypi.python.org/packages/source/p/pylast/pylast-${pkgver}.tar.gz")
-sha256sums=('691560ca7b9c39cbaa847b18df3306bd232bf15559f0a82cbf94b70923b74699')
+sha256sums=('b7d0437f675cde4b1aeb24fac14628492ffb5f7a63baf95100edff06085d11cb')
 
 prepare() {
   cp -r pylast-${pkgver} python2-pylast-${pkgver}

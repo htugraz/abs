@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 118072 2014-08-29 15:59:00Z spupykin $
+# $Id: PKGBUILD 139478 2015-09-07 11:46:28Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Zhukov Pavel <gelios@gmail.com>
 
 pkgname=synce-kde
 pkgver=0.16
-pkgrel=3
+pkgrel=4
 pkgdesc="Provide a means of communication with a Windows CE device - KDE tools and integration"
 arch=(any)
 url="http://synce.sourceforge.net/"
 license=('GPL')
-depends=('synce-librapi' 'synce-rra' 'pygobject' 'synce-sync-engine'
+depends=('synce-core' 'synce-rra' 'pygobject' 'synce-sync-engine'
          'kdebindings-python2')
 optdepends=('unshield' 'orange' 'dynamite')
 makedepends=('synce-rra' 'python2-setuptools')
