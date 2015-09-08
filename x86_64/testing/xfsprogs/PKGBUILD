@@ -1,7 +1,7 @@
-# $Id: PKGBUILD 245314 2015-09-04 19:51:59Z tpowa $
+# $Id: PKGBUILD 245515 2015-09-08 07:04:43Z tpowa $
 #
 pkgname=xfsprogs
-pkgver=3.2.4
+pkgver=4.2.0
 pkgrel=1
 pkgdesc="XFS filesystem utilities"
 arch=('i686' 'x86_64')
