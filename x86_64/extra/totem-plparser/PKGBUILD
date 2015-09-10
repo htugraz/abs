@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 233106 2015-03-09 08:48:19Z jgc $
+# $Id: PKGBUILD 245710 2015-09-10 08:09:35Z jgc $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=totem-plparser
-pkgver=3.10.4
+pkgver=3.10.5
 pkgrel=1
 url="http://www.gnome.org"
 pkgdesc="Totem playlist parser library"
 license=('LGPL')
 arch=(i686 x86_64)
 depends=('gmime' 'libsoup' 'libarchive' 'libquvi')
-makedepends=('intltool' 'gobject-introspection' 'python2')
+makedepends=('intltool' 'gobject-introspection')
 source=(http://ftp.gnome.org/pub/gnome/sources/totem-pl-parser/${pkgver:0:4}/totem-pl-parser-$pkgver.tar.xz)
-sha256sums=('482353f8466b1cab06d99c0a112a4adc414bf43b9c8f3bd636570d20d1f4e265')
+sha256sums=('a746580f61b678029dadaa824a6923445afd944d12c40c5fccb27159799c8137')
 
 build() {
   cd totem-pl-parser-$pkgver

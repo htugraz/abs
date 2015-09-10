@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 139600 2015-09-08 12:47:02Z spupykin $
+# $Id: PKGBUILD 139837 2015-09-10 20:41:34Z spupykin $
 # Maintainer:  Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Jan-Erik Rediger <badboy at archlinux dot us>
@@ -6,7 +6,7 @@
 
 pkgname=redis
 pkgver=3.0.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Advanced key-value store'
 arch=('i686' 'x86_64')
 url='http://redis.io/'

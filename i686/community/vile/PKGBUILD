@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 127372 2015-02-09 10:11:20Z spupykin $
+# $Id: PKGBUILD 139796 2015-09-10 11:22:42Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=vile
-pkgver=9.8_p
+pkgver=9.8_q
 _basever=9.8
 pkgrel=1
 pkgdesc="vi like emacs"
