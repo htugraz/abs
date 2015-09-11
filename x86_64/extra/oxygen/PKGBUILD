@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 245008 2015-08-29 08:49:50Z arojas $
+# $Id: PKGBUILD 245782 2015-09-11 13:59:29Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgbase=oxygen
 pkgname=('oxygen' 'oxygen-cursors' 'oxygen-kde4')
-pkgver=5.4.0
+pkgver=5.4.1
 pkgrel=1
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/oxygen'
 license=('LGPL')
 makedepends=('frameworkintegration' 'kcmutils' 'kdecoration' 'extra-cmake-modules' 'kdoctools' 'kdelibs' 'automoc4')
 source=("http://download.kde.org/stable/plasma/${pkgver}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('8a8b312d21eed54912a0357df1c4f1ec')
+md5sums=('a56031b9600712eabcc0f6baeb8a2947')
 
 prepare() {
   mkdir build{,-kde4}
