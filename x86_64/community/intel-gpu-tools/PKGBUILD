@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 138074 2015-08-08 00:37:05Z thestinger $
+# $Id: PKGBUILD 139951 2015-09-12 05:45:13Z thestinger $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 # Contributor: Mikael Eriksson <mikael_eriksson@miffe.org>
 # Originally by: Denis Smirnov <detanator@gmail.com>
 
 pkgname=intel-gpu-tools
-pkgver=1.11
+pkgver=1.12
 pkgrel=2
 pkgdesc="Tools for development and testing of the Intel DRM driver"
 arch=(i686 x86_64)
@@ -13,12 +13,12 @@ url='http://cgit.freedesktop.org/xorg/app/intel-gpu-tools/'
 depends=(libdrm libpciaccess cairo python)
 makedepends=(swig gtk-doc xorg-util-macros dri2proto)
 source=(http://xorg.freedesktop.org/releases/individual/app/$pkgname-$pkgver.tar.bz2)
-md5sums=('836e9fd084f63da2a29fe81a47eb3db8')
+md5sums=('1223ccba665e2c94e05a7905bd6245ff')
 
 build() {
   cd $pkgname-$pkgver
   export LANG=en_US.UTF-8
-  ./configure --prefix=/usr --disable-tests --without-libunwind
+  ./configure --prefix=/usr --libexecdir=/usr/lib --disable-tests --without-libunwind
   make
 }
 
