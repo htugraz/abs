@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 126094 2015-01-18 14:08:55Z speps $
+# $Id: PKGBUILD 140050 2015-09-13 16:52:32Z speps $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 # Contributor: Roman Kyrylych <Roman.Kyrylych@gmail.com>
 # Contributor: Ravi Desai <ravster3@hotmail.com>
 
 pkgname=gpa
-pkgver=0.9.7
+pkgver=0.9.9
 pkgrel=1
 pkgdesc="A graphical user interface for the GnuPG"
 arch=('i686' 'x86_64')
@@ -14,7 +14,7 @@ license=('GPL3')
 depends=('gpgme' 'gtk2' 'desktop-file-utils')
 install="$pkgname.install"
 source=("ftp://ftp.gnupg.org/gcrypt/gpa/gpa-$pkgver.tar.bz2")
-md5sums=('76dd4e694d34ef8294eee67d253cc1f2')
+md5sums=('017b585d64f865cf31680e40fbf02cc0')
 
 build() {
   cd $pkgname-$pkgver
