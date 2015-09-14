@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 138943 2015-08-29 18:11:42Z jlichtblau $
+# $Id: PKGBUILD 140100 2015-09-14 18:55:09Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Ray Rashif <schiv@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: neuromante <lorenzo.nizzi.grifi@gmail.com>
 
 pkgname=skrooge
-pkgver=2.1.0
+pkgver=2.1.1
 pkgrel=1
 pkgdesc="A personal finances manager for KDE"
 arch=('i686' 'x86_64')
@@ -18,7 +18,7 @@ options=('!emptydirs')
 install=$pkgname.install
 changelog=$pkgname.changelog
 source=(http://download.kde.org/stable/$pkgname/$pkgname-$pkgver.tar.xz)
-sha256sums=('fbec55673eb931546e47dff6e6480bac9478b03db87e703107f1472df0a314cf')
+sha256sums=('4c7b82991b56d28274b7e00c2909009c858b43f489c401a46a2dca637caccd12')
 
 build() {
   cd "${srcdir}"/$pkgname-$pkgver
