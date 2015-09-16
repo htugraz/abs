@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 242241 2015-07-15 02:41:59Z fyan $
+# $Id: PKGBUILD 246404 2015-09-16 15:11:37Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=perl-net-dns
-pkgver=1.01
+pkgver=1.02
 pkgrel=1
 pkgdesc="Perl Module: Interface to the DNS resolver"
 arch=('any')
@@ -14,7 +14,7 @@ optdepends=('perl-io-socket-inet6: IPv6 support'
             'perl-socket6: IPv6 support')
 options=('!emptydirs')
 source=(http://www.cpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-$pkgver.tar.gz)
-sha1sums=('a4b9c177117397604cf0ee6f10ac80034aff37bc')
+sha1sums=('3c1da57957d0ba458472296273d7609feeb44fe5')
 
 build() {
   cd Net-DNS-${pkgver}
