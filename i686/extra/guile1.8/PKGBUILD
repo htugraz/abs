@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198090 2013-10-30 12:44:33Z allan $
-# Maintainer: Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
+# $Id: PKGBUILD 246500 2015-09-17 21:01:32Z foutrelis $
+# Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 
 pkgname=guile1.8
 pkgver=1.8.8
-pkgrel=3
+pkgrel=4
 pkgdesc='Portable, embeddable Scheme implementation written in C. Legacy branch.'
 url="http://www.gnu.org/software/guile/"
 arch=('i686' 'x86_64')

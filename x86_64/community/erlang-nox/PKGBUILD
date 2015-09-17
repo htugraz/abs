@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 136129 2015-06-29 21:48:27Z arodseth $
+# $Id: PKGBUILD 140472 2015-09-17 20:51:43Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Lukas Fleischer <archlinux@cryptocrack.de>
 # Contributor: Vesa Kaihlavirta <vesa@archlinux.org>
@@ -8,7 +8,7 @@
 
 pkgname=erlang-nox
 pkgver=18.0
-pkgrel=1
+pkgrel=2
 pkgdesc='General-purpose concurrent functional programming language developed by Ericsson (headless version)'
 arch=('x86_64' 'i686')
 url='http://www.erlang.org/'

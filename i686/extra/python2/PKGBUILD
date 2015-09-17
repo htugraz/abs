@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 239894 2015-05-30 06:59:03Z fyan $
+# $Id: PKGBUILD 246529 2015-09-17 21:02:13Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=python2
 pkgver=2.7.10
-pkgrel=1
+pkgrel=2
 _pybasever=2.7
 pkgdesc="A high-level scripting language"
 arch=('i686' 'x86_64')

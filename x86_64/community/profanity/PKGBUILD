@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 128689 2015-03-04 05:37:35Z bpiotrowski $
+# $Id: PKGBUILD 140572 2015-09-17 20:54:00Z foutrelis $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: jason ryan <jasonwryan@gmail.com>
 
 pkgname=profanity
 pkgver=0.4.6
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc='Console based XMPP client'
 arch=('i686' 'x86_64')

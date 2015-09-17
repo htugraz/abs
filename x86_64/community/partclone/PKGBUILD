@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137474 2015-07-27 08:25:57Z jsteel $
+# $Id: PKGBUILD 140563 2015-09-17 20:53:48Z foutrelis $
 # Maintainer: Jonathan Steel <jsteel at archlinux.org>
 # Contrinutor: Dan Serban
 # Contributor: Franz Burgmann
@@ -7,7 +7,7 @@
 
 pkgname=partclone
 pkgver=0.2.80
-pkgrel=1
+pkgrel=2
 pkgdesc="Utilities to save and restore used blocks on a partition"
 arch=('i686' 'x86_64')
 url="http://partclone.org"

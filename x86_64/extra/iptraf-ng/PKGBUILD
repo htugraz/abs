@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 198707 2013-11-02 08:25:46Z ioni $
+# $Id: PKGBUILD 246504 2015-09-17 21:01:36Z foutrelis $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Maintainer: sh0 <mee@sh0.org>
 
 pkgname=iptraf-ng
 pkgver=1.1.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A console-based network monitoring utility (a fork of original iptraf)"
 url="https://fedorahosted.org/iptraf-ng/"
 arch=('i686' 'x86_64')

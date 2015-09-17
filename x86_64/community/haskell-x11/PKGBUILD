@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 130797 2015-04-06 04:22:20Z td123 $
+# $Id: PKGBUILD 140524 2015-09-17 20:52:55Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: shild <sxp@bk.ru>
 # Maintainer: Vesa Kaihlavirta <vegai@iki.fi>
@@ -6,7 +6,7 @@
 _hkgname=X11
 pkgname=haskell-x11
 pkgver=1.6.1.2
-pkgrel=3
+pkgrel=4
 pkgdesc="A Haskell binding to the X11 graphics library."
 arch=(i686 x86_64)
 url="http://hackage.haskell.org/cgi-bin/hackage-scripts/package/X11"

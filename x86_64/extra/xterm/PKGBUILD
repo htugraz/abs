@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 245045 2015-08-29 10:46:52Z andyrtr $
+# $Id: PKGBUILD 246546 2015-09-17 21:02:41Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Alexander Baldeck <alexander@archlinux.org>
 
 pkgname=xterm
 pkgver=320
-pkgrel=1
+pkgrel=2
 pkgdesc="X Terminal Emulator"
 arch=('i686' 'x86_64')
 url="http://invisible-island.net/xterm/"

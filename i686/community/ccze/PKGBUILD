@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 115136 2014-07-05 17:38:41Z jlichtblau $
+# $Id: PKGBUILD 140451 2015-09-17 20:51:19Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org> 
 
 pkgname=ccze
 pkgver=0.2.1
-pkgrel=8
+pkgrel=9
 pkgdesc="Robust and modular log colorizer with many plugins"
 arch=('i686' 'x86_64')
 url="http://freshmeat.net/projects/ccze/"

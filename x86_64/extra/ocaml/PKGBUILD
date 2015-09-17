@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 243180 2015-08-11 21:25:08Z juergen $
+# $Id: PKGBUILD 246524 2015-09-17 21:02:06Z foutrelis $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgbase='ocaml'
 pkgname=('ocaml' 'ocaml-compiler-libs')
 pkgver=4.02.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A functional language with OO extensions"
 arch=('i686' 'x86_64')
 license=('LGPL2.1' 'custom: QPL-1.0')

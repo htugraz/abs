@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 114978 2014-07-05 02:50:46Z fyan $
+# $Id: PKGBUILD 140463 2015-09-17 20:51:33Z foutrelis $
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 # Contributor: Jeff Mickey <jeff@archlinux.org>
 # Contributor: Thayer Williams <thayer@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=dopewars
 pkgver=1.5.12
-pkgrel=7
+pkgrel=8
 pkgdesc="A drug dealing game set in New York"
 url="http://dopewars.sourceforge.net/"
 license=('GPL')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 198132 2013-10-30 12:58:57Z allan $
+# $Id: PKGBUILD 246511 2015-09-17 21:01:45Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libcaca
 pkgver=0.99.beta18
-pkgrel=2
+pkgrel=3
 pkgdesc="Color AsCii Art library"
 arch=('i686' 'x86_64')
 license=('custom:WTFPL')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 245125 2015-09-01 01:17:06Z bisson $
+# $Id: PKGBUILD 246520 2015-09-17 21:02:01Z foutrelis $
 # Contributor: tobias [tobias [at] archlinux.org]
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 
 pkgname=mutt
 pkgver=1.5.24
-pkgrel=1
+pkgrel=2
 pkgdesc='Small but very powerful text-based mail client'
 url='http://www.mutt.org/'
 license=('GPL')

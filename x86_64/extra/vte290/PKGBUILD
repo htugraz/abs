@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 224476 2014-10-16 11:48:56Z jgc $
+# $Id: PKGBUILD 246541 2015-09-17 21:02:35Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 
 # This is a transitional package which will hopefully go away in a few months;
@@ -10,7 +10,7 @@
 
 pkgname=vte290
 pkgver=0.36.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Virtual Terminal Emulator widget for use with GTK3 (vte-2.90 API)"
 arch=('i686' 'x86_64')
 url="http://www.gnome.org"

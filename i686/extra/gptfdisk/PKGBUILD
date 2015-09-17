@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 234071 2015-03-18 01:01:36Z foutrelis $
+# $Id: PKGBUILD 246497 2015-09-17 21:01:28Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Hokum <hokum_at_mail_dot_ru>
 
 pkgname=gptfdisk
 pkgver=1.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A text-mode partitioning tool that works on GUID Partition Table (GPT) disks"
 arch=('i686' 'x86_64')
 url="http://www.rodsbooks.com/gdisk/"

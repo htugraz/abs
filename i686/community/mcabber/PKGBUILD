@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 136268 2015-07-02 10:50:21Z spupykin $
+# $Id: PKGBUILD 140545 2015-09-17 20:53:26Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Thorsten Töpper <atsutane-tu@freethoughts.de>
 # Contributor:  3ED <kas1987@o2.pl>
 
 pkgname=mcabber
 pkgver=1.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A small Jabber console client, includes features: SSL, PGP, MUC, UTF8"
 arch=('i686' 'x86_64')
 url="http://www.lilotux.net/~mikael/mcabber/"

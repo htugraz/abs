@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 130833 2015-04-06 15:19:37Z jelle $
+# $Id: PKGBUILD 140613 2015-09-17 20:54:58Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Vesa Kaihlavirta <vegai@iki.fi>
 # Contributor: orbisvicis <gmail.com>
 
 pkgname=xmonad-contrib
 pkgver=0.11.4
-pkgrel=2
+pkgrel=3
 pkgdesc="Add-ons for xmonad"
 arch=('i686' 'x86_64')
 url="http://xmonad.org/"

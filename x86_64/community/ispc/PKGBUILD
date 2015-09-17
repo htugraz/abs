@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 138963 2015-08-30 06:40:01Z stativ $
+# $Id: PKGBUILD 140535 2015-09-17 20:53:11Z foutrelis $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname=ispc
 pkgver=1.8.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A compiler for high-performance SIMD programming on the CPU"
 arch=('i686' 'x86_64')
 url="https://ispc.github.io/"

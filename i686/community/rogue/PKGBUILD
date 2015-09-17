@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 114051 2014-07-01 12:25:09Z kkeen $
+# $Id: PKGBUILD 140578 2015-09-17 20:54:08Z foutrelis $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 pkgname=rogue
 pkgver=5.4.4
-pkgrel=4
+pkgrel=5
 pkgdesc="The original dungeon crawl game."
 arch=('i686' 'x86_64')
 url="http://rogue.rogueforge.net/rogue-5-4/"

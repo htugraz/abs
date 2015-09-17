@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 139244 2015-09-05 19:59:53Z anatolik $
+# $Id: PKGBUILD 140460 2015-09-17 20:51:29Z foutrelis $
 # Maintainer: Anatol Pomozov <anatol.pomozov@gmail.com>
 # Contributor: Jonne Haß <me@jhass.eu>
 
 pkgname=crystal
 pkgver=0.7.7
-pkgrel=1
+pkgrel=2
 _binary_rel=1
 pkgdesc='The Crystal Programming Language'
 arch=(i686 x86_64)

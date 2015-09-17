@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 115253 2014-07-07 03:00:42Z fyan $
+# $Id: PKGBUILD 140602 2015-09-17 20:54:41Z foutrelis $
 # Maintainer: Eric Belanger <eric@archlinux.org>
 # Contributor: lowercase
 
 pkgname=unace
 pkgver=2.5
-pkgrel=8
+pkgrel=9
 pkgdesc="An extraction tool for the proprietary ace archive format"
 arch=('i686' 'x86_64')
 url="http://www.winace.com/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 136005 2015-06-28 09:42:31Z bluewind $
+# $Id: PKGBUILD 140570 2015-09-17 20:53:57Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=pork
 pkgver=0.99.8.1
-pkgrel=9
+pkgrel=10
 pkgdesc="Console-based AOL Instant Messenger & IRC client"
 arch=('i686' 'x86_64')
 url="http://dev.ojnk.net/"

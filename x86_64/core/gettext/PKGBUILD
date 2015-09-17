@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 245318 2015-09-04 20:03:11Z tpowa $
+# $Id: PKGBUILD 246457 2015-09-17 20:59:50Z foutrelis $
 # Maintainer:
 
 pkgname=gettext
-pkgver=0.19.5.1
+pkgver=0.19.6
 pkgrel=1
 pkgdesc="GNU internationalization library"
 arch=('i686' 'x86_64')
@@ -31,5 +31,5 @@ package() {
   cd "${srcdir}/${pkgname}-${pkgver}"
   make DESTDIR="${pkgdir}" install
 }
-md5sums=('2b2ab90f6405a414bbe30cf6655f3e28'
+md5sums=('6d1447f8c5c45c329371ef4bfe7d79a5'
          'SKIP')

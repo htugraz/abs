@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 215670 2014-06-30 06:47:30Z tpowa $
+# $Id: PKGBUILD 246521 2015-09-17 21:02:03Z foutrelis $
 # Maintainer: dorphell <dorphell@archlinux.org>
 
 pkgname=naim
 pkgver=0.11.8.3.2
-pkgrel=3
+pkgrel=4
 pkgdesc="An ncurses AOL Instant Messenger and IRC client."
 arch=('i686' 'x86_64')
 license=('GPL2')

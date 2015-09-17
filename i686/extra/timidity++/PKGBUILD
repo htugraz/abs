@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 223375 2014-09-27 02:51:21Z eric $
+# $Id: PKGBUILD 246535 2015-09-17 21:02:24Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=timidity++
 pkgver=2.14.0
-pkgrel=6
+pkgrel=7
 pkgdesc="A MIDI to WAVE converter and player"
 arch=('i686' 'x86_64')
 url="http://timidity.sourceforge.net"

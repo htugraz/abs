@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 138249 2015-08-11 15:48:14Z mtorromeo $
+# $Id: PKGBUILD 140559 2015-09-17 20:53:43Z foutrelis $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 
 pkgname=nmon
 pkgver=15h
-pkgrel=1
+pkgrel=2
 pkgdesc="AIX & Linux Performance Monitoring tool"
 arch=('i686' 'x86_64')
 url="http://nmon.sourceforge.net"

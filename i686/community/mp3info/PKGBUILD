@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 114097 2014-07-01 13:29:07Z spupykin $
+# $Id: PKGBUILD 140549 2015-09-17 20:53:30Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Vinay S Shastry <vinayshastry@gmail.com>
 
 pkgname=mp3info
 pkgver=0.8.5a
-pkgrel=5
+pkgrel=6
 pkgdesc="An MP3 technical info viewer and ID3 1.x tag editor"
 arch=('i686' 'x86_64')
 url="http://ibiblio.org/mp3info/"

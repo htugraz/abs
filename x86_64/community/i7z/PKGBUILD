@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 128418 2015-02-28 13:23:33Z svenstaro $
+# $Id: PKGBUILD 140532 2015-09-17 20:53:07Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Nathan O <ndowens.aur at gmail dot com>
 
 pkgname=i7z
 pkgver=0.27.2.git1
-pkgrel=1
+pkgrel=2
 pkgdesc="A better i7 (and now i3, i5) reporting tool for Linux"
 arch=('i686' 'x86_64')
 license=('GPL2')

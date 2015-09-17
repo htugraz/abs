@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 100289 2013-11-02 08:50:10Z spupykin $
+# $Id: PKGBUILD 140598 2015-09-17 20:54:34Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=tvision
 pkgver=2.2.1_r1
-pkgrel=3
+pkgrel=4
 pkgdesc="turbo vision library port (console interface)"
 arch=(i686 x86_64)
 url="http://tvision.sourceforge.net"

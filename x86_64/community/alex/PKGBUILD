@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 130755 2015-04-06 04:21:30Z td123 $
+# $Id: PKGBUILD 140436 2015-09-17 20:51:02Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Vesa Kaihlavirta <vegai@iki.fi>
@@ -6,7 +6,7 @@
 
 pkgname=alex
 pkgver=3.1.4
-pkgrel=4
+pkgrel=5
 pkgdesc='Lexical analyser generator for Haskell'
 arch=('x86_64' 'i686')
 url='http://hackage.haskell.org/package/alex'

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 139216 2015-09-04 22:13:06Z seblu $
+# $Id: PKGBUILD 140543 2015-09-17 20:53:23Z foutrelis $
 # Maintainer: Sébastien Luttringer
 
 pkgbase=linux-tools
@@ -14,7 +14,7 @@ pkgname=(
   'x86_energy_perf_policy'
 )
 pkgver=4.2
-pkgrel=1
+pkgrel=2
 license=('GPL2')
 arch=('i686' 'x86_64')
 url='http://www.kernel.org'

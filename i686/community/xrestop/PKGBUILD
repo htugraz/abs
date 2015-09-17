@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 127137 2015-02-04 23:02:34Z bluewind $
+# $Id: PKGBUILD 140614 2015-09-17 20:55:00Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=xrestop
 pkgver=0.4
-pkgrel=5
+pkgrel=6
 pkgdesc="Uses the X-Resource extension to provide 'top' like statistics"
 arch=('i686' 'x86_64')
 url="http://freedesktop.org/wiki/Software/xrestop"

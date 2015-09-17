@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 133894 2015-05-20 19:23:53Z jlichtblau $
+# $Id: PKGBUILD 140560 2015-09-17 20:53:44Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Alexander Rødseth <rodseth@gmail.com>
 
 pkgname=nzbget
 pkgver=15.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Download from Usenet using .nzb files"
 arch=('i686' 'x86_64')
 url="http://nzbget.sourceforge.net/"

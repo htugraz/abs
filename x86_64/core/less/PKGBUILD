@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 246268 2015-09-15 01:41:58Z foutrelis $
+# $Id: PKGBUILD 246461 2015-09-17 20:59:56Z foutrelis $
 # Maintainer: Sébastien "Seblu" Luttringer <seblu@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
 
 pkgname=less
 pkgver=481
-pkgrel=1
+pkgrel=2
 pkgdesc='A terminal based program for viewing text files'
 license=('GPL3')
 arch=('i686' 'x86_64')

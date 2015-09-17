@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 138732 2015-08-24 15:41:08Z juergen $
+# $Id: PKGBUILD 140567 2015-09-17 20:53:53Z foutrelis $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Contributor: David Stelter <david.stelter@gmail.com>
 # Contributor: Francisco Lopes <chico.lopes@gmail.com>
 
 pkgname='pfff'
 pkgver=0.29
-pkgrel=2
+pkgrel=3
 
 pkgdesc='Tools and APIs for code analysis, visualization and transformation'
 arch=('i686' 'x86_64')

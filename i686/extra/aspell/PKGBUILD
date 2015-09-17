@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 215604 2014-06-30 04:21:29Z fyan $
+# $Id: PKGBUILD 246476 2015-09-17 21:00:55Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Jochem Kossen <j.kossen@home.nl>
 # Contributor: dorphell <dorphell@archlinux.org>
@@ -8,7 +8,7 @@
 pkgname=aspell
 pkgver=0.60.6.1
 _pkgmajorver=0.60
-pkgrel=2
+pkgrel=3
 pkgdesc="A spell checker designed to eventually replace Ispell"
 arch=('i686' 'x86_64')
 url="http://aspell.net/"

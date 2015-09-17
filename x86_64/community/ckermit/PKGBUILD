@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 122441 2014-11-12 14:51:56Z spupykin $
+# $Id: PKGBUILD 140456 2015-09-17 20:51:25Z foutrelis $
 # Maintainer: Sergej Pupykin <arch+pub@sergej.pp.ru>
 # Maintainer: Brian Bidulock <bidulock@openss7.org>
 # Contributor: Ryan Corder <ryanc@greengrey.org>
@@ -6,7 +6,7 @@
 
 pkgname=ckermit
 pkgver=9.0.302
-pkgrel=5
+pkgrel=6
 pkgdesc="Portable scriptable network and serial communication software"
 arch=('i686' 'x86_64')
 license=('custom')

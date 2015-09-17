@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 135219 2015-06-11 23:58:14Z kkeen $
+# $Id: PKGBUILD 140557 2015-09-17 20:53:41Z foutrelis $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Abhishek Dasgupta <abhidg@gmail.com>
 # Contributor: Jason Taylor <jftaylor21@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=ngspice
 pkgver=26
-pkgrel=2
+pkgrel=3
 pkgdesc='Mixed-level/Mixed-signal circuit simulator based on Spice3f5, Ciber1b1, and Xspice.'
 url='http://ngspice.sourceforge.net'
 license=('BSD')

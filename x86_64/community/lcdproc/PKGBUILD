@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 110778 2014-05-06 17:57:07Z idevolder $
+# $Id: PKGBUILD 140537 2015-09-17 20:53:14Z foutrelis $
 # Maintainer: BlackEagle <ike DOT devolder AT gmail DOT com>
 # Contributor: Bernhard Walle <bernhard.walle@gmx.de>
 
 pkgname=lcdproc
 pkgver=0.5.7
-pkgrel=1
+pkgrel=2
 pkgdesc="Utility to drive one or more LCD (and LCD-like) devices"
 arch=('i686' 'x86_64')
 url="http://lcdproc.omnipotent.net/"

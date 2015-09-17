@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 111490 2014-05-19 10:08:37Z spupykin $
+# $Id: PKGBUILD 140599 2015-09-17 20:54:36Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: G_Syme <demichan(at)mail(dot)upb(dot)de>
 
 pkgname=twin
 pkgver=0.6.2
-pkgrel=6
+pkgrel=7
 pkgdesc="A text-mode window environment"
 arch=('i686' 'x86_64')
 url='http://sourceforge.net/projects/twin/'

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 114356 2014-07-01 14:52:31Z spupykin $
+# $Id: PKGBUILD 140568 2015-09-17 20:53:55Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Jaroslaw Swierczynski <swiergot@aur.archlinux.org>
 
 pkgname=pinfo
 pkgver=0.6.10
-pkgrel=3
+pkgrel=4
 pkgdesc="A hypertext info file viewer"
 arch=('i686' 'x86_64')
 url="https://alioth.debian.org/projects/pinfo/"

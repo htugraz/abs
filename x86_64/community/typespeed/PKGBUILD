@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 113994 2014-07-01 12:15:30Z kkeen $
+# $Id: PKGBUILD 140600 2015-09-17 20:54:37Z foutrelis $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Angel Velasquez <angvp@archlinux.org> 
 
 pkgname=typespeed
 pkgver=0.6.5
-pkgrel=5
+pkgrel=6
 pkgdesc="Test your typing speed, and get your fingers' CPS."
 arch=('i686' 'x86_64')
 url="http://typespeed.sourceforge.net"

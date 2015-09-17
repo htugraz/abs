@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 114380 2014-07-01 15:09:00Z spupykin $
+# $Id: PKGBUILD 140579 2015-09-17 20:54:09Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=rote
 pkgver=0.2.8
-pkgrel=4
+pkgrel=5
 pkgdesc="terminal emulation library"
 arch=('i686' 'x86_64')
 url="http://rote.sourceforge.net/"

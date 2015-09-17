@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 130786 2015-04-06 04:22:06Z td123 $
+# $Id: PKGBUILD 140513 2015-09-17 20:52:40Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Vesa Kaihlavirta <vesa@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
@@ -6,7 +6,7 @@
 _hkgname=QuickCheck
 pkgname=haskell-quickcheck
 pkgver=2.8
-pkgrel=3
+pkgrel=4
 pkgdesc='Automatic testing of Haskell programs'
 url='http://hackage.haskell.org/package/QuickCheck'
 license=('custom:BSD3')

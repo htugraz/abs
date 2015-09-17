@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 130828 2015-04-06 15:04:29Z jelle $
+# $Id: PKGBUILD 140612 2015-09-17 20:54:56Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Vesa Kaihlavirta <vegai@iki.fi>
 # Contributor: shild <shildv@gmail.com>
 
 pkgname=xmonad
 pkgver=0.11.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Lightweight X11 tiled window manager written in Haskell"
 arch=('i686' 'x86_64')
 url="http://xmonad.org/"

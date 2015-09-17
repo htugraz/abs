@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 90516 2013-05-12 23:47:26Z seblu $
+# $Id: PKGBUILD 140534 2015-09-17 20:53:10Z foutrelis $
 # Maintainer: Sébastien Luttringer
 # Contributor: Andrea Zucchelli <zukka77@gmail.com>
 
 pkgname=iptstate
 pkgver=2.2.5
-pkgrel=2
+pkgrel=3
 pkgdesc='top-like interface to netfilter connection-tracking table'
 arch=('i686' 'x86_64')
 url='http://www.phildev.net/iptstate/'

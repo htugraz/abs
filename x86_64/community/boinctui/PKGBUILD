@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 131108 2015-04-10 12:04:58Z fyan $
+# $Id: PKGBUILD 140446 2015-09-17 20:51:13Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=boinctui
 pkgver=2.3.5
-pkgrel=2
+pkgrel=3
 pkgdesc="Curses based fullscreen BOINC manager"
 arch=('i686' 'x86_64')
 url="http://boinctui.googlecode.com/"

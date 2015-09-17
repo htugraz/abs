@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 136685 2015-07-10 21:45:58Z jlichtblau $
+# $Id: PKGBUILD 140605 2015-09-17 20:54:46Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 
 pkgname=vifm
 pkgver=0.8
-pkgrel=1
+pkgrel=2
 pkgdesc="Ncurses based file manager with vi like keybindings"
 arch=('i686' 'x86_64')
 url="http://vifm.info/"

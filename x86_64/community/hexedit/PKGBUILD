@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 114957 2014-07-05 02:29:16Z fyan $
+# $Id: PKGBUILD 140528 2015-09-17 20:53:01Z foutrelis $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Paul Mattal <pjmattal@elys.com>
 
 pkgname=hexedit
 pkgver=1.2.13
-pkgrel=2
+pkgrel=3
 pkgdesc="Hex Editor for Linux"
 arch=('i686' 'x86_64')
 url="http://rigaux.org/hexedit.html"

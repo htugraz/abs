@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 130771 2015-04-06 04:21:49Z td123 $
+# $Id: PKGBUILD 140496 2015-09-17 20:52:16Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 pkgname=haskell-ghc-paths
 pkgver=0.1.0.9
-pkgrel=8
+pkgrel=9
 pkgdesc="Knowledge of GHC's installation directories"
 url='http://hackage.haskell.org/package/ghc-paths'
 license=('custom:BSD3')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 129387 2015-03-16 18:15:09Z jelle $
+# $Id: PKGBUILD 140473 2015-09-17 20:51:46Z foutrelis $
 # Maintainer:
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgbase=ettercap
 pkgname=('ettercap' 'ettercap-gtk')
 pkgver=0.8.2
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url="http://ettercap.github.com/ettercap/"
 license=('GPL')

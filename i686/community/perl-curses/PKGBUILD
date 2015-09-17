@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 135953 2015-06-28 09:41:30Z bluewind $
+# $Id: PKGBUILD 140565 2015-09-17 20:53:50Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Charles Mauch <cmauch@gmail.com>
 # Contributor: Francois Charette <firmicus@gmx.net>
 
 pkgname=perl-curses
 pkgver=1.32
-pkgrel=2
+pkgrel=3
 pkgdesc="Character screen handling and windowing"
 arch=('i686' 'x86_64')
 url="http://search.cpan.org/dist/Curses"

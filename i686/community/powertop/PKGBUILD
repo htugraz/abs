@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 127867 2015-02-17 19:23:54Z jlichtblau $
+# $Id: PKGBUILD 140571 2015-09-17 20:53:59Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 # Contributor: Xilon <xilonmu@gmail.com>
 
 pkgname=powertop
 pkgver=2.7
-pkgrel=2
+pkgrel=3
 pkgdesc='A tool to diagnose issues with power consumption and power management'
 arch=('i686' 'x86_64')
 url='https://01.org/powertop/'

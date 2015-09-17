@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 139555 2015-09-08 06:35:05Z fyan $
+# $Id: PKGBUILD 140479 2015-09-17 20:51:54Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josh VanderLinden <arch@cloudlery.com>
 # Contributor: Nicolas Storme <nicolas@atelier-web.com>
 
 pkgname=goaccess
 pkgver=0.9.4
-pkgrel=1
+pkgrel=2
 pkgdesc="An open source real-time web log analyzer and interactive viewer"
 arch=('i686' 'x86_64')
 url='http://goaccess.io'

@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 243399 2015-08-13 12:01:17Z thomas $
+# $Id: PKGBUILD 246507 2015-09-17 21:01:39Z foutrelis $
 # Maintainer: Thomas Bächler <thomas@archlinux.org>
 pkgname=joe
 pkgver=4.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Joe's own editor"
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/joe-editor"

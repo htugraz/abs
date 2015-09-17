@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 241388 2015-06-29 01:57:11Z bisson $
+# $Id: PKGBUILD 246532 2015-09-17 21:02:18Z foutrelis $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Committer: dorphell <dorphell@gmx.net>
 
 pkgname=screen
 pkgver=4.3.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Full-screen window manager that multiplexes a physical terminal'
 url='http://www.gnu.org/software/screen/'
 arch=('i686' 'x86_64')

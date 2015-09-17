@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 216883 2014-07-14 17:09:13Z bisson $
+# $Id: PKGBUILD 246523 2015-09-17 21:02:05Z foutrelis $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Angel Velasquez <angvp@archlinux.org> 
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=ncmpc
 pkgver=0.24
-pkgrel=1
+pkgrel=2
 pkgdesc='Fully featured MPD client using ncurses'
 url='http://www.musicpd.org/clients/ncmpc/'
 arch=('i686' 'x86_64')

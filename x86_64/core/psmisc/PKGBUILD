@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 211948 2014-05-02 02:38:12Z fyan $
+# $Id: PKGBUILD 246468 2015-09-17 21:00:06Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=psmisc
 pkgver=22.21
-pkgrel=2
+pkgrel=3
 pkgdesc="Miscellaneous procfs tools"
 arch=('i686' 'x86_64')
 url="http://psmisc.sourceforge.net/index.html"

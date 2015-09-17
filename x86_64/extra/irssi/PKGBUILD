@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 241325 2015-06-28 09:37:37Z bluewind $
+# $Id: PKGBUILD 246505 2015-09-17 21:01:37Z foutrelis $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Dan McGee <dan@archlinux.org>
 
 pkgname=irssi
 pkgver=0.8.17
-pkgrel=2
+pkgrel=3
 pkgdesc="Modular text mode IRC client with Perl scripting"
 arch=('i686' 'x86_64')
 url="http://irssi.org/"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137057 2015-07-17 14:15:11Z xyne $
+# $Id: PKGBUILD 140458 2015-09-17 20:51:27Z foutrelis $
 # Maintainer: Xyne <ca dot archlinux at xyne, backwards>
 # Contributor:  Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
 # Contributor: Aaron Griffin <aaron@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=cmus
 pkgver=2.7.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Feature-rich ncurses-based music player'
 arch=('i686' 'x86_64')
 url="https://cmus.github.io/"

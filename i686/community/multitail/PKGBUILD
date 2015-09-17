@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 127596 2015-02-12 10:47:54Z kkeen $
+# $Id: PKGBUILD 140550 2015-09-17 20:53:32Z foutrelis $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Kevin Piche <kevin@archlinux.org>
 # Contributor: Roberto Carvajal <roberto@archlinux.org>
 
 pkgname=multitail
 pkgver=6.4.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Lets you view one or multiple files like the original tail program"
 arch=('i686' 'x86_64')
 license=('GPL')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 133536 2015-05-15 20:29:29Z jlichtblau $
+# $Id: PKGBUILD 140467 2015-09-17 20:51:38Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Chris Brannon <cmbrannon@cox.net>
 
 pkgname=emacs-nox
 pkgver=24.5
-pkgrel=1
+pkgrel=2
 pkgdesc="The extensible, customizable, self-documenting real-time display editor, without X11 support"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/emacs/emacs.html"

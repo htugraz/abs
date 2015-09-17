@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 103906 2014-01-13 17:16:36Z andyrtr $
+# $Id: PKGBUILD 140435 2015-09-17 20:51:01Z foutrelis $
 # Maintainer: BlackIkeEagle <ike DOT devolder AT gmail DOT com>
 # Contributor: slubman <slubman.dndd@laposte.net>
 
 pkgname=afpfs-ng
 pkgver=0.8.1
-pkgrel=8
+pkgrel=9
 pkgdesc="A client for the Apple Filing Protocol (AFP)"
 url="http://alexthepuffin.googlepages.com/"
 license=('GPL')

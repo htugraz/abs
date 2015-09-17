@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 96415 2013-08-28 09:24:47Z fyan $
+# $Id: PKGBUILD 140536 2015-09-17 20:53:12Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@gmail.com
 # Contributor: Paul Bredbury <brebs@sent.com>
 
 pkgname=jnettop
 pkgver=0.13.0
-pkgrel=4
+pkgrel=5
 pkgdesc="A top-like console network traffic visualizer"
 arch=(i686 x86_64)
 url="http://jnettop.kubs.info/wiki/"

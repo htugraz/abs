@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 90118 2013-05-06 19:40:28Z foutrelis $
+# $Id: PKGBUILD 140616 2015-09-17 20:55:03Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Frank Tetzel <frank.tetzel@mailbox.tu-dresden.de>
 # Contributor: Hugo Doria <hugo@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=zsnes
 pkgver=1.51
-pkgrel=17
+pkgrel=18
 pkgdesc="Super Nintendo emulator"
 url="http://www.zsnes.com/"
 arch=('i686' 'x86_64')
@@ -59,7 +59,7 @@ build() {
 package() {
   cd "$srcdir"
 
-  gendesk
+  gendesk "$startdir/PKGBUILD"
 
   cd "${pkgname}_1_51/src"
 

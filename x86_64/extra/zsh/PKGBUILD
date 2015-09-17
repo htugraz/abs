@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 245987 2015-09-12 07:03:21Z pierre $
+# $Id: PKGBUILD 246547 2015-09-17 21:02:43Z foutrelis $
 # Maintainer: Pierre Schmitz <pierre@archlinux.de>
 
 pkgbase=zsh
 pkgname=('zsh' 'zsh-doc')
 pkgver=5.1.1
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url='http://www.zsh.org/'
 license=('custom')

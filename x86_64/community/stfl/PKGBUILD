@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 136346 2015-07-03 18:40:26Z jlichtblau $
+# $Id: PKGBUILD 140589 2015-09-17 20:54:21Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Sven Pfleiderer <pfleidi@roothausen.de>
 
 pkgname=stfl
 pkgver=0.24
-pkgrel=1
+pkgrel=2
 pkgdesc="Library implementing a curses-based widget set for text terminals"
 arch=('i686' 'x86_64')
 url="http://clifford.at/stfl/"

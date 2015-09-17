@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 137818 2015-08-03 13:37:44Z spupykin $
+# $Id: PKGBUILD 140482 2015-09-17 20:51:58Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Vesa Kaihlavirta <vesa@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 pkgname=haddock
 pkgver=2.16.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Tool for generating documentation for Haskell libraries'
 url='http://hackage.haskell.org/package/haddock/'
 license=('custom:BSD3')

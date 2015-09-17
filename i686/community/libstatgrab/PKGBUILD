@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 122055 2014-11-06 14:39:44Z jlichtblau $
+# $Id: PKGBUILD 140541 2015-09-17 20:53:19Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Eric Belanger <eric@archlinux.org>
 # Contributor: Hugo Ideler <hugoideler@dse.nl>
 
 pkgname=libstatgrab
 pkgver=0.91
-pkgrel=1
+pkgrel=2
 pkgdesc="A library that provides cross platform access to statistics about the system on which it's run"
 arch=('i686' 'x86_64')
 url="http://www.i-scream.org/libstatgrab"

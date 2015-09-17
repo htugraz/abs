@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 128107 2015-02-22 11:00:35Z lfleischer $
+# $Id: PKGBUILD 140464 2015-09-17 20:51:34Z foutrelis $
 # Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
 # Contributor: Giorgio Lando <patroclo7@gmail.com>
 # Contributor: bender02 at gmx dot com
 
 pkgname=dvtm
 pkgver=0.14
-pkgrel=1
+pkgrel=2
 pkgdesc='Dynamic virtual terminal manager.'
 arch=('i686' 'x86_64')
 url='http://www.brain-dump.org/projects/dvtm/'

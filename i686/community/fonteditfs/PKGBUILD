@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 114001 2014-07-01 12:17:00Z spupykin $
+# $Id: PKGBUILD 140475 2015-09-17 20:51:48Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=fonteditfs
 pkgver=1.2
-pkgrel=4
+pkgrel=5
 pkgdesc="console font editor"
 arch=('i686' 'x86_64')
 url="http://fonteditfs.sourceforge.net/"

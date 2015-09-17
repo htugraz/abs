@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 139796 2015-09-10 11:22:42Z spupykin $
+# $Id: PKGBUILD 140606 2015-09-17 20:54:47Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=vile
 pkgver=9.8_q
 _basever=9.8
-pkgrel=1
+pkgrel=2
 pkgdesc="vi like emacs"
 arch=('i686' 'x86_64')
 url="http://invisible-island.net/vile/vile.html"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 137408 2015-07-25 12:50:51Z jlichtblau $
+# $Id: PKGBUILD 140444 2015-09-17 20:51:11Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 
 pkgname=bmon
 pkgver=3.8
-pkgrel=1
+pkgrel=2
 pkgdesc="Portable bandwidth monitor and rate estimator"
 arch=('i686' 'x86_64')
 url="http://github.com/tgraf/bmon/"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 228306 2015-01-01 02:34:37Z eric $
+# $Id: PKGBUILD 246517 2015-09-17 21:01:56Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=moc
 pkgver=2.5.0
-pkgrel=2
+pkgrel=3
 epoch=1
 pkgdesc="An ncurses console audio player designed to be powerful and easy to use"
 arch=('i686' 'x86_64')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 114398 2014-07-01 15:28:08Z spupykin $
+# $Id: PKGBUILD 140586 2015-09-17 20:54:17Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Christoph 'delmonico' Neuroth <delmonico@gmx.net>
 
 pkgname=snownews
 pkgver=1.5.12
-pkgrel=6
+pkgrel=7
 pkgdesc="Text mode RSS newsreader for Linux and Unix."
 arch=(i686 x86_64)
 url="http://kiza.kcore.de/software/snownews/"

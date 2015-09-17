@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 244753 2015-08-23 19:58:30Z juergen $
+# $Id: PKGBUILD 246513 2015-09-17 21:01:49Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Jan "heftig" Steffens <jan.steffens@gmail.com>
 # Contributor: Sebastian Nowicki <sebnow@gmail.com>
@@ -12,7 +12,7 @@
 pkgname=('llvm' 'llvm-libs' 'llvm-ocaml' 'lldb' 'clang' 'clang-analyzer'
          'clang-tools-extra')
 pkgver=3.6.2
-pkgrel=3
+pkgrel=4
 _ocaml_ver=4.02.3
 arch=('i686' 'x86_64')
 url="http://llvm.org/"

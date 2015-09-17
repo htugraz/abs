@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 197212 2013-10-24 03:56:40Z eric $
+# $Id: PKGBUILD 246473 2015-09-17 21:00:51Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=aalib
 pkgver=1.4rc5
-pkgrel=10
+pkgrel=11
 pkgdesc="A portable ASCII art graphic library"
 arch=('i686' 'x86_64')
 url="http://aa-project.sourceforge.net/aalib/"

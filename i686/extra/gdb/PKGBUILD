@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 245108 2015-08-31 15:30:29Z anatolik $
+# $Id: PKGBUILD 246492 2015-09-17 21:01:20Z foutrelis $
 # Maintainer: Allan McRae <allan@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gdb
 pkgver=7.10
-pkgrel=1
+pkgrel=3
 pkgdesc='The GNU Debugger'
 arch=(i686 x86_64)
 url='http://www.gnu.org/software/gdb/'

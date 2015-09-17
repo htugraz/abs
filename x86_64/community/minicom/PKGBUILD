@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 103744 2014-01-11 10:02:16Z giovanni $
+# $Id: PKGBUILD 140547 2015-09-17 20:53:28Z foutrelis $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: dorphell <dorphell@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
@@ -6,7 +6,7 @@
 
 pkgname=minicom
 pkgver=2.7
-pkgrel=1
+pkgrel=2
 pkgdesc="A serial communication program"
 arch=('i686'  'x86_64')
 url="http://alioth.debian.org/projects/minicom/"

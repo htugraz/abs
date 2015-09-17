@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 237782 2015-04-20 11:29:42Z juergen $
+# $Id: PKGBUILD 246490 2015-09-17 21:01:17Z foutrelis $
 # Maintainer: Juergen Hoetzel <juergen@archlinux.org>
 # Contributor: Renchi Raju <renchi@green.tam.uiuc.edu>
 
 pkgname=emacs
 pkgver=24.5
-pkgrel=1
+pkgrel=2
 pkgdesc="The extensible, customizable, self-documenting real-time display editor"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/emacs/emacs.html"

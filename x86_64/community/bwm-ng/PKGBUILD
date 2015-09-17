@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 139286 2015-09-06 17:38:26Z foutrelis $
+# $Id: PKGBUILD 140448 2015-09-17 20:51:16Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sven Kauber <celeon@gmail.com>
 
 pkgname=bwm-ng
 pkgver=0.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A small and simple console-based live bandwidth monitor"
 arch=(i686 x86_64)
 url="http://www.gropp.org/"

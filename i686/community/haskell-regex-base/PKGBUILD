@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 130788 2015-04-06 04:22:08Z td123 $
+# $Id: PKGBUILD 140515 2015-09-17 20:52:42Z foutrelis $
 # Maintainer: Vesa Kaihlavirta <vesa@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 # Contributor: Alexander Rødseth <rodseth@gmail.com>
@@ -6,7 +6,7 @@
 _hkgname=regex-base
 pkgname=haskell-regex-base
 pkgver=0.93.2
-pkgrel=21
+pkgrel=22
 pkgdesc='Interface API for regex-posix,pcre,parsec,tdfa,dfa'
 url='http://hackage.haskell.org/cgi-bin/hackage-scripts/package/regex-base'
 license=('custom:BSD3')

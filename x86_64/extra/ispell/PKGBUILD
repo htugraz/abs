@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 215797 2014-06-30 15:24:53Z fyan $
+# $Id: PKGBUILD 246506 2015-09-17 21:01:38Z foutrelis $
 # Contributor: Eric Belanger <eric@archlinux.org>
 # Maintainer:
 
 pkgname=ispell
 pkgver=3.3.02
-pkgrel=6
+pkgrel=7
 pkgdesc="An interactive spell-checking program for Unix"
 arch=('i686' 'x86_64')
 url="http://ficus-www.cs.ucla.edu/geoff/ispell.html"

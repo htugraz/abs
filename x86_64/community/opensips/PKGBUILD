@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 134214 2015-05-27 07:57:46Z spupykin $
+# $Id: PKGBUILD 140562 2015-09-17 20:53:47Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=opensips
 pkgver=2.1.0
-pkgrel=3
+pkgrel=4
 pkgdesc="An Open Source SIP Server able to act as a SIP proxy, registrar, location server, redirect server ..."
 url="http://www.opensips.org"
 depends=('gcc-libs' 'openssl' 'db' 'attr' 'libxml2')

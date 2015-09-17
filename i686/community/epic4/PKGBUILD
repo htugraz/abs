@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 116555 2014-07-29 18:56:02Z jlichtblau $
+# $Id: PKGBUILD 140470 2015-09-17 20:51:41Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 # Contributor: dorphell <dorphell@archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=epic4
 pkgver=2.10.5
-pkgrel=1
+pkgrel=2
 pkgdesc="It's a new direction in ircII development"
 arch=('i686' 'x86_64')
 url="http://www.epicsol.org/"

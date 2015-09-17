@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 121726 2014-11-02 20:03:09Z spupykin $
+# $Id: PKGBUILD 140449 2015-09-17 20:51:17Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=calc
 pkgver=2.12.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc="console calculator"
 arch=(i686 x86_64)
 url="http://www.isthe.com/chongo/tech/comp/calc/"

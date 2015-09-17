@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 241146 2015-06-21 01:47:41Z eric $
+# $Id: PKGBUILD 246459 2015-09-17 20:59:53Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=inetutils
 pkgver=1.9.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A collection of common network programs"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/inetutils/"

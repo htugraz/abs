@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 223677 2014-09-28 21:42:58Z heftig $
+# $Id: PKGBUILD 246540 2015-09-17 21:02:34Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=vte
 pkgver=0.28.2
-pkgrel=5
+pkgrel=6
 pkgdesc="Virtual Terminal Emulator widget for use with GTK2"
 arch=('i686' 'x86_64')
 license=('LGPL')

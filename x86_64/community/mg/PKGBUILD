@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 129805 2015-03-23 11:18:08Z spupykin $
+# $Id: PKGBUILD 140546 2015-09-17 20:53:27Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Hannes Rist <hrist@phreeknet.org>
 
 pkgname=mg
 pkgver=20150316
-pkgrel=1
+pkgrel=2
 pkgdesc="Micro GNU/emacs, this is a portable version of the mg maintained by the OpenBSD team."
 arch=('i686' 'x86_64')
 url="http://homepage.boetes.org/software/mg/"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 197717 2013-10-28 22:26:50Z eric $
+# $Id: PKGBUILD 246458 2015-09-17 20:59:51Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=gpm
 pkgver=1.20.7
-pkgrel=4
+pkgrel=5
 pkgdesc="A mouse server for the console and xterm"
 arch=('i686' 'x86_64')
 url="http://www.nico.schottelius.org/software/gpm/"

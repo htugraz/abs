@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 244488 2015-08-22 11:42:47Z andyrtr $
+# $Id: PKGBUILD 246510 2015-09-17 21:01:43Z foutrelis $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 # Contributor: Aaron Griffin <aaron@archlinux.org>
 
 pkgname=lftp
 pkgver=4.6.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Sophisticated command line based FTP client"
 arch=('i686' 'x86_64')
 license=('GPL3')

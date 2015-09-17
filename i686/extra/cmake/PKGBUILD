@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 244504 2015-08-23 08:51:23Z arojas $
+# $Id: PKGBUILD 246485 2015-09-17 21:01:09Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=cmake
 pkgver=3.3.1
-pkgrel=2
+pkgrel=3
 pkgdesc='A cross-platform open-source make system'
 arch=('i686' 'x86_64')
 url="http://www.cmake.org/"

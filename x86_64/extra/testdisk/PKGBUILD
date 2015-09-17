@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 238207 2015-04-28 14:02:12Z tpowa $
+# $Id: PKGBUILD 246533 2015-09-17 21:02:20Z foutrelis $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Michal Krenek <mikos@sg1.cz>
 
 pkgname=testdisk
 pkgver=7.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Checks and undeletes partitions + PhotoRec, signature based recovery tool"
 arch=('i686' 'x86_64')
 url="http://www.cgsecurity.org/index.html?testdisk.html"

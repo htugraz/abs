@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 118655 2014-09-08 10:05:42Z spupykin $
+# $Id: PKGBUILD 140440 2015-09-17 20:51:06Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: John Gerritse <john.gerritse@gmail.com>
 
 pkgname=atop
 pkgver=2.1_1
-pkgrel=2
+pkgrel=3
 pkgdesc="A system and process level monitor."
 arch=(i686 x86_64)
 url="http://www.atoptool.nl/"

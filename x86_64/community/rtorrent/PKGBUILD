@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 139241 2015-09-05 18:30:22Z jlichtblau $
+# $Id: PKGBUILD 140580 2015-09-17 20:54:10Z foutrelis $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor:  Daenyth <Daenyth [at] gmail [dot] com>
@@ -7,7 +7,7 @@
 
 pkgname=rtorrent
 pkgver=0.9.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Ncurses BitTorrent client based on libTorrent'
 url='http://rakshasa.github.io/rtorrent/'
 license=('GPL')

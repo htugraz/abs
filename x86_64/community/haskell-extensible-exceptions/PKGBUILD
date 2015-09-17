@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 130770 2015-04-06 04:21:48Z td123 $
+# $Id: PKGBUILD 140495 2015-09-17 20:52:15Z foutrelis $
 # Maintainer: Jelle van der Waa <jelle@vdwaa.nl>
 
 _hkgname=extensible-exceptions
 pkgname=haskell-${_hkgname}
 pkgver=0.1.1.4
-pkgrel=9
+pkgrel=10
 pkgdesc="extensible exceptions for both new and old versions of GHC"
 url="http://hackage.haskell.org/package/extensible-exceptions"
 license=('custom:BSD3')

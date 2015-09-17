@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 245739 2015-09-10 13:27:43Z bpiotrowski $
+# $Id: PKGBUILD 246455 2015-09-17 20:59:47Z foutrelis $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Aaron Griffin <aaron@archlinux.org>
@@ -7,7 +7,7 @@ pkgname=bash
 _basever=4.3
 _patchlevel=042
 pkgver=$_basever.$_patchlevel
-pkgrel=1
+pkgrel=2
 pkgdesc='The GNU Bourne Again shell'
 arch=('i686' 'x86_64')
 license=('GPL')

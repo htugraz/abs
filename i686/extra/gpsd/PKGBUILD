@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 241249 2015-06-24 08:34:18Z arojas $
+# $Id: PKGBUILD 246496 2015-09-17 21:01:27Z foutrelis $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=gpsd
 pkgver=3.15
-pkgrel=2
+pkgrel=3
 pkgdesc="GPS daemon and library to support USB/serial GPS devices"
 arch=('i686' 'x86_64')
 url="http://catb.org/gpsd/"

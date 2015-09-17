@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 244483 2015-08-22 00:21:37Z anatolik $
+# $Id: PKGBUILD 246503 2015-09-17 21:01:35Z foutrelis $
 # Maintainer : Stéphane Gaudreault <stephane@archlinux.org>
 # Contributor: Sylvain HENRY <hsyl20@yahoo.fr>
 # Contributor: Hervé YVIQUEL <elldekaa@gmail.com>
 
 pkgname=hwloc
 pkgver=1.11.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Portable Hardware Locality is a portable abstraction of hierarchical architectures"
 arch=('i686' 'x86_64')
 url="http://www.open-mpi.org/projects/hwloc/"
