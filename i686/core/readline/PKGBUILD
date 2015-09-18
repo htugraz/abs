@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 246469 2015-09-17 21:00:07Z foutrelis $
+# $Id: PKGBUILD 246560 2015-09-18 09:09:16Z foutrelis $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
@@ -7,12 +7,12 @@ pkgname=readline
 _basever=6.3
 _patchlevel=008
 pkgver=$_basever.$_patchlevel
-pkgrel=2
+pkgrel=3
 pkgdesc='GNU readline library'
 arch=('i686' 'x86_64')
 url='http://tiswww.case.edu/php/chet/readline/rltop.html'
 license=('GPL')
-depends=('glibc' 'ncurses')
+depends=('glibc' 'ncurses' 'libncursesw.so')
 backup=('etc/inputrc')
 options=('!emptydirs')
 install=readline.install

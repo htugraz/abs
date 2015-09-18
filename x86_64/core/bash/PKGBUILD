@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 246455 2015-09-17 20:59:47Z foutrelis $
+# $Id: PKGBUILD 246559 2015-09-18 09:09:15Z foutrelis $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Aaron Griffin <aaron@archlinux.org>
@@ -7,14 +7,14 @@ pkgname=bash
 _basever=4.3
 _patchlevel=042
 pkgver=$_basever.$_patchlevel
-pkgrel=2
+pkgrel=3
 pkgdesc='The GNU Bourne Again shell'
 arch=('i686' 'x86_64')
 license=('GPL')
 url='http://www.gnu.org/software/bash/bash.html'
 groups=('base')
 backup=(etc/bash.bash{rc,_logout} etc/skel/.bash{rc,_profile,_logout})
-depends=('readline>=6.3' 'glibc')
+depends=('readline>=6.3' 'glibc' 'ncurses' 'libncursesw.so')
 optdepends=('bash-completion: for tab completion')
 provides=('sh')
 install=bash.install
