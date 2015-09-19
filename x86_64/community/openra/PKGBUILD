@@ -1,15 +1,16 @@
-# $Id: PKGBUILD 135521 2015-06-17 14:32:30Z svenstaro $
+# $Id: PKGBUILD 140878 2015-09-19 14:39:06Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Matthew Bowra-Dean <matthew@ijw.co.nz>
 pkgname=openra
-pkgver=20150614
+pkgver=20150919
 pkgrel=1
 pkgdesc="An open-source implementation of the Red Alert engine using .NET/mono and OpenGL"
 arch=('any')
 url="http://open-ra.org"
 license=('GPL3')
 install=openra.install
-depends=('mono' 'ttf-dejavu' 'openal' 'libgl' 'freetype2' 'sdl2' 'lua51' 'hicolor-icon-theme' 'gtk-update-icon-cache' 'desktop-file-utils' 'xdg-utils' 'zenity')
+depends=('mono' 'ttf-dejavu' 'openal' 'libgl' 'freetype2' 'sdl2' 'lua51' 'hicolor-icon-theme' 'gtk-update-icon-cache'
+         'desktop-file-utils' 'xdg-utils' 'zenity')
 makedepends=('git' 'unzip')
 options=(!strip)
 source=("git+https://github.com/OpenRA/OpenRA.git#tag=release-${pkgver}")

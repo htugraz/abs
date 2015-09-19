@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 140092 2015-09-14 14:54:08Z fyan $
+# $Id: PKGBUILD 140683 2015-09-19 02:08:31Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Chris Warrick <aur@chriswarrick.com>
 
 pkgbase=twine
 pkgname=('twine' 'python2-twine')
-pkgver=1.6.0
+pkgver=1.6.1
 pkgrel=1
 pkgdesc='Collection of utilities for interacting with PyPI'
 arch=('any')

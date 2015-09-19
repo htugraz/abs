@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 140386 2015-09-17 02:06:55Z fyan $
+# $Id: PKGBUILD 140679 2015-09-19 00:57:00Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Benjamin A. Shelton <zancarius@gmail.com>
 
 pkgbase=python-raven
 pkgname=(python-raven python2-raven)
-pkgver=5.7.1
+pkgver=5.7.2
 pkgrel=1
 pkgdesc="Python client for Sentry."
 arch=(any)

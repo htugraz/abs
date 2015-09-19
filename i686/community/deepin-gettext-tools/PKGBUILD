@@ -1,11 +1,10 @@
-# $Id: PKGBUILD 140298 2015-09-15 06:51:16Z fyan $
+# $Id: PKGBUILD 140699 2015-09-19 08:03:23Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-gettext-tools
-pkgver=0.0.1.20150310
-_commit=505812cea94923cd6312f7ca1834fa9440f968ac
+pkgver=1.0.1
 pkgrel=1
 pkgdesc='Deepin Gettext Tools'
 arch=('any')
@@ -13,7 +12,7 @@ url="https://gitcafe.com/Deepin/deepin-gettext-tools"
 license=('GPL3')
 depends=('gettext' 'python2')
 makedepends=('git')
-source=("git+https://github.com/linuxdeepin/deepin-gettext-tools.git#commit=$_commit")
+source=("git+https://github.com/linuxdeepin/deepin-gettext-tools.git#tag=$pkgver")
 sha256sums=('SKIP')
 
 prepare() {
