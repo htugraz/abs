@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 243907 2015-08-18 13:37:43Z fyan $
+# $Id: PKGBUILD 246770 2015-09-20 08:16:26Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kcmutils
-pkgver=5.13.0
+pkgver=5.14.0
 pkgrel=1
 pkgdesc='Utilities for interacting with KCModules'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('kdeclarative')
 makedepends=('extra-cmake-modules' 'python')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('25b99cda37941ac81e22b8b51a5be3cb')
+md5sums=('fdb3eaa651bf61bbdcef094f281b9caf')
 
 prepare() {
   mkdir -p build

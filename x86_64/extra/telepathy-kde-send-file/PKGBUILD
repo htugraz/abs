@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 244664 2015-08-23 08:56:20Z arojas $
+# $Id: PKGBUILD 246953 2015-09-20 08:22:51Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Laurent Carlier <lordheavym@gmail.com>
 
 pkgname=telepathy-kde-send-file
 _pkgname=ktp-send-file
-pkgver=15.08.0
+pkgver=15.08.1
 pkgrel=1
 pkgdesc='A File manager plugin to launch a file transfer job with a specified contact'
 arch=('i686' 'x86_64')
@@ -16,7 +16,7 @@ depends=('telepathy-kde-common-internals')
 makedepends=('extra-cmake-modules' 'kdoctools' 'python')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/$_pkgname-${pkgver}.tar.xz")
 install=$pkgname.install
-md5sums=('ee06cf4b603c356dd6e66724df770714')
+md5sums=('2fba578ace0cef171b9b155e2fd19cfa')
 
 prepare() {
   mkdir -p build

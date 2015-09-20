@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 245801 2015-09-11 13:59:50Z arojas $
+# $Id: PKGBUILD 246992 2015-09-20 08:32:49Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgname=khelpcenter
 pkgver=5.4.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Application to show KDE Applications' documentation"
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/workspace/khelpcenter'
@@ -13,6 +13,8 @@ license=('LGPL')
 groups=('plasma')
 depends=('khtml' 'kdelibs4support' 'kcmutils' 'kdoctools')
 makedepends=('extra-cmake-modules')
+conflicts=('khelpcenter4' 'kdebase-runtime-doc')
+replaces=('khelpcenter4' 'kdebase-runtime-doc')
 source=("http://download.kde.org/stable/plasma/${pkgver}/$pkgname-$pkgver.tar.xz")
 md5sums=('99df60a8b2cc2b5c0f924a7c36cd9ad3')
 

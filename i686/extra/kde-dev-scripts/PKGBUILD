@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 244669 2015-08-23 08:56:26Z arojas $
+# $Id: PKGBUILD 246958 2015-09-20 08:22:57Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kde-dev-scripts
-pkgver=15.08.0
+pkgver=15.08.1
 pkgrel=1
 pkgdesc='Scripts and setting files useful during development of KDE software'
 url='https://projects.kde.org/projects/kde/kdesdk/kde-dev-scripts'
@@ -15,7 +15,7 @@ makedepends=('extra-cmake-modules' 'kdoctools' 'kdelibs4support')
 replaces=('kdesdk-dev-scripts')
 conflicts=('kdesdk-dev-scripts')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kde-dev-scripts-${pkgver}.tar.xz")
-sha1sums=('1ec0c5f33e84e9397b696df6af0d274351ea56af')
+sha1sums=('c913c39327d3a99ab5251d7459f0c753c52500b6')
 
 prepare() {
   mkdir -p build

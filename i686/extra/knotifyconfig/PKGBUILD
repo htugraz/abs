@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 243922 2015-08-18 13:37:59Z fyan $
+# $Id: PKGBUILD 246785 2015-09-20 08:16:52Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=knotifyconfig
-pkgver=5.13.0
+pkgver=5.14.0
 pkgrel=1
 pkgdesc='Configuration system for KNotify'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('kio')
 makedepends=('extra-cmake-modules')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('5ffcb92cd9a414a740c499b939b2468d')
+md5sums=('e66f03050ce37783261c56adea9dd244')
 
 prepare() {
   mkdir -p build

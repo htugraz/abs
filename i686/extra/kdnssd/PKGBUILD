@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 243916 2015-08-18 13:37:52Z fyan $
+# $Id: PKGBUILD 246779 2015-09-20 08:16:40Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdnssd
-pkgver=5.13.0
+pkgver=5.14.0
 pkgrel=1
 pkgdesc='Abstraction to system DNSSD features'
 arch=('i686' 'x86_64')
@@ -15,7 +15,7 @@ groups=('kf5')
 replaces=('kdnssd-framework')
 conflicts=('kdnssd-framework')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('aa6c92111aec32bf7428356bfbebda18')
+md5sums=('60c2eb4b4bc7227213bc1b570be75cfd')
 
 prepare() {
   mkdir -p build
