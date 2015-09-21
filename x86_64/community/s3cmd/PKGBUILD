@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 127944 2015-02-18 15:29:44Z jelle $
+# $Id: PKGBUILD 141388 2015-09-21 16:05:26Z jelle $
 # Maintainer: Kaiting Chen <kaitocracy@gmail.com>
 # Contributor: Simon Lipp <aur@simon.lipp.name>
 # Contributor: Daniel Grana <dangra@gmail.com>
 
 pkgname=s3cmd
-pkgver=1.5.2
+pkgver=1.6.0
 pkgrel=1
 pkgdesc="A command line client for Amazon S3"
 arch=('any')
@@ -14,7 +14,7 @@ depends=('python2' 'python2-dateutil')
 makedepends=('python2-setuptools')
 optdepends=('gnupg: encrypted file storage')
 source=("http://downloads.sourceforge.net/sourceforge/s3tools/$pkgname-$pkgver.tar.gz")
-md5sums=('3153116dc62c817a724ea58080968383')
+md5sums=('c07a81248b4f26b299ada8ab4ccc8801')
 
 package() {
   cd "${srcdir}/${pkgname}-${pkgver}"
