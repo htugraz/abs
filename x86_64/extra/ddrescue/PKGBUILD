@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 225567 2014-11-03 13:42:45Z schiv $
+# $Id: PKGBUILD 247094 2015-09-22 21:16:29Z schiv $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 # Contributor: Paul Mattal <paul@archlinux.org>
 
 pkgname=ddrescue
-pkgver=1.19
+pkgver=1.20
 pkgrel=1
 pkgdesc="GNU data recovery tool"
 arch=('i686' 'x86_64')
@@ -14,8 +14,9 @@ depends=('gcc-libs')
 install=$pkgname.install
 source=("http://ftp.gnu.org/gnu/$pkgname/$pkgname-$pkgver.tar.lz"
         "http://ftp.gnu.org/gnu/$pkgname/$pkgname-$pkgver.tar.lz.sig")
-md5sums=('ed6b5b82d74cbd925db2b829350e74b1'
+md5sums=('e1f1bd4bbb0615455f32f2be3b4bdabc'
          'SKIP')
+validpgpkeys=('1D41C14B272A2219A739FA4F8FE99503132D7742') # Antonio Diaz Diaz
 
 build() {
   cd "$srcdir"/$pkgname-$pkgver

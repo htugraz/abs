@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 244863 2015-08-26 02:36:17Z fyan $
+# $Id: PKGBUILD 247067 2015-09-22 09:38:33Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Andrew Simmons <andrew.simmons@gmail.com>
 
 pkgname=perl-archive-zip
-pkgver=1.50
+pkgver=1.51
 pkgrel=1
 pkgdesc="Provide a perl interface to ZIP archive files"
 arch=('any')
@@ -13,7 +13,7 @@ url="http://search.cpan.org/dist/Archive-Zip/"
 depends=('perl')
 options=('!emptydirs')
 source=(http://search.cpan.org/CPAN/authors/id/P/PH/PHRED/Archive-Zip-${pkgver}.tar.gz)
-md5sums=('c68f1db2c340456845ac29e26ae2b45a')
+md5sums=('4f03a873ba343e70f8c7aba5dd3aa4b1')
 
 build() {
   cd Archive-Zip-${pkgver}
