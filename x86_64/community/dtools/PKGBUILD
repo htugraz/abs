@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 140350 2015-09-16 04:12:09Z fyan $
+# $Id: PKGBUILD 141533 2015-09-23 15:54:19Z dicebot $
 # Maintainer: Mihails Strasunse <public@dicebot.lv>
 
 pkgname=('dtools')
-pkgver=2.068.1
+pkgver=2.068.2
 pkgrel=1
 pkgdesc="Ancilliary tools for the D programming language"
 license=("custom")

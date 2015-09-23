@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 139204 2015-09-04 14:06:45Z eworm $
+# $Id: PKGBUILD 141529 2015-09-23 14:23:59Z eworm $
 # Maintainer: Christian Hesse <mail@eworm.de>
 # Contributor:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Eivind Uggedal <eivind@uggedal.com>
 
 pkgname=mpv
 epoch=1
-pkgver=0.10.0
+pkgver=0.11.0
 pkgrel=1
 pkgdesc='Video player based on MPlayer/mplayer2'
 arch=('i686' 'x86_64')
@@ -22,7 +22,7 @@ optdepends=('youtube-dl: for video-sharing websites playback')
 options=('!emptydirs' '!buildflags')
 install=mpv.install
 source=("$pkgname-$pkgver.tar.gz::https://github.com/mpv-player/$pkgname/archive/v$pkgver.tar.gz")
-sha256sums=('f9eaec3e4f6094c4d889ab04f86c479a089c389616e1a5522c92fedb2fe7044c')
+sha256sums=('a2157174e46db46dad5deb1fde94283e72ebe922fd15447cb16a2a243fae5bda')
 
 prepare() {
   cd ${pkgname}-${pkgver}
