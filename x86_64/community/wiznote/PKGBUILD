@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 139557 2015-09-08 06:45:23Z fyan $
+# $Id: PKGBUILD 141554 2015-09-24 06:46:31Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Albert.Zhou <albert.zhou@wiz.cn>
 
 pkgname=wiznote
-pkgver=2.2.4.20150901
-_commit=e42c186a3d05da95023f3425da121c9d829b578e
+pkgver=2.2.4.20150915
+_commit=56bca7d81e7586e06ec26a86f9740076f7743e14
 pkgrel=1
 pkgdesc="Opensource cross-platform cloud based note-taking client"
 arch=('i686' 'x86_64')
