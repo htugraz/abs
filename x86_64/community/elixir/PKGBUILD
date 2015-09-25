@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 136262 2015-07-02 10:23:45Z spupykin $
+# $Id: PKGBUILD 141597 2015-09-25 11:00:21Z spupykin $
 # Maintainer: Sergej Pupykin <arch+pub@sergej.pp.ru>
 # Old maintainer: Gilbert Kennen <gilbert firewatcher org>
 
 pkgname=elixir
-pkgver=1.0.5
+pkgver=1.1.0
 pkgrel=1
 pkgdesc="a functional meta-programming aware language built on top of the Erlang VM"
 url="http://elixir-lang.org"
@@ -11,7 +11,7 @@ arch=('any')
 license=('Apache' 'custom:EPL')
 depends=('erlang-nox')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/elixir-lang/elixir/tarball/v${pkgver}")
-md5sums=('cf81369715f52c92f629efe191874cb1')
+md5sums=('7d1ed9f4d601131d04ddb5f372599fd4')
 
 build() {
   cd "${srcdir}/"elixir-lang*
