@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 247195 2015-09-23 22:07:01Z heftig $
+# $Id: PKGBUILD 247514 2015-09-25 23:00:05Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=gstreamer-vaapi
 pkgver=0.6.0
-pkgrel=2
+pkgrel=3
 pkgdesc="GStreamer Multimedia Framework VA Plugins"
 arch=(i686 x86_64)
 license=(LGPL)

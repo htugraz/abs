@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 140966 2015-09-19 16:40:04Z fyan $
+# $Id: PKGBUILD 141633 2015-09-26 02:42:29Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Thomas Weißschuh <thomas t-8ch.de>
 # Contributor: George Brooke <george+arch.aur@george-brooke.co.uk>
@@ -7,7 +7,7 @@
 pkgbase=python-tox
 pkgname=(python-tox python2-tox)
 pkgver=2.1.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Python virtualenv management and testing tool'
 arch=('any')
 url='http://testrun.org/tox/latest/'
@@ -68,7 +68,7 @@ package_python-tox() {
 package_python2-tox() {
   depends=('python2-py' 'python2-virtualenv' 'python2-setuptools' 'python2-pluggy')
 
-  cd "$srcdir/tox-$pkgver"
+  cd "$srcdir/tox-$pkgver-py2"
   python2 setup.py install --root="$pkgdir" --optimize=1
   mv "${pkgdir}"/usr/bin/tox{,2}
   mv "${pkgdir}"/usr/bin/{tox-quickstart,tox2-quickstart}

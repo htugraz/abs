@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 136006 2015-06-28 09:42:33Z bluewind $
+# $Id: PKGBUILD 141615 2015-09-25 23:44:46Z seblu $
 # Maintainer: Sébastien Luttringer
 # Contributor: Angel Velasquez <angvp@archlinux.org>
 # Contributor: tobias <tobias@archlinux.org>
@@ -7,7 +7,7 @@
 pkgbase=rxvt-unicode
 pkgname=('rxvt-unicode' 'rxvt-unicode-terminfo')
 pkgver=9.21
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 url='http://software.schmorp.de/pkg/rxvt-unicode.html'
 license=('GPL')
@@ -26,9 +26,9 @@ md5sums=('a9a06c608258c5fd247c3725d8f44582'
 build() {
   cd $pkgname-$pkgver
   # we disable smart-resize (FS#34807)
+  # do not specify --with-terminfo (FS#46424)
   ./configure \
     --prefix=/usr \
-    --with-terminfo=/usr/share/terminfo \
     --enable-256-color \
     --enable-combining \
     --enable-fading \
