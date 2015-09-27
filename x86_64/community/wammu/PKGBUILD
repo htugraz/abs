@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 136958 2015-07-15 17:44:09Z jlichtblau $
+# $Id: PKGBUILD 141665 2015-09-27 07:52:36Z fyan $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Ray Rashif <schiv@archlinux.org>
 # Contributor: Corrado 'bardo' Primier <corrado.primier@mail.polimi.it>
@@ -6,12 +6,12 @@
 
 pkgname=wammu
 pkgver=0.39
-pkgrel=1
+pkgrel=2
 pkgdesc="A wxPython-based GUI for Gammu"
 arch=('any')
 url="http://wammu.eu/"
 license=('GPL')
-depends=('gammu' 'wxpython')
+depends=('python2-gammu' 'wxpython')
 optdepends=('gnome-bluetooth: Bluetooth support'
             'python2-pybluez: Bluetooth support'
             'notification-daemon: Notifications support')

@@ -1,6 +1,6 @@
-# $Id: PKGBUILD 99153 2013-10-25 05:05:18Z fyan $
+# $Id: PKGBUILD 141697 2015-09-27 13:28:10Z lfleischer $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
-# Contributor: Lukas Fleischer <archlinux at cryptocrack dot de>
+# Contributor: Lukas Fleischer <lfleischer@archlinux.org>
 # Contributor: detto <detto-brumm@freenet.de>
 
 pkgname=pidgin-hotkeys

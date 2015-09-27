@@ -1,6 +1,6 @@
-# $Id: PKGBUILD 114949 2014-07-05 01:31:53Z cbehan $
+# $Id: PKGBUILD 141697 2015-09-27 13:28:10Z lfleischer $
 # Maintainer: Connor Behan <connor.behan@gmail.com>
-# Contributor: Lukas Fleischer <archlinux at cryptocrack dot de>
+# Contributor: Lukas Fleischer <lfleischer@archlinux.org>
 # Contributor: Christian Storm <Christian.Storm@gmx.DE>
 # Contributor: James Rayner <james@archlinux.org>
 # Contributor: Thayer Williams <thayer@archlinux.org>

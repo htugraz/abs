@@ -1,6 +1,6 @@
-# $Id: PKGBUILD 119351 2014-09-21 07:19:59Z kkeen $
+# $Id: PKGBUILD 141697 2015-09-27 13:28:10Z lfleischer $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
-# Contributor: Lukas Fleischer <archlinux at cryptocrack dot de>
+# Contributor: Lukas Fleischer <lfleischer@archlinux.org>
 # Contributor: Eric Johnson <eric@coding-zone.com>
 pkgname=words
 pkgver=2.1

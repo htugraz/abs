@@ -1,7 +1,7 @@
-# $Id: PKGBUILD 131953 2015-04-22 13:45:30Z arodseth $
+# $Id: PKGBUILD 141697 2015-09-27 13:28:10Z lfleischer $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: duck <duck@vmail.me>
-# Contributor: Lukas Fleischer <archlinux at cryptocrack dot de>
+# Contributor: Lukas Fleischer <lfleischer@archlinux.org>
 # Contributor: arjan <arjan@archlinux.org>
 # Contributor: Aurelien Foret <orelien@chez.com>
 

@@ -1,5 +1,5 @@
-# $Id: PKGBUILD 103908 2014-01-13 17:16:39Z andyrtr $
-# Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
+# $Id: PKGBUILD 141697 2015-09-27 13:28:10Z lfleischer $
+# Maintainer: Lukas Fleischer <lfleischer@archlinux.org>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=clamz

@@ -1,6 +1,6 @@
-# $Id: PKGBUILD 114177 2014-07-01 13:51:58Z spupykin $
+# $Id: PKGBUILD 141697 2015-09-27 13:28:10Z lfleischer $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
-# Contributor: Lukas Fleischer <archlinux at cryptocrack dot de>
+# Contributor: Lukas Fleischer <lfleischer@archlinux.org>
 
 pkgname=perl-datetime-format-iso8601
 pkgver=0.08

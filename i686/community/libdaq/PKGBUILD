@@ -1,5 +1,5 @@
-# $Id: PKGBUILD 141422 2015-09-22 02:25:02Z fyan $
-# Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
+# $Id: PKGBUILD 141697 2015-09-27 13:28:10Z lfleischer $
+# Maintainer: Lukas Fleischer <lfleischer@archlinux.org>
 
 pkgname=libdaq
 pkgver=2.0.6

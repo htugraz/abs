@@ -1,5 +1,5 @@
-# $Id: PKGBUILD 105102 2014-01-31 19:44:06Z lfleischer $
-# Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
+# $Id: PKGBUILD 141697 2015-09-27 13:28:10Z lfleischer $
+# Maintainer: Lukas Fleischer <lfleischer@archlinux.org>
 # Contributor: totoloco <totoloco at gmx>
 
 pkgname=tabbed

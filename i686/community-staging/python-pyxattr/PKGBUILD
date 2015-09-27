@@ -1,5 +1,5 @@
-# $Id: PKGBUILD 140979 2015-09-19 16:42:46Z foutrelis $
-# Maintainer: Lukas Fleischer <lfleischer at archlinux dot org>
+# $Id: PKGBUILD 141697 2015-09-27 13:28:10Z lfleischer $
+# Maintainer: Lukas Fleischer <lfleischer@archlinux.org>
 # Contributor: Jon Bergli Heier <snakebite@jvnv.net>
 
 pkgname=('python2-pyxattr' 'python-pyxattr')

@@ -1,5 +1,5 @@
-# $Id: PKGBUILD 239460 2015-05-16 16:21:23Z anatolik $
-# Maintainer: Lukas Fleischer <archlinux at cryptocrack dot de>
+# $Id: PKGBUILD 247536 2015-09-27 13:35:06Z lfleischer $
+# Maintainer: Lukas Fleischer <lfleischer@archlinux.org>
 
 pkgname=libquvi-scripts
 pkgver=0.9.20131130
