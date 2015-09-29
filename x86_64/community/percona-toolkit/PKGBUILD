@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 128968 2015-03-09 09:08:19Z mtorromeo $
+# $Id: PKGBUILD 142206 2015-09-29 07:14:37Z mtorromeo $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Contributor: D. Can Celasun <dcelasun[at]gmail[dot]com>
 # Contributor: Felix Hanley <felix@seconddrawer.com.au>
 # Contributor: Sławomir Kowalski <suawekk@gmail.com>
 
 pkgname=percona-toolkit
-pkgver=2.2.13
+pkgver=2.2.15
 pkgrel=1
 pkgdesc="Collection of advanced command-line tools to perform a variety of MySQL and system tasks."
 url="http://www.percona.com/software/percona-toolkit/"
@@ -19,7 +19,7 @@ optdepends=(
 )
 options=('!emptydirs' 'purge')
 source=("http://www.percona.com/downloads/$pkgname/$pkgver/tarball/$pkgname-$pkgver.tar.gz")
-sha256sums=('8e69f619d163cd7afa22bd1cf144df0f6d08f06c7559510a73467db1eeff4a63')
+sha256sums=('2fbeff24498cf3718a88116d60a9c6519296ba684b85182c92dce2422dc4426b')
 
 build() {
     cd "$srcdir"/$pkgname-$pkgver
