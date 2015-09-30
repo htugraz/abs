@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 240741 2015-06-13 23:08:53Z seblu $
+# $Id: PKGBUILD 247917 2015-09-30 15:11:57Z seblu $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Maintainer: Sébastien Luttringer <seblu@archlinux.org>
 # Contributor: Joel Teichroeb <joel@teichroeb.net>
 
 pkgname=wayland
-pkgver=1.8.1
+pkgver=1.9.0
 pkgrel=1
 pkgdesc='A computer display server protocol'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ license=('MIT')
 depends=('libffi' 'expat')
 makedepends=('doxygen' 'xmlto' 'graphviz')
 source=("http://wayland.freedesktop.org/releases/$pkgname-$pkgver.tar.xz")
-sha1sums=('3a0a1174d0740d052422b2bab5ffa33599954aa4')
+sha1sums=('39dedba2a5c8a83e7b3a3076fc8f4c4495289f81')
 
 build() {
   cd $pkgname-$pkgver

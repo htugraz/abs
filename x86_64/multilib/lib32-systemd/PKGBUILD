@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 139575 2015-09-08 08:26:11Z lcarlier $
+# $Id: PKGBUILD 142251 2015-09-30 13:33:42Z lcarlier $
 # Maintainer: Dave Reisner <dreisner@archlinux.org>
 # Maintainer: Tom Gundersen <teg@jklm.no>
 
 pkgname=lib32-systemd
 _pkgbasename=systemd
-pkgver=225
+pkgver=226
 pkgrel=1
 pkgdesc="system and service manager (32-bit)"
 arch=('x86_64')

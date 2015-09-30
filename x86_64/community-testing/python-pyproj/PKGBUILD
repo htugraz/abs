@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 141952 2015-09-28 10:49:45Z fyan $
+# $Id: PKGBUILD 142256 2015-09-30 16:37:23Z heftig $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 
 pkgbase=python-pyproj
 pkgname=('python-pyproj' 'python2-pyproj')
 pkgver=1.9.4
-pkgrel=2
+pkgrel=3
 pkgdesc="Python interfaces to PROJ.4 library"
 arch=('i686' 'x86_64')
 url="http://jswhit.github.io/pyproj/"

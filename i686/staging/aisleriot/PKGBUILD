@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 247682 2015-09-28 18:56:33Z heftig $
+# $Id: PKGBUILD 247919 2015-09-30 16:24:37Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=aisleriot
 pkgver=3.18.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A collection of patience games written in guile scheme"
 arch=(i686 x86_64)
 license=(GPL)
@@ -26,7 +26,7 @@ build() {
   #export GLIBC_PTHREAD_RWLOCK=none
   ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
     --libexecdir=/usr/lib --disable-static \
-    --with-kde-card-theme-path=/usr/share/apps/carddecks \
+    --with-kde-card-theme-path=/usr/share/carddecks \
     --with-pysol-card-theme-path=/usr/share/PySolFC
 
 

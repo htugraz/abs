@@ -1,19 +1,19 @@
-# $Id: PKGBUILD 141891 2015-09-28 10:48:19Z fyan $
+# $Id: PKGBUILD 142235 2015-09-30 02:44:23Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Tomas Schertel<tschertel@gmail.com>
 
 pkgbase=python-logbook
 pkgname=(python-logbook python2-logbook)
 _pypiname=Logbook
-pkgver=0.10.0
-pkgrel=2
+pkgver=0.11.2
+pkgrel=1
 pkgdesc="Logging sytem for Python that replaces the standard library’s logging module"
 arch=('i686' 'x86_64')
 url="http://packages.python.org/Logbook/index.html"
 license=('BSD')
 makedepends=('python-setuptools' 'python2-setuptools' 'cython' 'cython2' 'git'
              'python-six' 'python2-six')
-checkdepends=('python-pytest' 'python2-pytest')
+checkdepends=('python-pytest' 'python2-pytest' 'python-sqlalchemy' 'python2-sqlalchemy')
 source=("git+https://github.com/mitsuhiko/logbook.git#tag=$pkgver")
 md5sums=('SKIP')
 
