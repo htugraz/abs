@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 241849 2015-07-06 20:56:51Z guillaume $
+# $Id: PKGBUILD 247991 2015-10-01 16:03:29Z fyan $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=liblouis
 pkgver=2.6.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Open-source braille translator and back-translator"
 arch=(i686 x86_64)
 url="http://liblouis.org/"

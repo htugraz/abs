@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 138196 2015-08-11 05:55:02Z fyan $
-# Maintainer: Felix Yan <felixonmars@gmail.com>
+# $Id: PKGBUILD 142395 2015-10-01 16:03:48Z fyan $
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-betamax
 pkgname=('python-betamax' 'python2-betamax')
 pkgver=0.5.0
-pkgrel=1
-pkgdesc="Python Reddit API Wrapper that allows for simple access to reddit's API"z
+pkgrel=2
+pkgdesc="A VCR imitation for python-requests"
 arch=('any')
 license=('GPL')
 url='https://github.com/sigmavirus24/betamax'

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 138508 2015-08-19 12:07:28Z fyan $
+# $Id: PKGBUILD 142512 2015-10-01 16:07:55Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-praw
 pkgname=('python-praw' 'python2-praw')
 pkgver=3.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Python Reddit API Wrapper that allows for simple access to reddit's API"
 arch=('any')
 license=('GPL')

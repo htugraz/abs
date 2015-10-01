@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 123088 2014-11-24 20:11:59Z aginiewicz $
+# $Id: PKGBUILD 142607 2015-10-01 16:10:03Z fyan $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 
 pkgbase=python-uritemplate
 pkgname=('python2-uritemplate' 'python-uritemplate')
 pkgver=0.6
-pkgrel=1
+pkgrel=2
 pkgdesc="a Python implementation of RFC6570"
 arch=('any')
 url="https://github.com/uri-templates/uritemplate-py/"

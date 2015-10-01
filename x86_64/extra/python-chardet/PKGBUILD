@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 224004 2014-10-07 15:47:06Z fyan $
+# $Id: PKGBUILD 248020 2015-10-01 16:04:18Z fyan $
 # Maintainer : Felix Yan <felixonmars@archlinux.org>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 # Contributor: William Rea <sillywilly@gmail.com>
@@ -6,7 +6,7 @@
 pkgbase=python-chardet
 pkgname=('python-chardet' 'python2-chardet')
 pkgver=2.3.0
-pkgrel=1
+pkgrel=2
 arch=('any')
 url="https://github.com/chardet/chardet"
 license=('LGPL')

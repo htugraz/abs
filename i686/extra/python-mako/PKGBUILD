@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 244889 2015-08-27 13:34:59Z fyan $
+# $Id: PKGBUILD 248029 2015-10-01 16:04:38Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=('python-mako' 'python2-mako')
 pkgver=1.0.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Hyperfast and lightweight templating for the Python2 platform"
 arch=('any')
 url="http://www.makotemplates.org/"

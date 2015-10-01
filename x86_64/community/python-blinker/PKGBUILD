@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137770 2015-08-03 04:17:47Z fyan $
+# $Id: PKGBUILD 142400 2015-10-01 16:03:55Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Philipp Schmidt <philschmidt at gmx dot net>
 # Contributor: Stefan Tatschner <stefan.tatschner at gmail dot com>
@@ -6,7 +6,7 @@
 pkgbase=python-blinker
 pkgname=('python-blinker' 'python2-blinker')
 pkgver=1.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Fast, simple object-to-object and broadcast signaling"
 arch=('any')
 url="http://discorporate.us/projects/Blinker/"

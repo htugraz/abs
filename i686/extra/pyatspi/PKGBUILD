@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 235914 2015-04-09 18:47:12Z heftig $
+# $Id: PKGBUILD 248003 2015-10-01 16:03:51Z fyan $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgbase=pyatspi
 pkgname=(python-atspi python2-atspi)
 pkgver=2.16.0
-pkgrel=1
+pkgrel=2
 arch=(any)
 url="http://www.linuxfoundation.org/en/AT-SPI_on_D-Bus"
 license=('GPL2')

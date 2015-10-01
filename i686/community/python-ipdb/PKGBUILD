@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 134706 2015-06-03 16:07:25Z fyan $
+# $Id: PKGBUILD 142459 2015-10-01 16:06:15Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: N30N <archlinux@alunamation.com>
 # Contributor: giniu <gginiu@gmail.com>
@@ -6,7 +6,7 @@
 pkgbase=python-ipdb
 pkgname=(python-ipdb python2-ipdb)
 pkgver=0.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="IPython-enabled pdb"
 url="http://pypi.python.org/pypi/ipdb"
 makedepends=('python-setuptools' 'python2-setuptools' 'ipython' 'ipython2')

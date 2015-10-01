@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 139690 2015-09-09 16:05:55Z fyan $
+# $Id: PKGBUILD 142333 2015-10-01 16:02:19Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Firef0x <Firefgx {at) gmail [dot} com>
 # Contributor: MJsaka <qiuxuenan@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=bcloud
 pkgver=3.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Baidu Pan client for Linux Desktop users'
 arch=('any')
 license=('GPL3')

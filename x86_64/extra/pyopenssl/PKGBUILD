@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 240621 2015-06-12 09:14:55Z fyan $
+# $Id: PKGBUILD 248010 2015-10-01 16:04:01Z fyan $
 # Maintainer : Ionut Biru<ibiru@archlinux.org>
 # Maintainer : Felix Yan <felixonmars@archlinux.org>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
@@ -6,7 +6,7 @@
 pkgbase=pyopenssl
 pkgname=('python-pyopenssl' 'python2-pyopenssl')
 pkgver=0.15.1
-pkgrel=1
+pkgrel=2
 arch=('any')
 url="http://pypi.python.org/pypi/pyOpenSSL"
 license=('LGPL2.1')

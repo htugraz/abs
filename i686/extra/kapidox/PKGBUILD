@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 246731 2015-09-20 08:15:45Z arojas $
+# $Id: PKGBUILD 247989 2015-10-01 16:03:26Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kapidox
 pkgver=5.14.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Frameworks API Documentation Tools'
 arch=('any')
 url='https://projects.kde.org/projects/frameworks/kapidox'

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 241692 2015-07-02 09:37:34Z bpiotrowski $
+# $Id: PKGBUILD 247982 2015-10-01 16:03:15Z fyan $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Thomas Weißschuh <thomas t-8ch de>
 
 pkgname=git-review
 pkgver=1.25.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Tool to submit code to Gerrit'
 arch=('any')
 url='https://github.com/openstack-infra/git-review'

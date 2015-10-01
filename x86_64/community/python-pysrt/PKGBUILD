@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 133555 2015-05-16 03:34:50Z fyan $
+# $Id: PKGBUILD 142542 2015-10-01 16:08:41Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Otto Sabart <seberm[at]seberm[dot]com>
 # Contributor: Mizuchi <ytj000+AUR@gmail.com>
@@ -7,7 +7,7 @@
 pkgbase=python-pysrt
 pkgname=(python-pysrt python2-pysrt)
 pkgver=1.0.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Python parser for SubRip (srt) files"
 arch=('any')
 url="https://github.com/byroot/pysrt"

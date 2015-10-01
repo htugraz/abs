@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 242298 2015-07-17 02:42:18Z fyan $
+# $Id: PKGBUILD 247988 2015-10-01 16:03:25Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=ibus
 pkgname=(ibus libibus)
 pkgver=1.5.11
-pkgrel=1
+pkgrel=2
 pkgdesc="Next Generation Input Bus for Linux"
 arch=('i686' 'x86_64')
 url="http://ibus.googlecode.com"

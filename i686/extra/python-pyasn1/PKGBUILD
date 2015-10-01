@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 242162 2015-07-13 04:29:36Z eric $
+# $Id: PKGBUILD 248036 2015-10-01 16:04:55Z fyan $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgbase=python-pyasn1
 pkgname=('python-pyasn1' 'python2-pyasn1')
 pkgver=0.1.8
-pkgrel=1
+pkgrel=2
 arch=('any')
 url="http://sourceforge.net/projects/pyasn1/"
 license=('BSD')

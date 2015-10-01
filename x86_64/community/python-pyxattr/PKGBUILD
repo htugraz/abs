@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 141697 2015-09-27 13:28:10Z lfleischer $
+# $Id: PKGBUILD 142557 2015-10-01 16:08:57Z fyan $
 # Maintainer: Lukas Fleischer <lfleischer@archlinux.org>
 # Contributor: Jon Bergli Heier <snakebite@jvnv.net>
 
@@ -6,7 +6,7 @@ pkgname=('python2-pyxattr' 'python-pyxattr')
 pkgbase=python-pyxattr
 _pkgname=pyxattr
 pkgver=0.5.5
-pkgrel=1
+pkgrel=2
 pkgdesc='A python extension module that allows you to manipulate the extended attributes.'
 arch=('i686' 'x86_64')
 url='http://pyxattr.k1024.org/'

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137857 2015-08-03 18:50:38Z jelle $
+# $Id: PKGBUILD 142565 2015-10-01 16:09:08Z fyan $
 # Maintainer:
 # Contributor: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve>
 # Contributor: William Rea <sillywilly@gmail.com>
@@ -7,7 +7,7 @@ pkgbase=python-reportlab
 pkgname=(python2-reportlab python-reportlab)
 _origname=reportlab
 pkgver=3.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A proven industry-strength PDF generating solution"
 arch=('i686' 'x86_64')
 url="http://www.reportlab.org/rl_toolkit.html"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 138848 2015-08-28 02:42:24Z fyan $
+# $Id: PKGBUILD 142581 2015-10-01 16:09:28Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: David Verelst <david dot verelst at gmail com>
 # Contributor: richli
@@ -6,7 +6,7 @@
 pkgbase=python-shapely
 pkgname=(python-shapely python2-shapely)
 pkgver=1.5.12
-pkgrel=1
+pkgrel=2
 pkgdesc="Manipulation and analysis of geometric objects in the Cartesian plane"
 arch=('i686' 'x86_64')
 url="https://pypi.python.org/pypi/Shapely"
@@ -33,7 +33,7 @@ check() {
 
   cd "$srcdir"/Shapely-$pkgver
   mv shapely shapely.bak
-  PYTHONPATH="$PWD/build/lib.linux-$CARCH-3.4:$PYTHONPATH" py.test
+  PYTHONPATH="$PWD/build/lib.linux-$CARCH-3.5:$PYTHONPATH" py.test
   mv shapely.bak shapely
 
   cd "$srcdir"/Shapely-$pkgver-py2

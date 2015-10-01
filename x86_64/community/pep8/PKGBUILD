@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 133762 2015-05-19 06:29:50Z fyan $
+# $Id: PKGBUILD 142380 2015-10-01 16:03:23Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Ismael Carnales <icarnales at gmail dot com>
 # Contributor: Sergey Mastykov <smastykov[at]gmail[dot]com>
@@ -6,7 +6,7 @@
 pkgbase=pep8
 pkgname=("$pkgbase" "python2-$pkgbase")
 pkgver=1.6.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Python style guide checker"
 arch=('any')
 url="http://github.com/jcrocholl/pep8/"

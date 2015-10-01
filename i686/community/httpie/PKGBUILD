@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 128781 2015-03-05 18:18:51Z thestinger $
+# $Id: PKGBUILD 142355 2015-10-01 16:02:46Z fyan $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 # Contributor: Thomas Weißschuh <thomas_weissschuh lavabit com>
 
 pkgname=httpie
 pkgver=0.9.2
-pkgrel=1
+pkgrel=2
 pkgdesc="cURL for humans"
 url="https://github.com/jkbr/httpie"
 depends=('python-requests' 'python-pygments')

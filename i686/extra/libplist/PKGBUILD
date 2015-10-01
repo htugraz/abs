@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 240334 2015-06-04 10:27:31Z jgc $
+# $Id: PKGBUILD 247993 2015-10-01 16:03:34Z fyan $
 # Maintainer : Tom Gundersen <teg@jklm.no>
 # Maintainer : Ionut Biru <ibiru@archlinux.org>
 # Contributor: Gabriel Martinez < reitaka at gmail dot com >
 
 pkgname=libplist
 pkgver=1.12
-pkgrel=2
+pkgrel=3
 pkgdesc="A library to handle Apple Property List format whereas it's binary or XML"
 url="http://libimobiledevice.org/"
 arch=('i686' 'x86_64')

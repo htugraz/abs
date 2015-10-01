@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 135941 2015-06-28 09:41:17Z bluewind $
+# $Id: PKGBUILD 142354 2015-10-01 16:02:45Z fyan $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: TingPing <tingping@tingping.se>
 
 pkgname=hexchat
 pkgver=2.10.2
-pkgrel=3
+pkgrel=4
 pkgdesc='A popular and easy to use graphical IRC (chat) client'
 arch=('i686' 'x86_64')
 url='http://hexchat.github.io/'
@@ -23,6 +23,7 @@ prepare() {
   cd hexchat-${pkgver}
 
 #  sed 's/CFLAGS="$PERL_CFLAGS"/CFLAGS="$PERL_CFLAGS -fuse-ld=gold"/' -i configure
+  sed -i 's/python-3.4/python-3.5/' configure
 }
 
 build() {

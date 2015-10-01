@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 121769 2014-11-03 21:04:55Z spupykin $
+# $Id: PKGBUILD 142381 2015-10-01 16:03:25Z fyan $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Abhishek Dasgupta <abhidg@gmail.com>
 # Contributor: Gabor Nyekhelyi (n0gabor) <n0gabor@vipmail.hu>
 
 pkgname=pitivi
 pkgver=0.94
-pkgrel=1
+pkgrel=2
 pkgdesc="Editor for audio/video projects using the GStreamer framework"
 arch=('i686' 'x86_64')
 url="http://www.pitivi.org/"

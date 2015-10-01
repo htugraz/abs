@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 116805 2014-08-03 19:28:01Z arodseth $
+# $Id: PKGBUILD 142339 2015-10-01 16:02:27Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Chris Brannon <cmbrannon79@gmail.com>
 # Contributor: Jeff Mickey <j@codemac.net>
@@ -6,7 +6,7 @@
 
 pkgname=cxxtest
 pkgver=4.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Unit testing framework for C++'
 arch=('any')
 url='http://cxxtest.com/'

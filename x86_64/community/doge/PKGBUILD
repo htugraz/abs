@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 137783 2015-08-03 06:31:08Z fyan $
+# $Id: PKGBUILD 142344 2015-10-01 16:02:31Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: kreed <kreed@kreed.org>
 
 pkgname=doge
 pkgver=3.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc="doge meme motd script"
 url="https://github.com/thiderman/doge"
 arch=('any')

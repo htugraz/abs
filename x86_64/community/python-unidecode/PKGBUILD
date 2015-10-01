@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 125067 2014-12-31 10:58:34Z alucryd $
+# $Id: PKGBUILD 142605 2015-10-01 16:10:00Z fyan $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Kwpolska <kwpolska@kwpolska.tk>
 
 pkgbase=python-unidecode
 pkgname=('python-unidecode' 'python2-unidecode')
 pkgver=0.04.17
-pkgrel=1
+pkgrel=2
 pkgdesc='ASCII transliterations of Unicode text'
 arch=('any')
 url='http://pypi.python.org/pypi/Unidecode/'

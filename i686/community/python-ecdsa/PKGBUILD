@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 127278 2015-02-08 05:45:40Z fyan $
+# $Id: PKGBUILD 142431 2015-10-01 16:05:02Z fyan $
 # Maintainer: Angel Velasquez <angvp@archlinux.org>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-ecdsa
 pkgname=('python-ecdsa' 'python2-ecdsa')
 pkgver=0.13
-pkgrel=1
+pkgrel=2
 pkgdesc="Implementation of ECDSA in Python"
 arch=('any')
 url="https://github.com/warner/python-ecdsa"

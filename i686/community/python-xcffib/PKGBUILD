@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 138625 2015-08-22 02:49:35Z fyan $
+# $Id: PKGBUILD 142618 2015-10-01 16:10:14Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Roger Duran <rogerduran@gmail.com>
 
 pkgbase=python-xcffib
 pkgname=(python-xcffib python2-xcffib)
 pkgver=0.3.6
-pkgrel=1
+pkgrel=3
 pkgdesc="Python3 drop in replacement for xpyb, an XCB python binding"
 arch=('any')
 url="https://pypi.python.org/pypi/xcffib"

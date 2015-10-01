@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 127177 2015-02-06 01:36:53Z fyan $
+# $Id: PKGBUILD 142614 2015-10-01 16:10:10Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Jerome Leclanche <jerome@leclan.ch>
 
 _pkgname=WebTest
 pkgname=(python-webtest python2-webtest)
 pkgver=2.0.18
-pkgrel=1
+pkgrel=2
 pkgdesc="Helper to test WSGI applications"
 arch=('any')
 url='http://webtest.pythonpaste.org/'
@@ -31,7 +31,7 @@ build() {
 
 check() {
   cd "$srcdir/$_pkgname-${pkgver}"
-  PYTHONPATH="$(pwd)/build/lib.linux-$CARCH-3.4:$PYTHONPATH" nosetests3 || warning "Tests failed" # Missing waitress and PasteDeploy
+  PYTHONPATH="$(pwd)/build/lib.linux-$CARCH-3.5:$PYTHONPATH" nosetests3 || warning "Tests failed" # Missing waitress and PasteDeploy
 
   cd "$srcdir/$_pkgname-${pkgver}-py2"
   PYTHONPATH="$(pwd)/build/lib.linux-$CARCH-2.7:$PYTHONPATH" nosetests2 || warning "Tests failed" # Missing waitress and PasteDeploy

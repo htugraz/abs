@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 138114 2015-08-08 06:11:59Z fyan $
+# $Id: PKGBUILD 142440 2015-10-01 16:05:23Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Francois Garillot <francois[@]garillot.net>
 # Contributor: György Balló <ballogy@freestart.hu>
@@ -7,7 +7,7 @@ pkgbase=python-flickrapi
 pkgname=(python-flickrapi python2-flickrapi)
 _pkgname=flickrapi
 pkgver=2.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="The official Python interface to the Flickr API"
 arch=('any')
 url="http://stuvel.eu/flickrapi"

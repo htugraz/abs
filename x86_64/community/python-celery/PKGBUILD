@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 132023 2015-04-23 03:19:12Z fyan $
+# $Id: PKGBUILD 142408 2015-10-01 16:04:10Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Marcin Kolenda <marcinkolenda419@gmail.com>
 # Contributor: Valentin Haloiu <vially.ichb+aur@gmail.com>
@@ -9,7 +9,7 @@
 pkgbase=python-celery
 pkgname=('python-celery' 'python2-celery')
 pkgver=3.1.18
-pkgrel=1
+pkgrel=2
 pkgdesc='Distributed Asynchronous Task Queue'
 arch=('any')
 url='http://celeryproject.org/'

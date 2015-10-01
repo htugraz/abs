@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 208827 2014-03-27 14:43:15Z fyan $
+# $Id: PKGBUILD 248004 2015-10-01 16:03:52Z fyan $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Kritoke <kritoke@gamebox.net>
 
 pkgbase=pycrypto
 pkgname=('python2-crypto' 'python-crypto')
 pkgver=2.6.1
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 makedepends=('python2' 'python' 'gmp')
 url="http://www.dlitz.net/software/pycrypto/"
@@ -13,6 +13,7 @@ license=('custom')
 source=(http://ftp.dlitz.net/pub/dlitz/crypto/${pkgbase}/${pkgbase}-${pkgver}.tar.gz{,.asc})
 sha256sums=('f2ce1e989b272cfcb677616763e0a2e7ec659effa67a88aa92b3a65528f60a3c'
             'c2ab0516cc55321e6543ae75e2aa6f6e56e97432870f32a7799f3b89f467dc1b')
+validpgpkeys=('19E11FE8B3CFF273ED174A24928CEC1339C25CF7')  # Dwayne Litzenberger
 
 prepare() {
   find ${pkgbase}-${pkgver}/LEGAL -type f -exec chmod 644 {} \;

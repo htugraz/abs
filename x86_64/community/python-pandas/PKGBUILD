@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 135726 2015-06-22 19:11:46Z aginiewicz $
+# $Id: PKGBUILD 142497 2015-10-01 16:07:30Z fyan $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 # Contributor: Keith Hughitt <khughitt@umd.edu>
 
 pkgbase=python-pandas
 pkgname=('python2-pandas' 'python-pandas')
 pkgver=0.16.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Cross-section and time series data analysis toolkit"
 arch=('i686' 'x86_64')
 url="http://pandas.pydata.org/"

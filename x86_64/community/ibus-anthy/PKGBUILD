@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137037 2015-07-17 03:00:05Z fyan $
+# $Id: PKGBUILD 142356 2015-10-01 16:02:47Z fyan $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Rainy <rainylau(at)gmail(dot)com>
 # Contributor: Lee.MaRS <leemars at gmail dot com>
@@ -6,7 +6,7 @@
 
 pkgname=ibus-anthy
 pkgver=1.5.7
-pkgrel=1
+pkgrel=2
 pkgdesc='Japanese input method Anthy IMEngine for IBus Framework'
 arch=('i686' 'x86_64')
 license=('LGPL')

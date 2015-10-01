@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 134806 2015-06-04 17:53:16Z jelle $
+# $Id: PKGBUILD 142530 2015-10-01 16:08:21Z fyan $
 # Maintainer: Thomas Dziedzic < gostrc at gmail >
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 # Contributor: Evangelos Foutras <foutrelis@gmail.com>
 
 pkgname=('python-pyinotify' 'python2-pyinotify')
 pkgver=0.9.6
-pkgrel=1
+pkgrel=2
 pkgdesc='Python module used for monitoring filesystems events on Linux platforms with inotify.'
 arch=('any')
 url="http://github.com/seb-m/pyinotify"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 139674 2015-09-09 09:48:06Z fyan $
+# $Id: PKGBUILD 142451 2015-10-01 16:05:56Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-helper
 pkgname=('python-helper' 'python2-helper')
 pkgver=2.4.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Development library for quickly writing configurable applications and daemons"
 arch=('any')
 license=('BSD')

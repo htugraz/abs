@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 128850 2015-03-07 01:59:39Z kkeen $
+# $Id: PKGBUILD 142361 2015-10-01 16:02:53Z fyan $
 # Maintainer:
 
 pkgbase=isodate
 pkgname=('python2-isodate' 'python-isodate')
 pkgver=0.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc="An ISO 8601 date/time/duration parser and formater"
 arch=('any')
 url="http://pypi.python.org/pypi/isodate"

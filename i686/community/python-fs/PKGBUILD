@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 139495 2015-09-07 14:25:43Z fyan $
+# $Id: PKGBUILD 142442 2015-10-01 16:05:29Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-fs
 pkgname=('python-fs' 'python2-fs')
 pkgver=0.5.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Filesystem abstraction layer"
 arch=('any')
 license=('custom:BSD')

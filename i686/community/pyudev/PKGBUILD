@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 108513 2014-03-27 14:48:36Z fyan $
+# $Id: PKGBUILD 142623 2015-10-01 16:10:19Z fyan $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: examon <examon.mail[at]gmail[dot]com>
 # Contributor: Sebastian Wiesner <lunaryorn googlemail com>
@@ -7,7 +7,7 @@
 pkgbase=pyudev
 pkgname=('python-pyudev' 'python2-pyudev')
 pkgver=0.16.1
-pkgrel=3
+pkgrel=4
 arch=('any')
 url='http://pyudev.readthedocs.org/en/latest/index.html'
 license=('LGPL')

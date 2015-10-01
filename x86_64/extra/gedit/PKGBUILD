@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 243795 2015-08-16 15:16:31Z heftig $
+# $Id: PKGBUILD 247980 2015-10-01 16:03:11Z fyan $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gedit
 pkgver=3.16.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A text editor for GNOME"
 arch=(i686 x86_64)
 license=(GPL)

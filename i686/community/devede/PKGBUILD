@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 140324 2015-09-15 10:41:40Z spupykin $
+# $Id: PKGBUILD 142341 2015-10-01 16:02:29Z fyan $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Javier 'Phrodo_00' Aravena <phrodo.00@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=devede
 pkgver=4.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A program to create VideoDVDs and CDs"
 arch=('any')
 url="http://www.rastersoft.com/programas/devede.html"

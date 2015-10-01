@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 138961 2015-08-30 04:36:40Z eric $
+# $Id: PKGBUILD 142645 2015-10-01 16:11:02Z fyan $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=youtube-dl
 pkgver=2015.08.28
-pkgrel=1
+pkgrel=2
 pkgdesc="A small command-line program to download videos from YouTube.com and a few more sites"
 arch=('any')
 url="http://rg3.github.io/youtube-dl/"

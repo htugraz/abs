@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 123393 2014-12-03 11:45:11Z aginiewicz $
+# $Id: PKGBUILD 142463 2015-10-01 16:06:23Z fyan $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 # Contributor: Mariusz Szczepańczyk <mszczepanczyk@gmail.com>
 
 pkgbase=python-jdcal
 pkgname=('python2-jdcal' 'python-jdcal')
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Julian dates, from proleptic Gregorian and Julian calendars"
 arch=('any')
 url="https://github.com/phn/jdcal"

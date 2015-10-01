@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 247568 2015-09-28 10:39:29Z foutrelis $
+# $Id: PKGBUILD 247983 2015-10-01 16:03:16Z fyan $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=gnome-builder
 pkgver=3.16.3
-pkgrel=6
+pkgrel=7
 pkgdesc="An IDE for writing GNOME-based software"
 url="https://wiki.gnome.org/Apps/Builder"
 arch=(i686 x86_64)

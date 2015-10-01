@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 213553 2014-05-24 16:43:42Z fyan $
-# Maintainer: Felix Yan <felixonmars@gmail.com>
+# $Id: PKGBUILD 248023 2015-10-01 16:04:25Z fyan $
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-defusedxml
 pkgname=("python-defusedxml" "python2-defusedxml")
 pkgver=0.4.1
-pkgrel=1
+pkgrel=2
 pkgdesc="XML bomb protection for Python stdlib modules"
 arch=('any')
 url='https://bitbucket.org/tiran/defusedxml'

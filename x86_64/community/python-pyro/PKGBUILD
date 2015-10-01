@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 138412 2015-08-16 14:15:21Z arodseth $
+# $Id: PKGBUILD 142538 2015-10-01 16:08:37Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Angel Velasquez <angvp@archlinux.org> 
 # Contributor: Douglas Soares de Andrade <dsa@aur.archlinux.br>
@@ -6,7 +6,7 @@
 pkgbase=python-pyro
 pkgname=("$pkgbase" 'python2-pyro')
 pkgver=4.39
-pkgrel=1
+pkgrel=2
 pkgdesc='Distributed object middleware for Python (RPC)'
 url='http://pypi.python.org/pypi/Pyro4/'
 arch=('any')

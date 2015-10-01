@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 130943 2015-04-08 16:55:25Z foutrelis $
+# $Id: PKGBUILD 142528 2015-10-01 16:08:17Z fyan $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Timm Preetz <timm@preetz.us>
 
 pkgname=('python-pygments' 'python2-pygments' 'pygmentize')
 pkgver=2.0.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Python syntax highlighter"
 arch=('any')
 url="http://pygments.org/"

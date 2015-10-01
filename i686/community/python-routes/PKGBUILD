@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137260 2015-07-22 06:17:10Z fyan $
+# $Id: PKGBUILD 142571 2015-10-01 16:09:14Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: SpepS <dreamspepser@yahoo.it>
 # Contributor: James Bulmer <nekinie@gmail.com>
@@ -6,7 +6,7 @@
 pkgbase=python-routes
 pkgname=(python-routes python2-routes)
 pkgver=2.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Routing recognition and generation tools"
 arch=("any")
 url="https://pypi.python.org/pypi/Routes"

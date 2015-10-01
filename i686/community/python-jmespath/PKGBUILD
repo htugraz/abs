@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 139656 2015-09-09 03:38:59Z fyan $
+# $Id: PKGBUILD 142466 2015-10-01 16:06:29Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Chris Severance aur.severach AatT spamgourmet.com
 # Contributor: Chris Fordham <chris [at] fordham-nagy [dot] id [dot] au> aka flaccid
@@ -6,7 +6,7 @@
 
 pkgbase=python-jmespath
 pkgname=(python-jmespath python2-jmespath)
-pkgver=0.7.1
+pkgver=0.9.0
 pkgrel=1
 pkgdesc='A query language for JSON'
 arch=('any')

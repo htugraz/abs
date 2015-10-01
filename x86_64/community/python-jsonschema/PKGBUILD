@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 136436 2015-07-05 10:55:35Z arojas $
+# $Id: PKGBUILD 142470 2015-10-01 16:06:36Z fyan $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred.com>
 # Contributor: Bogdan Szczurek <thebodzio@gmail.com>
 # Contributor: Ismo Toijala <ismo.toijala@gmail.com>
@@ -7,7 +7,7 @@ pkgbase=python-jsonschema
 _pkgname=jsonschema
 pkgname=(python-jsonschema python2-jsonschema)
 pkgver=2.5.1
-pkgrel=2
+pkgrel=3
 pkgdesc="An implementation of JSON Schema validation for Python"
 arch=(any)
 url="http://pypi.python.org/pypi/jsonschema"

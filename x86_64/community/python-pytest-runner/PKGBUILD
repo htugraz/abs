@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 138539 2015-08-20 07:35:13Z fyan $
+# $Id: PKGBUILD 142551 2015-10-01 16:08:50Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-pytest-runner
 pkgname=('python-pytest-runner' 'python2-pytest-runner')
 pkgver=2.6.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Invoke py.test as distutils command with dependency resolution"
 arch=('any')
 license=('MIT')

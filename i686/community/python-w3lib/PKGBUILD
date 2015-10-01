@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 137602 2015-07-30 03:38:17Z fyan $
+# $Id: PKGBUILD 142611 2015-10-01 16:10:06Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Bence Balint <balintbence1337@gmail.com>
 
 pkgbase=python-w3lib
 pkgname=('python-w3lib' 'python2-w3lib')
 pkgver=1.12.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Library of web-related functions"
 arch=('any')
 license=('BSD')

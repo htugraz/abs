@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 123199 2014-11-27 12:38:54Z arodseth $
+# $Id: PKGBUILD 142331 2015-10-01 16:02:17Z fyan $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Laurie Clark-Michalek <bluepeppers@archlinux.us>
 # Contributor: graysky <graysky AT archlinux DOR us>
 
 pkgname=archey3
 pkgver=0.5
-pkgrel=3
+pkgrel=4
 pkgdesc='Output a logo and various system information'
 arch=('any')
 url='http://bluepeppers.github.com/archey3'
@@ -27,4 +27,5 @@ package() {
   python setup.py install --root="$pkgdir"
 } 
 
+# getver: -d 2 -u 5
 # vim:set ts=2 sw=2 et:

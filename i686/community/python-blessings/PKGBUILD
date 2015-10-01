@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 128761 2015-03-05 13:13:06Z kkeen $
+# $Id: PKGBUILD 142399 2015-10-01 16:03:54Z fyan $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Andrey Mikhaylenko <neithere at gmail dot com>
 
@@ -6,7 +6,7 @@ pkgbase=python-blessings
 pkgname=(python-blessings python2-blessings)
 _pkgname=blessings
 pkgver=1.6
-pkgrel=2
+pkgrel=3
 pkgdesc="A thin, practical wrapper around terminal coloring, styling, and positioning"
 url="https://github.com/erikrose/blessings"
 arch=('any')

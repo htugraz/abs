@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 140685 2015-09-19 04:01:32Z fyan $
+# $Id: PKGBUILD 142504 2015-10-01 16:07:42Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Blackleg <blacklg@openaliasbox.org>
 # Contributor: Nidhogg
@@ -6,7 +6,7 @@
 
 pkgname=python-peewee
 pkgname=('python-peewee' 'python2-peewee')
-pkgver=2.6.3
+pkgver=2.6.4
 pkgrel=1
 pkgdesc="a little orm"
 url="https://pypi.python.org/pypi/peewee/"

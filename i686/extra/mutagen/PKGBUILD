@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 239975 2015-06-01 01:21:19Z eric $
+# $Id: PKGBUILD 247998 2015-10-01 16:03:44Z fyan $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgbase=mutagen
 pkgname=('mutagen' 'python-mutagen')
 pkgver=1.29
-pkgrel=1
+pkgrel=2
 arch=('any')
 url="https://bitbucket.org/lazka/mutagen"
 license=('GPL2')

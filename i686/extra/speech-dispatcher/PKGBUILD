@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 242458 2015-07-23 04:23:07Z svenstaro $
+# $Id: PKGBUILD 248053 2015-10-01 16:05:37Z fyan $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 
 pkgname=speech-dispatcher
 pkgver=0.8.3
-pkgrel=5
+pkgrel=6
 arch=('i686' 'x86_64')
 pkgdesc="High-level device independent layer for speech synthesis interface"
 url="http://www.freebsoft.org/speechd"

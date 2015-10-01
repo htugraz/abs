@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 138066 2015-08-07 16:43:57Z fyan $
+# $Id: PKGBUILD 142346 2015-10-01 16:02:34Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Geoffroy Carrier <geoffroy.carrier@koon.fr>
@@ -7,7 +7,7 @@
 
 pkgname=fail2ban
 pkgver=0.9.3
-pkgrel=3
+pkgrel=4
 pkgdesc='Bans IPs after too many failed authentication attempts'
 url='http://www.fail2ban.org/'
 license=('GPL')

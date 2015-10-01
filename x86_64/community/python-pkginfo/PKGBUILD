@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 138665 2015-08-23 08:28:10Z fyan $
+# $Id: PKGBUILD 142509 2015-10-01 16:07:49Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: eolianoe <eolianoe At GoogleMAIL DoT com>
 # Contributor: Andrey Mikhaylenko <neithere at gmail dot com>
@@ -7,7 +7,7 @@ pkgbase=python-pkginfo
 pkgname=(python-pkginfo python2-pkginfo)
 _pypiname=pkginfo
 pkgver=1.2.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Query metadatdata from sdists / bdists / installed packages'
 arch=('any')
 url="https://pypi.python.org/pypi/${_pypiname}"

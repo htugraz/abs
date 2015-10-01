@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 138719 2015-08-24 08:04:47Z mtorromeo $
+# $Id: PKGBUILD 142492 2015-10-01 16:07:19Z fyan $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 
 pkgbase=python-oauthlib
 pkgname=(python-oauthlib python2-oauthlib)
 pkgver=1.0.3
-pkgrel=1
+pkgrel=2
 _libname=oauthlib
 pkgdesc="A generic, spec-compliant, thorough implementation of the OAuth request-signing logic"
 arch=(any)

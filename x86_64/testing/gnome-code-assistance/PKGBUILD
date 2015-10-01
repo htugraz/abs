@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 247589 2015-09-28 10:45:02Z fyan $
+# $Id: PKGBUILD 248130 2015-10-01 16:45:55Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=gnome-code-assistance
 pkgver=3.16.0
-pkgrel=3
+pkgrel=4
 pkgdesc="Code assistance services for GNOME"
 arch=(i686 x86_64)
 license=(GPL3)

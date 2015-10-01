@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 135184 2015-06-11 02:28:10Z fyan $
+# $Id: PKGBUILD 142389 2015-10-01 16:03:38Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Tobias Roettger <toroettg@gmail.com>
 
 pkgbase=python-appdirs
 pkgname=(python-appdirs python2-appdirs)
 pkgver=1.4.0
-pkgrel=2
+pkgrel=3
 pkgdesc='A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".'
 arch=(any)
 url="https://github.com/ActiveState/appdirs"

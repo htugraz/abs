@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 240476 2015-06-10 14:51:32Z fyan $
+# $Id: PKGBUILD 248038 2015-10-01 16:05:01Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Justin Dray <justin@dray.be>
 # Contributor: Alexander Rødseth <rodseth@gmail.com>
@@ -7,7 +7,7 @@
 pkgbase=python-pycparser
 pkgname=(python-pycparser python2-pycparser)
 pkgver=2.14
-pkgrel=1
+pkgrel=2
 pkgdesc='C parser and AST generator written in Python'
 url='https://github.com/eliben/pycparser'
 makedepends=('python-ply' 'python2-ply' 'python-setuptools' 'python2-setuptools' 'git')

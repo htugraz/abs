@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 139638 2015-09-08 17:31:55Z dwallace $
+# $Id: PKGBUILD 142495 2015-10-01 16:07:26Z fyan $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 pkgbase=python-oslo-config
 pkgname=(python-oslo-config python2-oslo-config)
 _pythonname=oslo.config
 pkgver=2.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc="parsing command line arguments and .ini style configuration files"
 arch=('any')
 url="https://pypi.python.org/pypi/oslo.config/$pkgver"

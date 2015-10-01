@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 245121 2015-08-31 20:14:12Z heftig $
+# $Id: PKGBUILD 248055 2015-10-01 16:05:46Z fyan $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=totem
 pkgver=3.16.3
-pkgrel=1
+pkgrel=2
 pkgdesc="GNOME3 movie player based on GStreamer"
 url="http://www.gnome.org"
 arch=(i686 x86_64)

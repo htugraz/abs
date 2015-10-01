@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 111717 2014-05-22 20:06:35Z dwallace $
+# $Id: PKGBUILD 142514 2015-10-01 16:07:59Z fyan $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contributor: Sebastien Leduc <sebastien@sleduc.fr>
 # Contributor: Emmanuel Gil Peyrot <linkmauve@linkmauve.fr>
@@ -7,7 +7,7 @@ pkgbase=python-prettytable
 _pkgname=prettytable
 pkgname=( python-prettytable python2-prettytable)
 pkgver=0.7.2
-pkgrel=5
+pkgrel=6
 pkgdesc="A simple Python library for easily displaying tabular data in a visually appealing ASCII table format"
 url="http://pypi.python.org/pypi/PrettyTable"
 arch=('any')

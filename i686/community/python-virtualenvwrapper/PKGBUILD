@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 140624 2015-09-17 22:33:38Z foutrelis $
+# $Id: PKGBUILD 142610 2015-10-01 16:10:05Z fyan $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Sebastien Binet <binet@lblbox>
 
 pkgname=python-virtualenvwrapper
 pkgver=4.7.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Extensions to Ian Bicking's virtualenv tool"
 arch=('any')
 url="https://bitbucket.org/dhellmann/virtualenvwrapper"

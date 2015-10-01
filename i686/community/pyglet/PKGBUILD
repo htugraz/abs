@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 139247 2015-09-06 00:43:14Z kkeen $
+# $Id: PKGBUILD 142383 2015-10-01 16:03:28Z fyan $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Douglas Soares de Andrade <douglas@archlinux.org>
 # Contributor: Ryan Coyner <rcoyner@gmail.com>
@@ -7,7 +7,7 @@
 pkgbase=pyglet
 pkgname=('python-pyglet' 'python2-pyglet')
 pkgver=1.2.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A cross-platform windowing and multimedia library for Python"
 arch=('any')
 url="http://pyglet.org/"

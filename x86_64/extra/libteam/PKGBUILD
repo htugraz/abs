@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 245638 2015-09-10 00:11:46Z heftig $
+# $Id: PKGBUILD 247996 2015-10-01 16:03:40Z fyan $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=libteam
 pkgver=1.18
-pkgrel=1
+pkgrel=2
 pkgdesc="Library for controlling team network device"
 arch=(i686 x86_64)
 url="http://libteam.org/"

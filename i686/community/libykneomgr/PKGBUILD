@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 134541 2015-06-02 13:42:24Z eworm $
+# $Id: PKGBUILD 142302 2015-10-01 13:25:56Z eworm $
 # Maintainer: Christian Hesse <mail@eworm.de>
 
 pkgname=libykneomgr
-pkgver=0.1.7
-pkgrel=2
+pkgver=0.1.8
+pkgrel=1
 pkgdesc="Yubico YubiKey NEO Manager C Library"
 arch=('i686' 'x86_64')
 url="https://github.com/Yubico/libykneomgr"

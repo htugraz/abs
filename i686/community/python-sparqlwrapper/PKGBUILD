@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 125381 2015-01-05 03:48:44Z fyan $
+# $Id: PKGBUILD 142588 2015-10-01 16:09:39Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-sparqlwrapper
 pkgname=("python-sparqlwrapper" "python2-sparqlwrapper")
 pkgver=1.6.4
-pkgrel=1
+pkgrel=2
 pkgdesc="SPARQL Endpoint interface to Python"
 arch=('any')
 url="http://rdflib.github.io/sparqlwrapper/"

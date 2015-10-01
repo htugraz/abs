@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 135713 2015-06-22 15:28:54Z dwallace $
+# $Id: PKGBUILD 142474 2015-10-01 16:06:43Z fyan $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contributor: Thomas S Hatch <thatch45@gmail.com>
 
 pkgname=('python-libnacl' 'python2-libnacl')
 pkgver=1.4.3
-pkgrel=1
+pkgrel=2
 pkgdesc='A simple ctypes based python binding to libsodium'
 arch=('any')
 url='http://libnacl.readthedocs.org'

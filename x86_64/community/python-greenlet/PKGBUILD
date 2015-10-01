@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 139006 2015-08-31 04:18:14Z fyan $
+# $Id: PKGBUILD 142448 2015-10-01 16:05:48Z fyan $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Ralf Schmitt <ralf@systemexit.de>
@@ -6,7 +6,7 @@
 pkgbase=python-greenlet
 pkgname=(python-greenlet python2-greenlet)
 pkgver=0.4.9
-pkgrel=1
+pkgrel=2
 pkgdesc="Lightweight in-process concurrent programming"
 license=("MIT")
 url="http://pypi.python.org/pypi/greenlet"

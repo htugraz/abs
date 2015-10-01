@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 139666 2015-09-09 09:01:34Z fyan $
+# $Id: PKGBUILD 142388 2015-10-01 16:03:37Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-apipkg
 pkgname=('python-apipkg' 'python2-apipkg')
 pkgver=1.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Namespace control and lazy-import mechanism"
 arch=('any')
 license=('MIT')

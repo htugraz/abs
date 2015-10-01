@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 138809 2015-08-27 08:24:42Z fyan $
+# $Id: PKGBUILD 142429 2015-10-01 16:04:57Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Sibren Vasse <arch at sibrenvasse.nl>
 # Contributor: Quentin Stievenart <acieroid@awesom.eu>
@@ -7,7 +7,7 @@ pkgbase=python-dogpile.core
 pkgname=(python-dogpile.core python2-dogpile.core)
 _pypiname=dogpile.core
 pkgver=0.4.1
-pkgrel=3
+pkgrel=4
 pkgdesc="A 'dogpile' lock, typically used as a component of a larger caching solution"
 arch=('any')
 url="http://pypi.python.org/pypi/dogpile.core"

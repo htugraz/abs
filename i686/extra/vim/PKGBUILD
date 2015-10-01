@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 246538 2015-09-17 21:02:30Z foutrelis $
+# $Id: PKGBUILD 248058 2015-10-01 16:05:58Z fyan $
 # Maintainer: Thomas Dziedzic <gostrc@gmail.com>
 # Contributor: Jan "heftig" Steffens <jan.steffens@gmail.com>
 # Contributor: tobias [ tobias at archlinux org ]
@@ -6,9 +6,9 @@
 
 pkgbase=vim
 pkgname=(vim-minimal vim vim-python3 gvim gvim-python3 vim-runtime)
-pkgver=7.4.854
+pkgver=7.4.884
 _versiondir=74
-pkgrel=2
+pkgrel=1
 arch=(i686 x86_64)
 license=('custom:vim')
 url='http://www.vim.org'

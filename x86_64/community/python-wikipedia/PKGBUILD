@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 135843 2015-06-25 07:34:53Z alucryd $
+# $Id: PKGBUILD 142617 2015-10-01 16:10:13Z fyan $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Chuan Ji <jichuan89@gmail.com>
 
 pkgbase=python-wikipedia
 pkgname=('python-wikipedia' 'python2-wikipedia')
 pkgver=1.4.0
-pkgrel=2
+pkgrel=3
 pkgdesc='A Pythonic wrapper for the Wikipedia API'
 arch=('any')
 url='https://github.com/goldsmith/Wikipedia'

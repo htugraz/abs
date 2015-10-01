@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 135814 2015-06-24 07:32:36Z alucryd $
+# $Id: PKGBUILD 142585 2015-10-01 16:09:35Z fyan $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 
 pkgname=python-slip
 pkgver=0.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Simple Library for Python'
 arch=('any')
 url='http://fedorahosted.org/python-slip'

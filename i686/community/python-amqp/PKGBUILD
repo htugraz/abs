@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 118185 2014-09-02 11:14:35Z fyan $
-# Maintainer: Felix Yan <felixonmars@gmail.com>
+# $Id: PKGBUILD 142385 2015-10-01 16:03:32Z fyan $
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: mutantmonkey <aur@mutantmonkey.in>
 
 pkgbase=python-amqp
 pkgname=('python-amqp' 'python2-amqp')
 pkgver=1.4.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Low-level AMQP client for Python (fork of amqplib)"
 arch=('any')
 url="http://github.com/celery/py-amqp"

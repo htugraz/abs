@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 122637 2014-11-16 12:08:37Z fyan $
+# $Id: PKGBUILD 142414 2015-10-01 16:04:20Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Aaron DeVore <aaron.devore@gmail.com>
 # Contributor: Byron Clark <byron@theclarkfamily.name>
@@ -7,7 +7,7 @@
 pkgbase=python-couchdb
 pkgname=(python-couchdb python2-couchdb)
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Python library for working with CouchDB"
 url="http://code.google.com/p/couchdb-python/"
 license=('BSD')

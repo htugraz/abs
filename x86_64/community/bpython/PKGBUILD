@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 128769 2015-03-05 14:13:33Z kkeen $
+# $Id: PKGBUILD 142336 2015-10-01 16:02:24Z fyan $
 # Maintainer: Kyle Keen < keenerd at gmail >
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 # Contributor: Mike Sampson <mike at sambodata dot com>
@@ -6,7 +6,7 @@
 
 pkgname=('bpython' 'bpython2')
 pkgver=0.14.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Fancy ncurses interface to the Python interpreter'
 arch=('any')
 url='http://bpython-interpreter.org/'

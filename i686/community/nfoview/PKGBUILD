@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 132991 2015-05-08 19:17:34Z schiv $
+# $Id: PKGBUILD 142375 2015-10-01 16:03:15Z fyan $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Wes Brewer <brewerw@gmail.com>
 # Contributor: VuDu <vudu.curse@gmail.com>
 
 pkgname=nfoview
 pkgver=1.16
-pkgrel=1
+pkgrel=2
 pkgdesc="Simple NFO file viewer in GTK+ 3"
 arch=('any')
 url="http://otsaloma.github.io/nfoview/"

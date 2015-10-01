@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 130116 2015-03-28 14:08:07Z fyan $
+# $Id: PKGBUILD 142473 2015-10-01 16:06:42Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Thomas S Hatch <thatch45@gmail.com>
 # Contributor: shamrok <szamrok@gmail.com>
@@ -7,7 +7,7 @@
 pkgbase=python-levenshtein
 pkgname=(python-levenshtein python2-levenshtein)
 pkgver=0.12.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Python extension for computing string edit distances and similarities"
 url="http://pypi.python.org/pypi/python-Levenshtein/"
 license=('GPL')

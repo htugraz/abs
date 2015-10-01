@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 139697 2015-09-09 18:24:08Z jelle $
+# $Id: PKGBUILD 142517 2015-10-01 16:08:03Z fyan $
 # Maintainer: Sébastien Luttringer
 
 pkgbase=python-psutil
 pkgname=('python-psutil' 'python2-psutil')
 pkgver=3.2.1
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url='https://github.com/giampaolo/psutil'
 license=('custom: BSD')

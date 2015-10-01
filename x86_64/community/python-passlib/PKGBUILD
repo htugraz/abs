@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 140076 2015-09-14 06:45:54Z fyan $
+# $Id: PKGBUILD 142500 2015-10-01 16:07:36Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: onny <onny@project-insanity.org>
 
@@ -6,7 +6,7 @@ _pypiname=passlib
 pkgbase=python-$_pypiname
 pkgname=(python-$_pypiname python2-$_pypiname)
 pkgver=1.6.5
-pkgrel=2
+pkgrel=3
 pkgdesc="A password hashing library for Python"
 arch=('any')
 url=("https://code.google.com/p/passlib/")

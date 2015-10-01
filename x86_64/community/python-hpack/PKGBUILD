@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 137766 2015-08-03 04:02:26Z fyan $
+# $Id: PKGBUILD 142453 2015-10-01 16:06:00Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-hpack
 pkgname=(python-hpack python2-hpack)
 _pkgname=hpack
 pkgver=1.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Pure-Python HPACK header compression"
 arch=('any')
 url="http://hyper.rtfd.org/"

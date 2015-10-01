@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 242507 2015-07-26 00:51:34Z eric $
+# $Id: PKGBUILD 248000 2015-10-01 16:03:46Z fyan $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgbase=nbxmpp
 pkgname=('python-nbxmpp' 'python2-nbxmpp')
 pkgver=0.5.3
-pkgrel=1
+pkgrel=2
 arch=('any')
 url="https://python-nbxmpp.gajim.org/"
 license=('GPL3')

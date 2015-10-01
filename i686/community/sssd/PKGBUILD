@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 136888 2015-07-14 14:18:27Z mtorromeo $
+# $Id: PKGBUILD 142634 2015-10-01 16:10:37Z fyan $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Maintainer: Mantas M. <grawity@gmail.com>
 
 pkgname=sssd
 pkgver=1.13.0
-pkgrel=1
+pkgrel=2
 pkgdesc="System Security Services Daemon"
 arch=('i686' 'x86_64')
 url="https://fedorahosted.org/sssd/"

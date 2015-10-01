@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 108444 2014-03-27 14:47:45Z fyan $
+# $Id: PKGBUILD 142434 2015-10-01 16:05:08Z fyan $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
@@ -6,7 +6,7 @@
 
 pkgname=('python-flask' 'python2-flask')
 pkgver=0.10.1
-pkgrel=5
+pkgrel=6
 pkgdesc='Micro webdevelopment framework for Python'
 url='http://flask.pocoo.org/'
 arch=('any')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 138435 2015-08-17 02:32:36Z fyan $
+# $Id: PKGBUILD 142629 2015-10-01 16:10:26Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=shadowsocks
 pkgver=2.8.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A lightweight tunnel proxy"
 license=('Apache')
 url="http://pypi.python.org/pypi/shadowsocks"

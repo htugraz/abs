@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 140677 2015-09-19 00:55:45Z fyan $
+# $Id: PKGBUILD 142616 2015-10-01 16:10:12Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Lance Chen <cyen0312@gmail.com>
 
@@ -6,7 +6,7 @@ _pypiname=wheel
 pkgbase=python-wheel
 pkgname=('python-wheel' 'python2-wheel')
 pkgver=0.26.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A built-package format for Python"
 arch=(any)
 url="https://pypi.python.org/pypi/wheel"
@@ -34,7 +34,7 @@ check() {
 
   cd "$srcdir/wheel-$pkgver"
   python setup.py install --root="$PWD/tmp_install" --optimize=1
-  PYTHONPATH="$PWD/tmp_install/usr/lib/python3.4/site-packages:$PYTHONPATH" py.test wheel
+  PYTHONPATH="$PWD/tmp_install/usr/lib/python3.5/site-packages:$PYTHONPATH" py.test wheel
 
   cd "$srcdir/wheel-$pkgver-py2"
   python2 setup.py install --root="$PWD/tmp_install" --optimize=1

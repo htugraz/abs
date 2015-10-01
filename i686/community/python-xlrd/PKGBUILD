@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137545 2015-07-28 08:51:29Z aginiewicz $
+# $Id: PKGBUILD 142619 2015-10-01 16:10:14Z fyan $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 # Contributor: Aaron DeVore <aaron.devore@gmail.com>
 # Contributor: tocer <tocer.deng@gmail.com>
@@ -8,7 +8,7 @@
 pkgbase=python-xlrd
 pkgname=('python2-xlrd' 'python-xlrd')
 pkgver=0.9.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Library for developers to extract data from Microsoft Excel (tm) spreadsheet files"
 arch=('any')
 url="http://www.python-excel.org/"

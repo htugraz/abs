@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 242949 2015-08-03 07:06:30Z fyan $
+# $Id: PKGBUILD 248013 2015-10-01 16:04:07Z fyan $
 # Maintainer:
 
 pkgbase=pysmbc
 pkgname=('python2-pysmbc' 'python-pysmbc')
 pkgver=1.0.15.4
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url="http://pypi.python.org/pypi/pysmbc/"
 license=('GPL')

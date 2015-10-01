@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 139949 2015-09-12 05:36:22Z fyan $
+# $Id: PKGBUILD 142432 2015-10-01 16:05:03Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 _pypiname=exam
 pkgbase=python-exam
 pkgname=('python-exam' 'python2-exam')
 pkgver=0.10.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Helpers for better testing"
 arch=('any')
 url="https://pypi.python.org/pypi/exam"

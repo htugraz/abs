@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 129660 2015-03-21 09:37:05Z fyan $
+# $Id: PKGBUILD 142480 2015-10-01 16:06:55Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-mimeparse
 pkgname=(python-mimeparse python2-mimeparse)
 pkgver=0.1.4
-pkgrel=3
+pkgrel=4
 pkgdesc='Module of basic functions for parsing mime-type names and matching them against a list of media-ranges'
 arch=('any')
 url="https://github.com/dbtsai/python-mimeparse"

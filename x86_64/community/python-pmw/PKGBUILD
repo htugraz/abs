@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 134042 2015-05-25 10:46:12Z arcanis $
+# $Id: PKGBUILD 142511 2015-10-01 16:07:54Z fyan $
 # Maintainer: Evgeniy Alekseev <arcanis.arch at gmail dot com>
 # Contributor: kfgz <kfgz at interia dot pl>
 # Contributor: Michael Krauss <hippodriver at gmx dot net>
@@ -7,7 +7,7 @@
 pkgbase=python-pmw
 pkgname=('python2-pmw' 'python-pmw')
 pkgver=2.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A toolkit for high-level compound widgets in Python using the Tkinter module"
 arch=('any')
 url="http://pmw.sourceforge.net/"

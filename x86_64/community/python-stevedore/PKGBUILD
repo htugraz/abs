@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 139977 2015-09-12 17:25:30Z foutrelis $
+# $Id: PKGBUILD 142598 2015-10-01 16:09:50Z fyan $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com
 
 pkgname=('python-stevedore' 'python2-stevedore')
 pkgver=1.8.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Manage dynamic plugins for Python applications"
 arch=('any')
 url="https://github.com/openstack/stevedore"

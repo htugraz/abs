@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 132021 2015-04-23 02:59:29Z fyan $
+# $Id: PKGBUILD 142411 2015-10-01 16:04:14Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Alexander Duscheleit <jinks@archlinux.us>
 
 pkgbase=python-colorama
 pkgname=('python-colorama' 'python2-colorama')
 pkgver=0.3.3
-pkgrel=2
+pkgrel=3
 pkgdesc="Python API for cross-platform colored terminal text."
 arch=('any')
 url="http://pypi.python.org/pypi/colorama"

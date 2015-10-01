@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 243389 2015-08-13 07:15:31Z fyan $
+# $Id: PKGBUILD 248041 2015-10-01 16:05:07Z fyan $
 # Maintainer:
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Leif Warner <abimelech@gmail.com>
@@ -6,7 +6,7 @@
 pkgbase=python-rdflib
 pkgname=('python2-rdflib' 'python-rdflib')
 pkgver=4.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A Python library for working with RDF, a simple yet powerful language for representing information"
 arch=('any')
 url="http://rdflib.net/"

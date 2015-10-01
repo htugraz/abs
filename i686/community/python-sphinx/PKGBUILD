@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 136601 2015-07-09 17:16:17Z arojas $
+# $Id: PKGBUILD 142590 2015-10-01 16:09:40Z fyan $
 # Maintainer: Sébastien Luttringer
 # Contributor: Angel Velasquez <angvp@archlinux.org>
 # Contributor: Fabio Volpe <volpefabio@gmail.com>
@@ -6,7 +6,7 @@
 pkgbase=python-sphinx
 pkgname=('python-sphinx' 'python2-sphinx')
 pkgver=1.3.1
-pkgrel=9
+pkgrel=10
 arch=('any')
 url='http://sphinx.pocoo.org/'
 license=('BSD')

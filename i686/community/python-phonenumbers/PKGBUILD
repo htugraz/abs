@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 140642 2015-09-18 04:16:03Z fyan $
+# $Id: PKGBUILD 142506 2015-10-01 16:07:45Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=python-phonenumbers
 pkgname=(python-phonenumbers python2-phonenumbers)
 _pypiname=phonenumbers
 pkgver=7.0.11
-pkgrel=1
+pkgrel=2
 pkgdesc="Python version of Google's common library for parsing, formatting, storing and validating international phone numbers"
 arch=('any')
 url="https://github.com/daviddrysdale/python-phonenumbers"

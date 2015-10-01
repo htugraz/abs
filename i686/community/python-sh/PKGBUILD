@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 125088 2015-01-01 00:47:25Z fyan $
+# $Id: PKGBUILD 142580 2015-10-01 16:09:26Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contributor: Alexander Rødseth <rodseth@gmail.com>
@@ -6,7 +6,7 @@
 _pkgname=sh
 pkgname=("python-$_pkgname" "python2-$_pkgname")
 pkgver=1.11
-pkgrel=1
+pkgrel=2
 pkgdesc='Subprocess interface that allows you to call any program as if it were a function'
 arch=('any')
 url='http://pypi.python.org/pypi/sh'

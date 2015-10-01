@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 137659 2015-08-01 13:56:01Z jelle $
+# $Id: PKGBUILD 142423 2015-10-01 16:04:40Z fyan $
 # Maintainer: Thomas Dziedzic < gostrc at gmail >
 # Contributor: Pierre Chapuis <catwell at archlinux dot us>
 
 pkgname=('python-decorator' 'python2-decorator')
 pkgver=4.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Python Decorator module'
 arch=('any')
 url='http://pypi.python.org/pypi/decorator'

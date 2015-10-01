@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 132298 2015-04-27 06:57:41Z fyan $
+# $Id: PKGBUILD 142624 2015-10-01 16:10:20Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Michal Krenek (Mikos) <m.krenek@gmail.com>
 
 pkgname=qopenvpn
 pkgver=1.3.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Simple OpenVPN GUI written in PyQt for systemd based distributions"
 arch=('any')
 url="https://github.com/xmikos/qopenvpn"

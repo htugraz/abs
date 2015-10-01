@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 137635 2015-07-31 09:25:42Z mtorromeo $
+# $Id: PKGBUILD 142573 2015-10-01 16:09:16Z fyan $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 
 pkgbase=python-rsa
 pkgname=(python-rsa python2-rsa)
 pkgver=3.2
-pkgrel=1
+pkgrel=2
 _libname=rsa
 pkgdesc="Pure-Python RSA implementation"
 arch=(any)

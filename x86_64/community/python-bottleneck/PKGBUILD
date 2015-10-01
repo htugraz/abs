@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 130037 2015-03-27 15:20:42Z aginiewicz $
+# $Id: PKGBUILD 142403 2015-10-01 16:04:00Z fyan $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 # Contributor: Michael Schubert <mschu.dev at gmail>
 # Contributor: Panagiotis Mavrogiorgos (pmav99) <> (gmail)
@@ -6,7 +6,7 @@
 pkgbase=python-bottleneck
 pkgname=('python2-bottleneck' 'python-bottleneck')
 pkgver=1.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Fast NumPy array functions written in Cython"
 arch=('i686' 'x86_64')
 url="http://berkeleyanalytics.com/bottleneck/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 241024 2015-06-18 22:16:52Z heftig $
+# $Id: PKGBUILD 248006 2015-10-01 16:03:55Z fyan $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgbase=pygobject
 pkgname=(python-gobject python2-gobject pygobject-devel)
 pkgver=3.16.2
-pkgrel=1
+pkgrel=2
 arch=(i686 x86_64)
 url="https://live.gnome.org/PyGObject"
 license=(LGPL)

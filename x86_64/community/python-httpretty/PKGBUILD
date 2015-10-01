@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 138051 2015-08-07 07:33:12Z fyan $
+# $Id: PKGBUILD 142457 2015-10-01 16:06:10Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-httpretty
 pkgname=("python-httpretty" "python2-httpretty")
 pkgver=0.8.10
-pkgrel=1
+pkgrel=2
 pkgdesc="HTTP client mock for Python"
 arch=('any')
 url="http://github.com/gabrielfalcao/httpretty"

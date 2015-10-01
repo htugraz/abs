@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 130122 2015-03-28 14:21:37Z fyan $
+# $Id: PKGBUILD 142485 2015-10-01 16:07:05Z fyan $
 # Maintainer: Sébastien "Seblu" Luttringer
 
 pkgbase=python-msgpack
 pkgname=('python-msgpack' 'python2-msgpack')
 pkgver=0.4.6
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 url='https://github.com/msgpack/msgpack-python'
 license=('Apache')

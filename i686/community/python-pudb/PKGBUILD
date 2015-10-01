@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 125559 2015-01-07 14:55:11Z fyan $
+# $Id: PKGBUILD 142520 2015-10-01 16:08:06Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Kwpolska <kwpolska@kwpolska.tk>
 
 pkgbase=python-pudb
 pkgname=(python-pudb python2-pudb)
 pkgver=2014.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A full-screen, console-based Python debugger"
 url="http://pypi.python.org/pypi/pudb"
 arch=('any')

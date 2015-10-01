@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 239754 2015-05-26 04:32:41Z fyan $
+# $Id: PKGBUILD 248026 2015-10-01 16:04:30Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-idna
 pkgname=('python-idna' 'python2-idna')
 pkgver=2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Internationalized Domain Names in Applications (IDNA)"
 arch=('any')
 license=('BSD')

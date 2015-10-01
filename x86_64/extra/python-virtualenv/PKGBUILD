@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 245092 2015-08-30 13:27:20Z dan $
+# $Id: PKGBUILD 248047 2015-10-01 16:05:21Z fyan $
 # Maintainer: Dan McGee <dan@archlinux.org>
 # Contributor: Daniele Paolella <dp@mcrservice.it>
 
 pkgname=('python-virtualenv' 'python2-virtualenv')
 pkgver=13.1.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Virtual Python Environment builder"
 url="https://virtualenv.pypa.io/"
 arch=('any')
