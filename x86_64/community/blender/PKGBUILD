@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 142334 2015-10-01 16:02:20Z fyan $
+# $Id: PKGBUILD 142823 2015-10-02 21:59:55Z svenstaro $
 # Contributor: John Sowiak <john@archlinux.org>
 # Contributor: tobias <tobias@archlinux.org>
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
@@ -11,11 +11,11 @@
 # or simply roll with a new version. I usually choose the latter when the former seems
 # unreasonable.
 
-#_gittag=v2.76-rc2
-_gitcommit=e24ea81d65416d778ded6c7b9698dd673e2ed6b9
+_gittag=v2.76-rc3
+#_gitcommit=e24ea81d65416d778ded6c7b9698dd673e2ed6b9
 
 pkgname=blender
-pkgver=2.76rc2
+pkgver=2.76rc3
 #[[ -n $_gitcommit ]] && pkgver=${pkgver}.git1.${_gitcommit}
 pkgrel=1
 epoch=17

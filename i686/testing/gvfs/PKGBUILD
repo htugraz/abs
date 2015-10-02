@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 248187 2015-10-01 16:47:00Z heftig $
+# $Id: PKGBUILD 248246 2015-10-02 07:44:05Z jgc $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgbase=gvfs
 pkgname=(gvfs gvfs-{smb,afc,gphoto2,goa,mtp,nfs,google})
 pkgver=1.26.0
-pkgrel=2
+pkgrel=3
 arch=(i686 x86_64)
 license=(LGPL)
 makedepends=(avahi dbus fuse intltool libarchive libcdio-paranoia libgphoto2 libimobiledevice
@@ -30,7 +30,7 @@ build() {
 
 package_gvfs() {
   pkgdesc="Userspace virtual filesystem implemented as a pluggable module for gio"
-  depends=(avahi dconf fuse libarchive libcdio-paranoia libsoup udisks2 libsecret libbluray libgudev)
+  depends=(avahi dconf fuse libarchive libcdio-paranoia libsoup udisks2 libsecret libbluray libgudev gcr)
   replaces=(gvfs-{obexftp,afp})
   optdepends=('gvfs-afc: AFC (mobile devices) support'
               'gvfs-smb: SMB/CIFS (Windows client) support'

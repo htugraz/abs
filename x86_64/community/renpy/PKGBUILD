@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137576 2015-07-28 21:37:57Z alucryd $
+# $Id: PKGBUILD 142782 2015-10-02 13:12:51Z foutrelis $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Cravix <dr.neemous@gmail.com>
 # Contributor: AlexanderR <rvacheva@nxt.ru>
@@ -7,7 +7,7 @@
 pkgbase=renpy
 pkgname=('renpy' 'renpy-demos')
 pkgver=6.99.5
-pkgrel=1
+pkgrel=2
 pkgdesc="The Ren'Py Visual Novel Engine"
 arch=('i686' 'x86_64')
 url='http://www.renpy.org'

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 133157 2015-05-10 09:19:14Z svenstaro $
+# $Id: PKGBUILD 142786 2015-10-02 13:12:57Z foutrelis $
 # Contributor: Jaroslaw Swierczynski <swiergot@aur.archlinux.org>
 # Contributor: Eric Bélanger <eric@archlinux.org>
 # Contributor: vande198
@@ -7,7 +7,7 @@
 pkgname=supertux
 pkgver=0.3.5.a
 _pkgver=0.3.5a
-pkgrel=1
+pkgrel=2
 pkgdesc="A classic 2D jump'n run sidescroller game in a style similar to the original SuperMario games"
 arch=('i686' 'x86_64')
 url="https://github.com/supertux/supertux"

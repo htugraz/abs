@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 239838 2015-05-28 11:30:06Z andyrtr $
+# $Id: PKGBUILD 248277 2015-10-02 17:53:37Z foutrelis $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Tobias Kieslich <tobias@justdreams.de>
 # Contributor: tobias <tobias@archlinux.org>
 
 pkgname=inkscape
 pkgver=0.91
-pkgrel=9
+pkgrel=11
 pkgdesc='Vector graphics editor using the SVG file format'
 url='http://inkscape.sourceforge.net/'
 license=('GPL' 'LGPL')
@@ -40,6 +40,10 @@ prepare() {
 
 build() {
 	cd "${srcdir}/${pkgname}-${pkgver}"
+
+	# glibmm 2.46 uses C++11 features
+	CXXFLAGS+=' -std=c++11'
+
 	./configure \
 		--prefix=/usr \
 		--with-python \

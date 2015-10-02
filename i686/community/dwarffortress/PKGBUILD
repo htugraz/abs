@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 140465 2015-09-17 20:51:35Z foutrelis $
+# $Id: PKGBUILD 142761 2015-10-02 13:12:23Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Daenyth <Daenyth+Arch [AT] gmail [DOT] com>
 # Contributor: djnm <nmihalich [at} gmail dott com>
 pkgname=dwarffortress
 pkgver=0.40.24
 _pkgver=40_24
-pkgrel=3
+pkgrel=5
 pkgdesc="A single-player fantasy game. You control a dwarven outpost or an adventurer in a randomly generated persistent world."
 arch=(i686 x86_64)
 url="http://www.bay12games.com/dwarves/"

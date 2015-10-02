@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 132834 2015-05-06 18:18:43Z arcanis $
+# $Id: PKGBUILD 142781 2015-10-02 13:12:49Z foutrelis $
 # Maintainer: Evgeniy Alekseev <arcanis at archlinux dot org>
 # Contributor: graysky
 # Contributor: Tomasz Żok <tomasz dot zok at gmail dot com>
 
 pkgname=pymol
 pkgver=1.7.6.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Molecular visualization system on an Open Source foundation"
 arch=('i686' 'x86_64')
 url="http://pymol.org/"

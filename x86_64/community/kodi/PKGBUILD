@@ -1,5 +1,5 @@
 # vim:set ts=2 sw=2 et:
-# $Id: PKGBUILD 139803 2015-09-10 19:11:05Z idevolder $
+# $Id: PKGBUILD 142769 2015-10-02 13:12:34Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: BlackIkeEagle < ike DOT devolder AT gmail DOT com >
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
@@ -13,7 +13,7 @@ pkgbase=kodi
 pkgname=('kodi' 'kodi-eventclients')
 pkgver=15.1
 _codename=Isengard
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 url="http://kodi.tv"
 license=('GPL2')

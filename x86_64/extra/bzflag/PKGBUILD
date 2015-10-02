@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 246480 2015-09-17 21:01:02Z foutrelis $
+# $Id: PKGBUILD 248257 2015-10-02 13:15:27Z foutrelis $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Kevin Piche <kevin@archlinux.org>
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 
 pkgname=bzflag
 pkgver=2.4.2
-pkgrel=7
+pkgrel=8
 pkgdesc='Multiplayer 3D tank battle game'
 url='http://bzflag.org/'
 license=('LGPL')
