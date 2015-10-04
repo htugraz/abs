@@ -1,25 +1,23 @@
-# $Id: PKGBUILD 241663 2015-07-01 15:17:54Z giovanni $
+# $Id: PKGBUILD 248334 2015-10-04 09:20:54Z giovanni $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: G_Syme <demichan(at)mail(dot)upb(dot)de>
 
 pkgname=libass
-pkgver=0.12.3
+pkgver=0.13.0
 pkgrel=1
 pkgdesc="A portable library for SSA/ASS subtitles rendering"
 arch=('i686' 'x86_64')
 url="https://github.com/libass/libass/"
 license=('BSD')
-depends=('fribidi' 'fontconfig' 'enca')
+depends=('fribidi' 'fontconfig')
 makedepends=('pkg-config' 'yasm')
-source=("https://github.com/${pkgname}/${pkgname}/archive/${pkgver}.tar.gz")
-md5sums=('1b53e739ab389335ce46fd626777ec61')
+source=("https://github.com/${pkgname}/${pkgname}/releases/download/${pkgver}/${pkgname}-${pkgver}.tar.xz")
+md5sums=('8e6a506b4e5a637764183083421dc827')
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
 
-  ./autogen.sh
   ./configure --prefix=/usr \
-              --enable-enca \
               --enable-harfbuzz \
               --enable-fontconfig
   make
