@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 142548 2015-10-01 16:08:47Z fyan $
+# $Id: PKGBUILD 142942 2015-10-05 02:53:31Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Sebastien LEDUC <sebastien@sleduc.fr>
 # Contributor: Andrey Mikhaylenko <neithere at gmail dot com>
@@ -6,8 +6,8 @@
 pkgbase=python-pytest-cov
 pkgname=('python-pytest-cov' 'python2-pytest-cov')
 _pypiname=pytest-cov
-pkgver=2.1.0
-pkgrel=2
+pkgver=2.2.0
+pkgrel=1
 pkgdesc='py.test plugin for coverage reporting with support for both centralised and distributed testing, including subprocesses and multiprocessing'
 arch=('any')
 license=('MIT')
