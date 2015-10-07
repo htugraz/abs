@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 138220 2015-08-11 11:58:54Z spupykin $
+# $Id: PKGBUILD 143276 2015-10-07 10:23:50Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Jason R Begley (jayray@digitalgoat.com>
 # Contributor: Daniel Micay <danielmicay@gmail.com>
 
 pkgname=freeradius
-pkgver=3.0.9
+pkgver=3.0.10
 pkgrel=1
 pkgdesc="The premier open source RADIUS server"
 arch=('i686' 'x86_64')
@@ -20,7 +20,7 @@ install=$pkgname.install
 source=("ftp://ftp.freeradius.org/pub/radius/freeradius-server-$pkgver.tar.bz2"
 	freeradius.tmpfiles
 	freeradius.service)
-md5sums=('37900d34de757734b430ffa9c5ffd246'
+md5sums=('35a2b419ce9a4ae312cb37024188e7e1'
          'f959e89812bedfc9f8308076f78cd74e'
          'e3f18e3a25df3b692e59f60605354708')
 

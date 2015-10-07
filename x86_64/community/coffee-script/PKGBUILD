@@ -1,0 +1,30 @@
+# $Id: PKGBUILD 143272 2015-10-07 10:14:41Z fyan $
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
+# Contributor: sloppybench <sloppybench@eml.cc>
+# Contributor: der_FeniX <derfenix@gmail.com>
+# Contributor: Anatol Pomozov <anatol.pomozov@gmail.com>
+# Contributor: Gordin <9ordin @t gmail dot com>
+# Contributor: Simon Lipp <aur@simon.lipp.name>
+# Contributor: Chris Bolton <http://scr.im/chris-kun>
+# Contributor: Sergei Lebedev <superbobry at gmail dot com>
+# Contributor: flying sheep <flying-sheep@web.de>
+
+pkgname=coffee-script
+pkgver=1.10.0
+pkgrel=3
+pkgdesc='CoffeeScript is a little language that compiles into JavaScript'
+arch=('any')
+url='http://coffeescript.org'
+license=('MIT')
+depends=('nodejs')
+makedepends=('npm')
+source=(http://registry.npmjs.org/$pkgname/-/$pkgname-$pkgver.tgz)
+noextract=($pkgname-$pkgver.tgz)
+sha256sums=('089d92b56bcd565934566dd147ace08930f4c2b40408b1b371f693b981f10895')
+
+package() {
+  npm install -g --user root --prefix "$pkgdir"/usr "$srcdir"/$pkgname-$pkgver.tgz
+  rm -r "$pkgdir"/usr/etc
+  mkdir -p "$pkgdir/usr/share/licenses/$pkgname"
+  ln -s "../../../lib/node_modules/$pkgname/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/"
+}
