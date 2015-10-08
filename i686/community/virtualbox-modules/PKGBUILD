@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 141740 2015-09-28 06:36:58Z tpowa $
+# $Id: PKGBUILD 143451 2015-10-08 20:24:25Z seblu $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Maintainer: Sébastien Luttringer
 
 pkgbase=virtualbox-modules
 pkgname=('virtualbox-host-modules' 'virtualbox-guest-modules')
-pkgver=5.0.4
-pkgrel=2
+pkgver=5.0.6
+pkgrel=1
 arch=('i686' 'x86_64')
 url='http://virtualbox.org'
 license=('GPL')
@@ -60,5 +60,6 @@ package_virtualbox-guest-modules(){
 }
 
 # vim:set ts=2 sw=2 et:
+
 
 

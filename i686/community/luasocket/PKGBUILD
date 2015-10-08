@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 142722 2015-10-01 19:21:21Z spupykin $
+# $Id: PKGBUILD 143418 2015-10-08 11:01:47Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Anders Bergh <anders1@gmail.com>
 
 pkgbase=luasocket
 pkgname=(lua-socket lua51-socket lua52-socket)
-pkgver=20151001
+pkgver=20151008
 pkgrel=1
 pkgdesc='Networking support library for the Lua language'
 arch=('i686' 'x86_64')
 url='https://github.com/diegonehab/luasocket'
 license=('MIT')
 makedepends=('lua' 'lua51' 'lua52' 'git')
-source=("git+https://github.com/diegonehab/luasocket.git")
+source=("git+https://github.com/diegonehab/luasocket.git#commit=d1ec29be7f982db75864155dd61a058902e1cae2")
 md5sums=('SKIP')
 
 build() {

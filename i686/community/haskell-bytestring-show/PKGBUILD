@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 140484 2015-09-17 20:52:01Z foutrelis $
+# $Id: PKGBUILD 143333 2015-10-08 02:09:20Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=haskell-bytestring-show
 pkgver=0.3.5.6
-pkgrel=5
+pkgrel=6
 pkgdesc="Efficient conversion of values into readable byte strings."
 url="http://hackage.haskell.org/package/bytestring-show"
 license=('BSD')

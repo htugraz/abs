@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 140611 2015-09-17 20:54:54Z foutrelis $
+# $Id: PKGBUILD 143381 2015-10-08 02:10:20Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 pkgname=xmobar
 pkgver=0.23.1
-pkgrel=3
+pkgrel=4
 pkgdesc="A Minimalistic Text Based Status Bar"
 url="http://hackage.haskell.org/package/xmobar"
 license=('custom:BSD3')
 arch=('i686' 'x86_64')
 depends=('gmp' 'libxft' 'libxinerama' 'wireless_tools' 'libxrandr' 'libxpm')
-makedepends=('ghc=7.10.1' 'haskell-x11=1.6.1.2' 'haskell-x11-xft=0.3.1' 'haskell-utf8-string=1' 'haskell-network-uri'
+makedepends=('ghc=7.10.2' 'haskell-x11=1.6.1.2' 'haskell-x11-xft=0.3.1' 'haskell-utf8-string=1' 'haskell-network-uri'
 	     'haskell-stm=2.4.4' 'haskell-parsec=3.1.9' 'haskell-mtl=2.2.1' 'haskell-regex-base' 'haskell-regex-compat' 'haskell-http')
 options=('strip')
 source=(http://hackage.haskell.org/packages/archive/xmobar/$pkgver/xmobar-$pkgver.tar.gz)

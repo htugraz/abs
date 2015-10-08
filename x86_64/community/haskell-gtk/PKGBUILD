@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 140498 2015-09-17 20:52:19Z foutrelis $
+# $Id: PKGBUILD 143347 2015-10-08 02:09:34Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=haskell-gtk
 pkgver=0.13.9
-pkgrel=1
+pkgrel=2
 pkgdesc="Binding to the gtk library for Gtk2Hs."
 url="http://hackage.haskell.org/package/gtk"
 license=('LGPL2.1')

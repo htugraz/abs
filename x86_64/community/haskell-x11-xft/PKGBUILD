@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 140525 2015-09-17 20:52:56Z foutrelis $
+# $Id: PKGBUILD 143377 2015-10-08 02:10:12Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 _hkgname=X11-xft
 pkgname=haskell-x11-xft
 pkgver=0.3.1
-pkgrel=14
+pkgrel=15
 pkgdesc="Bindings to the Xft, X Free Type interface library, and some Xrender parts"
 url="http://hackage.haskell.org/package/${_hkgname}"
 license=('LGPL')
 arch=('i686' 'x86_64')
-depends=('ghc=7.10.1' 'haskell-x11=1.6.1.2' 'haskell-utf8-string=1' 'libxft')
+depends=('ghc=7.10.2' 'haskell-x11=1.6.1.2' 'haskell-utf8-string=1' 'libxft')
 options=('strip')
 install=haskell-x11-xft.install
 source=(http://hackage.haskell.org/packages/archive/X11-xft/$pkgver/X11-xft-$pkgver.tar.gz)

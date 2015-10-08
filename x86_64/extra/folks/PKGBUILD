@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 241707 2015-07-02 14:13:46Z heftig $
+# $Id: PKGBUILD 248549 2015-10-08 19:50:18Z heftig $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=folks
 pkgver=0.11.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Library to aggregates people into metacontacts"
 arch=(i686 x86_64)
 url="https://wiki.gnome.org/Projects/Folks"

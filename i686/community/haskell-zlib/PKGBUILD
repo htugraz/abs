@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 140526 2015-09-17 20:52:57Z foutrelis $
+# $Id: PKGBUILD 143378 2015-10-08 02:10:13Z foutrelis $
 # Maintainer: Sergej Pupykin <arch+pub@sergej.pp.ru>
 # Maintainer: Colin Woodbury <colingw@gmail.com>
 
 pkgname=haskell-zlib
 pkgver=0.5.4.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Compression and decompression in the gzip and zlib formats"
 url="http://hackage.haskell.org/package/zlib"
 license=('custom:BSD3')

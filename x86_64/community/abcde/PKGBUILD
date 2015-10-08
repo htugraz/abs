@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 135664 2015-06-21 14:25:10Z schuay $
+# $Id: PKGBUILD 143404 2015-10-08 09:11:50Z schuay $
 # Contributor: Jochem Kossen <j.kossen@home.nl>
 # Contributor: Kevin Piche <kevin@archlinux.org>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 # Maintainer: schuay <jakob.gruber@gmail.com>
 
 pkgname=abcde
-pkgver=2.7
+pkgver=2.7.1
 pkgrel=1
 pkgdesc='A frontend command-line utility that grabs tracks off a CD, encodes them to ogg or mp3 format, and tags them, all in one go.'
 arch=('any')
@@ -39,9 +39,9 @@ build() {
 package() {
     cd ${srcdir}/${pkgname}-${pkgver}
 
-    make DESTDIR="${pkgdir}" install
+    make DESTDIR="${pkgdir}" prefix="/usr" install
 }
 
-md5sums=('b947ec2b6baab8cf8388b1d6613664cb'
+md5sums=('09d5c9dc6c0bf6dd4b3fb159e1433018'
          'SKIP'
          'c3975dc8389ff2edba6684bbc378d97d')

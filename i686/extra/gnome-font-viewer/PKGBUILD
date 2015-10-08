@@ -1,9 +1,9 @@
-#  $Id: PKGBUILD 239280 2015-05-13 04:11:27Z heftig $
+#  $Id: PKGBUILD 248581 2015-10-08 19:51:20Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=gnome-font-viewer
 pkgver=3.16.2
-pkgrel=1
+pkgrel=2
 pkgdesc="GNOME font viewer and thumbnailer"
 arch=(i686 x86_64)
 license=('GPL')

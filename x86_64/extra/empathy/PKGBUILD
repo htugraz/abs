@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 241196 2015-06-22 21:17:54Z foutrelis $
+# $Id: PKGBUILD 248539 2015-10-08 19:50:00Z heftig $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=empathy
 pkgver=3.12.10
-pkgrel=2
+pkgrel=3
 pkgdesc="A GNOME instant messaging client using the Telepathy framework."
 arch=(i686 x86_64)
 url="http://live.gnome.org/Empathy"
