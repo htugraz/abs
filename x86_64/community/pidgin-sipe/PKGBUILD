@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 138945 2015-08-29 18:32:52Z jsteel $
+# $Id: PKGBUILD 143508 2015-10-09 18:16:03Z foutrelis $
 # Maintainer: Jonathan Steel <jsteel at archlinux.org>
 # Contributor: Gicu Gorodenco <cyclopsihus@gmail.com>
 # Contributor: MaLiK <malik_cjm@o2.pl>
@@ -8,7 +8,7 @@
 
 pkgname=pidgin-sipe
 pkgver=1.20.0
-pkgrel=1
+pkgrel=3
 pkgdesc="Third-party Pidgin plugin for Microsoft Office 365/Lync/LCS/OCS"
 arch=('i686' 'x86_64')
 license=('GPL2')
