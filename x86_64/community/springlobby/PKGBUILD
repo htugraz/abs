@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 142275 2015-09-30 19:20:31Z svenstaro $
+# $Id: PKGBUILD 143527 2015-10-10 06:19:46Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: DuGi <dugi@irc.pl>
 
 pkgname=springlobby
-pkgver=0.236
+pkgver=0.237
 pkgrel=1
 pkgdesc="A free cross-platform lobby client for the Spring RTS project."
 arch=('i686' 'x86_64')

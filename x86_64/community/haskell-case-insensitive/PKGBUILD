@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 143483 2015-10-09 08:56:19Z fyan $
+# $Id: PKGBUILD 143573 2015-10-10 09:45:24Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Daniel Nagy <danielnagy at gmx de>
 
 _hkgname=case-insensitive
 pkgname=haskell-case-insensitive
-pkgver=1.2.0.3
-pkgrel=1
+pkgver=1.2.0.5
+pkgrel=2
 pkgdesc="Case insensitive string comparison"
 url="http://hackage.haskell.org/package/${_hkgname}"
 license=('custom:BSD3')
@@ -14,12 +14,13 @@ depends=('ghc=7.10.2' 'haskell-hashable' 'haskell-text')
 options=('staticlibs')
 source=(http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz)
 install=${pkgname}.install
-md5sums=('0d06bfcf77f0fba85424b87a61775a78')
+md5sums=('e1473703da830478f5bf37100d7a72a7')
 
 build() {
     cd "${srcdir}/${_hkgname}-${pkgver}"
-    runhaskell Setup configure -O ${PKGBUILD_HASKELL_ENABLE_PROFILING:+-p } --enable-split-objs --enable-shared \
-       --prefix=/usr --docdir=/usr/share/doc/${pkgname} --libsubdir=\$compiler/site-local/\$pkgid
+    runhaskell Setup configure -O --enable-library-profiling --enable-shared \
+        --prefix=/usr --docdir="/usr/share/doc/${pkgname}" \
+        --libsubdir=\$compiler/site-local/\$pkgid -fnetwork-uri
     runhaskell Setup build
     runhaskell Setup haddock
     runhaskell Setup register   --gen-script

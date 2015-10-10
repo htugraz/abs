@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 143400 2015-10-08 03:37:38Z fyan $
+# $Id: PKGBUILD 143551 2015-10-10 08:41:51Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=highlighting-kate
 pkgname=haskell-highlighting-kate
 pkgver=0.6
-pkgrel=1
+pkgrel=3
 pkgdesc="Syntax highlighting"
 url="http://github.com/jgm/highlighting-kate"
 license=("GPL")
