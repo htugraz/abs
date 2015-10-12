@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 138331 2015-08-14 04:46:59Z arojas $
+# $Id: PKGBUILD 143801 2015-10-12 20:50:53Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Rémy Oudompheng <oudomphe@clipper.ens.fr>
 # Contributor: Alessandro "jakedust" Andrioni <jakedust@gmail.com>
 
 pkgname=flint
 pkgver=2.5.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A C library for doing number theory"
 arch=(i686 x86_64)
 url="http://www.flintlib.org"
@@ -13,11 +13,6 @@ license=(GPL)
 depends=(mpfr ntl)
 source=("http://www.flintlib.org/flint-$pkgver.tar.gz")
 md5sums=('cda885309362150196aed66a5e0f0383')
-
-prepare() {
-  cd $pkgname-$pkgver
-#  sed -i.orig 's,.*NTL/g_lip.h,// &,' interfaces/NTL-interface.cpp
-}
 
 build() {
   cd $pkgname-$pkgver
