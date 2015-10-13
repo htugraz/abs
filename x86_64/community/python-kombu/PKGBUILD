@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 143518 2015-10-10 01:14:13Z fyan $
+# $Id: PKGBUILD 143838 2015-10-13 03:23:21Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: mutantmonkey <aur@mutantmonkey.in>
 
 pkgbase=python-kombu
 pkgname=('python-kombu' 'python2-kombu')
-pkgver=3.0.27
+pkgver=3.0.28
 pkgrel=1
 pkgdesc='A messaging library for Python'
 arch=('any')

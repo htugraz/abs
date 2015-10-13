@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 143394 2015-10-08 03:06:18Z fyan $
+# $Id: PKGBUILD 143871 2015-10-13 06:25:50Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Daniel Nagy <danielnagy at gmx de>
 # Contributor: Lex Black <autumn-wind at web dot de>
@@ -7,7 +7,7 @@
 pkgname=haskell-unix-compat
 _hkgname=unix-compat
 pkgver=0.4.1.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Portable POSIX-compatibility layer."
 url="http://hackage.haskell.org/package/unix-compat"
 license=('BSD3')
@@ -22,8 +22,8 @@ install="${pkgname}.install"
 build() {
     cd "${srcdir}/${_hkgname}-${pkgver}"
     
-    runhaskell Setup configure -O ${PKGBUILD_HASKELL_ENABLE_PROFILING:+-p } --enable-split-objs --enable-shared \
-        --prefix=/usr --docdir=/usr/share/doc/${pkgname} \
+    runhaskell Setup configure -O --enable-library-profiling --enable-shared \
+        --prefix=/usr --docdir="/usr/share/doc/${pkgname}" \
         --libsubdir=\$compiler/site-local/\$pkgid
     runhaskell Setup build
     runhaskell Setup haddock

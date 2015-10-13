@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 143712 2015-10-12 00:28:00Z speps $
+# $Id: PKGBUILD 143941 2015-10-13 21:33:28Z speps $
 # Maintainer: speps <speps at aur dot archlinux dot org>
 
 pkgbase=qupzilla
 pkgname=(qupzilla qupzilla-qt4)
 pkgver=1.8.7
-pkgrel=1
+pkgrel=2
 pkgdesc="Cross-platform QtWebKit browser"
 arch=(i686 x86_64)
 url="http://www.qupzilla.com/"
@@ -41,7 +41,7 @@ build() {
 
 package_qupzilla() {
   pkgdesc+=" (Qt5)"
-  depends=('qt5-webkit' 'qt5-script' 'hunspell' 'desktop-file-utils' 'hicolor-icon-theme')
+  depends=('qt5-webkit' 'qt5-script' 'qt5-x11extras' 'hunspell' 'desktop-file-utils' 'hicolor-icon-theme')
   optdepends=('kwallet: kf5 kwallet integration'
               'libgnome-keyring: gnome keyring integration')
   provides=('qupzilla-qt5')

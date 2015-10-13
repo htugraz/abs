@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 246853 2015-09-20 08:20:17Z arojas $
+# $Id: PKGBUILD 249021 2015-10-13 07:10:29Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=konsole
-pkgver=15.08.1
+pkgver=15.08.2
 pkgrel=1
 arch=('i686' 'x86_64')
 url='http://kde.org/applications/system/konsole/'
@@ -15,7 +15,7 @@ makedepends=('extra-cmake-modules' 'kdoctools' 'python')
 replaces=('kdebase-konsole')
 conflicts=('kdebase-konsole<4.14.3-2')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/konsole-${pkgver}.tar.xz")
-sha1sums=('ce9f7b9fdc3613a26f657270481c093e84934672')
+sha1sums=('33bd19c2f460a391dabc0fa718f4a9286a514f07')
 
 build() {
   cd "${srcdir}"

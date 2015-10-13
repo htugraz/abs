@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 143031 2015-10-06 02:25:44Z fyan $
+# $Id: PKGBUILD 143836 2015-10-13 03:12:28Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
@@ -9,17 +9,17 @@
 # Contributor: TIanyi Cui <tianyicui@gmail.com>
 
 pkgname=nodejs
-pkgver=4.1.2
-pkgrel=1
+pkgver=4.2.0
+pkgrel=2
 pkgdesc='Evented I/O for V8 javascript'
 arch=('i686' 'x86_64')
 url='http://nodejs.org/'
 license=('MIT')
-depends=('openssl' 'zlib' 'icu') # 'libuv' 'v8' 'c-ares')
+depends=('openssl' 'zlib' 'icu' 'libuv' 'http-parser') # 'v8')
 makedepends=('python2' 'procps-ng')
 optdepends=('npm: nodejs package manager')
 source=("http://nodejs.org/dist/v$pkgver/node-v$pkgver.tar.gz")
-sha256sums=('febec3703a3fea9b64c46100a7b6a4408250027aa8259a2a815fd2275d502c49')
+sha256sums=('94ea40efeb598fed6e1a78990b698da73275c49876ec551dc36e11513c99fb6b')
 
 prepare() {
   cd node-v$pkgver
@@ -44,10 +44,10 @@ build() {
     --with-intl=system-icu \
     --without-npm \
     --shared-openssl \
-    --shared-zlib
-    # --shared-libuv
+    --shared-zlib \
+    --shared-libuv \
+    --shared-http-parser
     # --shared-v8
-    # --shared-cares
 
   make
 }

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 246924 2015-09-20 08:22:09Z arojas $
+# $Id: PKGBUILD 249101 2015-10-13 07:42:57Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-okular
-pkgver=15.08.1
+pkgver=15.08.2
 pkgrel=1
 pkgdesc='Document Viewer'
 arch=('i686' 'x86_64')
@@ -17,7 +17,7 @@ optdepends=('ebook-tools: mobi and epub support'
             'kdegraphics-mobipocket: mobi support')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/okular-${pkgver}.tar.xz")
-sha1sums=('87abdd8efc8520cddf686b220b83fe3290f8ef14')
+sha1sums=('4ee1eb1324bbd605953fb0756ca5b6190361f84a')
 
 prepare() {
   mkdir -p build

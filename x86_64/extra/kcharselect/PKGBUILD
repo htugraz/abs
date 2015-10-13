@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 246975 2015-09-20 08:23:19Z arojas $
+# $Id: PKGBUILD 249169 2015-10-13 08:13:21Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kcharselect
-pkgver=15.08.1
+pkgver=15.08.2
 pkgrel=1
 pkgdesc='Character Selector'
 url="http://kde.org/applications/utilities/kcharselect/"
@@ -15,7 +15,7 @@ groups=('kde-applications' 'kdeutils')
 conflicts=('kdeutils-kcharselect')
 replaces=('kdeutils-kcharselect')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kcharselect-${pkgver}.tar.xz")
-sha1sums=('90d3edbec7a73371d769193f755b361727efabce')
+sha1sums=('bf366fdc6a12694f5bc9f3694395574420bb8884')
 
 build() {
   cd "${srcdir}"

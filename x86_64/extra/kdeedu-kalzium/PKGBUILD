@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 246859 2015-09-20 08:20:25Z arojas $
+# $Id: PKGBUILD 249027 2015-10-13 07:13:28Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-kalzium
-pkgver=15.08.1
+pkgver=15.08.2
 pkgrel=1
 pkgdesc="Periodic Table of Elements"
 url="http://kde.org/applications/education/kalzium/"
@@ -14,7 +14,7 @@ depends=('kdebase-runtime' 'avogadro' 'ocaml' 'chemical-mime-data')
 makedepends=('cmake' 'automoc4' 'mesa' 'eigen' 'eigen2' 'facile')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kalzium-${pkgver}.tar.xz")
-sha1sums=('afe31d9f33cc4fc8e26ce64a564bba479bb9831a')
+sha1sums=('b94819afb650ed01dae101a03f16e0147df62e67')
 
 build() {
   mkdir -p build

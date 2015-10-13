@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 246862 2015-09-20 08:20:29Z arojas $
+# $Id: PKGBUILD 249030 2015-10-13 07:14:47Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kgeography
-pkgver=15.08.1
+pkgver=15.08.2
 pkgrel=1
 pkgdesc="Geography Trainer"
 url="http://kde.org/applications/education/kgeography/"
@@ -16,7 +16,7 @@ replaces=('kdeedu-kgeography')
 conflicts=('kdeedu-kgeography')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kgeography-${pkgver}.tar.xz")
-sha1sums=('81a1fa6281be83c11af74443ea03160498d65f1d')
+sha1sums=('1bfba956218d8c716ca197a3041709696097fa6c')
 
 build() {
   cd "${srcdir}"
