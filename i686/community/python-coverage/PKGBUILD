@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 142415 2015-10-01 16:04:23Z fyan $
+# $Id: PKGBUILD 143947 2015-10-14 01:29:56Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Clément Démoulins <clement@archivel.fr>
 # Contributor: Fazlul Shahriar <fshahriar@gmail.com>
 
 pkgname=(python-coverage python2-coverage)
-pkgver=4.0
+pkgver=4.0.1
 pkgrel=1
 pkgdesc="A tool for measuring code coverage of Python programs"
 arch=('i686' 'x86_64')

@@ -1,34 +1,33 @@
-# $Id: PKGBUILD 128056 2015-02-21 06:21:22Z bisson $
+# $Id: PKGBUILD 144009 2015-10-14 20:14:31Z bisson $
 # Contributor: Francois Boulogne <fboulogne at april dot org>
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 
 pkgname=subsurface-libdc
-_pkgname=libdc
-pkgver=4.4.1
+_pkgname=libdivecomputer-subsurface-branch
+pkgver=4.5.0
 pkgrel=1
 pkgdesc='Library for communication with dive computers'
 url='http://git.subsurface-divelog.org/'
 license=('LGPL')
 arch=('i686' 'x86_64')
-makedepends=('git')
-source=("git://subsurface-divelog.org/libdc#commit=71cb47287de262d8dc5ecd9d88946d46fbf96f00")
-sha1sums=('SKIP')
+source=("http://subsurface-divelog.org/downloads/${_pkgname}-${pkgver}.tgz")
+sha1sums=('655aa6254e709e675708483d03e3aefbfc8cefee')
 
 conflicts=('libdivecomputer')
 provides=('libdivecomputer')
 replaces=('libdivecomputer')
 
 build() {
-	cd "${srcdir}/${_pkgname}"
+	cd "${srcdir}/${_pkgname}-${pkgver}"
 	autoreconf --install
 	./configure \
 		--prefix=/usr \
-		--program-prefix="${_pkgname}-" \
+		--program-prefix=libdc- \
 
 	make
 }
 
 package() {
-	cd "${srcdir}/${_pkgname}"
+	cd "${srcdir}/${_pkgname}-${pkgver}"
 	make DESTDIR="${pkgdir}" install
 }

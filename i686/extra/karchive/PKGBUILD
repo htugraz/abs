@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 246733 2015-09-20 08:15:47Z arojas $
+# $Id: PKGBUILD 249248 2015-10-14 03:21:55Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=karchive
-pkgver=5.14.0
+pkgver=5.15.0
 pkgrel=1
 pkgdesc='Qt 5 addon providing access to numerous types of archives'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('qt5-base')
 makedepends=('extra-cmake-modules')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('1250214279c42c5802f998ee1f2b91b8')
+md5sums=('38c7374689688c045cd5ba1acb4ea91b')
 
 prepare() {
   mkdir -p build

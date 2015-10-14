@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 143035 2015-10-06 08:33:38Z seblu $
+# $Id: PKGBUILD 143994 2015-10-14 16:38:25Z seblu $
 # Maintainer: Sébastien Luttringer <seblu@archlinux.org>
 # Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Francois Boulogne <fboulogne at april dot org>
 
 pkgname=glances
-pkgver=2.5
+pkgver=2.5.1
 pkgrel=1
 pkgdesc='CLI curses-based monitoring tool'
 arch=('any')
@@ -15,7 +15,7 @@ optdepends=('python-bottle: web server support'
             'hddtemp: HDD temperature monitoring support'
             'python-matplotlib: for graphical/chart support')
 source=("https://pypi.python.org/packages/source/G/Glances/Glances-$pkgver.tar.gz")
-md5sums=('70a7825a7b32048885f18ad3f8500294')
+md5sums=('b8a7815353cf10e1aafffc6f4f235926')
 
 package() {
   cd Glances-$pkgver

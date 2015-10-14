@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 246789 2015-09-20 08:16:56Z arojas $
+# $Id: PKGBUILD 249304 2015-10-14 03:23:15Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Mainrainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=modemmanager-qt
-pkgver=5.14.0
+pkgver=5.15.0
 pkgrel=1
 pkgdesc='Qt wrapper for ModemManager DBus API'
 arch=(i686 x86_64)
@@ -14,7 +14,7 @@ makedepends=(extra-cmake-modules)
 groups=(kf5)
 conflicts=(libmm-qt5)
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('644a45b79fd1106a68f0478d89e891e8')
+md5sums=('6b14c285d47ffc1e1bab756cf659ab7a')
 
 prepare() {
   mkdir -p build
