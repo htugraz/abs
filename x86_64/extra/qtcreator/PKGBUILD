@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 248496 2015-10-08 11:20:10Z foutrelis $
+# $Id: PKGBUILD 249398 2015-10-15 20:35:37Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Imanol Celaya <ornitorrincos@archlinux-es.org>
 # Contributor: Lukas Jirkovsky <l.jirkovsky@gmail.com>
@@ -7,9 +7,9 @@
 # Contributor: delor <bartekpiech gmail com>
 
 pkgname=qtcreator
-pkgver=3.5.0
-_pkgver=v3.5.0
-pkgrel=4
+pkgver=3.5.1
+_pkgver=v3.5.1
+pkgrel=1
 pkgdesc='Lightweight, cross-platform integrated development environment'
 arch=('i686' 'x86_64')
 url='http://qt-project.org'

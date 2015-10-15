@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 144010 2015-10-14 20:14:32Z bisson $
+# $Id: PKGBUILD 144182 2015-10-15 16:45:25Z bisson $
 # Contributor: Francois Boulogne <fboulogne at april dot org>
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 
 pkgname=subsurface-marble
 _pkgname=marble-subsurface-branch
 pkgver=4.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Virtual Globe'
 url='http://git.subsurface-divelog.org/'
 license=('GPL' 'LGPL' 'FDL')
 arch=('i686' 'x86_64')
-makedepends=('cmake' 'git')
+makedepends=('cmake')
 depends=('qt5-'{script,svg,tools,webkit} 'marble-data')
 source=("http://subsurface-divelog.org/downloads/${_pkgname}-${pkgver}.tgz")
 sha1sums=('492a2a9b3afacc6e36be15721cfaa103710fd4e3')
@@ -45,4 +45,7 @@ package() {
 	# Provided by marble-data, avoids conflicts.
 	rm share/marble/cmake/FindMarble.cmake
 	rm -fr share/marble/data
+
+	# Conflicts with libastro
+	rm lib/libastro.so{,.1,.0.17.20}
 }

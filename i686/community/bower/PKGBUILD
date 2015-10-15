@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 143282 2015-10-07 10:25:37Z fyan $
+# $Id: PKGBUILD 144177 2015-10-15 15:10:15Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Micha Alt <micha.tucker@gmail.com> 
 # Contributor: FadeMind <fademind@gmail.com>
 # Contributor: Tom Vincent <http://tlvince.com/contact>
 
 pkgname=bower
-pkgver=1.5.3
+pkgver=1.6.2
 pkgrel=1
 pkgdesc='A package manager for the web'
 arch=('any')
@@ -16,7 +16,7 @@ makedepends=('npm')
 source=(http://registry.npmjs.org/$pkgname/-/$pkgname-$pkgver.tgz
         LICENSE)
 noextract=($pkgname-$pkgver.tgz)
-md5sums=('3a4130a26d21148a6d3230a4f8555704'
+md5sums=('383163e0797117b438a6cadceed192d7'
          '135697567327f92e904ef0be2082da5e')
 
 package() {

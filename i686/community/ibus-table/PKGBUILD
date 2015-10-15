@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 142358 2015-10-01 16:02:49Z fyan $
+# $Id: PKGBUILD 144015 2015-10-15 01:59:59Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: coderoar <coderoar@gmail.com>
 # Contributor: leemars <leemars@gmail.com>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=ibus-table
-pkgver=1.9.6
-pkgrel=2
+pkgver=1.9.7
+pkgrel=1
 pkgdesc='IM Engine framework for table-based input methods, such as ZhengMa, WuBi, ErBi, CangJie and so on'
 arch=('any')
 url="http://code.google.com/p/ibus/"

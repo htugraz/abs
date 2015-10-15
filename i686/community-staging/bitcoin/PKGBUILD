@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 143494 2015-10-09 10:36:47Z tredaelli $
+# $Id: PKGBUILD 144101 2015-10-15 11:32:02Z foutrelis $
 # Maintainer: Timothy Redaelli <timothy.redaelli@gmail.com>
 # Contributor: shahid <helllamer@gmail.com>
 
 pkgbase=bitcoin
 pkgname=('bitcoin-daemon' 'bitcoin-cli' 'bitcoin-qt')
 pkgver=0.11.0
-pkgrel=3
+pkgrel=4
 arch=('i686' 'x86_64')
 url="http://www.bitcoin.org/"
 makedepends=('boost' 'automoc4' 'qrencode' 'miniupnpc' 'protobuf')

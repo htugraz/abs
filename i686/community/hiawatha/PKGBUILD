@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 141464 2015-09-22 15:20:44Z kkeen $
+# $Id: PKGBUILD 144023 2015-10-15 05:32:55Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Kurt Marasco <celilo _at_ lavabit _dot_ com>
 # Contributor: Pascal Ernster <aur at hardfalcon dot net>
 
 pkgname=hiawatha
-pkgver=9.14
+pkgver=9.15
 pkgrel=1
 pkgdesc="Secure and advanced webserver"
 url="https://www.hiawatha-webserver.org/"
@@ -24,7 +24,7 @@ source=(
         'hiawatha.conf.sample'
         'hiawatha.service'
 )
-sha256sums=('79c92587cd86a0461d952c99036f5615dacdcaccabe0a9a29359e6044d809bfa'
+sha256sums=('e9252133a1114095d1a9a89144b88828ee3b9754f435bd88270f7bf444dd9421'
             '4671d2586cbe3cd6497b16ff422c6143cdab40641ef3c9c4988c478351a8f5e7'
             'fb789b12bb6246237b15a9244f58317abdd53e5ca4eb55880e40a498b2237155')
 
@@ -32,11 +32,6 @@ build() {
   cd "$srcdir/$pkgname-$pkgver"
 
   sed -i 's/www-data/http/g' extra/logrotate.in
-
-  # mbedtls tweaks lifted from
-  # https://www.hiawatha-webserver.org/source.raw/CMakeLists.txt
-  sed -i 's|MBEDTLS_LIBRARY "mbedtls"|MBEDTLS_LIBRARIES "mbedtls" "mbedx509" "mbedcrypto"|' CMakeLists.txt
-  sed -i 's|MBEDTLS_LIBRARY|MBEDTLS_LIBRARIES|' CMakeLists.txt
 
   mkdir -p build
   cd build
