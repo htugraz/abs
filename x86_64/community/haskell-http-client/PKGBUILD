@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 143581 2015-10-10 09:57:50Z fyan $
+# $Id: PKGBUILD 144208 2015-10-16 03:36:26Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=http-client
 pkgname=haskell-http-client
 pkgver=0.4.24
-pkgrel=1
+pkgrel=2
 pkgdesc="An HTTP client engine, intended as a base layer for more user-friendly packages."
 url="https://github.com/snoyberg/http-client"
 license=("MIT")

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 143348 2015-10-08 02:09:35Z foutrelis $
+# $Id: PKGBUILD 144206 2015-10-16 03:36:23Z fyan $
 # Maintainer: Sergej Pupykin <arch+pub@sergej.pp.ru>
 
 pkgname=haskell-haddock-api
 pkgver=2.16.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A documentation-generation tool for Haskell libraries"
 url="http://www.haskell.org/haddock/"
 license=("BSD3")

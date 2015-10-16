@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 143863 2015-10-13 05:58:32Z fyan $
+# $Id: PKGBUILD 144215 2015-10-16 03:36:34Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=yaml
 pkgname=haskell-yaml
 pkgver=0.8.15.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Support for parsing and rendering YAML documents."
 url="http://github.com/snoyberg/yaml/"
 license=("custom:BSD3")

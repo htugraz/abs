@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 142095 2015-09-28 16:00:56Z foutrelis $
+# $Id: PKGBUILD 144195 2015-10-15 23:12:49Z foutrelis $
 # Maintainer: Anatol Pomozov <anatol.pomozov@gmail.com>
 
 pkgname=mldonkey
 pkgver=3.1.5
-pkgrel=4
+pkgrel=5
 pkgdesc='A multi-network P2P client'
 arch=(i686 x86_64)
 url='http://mldonkey.sourceforge.net/'
