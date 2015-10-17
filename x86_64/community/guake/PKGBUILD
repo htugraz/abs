@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 139140 2015-09-03 15:08:11Z bgyorgy $
+# $Id: PKGBUILD 144278 2015-10-17 12:39:17Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
 # Contributor: Wilson Pinto Júnior (N3RD3X) <n3rd3x@linuxmail.org>
 # Contributor: Attila Bukor <r1pp3rj4ck@w4it.eu>
 
 pkgname=guake
-pkgver=0.8.0
+pkgver=0.8.1
 pkgrel=1
 pkgdesc='Drop-down terminal for GNOME'
 arch=('any')
@@ -15,7 +15,7 @@ depends=('python2-notify' 'vte' 'python2-gconf' 'python2-dbus' 'python2-keybinde
 makedepends=('intltool' 'gnome-common')
 install=$pkgname.install
 source=($pkgname-$pkgver.tar.gz::https://github.com/Guake/$pkgname/archive/$pkgver.tar.gz)
-md5sums=('4f4dab1f85d7d03eec2ee1c193919fc7')
+md5sums=('9158b0121ae603e6c14160882fdd037e')
 
 prepare() {
   cd $pkgname-$pkgver

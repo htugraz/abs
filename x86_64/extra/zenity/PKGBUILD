@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 248673 2015-10-08 19:53:44Z heftig $
+# $Id: PKGBUILD 249469 2015-10-17 17:41:17Z heftig $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=zenity
-pkgver=3.18.0
+pkgver=3.18.1
 pkgrel=1
 pkgdesc="Display graphical dialog boxes from shell scripts"
 arch=(i686 x86_64)
 license=(LGPL)
-depends=(gtk3 libnotify)
+depends=(webkit2gtk libnotify)
 makedepends=(itstool yelp-tools gettext)
 url="http://www.gnome.org"
 source=(http://ftp.gnome.org/pub/GNOME/sources/$pkgname/${pkgver:0:4}/$pkgname-$pkgver.tar.xz)
-sha256sums=('0efafea95a830f3bf6eca805ff4a8008df760a6ad3e81181b9473dcf721c3a69')
+sha256sums=('089d45f8e82bb48ae80fcb78693bcd7a29579631234709d752afed6c5a107ba8')
 
 build() {
   cd $pkgname-$pkgver
