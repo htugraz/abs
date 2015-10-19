@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 92107 2013-05-31 15:10:32Z foutrelis $
+# $Id: PKGBUILD 144344 2015-10-18 22:23:28Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Roman Kyrylych <Roman.Kyrylych@gmail.com>
 # Contributor: Mark Rosenstand <mark@archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=webfs
 pkgver=1.21
-pkgrel=10
+pkgrel=11
 pkgdesc="Simple and instant http server for mostly static content."
 arch=(i686 x86_64)
 url="http://linux.bytesex.org/misc/webfs.html"
@@ -35,5 +35,5 @@ package() {
 
 	make prefix=/usr DESTDIR="$pkgdir" install
 	install -Dm644 "$srcdir/webfsd.conf"     "$pkgdir/etc/conf.d/webfsd"
-	install -Dm755 "$srcdir/webfsd.service"  "$pkgdir/usr/lib/systemd/system/webfsd.service"
+	install -Dm644 "$srcdir/webfsd.service"  "$pkgdir/usr/lib/systemd/system/webfsd.service"
 }

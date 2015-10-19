@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 247563 2015-09-28 06:39:33Z tpowa $
+# $Id: PKGBUILD 249502 2015-10-19 12:24:26Z seblu $
 # Maintainer: Sébastien "Seblu" Luttringer <seblu@archlinux.org>
 # Contributor: Tom Gundersen <teg@jklm.no>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=btrfs-progs
-pkgver=4.2.1
+pkgver=4.2.2
 pkgrel=1
 pkgdesc='Btrfs filesystem utilities'
 arch=('i686' 'x86_64')

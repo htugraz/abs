@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 135696 2015-06-22 09:58:12Z spupykin $
+# $Id: PKGBUILD 144366 2015-10-19 11:05:29Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer:thefatprecious <marty@loomar.com>
 
 pkgname=tvtime
-pkgver=1.0.7
+pkgver=1.0.8
 pkgrel=1
 pkgdesc="A high quality television application for use with video capture cards"
 arch=('i686' 'x86_64')
