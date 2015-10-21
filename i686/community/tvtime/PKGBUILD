@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 144366 2015-10-19 11:05:29Z spupykin $
+# $Id: PKGBUILD 144557 2015-10-21 12:16:16Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer:thefatprecious <marty@loomar.com>
 
 pkgname=tvtime
 pkgver=1.0.8
-pkgrel=1
+pkgrel=2
 pkgdesc="A high quality television application for use with video capture cards"
 arch=('i686' 'x86_64')
 url='http://linuxtv.org/'
@@ -12,7 +12,7 @@ license=('GPL' 'LGPL')
 depends=('gcc-libs' 'libpng' 'libxml2' 'freetype2' 'libxtst' 'libxinerama' 'libxv'
 	 'libsm' 'libxxf86vm' 'alsa-lib')
 makedepends=('libxt' 'v4l-utils' 'git')
-source=("git://linuxtv.org/tvtime.git#tag=v1.0.7")
+source=("git://linuxtv.org/tvtime.git#tag=v$pkgver")
 md5sums=('SKIP')
 
 prepare() {

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 239677 2015-05-23 17:33:42Z andyrtr $
+# $Id: PKGBUILD 249616 2015-10-21 22:01:50Z foutrelis $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Contributor: kusakata <shohei atmark kusakata period com>
 
 pkgname=libixion
 pkgver=0.9.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A general purpose formula parser & interpreter"
 arch=('i686' 'x86_64')
 url="https://gitlab.com/ixion/ixion/blob/master/README.md"

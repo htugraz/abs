@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 142371 2015-10-01 16:03:07Z fyan $
+# $Id: PKGBUILD 144597 2015-10-21 21:55:45Z foutrelis $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname='luxrays'
 pkgver=1.5
 _pkgver=53c0b9a41ea2
-pkgrel=2
+pkgrel=3
 pkgdesc="Accelerate the ray intersection process by using GPUs"
 arch=('x86_64')
 url="http://www.luxrender.net/"

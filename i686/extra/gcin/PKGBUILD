@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 248713 2015-10-10 02:04:25Z fyan $
+# $Id: PKGBUILD 249594 2015-10-21 04:24:25Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Andreas Radke <andyrtr@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=gcin
 pkgver=2.8.4
-pkgrel=1
+pkgrel=2
 pkgdesc='Input method server supporting various input methods'
 url='http://hyperrate.com/dir.php?eid=67'
 license=('LGPL')

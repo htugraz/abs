@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 238200 2015-04-28 11:42:02Z bpiotrowski $
+# $Id: PKGBUILD 249621 2015-10-21 22:02:21Z foutrelis $
 # Maintainer: Juergen Hoetzel <juergen@archlinux.org>
 
 pkgname=licq
 pkgver=1.8.2
-pkgrel=5
+pkgrel=6
 pkgdesc="Advanced graphical ICQ clone and more for Unix"
 arch=('i686' 'x86_64')
 url="http://www.licq.org"
@@ -35,7 +35,7 @@ build() {
   sed -i -e "s/file(GLOB cmake_plugins.*$/set(cmake_plugins ${plugins})/" plugins/CMakeLists.txt
 
   cd build
-  cmake -DCMAKE_INSTALL_PREFIX=/usr -DUSE_FIFO=ON -DBUILD_PLUGINS=ON  ..
+  cmake -DCMAKE_INSTALL_PREFIX=/usr -DUSE_FIFO=ON -DBUILD_PLUGINS=ON -DBUILD_TESTS=OFF ..
   make
 }
 

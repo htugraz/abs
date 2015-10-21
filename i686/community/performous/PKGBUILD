@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 142778 2015-10-02 13:12:45Z foutrelis $
+# $Id: PKGBUILD 144610 2015-10-21 21:56:08Z foutrelis $
 # Maintainer : Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Christoph Zeiler <archNOSPAM_at_moonblade.dot.org>
 
 pkgname=performous
 pkgver=1.0
-pkgrel=5
+pkgrel=7
 pkgdesc='A free game like "Singstar", "Rockband" or "Stepmania"'
 arch=('i686' 'x86_64')
 url="http://performous.org/"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 140428 2015-09-17 19:31:59Z jlichtblau $
+# $Id: PKGBUILD 144589 2015-10-21 21:55:31Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 # Maintainer: damir <damir@archlinux.org>
@@ -6,7 +6,7 @@
 pkgname=gpsdrive
 pkgver=2.11
 _pkgver=20150407
-pkgrel=29
+pkgrel=30
 pkgdesc="A car (bike, ship, plane) navigation system"
 arch=("i686" "x86_64")
 url="http://www.gpsdrive.de/"

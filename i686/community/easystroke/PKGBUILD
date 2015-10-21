@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 132382 2015-04-28 11:43:32Z bpiotrowski $
+# $Id: PKGBUILD 144575 2015-10-21 21:55:11Z foutrelis $
 # Maintainer: Lukas Fleischer <lfleischer@archlinux.org>
 # Contributor: Kevin Sullivan <ksullivan@archlinux.us>
 
 pkgname=easystroke
 pkgver=0.6.0
-pkgrel=7
+pkgrel=8
 pkgdesc='Use mouse gestures to initiate commands and hotkeys.'
 arch=('i686' 'x86_64')
 url='http://easystroke.sourceforge.net/'

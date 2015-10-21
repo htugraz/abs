@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137906 2015-08-04 06:37:20Z bpiotrowski $
+# $Id: PKGBUILD 144621 2015-10-21 21:56:59Z foutrelis $
 # Maintainer : Martin Wimpress <code@flexion.org>
 # Contributor: Archie <xMickael@ifrance.com>
 # Contributor: Byron Clark <byron@theclarkfamily.name>
@@ -6,7 +6,7 @@
 _pkgname=pyexiv2
 pkgname=python2-exiv2
 pkgver=0.3.2
-pkgrel=7
+pkgrel=8
 pkgdesc="pyexiv2 is a Python binding to exiv2, the C++ library for manipulation of EXIF, IPTC and XMP image metadata."
 url="http://tilloy.net/dev/pyexiv2"
 arch=('i686' 'x86_64')

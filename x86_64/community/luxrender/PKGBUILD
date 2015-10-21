@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 142372 2015-10-01 16:03:10Z fyan $
+# $Id: PKGBUILD 144598 2015-10-21 21:55:46Z foutrelis $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 # Contributor: flixie <69one@gmx.net>
 # Contributor: Imanol Celaya <ornitorrincos@archlinux-es.org>
 pkgname=luxrender
 pkgver=1.5
 _pkgver=216e294b59e3
-pkgrel=2
+pkgrel=3
 pkgdesc="Rendering system for physically correct, unbiased image synthesis"
 arch=('x86_64')
 url="http://www.luxrender.net/"

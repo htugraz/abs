@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 138104 2015-08-08 03:37:53Z kkeen $
+# $Id: PKGBUILD 144586 2015-10-21 21:55:27Z foutrelis $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Dominik Heidler <dheidler@gmail.com>
 pkgname=gnuradio-iqbal
 _pkgname=gr-iqbal
 pkgver=0.37.2
-pkgrel=10
+pkgrel=11
 pkgdesc="Gnuradio I/Q balancing"
 arch=('i686' 'x86_64')
 url="http://cgit.osmocom.org/gr-iqbal/"

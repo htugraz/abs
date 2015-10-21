@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 144364 2015-10-19 10:51:02Z tredaelli $
+# $Id: PKGBUILD 144623 2015-10-21 21:57:02Z foutrelis $
 # Maintainer: Timothy Redaelli <timothy.redaelli@gmail.com>
 # Contributor: carstene1ns <arch carsten-teibes de> - http://git.io/ctPKG
 # Contributor: Jkkyll Wu <adaptee at gmail [dot] com>
@@ -8,7 +8,7 @@
 
 pkgname=qbittorrent
 pkgver=3.2.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A bittorrent client written in C++ / Qt4 using the good libtorrent library"
 arch=('i686' 'x86_64')
 url="http://www.qbittorrent.org"

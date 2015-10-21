@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 142892 2015-10-03 14:42:47Z jlichtblau $
+# $Id: PKGBUILD 144567 2015-10-21 21:28:52Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Alois Nespor <alois.nespor@gmail.com>
 
 pkgbase=kid3
 pkgname=('kid3' 'kid3-qt')
 pkgver=3.3.0
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 url="http://kid3.sourceforge.net/"
 license=('GPL')
@@ -61,7 +61,7 @@ conflicts=('kid3-qt')
 package_kid3-qt() {
 pkgdesc="An MP3, Ogg/Vorbis and FLAC tag editor, QT version"
 depends=('qt5-multimedia' 'chromaprint' 'id3lib' 'taglib' 'libmp4v2'
-         'kio' 'desktop-file-utils' 'hicolor-icon-theme')
+         'desktop-file-utils' 'hicolor-icon-theme')
 conflicts=('kid3')
 provides=('kid3')
 

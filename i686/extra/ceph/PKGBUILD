@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 246482 2015-09-17 21:01:05Z foutrelis $
+# $Id: PKGBUILD 249612 2015-10-21 22:01:19Z foutrelis $
 # Maintainer: Sébastien "Seblu" Luttringer <seblu@archlinux.org>
 
 pkgname=ceph
 pkgver=0.94.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Distributed, fault-tolerant storage platform delivering object, block, and file system'
 arch=('x86_64' 'i686')
 url='http://ceph.com/'

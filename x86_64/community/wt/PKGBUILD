@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137714 2015-08-02 16:10:18Z fyan $
+# $Id: PKGBUILD 144631 2015-10-21 21:57:23Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Denis Martinez <deuns.martinez@gmail.com>
@@ -6,7 +6,7 @@
 pkgname=wt
 pkgver=3.3.4
 _pkgver=3.3.4
-pkgrel=5
+pkgrel=6
 pkgdesc="a C++ library and application server for developing and deploying web applications"
 arch=('i686' 'x86_64')
 url="http://www.webtoolkit.eu/"
