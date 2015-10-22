@@ -1,18 +1,18 @@
-# $Id: PKGBUILD 142394 2015-10-01 16:03:47Z fyan $
+# $Id: PKGBUILD 144645 2015-10-22 00:08:15Z dwallace $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contributor: Giovanni Scafora <giovanni@archlinux.org>
 
 pkgbase=python-beautifulsoup4
 pkgname=('python2-beautifulsoup4' 'python-beautifulsoup4')
-pkgver=4.4.0
-pkgrel=2
+pkgver=4.4.1
+pkgrel=1
 pkgdesc="A Python HTML/XML parser designed for quick turnaround projects like screen-scraping"
 arch=('any')
 url="http://www.crummy.com/software/BeautifulSoup/index.html"
 license=('PSF')
 makedepends=('python-setuptools' 'python2-setuptools')
 source=("http://www.crummy.com/software/BeautifulSoup/bs4/download/${pkgver%.*}/${pkgbase#*-}-${pkgver}.tar.gz")
-md5sums=('63d1f33e6524f408cb6efbc5da1ae8a5')
+md5sums=('8fbd9a7cac0704645fa20d1419036815')
 
 build() {
   cd "${srcdir}"

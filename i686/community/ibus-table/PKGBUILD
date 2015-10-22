@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 144015 2015-10-15 01:59:59Z fyan $
+# $Id: PKGBUILD 144666 2015-10-22 02:55:26Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: coderoar <coderoar@gmail.com>
 # Contributor: leemars <leemars@gmail.com>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=ibus-table
-pkgver=1.9.7
+pkgver=1.9.8
 pkgrel=1
 pkgdesc='IM Engine framework for table-based input methods, such as ZhengMa, WuBi, ErBi, CangJie and so on'
 arch=('any')
-url="http://code.google.com/p/ibus/"
+url="https://github.com/kaio/ibus-table"
 license=('LGPL')
 makedepends=('git' 'docbook2x' 'docbook-sgml')
 depends=('python-pyenchant' 'ibus' 'aspell-en')
@@ -39,4 +39,3 @@ package() {
 
   make DESTDIR="${pkgdir}" install
 }
-

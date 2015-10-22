@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 121172 2014-10-21 21:53:56Z dwallace $
+# $Id: PKGBUILD 144649 2015-10-22 00:38:16Z dwallace $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 
 pkgname=cloud-init
 pkgver=0.7.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Cloud Bootstrapping Application"
 arch=(any)
 license=("GPL3")
@@ -21,6 +21,7 @@ prepare(){
     find $pkgname-$pkgver -name \*.py -exec sed -i '1s/python$/&2/' {} +
     sed -i '1s/python$/&2/' $pkgname-$pkgver/tools/read*
     sed -i 's:/etc/systemd:/usr/lib/systemd:g' $pkgname-$pkgver/setup.py
+    sed -i 's,name: ubuntu,name: archlinux,;s,gecos: Ubuntu,gecos: Archlinux,' $srcdir/$pkgname-$pkgver/config/cloud.cfg
 }
 
 package() {
