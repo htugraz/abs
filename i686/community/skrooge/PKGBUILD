@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 140100 2015-09-14 18:55:09Z jlichtblau $
+# $Id: PKGBUILD 144862 2015-10-24 08:42:01Z arojas $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Ray Rashif <schiv@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=skrooge
 pkgver=2.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A personal finances manager for KDE"
 arch=('i686' 'x86_64')
 url="http://skrooge.org/"

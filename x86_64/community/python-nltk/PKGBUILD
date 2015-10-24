@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 142488 2015-10-01 16:07:12Z fyan $
+# $Id: PKGBUILD 144921 2015-10-24 16:38:44Z arodseth $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 # Contributor: Chris Baker <baker.chris.3@gmail.com>
 
 pkgbase=python-nltk
 pkgname=('python2-nltk' 'python-nltk')
-pkgver=3.0.4
-pkgrel=2
+pkgver=3.1
+pkgrel=1
 pkgdesc='Natural language processing in Python'
 arch=('any')
 url='http://www.nltk.org/'

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 143801 2015-10-12 20:50:53Z arojas $
+# $Id: PKGBUILD 144940 2015-10-24 18:31:37Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Rémy Oudompheng <oudomphe@clipper.ens.fr>
 # Contributor: Alessandro "jakedust" Andrioni <jakedust@gmail.com>
 
 pkgname=flint
 pkgver=2.5.2
-pkgrel=2
+pkgrel=3
 pkgdesc="A C library for doing number theory"
 arch=(i686 x86_64)
 url="http://www.flintlib.org"
