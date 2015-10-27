@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 247913 2015-09-30 05:15:32Z fyan $
+# $Id: PKGBUILD 249786 2015-10-27 06:58:43Z tpowa $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Thomas Baechler <thomas@archlinux.org>
 
@@ -6,7 +6,7 @@ pkgbase=nvidia-340xx
 pkgname=(nvidia-340xx nvidia-340xx-dkms)
 pkgver=340.93
 _extramodules=extramodules-4.2-ARCH
-pkgrel=3
+pkgrel=4
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"
 makedepends=("nvidia-340xx-libgl=${pkgver}" "nvidia-340xx-utils=${pkgver}" 'linux' 'linux-headers>=4.2' 'linux-headers<4.3')

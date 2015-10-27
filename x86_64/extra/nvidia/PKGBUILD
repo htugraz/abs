@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 247915 2015-09-30 05:17:55Z fyan $
+# $Id: PKGBUILD 249785 2015-10-27 06:58:41Z tpowa $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Thomas Baechler <thomas@archlinux.org>
@@ -7,7 +7,7 @@ pkgbase=nvidia
 pkgname=(nvidia nvidia-dkms)
 pkgver=355.11
 _extramodules=extramodules-4.2-ARCH
-pkgrel=3
+pkgrel=4
 pkgdesc="NVIDIA drivers for linux"
 arch=('i686' 'x86_64')
 url="http://www.nvidia.com/"
