@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 142656 2015-10-01 16:33:52Z spupykin $
+# $Id: PKGBUILD 145248 2015-10-29 11:43:51Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: robb_force <robb_force@holybuffalo.net>
 # Maintainer: JJDaNiMoTh <jjdanimoth@gmail.com>
 
 pkgname=sdlmame
-pkgver=0.166
+pkgver=0.167
 pkgrel=1
 pkgdesc="A port of the popular Multiple Arcade Machine Emulator using SDL with OpenGL support."
 url="http://mamedev.org/"
@@ -17,7 +17,7 @@ source=("mame${pkgver/./}s.zip::http://mamedev.org/downloader.php?file=mame${pkg
 	"sdlmame.sh"
 	"extras.tar.gz"
 	${_patches})
-md5sums=('f67e270fc9b58605098ebff00c1f11d0'
+md5sums=('cb2ab1cac87e6a5187d5c631d58ee3fa'
          '0cced0fe9868cc56129600fb4bd5b9ed'
          '420b61240bf5ae11615ba7c6100ee00d')
 

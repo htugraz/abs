@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 143834 2015-10-13 03:11:43Z fyan $
+# $Id: PKGBUILD 145227 2015-10-29 08:12:48Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Brian Bidulock <bidulock@openss7.org>
 
 pkgname=http-parser
-pkgver=2.5.0
+pkgver=2.6.0
 pkgrel=1
 pkgdesc="Parser for HTTP Request/Response written in C"
 arch=('i686' 'x86_64')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 140574 2015-09-17 20:54:03Z foutrelis $
+# $Id: PKGBUILD 145258 2015-10-29 18:58:39Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: William Giokas <1007380@gmail.com>
 
 pkgname=pypy
-pkgver=2.6.1
-pkgrel=2
+pkgver=4.0.0
+pkgrel=1
 pkgdesc="A Python implementation written in Python, JIT enabled"
 url="http://pypy.org"
 arch=('i686' 'x86_64')
