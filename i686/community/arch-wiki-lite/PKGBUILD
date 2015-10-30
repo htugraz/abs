@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 131300 2015-04-13 16:17:44Z kkeen $
+# $Id: PKGBUILD 145319 2015-10-30 17:56:20Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 pkgname=arch-wiki-lite
-pkgver=20150219
+pkgver=20150813
 _codever=20150413
-pkgrel=2
+pkgrel=1
 pkgdesc="The wiki without html.  1/9 as big, easily searched and viewable on console."
 arch=('any')
 url="http://kmkeen.com/arch-wiki-lite/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 233399 2015-03-12 13:23:03Z ronald $
+# $Id: PKGBUILD 249879 2015-10-30 17:46:51Z anatolik $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: damir <damir@archlinux.org>
 
 pkgname=netcdf
 pkgver=4.3.3.1
-pkgrel=1
+pkgrel=2
 pkgdesc="network Common Data Form interface for array-oriented data access and corresponding library"
 arch=("i686" "x86_64")
 url="http://www.unidata.ucar.edu/downloads/netcdf/index.jsp"

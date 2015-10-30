@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 141585 2015-09-24 23:27:03Z arcanis $
+# $Id: PKGBUILD 145314 2015-10-30 17:46:08Z anatolik $
 # Maintainer: Evgeniy Alekseev <arcanis at archlinux dot org>
 # Contributor: Stefan Husmann <stefan-husmann at t-online dot de>
 # Contributor: Alexander Rødseth <rodseth at gmail dot com>
@@ -6,7 +6,7 @@
 
 pkgname=libmatio
 pkgver=1.5.2
-pkgrel=3
+pkgrel=4
 pkgdesc='C library with a fortran 90/95 module interface for reading/writing MATLAB MAT-files'
 arch=('x86_64' 'i686')
 license=('custom:BSD')

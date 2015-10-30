@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 249751 2015-10-24 18:20:46Z arojas $
+# $Id: PKGBUILD 249884 2015-10-30 21:49:02Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=noto-fonts-emoji

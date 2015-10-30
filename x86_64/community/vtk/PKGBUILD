@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 144373 2015-10-19 15:49:17Z anatolik $
+# $Id: PKGBUILD 145317 2015-10-30 17:46:15Z anatolik $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Andrzej Giniewicz <gginiu@gmail.com>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
@@ -6,7 +6,7 @@
 pkgname=vtk
 pkgver=6.3.0
 _majorver=6.3
-pkgrel=3
+pkgrel=4
 pkgdesc='A software system for 3D computer graphics, image processing, and visualization'
 arch=('i686' 'x86_64')
 url='http://www.vtk.org/'
