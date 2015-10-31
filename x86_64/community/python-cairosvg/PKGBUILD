@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 145256 2015-10-29 13:48:21Z fyan $
+# $Id: PKGBUILD 145343 2015-10-31 05:18:07Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: razer <razer[at]neuf[dot]fr>
 # Contributor: pzl <alsoelp@gmail.com>
@@ -6,7 +6,7 @@
 # Contributor: Simon Sapin <simon dot sapin at exyr dot org>
 
 pkgname=(python-cairosvg python2-cairosvg)
-pkgver=1.0.18
+pkgver=1.0.19
 pkgrel=1
 pkgdesc="A Simple SVG Converter for Cairo"
 arch=('any')
