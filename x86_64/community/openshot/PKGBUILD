@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 137494 2015-07-27 09:57:42Z spupykin $
+# $Id: PKGBUILD 145577 2015-11-02 10:28:51Z alucryd $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Asa Marco <marcoasa90[at]gmail[.]com>
 
 pkgname=openshot
 pkgver=1.4.3
-pkgrel=4
+pkgrel=5
 pkgdesc="an open-source, non-linear video editor for Linux based on MLT framework"
 arch=('any')
 url="http://www.openshotvideo.com/"

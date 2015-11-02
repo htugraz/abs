@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 140656 2015-09-18 07:43:54Z jsteel $
+# $Id: PKGBUILD 145637 2015-11-02 14:01:09Z jsteel $
 # Maintainer: Jonathan Steel <jsteel at archlinux.org>
 # Contributor: Greg Sutcliffe <puppet-aur (at) emeraldreverie (dot) org>
 # Contributor: Hyacinthe Cartiaux <hyacinthe (dot) cartiaux (at) free (dot) fr>
@@ -9,7 +9,7 @@
 # Contributor: Niels Abspoel <aboe76 (at) Gmail (dot) com>
 
 pkgname=puppet
-pkgver=4.2.2
+pkgver=4.2.3
 pkgrel=1
 pkgdesc="Server automation framework and application"
 arch=('any')
@@ -21,7 +21,7 @@ backup=('etc/puppetlabs/puppet/auth.conf'
         'etc/puppetlabs/puppet/puppet.conf')
 install=$pkgname.install
 source=(https://downloads.puppetlabs.com/$pkgname/$pkgname-$pkgver.tar.gz)
-md5sums=('af37da0c7cc25ee3fcfc3914059249df')
+md5sums=('4e58475a5370a91c21397ac54fe427db')
 
 prepare() {
   cd $pkgname-$pkgver

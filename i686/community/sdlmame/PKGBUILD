@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 145248 2015-10-29 11:43:51Z spupykin $
+# $Id: PKGBUILD 145605 2015-11-02 13:06:34Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: robb_force <robb_force@holybuffalo.net>
 # Maintainer: JJDaNiMoTh <jjdanimoth@gmail.com>
 
 pkgname=sdlmame
 pkgver=0.167
-pkgrel=1
+pkgrel=2
 pkgdesc="A port of the popular Multiple Arcade Machine Emulator using SDL with OpenGL support."
 url="http://mamedev.org/"
 license=('custom:MAME License')
@@ -58,7 +58,7 @@ package() {
   done
 
   # Install the extra bits
-  install -d $pkgdir/usr/share/${pkgname}/{artwork,ctrlr,keymaps,shader}
+  install -d $pkgdir/usr/share/${pkgname}/{artwork,ctrlr,hash,keymaps,shader}
   install -d $pkgdir/usr/share/man/man1
   install -d $pkgdir/usr/share/man/man6
   install -m644 src/osd/modules/opengl/shader/glsl*.*h $pkgdir/usr/share/${pkgname}/shader/
@@ -68,6 +68,7 @@ package() {
   install -m644 $srcdir/artwork/* $pkgdir/usr/share/${pkgname}/artwork/
   install -m644 $srcdir/ctrlr/* $pkgdir/usr/share/${pkgname}/ctrlr/
   install -m644 src/osd/sdl/keymaps/* $pkgdir/usr/share/${pkgname}/keymaps/
+  install -m644 $srcdir/hash/* $pkgdir/usr/share/${pkgname}/hash/
 
   # Include the license
   install -Dm644 docs/mamelicense.txt $pkgdir/usr/share/licenses/${pkgname}/license.txt

@@ -1,7 +1,7 @@
-# $Id: PKGBUILD 136744 2015-07-12 21:15:29Z thestinger $
+# $Id: PKGBUILD 145499 2015-11-02 02:10:50Z thestinger $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 pkgname=playpen
-pkgver=11
+pkgver=12
 pkgrel=1
 epoch=1
 pkgdesc='A secure application sandbox using namespaces, cgroups and seccomp'
