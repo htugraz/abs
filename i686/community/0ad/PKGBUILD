@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 144568 2015-10-21 21:55:01Z foutrelis $
+# $Id: PKGBUILD 145811 2015-11-03 15:31:52Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: t3ddy  <t3ddy1988 "at" gmail {dot} com>
 # Contributor: AdriÃ¡n Chaves FernÃ¡ndez (Gallaecio) <adriyetichaves@gmail.com>
 pkgname=0ad
 pkgver=a18
 _pkgver=0.0.18-alpha
-pkgrel=7
+pkgrel=8
 pkgdesc="Cross-platform, 3D and historically-based real-time strategy game"
 arch=('i686' 'x86_64')
 url="http://play0ad.com/"

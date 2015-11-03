@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 142477 2015-10-01 16:06:51Z fyan $
+# $Id: PKGBUILD 145787 2015-11-03 14:04:06Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
 # Contributor: Andrew Antle <andrew dot antle at gmail dot com>
@@ -8,15 +8,15 @@
 pkgbase=python-markdown
 pkgname=('python-markdown' 'python2-markdown')
 _pkgbasename=Markdown
-pkgver=2.6.2
-pkgrel=2
+pkgver=2.6.3
+pkgrel=1
 pkgdesc="Python implementation of John Gruber's Markdown."
 arch=('any')
 url='http://pypi.python.org/pypi/Markdown'
 license=('BSD')
 makedepends=('python' 'python2')
 source=("http://pypi.python.org/packages/source/M/$_pkgbasename/$_pkgbasename-$pkgver.tar.gz")
-md5sums=('256d19afcc564dc4ce4c229bb762f7ae')
+md5sums=('4a05b6da0908ebda635eb29c56e8a581')
 
 build() {
   # bug in 2.4, some DOS line endings slipped in

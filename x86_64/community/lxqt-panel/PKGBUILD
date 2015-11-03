@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 145671 2015-11-02 16:01:09Z jleclanche $
+# $Id: PKGBUILD 145783 2015-11-03 12:42:45Z jleclanche $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=lxqt-panel
 pkgver=0.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc="The LXQt desktop panel"
 arch=("i686" "x86_64")
 groups=("lxqt")

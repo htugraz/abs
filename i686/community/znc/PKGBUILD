@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 142646 2015-10-01 16:11:04Z fyan $
+# $Id: PKGBUILD 145835 2015-11-03 15:32:33Z foutrelis $
 # Maintainer: Sébastien Luttringer
 # Contributor: Kaiting Chen <kaitocracy@gmail.com>
 # Contributor: mickael9 <mickael9 at gmail dot com>
 
 pkgname=znc
 pkgver=1.6.1
-pkgrel=2
+pkgrel=3
 pkgdesc='An IRC bouncer with modules & scripts support'
 url='http://en.znc.in/wiki/index.php/ZNC'
 license=('GPL2')

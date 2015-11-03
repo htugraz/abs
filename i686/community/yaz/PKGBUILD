@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 131707 2015-04-19 11:30:14Z andyrtr $
+# $Id: PKGBUILD 145834 2015-11-03 15:32:32Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Ray Rashif <schiv@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -8,7 +8,7 @@
 
 pkgname=yaz
 pkgver=5.7.2
-pkgrel=3
+pkgrel=4
 pkgdesc="A toolkit supporting the development of Z39.50/SRW/SRU clients and servers"
 arch=('i686' 'x86_64')
 url="http://www.indexdata.dk/yaz"

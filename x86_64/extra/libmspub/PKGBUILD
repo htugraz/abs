@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 235951 2015-04-09 18:55:31Z heftig $
+# $Id: PKGBUILD 250073 2015-11-03 15:34:52Z foutrelis $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Contributor: Simone Sclavi 'Ito' <darkhado@gmail.com>
 
 pkgname=libmspub
 pkgver=0.1.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Microsoft Publisher file format parser library (latest snapshot)"
 arch=('i686' 'x86_64')
 url="https://wiki.documentfoundation.org/DLP/Libraries/libmspub"

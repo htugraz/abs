@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 248859 2015-10-10 12:22:38Z andyrtr $
+# $Id: PKGBUILD 250074 2015-11-03 15:34:54Z foutrelis $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 
@@ -6,7 +6,7 @@ pkgbase=libreoffice-fresh
 pkgname=('libreoffice-fresh-sdk' 'libreoffice-fresh')
 _LOver=5.0.2.2
 pkgver=5.0.2
-pkgrel=3
+pkgrel=4
 arch=('i686' 'x86_64')
 license=('LGPL3')
 url="http://www.libreoffice.org/"

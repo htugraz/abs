@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 248933 2015-10-12 17:24:49Z heftig $
+# $Id: PKGBUILD 250066 2015-11-03 15:34:36Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=evolution-data-server
 pkgver=3.18.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Centralized access to appointments and contacts"
 arch=(i686 x86_64)
 depends=(gnome-online-accounts nss krb5 libgweather libical db libgdata)

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 248662 2015-10-08 19:53:28Z heftig $
+# $Id: PKGBUILD 250086 2015-11-03 15:35:22Z foutrelis $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
@@ -6,7 +6,7 @@
 pkgbase=tracker
 pkgname=(tracker libtracker-sparql)
 pkgver=1.6.0
-pkgrel=1
+pkgrel=2
 pkgdesc="All-in-one indexer, search tool and metadata database"
 arch=(i686 x86_64)
 license=(GPL)

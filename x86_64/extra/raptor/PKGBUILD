@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 235957 2015-04-09 18:55:41Z heftig $
+# $Id: PKGBUILD 250083 2015-11-03 15:35:13Z foutrelis $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor: Andreas Radke <andyrtr@archlinux.org>
 # Contributor: eric <eric@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=raptor
 pkgver=2.0.15
-pkgrel=2
+pkgrel=3
 pkgdesc="A C library that parses RDF/XML/N-Triples into RDF triples"
 arch=('i686' 'x86_64')
 url="http://librdf.org/raptor"

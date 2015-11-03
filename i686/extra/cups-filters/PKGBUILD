@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 249805 2015-10-27 19:13:04Z andyrtr $
+# $Id: PKGBUILD 250063 2015-11-03 15:34:32Z foutrelis $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=cups-filters
 pkgver=1.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="OpenPrinting CUPS Filters"
 arch=('i686' 'x86_64')
 url="http://www.linuxfoundation.org/collaborate/workgroups/openprinting"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 248266 2015-10-02 13:15:39Z foutrelis $
+# $Id: PKGBUILD 250075 2015-11-03 15:34:56Z foutrelis $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 
@@ -6,7 +6,7 @@ pkgbase=libreoffice-still
 pkgname=('libreoffice-still-sdk' 'libreoffice-still')
 _LOver=4.4.5.2
 pkgver=4.4.5
-pkgrel=4
+pkgrel=5
 arch=('i686' 'x86_64')
 license=('LGPL3')
 url="http://www.libreoffice.org/"
@@ -189,6 +189,7 @@ build() {
 		--prefix=/usr --exec-prefix=/usr --sysconfdir=/etc \
 		--libdir=/usr/lib --mandir=/usr/share/man \
 		--with-lang="" \
+		--with-help \
 		--enable-crashdump \
 		--disable-avahi \
 		--enable-dbus \
