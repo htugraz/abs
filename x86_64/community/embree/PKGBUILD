@@ -1,7 +1,7 @@
-# $Id: PKGBUILD 138965 2015-08-30 06:40:44Z stativ $
+# $Id: PKGBUILD 146001 2015-11-04 18:21:06Z stativ $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname=embree
-pkgver=2.6.2
+pkgver=2.7.1
 pkgrel=1
 pkgdesc="A collection of high-performance ray tracing kernels"
 arch=('x86_64')
@@ -10,7 +10,7 @@ license=('Apache')
 depends=('intel-tbb')
 makedepends=('cmake' 'ispc' 'openexr')
 source=("$pkgname-${pkgver}.tar.gz::http://github.com/embree/embree/archive/v${pkgver}.tar.gz")
-md5sums=('34ea979a1a8105a895cd97cf2b7be223')
+md5sums=('059ed1e41af564ed7661e817433a38b3')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"
