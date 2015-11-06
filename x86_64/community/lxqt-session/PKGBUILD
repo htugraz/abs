@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 145661 2015-11-02 15:17:28Z jleclanche $
+# $Id: PKGBUILD 146278 2015-11-06 10:16:17Z jleclanche $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=lxqt-session
 pkgver=0.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc="The LXQt session"
 arch=("i686" "x86_64")
 groups=("lxqt")
@@ -17,8 +17,8 @@ optdepends=(
 )
 makedepends=("cmake" "qt5-tools")
 source=(
-	"http://downloads.lxqt.org/lxqt/$pkgver/$pkgname-$pkgver.tar.xz"
-	"http://downloads.lxqt.org/lxqt/$pkgver/$pkgname-$pkgver.tar.xz.asc"
+	"https://downloads.lxqt.org/lxqt/$pkgver/$pkgname-$pkgver.tar.xz"
+	"https://downloads.lxqt.org/lxqt/$pkgver/$pkgname-$pkgver.tar.xz.asc"
 )
 sha256sums=(
 	"2aedbeef904c11679199bfcdbf141880082c4bbcbcdad2b89b47d5b833fe26d4"

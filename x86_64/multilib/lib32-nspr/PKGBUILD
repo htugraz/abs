@@ -1,11 +1,11 @@
-#$Id: PKGBUILD 142875 2015-10-03 13:22:40Z fyan $
+#$Id: PKGBUILD 146254 2015-11-06 03:39:27Z fyan $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contributor: kfgz <kfgz at interia pl>
 # Contributor: Ionut Biru <ibiru at archlinux dot org>
 
 _pkgbasename=nspr
 pkgname=lib32-${_pkgbasename}
-pkgver=4.10.9
+pkgver=4.10.10
 pkgrel=1
 pkgdesc="Netscape Portable Runtime (32-bit)"
 arch=('x86_64')
@@ -15,8 +15,8 @@ license=('MPL' 'GPL')
 depends=('lib32-glibc' ${_pkgbasename})
 makedepends=('zip' 'gcc-multilib')
 options=(!emptydirs)
-source=(http://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v${pkgver}/src/${_pkgbasename}-${pkgver}.tar.gz)
-md5sums=('86769a7fc3b4c30f7fdcb45ab284c452')
+source=(https://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v${pkgver}/src/${_pkgbasename}-${pkgver}.tar.gz)
+md5sums=('cf43d04668ab20f12cd0b5fa24315354')
 
 build() {
   cd "${srcdir}"/${_pkgbasename}-${pkgver}

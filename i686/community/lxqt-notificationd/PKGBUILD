@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 145651 2015-11-02 14:41:02Z jleclanche $
+# $Id: PKGBUILD 146325 2015-11-06 17:57:50Z jleclanche $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=lxqt-notificationd
 pkgver=0.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc="LXQt notification daemon and library."
 arch=("i686" "x86_64")
 groups=("lxqt")
@@ -12,8 +12,8 @@ license=("LGPL2.1")
 depends=("lxqt-common" "liblxqt")
 makedepends=("cmake" "qt5-tools")
 source=(
-	"http://downloads.lxqt.org/lxqt/$pkgver/$pkgname-$pkgver.tar.xz"
-	"http://downloads.lxqt.org/lxqt/$pkgver/$pkgname-$pkgver.tar.xz.asc"
+	"https://downloads.lxqt.org/lxqt/$pkgver/$pkgname-$pkgver.tar.xz"
+	"https://downloads.lxqt.org/lxqt/$pkgver/$pkgname-$pkgver.tar.xz.asc"
 )
 sha256sums=(
 	"5c0859157ff6a20d613ea4aca24e786faf79ab6d69afec1e0b3671e3bbda53d5"

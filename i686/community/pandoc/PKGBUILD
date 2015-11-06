@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 145891 2015-11-04 03:02:18Z fyan $
+# $Id: PKGBUILD 146304 2015-11-06 13:55:03Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 pkgname=pandoc
 pkgver=1.15.1.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Conversion between markup formats"
 url="http://pandoc.org"
 license=("GPL")

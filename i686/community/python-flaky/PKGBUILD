@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 145218 2015-10-29 05:25:14Z fyan $
+# $Id: PKGBUILD 146244 2015-11-06 02:02:12Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-flaky
 pkgname=('python-flaky' 'python2-flaky')
 _pypiname=flaky
-pkgver=2.4.0
+pkgver=2.4.1
 pkgrel=1
 pkgdesc='Plugin for nose or py.test that automatically reruns flaky tests'
 arch=('any')

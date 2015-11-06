@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 145794 2015-11-03 14:28:03Z fyan $
+# $Id: PKGBUILD 146284 2015-11-06 11:13:13Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Chris Warrick <aur@chriswarrick.com>
 
 pkgbase=python-pygal
 pkgname=('python-pygal' 'python2-pygal')
 epoch=1
-pkgver=2.0.9
+pkgver=2.0.10
 pkgrel=1
 pkgdesc='A Python SVG graph plotting library'
 arch=('any')

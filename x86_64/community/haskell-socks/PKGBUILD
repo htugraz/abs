@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 143781 2015-10-12 15:29:00Z fyan $
+# $Id: PKGBUILD 146300 2015-11-06 13:54:59Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=socks
 pkgname=haskell-socks
 pkgver=0.5.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Socks proxy (version 5) implementation."
 url="http://github.com/vincenthz/hs-socks"
 license=("custom:BSD3")
