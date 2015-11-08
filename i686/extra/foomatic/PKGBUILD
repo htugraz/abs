@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 245288 2015-09-04 17:03:04Z andyrtr $
+# $Id: PKGBUILD 250211 2015-11-08 15:34:12Z andyrtr $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgbase="foomatic"
 pkgname=('foomatic-db' 'foomatic-db-engine' 'foomatic-db-nonfree')
 arch=('any')
-pkgver=20150904
+pkgver=20151108
 pkgrel=1
 epoch=3
 
@@ -16,7 +16,7 @@ options=('!emptydirs')
 # for latest commits and development, identical to foomatic-4.0 branch
 
 source=(foomatic-db-engine::bzr+http://bzr.linuxfoundation.org/openprinting/foomatic/foomatic-db-engine/#revision=371       #2015-06-16
-        foomatic-db::bzr+http://bzr.linuxfoundation.org/openprinting/foomatic/foomatic-db/#revision=1284                    #2015-06-05
+        foomatic-db::bzr+http://bzr.linuxfoundation.org/openprinting/foomatic/foomatic-db/#revision=1288                    #2015-06-05
         foomatic-db-nonfree::bzr+http://bzr.linuxfoundation.org/openprinting/foomatic/foomatic-db-nonfree/#revision=41      #2015-06-05
 )
 md5sums=('SKIP'
