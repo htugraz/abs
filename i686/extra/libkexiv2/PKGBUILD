@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 248969 2015-10-13 06:51:59Z arojas $
+# $Id: PKGBUILD 250292 2015-11-09 21:16:31Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkexiv2
-pkgver=15.08.2
+pkgver=15.08.3
 pkgrel=1
 pkgdesc="A library to manipulate pictures metadata"
 url="https://projects.kde.org/projects/kde/kdegraphics/libs/libkexiv2"
@@ -14,7 +14,7 @@ makedepends=('cmake' 'automoc4')
 replaces=('kdegraphics-libs')
 conflicts=('kdegraphics-libs')
 source=("http://download.kde.org/stable/applications/${pkgver}/src/${pkgname}-${pkgver}.tar.xz")
-sha1sums=('cdf5e4fd680822b0bcd0b3955fbd74568b3b32d3')
+sha1sums=('09adf7887dc644431a6930ba645162707c16bb3d')
 
 build() {
   cd "${srcdir}"

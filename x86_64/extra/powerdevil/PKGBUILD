@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 248403 2015-10-06 06:50:40Z arojas $
+# $Id: PKGBUILD 250268 2015-11-09 20:02:42Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
 
 pkgname=powerdevil
-pkgver=5.4.2
+pkgver=5.4.3
 pkgrel=1
 pkgdesc='Manages the power consumption settings of a Plasma Shell'
 arch=('i686' 'x86_64')
@@ -15,7 +15,7 @@ makedepends=('extra-cmake-modules' 'kdoctools' 'python')
 conflicts=('kdebase-workspace')
 groups=('plasma')
 source=("http://download.kde.org/stable/plasma/${pkgver}/$pkgname-$pkgver.tar.xz")
-md5sums=('44dec41f77080fd83f2122fc2762f09a')
+md5sums=('ececfa667b9ae32497865f7f4b4ae105')
 
 prepare() {
   mkdir build

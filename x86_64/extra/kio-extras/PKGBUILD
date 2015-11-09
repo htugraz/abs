@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 249123 2015-10-13 07:50:25Z arojas $
+# $Id: PKGBUILD 250435 2015-11-09 22:07:37Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kio-extras
-pkgver=15.08.2
+pkgver=15.08.3
 pkgrel=1
 pkgdesc="Additional components to increase the functionality of KIO"
 arch=(i686 x86_64)
@@ -15,7 +15,7 @@ makedepends=(extra-cmake-modules kdoctools)
 groups=(kde-applications kdenetwork)
 install=$pkgname.install
 source=("http://download.kde.org/stable/applications/$pkgver/src/$pkgname-$pkgver.tar.xz")
-md5sums=('e4f8104669785b3651f30cecbd4ec2b0')
+md5sums=('dec5984045d2da1bfc2f7e72338746bc')
 
 prepare() {
   mkdir -p build

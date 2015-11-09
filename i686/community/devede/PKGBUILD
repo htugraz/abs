@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 145201 2015-10-28 16:15:52Z spupykin $
+# $Id: PKGBUILD 146412 2015-11-09 01:54:48Z bgyorgy $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Javier 'Phrodo_00' Aravena <phrodo.00@gmail.com>
@@ -6,21 +6,22 @@
 
 pkgname=devede
 pkgver=4.3
-pkgrel=2
+pkgrel=3
 pkgdesc="A program to create VideoDVDs and CDs"
 arch=('any')
 url="http://www.rastersoft.com/programas/devede.html"
 license=('GPL3')
 depends=('mplayer' 'mencoder' 'ffmpeg' 'dvdauthor' 'vcdimager'
 	 'cdrkit' 'ttf-dejavu'
-	 'python-dbus' 'python-cairo' 'python-setuptools' 'python-gobject'
-	 'python-pip')
-source=($pkgname-$pkgver.tar.gz::https://github.com/rastersoft/devedeng/archive/$pkgver.tar.gz)
-md5sums=('57e466a0cbe7aeeb864dc9c4051343e3')
+	 'gtk3' 'python-cairo' 'python-gobject' 'python-setuptools')
+source=($pkgname-$pkgver.tar.gz::https://github.com/rastersoft/devedeng/archive/$pkgver.tar.gz
+        help.patch)
+md5sums=('57e466a0cbe7aeeb864dc9c4051343e3'
+         '91c510680c6809367e0a318ec2777c54')
 
 prepare() {
   cd ${srcdir}/${pkgname}ng-$pkgver
-  sed -i 's/import devedeng.help//' src/devedeng/project.py 
+  patch -Np1 -i ${srcdir}/help.patch
 }
 
 package() {

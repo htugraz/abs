@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 249093 2015-10-13 07:40:36Z arojas $
+# $Id: PKGBUILD 250409 2015-11-09 21:58:24Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-kolourpaint
-pkgver=15.08.2
+pkgver=15.08.3
 pkgrel=1
 pkgdesc="Paint Program"
 url="http://kde.org/applications/graphics/kolourpaint/"
@@ -14,7 +14,7 @@ depends=('kdebase-runtime' 'qimageblitz')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/stable/applications/${pkgver}/src/kolourpaint-${pkgver}.tar.xz")
-sha1sums=('a63ebf38996756c3bf00732a6071264cf480838f')
+sha1sums=('3b4ff9f98a15a6aaf5ccff885e2637804ddb388c')
 
 build() {
   cd "${srcdir}"

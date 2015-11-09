@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 129707 2015-03-21 17:27:59Z bgyorgy $
+# $Id: PKGBUILD 146428 2015-11-09 14:40:48Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 # Contributor: Madek <gonzaloseguel@gmail.com>
 # Contributor: Marcelo Cavalcante <marcelo@marcelocavalcante.net>
@@ -7,24 +7,32 @@
 
 pkgbase=smuxi
 pkgname=('smuxi-server' 'smuxi')
-pkgver=0.11.1
-pkgrel=1
+pkgver=1.0
+pkgrel=2
 pkgdesc="User-friendly and cross-platform IRC client for sophisticated users for GNOME/GTK+"
 arch=('any')
 url="https://smuxi.im/"
 license=('GPL')
 makedepends=('notify-sharp' 'log4net' 'nini' 'gtkspell' 'stfl' 'intltool')
 options=('!emptydirs')
-source=(https://smuxi.im/jaws/data/files/$pkgbase-$pkgver.tar.gz)
-md5sums=('c61d34f6811b8aee6bd24395178a7f2a')
+source=(https://smuxi.im/jaws/data/files/$pkgbase-$pkgver.tar.gz
+        boehm.patch)
+md5sums=('8568485702e032d10a70b13a869400a2'
+         '2b2c372e2c128196083e639a9b91c2f6')
+
+prepare() {
+  cd "$srcdir/$pkgbase-$pkgver"
+
+  # Revert broken commit
+  patch -RNp1 -i ../boehm.patch
+}
 
 build() {
   cd "$srcdir/$pkgbase-$pkgver"
 
   ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
               --enable-frontend-stfl \
-              --with-vendor-package-version="Arch Linux $pkgver-$pkgrel" \
-              MCS=/usr/bin/dmcs
+              --with-vendor-package-version="Arch Linux $pkgver-$pkgrel"
   LANG=C make
 }
 
@@ -41,7 +49,7 @@ package_smuxi-server() {
   mv "$pkgdir"/usr/bin/smuxi-frontend-{gnome,stfl} \
      "$pkgdir"/usr/lib/pkgconfig/smuxi-frontend.pc \
      "$pkgdir"/usr/lib/smuxi/smuxi-frontend* \
-     "$pkgdir"/usr/share/{applications,icons} \
+     "$pkgdir"/usr/share/{appdata,applications,icons} \
      "$pkgdir"/usr/share/man/man1/smuxi-frontend* \
      "$srcdir/frontend/"
 }
@@ -57,5 +65,5 @@ package_smuxi() {
   mv smuxi-frontend.pc "$pkgdir/usr/lib/pkgconfig"
   mv smuxi-frontend*.1 "$pkgdir/usr/share/man/man1"
   mv smuxi-frontend* "$pkgdir/usr/lib/smuxi"
-  mv {applications,icons} "$pkgdir/usr/share"
+  mv {appdata,applications,icons} "$pkgdir/usr/share"
 }
