@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 133606 2015-05-16 16:24:08Z anatolik $
+# $Id: PKGBUILD 146508 2015-11-10 15:09:17Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
@@ -6,8 +6,8 @@
 # Contributor: Douglas Soares de Andrade <douglas@archlinux.org>
 
 pkgname=wesnoth-data
-pkgver=1.12.2
-pkgrel=2
+pkgver=1.12.5
+pkgrel=1
 pkgdesc="A turn-based strategy game on a fantasy world (data files)"
 arch=('any')
 license=('GPL')
