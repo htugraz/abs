@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 237867 2015-04-21 08:33:00Z foutrelis $
+# $Id: PKGBUILD 250767 2015-11-11 22:07:52Z foutrelis $
 
 pkgname=gd
 pkgver=2.1.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Library for the dynamic creation of images by programmers"
 arch=('i686' 'x86_64')
 url="http://www.libgd.org/"

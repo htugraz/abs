@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 246545 2015-09-17 21:02:40Z foutrelis $
+# $Id: PKGBUILD 250776 2015-11-11 22:08:09Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=xine-lib
 pkgver=1.2.6
-pkgrel=6
+pkgrel=7
 pkgdesc="A multimedia playback engine"
 arch=('i686' 'x86_64')
 url="http://www.xine-project.org"

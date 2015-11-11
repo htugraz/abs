@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 249872 2015-10-30 16:41:59Z heftig $
+# $Id: PKGBUILD 250769 2015-11-11 22:07:55Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gst-plugins-good
 pkgver=1.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc="GStreamer Multimedia Framework Good Plugins"
 arch=('i686' 'x86_64')
 license=('LGPL')

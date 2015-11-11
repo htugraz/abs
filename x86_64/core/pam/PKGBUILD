@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 243778 2015-08-16 07:14:57Z bisson $
+# $Id: PKGBUILD 250664 2015-11-11 08:11:32Z andyrtr $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
 
 pkgname=pam
 pkgver=1.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="PAM (Pluggable Authentication Modules) library"
 arch=('i686' 'x86_64')
 license=('GPL2')

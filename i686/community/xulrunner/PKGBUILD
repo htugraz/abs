@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 145833 2015-11-03 15:32:30Z foutrelis $
+# $Id: PKGBUILD 146617 2015-11-11 22:06:42Z foutrelis $
 # Maintainer: Connor Behan <connor.behan@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 # Contributor: Alexander Baldeck <alexander@archlinux.org>
 
 pkgname=xulrunner
 pkgver=41.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Mozilla Runtime Environment"
 arch=('i686' 'x86_64')
 license=('MPL' 'GPL' 'LGPL')

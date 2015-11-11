@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 144325 2015-10-18 10:58:37Z arojas $
+# $Id: PKGBUILD 146593 2015-11-11 15:30:27Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Oliver Sherouse <oliver DOT sherouse AT gmail DOT com>
 # Contributor: David Scholl <djscholl@gmail.com> 
@@ -6,7 +6,7 @@
 
 pkgbase=python-rpy2
 pkgname=(python2-rpy2 python-rpy2)
-pkgver=2.7.2
+pkgver=2.7.4
 pkgrel=1
 pkgdesc="A very simple, yet robust, Python interface to the R Programming Language."
 arch=(i686 x86_64)
@@ -14,7 +14,7 @@ url="http://rpy.sourceforge.net/"
 license=(MPL GPL LGPL)
 makedepends=(python-setuptools python2-setuptools python-numpy python2-numpy r)
 source=("http://pypi.python.org/packages/source/r/rpy2/rpy2-$pkgver.tar.gz")
-md5sums=('6503f4afda56f5f5182c2839a9ce12e9')
+md5sums=('62e6037388078a3bcf47642771e043ef')
 
 prepare() {
   cd rpy2-$pkgver

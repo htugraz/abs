@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 145988 2015-11-04 16:34:42Z arojas $
+# $Id: PKGBUILD 146579 2015-11-11 13:17:42Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Stefan Husmann <stefan-husmann@t-online.de>
 # Contributor: thacrazze <thacrazze|googlemail|com>
 
 pkgname=clipgrab
-pkgver=3.5.2
+pkgver=3.5.4
 pkgrel=1
 pkgdesc='A video downloader and converter for YouTube, Veoh, DailyMotion, MyVideo, ...'
 arch=(i686 x86_64)
@@ -14,7 +14,7 @@ depends=(qtwebkit)
 optdepends=('ffmpeg: for the conversion functionality')
 source=(http://download.clipgrab.de/$pkgname-$pkgver.tar.gz
         $pkgname.desktop)
-md5sums=('ed961d6bb647fc77fec7c48df9abb7c5'
+md5sums=('49102d66c052f62af12ec993518f8387'
          '9a141791f6952917c441050c3dac81ce')
 
 build() {

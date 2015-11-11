@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 145847 2015-11-03 15:53:13Z spupykin $
+# $Id: PKGBUILD 146612 2015-11-11 22:06:30Z foutrelis $
 # Maintainer:
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=mediastreamer
 pkgver=2.12.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A library written in C that allows you to create and run audio and video streams"
 arch=('i686' 'x86_64')
 url="http://www.linphone.org/"
