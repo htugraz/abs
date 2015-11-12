@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 249417 2015-10-15 22:12:29Z heftig $
+# $Id: PKGBUILD 250820 2015-11-12 21:02:27Z heftig $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Michael Kanis <mkanis_at_gmx_dot_de>
 
 pkgname=mutter
-pkgver=3.18.1
+pkgver=3.18.2
 pkgrel=1
 pkgdesc="A window manager for GNOME"
 arch=(i686 x86_64)
@@ -18,7 +18,7 @@ groups=('gnome')
 options=('!emptydirs')
 install=mutter.install
 source=(http://ftp.gnome.org/pub/gnome/sources/$pkgname/${pkgver:0:4}/$pkgname-$pkgver.tar.xz)
-sha256sums=('4fdee7c9dc2db3a48f18723f47c3122aa5bddaddb8751701ce243e577e2a69a9')
+sha256sums=('8a69326f216c7575ed6cd53938b9cfc49b3b359cde95d3b6a7ed46c837261181')
 
 prepare() {
   cd "$pkgname-$pkgver"

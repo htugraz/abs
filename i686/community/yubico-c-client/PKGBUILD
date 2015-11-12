@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 134543 2015-06-02 13:43:06Z eworm $
+# $Id: PKGBUILD 146641 2015-11-12 09:09:29Z eworm $
 # Maintainer: Christian Hesse <mail@eworm.de>
 
 pkgname=yubico-c-client
-pkgver=2.14
-pkgrel=2
+pkgver=2.15
+pkgrel=1
 pkgdesc='Yubico YubiKey client C library'
 arch=('i686' 'x86_64')
 url='https://github.com/Yubico/yubico-c-client'
