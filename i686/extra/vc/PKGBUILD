@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 250038 2015-11-02 22:34:54Z arojas $
+# $Id: PKGBUILD 251022 2015-11-13 20:51:14Z arojas $
 # Maintainer:
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: PedsXing <pedsxing at gmx dot net>
 
 pkgname=vc
 pkgver=0.7.5
-pkgrel=1
+pkgrel=2
 pkgdesc="A library to ease explicit vectorization of C++ code"
 url='http://code.compeng.uni-frankfurt.de/projects/vc/'
 arch=(x86_64 i686)
@@ -22,14 +22,15 @@ build() {
   cd build
   cmake ../Vc-$pkgver \
     -DCMAKE_INSTALL_PREFIX=/usr \
-    -DCMAKE_BUILD_TYPE=Release
+    -DCMAKE_BUILD_TYPE=Release \
+    -DTARGET_ARCHITECTURE=generic
   make
 }
 
-check() {
-  cd build
-  make test
-}
+#check() {
+#  cd build
+#  make test
+#}
 
 package() {
   cd build

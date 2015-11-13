@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 142579 2015-10-01 16:09:25Z fyan $
+# $Id: PKGBUILD 146661 2015-11-13 02:05:51Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Hugo Osvaldo Barrera <hugo@barrera.io>
 
 pkgbase=python-setuptools_scm
 pkgname=(python-setuptools_scm python2-setuptools_scm)
 _pkgname=setuptools_scm
-pkgver=1.8.0
-pkgrel=2
+pkgver=1.9.0
+pkgrel=1
 pkgdesc="Handles managing your python package versions in scm metadata."
 arch=('any')
 url="https://github.com/pypa/setuptools_scm"
