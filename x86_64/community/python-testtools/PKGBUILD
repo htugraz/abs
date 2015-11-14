@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 145765 2015-11-03 09:09:49Z fyan $
+# $Id: PKGBUILD 146759 2015-11-14 02:38:13Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-testtools
 pkgname=('python-testtools' 'python2-testtools')
-pkgver=1.8.0
-pkgrel=2
+pkgver=1.8.1
+pkgrel=1
 pkgdesc="Extensions to the Python standard library unit testing framework"
 arch=('any')
 license=('MIT')

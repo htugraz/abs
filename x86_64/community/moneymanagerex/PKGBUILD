@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 146007 2015-11-04 19:24:36Z jlichtblau $
+# $Id: PKGBUILD 146828 2015-11-14 19:16:46Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: TDY <tdy@gmx.com>
 
 pkgname=moneymanagerex
 pkgver=1.2.3
-pkgrel=1
+pkgrel=2
 pkgdesc="An easy-to-use personal finance suite"
 arch=('i686' 'x86_64')
 url="http://www.moneymanagerex.org/"
 license=('GPL')
-depends=('wxsqlite3' 'webkitgtk2' 'hicolor-icon-theme')
+depends=('wxgtk' 'webkitgtk2' 'hicolor-icon-theme')
 makedepends=('git' 'boost' 'gettext')
 optdepends=('cups: for printing support')
 replaces=('mmex')

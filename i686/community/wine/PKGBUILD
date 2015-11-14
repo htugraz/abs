@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 146727 2015-11-13 16:29:45Z fyan $
+# $Id: PKGBUILD 146757 2015-11-14 02:36:21Z fyan $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Jan "heftig" Steffens <jan.steffens@gmail.com>
 # Contributor: Eduardo Romero <eduardo@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=wine
 pkgver=1.7.55
-pkgrel=1
+pkgrel=2
 
 _pkgbasever=${pkgver/rc/-rc}
 
@@ -54,6 +54,7 @@ makedepends=(autoconf ncurses bison perl fontforge flex
   mpg123          lib32-mpg123
   openal          lib32-openal
   v4l-utils       lib32-v4l-utils
+  libpulse        lib32-libpulse
   alsa-lib        lib32-alsa-lib
   libxcomposite   lib32-libxcomposite
   mesa            lib32-mesa

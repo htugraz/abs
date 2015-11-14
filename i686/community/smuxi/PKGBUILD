@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 146428 2015-11-09 14:40:48Z bgyorgy $
+# $Id: PKGBUILD 146782 2015-11-14 07:43:44Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 # Contributor: Madek <gonzaloseguel@gmail.com>
 # Contributor: Marcelo Cavalcante <marcelo@marcelocavalcante.net>
@@ -8,7 +8,7 @@
 pkgbase=smuxi
 pkgname=('smuxi-server' 'smuxi')
 pkgver=1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="User-friendly and cross-platform IRC client for sophisticated users for GNOME/GTK+"
 arch=('any')
 url="https://smuxi.im/"

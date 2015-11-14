@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 101779 2013-11-30 21:44:20Z bgyorgy $
+# $Id: PKGBUILD 146780 2015-11-14 07:41:06Z bgyorgy $
 # Maintainer: Balló György <ballogyor+arch at gmail dot com>
 # Contributor: Frane Bandov <frane@offbyte.com>
 # Contributor: Thijs Vermeir <thijsvermeir@gmail.com>
 
 pkgname=log4net
-pkgver=1.2.13
+pkgver=1.2.14
 pkgrel=1
 pkgdesc="A tool to help the programmer output log statements to a variety of output targets"
 arch=('any')
@@ -13,7 +13,7 @@ license=('Apache')
 depends=('mono')
 source=(http://www.apache.org/dist/logging/$pkgname/source/$pkgname-$pkgver-src.zip
         $pkgname.pc)
-md5sums=('4f9e22144b2a4dd9c2894f2ce907f3fb'
+md5sums=('74b6862f67bbd08f064e01398df65f75'
          'a292da72afbd6bd705e02f4ddb564fd7')
 
 prepare() {
