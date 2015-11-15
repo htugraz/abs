@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 246256 2015-09-14 23:10:34Z foutrelis $
+# $Id: PKGBUILD 251075 2015-11-14 23:22:42Z remy $
 # Maintainer: Firmicus <firmicus āt gmx dōt net>
 # Maintainer: Rémy Oudompheng <remy@archlinux.org>
 
 pkgname=texlive-langcyrillic
-pkgver=2015.37233
+pkgver=2015.38162
 _revnr=${pkgver#2015.}
 pkgrel=1
 pkgdesc="TeX Live - Fonts and macro packages to typeset Cyrillic texts"
@@ -15,7 +15,7 @@ url='http://tug.org/texlive/'
 source=("https://sources.archlinux.org/other/texlive/$pkgname-$pkgver-src.zip" "$pkgname.maps")
 options=('!emptydirs')
 install=texlive.install
-md5sums=('3f8a85832e156d72426d939b2c1ab0d0'
+md5sums=('6302b780dc8b9927ace911c9b6cf8267'
          'c1e49c9da6302557dff56e8d9d584fa5')
 
 build() {

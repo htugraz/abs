@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 146332 2015-11-06 20:18:30Z jelle $
+# $Id: PKGBUILD 146874 2015-11-15 17:12:39Z jelle $
 # Maintainer: Jelle van der Waa <jelle@vdwaa.nl>
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contributor: Giovanni Scafora <giovanni@archlinux.org>
@@ -7,7 +7,7 @@
 # Contributor: Larry Hajali <larryhaja@gmail.com>
 
 pkgname=calibre
-pkgver=2.43.0
+pkgver=2.44.1
 pkgrel=1
 pkgdesc="Ebook management application"
 arch=('i686' 'x86_64')
@@ -28,7 +28,7 @@ optdepends=('ipython2: to use calibre-debug'
 )
 install=calibre.install
 source=("http://download.calibre-ebook.com/${pkgver}/calibre-${pkgver}.tar.xz")
-md5sums=('e2657fa4036c22bfc49c4bed697d5009')
+md5sums=('c49f44da6f164c4aa63146cef8a8cbf9')
 
 prepare(){
   cd "${pkgname}-${pkgver}"
