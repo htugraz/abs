@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 146303 2015-11-06 13:55:02Z fyan $
+# $Id: PKGBUILD 146894 2015-11-16 03:01:29Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=http-client-tls
 pkgname=haskell-http-client-tls
 pkgver=0.2.2
-pkgrel=3
+pkgrel=4
 pkgdesc="http-client backend using the connection package and tls library"
 url="https://github.com/snoyberg/http-client"
 license=("MIT")

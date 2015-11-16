@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 145835 2015-11-03 15:32:33Z foutrelis $
+# $Id: PKGBUILD 146880 2015-11-16 01:10:05Z seblu $
 # Maintainer: Sébastien Luttringer
 # Contributor: Kaiting Chen <kaitocracy@gmail.com>
 # Contributor: mickael9 <mickael9 at gmail dot com>
 
 pkgname=znc
-pkgver=1.6.1
-pkgrel=3
+pkgver=1.6.2
+pkgrel=1
 pkgdesc='An IRC bouncer with modules & scripts support'
 url='http://en.znc.in/wiki/index.php/ZNC'
 license=('GPL2')
@@ -19,7 +19,7 @@ optdepends=('tcl: modtcl module'
 install=$pkgname.install
 source=("http://znc.in/releases/$pkgname-$pkgver.tar.gz"
         "$pkgname.sysusers")
-md5sums=('8e29289e6229b6d2473de202170745ab'
+md5sums=('89f6696ed366661f7432ece343fd19d0'
          '919705dccc42d3bff1549d3b3680e55a')
 
 build() {

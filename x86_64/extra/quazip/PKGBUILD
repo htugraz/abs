@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 242933 2015-08-02 16:09:37Z fyan $
+# $Id: PKGBUILD 251088 2015-11-16 03:05:43Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: trya <tryagainprod@gmail.com>
@@ -6,7 +6,7 @@
 pkgbase=quazip
 pkgname=(quazip-qt4 quazip-qt5)
 pkgver=0.7.1
-pkgrel=4
+pkgrel=5
 pkgdesc="C++ wrapper for the Gilles Vollant's ZIP/UNZIP C package"
 url="http://sourceforge.net/projects/quazip/"
 license=('LGPL')
