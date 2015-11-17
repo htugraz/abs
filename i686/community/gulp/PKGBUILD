@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 143477 2015-10-09 06:07:18Z fyan $
+# $Id: PKGBUILD 146946 2015-11-17 03:08:47Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Micha Alt <micha.tucker at gmail dot com>
 
 pkgname=gulp
 pkgver=3.9.0
-pkgrel=1
+pkgrel=2
 pkgdesc="The streaming build system"
 arch=('any')
 url="http://gulpjs.com/"

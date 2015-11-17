@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 145235 2015-10-29 09:26:58Z fyan $
+# $Id: PKGBUILD 146944 2015-11-17 03:06:34Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=browserify
 pkgdesc='browser-side require() the node way'
 pkgver=12.0.1
-pkgrel=1
+pkgrel=2
 arch=('any')
 url='http://browserify.org/'
 license=('MIT' 'BSD')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 140699 2015-09-19 08:03:23Z fyan $
+# $Id: PKGBUILD 146986 2015-11-17 14:34:55Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-gettext-tools
-pkgver=1.0.1
+pkgver=1.0.2
 pkgrel=1
 pkgdesc='Deepin Gettext Tools'
 arch=('any')
