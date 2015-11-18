@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 146866 2015-11-15 13:28:09Z fyan $
+# $Id: PKGBUILD 147070 2015-11-18 12:55:11Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Gordian Edenhofer <gordian.edenhofer[at]yahoo[dot]de>
 
 pkgname=letshelp-letsencrypt
 pkgver=0.0.0.dev20151114
-pkgrel=1
-pkgdesc="Apache plugin for Let’s Encrypt client"
+pkgrel=2
+pkgdesc="Let's help Let's Encrypt client"
 arch=('any')
 license=('Apache')
 url="https://pypi.python.org/pypi/${pkgname}"

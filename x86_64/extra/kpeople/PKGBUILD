@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 249301 2015-10-14 03:23:11Z fyan $
+# $Id: PKGBUILD 251199 2015-11-18 07:34:54Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=kpeople
-pkgver=5.15.0
+pkgver=5.16.0
 pkgrel=1
 pkgdesc='A library that provides access to all contacts and the people who hold them'
 arch=(i686 x86_64)
@@ -13,7 +13,7 @@ depends=(kservice kwidgetsaddons kitemviews qt5-declarative)
 makedepends=(extra-cmake-modules python)
 groups=(kf5)
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('ab52947f23feeb9a91b867fea2fe8d54')
+md5sums=('9aec9ba2abfbce56c70ddb057d4aa118')
 
 prepare() {
   mkdir -p build

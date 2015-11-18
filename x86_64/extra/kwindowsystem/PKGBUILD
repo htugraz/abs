@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 249258 2015-10-14 03:22:10Z fyan $
+# $Id: PKGBUILD 251156 2015-11-18 07:33:46Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kwindowsystem
-pkgver=5.15.0
+pkgver=5.16.0
 pkgrel=1
 pkgdesc='Access to the windowing system'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('qt5-x11extras' 'libxfixes')
 makedepends=('extra-cmake-modules' 'qt5-tools')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('08e0b05204a4129f73873ef2b61a6a3b')
+md5sums=('dff4815d1ae67206329aa690c2a98dfb')
 
 prepare() {
   mkdir build

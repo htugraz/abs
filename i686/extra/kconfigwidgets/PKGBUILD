@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 249257 2015-10-14 03:22:09Z fyan $
+# $Id: PKGBUILD 251155 2015-11-18 07:33:45Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kconfigwidgets
-pkgver=5.15.0
+pkgver=5.16.0
 pkgrel=1
 pkgdesc='Widgets for KConfig'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('kauth' 'kcodecs' 'kconfig' 'kguiaddons' 'ki18n' 'kwidgetsaddons')
 makedepends=('extra-cmake-modules' 'kdoctools' 'python')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('e1dcd700999ed0764e6659e8519a8a65')
+md5sums=('ffbbfa4128ac002925b9cd1861da2301')
 
 prepare() {
   mkdir -p build

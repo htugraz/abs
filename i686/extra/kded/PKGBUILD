@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 249292 2015-10-14 03:22:58Z fyan $
+# $Id: PKGBUILD 251190 2015-11-18 07:34:37Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kded
-pkgver=5.15.0
+pkgver=5.16.0
 pkgrel=1
 pkgdesc='Extensible deamon for providing system level services'
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('kinit')
 makedepends=('extra-cmake-modules' 'kdoctools')
 groups=('kf5')
 source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
-md5sums=('4d4981a6700dc77fc5d9c2d4ef964c2b')
+md5sums=('e170be0d2777e8b30705ef990c9bb5cd')
 
 prepare() {
   mkdir -p build

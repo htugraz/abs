@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 136553 2015-07-08 09:36:16Z spupykin $
+# $Id: PKGBUILD 147065 2015-11-18 11:46:57Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: SpepS <dreamspepser at yahoo dot it>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 # Contributor: DonVla <donvla@users.sourceforge.net>
 
 pkgname=zynaddsubfx
-pkgver=2.5.1
-pkgrel=3
+pkgver=2.5.2
+pkgrel=1
 pkgdesc="Opensource software synthesizer capable of making a countless number of instruments."
 arch=('i686' 'x86_64')
 url="http://zynaddsubfx.sourceforge.net"
@@ -16,7 +16,7 @@ makedepends=('cmake' 'pkgconfig' 'mesa' 'setconf' 'gendesk')
 options=('!emptydirs')
 source=("https://downloads.sourceforge.net/project/$pkgname/$pkgname/$pkgver/$pkgname-$pkgver.tar.gz"
 	"$pkgname.svg")
-md5sums=('ea5df4198e8b0ebc336d52e689cf30c3'
+md5sums=('c0d09b8e8d79691e79e7d424bc4f0263'
          '6f7e9c3ce3947088a10c99c46a65431f')
 
 build() {

@@ -1,16 +1,15 @@
-# $Id: PKGBUILD 146995 2015-11-17 14:57:43Z fyan $
+# $Id: PKGBUILD 147041 2015-11-18 02:08:16Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-gtk-theme
 pkgver=3.18.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Deepin GTK Theme"
 arch=('any')
 url="https://gitcafe.com/Deepin/deepin-gtk-theme"
 license=('LGPL3')
-depends=('gtk-engine-unico')
 makedepends=('git')
 optdepends=('gtk-engine-murrine: for gtk2 themes')
 groups=('deepin')

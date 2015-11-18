@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 146511 2015-11-10 15:34:13Z svenstaro $
+# $Id: PKGBUILD 147045 2015-11-18 02:21:48Z svenstaro $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Johan Rehnberg <cleanrock@gmail.com>
 
 pkgname=naev
 pkgver=0.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc='2D action/rpg space game'
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/naev/"
 license=('GPL3')
-depends=('glu' 'openal' 'libvorbis' 'sdl2' 'sdl2_image' 'sdl2_mixer' 'libgl' 'libxml2' 'freetype2' 'libpng' 'libzip')
+depends=('glu' 'openal' 'libvorbis' 'sdl2' 'sdl2_image' 'sdl2_mixer' 'libgl' 'libxml2' 'freetype2' 'libpng' 'libzip' 'luajit')
 makedepends=('freeglut' 'zip')
 source=("https://github.com/naev/naev/archive/naev-${pkgver}.tar.gz")
 md5sums=('48eb864a04f4c7fd9e5178d2ddb9284e')
