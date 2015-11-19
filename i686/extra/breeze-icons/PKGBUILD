@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 251212 2015-11-18 07:35:25Z fyan $
+# $Id: PKGBUILD 251240 2015-11-19 07:23:05Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas
@@ -11,13 +11,12 @@ arch=('any')
 url='https://projects.kde.org/projects/kde/workspace/breeze'
 license=('LGPL')
 groups=('kf5')
-optdepends=('oxygen-icons: fallback icon theme')
-makedepends=('extra-cmake-modules')
-source=("http://download.kde.org/stable/frameworks/${pkgver}/$pkgname-$pkgver.tar.xz")
+makedepends=('extra-cmake-modules' 'qt5-base')
+source=("http://download.kde.org/stable/frameworks/${pkgver%.*}/$pkgname-$pkgver.tar.xz")
 md5sums=('649b3b20669d052abe3ebc639ef0c705')
 
 prepare() {
-  mkdir build
+  mkdir -p build
 }
 
 build() {
