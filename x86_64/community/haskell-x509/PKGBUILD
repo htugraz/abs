@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 143746 2015-10-12 04:03:55Z fyan $
+# $Id: PKGBUILD 147205 2015-11-20 08:16:14Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=x509
 pkgname=haskell-x509
 pkgver=1.6.3
-pkgrel=1
+pkgrel=2
 pkgdesc="X509 reader and writer"
 url="http://github.com/vincenthz/hs-certificate"
 license=("custom:BSD3")

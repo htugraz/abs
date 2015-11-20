@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 146581 2015-11-11 14:40:15Z fyan $
+# $Id: PKGBUILD 147217 2015-11-20 16:00:08Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-desktop-schemas
-pkgver=2.91.0
+pkgver=2.91.1
 pkgrel=1
 pkgdesc='GSettings deepin desktop-wide schemas'
 arch=('any')

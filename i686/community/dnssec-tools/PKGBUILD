@@ -1,17 +1,19 @@
-# $Id: PKGBUILD 139573 2015-09-08 07:31:10Z fyan $
+# $Id: PKGBUILD 147201 2015-11-20 08:11:49Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Luca Fulchir <luca@fulchir.it>
 
 pkgname=dnssec-tools
 pkgver=2.2
-pkgrel=1
+pkgrel=2
 pkgdesc="libval & dnssec management tools"
 arch=('i686' 'x86_64')
 url="http://www.dnssec-tools.org"
 license=('BSD')
 conflicts=('libval' 'libval_shim' 'libsres')
 backup=('etc/dnssec-tools/dnssec-tools.conf' 'etc/dnssec-tools/resolv.conf' 'etc/dnssec-tools/root.hints' 'etc/dnssec-tools/dnsval.conf')
-depends=('dnsutils' 'perl' 'perl-timedate' 'perl-net-dns' 'perl-net-dns-sec' 'perl-mailtools' 'perl-tk' 'perl-graphviz' 'bind' 'openssl' 'glibc' 'pth')
+depends=('dnsutils' 'perl' 'perl-timedate' 'perl-net-dns' 'perl-net-dns-sec' 'perl-mailtools' 'bind' 'openssl' 'glibc' 'pth')
+optdepends=('perl-tk: for GUI components'
+            'perl-graphviz: for GUI components')
 options=('!emptydirs')
 source=(http://www.dnssec-tools.org/download/${pkgname}-${pkgver}.tar.gz
         makefile-dependency.patch

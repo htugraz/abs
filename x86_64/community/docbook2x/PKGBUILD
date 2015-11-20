@@ -1,15 +1,16 @@
-# $Id: PKGBUILD 126124 2015-01-18 19:47:03Z eric $
+# $Id: PKGBUILD 147227 2015-11-20 18:33:53Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Alessio 'mOLOk' Bolognino <themolok@gmail.com>
 
 pkgname=docbook2x
 pkgver=0.8.8
-pkgrel=13
+pkgrel=14
 pkgdesc="A software package that converts DocBook documents into the traditional Unix man page format and the GNU Texinfo format."
 arch=('i686' 'x86_64')
 url="http://docbook2x.sourceforge.net"
 license=("MIT")
-depends=('glibc' 'perl-sgmls' 'perl-xml-parser' 'perl-xml-sax' 'libxslt' 'jade')
+depends=('glibc' 'perl-sgmls' 'perl-xml-parser' 'perl-xml-sax' 'libxslt'
+	 'jade' 'perl-xml-sax-expat')
 makedepends=('texinfo')
 install=docbook2x.install
 source=(http://downloads.sourceforge.net/$pkgname/docbook2X-$pkgver.tar.gz
