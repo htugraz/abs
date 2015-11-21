@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 251526 2015-11-20 07:01:18Z arojas $
+# $Id: PKGBUILD 251771 2015-11-21 07:54:53Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeaccessibility-kmag
 pkgver=15.11.80
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 pkgdesc='Screen Magnifier'
 url='http://kde.org/applications/utilities/kmag/'
 license=('GPL' 'FDL')
 groups=('kde-applications' 'kdeaccessibility')
-depends=('kdebase-runtime')
+depends=('kdebase-runtime' 'libkdeaccessibilityclient')
 makedepends=('cmake' 'automoc4')
 install=${pkgname}.install
 source=("http://download.kde.org/unstable/applications/${pkgver}/src/kmag-${pkgver}.tar.xz")
