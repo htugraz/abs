@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 146627 2015-11-12 01:48:07Z fyan $
+# $Id: PKGBUILD 147384 2015-11-22 10:03:57Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=you-get
-pkgver=0.4.156
+pkgver=0.4.167
 pkgrel=1
 pkgdesc="A YouTube/Youku/Niconico video downloader written in Python 3."
 url="http://www.soimort.org/you-get/"

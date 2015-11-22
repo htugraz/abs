@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 143446 2015-10-08 19:58:07Z heftig $
+# $Id: PKGBUILD 147409 2015-11-22 20:52:02Z arodseth $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: jordz <jordz@archlinux.us>
 
 pkgname=nemiver
 pkgver=0.9.6
-pkgrel=1
+pkgrel=2
 pkgdesc='C/C++ debugger for GNOME'
 arch=('x86_64' 'i686')
 license=('GPL')

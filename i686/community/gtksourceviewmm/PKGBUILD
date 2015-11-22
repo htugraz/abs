@@ -1,27 +1,28 @@
-#$Id: PKGBUILD 99801 2013-10-30 23:48:06Z allan $
+#$Id: PKGBUILD 147413 2015-11-22 21:48:31Z heftig $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=gtksourceviewmm
-pkgver=3.2.0
-pkgrel=4
+pkgver=3.18.0
+pkgrel=1
+epoch=1
 pkgdesc='C++ bindings for the gtksourceview library'
 arch=('x86_64' 'i686')
 url='http://projects.gnome.org/gtksourceviewmm/'
 license=('LGPL2.1')
 depends=('gtkmm3' 'gtksourceview3')
-source=("http://download.gnome.org/sources/$pkgname/3.2/$pkgname-$pkgver.tar.xz")
-sha256sums=('9dc0c44f00627e434a36ac7c3a34d9c30ebe45eb6dc682dc733a85dcead2ba66')
+source=("https://download.gnome.org/sources/$pkgname/${pkgver:0:4}/$pkgname-$pkgver.tar.xz")
+sha256sums=('51081ae3d37975dae33d3f6a40621d85cb68f4b36ae3835eec1513482aacfb39')
 
 build() {
-  cd "$srcdir/$pkgname-$pkgver"
+  cd "$pkgname-$pkgver"
+
   ./configure --prefix=/usr
   make
 }
 
 package() {
-  cd "$srcdir/$pkgname-$pkgver"
-  make DESTDIR="$pkgdir" install
+  make -C "$pkgname-$pkgver" DESTDIR="$pkgdir" install
 }
 
 # vim:set ts=2 sw=2 et:

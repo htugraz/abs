@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 241257 2015-06-24 17:07:23Z andyrtr $
+# $Id: PKGBUILD 251830 2015-11-22 06:12:39Z lcarlier $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=xf86-video-vesa
 pkgver=2.3.4
-pkgrel=1
+pkgrel=2
 pkgdesc="X.org vesa video driver"
 arch=(i686 x86_64)
 license=('custom')
 url="http://xorg.freedesktop.org/"
 depends=('glibc')
-makedepends=('xorg-server-devel' 'X-ABI-VIDEODRV_VERSION=19')
-conflicts=('xorg-server<1.16' 'X-ABI-VIDEODRV_VERSION<19' 'X-ABI-VIDEODRV_VERSION>=20')
+makedepends=('xorg-server-devel' 'X-ABI-VIDEODRV_VERSION=20')
+conflicts=('xorg-server<1.16' 'X-ABI-VIDEODRV_VERSION<20' 'X-ABI-VIDEODRV_VERSION>=21')
 groups=('xorg-drivers' 'xorg')
 source=(${url}/releases/individual/driver/${pkgname}-${pkgver}.tar.bz2{,.sig}
         revert-kernelcheck.patch)

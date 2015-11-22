@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 146817 2015-11-14 14:22:44Z fyan $
+# $Id: PKGBUILD 147386 2015-11-22 10:07:47Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=pigar
 pkgname=("$pkgbase" "python2-$pkgbase")
-pkgver=0.6.3
+pkgver=0.6.6
 pkgrel=1
 pkgdesc="A fantastic tool to generate requirements for your Python project, and more than that"
 arch=('any')

@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 146906 2015-11-16 03:52:03Z fyan $
+# $Id: PKGBUILD 147393 2015-11-22 15:15:12Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=sopel
-pkgver=6.1.0
+pkgver=6.1.1
 pkgrel=1
 pkgdesc="An easy-to-use and highly extensible IRC Bot framework (Formerly Willie)"
 arch=('any')
