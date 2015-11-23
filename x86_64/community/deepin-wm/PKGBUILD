@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 145575 2015-11-02 09:49:33Z fyan $
+# $Id: PKGBUILD 147431 2015-11-23 03:55:36Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-wm
-pkgver=0.91.0
-pkgrel=2
+pkgver=0.91.3
+pkgrel=1
 pkgdesc='Deepin Window Manager'
 arch=('i686' 'x86_64')
 url="https://cr.deepin.io/deepin-wm"

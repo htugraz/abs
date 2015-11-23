@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 142237 2015-09-30 03:31:25Z fyan $
+# $Id: PKGBUILD 147435 2015-11-23 03:59:47Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=deepin-social-sharing
-pkgver=1.1
+pkgver=1.1.1
 pkgrel=1
 pkgdesc="Deepin social sharing service"
 arch=('any')

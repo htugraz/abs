@@ -1,18 +1,19 @@
-# $Id: PKGBUILD 147233 2015-11-20 18:36:28Z spupykin $
+# $Id: PKGBUILD 147450 2015-11-23 10:26:32Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Abhishek Dasgupta <abhidg@gmail.com>
 # Contributor: Gabor Nyekhelyi (n0gabor) <n0gabor@vipmail.hu>
 
 pkgname=pitivi
 pkgver=0.95
-pkgrel=1
+pkgrel=2
 pkgdesc="Editor for audio/video projects using the GStreamer framework"
 arch=('i686' 'x86_64')
 url="http://www.pitivi.org/"
 license=('LGPL')
-depends=('clutter-gtk' 'gnonlin' 'gst-editing-services' 'gst-plugins-good' 'gst-python'
+depends=('clutter-gtk' 'gst-editing-services' 'gst-plugins-good' 'gst-python'
          'libnotify' 'python-gobject' 'python-numpy' 'python-cairo'
-         'gnome-icon-theme' 'desktop-file-utils' 'clutter-gst')
+         'gnome-icon-theme' 'desktop-file-utils' 'clutter-gst'
+         'python-matplotlib')
 makedepends=('intltool' 'itstool')
 optdepends=('frei0r-plugins: additional video effects, clip transformation feature'
             'gst-libav: additional multimedia codecs'
