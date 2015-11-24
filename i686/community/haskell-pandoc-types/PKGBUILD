@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 144211 2015-10-16 03:36:29Z fyan $
+# $Id: PKGBUILD 147573 2015-11-24 04:01:22Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=pandoc-types
 pkgname=haskell-pandoc-types
 pkgver=1.12.4.7
-pkgrel=3
+pkgrel=4
 pkgdesc="Types for representing a structured document"
 url="http://johnmacfarlane.net/pandoc"
 license=("custom:BSD3")

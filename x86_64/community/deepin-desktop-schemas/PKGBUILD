@@ -1,20 +1,29 @@
-# $Id: PKGBUILD 147217 2015-11-20 16:00:08Z fyan $
+# $Id: PKGBUILD 147617 2015-11-24 07:24:43Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-desktop-schemas
 pkgver=2.91.1
-pkgrel=1
+pkgrel=3
 pkgdesc='GSettings deepin desktop-wide schemas'
 arch=('any')
 url="https://github.com/linuxdeepin/deepin-desktop-schemas"
 license=('GPL3')
 depends=('dconf')
 makedepends=('git')
+conflicts=('dde-daemon<=2.92.1')
+replaces=('deepin-default-gsettings')
+groups=('deepin')
 install="${pkgname}.install"
 source=("git+https://github.com/linuxdeepin/deepin-desktop-schemas.git#tag=$pkgver")
 sha256sums=('SKIP')
+
+prepare() {
+  cd "${pkgname}"
+  # fix default background url
+  sed -i "s#^picture-uri.*#picture-uri='file:///usr/share/backgrounds/deepin_default_background.jpg'#" overrides/com.deepin.wrap.gnome.desktop.override
+}
 
 build() {
   cd "${pkgname}"

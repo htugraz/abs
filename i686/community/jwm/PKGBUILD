@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 141502 2015-09-23 02:23:14Z kkeen $
+# $Id: PKGBUILD 147719 2015-11-24 21:47:20Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=jwm
-pkgver=2.3.2
+pkgver=2.3.4
 pkgrel=1
 pkgdesc="A lightweight window manager for the X11 Window System"
 arch=('i686' 'x86_64')
@@ -15,7 +15,7 @@ source=(http://joewing.net/projects/jwm/releases/jwm-$pkgver.tar.xz
         jwm.desktop)
 # contacted upstream about desktop
 # no reply
-md5sums=('96bb523ea289f041146efa65b88481c4'
+md5sums=('64660b8b9dbd842d02662e4de95789c3'
          'ad898472f7538ffc3ff511c055fee535')
 
 build() {

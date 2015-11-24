@@ -1,16 +1,18 @@
-# $Id: PKGBUILD 147002 2015-11-17 15:23:04Z fyan $
+# $Id: PKGBUILD 147627 2015-11-24 07:29:47Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-grub2-themes
 pkgver=1.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Deepin grub2 themes'
 arch=('any')
 license=('LGPL3')
 url="https://gitcafe.com/Deepin/deepin-grub2-themes"
 makedepends=('git')
+conflicts=('grub-theme-deepin')
+replaces=('grub-theme-deepin')
 groups=('deepin')
 source=("git+https://github.com/linuxdeepin/deepin-grub2-themes.git#tag=$pkgver")
 sha256sums=('SKIP')

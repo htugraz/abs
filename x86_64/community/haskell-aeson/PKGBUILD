@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 144201 2015-10-16 03:36:17Z fyan $
+# $Id: PKGBUILD 147572 2015-11-24 04:01:20Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Daniel Nagy <danielnagy at gmx de>
 # Contributor: Daniel Micay <danielmicay@gmail.com>
@@ -6,7 +6,7 @@
 pkgname=haskell-aeson
 _hkgname=aeson
 pkgver=0.10.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A JSON parsing and encoding library optimized for ease of use and high performance."
 url="https://github.com/bos/aeson"
 license=("GPL")

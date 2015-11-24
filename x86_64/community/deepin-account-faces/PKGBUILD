@@ -1,16 +1,18 @@
-# $Id: PKGBUILD 146948 2015-11-17 03:48:25Z fyan $
+# $Id: PKGBUILD 147635 2015-11-24 08:28:50Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-account-faces
 pkgver=1.0.8
-pkgrel=1
+pkgrel=2
 pkgdesc='Account faces for Linux Deepin'
 arch=('any')
 license=('GPL3')
 url="https://github.com/linuxdeepin/dde-account-faces"
 makedepends=('git')
+conflicts=('dde-account-faces')
+replaces=('dde-account-faces')
 groups=('deepin')
 source=("git+https://github.com/linuxdeepin/dde-account-faces.git#tag=$pkgver")
 sha256sums=('SKIP')

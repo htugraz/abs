@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 146920 2015-11-16 10:36:01Z fyan $
+# $Id: PKGBUILD 147581 2015-11-24 04:01:31Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 pkgname=darcs
 pkgver=2.10.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A distributed, interactive, smart revision control system"
 url="http://darcs.net"
 license=("GPL")
