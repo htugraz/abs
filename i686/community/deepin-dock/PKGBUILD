@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 147625 2015-11-24 07:28:40Z fyan $
+# $Id: PKGBUILD 147763 2015-11-25 07:57:16Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-dock
 pkgver=2.90.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Deepin desktop-environment - dock module'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-dock"
 license=('GPL3')
-depends=('gtk2' 'libdui' 'qt5-svg')
+depends=('gtk2' 'libdui' 'qt5-svg' 'nautilus' 'deepin-music' 'deepin-movie' 'deepin-control-center')
 makedepends=('git')
 conflicts=('dde-dock')
 replaces=('dde-dock')

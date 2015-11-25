@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 142569 2015-10-01 16:09:12Z fyan $
+# $Id: PKGBUILD 147742 2015-11-25 02:36:35Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: eolianoe <eolianoe At GoogleMAIL DoT com>
 
 pkgbase=python-requests-toolbelt
 pkgname=('python-requests-toolbelt' 'python2-requests-toolbelt')
 _pkgname=requests-toolbelt
-pkgver=0.4.0
-pkgrel=2
+pkgver=0.5.0
+pkgrel=1
 pkgdesc="A toolbelt of useful classes and functions to be used with python-requests."
 arch=('any')
 url="https://github.com/sigmavirus24/requests-toolbelt"

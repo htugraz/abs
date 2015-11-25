@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 146453 2015-11-09 19:42:22Z jlichtblau $
+# $Id: PKGBUILD 147797 2015-11-25 21:00:57Z jlichtblau $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org> 
 # Contributor: Stefan Husmann <stefan-husmann@t-online.de>
 # Contributor: Søren Holm <sgh@sgh.dk> 
 
 pkgname=vym
 pkgver=2.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A mindmapping tool"
 arch=('i686' 'x86_64')
 url="http://www.insilmaril.de/vym/"
@@ -34,10 +34,12 @@ package() {
 # fix executable path
   mv "${pkgdir}"/usr/share/bin "${pkgdir}"/usr/bin
   
-# install man page, remove PDF manual
+# install documentation
   install -Dm644 "${srcdir}"/$pkgname-$pkgver/doc/$pkgname.1.gz \
     "${pkgdir}"/usr/share/man/man1/$pkgname.1.gz
-  rm -rf "${pkgdir}"/usr/share/doc
+  install -Dm644 "${srcdir}"/$pkgname-$pkgver/doc/$pkgname.pdf \
+    "${pkgdir}"/usr/share/doc/$pkgname/$pkgname.pdf  
+  rm -rf "${pkgdir}"/usr/share/doc/packages
 
 # .desktop and icon file
    install -Dm644 "${srcdir}"/$pkgname.desktop \

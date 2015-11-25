@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 147640 2015-11-24 09:09:31Z fyan $
+# $Id: PKGBUILD 147740 2015-11-25 02:35:51Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Tomas Schertel<tschertel@gmail.com>
 
 pkgbase=python-logbook
 pkgname=(python-logbook python2-logbook)
 _pypiname=Logbook
-pkgver=0.12.2
+pkgver=0.12.3
 pkgrel=1
 pkgdesc="Logging sytem for Python that replaces the standard library’s logging module"
 arch=('i686' 'x86_64')
