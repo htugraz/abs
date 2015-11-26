@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 147425 2015-11-23 03:29:00Z fyan $
+# $Id: PKGBUILD 147828 2015-11-26 06:24:59Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-dbus-factory
 pkgver=2.92.1
-pkgrel=1
+pkgrel=3
 pkgdesc='QML DBus factory for DDE'
 arch=('i686' 'x86_64')
 url="https://gitcafe.com/Deepin/dbus-factory"

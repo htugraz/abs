@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 147629 2015-11-24 07:33:08Z fyan $
+# $Id: PKGBUILD 147835 2015-11-26 06:54:55Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
@@ -9,7 +9,8 @@ pkgver=2.93.1
 _golibrev=238151791673412dedf333363b3a37343c461acb
 _deepinapiver=2.92.1
 _dbusfactoryver=2.92.1
-pkgrel=2
+_desktopbaserev=6cd46627bb62ce820991aa53439be8142b523ad8
+pkgrel=4
 pkgdesc='Daemon handling the DDE session settings'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-daemon"
@@ -17,7 +18,7 @@ license=('GPL3')
 depends=('deepin-desktop-schemas' 'gvfs' 'libcanberra-pulse' 'metacity' 'poppler-glib'
          'rfkill' 'acpid' 'bluez' 'deepin-notifications' 'iso-codes' 'lsb-release'
          'mobile-broadband-provider-info' 'polkit-gnome' 'udisks2' 'upower' 'gcc-go'
-         'libxkbfile') # 'xcur2png')
+         'libxkbfile' 'accountsservice')
 makedepends=('deepin-dbus-generator' 'sqlite' 'git' 'mercurial')
 optdepends=('networkmanager: Network Management daemon'
             'deepin-grub2-themes: deepin theme for grub menu')
@@ -30,13 +31,17 @@ source=("git+https://github.com/linuxdeepin/dde-daemon.git#tag=$pkgver"
         "git+https://github.com/linuxdeepin/go-lib.git#commit=$_golibrev"
         "git+https://github.com/linuxdeepin/dbus-factory.git#tag=$_dbusfactoryver"
         "git+https://github.com/linuxdeepin/dde-api.git#tag=$_deepinapiver"
-        'fix-i686-compile.patch' 'deepin-daemon.sysusers')
+        "git+https://github.com/linuxdeepin/deepin-desktop-base.git#commit=$_desktopbaserev"
+        'fix-i686-compile.patch' 'deepin-daemon.sysusers' 'ishuman-via-login-defs.patch' 'get-distro-info.patch')
 sha256sums=('SKIP'
             'SKIP'
             'SKIP'
             'SKIP'
+            'SKIP'
             '1dccf88c5ce480560a4a2d73134e69f05135703fe34ccd5d9e2e5d7fe852efc5'
-            '4482f2c82c3652040021dd43515f131184a0417e341dc37db487117012245e25')
+            '4482f2c82c3652040021dd43515f131184a0417e341dc37db487117012245e25'
+            '182fd299b9f222ce8f94da9137fb671f95fbd32bd28becfaf8c97b9fdd488c65'
+            '4b3f743b8cffc591ab5582aa4ba6a56f464cd7c279a3594e637fffac0a14df63')
 
 prepare() {
   export GOPATH="$srcdir/build"
@@ -56,6 +61,9 @@ prepare() {
   if [[ $CARCH == "i686" ]]; then
     patch -p1 -i ../fix-i686-compile.patch
   fi
+
+  patch -p1 -i ../ishuman-via-login-defs.patch
+  patch -p1 -i ../get-distro-info.patch
 }
 
 build() {
@@ -71,4 +79,5 @@ package() {
   make USE_GCCGO=1 DESTDIR="${pkgdir}" install
 
   install -Dm644 ../deepin-daemon.sysusers "$pkgdir/usr/lib/sysusers.d/deepin-daemon.conf"
+  install -Dm644 "${srcdir}"/deepin-desktop-base/desktop-version "${pkgdir}"/etc/deepin-version
 }

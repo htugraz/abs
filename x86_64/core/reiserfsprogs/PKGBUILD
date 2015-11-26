@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 193785 2013-08-31 10:51:10Z tpowa $
+# $Id: PKGBUILD 251975 2015-11-26 06:25:50Z foutrelis $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
 
@@ -16,6 +16,7 @@ md5sums=('66787380fb418ff7d88a23e47cda7af6')
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
+  CFLAGS+=' -fgnu89-inline'
   ./configure --prefix=/usr --sbindir=/usr/bin
   make
 }

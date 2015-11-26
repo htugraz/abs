@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 145079 2015-10-27 08:56:53Z fyan $
+# $Id: PKGBUILD 147808 2015-11-26 02:47:09Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Michal Krenek <mikos@sg1.cz>
 
 pkgbase=boinc
 pkgname=(boinc boinc-nox)
-pkgver=7.6.12
+pkgver=7.6.17
 _tag="client_release/7.6/$pkgver"
 pkgrel=1
 arch=('i686' 'x86_64')

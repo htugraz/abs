@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 147681 2015-11-24 15:03:34Z spupykin $
+# $Id: PKGBUILD 147858 2015-11-26 16:53:30Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=firefox-adblock-plus
-pkgver=2.6.12
+pkgver=2.6.13
 pkgrel=1
 pkgdesc="Extension for firefox which block ads and banners"
 arch=('any')
@@ -13,7 +13,7 @@ depends=("firefox")
 makedepends=('unzip')
 noextract=("adblockplus-$pkgver.xpi")
 source=("https://downloads.adblockplus.org/adblockplus-$pkgver.xpi")
-md5sums=('28c7ce262f5aa618f79f3491ebdef6c4')
+md5sums=('5750b871f82e37c78fc0ac234aea1ba7')
 
 package() {
   cd $srcdir

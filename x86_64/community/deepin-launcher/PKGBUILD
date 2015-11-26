@@ -1,16 +1,17 @@
-# $Id: PKGBUILD 147615 2015-11-24 07:24:07Z fyan $
+# $Id: PKGBUILD 147818 2015-11-26 05:59:26Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-launcher
 pkgver=2.90.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Deepin desktop-environment - Launcher module'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-launcher"
 license=('GPL3')
-depends=('gtk2' 'gsettings-qt' 'qt5-svg' 'qt5-x11extras')
+depends=('gtk2' 'gsettings-qt' 'qt5-svg' 'qt5-x11extras' 'deepin-file-manager'
+         'startdde' 'deepin-menu' 'deepin-daemon')
 makedepends=('git')
 conflicts=('dde-launcher')
 replaces=('dde-launcher')

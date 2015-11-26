@@ -1,17 +1,18 @@
-# $Id: PKGBUILD 147613 2015-11-24 07:22:04Z fyan $
+# $Id: PKGBUILD 147822 2015-11-26 06:11:34Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-desktop
 pkgver=2.90.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Deepin desktop-environment - Desktop module'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-desktop"
 license=('GPL3')
-depends=('deepin-file-manager' 'libdui' 'gsettings-qt'
-         'gtk2' 'qt5-svg' 'qt5-x11extras')
+depends=('deepin-file-manager' 'deepin-nautilus-properties' 'gsettings-qt'
+         'deepin-daemon' 'libdui' 'startdde' 'deepin-dock' 'gtk2' 'qt5-svg'
+         'qt5-x11extras')
 makedepends=('git')
 conflicts=('dde-desktop')
 replaces=('dde-desktop')
