@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 141467 2015-09-22 15:20:47Z kkeen $
+# $Id: PKGBUILD 147910 2015-11-28 21:22:18Z kkeen $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Robert Knauer <robert@privatdemail.net>
 # Contributor: xav <xav at ethertricks dot net>
 
 pkgname=umurmur
 pkgver=0.2.16_a
-pkgrel=2
+pkgrel=3
 pkgdesc='Minimalistic Mumble server'
 arch=('i686' 'x86_64')
 url='https://github.com/umurmur/umurmur'
