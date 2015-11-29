@@ -1,22 +1,22 @@
-# $Id: PKGBUILD 249614 2015-10-21 22:01:32Z foutrelis $
-# Maintainer: tobias <tobias@archlinux.org>
+# $Id: PKGBUILD 252062 2015-11-29 19:09:15Z daniel $
+# Maintainer: Daniel Isenmann <daniel@archlinux.org>
 # Contributor: Dominik Ryba <domryba@post.pl>
 
 pkgname=enblend-enfuse
-pkgver=4.1.3
-pkgrel=6
+pkgver=4.1.4
+pkgrel=1
 pkgdesc="Intelligent blend tool for overlapping picture"
 arch=("i686" "x86_64")
 license=('GPL')
 url="http://enblend.sourceforge.net"
 depends=('openexr' 'glew' 'freeglut' 'lcms2' 'boost-libs' 'vigra' 'gsl')
-makedepends=('boost' 'mesa')
+makedepends=('boost' 'mesa' 'help2man')
 replaces=('enblend')
 conflicts=('enblend')
 provides=('enblend')
 install=${pkgname}.install
 source=(http://downloads.sourceforge.net/sourceforge/enblend/${pkgname}-${pkgver}.tar.gz)
-md5sums=('a025137ba53fc8a355347fe721c6267c')
+md5sums=('51abb1add90786ed64ec261778b31647')
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
