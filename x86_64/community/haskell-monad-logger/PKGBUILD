@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 147698 2015-11-24 16:29:32Z fyan $
+# $Id: PKGBUILD 148030 2015-11-30 07:48:59Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=monad-logger
 pkgname=haskell-monad-logger
 pkgver=0.3.15
-pkgrel=3
+pkgrel=5
 pkgdesc="A class of monads which can log messages."
 url="https://github.com/kazu-yamamoto/logger"
 license=("MIT")

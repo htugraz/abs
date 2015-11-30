@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 147784 2015-11-25 13:40:33Z fyan $
+# $Id: PKGBUILD 148033 2015-11-30 07:49:03Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=persistent-template
 pkgname=haskell-persistent-template
 pkgver=2.1.4
-pkgrel=1
+pkgrel=3
 pkgdesc="Type-safe, non-relational, multi-backend persistence"
 url="http://www.yesodweb.com/book/persistent"
 license=("MIT")
