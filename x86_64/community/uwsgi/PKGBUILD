@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 145545 2015-11-02 06:04:07Z svenstaro $
+# $Id: PKGBUILD 148079 2015-12-01 15:59:34Z svenstaro $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Valentin Hăloiu <vially.ichb+aur@gmail.com>
@@ -22,7 +22,7 @@ pkgname=(uwsgi
          uwsgi-plugin-webdav
          mod_proxy_uwsgi)
 pkgver=2.0.11.2
-pkgrel=2
+pkgrel=3
 arch=(i686 x86_64)
 url="http://projects.unbit.it/$pkgbase"
 license=(GPL2)

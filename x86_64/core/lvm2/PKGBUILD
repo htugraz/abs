@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252030 2015-11-28 19:12:32Z bpiotrowski $
+# $Id: PKGBUILD 252104 2015-12-01 19:22:12Z bpiotrowski $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 # Maintainer: Thomas Bächler <thomas@archlinux.org>
 
 pkgbase=lvm2
 pkgname=('lvm2' 'device-mapper')
-pkgver=2.02.134
+pkgver=2.02.136
 pkgrel=1
 arch=('i686' 'x86_64')
 url="http://sourceware.org/lvm2/"
@@ -17,7 +17,7 @@ source=(ftp://sources.redhat.com/pub/lvm2/LVM2.${pkgver}.tgz{,.asc}
         sd-lvm2_install
         11-dm-initramfs.rules
         lvm2-make-sockets-static.patch)
-sha1sums=('4180405b7847515a08def649d3140b5d8bd0e258'
+sha1sums=('4a33ad0451be5830f554b1e8de8dac698fb23356'
           'SKIP'
           '40ef991650555b904e73bcc3f344d736722e27ca'
           'ff0fdf0a3005a41acd4b36865056109effc3474b'
