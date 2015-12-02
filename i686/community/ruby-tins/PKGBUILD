@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 138470 2015-08-18 07:33:25Z alucryd $
+# $Id: PKGBUILD 148117 2015-12-02 18:00:36Z alucryd $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Julien Nicoulaud <julien.nicoulaud@gmail.com>
 # Contributor: Hyacinthe Cartiaux <hyacinthe.cartiaux@free.fr>
 
 pkgname=ruby-tins
-pkgver=1.6.0
+pkgver=1.8.0
 pkgrel=1
 pkgdesc='All the stuff that is not good/big enough for a real library'
 arch=('any')
@@ -14,7 +14,7 @@ depends=('ruby')
 options=('!emptydirs')
 source=("https://rubygems.org/downloads/tins-${pkgver}.gem")
 noextract=("tins-${pkgver}.gem")
-sha256sums=('1f82e41851f343147e8acda8b02a67e990e38d4755e1e7a8de7cd913fcce0a0b')
+sha256sums=('de5e43790d1df1d849e5b0eb942eafd723b726d88dbba17e92620d93e34ed005')
 
 package() {
   local _gemdir="$(ruby -e'puts Gem.default_dir')"
