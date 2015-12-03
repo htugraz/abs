@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 251643 2015-11-20 07:04:11Z arojas $
+# $Id: PKGBUILD 252314 2015-12-03 20:58:18Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kompare
-pkgver=15.11.80
+pkgver=15.11.90
 pkgrel=1
 pkgdesc='Diff/Patch Frontend'
 url='http://kde.org/applications/development/kompare/'
@@ -16,7 +16,7 @@ install=${pkgname}.install
 conflicts=('kdesdk-kompare')
 replaces=('kdesdk-kompare')
 source=("http://download.kde.org/unstable/applications/${pkgver}/src/kompare-${pkgver}.tar.xz")
-sha1sums=('4aa46b268ecbfb94c4aec5d7c2a4ad54b58f7021')
+sha1sums=('149901ca29c71358de7aa3031e17aee35dfb9d92')
 
 prepare() {
   mkdir -p build

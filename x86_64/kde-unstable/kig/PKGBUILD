@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251778 2015-11-21 09:29:05Z arojas $
+# $Id: PKGBUILD 252216 2015-12-03 20:16:33Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kig
-pkgver=15.11.80
-pkgrel=2
+pkgver=15.11.90
+pkgrel=1
 pkgdesc="Interactive Geometry"
 url="http://kde.org/applications/education/kig/"
 arch=('i686' 'x86_64')
@@ -17,7 +17,7 @@ replaces=('kdeedu-kig')
 conflicts=('kdeedu-kig')
 install=${pkgname}.install
 source=("http://download.kde.org/unstable/applications/${pkgver}/src/kig-${pkgver}.tar.xz")
-sha1sums=('0f72f8b0fabbed65af6e03c0f0016a25944f6d8f')
+sha1sums=('5c691874310c829e188229f06a6c4ce22bea3452')
 
 prepare() {
   mkdir -p build

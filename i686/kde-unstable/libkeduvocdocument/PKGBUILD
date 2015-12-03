@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 251490 2015-11-20 07:00:15Z arojas $
+# $Id: PKGBUILD 252161 2015-12-03 19:56:15Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkeduvocdocument
-pkgver=15.11.80
+pkgver=15.11.90
 pkgrel=1
 pkgdesc="Common libraries for KDE Edu applications"
 url="http://kde.org/applications/education"
@@ -12,7 +12,7 @@ license=('GPL' 'LGPL' 'FDL')
 depends=('kio' 'kdeedu-data')
 makedepends=('extra-cmake-modules' 'kdoctools' 'python')
 source=("http://download.kde.org/unstable/applications/${pkgver}/src/$pkgname-${pkgver}.tar.xz")
-sha1sums=('42d235e23fdbb8b351e7776b61da580ba70a7472')
+sha1sums=('9f2917f985a9b913c91100236ebc50c949726fc6')
 
 prepare() {
   mkdir -p build

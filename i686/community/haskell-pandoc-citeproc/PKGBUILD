@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 148032 2015-11-30 07:49:01Z fyan $
+# $Id: PKGBUILD 148140 2015-12-03 05:31:51Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=pandoc-citeproc
 pkgname=haskell-pandoc-citeproc
 pkgver=0.8.1.3
-pkgrel=8
+pkgrel=9
 pkgdesc="Supports using pandoc with citeproc"
 url="http://hackage.haskell.org/package/${_hkgname}"
 license=("custom:BSD3")
