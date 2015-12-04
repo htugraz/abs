@@ -1,11 +1,12 @@
-# $Id: PKGBUILD 147822 2015-11-26 06:11:34Z fyan $
+# $Id: PKGBUILD 148299 2015-12-04 05:20:39Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-desktop
-pkgver=2.90.1
-pkgrel=3
+pkgver=2.90.1.20151203
+_commit=80c9169ce0201fb259dd5aea323ad53203fb66b3
+pkgrel=1
 pkgdesc='Deepin desktop-environment - Desktop module'
 arch=('i686' 'x86_64')
 url="https://github.com/linuxdeepin/dde-desktop"
@@ -17,7 +18,7 @@ makedepends=('git')
 conflicts=('dde-desktop')
 replaces=('dde-desktop')
 groups=('deepin')
-source=("git+https://github.com/linuxdeepin/dde-desktop.git#tag=$pkgver")
+source=("git+https://github.com/linuxdeepin/dde-desktop.git#commit=$_commit")
 sha256sums=('SKIP')
 
 build(){
