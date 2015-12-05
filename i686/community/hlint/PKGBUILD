@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 147666 2015-11-24 14:26:04Z fyan $
+# $Id: PKGBUILD 148423 2015-12-05 04:03:57Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 pkgname=hlint
 pkgver=1.9.25
-pkgrel=1
+pkgrel=2
 pkgdesc="Source code suggestions"
 url="http://community.haskell.org/~ndm/hlint/"
 license=("custom:BSD3")
