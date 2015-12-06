@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 230346 2015-02-01 07:00:54Z bisson $
+# $Id: PKGBUILD 252945 2015-12-06 18:47:16Z bisson $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Rémy Oudompheng <oudomphe@clipper.ens.fr>
 
 pkgname=libspiro
 epoch=1
-pkgver=0.3.20150131
+pkgver=0.5.20150702
 pkgrel=1
 pkgdesc='Simplifies the drawing of beautiful curves'
 url='https://github.com/fontforge/libspiro'
 license=('GPL')
 arch=('i686' 'x86_64')
-source=("https://github.com/fontforge/libspiro/archive/${pkgver}.tar.gz")
-sha1sums=('fd897b4ae9640de9d395f4c037dd6ff779c1e8ca')
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/fontforge/libspiro/archive/${pkgver}.tar.gz")
+sha1sums=('2a1614b1762e3984ab0d629cf5b41a0f4c12f850')
 
 prepare() {
 	cd "${srcdir}/${pkgname}-${pkgver}"

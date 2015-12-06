@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 245059 2015-08-29 14:01:05Z fyan $
+# $Id: PKGBUILD 252831 2015-12-06 15:09:57Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Matt Monaco <cx monaco matt>
 
 pkgname=lmdb
-pkgver=0.9.16
+pkgver=0.9.17
 pkgrel=1
 pkgdesc="Symas Lightning Memory-Mapped Database"
 arch=('i686' 'x86_64')
@@ -17,6 +17,11 @@ sha256sums=('SKIP')
 build() {
   cd "$srcdir/lmdb/libraries/liblmdb"
   make prefix=/usr
+}
+
+check() {
+  cd "$srcdir/lmdb/libraries/liblmdb"
+  make test
 }
 
 package() {
