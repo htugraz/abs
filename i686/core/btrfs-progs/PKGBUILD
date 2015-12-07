@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 251249 2015-11-19 17:13:29Z seblu $
+# $Id: PKGBUILD 253584 2015-12-07 22:07:37Z seblu $
 # Maintainer: Sébastien "Seblu" Luttringer <seblu@archlinux.org>
 # Contributor: Tom Gundersen <teg@jklm.no>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=btrfs-progs
 pkgver=4.3.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Btrfs filesystem utilities'
 arch=('i686' 'x86_64')
 depends=('glibc' 'libutil-linux' 'e2fsprogs' 'lzo' 'zlib')
@@ -25,7 +25,7 @@ options=(!staticlibs)
 md5sums=('SKIP'
          '7241ba3a4286d08da0d50b7176941112'
          'b09688a915a0ec8f40e2f5aacbabc9ad'
-         '6988ee82cc06d8639faf16fd2d9e0bc2'
+         '794b867e09451284c545bae112aa0cfd'
          'a290e0ab88b7b4675cd20f5a2befc8cb')
 
 build() {

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 147199 2015-11-20 07:47:21Z fyan $
+# $Id: PKGBUILD 149446 2015-12-07 01:01:27Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Felix Kaiser <felix.kaiser@fxkr.net>
 
 pkgbase=python-pytest
 pkgname=('python-pytest' 'python2-pytest')
-pkgver=2.8.3
+pkgver=2.8.4
 pkgrel=1
 pkgdesc="Simple powerful testing with Python"
 arch=('any')
