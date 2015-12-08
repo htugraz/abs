@@ -1,0 +1,44 @@
+# $Id: PKGBUILD 151180 2015-12-08 21:28:41Z foutrelis $
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
+# Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
+# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=deepin-screenshot
+pkgver=3.1.3.20151208
+_commit=1ef646c0dd5c3bd376d1c0243c9a977b4eccfd17
+pkgrel=2
+pkgdesc="Easy-to-use screenshot tool for linuxdeepin desktop environment"
+arch=('any')
+url="https://gitcafe.com/Deepin/deepin-screenshot"
+license=('GPL3')
+depends=('deepin-menu' 'deepin-qml-widgets' 'pygtk' 'qt5-quickcontrols'
+         'qt5-svg' 'python2-pyqt5' 'python2-wnck' 'python2-xpybutil')
+makedepends=('deepin-gettext-tools' 'git')
+optdepends=('deepin-social-sharing: for "Share" support'
+            'deepin-daemon: for sound effect')
+groups=('deepin-extra')
+install="${pkgname}.install"
+source=("git+https://github.com/linuxdeepin/deepin-screenshot.git#commit=$_commit")
+sha256sums=('SKIP')
+
+prepare() {
+  cd deepin-screenshot
+
+  # fix python version
+  find src -type f | xargs sed -i 's=\(^#! */usr/bin.*\)python *$=\1python2='
+}
+
+build() {
+  cd deepin-screenshot
+
+  make
+}
+
+package() {
+  cd deepin-screenshot
+  make DESTDIR="${pkgdir}" install
+}
+
+ # Local Variables:
+ # sh-basic-offset: 2
+ # End:

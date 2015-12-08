@@ -1,0 +1,31 @@
+# $Id: PKGBUILD 150476 2015-12-08 19:33:45Z foutrelis $
+# Maintainer: Felix Yan <felixonmars@archlinux.org>
+# Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
+# Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
+
+pkgname=deepin-dock
+pkgver=2.90.1.20151208
+_commit=b57b683cbc58b038da67f22d922a8f51facea866
+pkgrel=2
+pkgdesc='Deepin desktop-environment - dock module'
+arch=('i686' 'x86_64')
+url="https://github.com/linuxdeepin/dde-dock"
+license=('GPL3')
+depends=('gtk2' 'libdui' 'qt5-svg' 'deepin-menu' 'deepin-file-manager' 'deepin-daemon')
+makedepends=('git')
+conflicts=('dde-dock')
+replaces=('dde-dock')
+groups=('deepin')
+source=("git+https://github.com/linuxdeepin/dde-dock.git#commit=$_commit")
+sha256sums=('SKIP')
+
+build(){
+  cd dde-dock
+  qmake-qt5 PREFIX=/usr
+  make
+}
+
+package() {
+  cd dde-dock
+  make INSTALL_ROOT="${pkgdir}" install
+}
