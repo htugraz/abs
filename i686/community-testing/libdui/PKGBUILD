@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 150700 2015-12-08 19:39:43Z foutrelis $
+# $Id: PKGBUILD 151236 2015-12-09 13:23:51Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=libdui
-pkgver=1.2.1.20151207
+pkgver=1.2.2
 _commit=deae40b090eb3933082bffc6413d0a2e25546d67
 pkgrel=1
 pkgdesc='Deepin graphical user interface library'

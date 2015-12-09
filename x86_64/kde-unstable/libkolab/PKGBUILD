@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251954 2015-11-25 13:01:44Z arojas $
+# $Id: PKGBUILD 254994 2015-12-09 09:05:58Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkolab
 pkgver=1.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Advanced Kolab Object Handling Library"
 url='http://git.kolab.org/libkolab/'
 arch=(i686 x86_64)

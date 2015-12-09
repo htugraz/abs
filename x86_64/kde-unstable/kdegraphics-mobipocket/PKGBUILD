@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252153 2015-12-03 19:53:30Z arojas $
+# $Id: PKGBUILD 254804 2015-12-09 07:17:03Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-mobipocket
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="A collection of plugins to handle mobipocket files"
 url="https://projects.kde.org/projects/kde/kdegraphics/kdegraphics-mobipocket"
 arch=('i686' 'x86_64')

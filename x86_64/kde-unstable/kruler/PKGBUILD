@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252271 2015-12-03 20:37:00Z arojas $
+# $Id: PKGBUILD 254923 2015-12-09 07:57:11Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kruler
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Screen Ruler"
 url="http://kde.org/applications/graphics/kruler/"
 arch=('i686' 'x86_64')

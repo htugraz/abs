@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252208 2015-12-03 20:13:20Z arojas $
+# $Id: PKGBUILD 254860 2015-12-09 07:35:21Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=blinken
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Memory Enhancement Game"
 url="http://kde.org/applications/education/blinken/"
 arch=('i686' 'x86_64')

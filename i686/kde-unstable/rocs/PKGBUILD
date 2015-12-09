@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252226 2015-12-03 20:21:22Z arojas $
+# $Id: PKGBUILD 254878 2015-12-09 07:42:49Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=rocs
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Graph Theory IDE"
 url="http://kde.org/applications/education/rocs/"
 arch=('i686' 'x86_64')

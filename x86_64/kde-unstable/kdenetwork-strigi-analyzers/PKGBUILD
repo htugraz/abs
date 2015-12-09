@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252294 2015-12-03 20:50:44Z arojas $
+# $Id: PKGBUILD 254947 2015-12-09 08:05:59Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-strigi-analyzers
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc='Strigi analyzers for various network protocols'
 url='https://projects.kde.org/projects/kde/kdenetwork/kdenetwork-strigi-analyzers'
 arch=('i686' 'x86_64')

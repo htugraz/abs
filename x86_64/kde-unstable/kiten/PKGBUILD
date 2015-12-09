@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252217 2015-12-03 20:16:55Z arojas $
+# $Id: PKGBUILD 254869 2015-12-09 07:38:35Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kiten
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Japanese Reference/Study Tool"
 url="http://kde.org/applications/education/kiten/"
 arch=('i686' 'x86_64')

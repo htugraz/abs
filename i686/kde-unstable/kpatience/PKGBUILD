@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252254 2015-12-03 20:31:11Z arojas $
+# $Id: PKGBUILD 254906 2015-12-09 07:51:36Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kpatience
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Offers a selection of solitaire card games"
 url="http://kde.org/applications/games/kpatience/"
 arch=('i686' 'x86_64')

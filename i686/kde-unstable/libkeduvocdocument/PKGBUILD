@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252161 2015-12-03 19:56:15Z arojas $
+# $Id: PKGBUILD 254812 2015-12-09 07:19:54Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkeduvocdocument
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Common libraries for KDE Edu applications"
 url="http://kde.org/applications/education"
 arch=('i686' 'x86_64')

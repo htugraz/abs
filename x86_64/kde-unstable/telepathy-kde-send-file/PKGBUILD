@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 252305 2015-12-03 20:54:23Z arojas $
+# $Id: PKGBUILD 254958 2015-12-09 08:09:29Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Laurent Carlier <lordheavym@gmail.com>
@@ -6,7 +6,7 @@
 pkgname=telepathy-kde-send-file
 _pkgname=ktp-send-file
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc='A File manager plugin to launch a file transfer job with a specified contact'
 arch=('i686' 'x86_64')
 url='http://community.kde.org/Real-Time_Communication_and_Collaboration'

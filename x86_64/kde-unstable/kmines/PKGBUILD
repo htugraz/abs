@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252248 2015-12-03 20:29:11Z arojas $
+# $Id: PKGBUILD 254900 2015-12-09 07:49:44Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kmines
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="The classic Minesweeper game"
 url="http://kde.org/applications/games/kmines/"
 arch=('i686' 'x86_64')

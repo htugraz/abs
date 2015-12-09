@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252253 2015-12-03 20:30:53Z arojas $
+# $Id: PKGBUILD 254905 2015-12-09 07:51:18Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-konquest
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="The KDE version of Gnu-Lactic"
 url="http://kde.org/applications/games/konquest/"
 arch=('i686' 'x86_64')

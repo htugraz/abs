@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 150474 2015-12-08 19:33:43Z foutrelis $
+# $Id: PKGBUILD 151254 2015-12-09 13:56:45Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-dbus-factory
-pkgver=2.92.1.20151208
-_commit=3c2b44c085415de28f2f82825aa36012eeb31042
+pkgver=2.92.2
+_commit=bb43480b94f666f1eb4b139d7e9710e13ee5aee6
 pkgrel=1
 pkgdesc='QML DBus factory for DDE'
 arch=('i686' 'x86_64')

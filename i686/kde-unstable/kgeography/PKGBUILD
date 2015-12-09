@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252214 2015-12-03 20:15:41Z arojas $
+# $Id: PKGBUILD 254866 2015-12-09 07:37:25Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kgeography
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Geography Trainer"
 url="http://kde.org/applications/education/kgeography/"
 arch=('i686' 'x86_64')

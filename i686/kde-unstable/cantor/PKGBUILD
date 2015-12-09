@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252209 2015-12-03 20:13:46Z arojas $
+# $Id: PKGBUILD 254861 2015-12-09 07:35:39Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=cantor
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="KDE Frontend to Mathematical Software"
 url="http://kde.org/applications/education/cantor/"
 arch=('i686' 'x86_64')

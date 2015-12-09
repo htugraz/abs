@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252155 2015-12-03 19:54:14Z arojas $
+# $Id: PKGBUILD 254806 2015-12-09 07:18:00Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-data
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Common data for KDE Edu applications"
 url="http://kde.org/applications/education"
 arch=('any')

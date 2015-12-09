@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252252 2015-12-03 20:30:33Z arojas $
+# $Id: PKGBUILD 254904 2015-12-09 07:51:00Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kollision
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="A simple ball dodging game"
 url="http://kde.org/applications/games/kollision/"
 arch=('i686' 'x86_64')

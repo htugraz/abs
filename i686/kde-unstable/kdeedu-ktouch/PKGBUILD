@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252221 2015-12-03 20:19:02Z arojas $
+# $Id: PKGBUILD 254873 2015-12-09 07:40:35Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-ktouch
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Touch Typing Tutor"
 url="http://kde.org/applications/education/ktouch/"
 arch=('i686' 'x86_64')

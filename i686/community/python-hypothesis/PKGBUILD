@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 147662 2015-11-24 14:14:30Z fyan $
+# $Id: PKGBUILD 151214 2015-12-09 02:10:01Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgbase=python-hypothesis
 pkgname=('python-hypothesis' 'python2-hypothesis')
-pkgver=1.15.0
+pkgver=1.16.0
 pkgrel=1
 pkgdesc="Advanced Quickcheck style testing library for Python"
 arch=('any')

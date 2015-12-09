@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 252204 2015-12-03 20:11:46Z arojas $
+# $Id: PKGBUILD 254856 2015-12-09 07:34:00Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -7,7 +7,7 @@ pkgbase=kate
 pkgname=('kwrite'
          'kate')
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
 makedepends=('extra-cmake-modules' 'kdoctools' 'python' 'plasma-framework' 'knewstuff' 'ktexteditor'

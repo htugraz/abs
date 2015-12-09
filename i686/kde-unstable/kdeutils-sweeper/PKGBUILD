@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252334 2015-12-03 21:05:12Z arojas $
+# $Id: PKGBUILD 254987 2015-12-09 08:19:45Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-sweeper
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc='System Cleaner'
 url='http://kde.org/applications/utilities/sweeper'
 arch=('i686' 'x86_64')

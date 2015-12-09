@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252225 2015-12-03 20:20:56Z arojas $
+# $Id: PKGBUILD 254877 2015-12-09 07:42:24Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=parley
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Vocabulary Trainer"
 url="http://kde.org/applications/education/parley/"
 arch=('i686' 'x86_64')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252219 2015-12-03 20:17:54Z arojas $
+# $Id: PKGBUILD 254871 2015-12-09 07:39:32Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kmplot
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Mathematical Function Plotter"
 url="http://kde.org/applications/education/kmplot/"
 arch=('i686' 'x86_64')

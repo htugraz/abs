@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 253986 2015-12-08 17:27:14Z alucryd $
+# $Id: PKGBUILD 254802 2015-12-09 07:15:05Z alucryd $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Yamashita Ren <lemaitre.lotus@gmail.com>
 
 pkgname=dcadec
 pkgver=0.1.0
-pkgrel=2
+pkgrel=3
 pkgdesc='DTS Coherent Acoustics decoder with support for HD extensions'
 arch=('i686' 'x86_64')
 url='https://github.com/foo86/dcadec.git'

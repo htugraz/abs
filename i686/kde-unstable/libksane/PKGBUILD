@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 252159 2015-12-03 19:55:29Z arojas $
+# $Id: PKGBUILD 254810 2015-12-09 07:19:15Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libksane
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="An image scanning library"
 url="https://projects.kde.org/projects/kde/kdegraphics/libs/libksane"
 arch=(i686 x86_64)

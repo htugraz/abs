@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252233 2015-12-03 20:24:02Z arojas $
+# $Id: PKGBUILD 254885 2015-12-09 07:44:57Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=katomic
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="A fun and educational game built around molecular geometry"
 url="http://kde.org/applications/games/katomic/"
 arch=('i686' 'x86_64')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252199 2015-12-03 20:09:59Z arojas $
+# $Id: PKGBUILD 254851 2015-12-09 07:32:21Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeaccessibility-kmouth
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 pkgdesc='Speech Synthesizer Frontend'
 url='http://kde.org/applications/utilities/kmouth/'

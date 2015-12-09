@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252228 2015-12-03 20:22:02Z arojas $
+# $Id: PKGBUILD 254880 2015-12-09 07:43:26Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=bomber
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="A single player arcade game"
 url="http://kde.org/applications/games/bomber/"
 arch=('i686' 'x86_64')

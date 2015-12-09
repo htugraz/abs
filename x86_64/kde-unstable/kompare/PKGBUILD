@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252314 2015-12-03 20:58:18Z arojas $
+# $Id: PKGBUILD 254967 2015-12-09 08:13:13Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kompare
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc='Diff/Patch Frontend'
 url='http://kde.org/applications/development/kompare/'
 arch=('i686' 'x86_64')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 252222 2015-12-03 20:19:24Z arojas $
+# $Id: PKGBUILD 254874 2015-12-09 07:40:55Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kturtle
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Educational Programming Environment"
 url="http://kde.org/applications/education/kturtle/"
 arch=(i686 x86_64)

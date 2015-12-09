@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252286 2015-12-03 20:42:12Z arojas $
+# $Id: PKGBUILD 254938 2015-12-09 08:02:25Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdemultimedia-kscd
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="KDE CD player"
 url='http://kde.org/applications/multimedia/kscd/'
 arch=('i686' 'x86_64')

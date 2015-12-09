@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 254018 2015-12-08 20:14:43Z foutrelis $
+# $Id: PKGBUILD 255025 2015-12-09 19:13:10Z foutrelis $
 # Maintainer: Allan McRae <allan@archlinux.org>
 
 # toolchain build order: linux-api-headers->glibc->binutils->gcc->binutils->glibc
@@ -8,7 +8,7 @@ pkgname=('gcc' 'gcc-libs' 'gcc-fortran' 'gcc-objc' 'gcc-ada' 'gcc-go')
 pkgver=5.3.0
 _pkgver=5
 _islver=0.15
-pkgrel=1
+pkgrel=2
 #_snapshot=5-20150623
 pkgdesc="The GNU Compiler Collection"
 arch=('i686' 'x86_64')

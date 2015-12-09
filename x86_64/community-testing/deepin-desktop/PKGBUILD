@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 150475 2015-12-08 19:33:44Z foutrelis $
+# $Id: PKGBUILD 151246 2015-12-09 13:36:04Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-desktop
-pkgver=2.90.1.20151208
-_commit=7e00bf448cb8ceed7c5ebda7fd17ab5f709d0a51
+pkgver=2.90.3
+_commit=acdaffa3e2fdc6509f7d339852ae819d97667d0a
 pkgrel=1
 pkgdesc='Deepin desktop-environment - Desktop module'
 arch=('i686' 'x86_64')

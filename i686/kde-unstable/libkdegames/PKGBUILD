@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252164 2015-12-03 19:57:19Z arojas $
+# $Id: PKGBUILD 254815 2015-12-09 07:20:54Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkdegames
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Common code and data for many KDE games"
 url="https://projects.kde.org/projects/kde/kdegames/libkdegames"
 arch=('i686' 'x86_64')

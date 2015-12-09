@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252287 2015-12-03 20:42:33Z arojas $
+# $Id: PKGBUILD 254939 2015-12-09 08:02:44Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdemultimedia-mplayerthumbs
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="MPlayer based thumbnail generator for video files"
 url='https://projects.kde.org/projects/kde/kdemultimedia/mplayerthumbs'
 arch=('i686' 'x86_64')

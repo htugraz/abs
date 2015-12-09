@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252290 2015-12-03 20:49:11Z arojas $
+# $Id: PKGBUILD 254943 2015-12-09 08:03:54Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-kopete
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc='Instant Messenger'
 url='http://kde.org/applications/internet/kopete/'
 arch=('i686' 'x86_64')

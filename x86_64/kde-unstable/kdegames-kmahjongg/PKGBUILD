@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252247 2015-12-03 20:28:52Z arojas $
+# $Id: PKGBUILD 254899 2015-12-09 07:49:25Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kmahjongg
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="A tile matching game for one or two players"
 url="http://kde.org/applications/games/kmahjongg/"
 arch=('i686' 'x86_64')

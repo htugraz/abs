@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 252306 2015-12-03 20:54:43Z arojas $
+# $Id: PKGBUILD 254959 2015-12-09 08:09:49Z arojas $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Antonio Rojas <arojas@archlinux.org>
@@ -6,7 +6,7 @@
 pkgname=telepathy-kde-text-ui
 _pkgname=ktp-text-ui
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc='Telepathy handler for Text Chats'
 arch=('i686' 'x86_64')
 url='http://community.kde.org/Real-Time_Communication_and_Collaboration'

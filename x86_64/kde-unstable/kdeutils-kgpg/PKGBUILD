@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252328 2015-12-03 21:03:11Z arojas $
+# $Id: PKGBUILD 254981 2015-12-09 08:17:48Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-kgpg
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc='A GnuPG frontend'
 url='http://kde.org/applications/utilities/kgpg/'
 arch=('i686' 'x86_64')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 254024 2015-12-08 20:14:51Z foutrelis $
+# $Id: PKGBUILD 255027 2015-12-09 19:16:11Z foutrelis $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=man-pages
 pkgver=4.02
 _posixver=2013-a
-pkgrel=3
+pkgrel=4
 pkgdesc="Linux man pages"
 arch=('any')
 license=('GPL' 'custom')
@@ -46,8 +46,6 @@ package() {
   rm -f man1/{df,dircolors,du,install,ln,ls}.1
   rm -f man1/{mkdir,mkfifo,mknod,mv,rm,rmdir}.1
   rm -f man1/{touch,vdir}.1
-  # these are included in gcc
-  rm -f man3/{random,regex}.3
   # this is included in shadow
   rm -f man5/passwd.5
   rm -f man3/getspnam.3

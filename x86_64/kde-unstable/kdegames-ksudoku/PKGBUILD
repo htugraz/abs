@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252261 2015-12-03 20:33:33Z arojas $
+# $Id: PKGBUILD 254913 2015-12-09 07:53:50Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-ksudoku
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="A logic-based symbol placement puzzle"
 url="http://kde.org/applications/games/ksudoku/"
 arch=('i686' 'x86_64')

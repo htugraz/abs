@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252163 2015-12-03 19:56:58Z arojas $
+# $Id: PKGBUILD 254814 2015-12-09 07:20:34Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkcompactdisc
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="A library for interfacing with CDs"
 url='https://projects.kde.org/projects/kde/kdemultimedia/libkcompactdisc'
 arch=('i686' 'x86_64')

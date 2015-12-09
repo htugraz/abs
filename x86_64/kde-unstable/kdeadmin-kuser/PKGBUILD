@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252202 2015-12-03 20:11:02Z arojas $
+# $Id: PKGBUILD 254854 2015-12-09 07:33:19Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeadmin-kuser
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc='User Manager'
 url='http://kde.org/applications/system/kuser/'
 arch=('i686' 'x86_64')

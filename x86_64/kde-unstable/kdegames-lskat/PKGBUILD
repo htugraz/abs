@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252264 2015-12-03 20:34:38Z arojas $
+# $Id: PKGBUILD 254916 2015-12-09 07:54:55Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-lskat
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Lieutenant Skat is a fun and engaging card game for two players"
 url="http://kde.org/applications/games/lskat/"
 arch=('i686' 'x86_64')

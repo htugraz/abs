@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252257 2015-12-03 20:32:12Z arojas $
+# $Id: PKGBUILD 254909 2015-12-09 07:52:35Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-ksirk
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="A computerized version of a well known strategy game"
 url="http://kde.org/applications/games/ksirk/"
 arch=('i686' 'x86_64')

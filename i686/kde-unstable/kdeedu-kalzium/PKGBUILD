@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252211 2015-12-03 20:14:28Z arojas $
+# $Id: PKGBUILD 254863 2015-12-09 07:36:16Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-kalzium
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Periodic Table of Elements"
 url="http://kde.org/applications/education/kalzium/"
 arch=('i686' 'x86_64')

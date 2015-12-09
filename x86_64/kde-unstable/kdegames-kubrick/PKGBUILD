@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252263 2015-12-03 20:34:19Z arojas $
+# $Id: PKGBUILD 254915 2015-12-09 07:54:36Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kubrick
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Based on the famous Rubik's Cube"
 url="http://kde.org/applications/games/kubrick/"
 arch=('i686' 'x86_64')

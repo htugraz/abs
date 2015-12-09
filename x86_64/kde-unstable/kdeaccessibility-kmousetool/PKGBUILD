@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252198 2015-12-03 20:09:39Z arojas $
+# $Id: PKGBUILD 254850 2015-12-09 07:32:03Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeaccessibility-kmousetool
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 pkgdesc='Clicks the mouse for you, reducing the effects of RSI'
 url='http://kde.org/applications/utilities/kmousetool/'

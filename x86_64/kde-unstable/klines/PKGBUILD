@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252246 2015-12-03 20:28:30Z arojas $
+# $Id: PKGBUILD 254898 2015-12-09 07:49:07Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=klines
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="A simple but highly addictive, one player game"
 url="http://kde.org/applications/games/klines/"
 arch=('i686' 'x86_64')

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 252345 2015-12-04 15:58:10Z arojas $
+# $Id: PKGBUILD 255002 2015-12-09 11:04:32Z arojas $
 # Maintainer: Ronald van Haren <ronald@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
@@ -7,7 +7,7 @@ pkgbase=digikam
 pkgname=('digikam' 'kipi-plugins')
 _pkgver=5.0.0-beta2
 pkgver=${_pkgver//-/_}
-pkgrel=2
+pkgrel=3
 pkgdesc="Digital photo management application for KDE"
 arch=('i686' 'x86_64')
 license=('GPL')

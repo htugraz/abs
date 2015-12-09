@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 252307 2015-12-03 20:55:26Z arojas $
+# $Id: PKGBUILD 254960 2015-12-09 08:10:35Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
@@ -7,7 +7,7 @@ pkgbase=kdepim
 pkgname=(akonadiconsole akregator blogilo konsolekalendar kaddressbook kalarm kleopatra kmail knotes
          kontact korganizer ktnef libkdepim)
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url='http://pim.kde.org'
 license=('GPL' 'LGPL' 'FDL')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 252276 2015-12-03 20:38:48Z arojas $
+# $Id: PKGBUILD 254928 2015-12-09 07:59:00Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=spectacle
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="KDE screenshot capture utility"
 arch=(i686 x86_64)
 url='https://projects.kde.org/spectacle'

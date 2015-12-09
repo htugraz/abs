@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 252298 2015-12-03 20:52:03Z arojas $
+# $Id: PKGBUILD 254951 2015-12-09 08:07:16Z arojas $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Antonio Rojas <arojas@archlinux.org>
@@ -6,7 +6,7 @@
 pkgname=telepathy-kde-approver
 _pkgname=ktp-approver
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc='KDE Channel Approver for Telepathy'
 arch=('i686' 'x86_64')
 url='http://community.kde.org/Real-Time_Communication_and_Collaboration'

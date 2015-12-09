@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252251 2015-12-03 20:30:11Z arojas $
+# $Id: PKGBUILD 254903 2015-12-09 07:50:41Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kolf
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="A miniature golf game with 2d top-down view"
 url="http://kde.org/applications/games/kolf/"
 arch=('i686' 'x86_64')

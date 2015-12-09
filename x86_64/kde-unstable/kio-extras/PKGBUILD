@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 252296 2015-12-03 20:51:21Z arojas $
+# $Id: PKGBUILD 254949 2015-12-09 08:06:36Z arojas $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kio-extras
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc="Additional components to increase the functionality of KIO"
 arch=(i686 x86_64)
 url='https://projects.kde.org/projects/kde/workspace/kio-extras'

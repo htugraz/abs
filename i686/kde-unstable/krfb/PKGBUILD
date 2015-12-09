@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252293 2015-12-03 20:50:23Z arojas $
+# $Id: PKGBUILD 254946 2015-12-09 08:05:40Z arojas $
 # Maintainer: Antonio Rojas <arojas@archlinux,org>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=krfb
 pkgver=15.11.90
-pkgrel=1
+pkgrel=2
 pkgdesc='Desktop Sharing'
 url='http://www.kde.org/applications/system/krfb'
 arch=(i686 x86_64)
