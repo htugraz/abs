@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251152 2015-11-18 07:33:40Z fyan $
+# $Id: PKGBUILD 255433 2015-12-10 04:55:51Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kwidgetsaddons
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Addons to QtWidgets'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kwidgetsaddons'

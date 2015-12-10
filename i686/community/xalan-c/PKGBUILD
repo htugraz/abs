@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 114615 2014-07-02 09:11:40Z fyan $
+# $Id: PKGBUILD 152047 2015-12-10 04:13:02Z foutrelis $
 # Maintainer: Roman Kyrylych <Roman.Kyrylych@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=xalan-c
 pkgver=1.11_pre1153059
-pkgrel=2
+pkgrel=3
 pkgdesc="A XSLT processor for transforming XML documents"
 arch=('i686' 'x86_64')
 url="http://xml.apache.org/xalan-c"

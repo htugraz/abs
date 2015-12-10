@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 146317 2015-11-06 17:48:21Z jleclanche $
+# $Id: PKGBUILD 151700 2015-12-10 04:01:14Z foutrelis $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=lxqt-qtplugin
 pkgver=0.10.0
-pkgrel=2
+pkgrel=3
 pkgdesc="LXQt platform integration for Qt"
 arch=("i686" "x86_64")
 groups=("lxqt")

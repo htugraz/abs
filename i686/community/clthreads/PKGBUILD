@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 95501 2013-08-13 03:29:13Z speps $
+# $Id: PKGBUILD 151382 2015-12-10 03:51:30Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Christoph Zeiler <rabyte*gmail>
 # Contributor: Tom K <tomk@runbox.com>
@@ -7,7 +7,7 @@
 
 pkgname=clthreads
 pkgver=2.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc="C++ wrapper library around the POSIX threads API"
 arch=('i686' 'x86_64')
 url="http://kokkinizita.linuxaudio.org/linuxaudio/"

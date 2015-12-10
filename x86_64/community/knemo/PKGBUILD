@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 139208 2015-09-04 14:16:59Z lcarlier $
+# $Id: PKGBUILD 151606 2015-12-10 03:58:29Z foutrelis $
 # Maintainer: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=knemo
 pkgver=0.7.7
-pkgrel=1
+pkgrel=2
 pkgdesc="The KDE Network Monitor"
 arch=('i686' 'x86_64')
 url="http://www.kde-apps.org/content/show.php?content=12956"

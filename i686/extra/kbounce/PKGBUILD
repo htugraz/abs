@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250375 2015-11-09 21:46:41Z arojas $
+# $Id: PKGBUILD 255227 2015-12-10 04:48:37Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kbounce
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A single player arcade game with the elements of puzzle"
 url="http://kde.org/applications/games/kbounce/"
 arch=('i686' 'x86_64')

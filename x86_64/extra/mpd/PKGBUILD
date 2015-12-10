@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 250077 2015-11-03 15:35:00Z foutrelis $
+# $Id: PKGBUILD 255552 2015-12-10 04:59:58Z foutrelis $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Angel Velasquez <angvp@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=mpd
 pkgver=0.19.11
-pkgrel=2
+pkgrel=3
 pkgdesc='Flexible, powerful, server-side application for playing music'
 url='http://www.musicpd.org/'
 license=('GPL')

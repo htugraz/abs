@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 95917 2013-08-18 17:31:41Z speps $
+# $Id: PKGBUILD 152014 2015-12-10 04:11:50Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Xavion <Xavion (dot) 0 (at) Gmail (dot) com>
 # Contributor: Giovanni Scafora <linuxmania@gmail.com>
 
 pkgname=v4l2ucp
 pkgver=2.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A universal control panel for Video for Linux Two (V4L2) devices"
 arch=('i686' 'x86_64')
 url="http://v4l2ucp.sourceforge.net/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 137039 2015-07-17 07:48:19Z alucryd $
+# $Id: PKGBUILD 152111 2015-12-10 05:34:19Z foutrelis $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: josephgbr <rafael.f.f1@gmail.com>
 
 pkgname=lib32-soundtouch
 pkgver=1.9.0
-pkgrel=1
+pkgrel=2
 pkgdesc='An audio processing library'
 arch=('x86_64')
 url='http://www.surina.net/soundtouch/'

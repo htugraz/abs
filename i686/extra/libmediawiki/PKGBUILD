@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 249733 2015-10-24 08:43:56Z arojas $
+# $Id: PKGBUILD 255494 2015-12-10 04:58:03Z foutrelis $
 # Maintainer:
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=libmediawiki
 pkgver=4.13.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A KDE C++ interface for MediaWiki based web service as wikipedia.org"
 arch=(i686 x86_64)
 url='https://www.digikam.org/'

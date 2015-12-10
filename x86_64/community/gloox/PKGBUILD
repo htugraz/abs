@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 147229 2015-11-20 18:34:41Z spupykin $
+# $Id: PKGBUILD 151515 2015-12-10 03:55:14Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: William Rea <sillywilly@gmail.com>
 
 pkgname=gloox
 pkgver=1.0.14
-pkgrel=1
+pkgrel=2
 pkgdesc="C++ libraries for development of Jabber client/component/server"
 arch=(i686 x86_64)
 url="http://camaya.net/gloox"

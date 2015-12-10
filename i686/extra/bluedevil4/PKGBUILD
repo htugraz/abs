@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 236548 2015-04-14 17:45:49Z arojas $
+# $Id: PKGBUILD 255084 2015-12-10 04:43:13Z foutrelis $
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=bluedevil4
 _pkgname=bluedevil
 pkgver=2.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc='KDE bluetooth framework'
 arch=('i686' 'x86_64')
 url="https://projects.kde.org/projects/extragear/base/bluedevil"

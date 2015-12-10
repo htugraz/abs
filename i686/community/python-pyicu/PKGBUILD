@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 146764 2015-11-14 03:56:58Z fyan $
+# $Id: PKGBUILD 151851 2015-12-10 04:06:36Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Jonathan Liu <net147@gmail.com>
 
 pkgbase=python-pyicu
 pkgname=('python-pyicu' 'python2-pyicu')
 pkgver=1.9.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Python binding for ICU"
 arch=('i686' 'x86_64')
 license=('MIT')

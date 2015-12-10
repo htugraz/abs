@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 108611 2014-03-30 05:06:34Z fyan $
+# $Id: PKGBUILD 151454 2015-12-10 03:53:39Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: noonov <noonov@gmail.com>
 
 pkgname=fbterm
 pkgver=1.7.0
-pkgrel=6
+pkgrel=7
 pkgdesc="A fast terminal emulator for linux with frame buffer device or VESA video card"
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/fbterm/"

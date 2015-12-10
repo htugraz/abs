@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250050 2015-11-03 13:03:42Z schiv $
+# $Id: PKGBUILD 255613 2015-12-10 05:05:22Z foutrelis $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Tobias Kieslich <tobias@archlinux.org>
 
 pkgname=qjackctl
 pkgver=0.4.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A Qt front-end for the JACK low-latency audio server"
 url="http://qjackctl.sourceforge.net/"
 arch=('i686' 'x86_64')

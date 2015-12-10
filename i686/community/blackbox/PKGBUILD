@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 118799 2014-09-11 05:19:50Z bpiotrowski $
+# $Id: PKGBUILD 151341 2015-12-10 03:50:04Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: durbatuluk <dvdscripter@gmail.org>
 # Contributor: Steve Ponsford <sp4d@lavabit.com>
 
 pkgname=blackbox
 pkgver=0.70.1
-pkgrel=12
+pkgrel=13
 pkgdesc="A window manager for X11"
 url="http://blackboxwm.sourceforge.net/"
 arch=('i686' 'x86_64')

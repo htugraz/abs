@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 142407 2015-10-01 16:04:08Z fyan $
+# $Id: PKGBUILD 151844 2015-12-10 04:06:25Z foutrelis $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 
 pkgname=python-cchardet
 pkgname=(python-cchardet python2-cchardet)
 pkgver=1.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Universal encoding detector faster than chardet."
 url="http://pypi.python.org/pypi/cchardet/"
 makedepends=('cython' 'cython2' 'python-setuptools' 'python2-setuptools')

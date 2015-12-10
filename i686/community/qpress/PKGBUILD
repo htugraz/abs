@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 146709 2015-11-13 09:29:22Z mtorromeo $
+# $Id: PKGBUILD 151878 2015-12-10 04:07:23Z foutrelis $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 
 pkgname=qpress
 pkgver=1.1
 _pkgver=11
-pkgrel=1
+pkgrel=2
 pkgdesc="File archiver using QuickLZ and designed to utilize fast storage systems to their max"
 arch=('i686' 'x86_64')
 url="http://quicklz.com/"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 108241 2014-03-25 10:37:30Z spupykin $
+# $Id: PKGBUILD 151674 2015-12-10 04:00:25Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Geoffroy Carrier <geoffroy@archlinux.org>
 # Contributor: William Rea <sillywilly@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=lilypond
 pkgver=2.18.2
-pkgrel=2
+pkgrel=3
 pkgdesc="An automated music engraving system"
 arch=('i686' 'x86_64')
 url="http://lilypond.org"

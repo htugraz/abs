@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 224163 2014-10-10 07:34:57Z andrea $
+# $Id: PKGBUILD 255591 2015-12-10 05:03:05Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=polkit-kde
 pkgver=0.99.0
-pkgrel=5
+pkgrel=6
 pkgdesc='Daemon providing a polkit authentication UI for KDE'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/extragear/base/polkit-kde-agent-1'

@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 101265 2013-11-21 12:14:23Z bpiotrowski $
+# $Id: PKGBUILD 151585 2015-12-10 03:57:40Z foutrelis $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=js185
 pkgver=1.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="JavaScript interpreter and libraries (legacy)"
 arch=(i686 x86_64)
-url="https://developer.mozilla.org/En/SpiderMonkey/1.8.5"
+url="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Releases/1.8.5"
 license=(MPL)
 depends=(nspr gcc-libs)
 makedepends=(python2 zip)

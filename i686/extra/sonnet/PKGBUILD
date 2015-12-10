@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251164 2015-11-18 07:33:56Z fyan $
+# $Id: PKGBUILD 255662 2015-12-10 05:10:08Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sonnet
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Spelling framework for Qt5'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/sonnet'

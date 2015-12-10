@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 126181 2015-01-18 22:04:10Z eric $
+# $Id: PKGBUILD 151717 2015-12-10 04:01:46Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=medit
 pkgver=1.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A GTK text editor"
 arch=('i686' 'x86_64')
 url="http://mooedit.sourceforge.net"

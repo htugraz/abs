@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 252087 2015-12-01 07:50:02Z arojas $
+# $Id: PKGBUILD 255136 2015-12-10 04:45:16Z foutrelis $
 # Maintainer:
 # Contributor: netcrusher < tobias AT miglix DOT eu >
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=festival
 pkgver=2.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A general multi-lingual speech synthesis system"
 arch=(i686 x86_64)
 url="http://www.cstr.ed.ac.uk/projects/festival/"

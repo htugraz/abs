@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 248627 2015-10-08 19:52:34Z heftig $
+# $Id: PKGBUILD 255183 2015-12-10 04:47:02Z foutrelis $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgbase=gtkmm3
 _pkgbasename=gtkmm
 pkgname=('gtkmm3' 'gtkmm3-docs')
 pkgver=3.18.0
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 makedepends=('gtk3' 'pangomm' 'atkmm' 'glibmm-docs' 'mm-common' 'doxygen' 'libxslt')
 license=('LGPL')

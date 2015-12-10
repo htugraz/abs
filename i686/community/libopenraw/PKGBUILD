@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 99868 2013-10-31 02:11:04Z allan $
+# $Id: PKGBUILD 151655 2015-12-10 03:59:50Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
@@ -6,7 +6,7 @@
 
 pkgname=libopenraw
 pkgver=0.0.9
-pkgrel=3
+pkgrel=4
 pkgdesc='Library for decoding RAW files'
 arch=('x86_64' 'i686')
 url='http://libopenraw.freedesktop.org/'

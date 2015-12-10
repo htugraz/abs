@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 252063 2015-11-29 20:06:58Z bpiotrowski $
+# $Id: PKGBUILD 255545 2015-12-10 04:59:43Z foutrelis $
 # Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 
 pkgbase=mariadb
 pkgname=('libmariadbclient' 'mariadb-clients' 'mytop' 'mariadb')
 pkgver=10.1.9
 _pkgver=${pkgver/.a/a}
-pkgrel=2
+pkgrel=4
 arch=('i686' 'x86_64')
 license=('GPL')
 url='http://mariadb.org/'

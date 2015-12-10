@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 133736 2015-05-18 16:20:59Z lcarlier $
+# $Id: PKGBUILD 151782 2015-12-10 04:04:29Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Anton Bazhenov <anton.bazhenov at gmail>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=openlierox
 pkgver=0.58_rc3
-pkgrel=6
+pkgrel=7
 pkgdesc="A real-time excessive Worms-clone"
 arch=('i686' 'x86_64')
 url="http://www.openlierox.net/"

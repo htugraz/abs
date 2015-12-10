@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 145898 2015-11-04 03:02:47Z fyan $
+# $Id: PKGBUILD 152069 2015-12-10 04:13:47Z foutrelis $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 pkgname=zeromq
 pkgver=4.1.3
-pkgrel=2
+pkgrel=4
 pkgdesc="Fast messaging system built on sockets.  C and C++ bindings.  aka 0MQ, ZMQ."
 arch=('i686' 'x86_64')
 url="http://www.zeromq.org"

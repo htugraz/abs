@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 235337 2015-04-01 23:00:00Z eric $
+# $Id: PKGBUILD 255637 2015-12-10 05:08:00Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 # Contributor: Devin J. Pohly <djpohly+arch@gmail.com>
 
 pkgname=sbsms
 pkgver=2.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Library for time stretching and pitch scaling of audio"
 arch=('i686' 'x86_64')
 url="http://sbsms.sourceforge.net/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251201 2015-11-18 07:35:00Z fyan $
+# $Id: PKGBUILD 255439 2015-12-10 04:56:08Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=kxmlrpcclient
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc="XML-RPC client library for KDE"
 arch=('i686' 'x86_64')
 url="https://projects.kde.org/projects/kde/pim/kxmlrpcclient"

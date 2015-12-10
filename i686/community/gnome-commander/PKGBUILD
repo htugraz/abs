@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 134400 2015-05-31 08:30:16Z jlichtblau $
+# $Id: PKGBUILD 151519 2015-12-10 03:55:22Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=gnome-commander
 pkgver=1.4.7
-pkgrel=1
+pkgrel=2
 pkgdesc='Graphical two-pane filemanager for Gnome'
 arch=('i686' 'x86_64')
 url='http://gcmd.github.io/'

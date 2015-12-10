@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137740 2015-08-02 17:47:42Z arodseth $
+# $Id: PKGBUILD 151339 2015-12-10 03:50:00Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Maintainer: Alexander F Rødseth <xyproto@archlinux.org>
 # Contributor: SanskritFritz (gmail)
@@ -6,7 +6,7 @@
 
 pkgname=bibletime
 pkgver=2.10.1
-pkgrel=4
+pkgrel=5
 pkgdesc='Bible study tool'
 arch=('x86_64' 'i686')
 url='http://www.bibletime.info/'

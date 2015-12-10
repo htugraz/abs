@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 250343 2015-11-09 21:33:49Z arojas $
+# $Id: PKGBUILD 255219 2015-12-10 04:48:20Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
@@ -6,7 +6,7 @@ pkgbase=kate
 pkgname=('kwrite'
          'kate')
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')
 depends=('knewstuff' 'ktexteditor' 'threadweaver' 'kded' 'kitemmodels' 'kactivities-frameworks')

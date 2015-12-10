@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 131907 2015-04-22 08:39:41Z spupykin $
+# $Id: PKGBUILD 151541 2015-12-10 03:55:56Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Tor Krill <tor@krill.nu>
 # Contributor: Lee.MaRS <leemars@gmail.com>
 
 pkgname=gsoap
 pkgver=2.8.22
-pkgrel=1
+pkgrel=2
 pkgdesc="Offers an XML language binding to ease the development of SOAP/XML Web services in C and C/C++"
 url="http://www.cs.fsu.edu/~engelen/soap.html"
 arch=('i686' 'x86_64')

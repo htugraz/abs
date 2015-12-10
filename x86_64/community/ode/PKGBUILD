@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 119714 2014-09-28 20:40:39Z giovanni $
+# $Id: PKGBUILD 151769 2015-12-10 04:04:03Z foutrelis $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Adam Griffiths <adam_griffithsAATTdart.net.au>
 
 pkgname=ode
 pkgver=0.13.1
-pkgrel=1
+pkgrel=2
 pkgdesc="An open source, high performance library for simulating rigid body dynamics"
 arch=('i686' 'x86_64')
 url="https://bitbucket.org/odedevs/ode/"

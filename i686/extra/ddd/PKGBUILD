@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 246488 2015-09-17 21:01:14Z foutrelis $
+# $Id: PKGBUILD 255113 2015-12-10 04:44:22Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=ddd
 pkgver=3.3.12
-pkgrel=6
+pkgrel=7
 pkgdesc="A graphical front-end for command-line debuggers such as GDB, JDB, pydb, perl debugger..."
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/ddd/"

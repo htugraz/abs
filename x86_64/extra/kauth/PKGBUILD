@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251149 2015-11-18 07:33:36Z fyan $
+# $Id: PKGBUILD 255222 2015-12-10 04:48:25Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kauth
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Abstraction to system policy and authentication features'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kauth'

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251140 2015-11-18 01:53:13Z allan $
+# $Id: PKGBUILD 255038 2015-12-10 04:36:57Z foutrelis $
 # Maintainer: Allan McRae <allan@archlinux.org>
 # Contributer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gmp
 pkgver=6.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A free library for arbitrary precision arithmetic"
 arch=('i686' 'x86_64')
 url="http://gmplib.org/"

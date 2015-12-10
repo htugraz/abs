@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 228225 2014-12-31 06:43:28Z eric $
+# $Id: PKGBUILD 255102 2015-12-10 04:43:55Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=cln
 pkgver=1.3.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Class library for numbers"
 arch=('i686' 'x86_64')
 url="http://www.ginac.de/CLN/"

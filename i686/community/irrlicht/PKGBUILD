@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 140675 2015-09-19 00:50:45Z svenstaro $
+# $Id: PKGBUILD 151578 2015-12-10 03:57:21Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Hilton Medeiros <medeiros.hilton AT gmail DOT com>
 # Contributor: Ali H. Caliskan <ali.h.caliskan AT gmail DOT com>
@@ -8,7 +8,7 @@
 pkgbase=irrlicht
 pkgname=('irrlicht' 'irrlicht-docs')
 pkgver=1.8.3
-pkgrel=1
+pkgrel=2
 pkgdesc="An open source high performance realtime 3D graphics engine."
 arch=('i686' 'x86_64')
 url="http://irrlicht.sourceforge.net/"

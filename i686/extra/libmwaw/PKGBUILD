@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 245047 2015-08-29 10:56:20Z andyrtr $
+# $Id: PKGBUILD 255501 2015-12-10 04:58:15Z foutrelis $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Contributor: Thomas Arnhold <thomas at arnhold dot org>
 
 pkgname=libmwaw
 pkgver=0.3.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Import library for some old mac text documents."
 arch=('i686' 'x86_64')
 url="https://sourceforge.net/projects/libmwaw/"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 144237 2015-10-16 08:57:34Z fyan $
+# $Id: PKGBUILD 151753 2015-12-10 04:03:08Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=nemo-qt-components
 pkgver=2.0.15
-pkgrel=1
+pkgrel=2
 pkgdesc="Qt Quick Components"
 arch=('i686' 'x86_64')
 url="https://github.com/nemomobile/qt-components"

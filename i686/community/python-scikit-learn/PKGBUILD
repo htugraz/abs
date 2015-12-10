@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 146349 2015-11-07 08:30:06Z aginiewicz $
+# $Id: PKGBUILD 151857 2015-12-10 04:06:46Z foutrelis $
 # Maintainer: Andrzej Giniewicz <gginiu@gmail.com>
 
 pkgbase=python-scikit-learn
 pkgname=('python2-scikit-learn' 'python-scikit-learn')
 pkgver=0.17
-pkgrel=1
+pkgrel=2
 pkgdesc="A set of python modules for machine learning and data mining"
 arch=('i686' 'x86_64')
 url="http://scikit-learn.sourceforge.net/"

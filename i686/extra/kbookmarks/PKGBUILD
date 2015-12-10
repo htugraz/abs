@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251167 2015-11-18 07:34:01Z fyan $
+# $Id: PKGBUILD 255226 2015-12-10 04:48:34Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kbookmarks
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Support for bookmarks and the XBEL format'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kbookmarks'

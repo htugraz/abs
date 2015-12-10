@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 246464 2015-09-17 20:59:59Z foutrelis $
+# $Id: PKGBUILD 255043 2015-12-10 04:37:08Z foutrelis $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: judd <jvinet@zeroflux.org>
 
 pkgname=ncurses
 pkgver=6.0
-pkgrel=3
+pkgrel=4
 pkgdesc='System V Release 4.0 curses emulation library'
 arch=('i686' 'x86_64')
 url='http://invisible-island.net/ncurses/ncurses.html'

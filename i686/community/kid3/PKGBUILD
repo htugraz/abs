@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 144567 2015-10-21 21:28:52Z jlichtblau $
+# $Id: PKGBUILD 151602 2015-12-10 03:58:23Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Alois Nespor <alois.nespor@gmail.com>
 
 pkgbase=kid3
 pkgname=('kid3' 'kid3-qt')
 pkgver=3.3.0
-pkgrel=3
+pkgrel=4
 arch=('i686' 'x86_64')
 url="http://kid3.sourceforge.net/"
 license=('GPL')

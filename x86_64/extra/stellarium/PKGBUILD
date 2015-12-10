@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252109 2015-12-02 01:19:50Z anatolik $
+# $Id: PKGBUILD 255665 2015-12-10 05:10:20Z foutrelis $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 
 pkgname=stellarium
 pkgver=0.14.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A stellarium with great graphics and a nice database of sky-objects"
 arch=("i686" "x86_64")
 url="http://stellarium.free.fr/"

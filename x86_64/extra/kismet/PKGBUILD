@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 246508 2015-09-17 21:01:41Z foutrelis $
+# $Id: PKGBUILD 255373 2015-12-10 04:53:17Z foutrelis $
 # Maintainer:
 # Contributor: Angel Velasquez <angvp@archlinux.org> 
 # Contributor: Jason Chu <jason@archlinux.org>
@@ -7,7 +7,7 @@
 pkgname=kismet
 pkgver=2013_03_R1b
 _realver="${pkgver//_/-}"
-pkgrel=3
+pkgrel=4
 pkgdesc="802.11 layer2 wireless network detector, sniffer, and intrusion detection system"
 arch=('i686' 'x86_64')
 url="http://www.kismetwireless.net/"

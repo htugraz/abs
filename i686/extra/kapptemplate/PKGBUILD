@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250451 2015-11-09 22:13:33Z arojas $
+# $Id: PKGBUILD 255217 2015-12-10 04:48:16Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kapptemplate
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='KDE Template Generator'
 url='http://kde.org/applications/development/kapptemplate/'
 arch=('i686' 'x86_64')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250421 2015-11-09 22:02:35Z arojas $
+# $Id: PKGBUILD 255295 2015-12-10 04:50:47Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdemultimedia-ffmpegthumbs
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='FFmpeg-based thumbnail creator for video files'
 url='https://projects.kde.org/projects/kde/kdemultimedia/ffmpegthumbs'
 arch=('i686' 'x86_64')

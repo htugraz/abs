@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 250477 2015-11-09 22:22:10Z arojas $
+# $Id: PKGBUILD 255340 2015-12-10 04:52:21Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
@@ -9,7 +9,7 @@ pkgname=('kdewebdev-kfilereplace'
          'kdewebdev-klinkstatus'
          'kdewebdev-kommander')
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url='http://www.kde.org'
 license=('GPL' 'LGPL' 'FDL')

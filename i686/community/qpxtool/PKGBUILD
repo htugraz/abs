@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 91840 2013-05-28 17:05:29Z spupykin $
+# $Id: PKGBUILD 151880 2015-12-10 04:07:27Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Krzysztof Stasiorowski <krzysiekst@gmail.com>
 
 pkgname=qpxtool
 pkgver=0.7.2
-pkgrel=4
+pkgrel=5
 pkgdesc="Allows better controll over optical drives to include QChecks and optimization settings."
 arch=('i686' 'x86_64')
 url="http://qpxtool.sourceforge.net/"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 250439 2015-11-09 22:08:55Z arojas $
+# $Id: PKGBUILD 255678 2015-12-10 05:11:13Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Antonio Rojas <arojas@archlinux.org>
@@ -6,7 +6,7 @@
 pkgname=telepathy-kde-contact-list
 _pkgname=ktp-contact-list
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='KDE Telepathy contact list application'
 arch=('i686' 'x86_64')
 url='http://community.kde.org/Real-Time_Communication_and_Collaboration'

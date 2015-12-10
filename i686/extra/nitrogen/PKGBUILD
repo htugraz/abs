@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 220199 2014-08-18 08:58:50Z bpiotrowski $
+# $Id: PKGBUILD 255558 2015-12-10 05:00:19Z foutrelis $
 # Maintainer: James Rayner <james@archlinux.org>
 # Maintainer: Alexander Fehr <pizzapunk gmail com>
 # Contributor: Sebastian Sareyko <public@nooms.de>
 
 pkgname=nitrogen
 pkgver=1.5.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Background browser and setter for X windows"
 arch=('i686' 'x86_64')
 url="http://projects.l3ib.org/nitrogen/"
@@ -25,6 +25,7 @@ prepare() {
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
+  CXXFLAGS+=' -std=c++11'
   ./configure --prefix=/usr
   make
 }

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 145954 2015-11-04 11:47:14Z alucryd $
+# $Id: PKGBUILD 151559 2015-12-10 03:56:26Z foutrelis $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 
 pkgname=higan
 pkgver=095
-pkgrel=1
+pkgrel=2
 pkgdesc='Nintendo multi-system emulator'
 arch=('i686' 'x86_64')
 url='http://byuu.org/'

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250404 2015-11-09 21:56:30Z arojas $
+# $Id: PKGBUILD 255281 2015-12-10 04:50:16Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-palapeli
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A single-player jigsaw puzzle game"
 url="http://kde.org/applications/games/palapeli/"
 arch=('i686' 'x86_64')

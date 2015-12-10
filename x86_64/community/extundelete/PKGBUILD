@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 115171 2014-07-06 12:00:47Z fyan $
+# $Id: PKGBUILD 151451 2015-12-10 03:53:34Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: snuo
 
 pkgname=extundelete
 pkgver=0.2.4
-pkgrel=2
+pkgrel=3
 pkgdesc="Utility for recovering deleted files from ext2, ext3 or ext4 partitions by parsing the journal"
 arch=('i686' 'x86_64')
 url="http://extundelete.sourceforge.net"

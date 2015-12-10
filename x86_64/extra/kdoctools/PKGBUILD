@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251148 2015-11-18 07:33:35Z fyan $
+# $Id: PKGBUILD 255345 2015-12-10 04:52:29Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdoctools
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Documentation generation from docbook'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kdoctools'

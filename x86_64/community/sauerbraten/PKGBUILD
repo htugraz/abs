@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 90555 2013-05-13 07:12:03Z lcarlier $
+# $Id: PKGBUILD 151927 2015-12-10 04:09:04Z foutrelis $
 # Maintainer: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Jaroslaw Swierczynski <swiergot@aur.archlinux.org>
 # Contributor: Roman Kyrylych <Roman.Kyrylych@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=sauerbraten
 pkgver=2013_02_03_collect_edition
-pkgrel=2
+pkgrel=3
 pkgdesc="FPS that uses an improved version of the Cube engine"
 arch=('i686' 'x86_64')
 url="http://www.sauerbraten.org/"

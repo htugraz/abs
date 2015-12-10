@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 144823 2015-10-23 18:34:10Z schiv $
+# $Id: PKGBUILD 151895 2015-12-10 04:07:58Z foutrelis $
 # Maintainer : Ray Rashif <schiv@archlinux.org>
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Philipp Überbacher <hollunder at gmx dot at>
 
 pkgname=qtractor
 pkgver=0.7.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Audio/MIDI multitrack sequencer"
 arch=('i686' 'x86_64')
 url="http://qtractor.sourceforge.net/"

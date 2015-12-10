@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 250779 2015-11-12 01:28:19Z foutrelis $
+# $Id: PKGBUILD 255071 2015-12-10 04:42:45Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
@@ -6,7 +6,7 @@
 
 pkgname=audacious-plugins
 pkgver=3.7
-pkgrel=1
+pkgrel=3
 pkgdesc="Plugins for Audacious"
 arch=('i686' 'x86_64')
 url="http://audacious-media-player.org/"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 144576 2015-10-21 21:55:12Z foutrelis $
+# $Id: PKGBUILD 151443 2015-12-10 03:53:20Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=electricsheep
 pkgver=2.7b33
-pkgrel=24
+pkgrel=25
 pkgdesc="A screensaver that realize the collective dream of sleeping computers from all over the internet"
 arch=('i686' 'x86_64')
 url="http://community.electricsheep.org/"

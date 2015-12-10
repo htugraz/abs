@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 206625 2014-03-03 18:01:54Z andrea $
+# $Id: PKGBUILD 255335 2015-12-10 04:52:11Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdevelop-pg-qt
 pkgver=1.0.0
-pkgrel=3
+pkgrel=4
 pkgdesc="KDevelop Parser Generator, a LL(1) parser generator used by KDevelop language plugins"
 arch=('i686' 'x86_64')
 url="http://www.kdevelop.org/"

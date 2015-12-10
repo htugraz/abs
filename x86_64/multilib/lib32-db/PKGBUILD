@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 126747 2015-01-29 15:09:32Z alucryd $
+# $Id: PKGBUILD 152087 2015-12-10 05:33:11Z foutrelis $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=lib32-db
 pkgver=5.3.28
-pkgrel=2
+pkgrel=3
 pkgdesc='The Berkeley DB embedded database system'
 arch=('x86_64')
 url='http://www.oracle.com/technology/software/products/berkeley-db/index.html'

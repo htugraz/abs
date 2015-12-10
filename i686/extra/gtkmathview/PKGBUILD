@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 205608 2014-02-09 10:29:40Z andyrtr $
+# $Id: PKGBUILD 255181 2015-12-10 04:46:58Z foutrelis $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gtkmathview
 pkgver=0.8.0
-pkgrel=4
+pkgrel=5
 pkgdesc="C++ rendering engine for MathML documents"
 arch=('i686' 'x86_64')
 url="http://helm.cs.unibo.it/mml-widget/"

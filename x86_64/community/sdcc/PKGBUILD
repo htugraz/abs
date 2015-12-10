@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 135902 2015-06-26 13:25:23Z spupykin $
+# $Id: PKGBUILD 151935 2015-12-10 04:09:21Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Jose Negron <josenj.arch@mailnull.net>
 
 pkgname=sdcc
 pkgver=3.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Retargettable ANSI C compiler (Intel 8051, Maxim 80DS390, Zilog Z80 and the Motorola 68HC08)"
 arch=('i686' 'x86_64')
 license=('GPL')

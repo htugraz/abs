@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251196 2015-11-18 07:34:49Z fyan $
+# $Id: PKGBUILD 255374 2015-12-10 04:53:18Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kitemmodels
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Models for Qt Model/View system'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kitemmodels'

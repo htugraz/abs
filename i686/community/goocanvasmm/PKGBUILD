@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 148428 2015-12-05 06:34:25Z foutrelis $
+# $Id: PKGBUILD 151529 2015-12-10 03:55:37Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
@@ -6,7 +6,7 @@
 
 pkgname=goocanvasmm
 pkgver=1.90.11
-pkgrel=1
+pkgrel=2
 pkgdesc='C++ wrappers for goocanvas'
 arch=('i686' 'x86_64')
 url='http://ftp.gnome.org/pub/gnome/sources/goocanvasmm/'

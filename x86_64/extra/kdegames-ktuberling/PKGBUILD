@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250401 2015-11-09 21:55:28Z arojas $
+# $Id: PKGBUILD 255278 2015-12-10 04:50:11Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-ktuberling
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A simple constructor game suitable for children and adults alike"
 url="http://kde.org/applications/games/ktuberling/"
 arch=('i686' 'x86_64')

@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 144613 2015-10-21 21:56:19Z foutrelis $
+# $Id: PKGBUILD 151818 2015-12-10 04:05:37Z foutrelis $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname=pion
 pkgver=5.0.7
-pkgrel=2
+pkgrel=3
 pkgdesc="A C++ development library for implementing lightweight HTTP interfaces"
 url="https://github.com/cloudmeter/pion"
 arch=('i686' 'x86_64')

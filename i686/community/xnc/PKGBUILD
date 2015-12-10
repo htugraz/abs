@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 127137 2015-02-04 23:02:34Z bluewind $
+# $Id: PKGBUILD 152056 2015-12-10 04:13:23Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=xnc
 pkgver=5.0.4
-pkgrel=7
+pkgrel=8
 pkgdesc="X nortern captain file manager"
 arch=(i686 x86_64)
 url="http://xnc.jinr.ru/"

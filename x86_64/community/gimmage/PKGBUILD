@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 138039 2015-08-06 18:56:28Z spupykin $
+# $Id: PKGBUILD 151505 2015-12-10 03:54:58Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Roman Kyrylych <roman@archlinux.org>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=gimmage
 pkgver=0.2.3
-pkgrel=6
+pkgrel=7
 pkgdesc="A gtkmm image viewer"
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/gimmage.berlios/"
@@ -26,6 +26,7 @@ prepare() {
 
 build() {
   cd $srcdir/$pkgname-$pkgver
+  CXXFLAGS+=' -std=c++11'
   ./configure --prefix=/usr
   make
 }

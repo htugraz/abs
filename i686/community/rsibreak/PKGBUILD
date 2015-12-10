@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 141580 2015-09-24 15:23:32Z arojas $
+# $Id: PKGBUILD 151918 2015-12-10 04:08:44Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=rsibreak
 pkgver=0.12
-pkgrel=1
+pkgrel=2
 pkgdesc="Takes care of your health and regularly breaks your work to avoid repetitive strain injury (RSI)"
 url="https://userbase.kde.org/RSIBreak"
 arch=(i686 x86_64)

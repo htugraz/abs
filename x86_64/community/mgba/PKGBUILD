@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 145029 2015-10-26 17:37:33Z jsteel $
+# $Id: PKGBUILD 151721 2015-12-10 04:01:53Z foutrelis $
 # Maintainer:  Jonathan Steel <jsteel at archlinux.org>
 # Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Duck Hunt <vaporeon@tfwno.gf>
@@ -6,7 +6,7 @@
 pkgbase=mgba
 pkgname=('libmgba' 'mgba-sdl' 'mgba-qt')
 pkgver=0.3.1
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url='http://mgba.io'
 license=('custom:MPL2')

@@ -1,11 +1,11 @@
 # vim:set ts=2 sw=2 et:
-# $Id: PKGBUILD 137717 2015-08-02 16:17:18Z idevolder $
+# $Id: PKGBUILD 151799 2015-12-10 04:04:59Z foutrelis $
 # Maintainer: BlackEagle < ike DOT devolder AT gmail DOT com >
 # Maintainer: Sébastien Luttringer <seblu@aur.archlinux.org
 
 pkgname=par2cmdline
 pkgver=0.6.14
-pkgrel=2
+pkgrel=3
 pkgdesc='A PAR 2.0 compatible file verification and repair tool'
 url='https://github.com/BlackIkeEagle/par2cmdline'
 license=('GPL2')

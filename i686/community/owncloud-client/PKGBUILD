@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 148250 2015-12-03 22:49:47Z arojas $
+# $Id: PKGBUILD 151794 2015-12-10 04:04:49Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Kuba Serafinowski <zizzfizzix(at)gmail(dot)com>
 
 _name=owncloudclient
 pkgname=owncloud-client
 pkgver=2.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc='ownCloud client based on mirall'
 arch=(i686 x86_64)
 url='http://owncloud.org/'

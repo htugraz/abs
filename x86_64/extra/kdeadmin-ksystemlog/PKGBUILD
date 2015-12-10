@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250340 2015-11-09 21:32:46Z arojas $
+# $Id: PKGBUILD 255252 2015-12-10 04:49:23Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeadmin-ksystemlog
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='System log viewer tool'
 url='http://kde.org/applications/system/ksystemlog/'
 arch=('i686' 'x86_64')

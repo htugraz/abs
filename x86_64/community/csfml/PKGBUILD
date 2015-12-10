@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 133997 2015-05-23 09:09:40Z svenstaro $
+# $Id: PKGBUILD 151403 2015-12-10 03:52:09Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 
 pkgname=csfml
 pkgver=2.3
-pkgrel=1
+pkgrel=2
 pkgdesc='C bindings for sfml'
 arch=('i686' 'x86_64')
 url='http://www.sfml-dev.org/'

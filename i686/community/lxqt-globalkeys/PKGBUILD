@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 146274 2015-11-06 10:12:50Z jleclanche $
+# $Id: PKGBUILD 151694 2015-12-10 04:01:03Z foutrelis $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=lxqt-globalkeys
 pkgver=0.10.0
-pkgrel=2
+pkgrel=3
 pkgdesc="LXQt daemon and library for global keyboard shortcuts registration."
 arch=("i686" "x86_64")
 groups=("lxqt")

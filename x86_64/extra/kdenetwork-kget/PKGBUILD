@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250428 2015-11-09 22:05:06Z arojas $
+# $Id: PKGBUILD 255301 2015-12-10 04:51:00Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-kget
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Download Manager'
 url='http://kde.org/applications/internet/kget/'
 arch=('i686' 'x86_64')

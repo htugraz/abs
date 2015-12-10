@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250395 2015-11-09 21:53:29Z arojas $
+# $Id: PKGBUILD 255416 2015-12-10 04:54:59Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kshisen
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A solitaire-like game played using the standard set of Mahjong tiles"
 url="http://kde.org/applications/games/kshisen/"
 arch=('i686' 'x86_64')

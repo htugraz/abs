@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 199979 2013-11-20 12:29:54Z allan $
+# $Id: PKGBUILD 255497 2015-12-10 04:58:08Z foutrelis $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libmp4v2
 pkgver=2.0.0
-pkgrel=3
+pkgrel=4
 pkgdesc="MPEG-4 library"
 arch=('i686' 'x86_64')
 license=('MPL')

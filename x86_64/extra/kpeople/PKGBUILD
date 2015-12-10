@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251199 2015-11-18 07:34:54Z fyan $
+# $Id: PKGBUILD 255405 2015-12-10 04:54:30Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=kpeople
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='A library that provides access to all contacts and the people who hold them'
 arch=(i686 x86_64)
 url='http://community.kde.org/KTp/libkpeople'

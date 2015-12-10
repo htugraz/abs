@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 133680 2015-05-18 00:49:29Z eric $
+# $Id: PKGBUILD 151331 2015-12-10 03:49:46Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=atomicparsley
 pkgver=0.9.0
-pkgrel=5
+pkgrel=6
 pkgdesc="A command line program for reading, parsing and setting iTunes-style metadata in MPEG4 files"
 arch=('i686' 'x86_64')
 url="http://atomicparsley.sourceforge.net/"

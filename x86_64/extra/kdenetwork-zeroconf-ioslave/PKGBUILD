@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250434 2015-11-09 22:07:19Z arojas $
+# $Id: PKGBUILD 255307 2015-12-10 04:51:12Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-zeroconf-ioslave
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Network Monitor for DNS-SD services (Zeroconf)'
 url='https://projects.kde.org/projects/kde/kdenetwork/zeroconf-ioslave'
 arch=('i686' 'x86_64')

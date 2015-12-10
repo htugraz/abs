@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 140581 2015-09-17 20:54:11Z foutrelis $
+# $Id: PKGBUILD 151922 2015-12-10 04:08:52Z foutrelis $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgbase=rubinius
 pkgname=(rubinius rubinius-ruby)
 pkgver=2.5.8
-pkgrel=2
+pkgrel=3
 pkgdesc="Ruby runtime written in Ruby, designed for concurrency"
 arch=(i686 x86_64)
 url="http://rubini.us"
 license=(custom)
 depends=(llvm35-libs libffi openssl libyaml)
-makedepends=(llvm35 rubinius-ruby)
+makedepends=(llvm35 ruby)
 options=(!emptydirs)
 source=(http://releases.rubini.us/${pkgbase}-${pkgver}.tar.bz2
         gemrc dirs.patch)

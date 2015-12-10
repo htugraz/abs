@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252085 2015-12-01 07:49:59Z arojas $
+# $Id: PKGBUILD 255553 2015-12-10 05:00:00Z foutrelis $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: damir <damir.archlinux.org>
 
 pkgname=muparser
 pkgver=2.2.5
-pkgrel=1
+pkgrel=2
 pkgdesc="A fast math parser library"
 arch=('i686' 'x86_64')
 url="http://muparser.sourceforge.net/"

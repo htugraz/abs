@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 215861 2014-06-30 18:42:52Z heftig $
+# $Id: PKGBUILD 255704 2015-12-10 05:12:55Z foutrelis $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=webrtc-audio-processing
 pkgver=0.1
-pkgrel=2
+pkgrel=3
 _gitrev=9413986
 pkgdesc="AudioProcessing library based on Google's implementation of WebRTC"
 arch=(i686 x86_64)

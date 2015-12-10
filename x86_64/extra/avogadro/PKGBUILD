@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 249609 2015-10-21 22:00:47Z foutrelis $
+# $Id: PKGBUILD 255077 2015-12-10 04:42:58Z foutrelis $
 # Maintainer:
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Nick B <Shirakawasuna at gmail _dot_com>
 
 pkgname=avogadro
 pkgver=1.1.1
-pkgrel=6
+pkgrel=7
 pkgdesc="An advanced molecular editor based on Qt"
 arch=('i686' 'x86_64')
 url="http://avogadro.openmolecules.net/wiki/Main_Page"
@@ -28,7 +28,7 @@ prepare() {
 build() {
   cd build
 
-  export CXXFLAGS="$CXXFLAGS -lX11"
+  export CXXFLAGS="$CXXFLAGS -lX11 -lopenbabel"
   cmake ../${pkgname}-${pkgver} \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \

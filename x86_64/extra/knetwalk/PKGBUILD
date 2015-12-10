@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250389 2015-11-09 21:51:23Z arojas $
+# $Id: PKGBUILD 255391 2015-12-10 04:53:52Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=knetwalk
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Connect all the terminals to the server, in as few turns as possible"
 url="http://kde.org/applications/games/knetwalk/"
 arch=('i686' 'x86_64')

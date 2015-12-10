@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 239905 2015-05-30 10:04:08Z arojas $
+# $Id: PKGBUILD 255566 2015-12-10 05:00:52Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 
 pkgname=openbabel
 pkgver=2.3.2
-pkgrel=4
+pkgrel=5
 pkgdesc="A library designed to interconvert between many file formats used in molecular modeling and computational chemistry"
 arch=('i686' 'x86_64')
 url="http://openbabel.org/wiki/Main_Page"

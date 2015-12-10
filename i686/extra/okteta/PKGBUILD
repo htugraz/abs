@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250455 2015-11-09 22:14:54Z arojas $
+# $Id: PKGBUILD 255562 2015-12-10 05:00:33Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=okteta
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Hex Editor'
 url='http://kde.org/applications/utilities/okteta/'
 arch=('i686' 'x86_64')

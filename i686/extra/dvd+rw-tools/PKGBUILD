@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 239984 2015-06-01 07:34:58Z ronald $
+# $Id: PKGBUILD 255123 2015-12-10 04:44:47Z foutrelis $
 # Maintainer: damir <damir@archlinux.org>
 
 pkgname=dvd+rw-tools
 pkgver=7.1
-pkgrel=6
+pkgrel=7
 pkgdesc="dvd burning tools"
 arch=('i686' 'x86_64')
 license=('GPL')

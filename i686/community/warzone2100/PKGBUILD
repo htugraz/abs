@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 142787 2015-10-02 13:12:58Z foutrelis $
+# $Id: PKGBUILD 152034 2015-12-10 04:12:33Z foutrelis $
 # Maintainer: Vesa Kaihlavirta <vegai@iki.fi>
 # Contributor: Angelo Theodorou <encelo@users.sourceforge.net>
 
 pkgname=warzone2100
 pkgver=3.1.2
-pkgrel=3
+pkgrel=4
 pkgdesc="3D realtime strategy game on a future Earth"
 url="http://wz2100.net/"
 arch=('i686' 'x86_64')

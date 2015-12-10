@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 145832 2015-11-03 15:32:28Z foutrelis $
+# $Id: PKGBUILD 151996 2015-12-10 04:11:17Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andreas Hauser <andy-aur@splashground.de>
 
@@ -9,7 +9,7 @@ ron rus slk slv spa spa_old sqi srp swa swe tam tel tgl tha tur ukr vie)
 
 pkgname=tesseract
 pkgver=3.04.00
-pkgrel=2
+pkgrel=3
 pkgdesc="An OCR program"
 arch=(i686 x86_64)
 #url="http://code.google.com/p/tesseract-ocr"

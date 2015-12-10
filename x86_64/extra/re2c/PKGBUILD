@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 239590 2015-05-20 16:01:19Z anatolik $
+# $Id: PKGBUILD 255633 2015-12-10 05:07:35Z foutrelis $
 # Maintainer:
 # Contributor: nut543 <kfs1@online.no>
 # Contributor: Dale Blount <dale@archlinux.org>
 
 pkgname=re2c
 pkgver=0.14.3
-pkgrel=1
+pkgrel=2
 arch=(i686 x86_64)
 depends=(gcc-libs)
 pkgdesc='A tool for generating C-based recognizers from regular expressions'

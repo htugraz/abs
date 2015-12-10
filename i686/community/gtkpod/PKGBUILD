@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 135117 2015-06-10 07:20:01Z arojas $
+# $Id: PKGBUILD 151548 2015-12-10 03:56:06Z foutrelis $
 # Maintainer:  Federico Cinelli <cinelli@aur.archlinux.org>
 # Contributor: Kevin Piche <kevin@archlinux.org>
 # Contributor: Aaron Griffin <aaron@archlinux.org>
 
 pkgname=gtkpod
 pkgver=2.1.5
-pkgrel=1
+pkgrel=2
 pkgdesc="A platform independent GUI for Apple's iPod using GTK3"
 arch=('i686' 'x86_64')
 url="http://gtkpod.sourceforge.net"

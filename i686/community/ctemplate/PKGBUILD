@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 127408 2015-02-09 16:13:23Z eworm $
+# $Id: PKGBUILD 151404 2015-12-10 03:52:11Z foutrelis $
 # Maintainer: Christian Hesse <mail@eworm.de>
 # Contributor: Marcel Korpel <marcel[dot]korpel[at]gmail>
 # Contributor: Ivan Sichmann Freitas <ivansichfreitas@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=ctemplate
 pkgver=2.3
-pkgrel=2
+pkgrel=3
 pkgdesc='A library implementing a simple but powerful template language for C++'
 arch=('i686' 'x86_64')
 url='http://code.google.com/p/ctemplate/'

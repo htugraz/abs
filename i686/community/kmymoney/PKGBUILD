@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 132480 2015-04-28 22:16:05Z jlichtblau $
+# $Id: PKGBUILD 151605 2015-12-10 03:58:28Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Maintainer: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Vamp898 <vamp898@web.de>
@@ -8,7 +8,7 @@
 
 pkgname=kmymoney
 pkgver=4.7.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Personal finance manager for KDE which operates similarly to MS-Money or Quicken"
 arch=('i686' 'x86_64')
 url="http://kmymoney2.sourceforge.net/"

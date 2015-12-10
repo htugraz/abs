@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250304 2015-11-09 21:20:43Z arojas $
+# $Id: PKGBUILD 255478 2015-12-10 04:57:35Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkmahjongg
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Common code, backgrounds and tile sets for games using Mahjongg tiles"
 url="https://projects.kde.org/projects/kde/kdegames/libmahjongg"
 arch=('i686' 'x86_64')

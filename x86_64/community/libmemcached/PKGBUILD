@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 112507 2014-06-02 21:55:03Z foutrelis $
+# $Id: PKGBUILD 151652 2015-12-10 03:59:45Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 
 pkgname=libmemcached
 pkgver=1.0.18
-pkgrel=1
+pkgrel=2
 pkgdesc="C and C++ client library to the memcached server"
 arch=('i686' 'x86_64')
 url="http://libmemcached.org/"

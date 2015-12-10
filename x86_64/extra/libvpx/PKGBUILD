@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250771 2015-11-11 22:07:59Z foutrelis $
+# $Id: PKGBUILD 255530 2015-12-10 04:59:12Z foutrelis $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 # Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 
 pkgname=libvpx
 pkgver=1.5.0
-pkgrel=2
+pkgrel=3
 pkgdesc='VP8 and VP9 codec'
 arch=('i686' 'x86_64')
 url='http://www.webmproject.org/'

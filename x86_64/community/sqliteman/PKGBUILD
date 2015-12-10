@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 132953 2015-05-08 10:26:45Z fyan $
+# $Id: PKGBUILD 151965 2015-12-10 04:10:16Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Geoffroy Carrier <geoffroy@archlinux.org>
 # Contributor: Roman Porizka <artee@beer.cz>
@@ -6,7 +6,7 @@
 
 pkgname=sqliteman
 pkgver=1.2.2
-pkgrel=8
+pkgrel=9
 pkgdesc="The best developer's and/or admin's GUI tool for Sqlite3 in the world"
 arch=('i686' 'x86_64')
 url="http://sqliteman.com/"

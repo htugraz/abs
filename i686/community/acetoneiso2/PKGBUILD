@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 93036 2013-06-22 18:22:58Z lcarlier $
+# $Id: PKGBUILD 151307 2015-12-10 03:48:55Z foutrelis $
 # Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Wes Brewer <brewerw@gmail.com>
 
 pkgname=acetoneiso2
 pkgver=2.3
-pkgrel=6
+pkgrel=7
 pkgdesc="An all in one ISO tool (bin mdf nrg img daa dmg cdi b5i bwi pdi iso)"
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/acetoneiso"

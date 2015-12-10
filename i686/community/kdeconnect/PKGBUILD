@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 147112 2015-11-18 20:28:28Z arojas $
+# $Id: PKGBUILD 151598 2015-12-10 03:58:17Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Kuba Serafinowski <zizzfizzix(at)gmail(dot)com>
 
 pkgname=kdeconnect
 pkgver=0.9
-pkgrel=2
+pkgrel=3
 pkgdesc='Adds communication between KDE and your smartphone'
 url='https://community.kde.org/KDEConnect'
 license=(GPL)

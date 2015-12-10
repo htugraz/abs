@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 246012 2015-09-13 20:41:45Z schiv $
+# $Id: PKGBUILD 255619 2015-12-10 05:05:53Z foutrelis $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: damir <damir@archlinux.org>
 
 pkgname=qsynth
 pkgver=0.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Qt GUI for FluidSynth"
 arch=('i686' 'x86_64')
 url="http://qsynth.sourceforge.net/"

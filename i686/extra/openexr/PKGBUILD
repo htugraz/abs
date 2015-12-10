@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 238701 2015-05-08 16:56:18Z tpowa $
+# $Id: PKGBUILD 255568 2015-12-10 05:01:01Z foutrelis $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=openexr
 pkgver=2.2.0
-pkgrel=2
+pkgrel=3
 pkgdesc="An high dynamic-range image file format library"
 url="http://www.openexr.com/"
 arch=('i686' 'x86_64')

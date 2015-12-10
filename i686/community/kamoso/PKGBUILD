@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 148069 2015-12-01 09:22:22Z arojas $
+# $Id: PKGBUILD 151589 2015-12-10 03:57:51Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: birdflesh <antkoul at gmail dot com>
 # Contributor: said
@@ -6,7 +6,7 @@
 
 pkgname=kamoso
 pkgver=3.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A webcam recorder from KDE community"
 url="https://userbase.kde.org/Kamoso"
 arch=(i686 x86_64)

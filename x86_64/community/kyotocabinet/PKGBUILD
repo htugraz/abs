@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 99150 2013-10-25 05:03:47Z fyan $
+# $Id: PKGBUILD 151630 2015-12-10 03:59:08Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Alexander Duscheleit <jinks@archlinux.us>
 # Contributor: Joaquim Pedro (osmano807) <osmano807@gmail.com>
 
 pkgname=kyotocabinet
 pkgver=1.2.76
-pkgrel=4
+pkgrel=5
 pkgdesc="a modern implementation of DBM in C++"
 arch=('i686' 'x86_64')
 url="http://fallabs.com/kyotocabinet"

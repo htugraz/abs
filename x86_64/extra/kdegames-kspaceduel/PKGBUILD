@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250398 2015-11-09 21:54:31Z arojas $
+# $Id: PKGBUILD 255276 2015-12-10 04:50:08Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kspaceduel
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Each of two possible players controls a satellite spaceship orbiting the sun"
 url="http://kde.org/applications/games/kspaceduel/"
 arch=('i686' 'x86_64')

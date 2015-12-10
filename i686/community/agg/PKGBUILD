@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 127137 2015-02-04 23:02:34Z bluewind $
+# $Id: PKGBUILD 151312 2015-12-10 03:49:08Z foutrelis $
 # Maintainer: Jonathan Conder <jonno dot conder at gmail dot com>
 
 pkgname=agg
 pkgver=2.5
-pkgrel=6
+pkgrel=7
 pkgdesc="A High Quality Rendering Engine for C++"
 arch=('i686' 'x86_64')
 url="http://pkgs.fedoraproject.org/cgit/agg.git"

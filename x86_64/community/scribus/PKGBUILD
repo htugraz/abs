@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 143473 2015-10-09 04:05:45Z bisson $
+# $Id: PKGBUILD 151932 2015-12-10 04:09:16Z foutrelis $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 # Contributor: Ronald van Haren <ronald.archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=scribus
 pkgver=1.4.5
-pkgrel=3
+pkgrel=4
 pkgdesc='Desktop publishing software'
 url='http://www.scribus.net/'
 license=('GPL')

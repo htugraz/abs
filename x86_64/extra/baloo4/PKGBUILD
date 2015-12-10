@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 235562 2015-04-07 07:28:09Z arojas $
+# $Id: PKGBUILD 255080 2015-12-10 04:43:03Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgbase=baloo4
 pkgname=('baloo4' 'baloo4-akonadi' 'libbaloo4')
 pkgver=4.14.3
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
-url='https://projects.kde.org/projects/kde/kdelibs/baloo'
+url='https://community.kde.org/Baloo'
 license=('LGPL')
 makedepends=('cmake' 'automoc4' 'boost' 'kdepimlibs' 'xapian-core' 'kfilemetadata4')
 source=("http://download.kde.org/stable/${pkgver}/src/baloo-${pkgver}.tar.xz")

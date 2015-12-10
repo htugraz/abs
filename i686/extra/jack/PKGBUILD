@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 220812 2014-08-30 07:57:52Z schiv $
+# $Id: PKGBUILD 255202 2015-12-10 04:47:44Z foutrelis $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: tobias <tobias@archlinux.net>
 # Contributor: Robert Emil Berge <robert@rebi.no>
@@ -6,7 +6,7 @@
 pkgname=jack
 _longname=jack-audio-connection-kit
 pkgver=0.124.1
-pkgrel=3
+pkgrel=6
 pkgdesc="A low-latency audio server"
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL')

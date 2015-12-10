@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 250424 2015-11-09 22:03:42Z arojas $
+# $Id: PKGBUILD 255297 2015-12-10 04:50:50Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgbase=kdemultimedia-kmix
 pkgname=('kdemultimedia-kmix' 'kmix')
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="KDE volume control program"
 url='http://kde.org/applications/multimedia/kmix/'
 arch=('i686' 'x86_64')

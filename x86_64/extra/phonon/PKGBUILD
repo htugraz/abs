@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 241290 2015-06-26 14:23:30Z arojas $
+# $Id: PKGBUILD 255578 2015-12-10 05:01:47Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgbase=phonon
 pkgname=('phonon-qt4' 'phonon-qt5')
 pkgver=4.8.3
-pkgrel=2
+pkgrel=5
 arch=('i686' 'x86_64')
 url='http://phonon.kde.org/'
 license=('LGPL')

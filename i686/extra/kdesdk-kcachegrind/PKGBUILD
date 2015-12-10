@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250452 2015-11-09 22:13:52Z arojas $
+# $Id: PKGBUILD 255320 2015-12-10 04:51:45Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-kcachegrind
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Visualization of Performance Profiling Data'
 url='http://kde.org/applications/development/kcachegrind/'
 arch=('i686' 'x86_64')

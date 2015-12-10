@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 136244 2015-07-02 07:49:25Z svenstaro $
+# $Id: PKGBUILD 151777 2015-12-10 04:04:20Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 pkgname=opencollada
 pkgver=20150702
 _commit=3335ac164e68b2512a40914b14c74db260e6ff7d # Magic blender commit
-pkgrel=2
+pkgrel=3
 pkgdesc="Stream based reader and writer library for COLLADA files"
 arch=(i686 x86_64)
 url="https://github.com/KhronosGroup/OpenCOLLADA"

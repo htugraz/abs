@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 107321 2014-03-17 02:34:57Z fyan $
+# $Id: PKGBUILD 151669 2015-12-10 04:00:15Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 
 pkgname=libtaginfo
 pkgver=0.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Library for reading media metadata"
 arch=('i686' 'x86_64')
 url="https://bitbucket.org/shuerhaaken/libtaginfo"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 215530 2014-06-28 08:51:10Z andyrtr $
+# $Id: PKGBUILD 255503 2015-12-10 04:58:18Z foutrelis $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 
 pkgname=libmythes
 pkgver=1.2.4
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc="a simple thesaurus"
 arch=('i686' 'x86_64')

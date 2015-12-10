@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 248313 2015-10-03 21:20:11Z schiv $
+# $Id: PKGBUILD 255567 2015-12-10 05:00:59Z foutrelis $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgbase=opencv
 pkgname=('opencv' 'opencv-samples')
 pkgver=2.4.12.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Open Source Computer Vision Library"
 arch=('i686' 'x86_64')
 license=('BSD')

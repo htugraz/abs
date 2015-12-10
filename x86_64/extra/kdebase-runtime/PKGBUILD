@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 250290 2015-11-09 21:15:42Z arojas $
+# $Id: PKGBUILD 255256 2015-12-10 04:49:30Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=kdebase-runtime
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Plugins and applications necessary for the running of KDE applications"
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/kde-runtime'

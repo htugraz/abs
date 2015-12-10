@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 141697 2015-09-27 13:28:10Z lfleischer $
+# $Id: PKGBUILD 151306 2015-12-10 03:48:53Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Lukas Fleischer <lfleischer@archlinux.org>
 # Contributor: jlvsimoes <jlvsimoes@oninet.pt>
@@ -6,7 +6,7 @@
 
 pkgname=abuse
 pkgver=0.8
-pkgrel=4
+pkgrel=5
 pkgdesc='Side-scroller action game that pits you against ruthless alien killers'
 arch=('x86_64' 'i686')
 url='http://abuse.zoy.org/'

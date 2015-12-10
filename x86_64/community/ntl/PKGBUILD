@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 147505 2015-11-23 23:41:22Z arojas $
+# $Id: PKGBUILD 151764 2015-12-10 04:03:49Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Brad Conte <brad AT bradconte.com>
 
 pkgname=ntl
 pkgver=9.6.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A Library for doing Number Theory"
 arch=(i686 x86_64)
 url="http://www.shoup.net/ntl/"

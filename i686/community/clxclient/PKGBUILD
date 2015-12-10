@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 95505 2013-08-13 03:39:58Z speps $
+# $Id: PKGBUILD 151383 2015-12-10 03:51:32Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Christoph Zeiler <rabyte*gmail>
 # Contributor: Tom K <tomk@runbox.com>
@@ -7,7 +7,7 @@
 
 pkgname=clxclient
 pkgver=3.9.0
-pkgrel=1
+pkgrel=2
 pkgdesc="C++ wrapper library around the X Window System API"
 arch=('i686' 'x86_64')
 url="http://kokkinizita.linuxaudio.org/linuxaudio/"

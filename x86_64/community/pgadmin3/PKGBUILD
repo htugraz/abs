@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 132350 2015-04-27 19:12:39Z spupykin $
+# $Id: PKGBUILD 151814 2015-12-10 04:05:28Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Douglas Soares de Andrade <dsa@aur.archlinux.org>
 # Contributor: Benjamin Andresen <benny@klapmuetz.org>
@@ -6,7 +6,7 @@
 
 pkgname=pgadmin3
 pkgver=1.20.0
-pkgrel=5
+pkgrel=6
 pkgdesc="Comprehensive design and management interface for PostgreSQL"
 arch=('i686' 'x86_64')
 url="http://www.pgadmin.org"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 249843 2015-10-28 17:19:25Z arojas $
+# $Id: PKGBUILD 255334 2015-12-10 04:52:09Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Giovanni Scafora <giovanni@archlinux.org>
 
 pkgname=kdevelop
 pkgver=4.7.2
-pkgrel=2
+pkgrel=3
 pkgdesc='A C/C++ development environment for KDE'
 arch=('i686' 'x86_64')
 url='http://www.kdevelop.org/'

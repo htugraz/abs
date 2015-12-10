@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 141697 2015-09-27 13:28:10Z lfleischer $
+# $Id: PKGBUILD 151329 2015-12-10 03:49:42Z foutrelis $
 # Maintainer: Lukas Fleischer <lfleischer@archlinux.org>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 # Contributor: Thomas Mader <thezema@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=astyle
 pkgver=2.05.1
-pkgrel=1
+pkgrel=2
 pkgdesc='A free, fast and small automatic formatter for C, C++, C#, and Java source code.'
 arch=('i686' 'x86_64')
 url='http://sourceforge.net/projects/astyle/'

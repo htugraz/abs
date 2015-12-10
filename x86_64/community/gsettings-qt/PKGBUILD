@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 146484 2015-11-10 09:36:35Z fyan $
+# $Id: PKGBUILD 151538 2015-12-10 03:55:52Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
@@ -6,7 +6,7 @@
 pkgname=gsettings-qt
 pkgver=0.1.20151104
 _revision=75
-pkgrel=1
+pkgrel=2
 pkgdesc="Qml bindings for GSettings"
 arch=('i686' 'x86_64')
 url="https://launchpad.net/gsettings-qt"

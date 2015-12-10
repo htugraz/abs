@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250511 2015-11-09 23:05:57Z heftig $
+# $Id: PKGBUILD 255158 2015-12-10 04:46:06Z foutrelis $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gnome-system-monitor
 pkgver=3.18.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A system monitor for GNOME"
 arch=(i686 x86_64)
 license=('GPL')

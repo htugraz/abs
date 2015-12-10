@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 142783 2015-10-02 13:12:52Z foutrelis $
+# $Id: PKGBUILD 151919 2015-12-10 04:08:46Z foutrelis $
 # Maintainer : Ionut Biru <ibiru@archlinux.org>
 # Contributor: Corrado 'bardo' Primier <corrado.primier@mail.polimi.it>
 # Contributor: Tate "Tatey" Johnson <tatey86@tpg.com.au>
 
 pkgname=rss-glx
 pkgver=0.9.1
-pkgrel=22
+pkgrel=23
 pkgdesc="The Really Slick Screensavers port to GLX"
 arch=('i686' 'x86_64')
 url="http://rss-glx.sourceforge.net/"

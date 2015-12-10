@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 118130 2014-09-01 12:53:58Z spupykin $
+# $Id: PKGBUILD 151661 2015-12-10 03:59:59Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Antonio Rojas <nqn1976 @ gmail.com>
 
 pkgname=libqinfinity
 pkgver=0.5.2git20140901
-pkgrel=1
+pkgrel=2
 pkgdesc="Qt wrapper around libinfinity, a library for collaborative editing"
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/playground/libs/libqinfinity'

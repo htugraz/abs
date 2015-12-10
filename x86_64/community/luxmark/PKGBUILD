@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 133574 2015-05-16 10:21:07Z stativ $
+# $Id: PKGBUILD 151689 2015-12-10 04:00:54Z foutrelis $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname=luxmark
 pkgver=3.0
 _scenever=3.0beta2
 _pkgver=985b948aa5c7
-pkgrel=2
+pkgrel=3
 pkgdesc="OpenCL benchmark tool"
 arch=('x86_64') # because of embree only x86_64 is supported
 url="http://www.luxrender.net/"

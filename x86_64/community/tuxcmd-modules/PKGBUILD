@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 118806 2014-09-11 05:37:10Z bpiotrowski $
+# $Id: PKGBUILD 152009 2015-12-10 04:11:41Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 
 pkgname=tuxcmd-modules
 pkgver=0.6.70
-pkgrel=3
+pkgrel=4
 pkgdesc='Modules for Tux Commander'
 arch=('i686' 'x86_64')
 url='http://tuxcmd.sourceforge.net/'

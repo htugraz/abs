@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 249873 2015-10-30 16:43:25Z heftig $
+# $Id: PKGBUILD 255174 2015-12-10 04:46:42Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gst-plugins-bad
 pkgver=1.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc="GStreamer Multimedia Framework Bad Plugins"
 arch=('i686' 'x86_64')
 license=('LGPL')

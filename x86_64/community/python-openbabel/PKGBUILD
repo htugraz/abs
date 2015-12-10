@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 142493 2015-10-01 16:07:23Z fyan $
+# $Id: PKGBUILD 151847 2015-12-10 04:06:31Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Michal Bozon <bozonm@vscht.cz>
 
 pkgname=('python-openbabel' 'python2-openbabel')
 pkgver=2.3.2
-pkgrel=4
+pkgrel=5
 pkgdesc='Python bindings for the openbabel library'
 arch=('x86_64' 'i686')
 url='http://openbabel.org/wiki/Python'

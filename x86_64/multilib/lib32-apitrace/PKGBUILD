@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 138017 2015-08-06 12:28:48Z lcarlier $
+# $Id: PKGBUILD 152086 2015-12-10 05:33:10Z foutrelis $
 # Maintainer: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Luca Bennati <lucak3 AT gmail DOT com>
 # Contributor: Glaucous <glakke1 at gmail dot com>
 
 pkgname=lib32-apitrace
 pkgver=7.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Graphics API Tracing (32-bit)"
 arch=('x86_64')
 url="https://github.com/apitrace/apitrace"

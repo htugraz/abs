@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 245107 2015-08-30 22:24:41Z arojas $
+# $Id: PKGBUILD 255138 2015-12-10 04:45:20Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=ffmpegthumbs
 pkgver=15.08_r91_c06602f
-pkgrel=2
+pkgrel=3
 pkgdesc='FFmpeg-based thumbnail creator for video files'
 url='https://projects.kde.org/ffmpegthumbs'
 arch=(i686 x86_64)

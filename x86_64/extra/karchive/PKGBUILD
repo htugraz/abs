@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251146 2015-11-18 07:33:29Z fyan $
+# $Id: PKGBUILD 255218 2015-12-10 04:48:18Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=karchive
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Qt 5 addon providing access to numerous types of archives'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/karchive'

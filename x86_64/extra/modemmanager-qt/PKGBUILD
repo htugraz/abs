@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251202 2015-11-18 07:35:03Z fyan $
+# $Id: PKGBUILD 255551 2015-12-10 04:59:56Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Mainrainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=modemmanager-qt
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Qt wrapper for ModemManager DBus API'
 arch=(i686 x86_64)
 url='https://projects.kde.org/projects/frameworks/modemmanager-qt'

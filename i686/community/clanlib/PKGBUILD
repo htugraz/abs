@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 133341 2015-05-12 20:19:08Z svenstaro $
+# $Id: PKGBUILD 151379 2015-12-10 03:51:25Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 
 pkgname=clanlib
 pkgver=4.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A multi-platform game development library."
 arch=('i686' 'x86_64')
 url="http://clanlib.org/"

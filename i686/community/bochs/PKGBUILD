@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 140445 2015-09-17 20:51:12Z foutrelis $
+# $Id: PKGBUILD 151347 2015-12-10 03:50:18Z foutrelis $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 # Contributor: Kevin Piche <kevin@archlinux.org>
 
 pkgname=bochs
 pkgver=2.6.8
-pkgrel=2
+pkgrel=3
 pkgdesc="A portable x86 PC emulation software package, including GUI debugger"
 arch=('i686' 'x86_64')
 url="http://bochs.sourceforge.net/"

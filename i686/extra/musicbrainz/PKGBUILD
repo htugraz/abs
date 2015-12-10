@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 201367 2013-12-09 18:27:11Z eric $
+# $Id: PKGBUILD 255554 2015-12-10 05:00:03Z foutrelis $
 # Maintainer: 
 # Contributor: Alexander Baldeck <alexander@archlinux.org>
 # Contributor: dorphell <dorphell@archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=musicbrainz
 pkgver=2.1.5
-pkgrel=6
+pkgrel=7
 pkgdesc="The second generation incarnation of the CD Index"
 arch=('i686' 'x86_64')
 url="http://www.musicbrainz.org"

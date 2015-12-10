@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 250441 2015-11-09 22:09:34Z arojas $
+# $Id: PKGBUILD 255680 2015-12-10 05:11:19Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Antonio Rojas <arojas@archlinux.org>
@@ -6,7 +6,7 @@
 pkgname=telepathy-kde-desktop-applets
 _pkgname=ktp-desktop-applets
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='The KDE-Telepathy Plasma desktop applets'
 arch=('i686' 'x86_64')
 url='http://community.kde.org/Real-Time_Communication_and_Collaboration'

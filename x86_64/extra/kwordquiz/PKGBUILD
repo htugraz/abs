@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250362 2015-11-09 21:41:56Z arojas $
+# $Id: PKGBUILD 255436 2015-12-10 04:56:01Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kwordquiz
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Flash Card Trainer"
 url="http://kde.org/applications/education/kwordquiz/"
 arch=('i686' 'x86_64')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 137657 2015-08-01 13:00:48Z jelle $
+# $Id: PKGBUILD 151792 2015-12-10 04:04:46Z foutrelis $
 # Maintainer : Aaron Griffin <aaron@archlinux.org>
 
 pkgname=oprofile
 pkgver=1.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc='System-wide profiler for Linux systems'
 arch=('i686' 'x86_64')
 url="http://oprofile.sourceforge.net"

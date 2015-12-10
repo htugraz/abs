@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 143634 2015-10-11 10:36:46Z arojas $
+# $Id: PKGBUILD 151389 2015-12-10 03:51:41Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: tikysal <tikysal@gmail.com>
 # Derived from Daniel Ehlers'
 
 pkgname=coin-or-coinutils
 pkgver=2.10.11
-pkgrel=1
+pkgrel=2
 pkgdesc="COIN-OR collection of utility classes"
 arch=(i686 x86_64)
 url="https://projects.coin-or.org/CoinUtils"

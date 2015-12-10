@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 241326 2015-06-28 09:37:39Z bluewind $
+# $Id: PKGBUILD 255513 2015-12-10 04:58:36Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libproxy
 pkgver=0.4.11
-pkgrel=6
+pkgrel=8
 pkgdesc="A library that provides automatic proxy configuration management"
 arch=(i686 x86_64)
 license=('LGPL')

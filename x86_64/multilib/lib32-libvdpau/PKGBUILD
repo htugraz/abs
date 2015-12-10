@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 139969 2015-09-12 14:19:48Z heftig $
+# $Id: PKGBUILD 152101 2015-12-10 05:33:49Z foutrelis $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=lib32-libvdpau
 pkgver=1.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Nvidia VDPAU library'
 arch=('x86_64')
 url='http://cgit.freedesktop.org/~aplattner/libvdpau'

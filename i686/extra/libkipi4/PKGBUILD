@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 251668 2015-11-20 07:31:25Z arojas $
+# $Id: PKGBUILD 255477 2015-12-10 04:57:34Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -6,7 +6,7 @@
 pkgname=libkipi4
 _pkgname=libkipi
 pkgver=15.08.3
-pkgrel=2
+pkgrel=3
 pkgdesc="An interface to use kipi-plugins from a KDE application"
 url="https://projects.kde.org/projects/kde/kdegraphics/libs/libkipi"
 arch=(i686 x86_64)

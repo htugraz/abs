@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 141186 2015-09-20 07:05:29Z giovanni $
+# $Id: PKGBUILD 151356 2015-12-10 03:50:37Z foutrelis $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 
 pkgname=c++-gtk-utils
 pkgver=2.0.28
-pkgrel=1
+pkgrel=2
 pkgdesc="Classes and functions for programming in GTK+"
 arch=('i686' 'x86_64')
 url="http://cxx-gtk-utils.sourceforge.net/"

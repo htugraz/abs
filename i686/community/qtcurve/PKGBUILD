@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 120340 2014-10-07 07:02:19Z andrea $
+# $Id: PKGBUILD 151890 2015-12-10 04:07:47Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -7,7 +7,7 @@
 pkgbase=qtcurve
 pkgname=('qtcurve-utils' 'qtcurve-gtk2' 'qtcurve-qt4' 'qtcurve-qt5' 'qtcurve-kde4')
 pkgver=1.8.18
-pkgrel=3
+pkgrel=4
 pkgdesc='A configurable set of widget styles for KDE and Gtk'
 arch=('i686' 'x86_64')
 url='https://github.com/QtCurve/qtcurve'

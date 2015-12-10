@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 134118 2015-05-26 03:44:27Z fyan $
+# $Id: PKGBUILD 151462 2015-12-10 03:53:52Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=fcitx-skk
 pkgver=0.1.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Fcitx Wrapper for libskk"
 arch=('i686' 'x86_64')
 url="https://github.com/fcitx/fcitx-skk"

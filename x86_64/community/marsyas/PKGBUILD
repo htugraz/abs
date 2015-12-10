@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 143019 2015-10-05 16:51:30Z fyan $
+# $Id: PKGBUILD 151709 2015-12-10 04:01:28Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: MeMi69 <MetalMilitia@gmx.net>
 
 pkgname=marsyas
 pkgver=0.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Music Analysis, Retrieval and Synthesis for Audio Signals"
 arch=('i686' 'x86_64')
 license=('GPL')

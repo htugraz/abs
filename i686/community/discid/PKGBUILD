@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 113969 2014-07-01 10:50:24Z spupykin $
+# $Id: PKGBUILD 151428 2015-12-10 03:52:55Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Roland Schaeuble <rschaeuble@gmx.ch>
 
 pkgname=discid
 pkgver=0.1.3
-pkgrel=6
+pkgrel=7
 pkgdesc="A program to calculate the disc-ID for audio compact discs"
 arch=('i686' 'x86_64')
 url="http://discid.sourceforge.net"

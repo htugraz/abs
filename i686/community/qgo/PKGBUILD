@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 134944 2015-06-07 12:01:00Z arodseth $
+# $Id: PKGBUILD 151871 2015-12-10 04:07:11Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Douglas Soares de Andrade <dsa@aur.archlinux.org>
 # Contributor: Magnus Jonsson <jmagnusj@gmail.com>
 
 pkgname=qgo
 pkgver=2.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Go client and full featured SGF editor'
 arch=('x86_64' 'i686')
 url='https://github.com/pzorin/qgo'

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 112231 2014-05-30 11:11:16Z spupykin $
+# $Id: PKGBUILD 151571 2015-12-10 03:57:00Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Claudio Sabattoli <gasherbrum3@alice.it>
 
 pkgname=idesk
 pkgver=0.7.5
-pkgrel=6
+pkgrel=7
 pkgdesc="gives users of minimal wm's (fluxbox, blackbox, openbox, windowsmaker...) icons on their desktop"
 arch=("i686" "x86_64")
 url="http://idesk.sourceforge.net/wiki/index.php"

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 221649 2014-09-14 12:37:50Z andrea $
+# $Id: PKGBUILD 255717 2015-12-10 05:13:51Z foutrelis $
 # Maintainer:
 # Contributor: kevku <kevku@gmx.com>
 
 pkgname=xsd
 pkgver=4.0.0
 _pkgver=4.0.0+dep
-pkgrel=1
+pkgrel=2
 pkgdesc="An open-source, cross-platform W3C XML Schema to C++ data binding compiler"
 arch=('i686' 'x86_64')
 url="http://www.codesynthesis.com/products/xsd"

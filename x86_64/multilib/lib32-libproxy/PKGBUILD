@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 143661 2015-10-11 15:23:50Z alucryd $
+# $Id: PKGBUILD 152099 2015-12-10 05:33:44Z foutrelis $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: TryA <tryagainprod@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=lib32-libproxy
 pkgver=0.4.11
-pkgrel=1
+pkgrel=2
 pkgdesc='A library that provides automatic proxy configuration management'
 arch=('x86_64')
 url='http://libproxy.googlecode.com'

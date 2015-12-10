@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 96350 2013-08-26 09:20:36Z spupykin $
+# $Id: PKGBUILD 151686 2015-12-10 04:00:49Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Stefano Zamprogno <stefano dot zamprogno at gmail dot com>
 # Contributor: Chuck Yang <Chuck.Yang@gmail.com>
 
 pkgname=lshw
 pkgver=B.02.17
-pkgrel=1
+pkgrel=2
 pkgdesc="A small tool to provide detailed information on the hardware configuration of the machine."
 url="http://ezix.org/project/wiki/HardwareLiSter"
 license=('GPL')

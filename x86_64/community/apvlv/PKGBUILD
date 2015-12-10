@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 128831 2015-03-06 18:49:34Z jsteel $
+# $Id: PKGBUILD 151320 2015-12-10 03:49:25Z foutrelis $
 # Maintainer:  Jonathan Steel <jsteel at archlinux.org>
 # Contributor: Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
@@ -7,7 +7,7 @@
 
 pkgname=apvlv
 pkgver=0.1.5
-pkgrel=1
+pkgrel=2
 pkgdesc='PDF/DJVU/TXT viewer which behaves like Vim'
 arch=('i686' 'x86_64')
 url="http://naihe2010.github.com/apvlv/"

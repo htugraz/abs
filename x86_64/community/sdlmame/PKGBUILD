@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 147793 2015-11-25 19:00:03Z spupykin $
+# $Id: PKGBUILD 151937 2015-12-10 04:09:25Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: robb_force <robb_force@holybuffalo.net>
 # Maintainer: JJDaNiMoTh <jjdanimoth@gmail.com>
 
 pkgname=sdlmame
 pkgver=0.168
-pkgrel=1
+pkgrel=2
 pkgdesc="A port of the popular Multiple Arcade Machine Emulator using SDL with OpenGL support."
 url="http://mamedev.org/"
 license=('custom:MAME License')

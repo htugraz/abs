@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 91634 2013-05-25 20:26:07Z jelle $
+# $Id: PKGBUILD 151373 2015-12-10 03:51:10Z foutrelis $
 # Maintainer: Allan McRae <allan@archlinux.org>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=chromium-bsu
 pkgver=0.9.15.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A fast paced top scrolling shooter"
 arch=('i686' 'x86_64')
 url="http://chromium-bsu.sourceforge.net/"

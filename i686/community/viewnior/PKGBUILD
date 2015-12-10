@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 137908 2015-08-04 06:37:23Z bpiotrowski $
+# $Id: PKGBUILD 152025 2015-12-10 04:12:14Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Christoph Zeiler <archNOSPAM_at_moonblade.dot.org>
 # Maintainer: M Rawash <mrawash@gmail.com>
 
 pkgname=viewnior
 pkgver=1.5
-pkgrel=3
+pkgrel=4
 pkgdesc="A simple, fast and elegant image viewer program"
 arch=('i686' 'x86_64')
 url="http://xsisqox.github.com/Viewnior/"

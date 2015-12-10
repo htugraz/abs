@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 250634 2015-11-10 23:44:55Z arojas $
+# $Id: PKGBUILD 255476 2015-12-10 04:57:33Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -6,7 +6,7 @@
 pkgname=libkgeomap4
 _pkgname=libkgeomap
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A wrapper around world map components for browsing and arranging photos on a map"
 url="https://projects.kde.org/projects/kde/kdegraphics/libs/libkgeomap"
 arch=(i686 x86_64)

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 97096 2013-09-12 15:27:11Z svenstaro $
+# $Id: PKGBUILD 151313 2015-12-10 03:49:10Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: yugrotavele <yugrotavele at archlinux dot us>
 # Contributor: Det <nimetonmaili at gmail a-dot com>
@@ -7,7 +7,7 @@
 
 pkgname=alienarena
 pkgver=7.66
-pkgrel=1
+pkgrel=2
 _verdate=20130827
 pkgdesc="Multiplayer retro sci-fi deathmatch game"
 arch=('i686' 'x86_64')

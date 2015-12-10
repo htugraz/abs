@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 227190 2014-11-29 19:20:52Z andyrtr $
+# $Id: PKGBUILD 255509 2015-12-10 04:58:28Z foutrelis $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 
 pkgname=libpagemaker
 pkgver=0.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="a library that parses the file format of Aldus/Adobe PageMaker documents"
 arch=('i686' 'x86_64')
 url="https://wiki.documentfoundation.org/DLP/Libraries/libpagemaker"

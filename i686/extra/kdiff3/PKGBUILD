@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 237642 2015-04-19 15:57:35Z arojas $
+# $Id: PKGBUILD 255343 2015-12-10 04:52:26Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=kdiff3
 pkgver=0.9.98
-pkgrel=3
+pkgrel=4
 pkgdesc="A KDE file comparator/merge tool"
 arch=('i686' 'x86_64')
 url="http://kdiff3.sourceforge.net/"

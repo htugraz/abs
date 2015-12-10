@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250397 2015-11-09 21:54:13Z arojas $
+# $Id: PKGBUILD 255275 2015-12-10 04:50:06Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-ksnakeduel
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A simple snake duel game"
 url="http://kde.org/applications/games/ksnakeduel/"
 arch=('i686' 'x86_64')

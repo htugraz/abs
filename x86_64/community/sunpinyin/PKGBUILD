@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 140670 2015-09-19 00:40:39Z fyan $
+# $Id: PKGBUILD 151976 2015-12-10 04:10:38Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Thomas Dziedzic < gostrc at gmail >
 
 pkgname=sunpinyin
 pkgver=2.0.3.20150706
 _commit=cf1810220bf3d3f5a8b990b0a9d3e9df21b1942c
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 pkgdesc="Statistical Language Model based pinyin IME by Sun"
 license=('LGPL')

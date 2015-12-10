@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 199957 2013-11-20 11:04:01Z allan $
+# $Id: PKGBUILD 255636 2015-12-10 05:07:50Z foutrelis $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Felipe Machado aka arch_audio <machado.felipe@gmail.com>
 
 pkgname=rubberband
 pkgver=1.8.1
-pkgrel=2
+pkgrel=3
 pkgdesc="Time-stretching and pitch-shifting audio library and utility"
 arch=('i686' 'x86_64')
 url="http://www.breakfastquay.com/rubberband/"

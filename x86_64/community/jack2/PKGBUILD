@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 117838 2014-08-24 14:26:34Z schiv $
+# $Id: PKGBUILD 151583 2015-12-10 03:57:34Z foutrelis $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Daniele Paolella <danielepaolella@email.it>
 # Contributor: Philipp Überbacher <hollunder at gmx dot at>
@@ -9,7 +9,7 @@ pkgname=('jack2' 'jack2-dbus')
 #pkgname= # single build (overrides split)
 _tarname=jack
 pkgver=1.9.10
-pkgrel=1
+pkgrel=3
 arch=('i686' 'x86_64')
 url="http://jackaudio.org/"
 backup=(etc/security/limits.d/99-audio.conf)

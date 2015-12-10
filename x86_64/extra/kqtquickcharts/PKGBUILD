@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250306 2015-11-09 21:21:25Z arojas $
+# $Id: PKGBUILD 255409 2015-12-10 04:54:40Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kqtquickcharts
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A QtQuick plugin to render beautiful and interactive charts"
 url="https://projects.kde.org/projects/kde/kdeedu/kqtquickcharts"
 arch=('i686' 'x86_64')

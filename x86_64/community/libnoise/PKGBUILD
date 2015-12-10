@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 115004 2014-07-05 03:28:37Z fyan $
+# $Id: PKGBUILD 151653 2015-12-10 03:59:47Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: jimmy-6
 pkgname=libnoise
 pkgver=1.0.0
-pkgrel=3
+pkgrel=4
 pkgdesc="A portable, open-source, coherent noise-generating library for C++"
 arch=('i686' 'x86_64')
 url="http://libnoise.sourceforge.net/"

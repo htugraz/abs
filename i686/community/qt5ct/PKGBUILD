@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 144323 2015-10-18 10:57:09Z arojas $
+# $Id: PKGBUILD 151888 2015-12-10 04:07:44Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: FadeMind <fademind@gmail.com>
 # Contributor: Zatherz <zatherz at linux dot pl>
 
 pkgname=qt5ct
 pkgver=0.20
-pkgrel=1
+pkgrel=2
 pkgdesc="Qt5 Configuration Utility"
 arch=(i686 x86_64)
 url="http://opendesktop.org/content/show.php?content=168066"

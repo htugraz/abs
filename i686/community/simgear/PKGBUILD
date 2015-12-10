@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 128311 2015-02-26 18:40:19Z spupykin $
+# $Id: PKGBUILD 151943 2015-12-10 04:09:35Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: William Rea <sillywilly@gmail.com>
 # Contributor: Hans Janssen <hans@janserv.xs4all.nl>
 
 pkgname=simgear
 pkgver=3.4.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A set of open-source libraries designed to be used as building blocks for quickly assembling 3d simulations, games, and visualization applications."
 arch=(i686 x86_64)
 depends=('glu' 'glut' 'freealut' 'plib' 'openscenegraph')

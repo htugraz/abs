@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250357 2015-11-09 21:39:53Z arojas $
+# $Id: PKGBUILD 255382 2015-12-10 04:53:36Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=klettres
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Learn The Alphabet"
 url="http://kde.org/applications/education/klettres/"
 arch=('i686' 'x86_64')

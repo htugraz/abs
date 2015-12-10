@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 127504 2015-02-10 17:00:18Z spupykin $
+# $Id: PKGBUILD 151573 2015-12-10 03:57:06Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Roberto Alsina <ralsina@kde.org>
 # Contributor: scj <scj(at)archlinux(dot)us>
 
 pkgname=incron
 pkgver=0.5.10
-pkgrel=7
+pkgrel=8
 pkgdesc="Like the regular cron but is driven by filesystem events instead of time periods"
 arch=('i686' 'x86_64')
 url="http://incron.aiken.cz/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 129193 2015-03-13 17:02:33Z spupykin $
+# $Id: PKGBUILD 152052 2015-12-10 04:13:11Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: dorphell <dorphell@archlinux.org>
 
 pkgname=xlockmore
 pkgver=5.46
-pkgrel=1
+pkgrel=3
 pkgdesc="screen saver / locker for the X Window System"
 arch=(i686 x86_64)
 license=('BSD')

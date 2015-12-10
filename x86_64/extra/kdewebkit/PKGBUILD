@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251177 2015-11-18 07:34:16Z fyan $
+# $Id: PKGBUILD 255341 2015-12-10 04:52:23Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdewebkit
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='KDE Integration for QtWebKit'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kdewebkit'

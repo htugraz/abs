@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 245095 2015-08-30 20:08:28Z arojas $
+# $Id: PKGBUILD 255517 2015-12-10 04:58:45Z foutrelis $
 # Maintainer: Andre Scarpino <andrea@archlinux.org>
 # Contributor: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=libraw
 pkgver=0.17.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A library for reading RAW files obtained from digital photo cameras (CRW/CR2, NEF, RAF, DNG, and others)"
 arch=('i686' 'x86_64')
 url="http://www.libraw.org/"

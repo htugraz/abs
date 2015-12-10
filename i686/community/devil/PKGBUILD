@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 134000 2015-05-23 12:02:04Z lcarlier $
+# $Id: PKGBUILD 151424 2015-12-10 03:52:49Z foutrelis $
 # Maintainer: Laurent Carlier <lordheavym@gmail.org>
 # Contributor: damir <damir@archlinux.org>
 # Contributor: TheHoff <forums>
 
 pkgname=devil
 pkgver=1.7.8
-pkgrel=20
+pkgrel=21
 pkgdesc="Library for reading several different image formats"
 arch=('i686' 'x86_64')
 url="http://openil.sourceforge.net/"

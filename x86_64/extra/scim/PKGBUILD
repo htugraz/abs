@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 253028 2015-12-06 21:38:37Z bisson $
+# $Id: PKGBUILD 255639 2015-12-10 05:08:18Z foutrelis $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: damir <damir@archlinux.org>
 # Contributor: Gan Lu <rhythm.gan@gmail.com>
 
 pkgname=scim
 pkgver=1.4.15
-pkgrel=1
+pkgrel=2
 pkgdesc='Input method user interface and development platform'
 url='http://sourceforge.net/projects/scim/'
 license=('LGPL')

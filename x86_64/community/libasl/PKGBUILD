@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 144593 2015-10-21 21:55:36Z foutrelis $
+# $Id: PKGBUILD 151636 2015-12-10 03:59:18Z foutrelis $
 # Maintainer: Evgeniy Alekseev <arcanis at archlinux dot ord>
 # Contributor: Andrejs Mivreņiks <gim at fastmail dot fm>
 
 pkgname=libasl
 pkgver=0.1.6
-pkgrel=2
+pkgrel=3
 pkgdesc='Multiphysics simulation software package (Advanced Simulation Library)'
 arch=('i686' 'x86_64')
 url='http://asl.org.il/'

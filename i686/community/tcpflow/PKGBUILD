@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 142067 2015-09-28 10:59:42Z fyan $
+# $Id: PKGBUILD 151989 2015-12-10 04:11:03Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Chris Brannon <cmbrannon79@gmail.com>
 # Contributor: Jeff Mickey <jeff@archlinux.org>
 
 pkgname=tcpflow
 pkgver=1.4.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Captures data transmitted as part of TCP connections then stores the data conveniently"
 arch=('i686' 'x86_64')
 url="https://github.com/simsong/tcpflow"

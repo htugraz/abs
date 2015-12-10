@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 117925 2014-08-26 18:33:37Z jsteel $
+# $Id: PKGBUILD 151425 2015-12-10 03:52:51Z foutrelis $
 # Maintainer: Jonathan Steel <jsteel at aur.archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 # Contributor: Jason Chu <jason@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=dgen-sdl
 pkgver=1.33
-pkgrel=1
+pkgrel=2
 pkgdesc="An emulator for Sega Genesis/Mega Drive systems ported to SDL"
 arch=('i686' 'x86_64')
 url="http://dgen.sourceforge.net"

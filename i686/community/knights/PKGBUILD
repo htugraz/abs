@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 131717 2015-04-19 16:07:06Z arojas $
+# $Id: PKGBUILD 151607 2015-12-10 03:58:31Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=knights
 pkgver=2.5.0
-pkgrel=3
+pkgrel=4
 pkgdesc="Chess board for KDE with XBoard protocol support"
 arch=('i686' 'x86_64')
 url="http://kde-apps.org/content/show.php/Knights?content=122046"

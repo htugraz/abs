@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 246457 2015-09-17 20:59:50Z foutrelis $
+# $Id: PKGBUILD 255037 2015-12-10 04:36:53Z foutrelis $
 # Maintainer:
 
 pkgname=gettext
 pkgver=0.19.6
-pkgrel=1
+pkgrel=2
 pkgdesc="GNU internationalization library"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/gettext/"

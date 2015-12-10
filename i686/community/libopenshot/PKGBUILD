@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 147074 2015-11-18 13:11:35Z flexiondotorg $
+# $Id: PKGBUILD 151656 2015-12-10 03:59:51Z foutrelis $
 # Maintainer : Martin Wimpress <code@flexion.org>
 # Contributor: Foster McLane <fkmclane@gmail.com>
 # Contributor: Jonathan Thomas <jonathan@openshot.org>
 
 pkgname=libopenshot
 pkgver=0.0.6
-pkgrel=1
+pkgrel=2
 pkgdesc="A high quality, open-source video editing, animation, and playback library for C++, Python, and Ruby."
 arch=('i686' 'x86_64')
 url="http://openshot.org/"

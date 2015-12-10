@@ -1,10 +1,10 @@
-#$Id: PKGBUILD 147413 2015-11-22 21:48:31Z heftig $
+#$Id: PKGBUILD 151549 2015-12-10 03:56:07Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=gtksourceviewmm
 pkgver=3.18.0
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc='C++ bindings for the gtksourceview library'
 arch=('x86_64' 'i686')

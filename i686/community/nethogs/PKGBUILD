@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 140554 2015-09-17 20:53:37Z foutrelis $
+# $Id: PKGBUILD 151756 2015-12-10 04:03:24Z foutrelis $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: ViNS <gladiator@fastwebnet.it>
 # Contributor: Daenyth
 pkgname=nethogs
 pkgver=0.8.0
-pkgrel=4
+pkgrel=5
 pkgdesc="A net top tool which displays traffic used per process instead of per IP or interface"
 url="http://nethogs.sourceforge.net"
 license=('GPL')

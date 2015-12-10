@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 239688 2015-05-24 05:32:42Z heftig $
+# $Id: PKGBUILD 255060 2015-12-10 04:42:23Z foutrelis $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=anjuta-extras
 pkgver=3.10.0
-pkgrel=2
+pkgrel=3
 pkgdesc="Anjuta Integrated Development Environment extra plugins"
 arch=('i686' 'x86_64')
 license=('GPL')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 115012 2014-07-05 03:56:55Z fyan $
+# $Id: PKGBUILD 151772 2015-12-10 04:04:11Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: scippio <scippio@berounet.cz>
 pkgname=ois
 pkgver=1.3
 _oisver=${pkgver/./-}
-pkgrel=3
+pkgrel=4
 pkgdesc="Object Oriented Input System"
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/wgois"

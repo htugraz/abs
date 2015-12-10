@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 233317 2015-03-10 09:25:16Z fyan $
+# $Id: PKGBUILD 255170 2015-12-10 04:46:32Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=grantlee-qt5
 pkgver=5.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A string template engine based on the Django template system and written in Qt5"
 arch=('i686' 'x86_64')
 url="https://www.gitorious.org/grantlee/pages/Home"

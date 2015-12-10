@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250371 2015-11-09 21:45:22Z arojas $
+# $Id: PKGBUILD 255216 2015-12-10 04:48:14Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kapman
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A clone of the well known game Pac-Man"
 url="http://kde.org/applications/games/kapman/"
 arch=('i686' 'x86_64')

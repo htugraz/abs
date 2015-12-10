@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 148110 2015-12-02 14:40:16Z fyan $
+# $Id: PKGBUILD 151848 2015-12-10 04:06:32Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andy Weidenbaum <archbaum@gmail.com>
 
 pkgname=(python-plyvel python2-plyvel)
 pkgver=0.9
-pkgrel=2
+pkgrel=3
 pkgdesc="A fast and feature-rich Python interface to LevelDB"
 arch=('i686' 'x86_64')
 license=('BSD')

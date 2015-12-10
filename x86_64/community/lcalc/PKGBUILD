@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 144936 2015-10-24 18:31:32Z arojas $
+# $Id: PKGBUILD 151633 2015-12-10 03:59:14Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=lcalc
 pkgver=1.23
-pkgrel=8
+pkgrel=9
 pkgdesc="C++ L-function class library and command line interface"
 arch=('i686' 'x86_64')
 url="http://oto.math.uwaterloo.ca/~mrubinst/L_function_public/L.html"

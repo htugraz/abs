@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250349 2015-11-09 21:36:27Z arojas $
+# $Id: PKGBUILD 255214 2015-12-10 04:48:08Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kalgebra
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Graph Calculator"
 url="http://kde.org/applications/education/kalgebra/"
 arch=('i686' 'x86_64')

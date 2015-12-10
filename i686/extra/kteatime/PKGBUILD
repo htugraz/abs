@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250461 2015-11-09 22:16:58Z arojas $
+# $Id: PKGBUILD 255421 2015-12-10 04:55:14Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kteatime
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Tea Cooker'
 url='http://kde.org/applications/games/kteatime/'
 arch=('i686' 'x86_64')

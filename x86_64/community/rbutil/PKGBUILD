@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 112250 2014-05-30 13:34:01Z alucryd $
+# $Id: PKGBUILD 151908 2015-12-10 04:08:25Z foutrelis $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 # Contributor: said <atvordhosbn@gmail.com>
 # Contributor: clinx <clinx.hacker@googlemail.com>
 
 pkgname=rbutil
 pkgver=1.4.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Rockbox Utility'
 arch=('i686' 'x86_64')
 url='http://www.rockbox.org/twiki/bin/view/Main/RockboxUtility'

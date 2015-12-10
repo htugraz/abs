@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 142989 2015-10-05 11:52:50Z spupykin $
+# $Id: PKGBUILD 151910 2015-12-10 04:08:29Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=recoll
 pkgver=1.21.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Full text search tool based on Xapian backend"
 arch=('i686' 'x86_64')
 url="http://www.lesbonscomptes.com/recoll/"

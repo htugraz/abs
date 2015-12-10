@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 103009 2013-12-25 16:19:46Z jlichtblau $
+# $Id: PKGBUILD 151491 2015-12-10 03:54:36Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Matthias Maennich <arch@maennich.net>
 
 pkgname=garmindev
 pkgver=0.3.4
-pkgrel=7
+pkgrel=8
 pkgdesc="Garmin Device Drivers for QlandkarteGT"
 arch=('i686' 'x86_64')
 url="http://www.qlandkarte.org/"

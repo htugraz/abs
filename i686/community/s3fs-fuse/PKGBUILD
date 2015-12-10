@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137667 2015-08-01 18:31:07Z jelle $
+# $Id: PKGBUILD 151924 2015-12-10 04:08:55Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: David Roheim <david dot roheim at gmail dot com>
 # Contributor: Chris Heien <chris.h.heien@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=s3fs-fuse
 pkgver=1.79
-pkgrel=2
+pkgrel=3
 pkgdesc="FUSE-based file system backed by Amazon S3"
 arch=('i686' 'x86_64')
 url="https://github.com/s3fs-fuse/s3fs-fuse/wiki"

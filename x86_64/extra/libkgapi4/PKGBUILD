@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 244700 2015-08-23 09:08:38Z arojas $
+# $Id: PKGBUILD 255475 2015-12-10 04:57:31Z foutrelis $
 # Maintainer:
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkgapi4
 pkgver=2.2.0
-pkgrel=4
+pkgrel=5
 pkgdesc="A KDE-based library for accessing various Google services via their public API"
 url='https://projects.kde.org/projects/extragear/libs/libkgapi'
 arch=('i686' 'x86_64')

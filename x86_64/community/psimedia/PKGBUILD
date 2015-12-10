@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 110840 2014-05-08 13:16:02Z spupykin $
+# $Id: PKGBUILD 151836 2015-12-10 04:06:11Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Vladimir Kutyavin <vlkut-at-bk-dot-ru>
 
 pkgname=psimedia
 pkgver=1.0.3
-pkgrel=10
+pkgrel=11
 pkgdesc="Voice and video chat plugin for Psi-like IM clients.  The implementation is based on GStreamer."
 arch=('i686' 'x86_64')
 license=('GPL2')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251156 2015-11-18 07:33:46Z fyan $
+# $Id: PKGBUILD 255435 2015-12-10 04:55:56Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kwindowsystem
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Access to the windowing system'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kwindowsystem'

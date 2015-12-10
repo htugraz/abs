@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 148315 2015-12-04 05:39:16Z fyan $
+# $Id: PKGBUILD 152092 2015-12-10 05:33:23Z foutrelis $
 # Maintainer: Florian Pritz <bluewind@xinu.at>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Christoph Vigano <mail at cvigano dot de>
@@ -9,7 +9,7 @@
 _pkgbasename=gnutls
 pkgname=lib32-$_pkgbasename
 pkgver=3.4.7
-pkgrel=1
+pkgrel=2
 pkgdesc="A library which provides a secure layer over a reliable transport layer (32-bit)"
 arch=('x86_64')
 license=('GPL3' 'LGPL2.1')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 131688 2015-04-19 11:29:43Z andyrtr $
+# $Id: PKGBUILD 151552 2015-12-10 03:56:11Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: William Rea <sillywilly@gmail.com>
 
 pkgname=gwenhywfar
 pkgver=4.13.1
 _dnrel=78
-pkgrel=2
+pkgrel=3
 pkgdesc="OS abstraction functions for various projects"
 arch=(i686 x86_64)
 url="http://www.aquamaniac.de"

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 144509 2015-10-20 10:40:10Z spupykin $
+# $Id: PKGBUILD 151410 2015-12-10 03:52:24Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer:  Christian Himpel <chressie at gmail dot com>
 # Contributor: Johannes Hanika <hanatos at gmail dot com>
 
 pkgname=darktable
 pkgver=1.6.9
-pkgrel=1
+pkgrel=2
 pkgdesc="Utility to organize and develop raw images"
 arch=('i686' 'x86_64')
 url=http://darktable.sf.net/

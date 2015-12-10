@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250431 2015-11-09 22:06:18Z arojas $
+# $Id: PKGBUILD 255304 2015-12-10 04:51:07Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-krdc
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Remote Desktop Client'
 url='http://kde.org/applications/internet/krdc/'
 arch=('i686' 'x86_64')

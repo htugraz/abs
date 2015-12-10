@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 215154 2014-06-14 19:17:01Z andyrtr $
+# $Id: PKGBUILD 255532 2015-12-10 04:59:16Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=libwpg
 pkgver=0.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Library for importing and converting Corel WordPerfect(tm) Graphics images."
 arch=('i686' 'x86_64')
 url="http://libwpg.sourceforge.net/"

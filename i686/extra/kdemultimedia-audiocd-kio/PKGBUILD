@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250419 2015-11-09 22:01:55Z arojas $
+# $Id: PKGBUILD 255294 2015-12-10 04:50:46Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdemultimedia-audiocd-kio
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Kioslave for accessing audio CDs"
 url='https://projects.kde.org/projects/kde/kdemultimedia/audiocd-kio'
 arch=('i686' 'x86_64')

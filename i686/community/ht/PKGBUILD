@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 140530 2015-09-17 20:53:04Z foutrelis $
+# $Id: PKGBUILD 151561 2015-12-10 03:56:32Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: tardo <tardo@nagi-fanboi.net>
 # Contributor: Simon Morgan <"mra84964@mra.pb.hx".decode('rot-13')>
 
 pkgname=ht
 pkgver=2.1.0
-pkgrel=3
+pkgrel=4
 pkgdesc="A file editor/viewer/analyzer for executables"
 arch=('i686' 'x86_64')
 url="http://hte.sourceforge.net/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250471 2015-11-09 22:20:08Z arojas $
+# $Id: PKGBUILD 255331 2015-12-10 04:52:04Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-kremotecontrol
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Configure your remote controls for use with applications'
 url='http://kde.org/applications/utilities/kremotecontrol/'
 arch=('i686' 'x86_64')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 114019 2014-07-01 12:19:28Z spupykin $
+# $Id: PKGBUILD 151546 2015-12-10 03:56:03Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Roman Kyrylych <Roman.Kyrylych@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=gtk2_prefs
 pkgver=0.4.1
-pkgrel=4
+pkgrel=5
 pkgdesc="A GTK2 theme selector and font switcher"
 arch=('i686' 'x86_64')
 url="http://gtk-win.sourceforge.net/home/index.php/en/Gtk2Prefs"

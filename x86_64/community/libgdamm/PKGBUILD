@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 148426 2015-12-05 06:30:52Z foutrelis $
+# $Id: PKGBUILD 151645 2015-12-10 03:59:32Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
 # Contributor: Jan de Groot <jan@jgc.homeip.net>
@@ -6,7 +6,7 @@
 pkgbase=libgdamm
 pkgname=(libgdamm libgdamm-docs)
 pkgver=4.99.10
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 makedepends=('libgda' 'libsigc++' 'glibmm' 'glibmm-docs')
 url="http://www.gtkmm.org/"

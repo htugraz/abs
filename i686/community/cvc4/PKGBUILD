@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 143603 2015-10-10 14:08:04Z fyan $
+# $Id: PKGBUILD 151408 2015-12-10 03:52:19Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Philipp Sieweck
 
 pkgname=cvc4
 pkgver=1.4
-pkgrel=3
+pkgrel=4
 pkgdesc="An automatic theorem prover"
 arch=('i686' 'x86_64')
 url="http://cvc4.cs.nyu.edu/web/"

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 143636 2015-10-11 10:43:26Z arojas $
+# $Id: PKGBUILD 151388 2015-12-10 03:51:40Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: spider-mario <spidermario@free.fr>
 # Contributor: Daniel Ehlers <danielehlers@mindeye.net>
 
 pkgname=coin-or-clp
 pkgver=1.16.9
-pkgrel=1
+pkgrel=2
 pkgdesc="COIN-OR linear programming solver"
 arch=(i686 x86_64)
 url="https://projects.coin-or.org/Clp"

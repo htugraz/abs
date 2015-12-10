@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 96052 2013-08-19 13:04:58Z spupykin $
+# $Id: PKGBUILD 151597 2015-12-10 03:58:15Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: ReNoM <renom@list.ru>
 
 pkgname=kde4-kio-rapip
 pkgver=0.4
-pkgrel=1
+pkgrel=2
 pkgdesc="KIOSlave to browse through the PDA file system via the SynCE infrastructure"
 arch=(i686 x86_64)
 url="http://synce.sourceforge.net/"

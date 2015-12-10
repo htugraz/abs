@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250399 2015-11-09 21:54:49Z arojas $
+# $Id: PKGBUILD 255417 2015-12-10 04:55:02Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=ksquares
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A modeled after the well known pen and paper based game of Dots and Boxes"
 url="http://kde.org/applications/games/ksquares/"
 arch=('i686' 'x86_64')

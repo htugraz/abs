@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 249689 2015-10-23 17:26:10Z anatolik $
+# $Id: PKGBUILD 255035 2015-12-10 04:36:41Z foutrelis $
 # Maintainer: Laurent Carlier <lordheavym@gmail.com>
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 # Contributor: Andrej Gelenberg <andrej.gelenberg@udo.edu>
@@ -6,7 +6,7 @@
 pkgbase=elfutils
 pkgname=(elfutils libelf)
 pkgver=0.164
-pkgrel=1
+pkgrel=2
 pkgdesc="Utilities to handle ELF object files and DWARF debugging information"
 arch=('i686' 'x86_64')
 url="https://fedorahosted.org/elfutils/"

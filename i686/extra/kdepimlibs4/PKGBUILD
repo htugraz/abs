@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 246017 2015-09-13 21:20:34Z arojas $
+# $Id: PKGBUILD 255314 2015-12-10 04:51:32Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
@@ -6,7 +6,7 @@
 pkgname=kdepimlibs4
 pkgver=4.14.10
 _kdeappver=15.04.3
-pkgrel=4
+pkgrel=5
 pkgdesc="KDE4 PIM Libraries"
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/kdepimlibs'

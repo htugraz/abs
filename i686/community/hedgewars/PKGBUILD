@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 145606 2015-11-02 13:07:52Z spupykin $
+# $Id: PKGBUILD 151554 2015-12-10 03:56:14Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Tinxy <arch at tinx dot eu>
 
 pkgname=hedgewars
 pkgver=0.9.22
-pkgrel=1
+pkgrel=2
 pkgdesc="Turn-based strategy artillery game similiar to Worms"
 arch=('i686' 'x86_64')
 url="http://hedgewars.org"

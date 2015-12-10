@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 240294 2015-06-03 09:03:33Z fyan $
+# $Id: PKGBUILD 255628 2015-12-10 05:06:55Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=qtwebkit
 pkgver=2.3.4
-pkgrel=2
+pkgrel=4
 arch=('i686' 'x86_64')
 url='http://trac.webkit.org/wiki/QtWebKit'
 pkgdesc='An open source web browser engine (Qt port)'

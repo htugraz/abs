@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 148043 2015-11-30 11:15:23Z spupykin $
+# $Id: PKGBUILD 151966 2015-12-10 04:10:19Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Mark Coolen <mark.coolen@gmail.com>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
@@ -6,7 +6,7 @@
 
 pkgname=squid
 pkgver=3.5.12
-pkgrel=1
+pkgrel=2
 pkgdesc='Full-featured Web proxy cache server'
 arch=('x86_64' 'i686')
 url='http://www.squid-cache.org'

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 138307 2015-08-13 18:48:22Z arojas $
+# $Id: PKGBUILD 151987 2015-12-10 04:11:00Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=systemd-kcm
 pkgver=1.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Systemd control module for KDE"
 arch=('i686' 'x86_64')
 url='https://github.com/rthomsen/kcmsystemd'

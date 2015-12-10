@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 227981 2014-12-24 07:15:49Z andrea $
+# $Id: PKGBUILD 255447 2015-12-10 04:56:32Z foutrelis $
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libbluedevil
 pkgver=2.1
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc='A Qt4 wrapper for bluez used in the new KDE bluetooth stack'
 arch=('i686' 'x86_64')

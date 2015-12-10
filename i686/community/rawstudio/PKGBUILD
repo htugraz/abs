@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137907 2015-08-04 06:37:21Z bpiotrowski $
+# $Id: PKGBUILD 151906 2015-12-10 04:08:22Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
 # Contributor: Roman Kyrylych <roman@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=rawstudio
 pkgver=2.0
-pkgrel=14
+pkgrel=15
 pkgdesc="An open source raw-image converter written in GTK+"
 arch=('i686' 'x86_64')
 license=('GPL')

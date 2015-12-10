@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 144433 2015-10-20 08:45:07Z svenstaro $
+# $Id: PKGBUILD 151979 2015-12-10 04:10:43Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Daenyth <Daenyth+Arch [AT] gmail [DOT] com>
 # Contributor: Allan McRae <allan@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=supertuxkart
 pkgver=0.9.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Kart racing game featuring Tux and his friends'
 arch=('i686' 'x86_64')
 url='http://supertuxkart.sourceforge.net/'

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 128560 2015-03-02 17:09:29Z bisson $
+# $Id: PKGBUILD 151429 2015-12-10 03:52:56Z foutrelis $
 # Contributor: Paulo Matias <matias.archlinux-br.org>
 # Contributor: Leslie P. Polzer <polzer.gnu.org>
 # Contributor: erm67 <erm67.yahoo.it>
@@ -7,7 +7,7 @@
 
 pkgname=djview
 pkgver=4.10
-pkgrel=2
+pkgrel=3
 pkgdesc='Portable DjVu viewer and browser plugin'
 url='http://djvu.sourceforge.net/djview4.html'
 license=('GPL')

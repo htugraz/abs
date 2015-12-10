@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 130103 2015-03-28 10:51:07Z jlichtblau $
+# $Id: PKGBUILD 151474 2015-12-10 03:54:10Z foutrelis $
 # Maintainer : Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Angelo Theodorou <encelo@users.sourceforge.net>
 # contributor: Laurent Carlier <lordheavym@gmail.com>
 
 pkgname=flobopuyo
 pkgver=0.20
-pkgrel=8
+pkgrel=9
 pkgdesc="Clone of the famous PuyoPuyo"
 arch=('i686' 'x86_64')
 url="http://freshmeat.net/projects/$pkgname/"

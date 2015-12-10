@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251175 2015-11-18 07:34:13Z fyan $
+# $Id: PKGBUILD 255260 2015-12-10 04:49:37Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeclarative
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Provides integration of QML and KDE Frameworks'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kdeclarative'

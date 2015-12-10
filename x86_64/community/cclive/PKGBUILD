@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 144572 2015-10-21 21:55:07Z foutrelis $
+# $Id: PKGBUILD 151365 2015-12-10 03:50:56Z foutrelis $
 # Maintainer: Lukas Fleischer <lfleischer@archlinux.org>
 # Contributor: joyfulgirl@archlinux.us
 # Contributor: nathan owe ndowens04 at gmail dot com
 
 pkgname=cclive
 pkgver=0.9.3
-pkgrel=7
+pkgrel=9
 pkgdesc='Commandline downloader for popular video websites.'
 arch=('i686' 'x86_64')
 url='http://cclive.sourceforge.net/'

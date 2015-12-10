@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 243112 2015-08-07 17:12:29Z anatolik $
+# $Id: PKGBUILD 255208 2015-12-10 04:47:56Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Jonahtan Schaeffer <joschaeffer@gmail.com>
 # COntributor: Drake Arconis <lightdrake@gmail.com>
 
 pkgname=jsoncpp
 pkgver=1.6.5
-pkgrel=1
+pkgrel=3
 pkgdesc='A C++ library for interacting with JSON'
 url='https://github.com/open-source-parsers/jsoncpp'
 license=('MIT' 'custom:Public_Domain')

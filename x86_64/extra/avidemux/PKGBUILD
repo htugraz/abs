@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250763 2015-11-11 22:07:46Z foutrelis $
+# $Id: PKGBUILD 255076 2015-12-10 04:42:56Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgbase=avidemux
 pkgname=('avidemux-cli' 'avidemux-gtk' 'avidemux-qt')
 pkgver=2.5.6
-pkgrel=13
+pkgrel=14
 arch=('i686' 'x86_64')
 license=('GPL')
 url="http://fixounet.free.fr/avidemux/"

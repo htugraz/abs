@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 119580 2014-09-25 20:36:23Z arodseth $
+# $Id: PKGBUILD 151997 2015-12-10 04:11:19Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: portals <portals at riseup.net>
 # Contributor: novemberist
@@ -7,7 +7,7 @@
 
 pkgname=tesseract-game
 pkgver=1
-pkgrel=3
+pkgrel=4
 pkgdesc='Smooth FPS with map editing, instagib, DM and CTF'
 url='http://tesseract.gg/'
 arch=('x86_64' 'i686')

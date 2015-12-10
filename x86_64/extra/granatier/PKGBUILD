@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250369 2015-11-09 21:44:46Z arojas $
+# $Id: PKGBUILD 255168 2015-12-10 04:46:29Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=granatier
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A clone of the classic Bomberman game"
 url="http://kde.org/applications/games/granatier/"
 arch=('i686' 'x86_64')

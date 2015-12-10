@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 148382 2015-12-04 12:02:42Z flexiondotorg $
+# $Id: PKGBUILD 151333 2015-12-10 03:49:49Z foutrelis $
 # Maintainer : Martin Wimpress <code@flexion.org>
 
 _ver=1.12
 _pkgbase=atril
 pkgname=(${_pkgbase}-gtk3)
 pkgver=${_ver}.1
-pkgrel=1
+pkgrel=2
 pkgdesc="MATE document viewer (GTK3 version [EXPERIMENTAL])"
 url="http://mate-desktop.org"
 arch=('i686' 'x86_64')

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 246514 2015-09-17 21:01:51Z foutrelis $
+# $Id: PKGBUILD 255541 2015-12-10 04:59:34Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Jan "heftig" Steffens <jan.steffens@gmail.com>
 # Contributor: Sebastian Nowicki <sebnow@gmail.com>
@@ -15,7 +15,7 @@
 
 pkgname=('llvm35' 'llvm35-libs' 'clang35')
 pkgver=3.5.2
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 url="http://llvm.org/"
 license=('custom:University of Illinois/NCSA Open Source License')

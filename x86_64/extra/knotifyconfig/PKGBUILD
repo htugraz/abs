@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251198 2015-11-18 07:34:53Z fyan $
+# $Id: PKGBUILD 255394 2015-12-10 04:53:57Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=knotifyconfig
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Configuration system for KNotify'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/knotifyconfig'

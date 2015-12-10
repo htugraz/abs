@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 252051 2015-11-29 15:34:41Z heftig $
+# $Id: PKGBUILD 255565 2015-12-10 05:00:47Z foutrelis $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Jason Chu <jchu@xentac.net>
@@ -6,7 +6,7 @@
 pkgbase=openal
 pkgname=(openal openal-examples)
 pkgver=1.17.0
-pkgrel=2
+pkgrel=4
 pkgdesc="A cross-platform 3D audio library"
 arch=(i686 x86_64)
 url="http://www.openal.org/"

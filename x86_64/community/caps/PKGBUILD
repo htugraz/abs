@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 123227 2014-11-27 16:18:10Z speps $
+# $Id: PKGBUILD 151361 2015-12-10 03:50:48Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: DonVla <donvla@users.sourceforge.net>
 
 pkgname=caps
 pkgver=0.9.24
-pkgrel=1
+pkgrel=2
 pkgdesc="The LADSPA C* Audio Plugin Suite"
 arch=('i686' 'x86_64')
 url="http://quitte.de/dsp/caps.html"

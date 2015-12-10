@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 252047 2015-11-29 11:34:13Z foutrelis $
+# $Id: PKGBUILD 255705 2015-12-10 05:12:58Z foutrelis $
 # Maintainer: Thomas Bächler <thomas@archlinux.org>
 
 pkgname=wpa_supplicant_gui
 pkgver=2.5
-pkgrel=2
+pkgrel=3
 pkgdesc="A Qt frontend to wpa_supplicant"
 url="http://hostap.epitest.fi/wpa_supplicant"
 arch=('i686' 'x86_64')

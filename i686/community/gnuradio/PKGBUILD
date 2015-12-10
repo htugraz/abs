@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 145868 2015-11-03 18:19:50Z kkeen $
+# $Id: PKGBUILD 151522 2015-12-10 03:55:26Z foutrelis $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Dominik Heidler <dheidler@gmail.com>
 # Contributor:	Jonatan Sastre <jsastreh [ at ] hotmail.com>
 pkgbase=gnuradio
 pkgname=(gnuradio gnuradio-companion)
 pkgver=3.7.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="General purpose DSP and SDR toolkit.  With drivers for usrp and fcd."
 arch=('i686' 'x86_64')
 url="http://gnuradio.org"

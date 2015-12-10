@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 114031 2014-07-01 12:21:12Z spupykin $
+# $Id: PKGBUILD 151557 2015-12-10 03:56:20Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: insulae <insulae@gmail.com>
 
 pkgname=hex-a-hop
 pkgver=1.1.0
-pkgrel=4
+pkgrel=5
 pkgdesc='Hex-a-hop is a puzzle game based on hexagonal tiles'
 arch=('i686' 'x86_64')
 url='http://hexahop.sourceforge.net/'

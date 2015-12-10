@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251163 2015-11-18 07:33:55Z fyan $
+# $Id: PKGBUILD 255360 2015-12-10 04:52:55Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kiconthemes
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Support for icon themes'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kiconthemes'

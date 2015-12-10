@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 144543 2015-10-21 04:24:45Z fyan $
+# $Id: PKGBUILD 151461 2015-12-10 03:53:50Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=fcitx-qt5
 pkgver=1.0.4
-pkgrel=2
+pkgrel=3
 pkgdesc="Qt5 IM Module for Fcitx"
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/fcitx"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 115173 2014-07-06 12:01:27Z fyan $
+# $Id: PKGBUILD 151449 2015-12-10 03:53:30Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: ivh
 
 pkgname=ext3grep
 pkgver=0.10.2
-pkgrel=3
+pkgrel=4
 pkgdesc="A tool to investigate an ext3 file system for deleted content and possibly recover it"
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/ext3grep/"

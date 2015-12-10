@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250409 2015-11-09 21:58:24Z arojas $
+# $Id: PKGBUILD 255284 2015-12-10 04:50:22Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-kolourpaint
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Paint Program"
 url="http://kde.org/applications/graphics/kolourpaint/"
 arch=('i686' 'x86_64')

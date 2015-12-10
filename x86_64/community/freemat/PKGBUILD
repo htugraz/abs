@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 140476 2015-09-17 20:51:49Z foutrelis $
+# $Id: PKGBUILD 151482 2015-12-10 03:54:22Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: William Rea <sillywilly@gmail.com>
 
 pkgname=freemat
 pkgver=4.2
-pkgrel=5
+pkgrel=6
 pkgdesc="A free environment for rapid engineering, scientific prototyping and data processing"
 arch=('i686' 'x86_64')
 url="http://freemat.sourceforge.net"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 141420 2015-09-21 22:19:09Z spupykin $
+# $Id: PKGBUILD 151990 2015-12-10 04:11:05Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Roman Kyrylych <roman@archlinux.org>
@@ -7,7 +7,7 @@
 
 pkgname=tea
 pkgver=41.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A Qt-based text editor for Linux and *BSD. With an ultimate small size TEA provides you hundreds of functions."
 arch=('i686' 'x86_64')
 url="http://semiletov.org/tea/"

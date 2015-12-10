@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250388 2015-11-09 21:51:00Z arojas $
+# $Id: PKGBUILD 255270 2015-12-10 04:49:58Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-knavalbattle
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A ship sinking game"
 url="http://kde.org/applications/games/knavalbattle/"
 arch=('i686' 'x86_64')

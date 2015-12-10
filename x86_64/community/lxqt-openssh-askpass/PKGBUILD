@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 146323 2015-11-06 17:56:03Z jleclanche $
+# $Id: PKGBUILD 151696 2015-12-10 04:01:07Z foutrelis $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=lxqt-openssh-askpass
 pkgver=0.10.0
-pkgrel=2
+pkgrel=3
 pkgdesc="LXQt openssh password prompt"
 arch=("i686" "x86_64")
 groups=("lxqt")

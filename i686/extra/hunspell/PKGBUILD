@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 246502 2015-09-17 21:01:34Z foutrelis $
+# $Id: PKGBUILD 255192 2015-12-10 04:47:22Z foutrelis $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 # Contributor: Hussam Al-Tayeb <ht990332@gmail.com>
 
 pkgname=hunspell
 pkgver=1.3.3
-pkgrel=2
+pkgrel=3
 pkgdesc="Spell checker and morphological analyzer library and program"
 arch=('i686' 'x86_64')
 url="http://hunspell.sourceforge.net/"

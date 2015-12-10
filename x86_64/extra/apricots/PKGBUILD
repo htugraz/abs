@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 230776 2015-02-04 23:00:34Z bluewind $
+# $Id: PKGBUILD 255062 2015-12-10 04:42:26Z foutrelis $
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 
 pkgname=apricots
 pkgver=0.2.6
-pkgrel=6
+pkgrel=7
 pkgdesc="A simple 2D flying/bombing game similar to basic side scrollers"
 arch=("i686" "x86_64")
 license=('GPL')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 108043 2014-03-21 17:27:23Z giovanni $
+# $Id: PKGBUILD 151547 2015-12-10 03:56:04Z foutrelis $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Bastien Bouclet <bastien.bouclet@gmail.com>
 # Contributor: SpepS <dreamspepser at yahoo dot it>
 
 pkgname=gtkglextmm
 pkgver=1.2.0
-pkgrel=10
+pkgrel=11
 pkgdesc="Cpp C++ bindings for gtkglext"
 arch=('i686' 'x86_64')
 url="http://gtkglext.sourceforge.net/"
@@ -35,6 +35,7 @@ prepare() {
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
 
+  CXXFLAGS+=' -std=c++11'
   ./configure --prefix=/usr \
               --disable-gtkglext-test \
               --disable-static

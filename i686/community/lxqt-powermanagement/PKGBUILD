@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 146280 2015-11-06 10:19:00Z jleclanche $
+# $Id: PKGBUILD 151699 2015-12-10 04:01:12Z foutrelis $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=lxqt-powermanagement
 pkgver=0.10.0
-pkgrel=2
+pkgrel=3
 pkgdesc="LXQt power management daemon"
 arch=("i686" "x86_64")
 groups=("lxqt")

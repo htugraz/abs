@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 128339 2015-02-27 05:43:18Z bpiotrowski $
+# $Id: PKGBUILD 151574 2015-12-10 03:57:09Z foutrelis $
 # Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 
 pkgname=injeqt
 pkgver=1.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Dependency injection framework for Qt'
 arch=('i686' 'x86_64')
 url='https://github.com/vogel/injeqt'
 license=('LGPL2.1')
 depends=('qt5-base')
 makedepends=('cmake')
-source=($url/archive/$pkgver.tar.gz)
+source=($pkgname-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz)
 md5sums=('5f9211d7731c6b7e7c4e6943445fb379')
 
 build() {

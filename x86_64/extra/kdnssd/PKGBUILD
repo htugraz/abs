@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251192 2015-11-18 07:34:40Z fyan $
+# $Id: PKGBUILD 255344 2015-12-10 04:52:28Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdnssd
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Abstraction to system DNSSD features'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kdnssd'

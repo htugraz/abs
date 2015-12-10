@@ -1,24 +1,24 @@
-# $Id: PKGBUILD 115229 2014-07-07 02:29:42Z fyan $
+# $Id: PKGBUILD 151837 2015-12-10 04:06:13Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve>  
 # Contributor: Tomas Acauan Schertel <tschertel@gmail.com>
 
 pkgname=pspshrink
 pkgver=1.1.2
-pkgrel=4
+pkgrel=5
 pkgdesc="PSP Shrink allows you to shrink your isos to the cso format."
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/pspshrink/"
 license=('GPL2')
 makedepends=('gtkmm')
-optdepends=('gtkmm: To use pspshrinkui ')
-install=$pkgname.install
+optdepends=('gtkmm: for pspshrinkui')
 source=(http://pspshrink.googlecode.com/files/$pkgname-$pkgver.tar.gz)
 md5sums=('c9f7dc58c983016047ceebbacb9856e9')
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
 
+  CXXFLAGS+=' -std=c++11'
   ./configure --prefix=/usr
   make
 }

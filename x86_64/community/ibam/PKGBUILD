@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 137488 2015-07-27 09:32:55Z spupykin $
+# $Id: PKGBUILD 151563 2015-12-10 03:56:38Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Kessia 'even' Pinheiro <kessiapinheiro at gmail.com>
 # Contributor: Penguin <TGates81.at.gmail.dot.com>
 
 pkgname=ibam
 pkgver=0.5.2
-pkgrel=8
+pkgrel=9
 pkgdesc="An intelligent battery monitor"
 arch=('i686' 'x86_64')
 url="http://ibam.sourceforge.net/"

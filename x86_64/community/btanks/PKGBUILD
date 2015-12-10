@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 133581 2015-05-16 16:23:34Z anatolik $
+# $Id: PKGBUILD 151355 2015-12-10 03:50:36Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Nick B <Shirakawasuna at gmail _dot_ com>
 
 pkgname=btanks
 pkgver=0.9.8083
-pkgrel=6
+pkgrel=7
 pkgdesc="Fast 2d tank arcade game with multiplayer and split-screen modes."
 arch=('i686' 'x86_64')
 url="http://btanks.sourceforge.net"

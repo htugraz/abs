@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 144227 2015-10-16 07:47:09Z fyan $
+# $Id: PKGBUILD 151887 2015-12-10 04:07:42Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=qt5-systems
 pkgver=5.4.0.20150918
 _commit=0577ffca58b7fed78c1820fc1c2b7ab3533d5698
-pkgrel=1
+pkgrel=2
 pkgdesc="Qt Publish and Subscribe Add-on Module"
 arch=('i686' 'x86_64')
 url="https://github.com/qtproject/qtsystems"

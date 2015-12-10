@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252136 2015-12-02 21:31:06Z heftig $
+# $Id: PKGBUILD 255160 2015-12-10 04:46:10Z foutrelis $
 # Maintainer:  Ionut Biru <ibiru@archlinux.org>
 # Contributor: uastasi <uastasi@archlinux.us>
 
 pkgname=gnote
 pkgver=3.18.1
-pkgrel=1
+pkgrel=2
 pkgdesc='A note taking application'
 arch=('i686' 'x86_64')
 url='http://live.gnome.org/Gnote'

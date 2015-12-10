@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 207448 2014-03-09 13:14:57Z bpiotrowski $
+# $Id: PKGBUILD 255548 2015-12-10 04:59:50Z foutrelis $
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 # Maintainer: Roberto Carvajal <roberto@archlinux.org>
 
 pkgname=mjpegtools
 pkgver=2.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Set of tools that can do recording of videos and playback, simple cut-and-paste editing and the MPEG compression of audio and video"
 arch=('i686' 'x86_64')
 license=('GPL')

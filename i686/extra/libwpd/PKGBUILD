@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 215153 2014-06-14 19:17:00Z andyrtr $
+# $Id: PKGBUILD 255531 2015-12-10 04:59:14Z foutrelis $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 
 pkgname=libwpd
 pkgver=0.10.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Library for importing WordPerfect (tm) documents"
 arch=('i686' 'x86_64')
 url="http://libwpd.sourceforge.net/"

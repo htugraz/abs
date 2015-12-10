@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 127961 2015-02-18 19:45:35Z arojas $
+# $Id: PKGBUILD 151801 2015-12-10 04:05:03Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Nick B <Shirakawasuna at gmail _dot_com>
 
 pkgname=partitionmanager
 pkgver=1.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A KDE utility that allows you to manage disks, partitions, and file systems"
 arch=('i686' 'x86_64')
 url="http://kde.org/applications/system/kdepartitionmanager/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 146711 2015-11-13 09:52:09Z mtorromeo $
+# $Id: PKGBUILD 152060 2015-12-10 04:13:30Z foutrelis $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 
 pkgname=xtrabackup
 pkgver=2.3.2
-pkgrel=3
+pkgrel=4
 pkgdesc='Non-blocking backup tool for MySQL'
 arch=('i686' 'x86_64')
 url='http://www.percona.com/software/percona-xtrabackup/'

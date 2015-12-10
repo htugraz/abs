@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250460 2015-11-09 22:16:38Z arojas $
+# $Id: PKGBUILD 255326 2015-12-10 04:51:55Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdetoys-amor
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='On-Screen Creature'
 url='https://projects.kde.org/projects/kde/kdetoys/amor'
 arch=('i686' 'x86_64')

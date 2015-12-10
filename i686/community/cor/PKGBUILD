@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 145564 2015-11-02 08:00:36Z fyan $
+# $Id: PKGBUILD 151395 2015-12-10 03:51:53Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=cor
 pkgver=0.1.17
-pkgrel=1
+pkgrel=2
 pkgdesc="Just another C++/C library"
 arch=('i686' 'x86_64')
 url="https://git.merproject.org/mer-core/cor"

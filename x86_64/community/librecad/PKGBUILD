@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 138781 2015-08-26 07:57:16Z eworm $
+# $Id: PKGBUILD 151664 2015-12-10 04:00:04Z foutrelis $
 # Maintainer: Christian Hesse <mail@eworm.de>
 # Contributor: mickele <mimocciola at yahoo dot com> (librecad-git PKGBUILD)
 # Contributor: Ilmari Repo <ilmari at gmail dot com> (librecad-svn PKGBUILD)
@@ -6,7 +6,7 @@
 
 pkgname=librecad
 pkgver=2.0.8
-pkgrel=3
+pkgrel=4
 pkgdesc='A 2D CAD drawing tool based on the community edition of QCad'
 arch=('i686' 'x86_64')
 url='http://www.librecad.org/'

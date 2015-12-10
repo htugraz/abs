@@ -1,10 +1,11 @@
-# $Id: PKGBUILD 144780 2015-10-23 08:36:35Z fyan $
+# $Id: PKGBUILD 151418 2015-12-10 03:52:37Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Josip Ponjavic <josipponjavic at gmail dot com>
 # Contributor: Xu Fasheng <fasheng.xu[AT]gmail.com>
 
 pkgname=deepin-menu
-pkgver=2.90.1
+pkgver=2.90.2
+_commit=2a85fd538d86c8ba0cf1ea2baac75d0a0973182f
 pkgrel=1
 pkgdesc="Deepin menu service for building beautiful menus"
 arch=('i686' 'x86_64')
@@ -13,7 +14,7 @@ license=('GPL3')
 depends=('python2-pyqt5' 'qt5-x11extras')
 makedepends=('python2-setuptools' 'qt5-declarative' 'git')
 groups=('deepin')
-source=("git+https://github.com/linuxdeepin/deepin-menu.git#tag=$pkgver")
+source=("git+https://github.com/linuxdeepin/deepin-menu.git#commit=$_commit")
 sha256sums=('SKIP')
 
 prepare() {

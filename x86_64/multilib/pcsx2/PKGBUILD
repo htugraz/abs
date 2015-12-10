@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 143014 2015-10-05 15:27:35Z foutrelis $
+# $Id: PKGBUILD 152114 2015-12-10 05:34:28Z foutrelis $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: josephgbr <rafael.f.f1@gmail.com>
 # Contributor: vEX <vex@niechift.com>
 
 pkgname=pcsx2
 pkgver=1.3.1
-pkgrel=5
+pkgrel=6
 pkgdesc='A Sony PlayStation 2 emulator'
 arch=('i686' 'x86_64')
 url='http://www.pcsx2.net'

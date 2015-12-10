@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 216472 2014-07-04 04:23:46Z fyan $
+# $Id: PKGBUILD 255440 2015-12-10 04:56:11Z foutrelis $
 # Maintainer: damir <damir@archlinux.org>
 
 pkgname=ladspa
 pkgver=1.13
-pkgrel=5
+pkgrel=6
 pkgdesc="Linux Audio Developer's Simple Plugin API (LADSPA)"
 arch=('i686' 'x86_64')
 license=('LGPL')
 url="http://www.ladspa.org/"
 depends=('gcc-libs')
-source=("http://www.ladspa.org/download/${pkgname}_sdk_${pkgver}.tgz"
+source=("https://github.com/OpenMandrivaAssociation/ladspa/raw/master/${pkgname}_sdk_${pkgver}.tgz"
         'fix-memleak-in-plugin-scanning.patch'
         'fallback-ladspa-path.patch')
 md5sums=('671be3e1021d0722cadc7fb27054628e'

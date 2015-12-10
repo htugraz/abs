@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 138548 2015-08-20 11:05:59Z flexiondotorg $
+# $Id: PKGBUILD 151711 2015-12-10 04:01:33Z foutrelis $
 # Maintainer : Martin Wimpress <code@flexion.org>
 
 pkgname=mate-color-manager
 pkgver=1.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Color management application for MATE."
 url="https://github.com/NiceandGently/${pkgname}"
 arch=('i686' 'x86_64')

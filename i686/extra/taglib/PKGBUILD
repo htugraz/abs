@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 251096 2015-11-16 20:08:12Z arojas $
+# $Id: PKGBUILD 255672 2015-12-10 05:10:48Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Tom Gundersen <teg@jklm.no>
 # Contributor: Ike Devolder <ike.devolder@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=taglib
 pkgver=1.10
-pkgrel=1
+pkgrel=3
 pkgdesc="A Library for reading and editing the meta-data of several popular audio formats"
 arch=(i686 x86_64)
 url="http://taglib.github.io/"

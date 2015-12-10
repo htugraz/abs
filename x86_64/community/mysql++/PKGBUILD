@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 137322 2015-07-23 10:43:15Z spupykin $
+# $Id: PKGBUILD 151744 2015-12-10 04:02:44Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Markus Härer <markus.haerer@gmx.net>
 
 pkgname=mysql++
 pkgver=3.2.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A C++ wrapper for MySQLs C API"
 arch=("i686" "x86_64")
 url="http://tangentsoft.net/mysql++/"

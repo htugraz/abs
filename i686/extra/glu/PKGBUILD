@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 215638 2014-06-30 04:59:29Z lcarlier $
+# $Id: PKGBUILD 255153 2015-12-10 04:45:55Z foutrelis $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 # Contributor: Laurent Carlier <lordheavym@gmail.com>
 
 pkgname=glu
 pkgver=9.0.0
-pkgrel=3
+pkgrel=4
 pkgdesc="Mesa OpenGL Utility library"
 arch=('i686' 'x86_64')
 url="http://cgit.freedesktop.org/mesa/glu/"

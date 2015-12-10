@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 90078 2013-05-06 19:39:06Z foutrelis $
+# $Id: PKGBUILD 151821 2015-12-10 04:05:42Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: dibblethewrecker dibblethewrecker.at.jiwe.dot.org
 # Maintainer: Daniel J Griffiths <ghost1227@archlinux.us>
 
 pkgname=png2ico
 pkgver=20021208
-pkgrel=6
+pkgrel=7
 arch=('i686' 'x86_64')
 pkgdesc="Converts PNG files to Windows icon resource files"
 url="http://www.winterdrache.de/freeware/png2ico/"

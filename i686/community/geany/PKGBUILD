@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 147395 2015-11-22 19:40:40Z arodseth $
+# $Id: PKGBUILD 151494 2015-12-10 03:54:41Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Angel Velasquez <angvp@archlinux.org> 
 # Contributor: Ionut Biru  <ibiru@archlinux.ro>
@@ -7,7 +7,7 @@
 
 pkgname=geany
 pkgver=1.26
-pkgrel=1
+pkgrel=2
 pkgdesc='Fast and lightweight IDE'
 arch=('x86_64' 'i686')
 url='http://www.geany.org/'

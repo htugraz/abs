@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 101204 2013-11-19 15:27:04Z arodseth $
+# $Id: PKGBUILD 151722 2015-12-10 04:01:55Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Christopher O'Neill <milkytracker@chrisoneill.co.uk>
 # Contributor: Maks Verver <maksverver@geocities.com>
 
 pkgname=milkytracker
 pkgver=0.90.86
-pkgrel=1
+pkgrel=2
 pkgdesc='Fast Tracker II inspired music tracker'
 arch=('x86_64' 'i686')
 url="http://www.milkytracker.org/"

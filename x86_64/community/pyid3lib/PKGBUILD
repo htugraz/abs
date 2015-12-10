@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 114350 2014-07-01 14:48:45Z spupykin $
+# $Id: PKGBUILD 151841 2015-12-10 04:06:19Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Hugo Ideler <hugoideler@dse.nl>
 # Maintainer: Jens Persson <xerxes2 at gmail.com>
 
 pkgname=pyid3lib
 pkgver=0.5.1
-pkgrel=8
+pkgrel=9
 pkgdesc="A Python module for editing ID3v2 tags of MP3 audio files"
 arch=('i686' 'x86_64')
 url="http://pyid3lib.sourceforge.net/"

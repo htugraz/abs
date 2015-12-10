@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 143923 2015-10-13 16:09:01Z anatolik $
+# $Id: PKGBUILD 152000 2015-12-10 04:11:23Z foutrelis $
 # Maintainer: Anatol Pomozov
 # Contributor: Byron Clark <byron@theclarkfamily.name>
 
@@ -9,7 +9,7 @@
 
 pkgname=thrift
 pkgver=0.9.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Scalable cross-language services framework for IPC/RPC'
 arch=(i686 x86_64)
 url='http://thrift.apache.org/'

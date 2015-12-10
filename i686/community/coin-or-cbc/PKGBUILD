@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 143638 2015-10-11 10:49:09Z arojas $
+# $Id: PKGBUILD 151386 2015-12-10 03:51:37Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: spider-mario <spidermario@free.fr>
 # Contributor: Daniel Ehlers <danielehlers@mindeye.net>
 
 pkgname=coin-or-cbc
 pkgver=2.9.7
-pkgrel=1
+pkgrel=2
 pkgdesc="COIN-OR branch-and-cut mixed integer programming solver"
 arch=(i686 x86_64)
 url="https://projects.coin-or.org/Cbc"

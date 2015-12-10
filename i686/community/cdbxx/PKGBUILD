@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 100138 2013-11-01 20:21:49Z spupykin $
+# $Id: PKGBUILD 151367 2015-12-10 03:50:59Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=cdbxx
 pkgver=0.0.1rc2
-pkgrel=4
+pkgrel=5
 pkgdesc="cdbxx is a small STL style C++ library for TinyCDB implementation of Constant Database"
 arch=(i686 x86_64)
 url="http://cdbxx.sourceforge.net/"

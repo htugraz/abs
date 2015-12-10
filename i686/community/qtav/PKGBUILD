@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 145188 2015-10-28 12:14:19Z fyan $
+# $Id: PKGBUILD 151889 2015-12-10 04:07:46Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=qtav
 pkgver=1.8.0.20151027
 _commit=e60c890e963e73ddd48015121b07c4dd8f56b219
-pkgrel=1
+pkgrel=2
 pkgdesc="A cross-platform multimedia playback framework based on Qt and FFmpeg"
 arch=('i686' 'x86_64')
 url="http://www.qtav.org/"

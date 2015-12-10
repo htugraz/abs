@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 227622 2014-12-15 07:33:13Z andrea $
+# $Id: PKGBUILD 255660 2015-12-10 05:09:58Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Alcasa Mz <alcasa.mz@gmail.com>
 
 pkgname=sni-qt
 pkgver=0.2.6
-pkgrel=3
+pkgrel=4
 pkgdesc='Qt4 plugin which turns all QSystemTrayIcon into StatusNotifierItems (appindicators)'
 arch=('i686' 'x86_64')
 url='https://launchpad.net/sni-qt'
 license=('LGPL3')
-depends=('libdbusmenu-qt')
+depends=('libdbusmenu-qt4')
 makedepends=('cmake')
 backup=('etc/sni-qt.conf')
 source=("http://launchpad.net/${pkgname}/trunk/${pkgver}/+download/${pkgname}-${pkgver}.tar.bz2"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 137213 2015-07-21 13:46:01Z alucryd $
+# $Id: PKGBUILD 151740 2015-12-10 04:02:32Z foutrelis $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Stefan Husmann <stefan-husmann@t-online.de>
 # Contributor: Cristian Maureira <saint@archlinux.cl>
@@ -6,7 +6,7 @@
 
 pkgname=musescore
 pkgver=2.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc='Create, play and print beautiful sheet music'
 arch=('i686' 'x86_64')
 url='http://musescore.org/'

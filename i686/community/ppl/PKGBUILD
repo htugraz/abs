@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 126526 2015-01-24 10:52:54Z andrea $
+# $Id: PKGBUILD 151832 2015-12-10 04:06:03Z foutrelis $
 # Maintainer: Allan McRae <allan@archlinux.org>
 # Contributor: ezzetabi <ezzetabi at gawab dot com>
 
 pkgname=ppl
 pkgver=1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A modern library for convex polyhedra and other numerical abstractions"
 arch=('i686' 'x86_64')
 url="http://bugseng.com/products/ppl"

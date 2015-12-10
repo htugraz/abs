@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 94340 2013-07-21 07:52:31Z giovanni $
+# $Id: PKGBUILD 151882 2015-12-10 04:07:32Z foutrelis $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=qsopcast
 pkgver=0.3.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A Qt front-end to p2p TV sopcast"
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/qsopcast"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 133277 2015-05-12 02:43:30Z kkeen $
+# $Id: PKGBUILD 151447 2015-12-10 03:53:26Z foutrelis $
 # Maintainer:  Kyle Keen <keenerd@gmail.com>
 # Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: schuay <jakob.gruber@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=epdfview
 pkgver=0.1.8
-pkgrel=6
+pkgrel=7
 pkgdesc='Lightweight PDF document viewer'
 url='http://freecode.com/projects/epdfview'
 arch=('i686' 'x86_64')

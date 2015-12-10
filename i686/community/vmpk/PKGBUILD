@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 145043 2015-10-26 20:17:42Z speps $
+# $Id: PKGBUILD 152028 2015-12-10 04:12:22Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 
 pkgname=vmpk
 pkgver=0.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Virtual MIDI Piano Keyboard"
 arch=('i686' 'x86_64')
 url="http://vmpk.sourceforge.net/"

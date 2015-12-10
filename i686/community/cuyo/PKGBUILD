@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 142729 2015-10-01 20:55:34Z jlichtblau $
+# $Id: PKGBUILD 151407 2015-12-10 03:52:17Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 
 pkgname=cuyo
 pkgver=2.1.0
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc="Tetris-style puzzle game for up to two players with a twist"
 arch=('i686' 'x86_64')

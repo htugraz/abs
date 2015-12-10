@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251170 2015-11-18 07:34:04Z fyan $
+# $Id: PKGBUILD 255393 2015-12-10 04:53:55Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=knotifications
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Abstraction for system notifications'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/knotifications'

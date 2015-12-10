@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 100156 2013-11-01 20:25:05Z spupykin $
+# $Id: PKGBUILD 151480 2015-12-10 03:54:19Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Neil Darlow <neil@darlow.co.uk>
 # Contributor: Jens Maucher <defcon@archlinux.us>
 
 pkgname=freehdl
 pkgver=0.0.8
-pkgrel=6
+pkgrel=7
 pkgdesc='An open-source (C++ generating) VHDL simulator'
 arch=('i686' 'x86_64')
 url='http://freehdl.seul.org'

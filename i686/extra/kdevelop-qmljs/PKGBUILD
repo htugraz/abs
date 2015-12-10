@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 227425 2014-12-11 08:38:34Z andrea $
+# $Id: PKGBUILD 255338 2015-12-10 04:52:17Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdevelop-qmljs
 pkgver=1.7.0
-pkgrel=1
+pkgrel=2
 pkgdesc="QML/JavaScript language plugin for KDevelop"
 arch=('i686' 'x86_64')
 url="http://www.kdevelop.org/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 138580 2015-08-20 21:23:02Z idevolder $
+# $Id: PKGBUILD 151611 2015-12-10 03:58:37Z foutrelis $
 # Maintainer: BlackEagle <ike.devolder@gmail.com>>
 
 pkgname=kodi-audioencoder-vorbis
 _commit=3a88875
 pkgver=20150810.3a88875
-pkgrel=2
+pkgrel=3
 pkgdesc="kodi audioencoder addon for ogg/vorbis"
 arch=('i686' 'x86_64')
 url='https://github.com/xbmc/audioencoder.vorbis'

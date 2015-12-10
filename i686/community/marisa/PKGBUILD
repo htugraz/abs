@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 125479 2015-01-05 22:55:09Z anatolik $
+# $Id: PKGBUILD 151708 2015-12-10 04:01:27Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: ponsfoot <cabezon dot hashimoto at gmail dot com>
 
 pkgbase=marisa
 pkgname=('marisa' 'perl-marisa' 'python2-marisa' 'ruby-marisa')
 pkgver=0.2.4
-pkgrel=5
+pkgrel=6
 arch=('i686' 'x86_64')
 url="https://code.google.com/p/marisa-trie/"
 license=('BSD' 'LGPL')

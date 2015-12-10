@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 220636 2014-08-24 21:05:56Z andrea $
+# $Id: PKGBUILD 255502 2015-12-10 04:58:17Z foutrelis $
 # Maintainer:
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libmygpo-qt
 pkgver=1.0.8
-pkgrel=1
+pkgrel=2
 pkgdesc="A C++/Qt client library for gpodder.net"
 arch=('i686' 'x86_64')
 url="http://wiki.gpodder.org/wiki/Libmygpo-qt"

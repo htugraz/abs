@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 137570 2015-07-28 19:16:55Z schiv $
+# $Id: PKGBUILD 151504 2015-12-10 03:54:57Z foutrelis $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: svoufff <svoufff at gmail dot com>
 # Contributor: Shinlun Hsieh <yngwiexx@yahoo.com.tw>
 
 pkgname=gigedit
 pkgver=1.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Gigasampler instrument editor"
 arch=('i686' 'x86_64')
 url="http://www.linuxsampler.org/"
@@ -26,6 +26,7 @@ md5sums=('5a89759dca7d1ebd70257ededb5a3338')
 build() {
   cd "$srcdir/$pkgname-$pkgver"
 
+  CXXFLAGS+=' -std=c++11'
   ./configure --prefix=/usr
   make
 }

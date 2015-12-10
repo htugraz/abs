@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 88660 2013-04-21 13:06:07Z arodseth $
+# $Id: PKGBUILD 152003 2015-12-10 04:11:29Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Bartłomiej Piotrowski <barthalion@gmail.com>
 # Contributor: Larry Hajali <larryhaja[at]gmail[dot]com>
@@ -6,7 +6,7 @@
 
 pkgname=tinyxml
 pkgver=2.6.2
-pkgrel=3
+pkgrel=4
 pkgdesc='Simple, small, C++ XML parser that can be easily integrated into other programs'
 url="http://www.grinninglizard.com/tinyxml/"
 arch=('x86_64' 'i686')

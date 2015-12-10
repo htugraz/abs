@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 99753 2013-10-30 23:30:10Z allan $
+# $Id: PKGBUILD 151493 2015-12-10 03:54:39Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 
 pkgname=gdlmm
 pkgver=3.7.3
-pkgrel=1
+pkgrel=2
 pkgdesc='C++ bindings for the gdl library'
 arch=('x86_64' 'i686')
 url='http://git.gnome.org/browse/gdlmm/'
@@ -16,6 +16,7 @@ sha256sums=('e280ed9233877b63ad0a0c8fb04d2c35dc6a29b3312151ee21a15b5932fef79b')
 build() {
   cd "$pkgname-$pkgver"
 
+  CXXFLAGS+=' -std=c++11'
   ./configure --prefix=/usr --sysconfdir=/etc
   make
 }

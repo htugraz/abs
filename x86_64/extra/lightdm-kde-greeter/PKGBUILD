@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 243860 2015-08-18 08:53:31Z alucryd $
+# $Id: PKGBUILD 255537 2015-12-10 04:59:25Z foutrelis $
 # Maintainer: Maxime Gauduin <alucryd@gmail.com>
 # Contributor: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Contributor: Mladen Pejakovic <pejakm@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=lightdm-kde-greeter
 pkgver=0.3.2.2
-pkgrel=2
+pkgrel=3
 pkgdesc='KDE greeter for LightDM'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/playground/base/lightdm'

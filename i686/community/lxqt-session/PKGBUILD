@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 146278 2015-11-06 10:16:17Z jleclanche $
+# $Id: PKGBUILD 151702 2015-12-10 04:01:17Z foutrelis $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=lxqt-session
 pkgver=0.10.0
-pkgrel=2
+pkgrel=3
 pkgdesc="The LXQt session"
 arch=("i686" "x86_64")
 groups=("lxqt")

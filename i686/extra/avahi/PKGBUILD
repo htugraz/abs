@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 249582 2015-10-20 20:15:10Z heftig $
+# $Id: PKGBUILD 255075 2015-12-10 04:42:53Z foutrelis $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Douglas Soares de Andrade <douglas@archlinux.org>
 
 pkgname=avahi
 pkgver=0.6.32rc
-pkgrel=1
+pkgrel=3
 _commit=bc4e85846991d0efca89add631c7cd16033f0bef
 pkgdesc='Multicast DNS-SD / Zeroconf Suite'
 #url='http://www.avahi.org/'

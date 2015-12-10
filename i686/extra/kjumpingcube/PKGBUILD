@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250383 2015-11-09 21:49:22Z arojas $
+# $Id: PKGBUILD 255380 2015-12-10 04:53:31Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kjumpingcube
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A simple tactical game"
 url="http://kde.org/applications/games/kjumpingcube/"
 arch=('i686' 'x86_64')

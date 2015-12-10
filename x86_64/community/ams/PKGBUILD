@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 115633 2014-07-12 20:45:12Z speps $
+# $Id: PKGBUILD 151316 2015-12-10 03:49:16Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 
 pkgname=ams
 pkgver=2.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A realtime modular synthesizer and effect processor"
 arch=('i686' 'x86_64')
 url="http://alsamodular.sourceforge.net/"
@@ -34,6 +34,11 @@ prepare() {
 
   # strip unwanted optimization flags
   sed -i '/AMS_OPT_CXXFLAGS=/d' configure
+
+  # fix libs concat
+  sed -e 's/LIBS+=\$LIBSsave/LIBS="$LIBS $LIBSsave"/' \
+      -e 's/CFLAGS+=\$CFLAGSsave/CFLAGS="$CFLAGS $CFLAGSsave"/' \
+      -i configure
 }
 
 build() {

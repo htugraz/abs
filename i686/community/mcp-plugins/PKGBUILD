@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 95489 2013-08-13 03:19:04Z speps $
+# $Id: PKGBUILD 151713 2015-12-10 04:01:36Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 
 pkgname=mcp-plugins
 pkgver=0.4.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A set of LADSPA filters plugins"
 arch=('i686' 'x86_64')
 url="http://kokkinizita.linuxaudio.org/linuxaudio/ladspa/"

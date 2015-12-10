@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250640 2015-11-10 23:45:09Z arojas $
+# $Id: PKGBUILD 255291 2015-12-10 04:50:39Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-thumbnailers
 pkgver=15.08.3
-pkgrel=2
+pkgrel=3
 pkgdesc="Thumbnailers for various graphics file formats"
 url="https://projects.kde.org/projects/kde/kdegraphics/kdegraphics-thumbnailers"
 arch=('i686' 'x86_64')

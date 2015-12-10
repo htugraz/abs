@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 145082 2015-10-27 08:59:29Z fyan $
+# $Id: PKGBUILD 152100 2015-12-10 05:33:47Z foutrelis $
 # Maintainer: Eric Belanger <eric@archlinux.org>
 # Contributor: dorphell <dorphell@archlinux.org>
 
 _pkgbasename=libtiff
 pkgname=lib32-$_pkgbasename
 pkgver=4.0.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Library for manipulation of TIFF images (32-bit)"
 arch=('x86_64')
 url="http://www.remotesensing.org/libtiff/"

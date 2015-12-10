@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 103801 2014-01-11 20:08:34Z eric $
+# $Id: PKGBUILD 151904 2015-12-10 04:08:18Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Angel 'angvp' Velasquez <angvp[at]archlinux.com.ve>
 # Contributor: AqD <aquila.deus@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=rapidsvn
 pkgver=0.12.1
-pkgrel=6
+pkgrel=7
 pkgdesc="A cross-platform GUI front-end for the Subversion revision system written in C++ using the wxWidgets framework."
 url='http://rapidsvn.tigris.org/'
 arch=('i686' 'x86_64')

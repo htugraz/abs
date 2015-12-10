@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 230739 2015-02-04 09:54:20Z fyan $
+# $Id: PKGBUILD 255220 2015-12-10 04:48:22Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=katepart4
 pkgver=4.14.3
-pkgrel=3
+pkgrel=4
 pkgdesc="A fast and feature-rich text editor component"
 arch=('i686' 'x86_64')
 license=('GPL' 'LGPL' 'FDL')

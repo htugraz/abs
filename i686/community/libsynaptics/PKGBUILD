@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 100241 2013-11-02 08:40:55Z spupykin $
+# $Id: PKGBUILD 151667 2015-12-10 04:00:11Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 
 pkgname=libsynaptics
 pkgver=0.14.6c
-pkgrel=6
+pkgrel=7
 pkgdesc="Library for accessing synaptics touchpads"
 arch=('i686' 'x86_64')
 url="http://qsynaptics.sourceforge.net"

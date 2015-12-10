@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 131715 2015-04-19 16:07:04Z arojas $
+# $Id: PKGBUILD 151604 2015-12-10 03:58:26Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 # Contributor: Stefano Zamprogno <stefano.zamprogno@gmail.com>
 
 pkgname=kmess
 pkgver=2.0.6.2
-pkgrel=8
+pkgrel=9
 pkgdesc="A MSN Messenger client for Linux"
 arch=('i686' 'x86_64')
 url='http://kmess.sourceforge.net/'

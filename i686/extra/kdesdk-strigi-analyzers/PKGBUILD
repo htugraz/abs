@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250457 2015-11-09 22:15:37Z arojas $
+# $Id: PKGBUILD 255322 2015-12-10 04:51:49Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdesdk-strigi-analyzers
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Analyzer plugins for strigi'
 url='https://projects.kde.org/projects/kde/kdesdk/kdesdk-strigi-analyzers'
 arch=('i686' 'x86_64')

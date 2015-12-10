@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 146976 2015-11-17 13:41:44Z mtorromeo $
+# $Id: PKGBUILD 151986 2015-12-10 04:10:57Z foutrelis $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Contribuitor: Alfredo Palhares <masterkorp@masterkorp.net>
 # Contribuitor: Christian Babeux <christian.babeux@0x80.ca>
 
 pkgname=sysdig
 pkgver=0.5.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Open source system-level exploration and troubleshooting tool"
 arch=('i686' 'x86_64')
 url="http://www.sysdig.org/"

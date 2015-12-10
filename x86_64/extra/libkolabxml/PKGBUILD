@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251952 2015-11-25 12:53:33Z arojas $
+# $Id: PKGBUILD 255482 2015-12-10 04:57:44Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkolabxml
 pkgver=1.1.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Kolab XML Format Schema Definitions Library"
 url='http://git.kolab.org/libkolabxml/'
 arch=('i686' 'x86_64')

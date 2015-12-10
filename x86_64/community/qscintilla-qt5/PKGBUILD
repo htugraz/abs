@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 142625 2015-10-01 16:10:21Z fyan $
+# $Id: PKGBUILD 151881 2015-12-10 04:07:30Z foutrelis $
 # Maintainer: Evgeniy Alekseev <arcanis at archlinux dot org>
 # Maintainer: Ilya87 <yast4ik at yahoo dot com>
 
@@ -6,7 +6,7 @@ pkgbase=qscintilla-qt5
 pkgname=('qscintilla-qt5' 'python-qscintilla-qt5' 'python2-qscintilla-qt5'
          'python-qscintilla-qt5-common')
 pkgver=2.9
-pkgrel=3
+pkgrel=4
 license=('GPL')
 arch=('i686' 'x86_64')
 url="http://www.riverbankcomputing.co.uk/software/qscintilla/intro"

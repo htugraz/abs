@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 228219 2014-12-31 04:29:39Z fyan $
+# $Id: PKGBUILD 255491 2015-12-10 04:57:58Z foutrelis $
 # Maintainer:
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: XazZ <xazz.xazz [AT] googlemail.com>
 
 pkgname=liblastfm
 pkgver=1.0.9
-pkgrel=1
+pkgrel=2
 pkgdesc="A Qt4 C++ library for the Last.fm webservices"
 arch=('i686' 'x86_64')
 url='https://github.com/lastfm/liblastfm/'

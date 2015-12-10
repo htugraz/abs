@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 250345 2015-11-09 21:34:40Z arojas $
+# $Id: PKGBUILD 255411 2015-12-10 04:54:45Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=kross-interpreters
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Language interpreters to enable in-process scripting with Kross'
 arch=(i686 x86_64)
 url='http://projects.kde.org/kross-interpreters'

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 123616 2014-12-08 02:42:16Z arcanis $
+# $Id: PKGBUILD 151901 2015-12-10 04:08:14Z foutrelis $
 # Maintainer: Evgeniy Alekseev <arcanis at archlinux dot org>
 # Contributor: Eugen Zagorodniy <https://github.com/ezag>
 # Contributor: Ronald van Haren <ronald at archlinux dot org>
@@ -6,7 +6,7 @@
 
 pkgname=qwt5
 pkgver=5.2.3
-pkgrel=3
+pkgrel=4
 pkgdesc="Qt Widgets for Technical Applications (version 5.X)"
 arch=('i686' 'x86_64')
 url="http://qwt.sourceforge.net/"

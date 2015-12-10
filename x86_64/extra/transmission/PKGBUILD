@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 216758 2014-07-09 21:49:19Z anatolik $
+# $Id: PKGBUILD 255691 2015-12-10 05:12:02Z foutrelis $
 # Maintainer : Tom Gundersen <teg@jklm.no>
 # Maintainer : Ionut Biru <ibiru@archlinux.org>
 
 pkgbase=transmission
 pkgname=('transmission-cli' 'transmission-gtk' 'transmission-qt')
 pkgver=2.84
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url="http://www.transmissionbt.com/"
 license=('MIT')

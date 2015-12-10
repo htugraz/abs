@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250359 2015-11-09 21:40:36Z arojas $
+# $Id: PKGBUILD 255419 2015-12-10 04:55:08Z foutrelis $
 # Maintainer: Felix Yan <felixonamrs@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kstars
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Desktop Planetarium"
 url="http://kde.org/applications/education/kstars/"
 arch=('i686' 'x86_64')

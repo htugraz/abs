@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 253037 2015-12-06 21:48:08Z bisson $
+# $Id: PKGBUILD 255645 2015-12-10 05:08:47Z foutrelis $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Gan Lu <rhythm.gan@gmail.com>
 # Contributor: damir <damir@archlinux.org>
 
 pkgname=scim-tables
 pkgver=0.5.14.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Generic table input method module for SCIM'
 url='http://sourceforge.net/projects/scim/'
 arch=('i686' 'x86_64')

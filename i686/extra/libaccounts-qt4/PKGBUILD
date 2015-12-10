@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 248352 2015-10-04 20:19:37Z arojas $
+# $Id: PKGBUILD 255446 2015-12-10 04:56:28Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Balló György <ballogyor+arch at gmail dot com>
@@ -6,7 +6,7 @@
 pkgname=libaccounts-qt4
 pkgdesc="Qt4-based client library for accessing the online accounts database"
 pkgver=1.13
-pkgrel=2
+pkgrel=3
 arch=(i686 x86_64)
 url="https://gitlab.com/accounts-sso/libaccounts-qt"
 license=(LGPL)

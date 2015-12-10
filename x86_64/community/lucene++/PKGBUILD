@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 144596 2015-10-21 21:55:41Z foutrelis $
+# $Id: PKGBUILD 151687 2015-12-10 04:00:50Z foutrelis $
 # Contributor: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Rafael Ferreira <josephgbr@archlinux.info>
 
 pkgname=lucene++
 pkgver=3.0.7
 _githash='972c9cb37'
-pkgrel=3
+pkgrel=4
 pkgdesc='C++ port of the popular Java Lucene library'
 arch=(i686 x86_64)
 url='https://github.com/luceneplusplus/LucenePlusPlus'

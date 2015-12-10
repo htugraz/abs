@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 105067 2014-01-31 01:30:24Z speps $
+# $Id: PKGBUILD 152108 2015-12-10 05:34:09Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 
 pkgbase=lib32-qtcurve
 pkgname=('lib32-qtcurve-utils' 'lib32-qtcurve-gtk2' 'lib32-qtcurve-qt4')
 pkgver=1.8.18
-pkgrel=1
+pkgrel=2
 pkgdesc='A configurable set of widget styles for KDE and Gtk'
 arch=('i686' 'x86_64')
 url='https://github.com/QtCurve/qtcurve'

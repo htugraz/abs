@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 204848 2014-01-29 10:11:42Z andyrtr $
+# $Id: PKGBUILD 255107 2015-12-10 04:44:07Z foutrelis $
 # Maintainer: Stéphane Gaudreault <stephane@archlinux.org>
 # Contributor: Jeff 'codemac' Mickey <jeff@archlinux.org>
 
 pkgname=cppunit
 pkgver=1.13.2
-pkgrel=1
+pkgrel=2
 pkgdesc="A C++ unit testing framework"
 arch=('i686' 'x86_64')
 url="http://www.freedesktop.org/wiki/Software/cppunit"

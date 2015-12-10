@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 227037 2014-11-24 07:27:02Z andrea $
+# $Id: PKGBUILD 255500 2015-12-10 04:58:14Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libmusicbrainz5
 pkgver=5.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Library That Provides Access to the MusicBrainz Server"
 arch=('i686' 'x86_64')
 url='http://musicbrainz.org/doc/libmusicbrainz'

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 240850 2015-06-15 06:19:33Z giovanni $
+# $Id: PKGBUILD 255057 2015-12-10 04:42:16Z foutrelis $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Henrik Ronellenfitsch <searinox@web.de>
 # Contributor: Alessio Sergi <sergi.alessio {at} gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=amule
 pkgver=10871
-pkgrel=1
+pkgrel=2
 pkgdesc="An eMule-like client for ed2k p2p network"
 arch=('i686' 'x86_64')
 url="http://www.amule.org"

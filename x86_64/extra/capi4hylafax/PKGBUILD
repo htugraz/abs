@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 186226 2013-05-22 09:28:57Z tpowa $
+# $Id: PKGBUILD 255095 2015-12-10 04:43:38Z foutrelis $
 #Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=capi4hylafax
 pkgver=010300
-pkgrel=9
+pkgrel=10
 pkgdesc="capi plugin for hylafax to enable isdn faxing"
 arch=(i686 x86_64)
 url="ftp://ftp.avm.de/tools"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 184365 2013-05-06 19:36:48Z foutrelis $
+# $Id: PKGBUILD 255097 2015-12-10 04:43:44Z foutrelis $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor : Damir Perisa <damir.perisa@bluewin.ch>
 
 pkgname=celestia
 pkgver=1.6.1
-pkgrel=5
+pkgrel=6
 pkgdesc="Real-time space simulation"
 arch=('i686' 'x86_64')
 license=('GPL')

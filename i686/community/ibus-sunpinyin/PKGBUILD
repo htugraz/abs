@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 120551 2014-10-12 02:56:43Z fyan $
+# $Id: PKGBUILD 151567 2015-12-10 03:56:48Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Daniel J Griffiths <ghost1227@archlinux.us>
 
@@ -6,7 +6,7 @@ pkgname=ibus-sunpinyin
 _pkgname=sunpinyin
 pkgver=2.0.3.20130307
 _commit=64e26d9ed1f617e59ff37c2efc0be97727c799a1
-pkgrel=2
+pkgrel=3
 pkgdesc="IBus Wrapper for sunpinyin"
 arch=('i686' 'x86_64')
 url="http://sunpinyin.googlecode.com"

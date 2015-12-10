@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250462 2015-11-09 22:17:15Z arojas $
+# $Id: PKGBUILD 255327 2015-12-10 04:51:56Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdetoys-ktux
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='A Tux-in-a-spaceship screen saver'
 url='https://projects.kde.org/projects/kde/kdetoys/ktux'
 arch=('i686' 'x86_64')

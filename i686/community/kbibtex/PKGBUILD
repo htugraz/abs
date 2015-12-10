@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 138496 2015-08-18 19:09:03Z schiv $
+# $Id: PKGBUILD 151591 2015-12-10 03:57:58Z foutrelis $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Antonio Rojas <nqn1976 @ gmail.com>
 # Contributor: cmorlok <christianmorlok@web.de>
@@ -6,7 +6,7 @@
 pkgname=kbibtex
 pkgver=0.6
 _branch=0.6
-pkgrel=1
+pkgrel=2
 pkgdesc="A BibTeX editor for KDE"
 arch=('i686' 'x86_64')
 url='http://home.gna.org/kbibtex/'

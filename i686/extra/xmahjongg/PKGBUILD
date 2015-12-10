@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 216442 2014-07-03 21:19:59Z eric $
+# $Id: PKGBUILD 255716 2015-12-10 05:13:48Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=xmahjongg
 pkgver=3.7
-pkgrel=5
+pkgrel=6
 pkgdesc="Mahjongg game for X-Window"
 arch=('i686' 'x86_64')
 url="http://www.lcdf.org/xmahjongg/"

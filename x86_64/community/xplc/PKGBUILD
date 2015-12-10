@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 98918 2013-10-21 12:15:57Z bluewind $
+# $Id: PKGBUILD 152059 2015-12-10 04:13:28Z foutrelis $
 # Maintainer:
 # Contributor: dorphell <dorphell@archlinux.org>
 
 pkgname=xplc
 pkgver=0.3.13
-pkgrel=5
+pkgrel=6
 pkgdesc="Cross-Platform Lightweight Components"
 arch=('i686' 'x86_64')
 url="http://xplc.sourceforge.net"

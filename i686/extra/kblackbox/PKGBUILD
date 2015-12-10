@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250373 2015-11-09 21:46:03Z arojas $
+# $Id: PKGBUILD 255223 2015-12-10 04:48:28Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kblackbox
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A game of hide and seek played on a grid of boxes"
 url="http://kde.org/applications/games/kblackbox/"
 arch=('i686' 'x86_64')

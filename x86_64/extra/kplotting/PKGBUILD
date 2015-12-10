@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251178 2015-11-18 07:34:17Z fyan $
+# $Id: PKGBUILD 255407 2015-12-10 04:54:36Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kplotting
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Lightweight plotting framework'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kplotting'

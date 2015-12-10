@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 250633 2015-11-10 23:44:54Z arojas $
+# $Id: PKGBUILD 255473 2015-12-10 04:57:27Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -6,7 +6,7 @@
 pkgname=libkface4
 _pkgname=libkface
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A Qt/C++ wrapper around LibFace library to perform face recognition and detection over pictures"
 url="https://projects.kde.org/projects/kde/kdegraphics/libs/libkface"
 arch=(i686 x86_64)

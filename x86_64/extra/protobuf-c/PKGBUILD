@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 238036 2015-04-25 14:22:03Z bpiotrowski $
+# $Id: PKGBUILD 255601 2015-12-10 05:04:05Z foutrelis $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: Aurélien Wailly <aurelien.wailly@gmail.com>
 
 pkgname=protobuf-c
 pkgver=1.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Protocol Buffers implementation in C'
 arch=('i686' 'x86_64')
 url='https://github.com/protobuf-c/protobuf-c'

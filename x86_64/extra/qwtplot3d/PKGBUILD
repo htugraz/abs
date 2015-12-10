@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 216388 2014-07-03 07:33:16Z fyan $
+# $Id: PKGBUILD 255631 2015-12-10 05:07:13Z foutrelis $
 # Maintainer: Ronald van Haren <ronald@archlinux.org>
 # Contributor: damir <damir@archlinux.org>
 
 pkgname=qwtplot3d
 pkgver=0.2.7
-pkgrel=7
+pkgrel=8
 pkgdesc="Qt/OpenGL-based C++ programming library containing 3d-widgets"
 arch=("i686" "x86_64")
 license=('custom:zlib')

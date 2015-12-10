@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 105010 2014-01-30 08:46:00Z spupykin $
+# $Id: PKGBUILD 151866 2015-12-10 04:07:02Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Chris Giles <Chris.G.27 (at) Gmail.com>
 
 pkgname=q4wine
 pkgver=1.1_r2
-pkgrel=1
+pkgrel=2
 pkgdesc="A Qt4 GUI for Wine"
 arch=("i686" "x86_64")
 url="http://sourceforge.net/projects/${pkgname}/"

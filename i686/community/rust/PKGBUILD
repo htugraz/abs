@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 145325 2015-10-30 20:07:30Z arodseth $
+# $Id: PKGBUILD 151923 2015-12-10 04:08:54Z foutrelis $
 # Maintainer: Alexander F Rødseth <xyproto@archlinux.org>
 # Contributor: Daniel Micay <danielmicay@gmail.com>
 
 pkgname=rust
 pkgver=1.4.0
 epoch=1
-pkgrel=1
+pkgrel=2
 arch=('x86_64' 'i686')
 pkgdesc='Systems programming language focused on safety, speed and concurrency'
 url='http://www.rust-lang.org/'

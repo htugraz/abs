@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 146321 2015-11-06 17:54:35Z jleclanche $
+# $Id: PKGBUILD 151693 2015-12-10 04:01:01Z foutrelis $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=lxqt-config
 pkgver=0.10.0
-pkgrel=2
+pkgrel=3
 pkgdesc="LXQt system configuration."
 arch=("i686" "x86_64")
 groups=("lxqt")

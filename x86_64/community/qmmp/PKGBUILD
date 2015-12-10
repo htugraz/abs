@@ -1,9 +1,9 @@
-#$Id: PKGBUILD 146823 2015-11-14 17:04:51Z jlichtblau $
+#$Id: PKGBUILD 151876 2015-12-10 04:07:20Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 
 pkgname=qmmp
 pkgver=1.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Qt5 based audio-player"
 arch=('i686' 'x86_64')
 url="http://qmmp.ylsoftware.com/"

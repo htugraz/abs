@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 144574 2015-10-21 21:55:09Z foutrelis $
+# $Id: PKGBUILD 151370 2015-12-10 03:51:04Z foutrelis $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 # Contributor: Dmitriy Morozov <foxcub>
 
 pkgname=cgal
 pkgver=4.7
-pkgrel=1
+pkgrel=2
 pkgdesc="Computational Geometry Algorithms Library"
 arch=('i686' 'x86_64')
 url="http://www.cgal.org"

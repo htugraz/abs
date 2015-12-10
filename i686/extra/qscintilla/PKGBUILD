@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 248050 2015-10-01 16:05:30Z fyan $
+# $Id: PKGBUILD 255618 2015-12-10 05:05:48Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Douglas Soares de Andrade <dsa@aur.archlinux.org>
@@ -7,7 +7,7 @@ pkgbase=qscintilla
 pkgname=('qscintilla' 'python-qscintilla' 'python2-qscintilla'
          'python-qscintilla-common')
 pkgver=2.9
-pkgrel=2
+pkgrel=3
 license=('GPL')
 arch=('i686' 'x86_64')
 url="http://www.riverbankcomputing.co.uk/software/qscintilla/intro"

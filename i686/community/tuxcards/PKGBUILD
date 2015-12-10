@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 107823 2014-03-20 04:43:53Z eric $
+# $Id: PKGBUILD 152008 2015-12-10 04:11:39Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=tuxcards
 pkgver=2.2.1
-pkgrel=4
+pkgrel=5
 pkgdesc="A hierarchical notebook to enter and manage notes and ideas in a structured manner"
 arch=('i686' 'x86_64')
 url="http://www.tuxcards.de"

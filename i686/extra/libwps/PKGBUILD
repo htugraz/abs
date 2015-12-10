@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 248460 2015-10-07 18:32:12Z andyrtr $
+# $Id: PKGBUILD 255533 2015-12-10 04:59:18Z foutrelis $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Contributor: Robert McCathie <archaur at rmcc dot com dot au>
 
 pkgname=libwps
 pkgver=0.4.2
-pkgrel=1
+pkgrel=2
 pkgdesc="a Microsoft Works file word processor format import filter library"
 arch=('i686' 'x86_64')
 url="https://sourceforge.net/projects/libwps/"

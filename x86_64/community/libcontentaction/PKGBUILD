@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 145649 2015-11-02 14:40:05Z fyan $
+# $Id: PKGBUILD 151638 2015-12-10 03:59:22Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=libcontentaction
 pkgver=0.2.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Library for associating content with actions"
 arch=('i686' 'x86_64')
 url="https://git.merproject.org/mer-core/libcontentaction"

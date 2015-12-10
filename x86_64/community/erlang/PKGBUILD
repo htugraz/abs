@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 141718 2015-09-27 18:49:14Z arodseth $
+# $Id: PKGBUILD 151448 2015-12-10 03:53:28Z foutrelis $
 # Maintainer: Lukas Fleischer <lfleischer@archlinux.org>
 # Maintainer: Alexander F Rødseth <xyproto@archlinux.org>
 # Contributor: Vesa Kaihlavirta <vesa@archlinux.org>
@@ -9,7 +9,7 @@
 pkgbase=erlang
 pkgname=('erlang' 'erlang-unixodbc')
 pkgver=18.1
-pkgrel=1
+pkgrel=2
 arch=('x86_64' 'i686')
 url='http://www.erlang.org/'
 license=('Apache')

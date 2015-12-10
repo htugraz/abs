@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 199953 2013-11-20 10:54:48Z allan $
+# $Id: PKGBUILD 255698 2015-12-10 05:12:27Z foutrelis $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: Orivej Desh <smpuj@bk.ru>
 
 pkgname=vamp-plugin-sdk
 pkgver=2.5
 _dir=690
-pkgrel=2
+pkgrel=3
 pkgdesc="The Vamp audio analysis plug-in system"
 arch=('i686' 'x86_64')
 url="http://www.vamp-plugins.org/"

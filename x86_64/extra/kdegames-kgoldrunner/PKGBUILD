@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250379 2015-11-09 21:48:03Z arojas $
+# $Id: PKGBUILD 255266 2015-12-10 04:49:48Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kgoldrunner
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A game of action and puzzle solving"
 url="http://kde.org/applications/games/kgoldrunner/"
 arch=('i686' 'x86_64')

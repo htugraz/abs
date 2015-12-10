@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 231690 2015-02-20 07:51:35Z bisson $
+# $Id: PKGBUILD 255116 2015-12-10 04:44:30Z foutrelis $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: mgushee
 
 pkgname=djvulibre
 pkgver=3.5.27
-pkgrel=1
+pkgrel=2
 pkgdesc="Suite to create, manipulate and view DjVu ('déjà vu') documents"
 url='http://djvu.sourceforge.net/'
 arch=('i686' 'x86_64')

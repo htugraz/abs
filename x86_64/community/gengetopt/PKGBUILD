@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 134538 2015-06-02 13:41:28Z eworm $
+# $Id: PKGBUILD 151499 2015-12-10 03:54:50Z foutrelis $
 # Maintainer: Christian Hesse <mail@eworm.de>
 # Contributor: andreas_baumann <abaumann@yahoo.com>
 # Contributor: zhuqin <zhuqin83@gmail.com>
 
 pkgname=gengetopt
 pkgver=2.22.6
-pkgrel=4
+pkgrel=5
 pkgdesc='A tool to write command line option parsing code for C programs'
 arch=('i686' 'x86_64')
 url='http://www.gnu.org/software/gengetopt/gengetopt.html'

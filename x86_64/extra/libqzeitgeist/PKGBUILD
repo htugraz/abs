@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 215838 2014-06-30 16:55:48Z andrea $
+# $Id: PKGBUILD 255516 2015-12-10 04:58:43Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libqzeitgeist
 pkgver=0.8.0
-pkgrel=4
+pkgrel=6
 pkgdesc="A Qt interface to the Zeitgeist event tracking system"
 url='https://projects.kde.org/projects/kdesupport/libqzeitgeist'
 arch=('i686' 'x86_64')

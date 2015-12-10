@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 245771 2015-09-11 11:14:35Z heftig $
+# $Id: PKGBUILD 255150 2015-12-10 04:45:48Z foutrelis $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 # Contributor: Daniel Isenmann <daniel@archlinux.org>
 
 pkgname=gegl02
 pkgver=0.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Graph based image processing framework (v0.2)"
 arch=('i686' 'x86_64')
 url="http://www.gegl.org/"

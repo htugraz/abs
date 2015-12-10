@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250384 2015-11-09 21:49:40Z arojas $
+# $Id: PKGBUILD 255268 2015-12-10 04:49:54Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-klickety
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="An adaptation of the Clickomania game"
 url="http://kde.org/applications/games/klickety/"
 arch=('i686' 'x86_64')

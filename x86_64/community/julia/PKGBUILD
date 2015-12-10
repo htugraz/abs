@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 146830 2015-11-14 21:03:31Z arodseth $
+# $Id: PKGBUILD 151586 2015-12-10 03:57:43Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Lex Black <autumn-wind at web dot de>
 # Contributor: Michael Jakl <jakl.michael@gmail.com>
@@ -8,7 +8,7 @@
 pkgbase=julia
 pkgname=('julia' 'julia-docs')
 pkgver=0.4.1
-pkgrel=1
+pkgrel=2
 epoch=2
 arch=('x86_64' 'i686')
 pkgdesc='High-level, high-performance, dynamic programming language'

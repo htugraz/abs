@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 145033 2015-10-26 19:53:19Z speps $
+# $Id: PKGBUILD 151317 2015-12-10 03:49:18Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Alessio Biancalana <dottorblaster@gmail.com>
 
 pkgname=amsynth
 pkgver=1.6.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Analogue Modeling SYNTHesizer"
 arch=('i686' 'x86_64')
 url="http://amsynth.github.io/"

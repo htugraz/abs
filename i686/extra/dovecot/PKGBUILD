@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 250064 2015-11-03 15:34:33Z foutrelis $
+# $Id: PKGBUILD 255119 2015-12-10 04:44:38Z foutrelis $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 # Contributor: Paul Mattal <paul@mattal.com>
 # Contributor: Federico Quagliata (quaqo) <quaqo@despammed.com>
@@ -9,7 +9,7 @@
 
 pkgname=dovecot
 pkgver=2.2.19
-pkgrel=2
+pkgrel=3
 pkgdesc="An IMAP and POP3 server written with security primarily in mind"
 arch=('i686' 'x86_64')
 url="http://dovecot.org/"

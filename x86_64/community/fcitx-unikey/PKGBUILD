@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 139427 2015-09-07 02:29:42Z fyan $
+# $Id: PKGBUILD 151464 2015-12-10 03:53:55Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=fcitx-unikey
 pkgver=0.2.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Fcitx Wrapper for unikey"
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/fcitx"

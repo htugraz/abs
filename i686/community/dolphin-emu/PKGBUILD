@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 146361 2015-11-07 12:10:21Z schuay $
+# $Id: PKGBUILD 151431 2015-12-10 03:52:59Z foutrelis $
 # Maintainer: schuay <jakob.gruber@gmail.com>
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Jeremy Newton (Mystro256) <alexjnewt@gmail.com>
 
 pkgname=dolphin-emu
 pkgver=4.0.2
-pkgrel=12
+pkgrel=13
 epoch=1
 pkgdesc='A Gamecube / Wii / Triforce emulator'
 arch=('i686' 'x86_64')

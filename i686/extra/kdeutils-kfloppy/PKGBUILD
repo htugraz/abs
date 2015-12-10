@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250469 2015-11-09 22:19:29Z arojas $
+# $Id: PKGBUILD 255329 2015-12-10 04:51:59Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeutils-kfloppy
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Floppy Formatter'
 url='http://kde.org/applications/utilities/kfloppy/'
 arch=('i686' 'x86_64')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 250204 2015-11-07 23:23:30Z heftig $
+# $Id: PKGBUILD 255059 2015-12-10 04:42:20Z foutrelis $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 # Contributor: Harley Laue <losinggeneration@yahoo.com>
 
 pkgbase=anjuta
 pkgname=('libanjuta' 'anjuta')
 pkgver=3.18.2
-pkgrel=1
+pkgrel=2
 pkgdesc="GNOME Integrated Development Environment (IDE)"
 arch=(i686 x86_64)
 license=(GPL)

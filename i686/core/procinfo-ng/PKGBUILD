@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 246466 2015-09-17 21:00:03Z foutrelis $
+# $Id: PKGBUILD 255046 2015-12-10 04:37:13Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 
 pkgname=procinfo-ng
 pkgver=2.0.304
-pkgrel=5
+pkgrel=6
 pkgdesc="Displays useful information from /proc"
 arch=('i686' 'x86_64')
 url="http://procinfo-ng.sourceforge.net/"

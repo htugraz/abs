@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 248650 2015-10-08 19:53:09Z heftig $
+# $Id: PKGBUILD 255574 2015-12-10 05:01:31Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgbase=pangomm
 pkgname=('pangomm' 'pangomm-docs')
 pkgver=2.38.1
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 license=('LGPL')
 makedepends=('pango' 'glibmm' 'glibmm-docs' 'cairomm' 'pkgconfig')

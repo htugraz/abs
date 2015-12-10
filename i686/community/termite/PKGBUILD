@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 135670 2015-06-21 15:11:50Z thestinger $
+# $Id: PKGBUILD 151995 2015-12-10 04:11:14Z foutrelis $
 # Maintainer: Daniel Micay <danielmicay@gmail.com>
 
 pkgname=termite
 pkgver=10
-pkgrel=1
+pkgrel=2
 pkgdesc="A simple VTE-based terminal"
 arch=('i686' 'x86_64')
 url="https://github.com/thestinger/termite/"

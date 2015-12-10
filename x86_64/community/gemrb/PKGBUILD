@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 138031 2015-08-06 16:59:06Z stativ $
+# $Id: PKGBUILD 151498 2015-12-10 03:54:48Z foutrelis $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname=gemrb
 pkgver=0.8.3
-pkgrel=1
+pkgrel=2
 pkgdesc="OSS implementation of Bioware's Infinity Engine which supports eg. Baldur's Gate"
 arch=('i686' 'x86_64')
 url="http://www.gemrb.org/"

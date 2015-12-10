@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 135658 2015-06-21 14:13:14Z schuay $
+# $Id: PKGBUILD 151423 2015-12-10 03:52:47Z foutrelis $
 # Maintainer: schuay <jakob.gruber@gmail.com>
 # Contributor: Jonathan Conder <jonno dot conder at gmail dot com>
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
@@ -13,7 +13,7 @@
 
 pkgname=desmume
 pkgver=0.9.11
-pkgrel=1
+pkgrel=2
 pkgdesc="Nintendo DS emulator"
 arch=('i686' 'x86_64')
 url="http://desmume.org/"

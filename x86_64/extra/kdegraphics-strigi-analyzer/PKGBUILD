@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250416 2015-11-09 22:00:55Z arojas $
+# $Id: PKGBUILD 255289 2015-12-10 04:50:37Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-strigi-analyzer
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Strigi analyzers for various graphics file formats"
 url="https://projects.kde.org/projects/kde/kdegraphics/kdegraphics-strigi-analyzer"
 arch=('i686' 'x86_64')

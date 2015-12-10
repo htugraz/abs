@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 150225 2015-12-08 10:33:37Z spupykin $
+# $Id: PKGBUILD 151716 2015-12-10 04:01:43Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: hydro <hydro@freenet.de>
 
 pkgname=mediainfo-gui
 pkgver=0.7.80
-pkgrel=1
+pkgrel=2
 pkgdesc="GUI for mediainfo"
 arch=('i686' 'x86_64')
 url="http://mediainfo.sourceforge.net"

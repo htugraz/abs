@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250305 2015-11-09 21:21:06Z arojas $
+# $Id: PKGBUILD 255483 2015-12-10 04:57:46Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libkomparediff2
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Library to compare files and strings"
 url='https://projects.kde.org/projects/kde/kdesdk/libkomparediff2'
 arch=('i686' 'x86_64')

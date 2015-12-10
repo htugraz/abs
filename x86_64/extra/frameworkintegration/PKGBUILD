@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251189 2015-11-18 07:34:35Z fyan $
+# $Id: PKGBUILD 255144 2015-12-10 04:45:34Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=frameworkintegration
 pkgver=5.16.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Framework providing components to allow applications to integrate with a KDE Workspace'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/frameworkintegration'

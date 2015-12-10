@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 138949 2015-08-29 21:17:53Z arojas $
+# $Id: PKGBUILD 151401 2015-12-10 03:52:04Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=cryptominisat
 pkgver=2.9.10
-pkgrel=1
+pkgrel=2
 pkgdesc="SAT solver that aims to become a premier SAT solver with all the features and speed of successful SAT solvers, such as MiniSat and PrecoSat"
 arch=(i686 x86_64)
 url="http://www.msoos.org/cryptominisat2/"

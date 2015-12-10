@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 211573 2014-04-20 09:09:39Z andrea $
+# $Id: PKGBUILD 255714 2015-12-10 05:13:41Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Xiao-Long Chen <chenxiaolong@cxl.epac.to>
 
 pkgname=xbase
 pkgver=2.0.0
-pkgrel=3
+pkgrel=4
 pkgdesc="A compatible C++ class library"
 arch=('i686' 'x86_64')
 url='http://linux.techass.com/projects/xdb/'

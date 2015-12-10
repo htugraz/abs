@@ -1,12 +1,12 @@
-# $Id: PKGBUILD 225106 2014-10-20 17:32:02Z andrea $
+# $Id: PKGBUILD 255068 2015-12-10 04:42:39Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=attica-qt4
 pkgver=0.4.2
-pkgrel=1
+pkgrel=3
 pkgdesc='A Qt4 library that implements the Open Collaboration Services API'
 arch=('i686' 'x86_64')
-url='https://projects.kde.org/projects/kdesupport/attica'
+url='https://projects.kde.org/projects/frameworks/attica'
 license=('LGPL')
 depends=('qt4')
 makedepends=('cmake')

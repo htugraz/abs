@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250465 2015-11-09 22:18:10Z arojas $
+# $Id: PKGBUILD 255230 2015-12-10 04:48:42Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kcalc
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Scientific Calculator'
 url='http://kde.org/applications/utilities/kcalc/'
 arch=('i686' 'x86_64')

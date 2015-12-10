@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 120641 2014-10-14 11:36:10Z spupykin $
+# $Id: PKGBUILD 151754 2015-12-10 04:03:11Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Tiago Pierezan Camargo <tcamargo@gmail.com>
 # Contributor: robb_force <robb_force@holybuffalo.net>
 
 pkgname=nestopia
 pkgver=1.46.2
-pkgrel=1
+pkgrel=2
 pkgdesc='An NES emulator featuring cycle exact emulation, a ridiculous number of mappers, and lots of custom sound chips.'
 url='http://0ldsk00l.ca/nestopia/'
 license=('GPL')

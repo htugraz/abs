@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 146250 2015-11-06 02:06:41Z jleclanche $
+# $Id: PKGBUILD 151650 2015-12-10 03:59:42Z foutrelis $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=liblxqt
 pkgver=0.10.0
-pkgrel=4
+pkgrel=5
 pkgdesc="Common base library for LXQt components."
 arch=("i686" "x86_64")
 url="http://lxqt.org"

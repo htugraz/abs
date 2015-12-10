@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 126737 2015-01-29 09:42:45Z fyan $
+# $Id: PKGBUILD 151967 2015-12-10 04:10:21Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Aaron Griffin <aaron@archlinux.org>
@@ -8,7 +8,7 @@
 pkgbase=stardict
 pkgname=(stardict stardict-lite)
 pkgver=3.0.6
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url='http://www.stardict.org/'
 license=('GPL')
@@ -28,6 +28,8 @@ prepare() {
 
 build() {
   cd "${srcdir}/${pkgbase}-${pkgver}"
+
+  CXXFLAGS+=" -std=gnu++11"
   ./autogen.sh
   ./configure \
     --prefix=/usr \

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 142364 2015-10-01 16:02:58Z fyan $
+# $Id: PKGBUILD 151644 2015-12-10 03:59:31Z foutrelis $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 
 # bug, python binding vanished with 3.4
@@ -6,7 +6,7 @@
 
 pkgname=libftdi
 pkgver=1.2
-pkgrel=6
+pkgrel=7
 pkgdesc="A library to talk to FTDI chips, optional python bindings."
 arch=('i686' 'x86_64')
 url="http://www.intra2net.com/en/developer/libftdi/download.php"

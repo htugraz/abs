@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 243697 2015-08-14 19:29:02Z andyrtr $
+# $Id: PKGBUILD 255042 2015-12-10 04:37:06Z foutrelis $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=man-pages
 pkgver=4.02
 _posixver=2013-a
-pkgrel=1
+pkgrel=4
 pkgdesc="Linux man pages"
 arch=('any')
 license=('GPL' 'custom')
@@ -54,5 +54,5 @@ package() {
   # this is included in xf86-input-mouse
   rm -f man4/mouse.4
   # this is included in attr
-  rm -f man5/attr.5  
+  rm -f man5/attr.5 
 }

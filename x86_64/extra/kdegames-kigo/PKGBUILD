@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250380 2015-11-09 21:48:25Z arojas $
+# $Id: PKGBUILD 255267 2015-12-10 04:49:50Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kigo
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="An open-source implementation of the popular Go game"
 url="http://kde.org/applications/games/kigo/"
 arch=('i686' 'x86_64')

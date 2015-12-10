@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 124554 2014-12-25 13:15:41Z spupykin $
+# $Id: PKGBUILD 151536 2015-12-10 03:55:48Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: mickael9 <mickael9 at gmail dot com>
 
 pkgname=gpsim
 pkgver=0.28.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A full-featured software simulator for Microchip PIC microcontrollers"
 arch=(i686 x86_64)
 url="http://gpsim.sourceforge.net/"

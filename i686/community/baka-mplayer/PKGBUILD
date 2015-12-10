@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 148108 2015-12-02 06:31:20Z fyan $
+# $Id: PKGBUILD 151337 2015-12-10 03:49:56Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: u8sand <u8sand@gmail.com>
 # Contributor: Alfredo Ramos <alfredo dot ramos at yandex dot com>
 
 pkgname=baka-mplayer
 pkgver=2.0.4
-pkgrel=1
+pkgrel=2
 pkgdesc='A free and open source, cross-platform, libmpv based multimedia player. Qt5 build.'
 arch=('i686' 'x86_64')
 url='http://bakamplayer.u8sand.net/'

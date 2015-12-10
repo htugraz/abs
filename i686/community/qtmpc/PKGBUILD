@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 115239 2014-07-07 02:41:24Z fyan $
+# $Id: PKGBUILD 151894 2015-12-10 04:07:56Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Shaika-Dzari <shaikadzari at gmail dot com>
 
 pkgname=qtmpc
 pkgver=0.6.1
-pkgrel=4
+pkgrel=5
 pkgdesc="Qt4-based front-end for MPD"
 arch=('i686' 'x86_64')
 url="http://qtmpc.lowblog.nl/"

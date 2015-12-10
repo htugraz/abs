@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 216115 2014-07-01 16:07:56Z fyan $
+# $Id: PKGBUILD 255111 2015-12-10 04:44:16Z foutrelis $
 # Maintainer: damir <damir@archlinux.org>
 
 pkgname=dasher
 pkgver=4.11
-pkgrel=2
+pkgrel=3
 pkgdesc="Information-efficient text-entry interface, driven by natural continuous pointing gestures"
 arch=('i686' 'x86_64')
 license=('GPL')

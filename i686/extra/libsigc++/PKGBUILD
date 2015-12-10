@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 248641 2015-10-08 19:52:55Z heftig $
+# $Id: PKGBUILD 255523 2015-12-10 04:58:57Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgbase=libsigc++
 pkgname=('libsigc++' 'libsigc++-docs')
 pkgver=2.6.1
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 license=('LGPL')
 url="http://libsigc.sourceforge.net/"

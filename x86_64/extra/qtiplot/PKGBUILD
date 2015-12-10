@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 239913 2015-05-30 12:31:16Z arojas $
+# $Id: PKGBUILD 255626 2015-12-10 05:06:45Z foutrelis $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: damir <damir.archlinux.org>
 # Contributor: Gergely Imreh <imrehg@gmail.com>
 
 pkgname=qtiplot
 pkgver=0.9.8.9
-pkgrel=6
+pkgrel=7
 arch=('i686' 'x86_64')
 url="http://soft.proindependent.com/qtiplot.html"
 pkgdesc="Data analysis and scientific plotting - free clone of Origin"

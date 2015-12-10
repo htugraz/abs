@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250366 2015-11-09 21:43:47Z arojas $
+# $Id: PKGBUILD 255666 2015-12-10 05:10:23Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=step
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Interactive Physical Simulator"
 url="http://kde.org/applications/education/step/"
 arch=('i686' 'x86_64')

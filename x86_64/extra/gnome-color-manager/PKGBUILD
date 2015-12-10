@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 248572 2015-10-08 19:50:59Z heftig $
+# $Id: PKGBUILD 255156 2015-12-10 04:46:02Z foutrelis $
 # Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
 
 pkgname=gnome-color-manager
 pkgver=3.18.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Color profile manager for the GNOME desktop"
 arch=(i686 x86_64)
 url="http://projects.gnome.org/gnome-color-manager/"

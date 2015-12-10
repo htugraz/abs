@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250132 2015-11-05 16:22:44Z anatolik $
+# $Id: PKGBUILD 255569 2015-12-10 05:01:05Z foutrelis $
 # Maintainer: Anatol Pomozov <anatol dot pomozov at gmail>
 # Contributor: Stéphane Gaudreault <stephane@archlinux.org>
 
 pkgname=openmpi
 pkgver=1.10.1
-pkgrel=1
+pkgrel=3
 pkgdesc='High performance message passing library (MPI)'
 arch=(i686 x86_64)
 url='http://www.open-mpi.org'

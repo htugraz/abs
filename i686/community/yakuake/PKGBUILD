@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 126524 2015-01-24 10:40:34Z fyan $
+# $Id: PKGBUILD 152064 2015-12-10 04:13:38Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: James Rayner <iphitus@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=yakuake
 pkgver=2.9.9
-pkgrel=4
+pkgrel=5
 pkgdesc="A drop-down terminal emulator based on KDE konsole technology"
 arch=('i686' 'x86_64')
 url='http://yakuake.kde.org/'

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 132248 2015-04-25 21:17:42Z speps $
+# $Id: PKGBUILD 151726 2015-12-10 04:02:03Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=minitube
 pkgver=2.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A native YouTube client in Qt. Watch YouTube videos without Flash Player"
 arch=('i686' 'x86_64')
 url='http://flavio.tordini.org/minitube'

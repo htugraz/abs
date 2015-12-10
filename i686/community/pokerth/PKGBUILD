@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 144616 2015-10-21 21:56:45Z foutrelis $
+# $Id: PKGBUILD 151824 2015-12-10 04:05:48Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Mateusz Herych <heniekk@gmail.com>
 # Contributor: Bartłomiej Piotrowski <barthalion@gmail.com>
@@ -8,7 +8,7 @@
 pkgname=pokerth
 _realname=PokerTH
 pkgver=1.1.1
-pkgrel=7
+pkgrel=8
 pkgdesc="Open source Texas Hold'em Poker simulator"
 arch=('i686' 'x86_64')
 url="http://www.pokerth.net/"

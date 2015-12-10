@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 142938 2015-10-04 17:53:13Z arodseth $
+# $Id: PKGBUILD 151849 2015-12-10 04:06:34Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Sven-Hendrik Haase <sh@lutzhaase.com>
 
 pkgbase=python-pybox2d
 pkgname=('python2-pybox2d')
 pkgver=2.3.0
-pkgrel=1
+pkgrel=2
 epoch=1
 arch=('x86_64' 'i686')
 url='https://github.com/pybox2d/pybox2d'

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 110346 2014-04-28 09:15:38Z spupykin $
+# $Id: PKGBUILD 151891 2015-12-10 04:07:49Z foutrelis $
 # Maintainer: Geoffroy Carrier <geoffroy.carrier@koon.fr>
 # Previous Contributor: Urs Wolfer <uwolfer @ fwo.ch>
 
 pkgname=qtemu
 pkgver=1.0.5
-pkgrel=10
+pkgrel=11
 pkgdesc="Graphical user interface for QEMU written in Qt4"
 url="http://qtemu.org"
 license=("GPL")

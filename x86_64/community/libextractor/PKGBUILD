@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 137900 2015-08-04 06:37:14Z bpiotrowski $
+# $Id: PKGBUILD 151641 2015-12-10 03:59:26Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s@gmail.com>
 # Contributor: damir <damir@archlinux.org>
 
 pkgname=libextractor
 pkgver=1.0.1
-pkgrel=7
+pkgrel=8
 pkgdesc="A library used to extract meta-data from files of arbitrary type"
 arch=("i686" "x86_64")
 license=('GPL')

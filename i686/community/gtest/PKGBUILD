@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 99792 2013-10-30 23:44:46Z allan $
+# $Id: PKGBUILD 151545 2015-12-10 03:56:01Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Alexandre Bique <bique.alexandre@gmail.com>
 # Contributor: Louis R. Marascio <lrm@fitnr.com>
@@ -6,7 +6,7 @@
 
 pkgname=gtest
 pkgver=1.7.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Google Test - C++ testing utility based on the xUnit framework (like JUnit)"
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/googletest/"

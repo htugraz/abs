@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 250423 2015-11-09 22:03:12Z arojas $
+# $Id: PKGBUILD 255308 2015-12-10 04:51:13Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Zuf <kontakt.zuf@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=kdenlive
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A non-linear video editor for Linux using the MLT video framework"
 arch=(i686 x86_64)
 url="http://www.kdenlive.org/"

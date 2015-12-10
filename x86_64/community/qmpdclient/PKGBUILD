@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 115237 2014-07-07 02:37:49Z fyan $
+# $Id: PKGBUILD 151877 2015-12-10 04:07:22Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Vinay S Shastry <vinayshastry@gmail.com>
 
 pkgname=qmpdclient
 pkgver=1.2.2
-pkgrel=4
+pkgrel=5
 pkgdesc="A Qt4 client for MPD"
 arch=('i686' 'x86_64')
 url="http://bitcheese.net/wiki/QMPDClient"

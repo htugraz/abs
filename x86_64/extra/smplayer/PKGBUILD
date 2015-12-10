@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 252082 2015-11-30 19:58:34Z arojas $
+# $Id: PKGBUILD 255658 2015-12-10 05:09:48Z foutrelis $
 # Maintainer : Ionut Biru <ibiru@archlinux.org>
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Alessio 'mOLOk' Bolognino <themolok@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=smplayer
 pkgver=15.11.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A complete front-end for MPlayer"
 arch=('i686' 'x86_64')
 url="http://smplayer.sourceforge.net/"

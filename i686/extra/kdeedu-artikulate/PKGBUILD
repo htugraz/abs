@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250346 2015-11-09 21:35:03Z arojas $
+# $Id: PKGBUILD 255263 2015-12-10 04:49:41Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeedu-artikulate
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Improve your pronunciation by listening to native speakers"
 url="https://projects.kde.org/projects/kde/kdeedu/artikulate"
 arch=('i686' 'x86_64')

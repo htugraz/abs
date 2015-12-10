@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 115284 2014-07-07 20:41:06Z jlichtblau $
+# $Id: PKGBUILD 151936 2015-12-10 04:09:23Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 
 pkgname=sdcv
 pkgver=0.4.2
-pkgrel=8
+pkgrel=9
 pkgdesc="StarDict Console Version"
 arch=('i686' 'x86_64')
 url="http://sdcv.sourceforge.net/"

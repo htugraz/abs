@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 147797 2015-11-25 21:00:57Z jlichtblau $
+# $Id: PKGBUILD 152031 2015-12-10 04:12:28Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org> 
 # Contributor: Stefan Husmann <stefan-husmann@t-online.de>
 # Contributor: Søren Holm <sgh@sgh.dk> 
 
 pkgname=vym
 pkgver=2.5.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A mindmapping tool"
 arch=('i686' 'x86_64')
 url="http://www.insilmaril.de/vym/"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 249809 2015-10-27 22:33:25Z heftig $
+# $Id: PKGBUILD 255151 2015-12-10 04:45:51Z foutrelis $
 # Maintainer: Ionut Biru <ibiru@archlinux.org>
 
 pkgname=gjs
 pkgver=1.44.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Javascript Bindings for GNOME"
 arch=(i686 x86_64)
 url="http://live.gnome.org/Gjs"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 144624 2015-10-21 21:57:05Z foutrelis $
+# $Id: PKGBUILD 151929 2015-12-10 04:09:08Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Andreas Wagner <Andreas dot Wagner at em dot uni-frankfurt dot de>
 
 pkgname=schroot
 pkgver=1.6.10
-pkgrel=7
+pkgrel=8
 pkgdesc="Allows users to execute shell commands under different root filesystems. (Successor to dchroot)."
 url="http://packages.qa.debian.org/s/schroot.html"
 license=('GPL3')

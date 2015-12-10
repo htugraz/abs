@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 125738 2015-01-11 12:33:57Z spupykin $
+# $Id: PKGBUILD 151321 2015-12-10 03:49:26Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: David Moore <davidm@sjsoft.com>
 
 pkgname=aqbanking
 pkgver=5.5.1
 _dnrel=118
-pkgrel=1
+pkgrel=2
 pkgdesc="A library for online banking and financial applications"
 arch=(i686 x86_64)
 url="http://www.aquamaniac.de/aqbanking"

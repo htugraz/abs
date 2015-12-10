@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 101299 2013-11-22 05:31:02Z allan $
+# $Id: PKGBUILD 151450 2015-12-10 03:53:31Z foutrelis $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: Eric Belanger <eric.archlinux.org>
 # Contributor: Fabio Scotoni <CCuleX.gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=extremetuxracer
 pkgver=0.6.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Downhill racing game starring Tux"
 arch=('x86_64' 'i686')
 url="http://sourceforge.net/projects/extremetuxracer/"

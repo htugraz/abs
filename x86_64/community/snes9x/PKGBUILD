@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 111798 2014-05-24 21:01:36Z eric $
+# $Id: PKGBUILD 151955 2015-12-10 04:09:58Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgbase=snes9x
 pkgname=('snes9x' 'snes9x-gtk')
 pkgver=1.53
-pkgrel=8
+pkgrel=9
 arch=('i686' 'x86_64')
 url="https://code.google.com/p/snes9x-gtk/"
 license=('custom')

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 242596 2015-07-28 18:14:14Z schiv $
+# $Id: PKGBUILD 255193 2015-12-10 04:47:23Z foutrelis $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: tobias <tobias@archlinux.org>
 # Contributor: see .contrib
 
 pkgname=hydrogen
 pkgver=0.9.6.1
-pkgrel=2
+pkgrel=3
 pkgdesc="An advanced drum machine"
 arch=('i686' 'x86_64')
 license=('GPL')

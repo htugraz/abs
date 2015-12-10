@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 139111 2015-09-02 11:24:31Z speps $
+# $Id: PKGBUILD 151926 2015-12-10 04:09:01Z foutrelis $
 # Maintainer: speps <speps at aur dot archlinux dot org>
 
 pkgname=samplv1
 pkgver=0.7.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Polyphonic sampler synthesizer with stereo fx"
 arch=(i686 x86_64)
 url="http://$pkgname.sourceforge.net/$pkgname-index.html"

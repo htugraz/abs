@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 146001 2015-11-04 18:21:06Z stativ $
+# $Id: PKGBUILD 151444 2015-12-10 03:53:21Z foutrelis $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 pkgname=embree
 pkgver=2.7.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A collection of high-performance ray tracing kernels"
 arch=('x86_64')
 url="https://embree.github.io/"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 206620 2014-03-03 17:48:17Z andrea $
+# $Id: PKGBUILD 255495 2015-12-10 04:58:05Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=libmm-qt
 pkgver=1.0.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Qt-only wrapper for ModemManager DBus API'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/extragear/libs/libmm-qt'

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 251188 2015-11-18 07:34:33Z fyan $
+# $Id: PKGBUILD 255085 2015-12-10 04:43:14Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=bluez-qt
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Qt wrapper for Bluez 5 DBus API'
 arch=(i686 x86_64)
 url='https://projects.kde.org/projects/frameworks/bluez-qt'

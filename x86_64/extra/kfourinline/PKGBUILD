@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250378 2015-11-09 21:47:46Z arojas $
+# $Id: PKGBUILD 255349 2015-12-10 04:52:37Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kfourinline
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A four-in-a-row game"
 url="http://kde.org/applications/games/kfourinline/"
 arch=('i686' 'x86_64')

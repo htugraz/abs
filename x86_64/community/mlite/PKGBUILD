@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 145161 2015-10-28 05:50:18Z fyan $
+# $Id: PKGBUILD 151729 2015-12-10 04:02:09Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=mlite
-pkgver=0.2.17
+pkgver=0.2.18
 pkgrel=1
 pkgdesc="Useful classes originating from MeeGo Touch"
 arch=('i686' 'x86_64')

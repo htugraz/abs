@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 129978 2015-03-26 15:39:04Z anatolik $
+# $Id: PKGBUILD 151503 2015-12-10 03:54:56Z foutrelis $
 # Maintainer: Massimiliano Torromeo <massimiliano.torromeo@gmail.com>
 # Maintainer: Anatol Pomozov <anatol.pomozov gmail>
 # Contributor: RunningDroid <runningdroid AT zoho.com>
@@ -6,7 +6,7 @@
 
 pkgname=gflags
 pkgver=2.1.2
-pkgrel=1
+pkgrel=2
 pkgdesc='C++ Library for commandline flag processing'
 arch=(i686 x86_64)
 url='https://github.com/schuhschuh/gflags'

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 197585 2013-10-27 03:05:15Z eric $
+# $Id: PKGBUILD 255570 2015-12-10 05:01:14Z foutrelis $
 # Maintainer:
 # Contributor: dorphell <dorphell@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=opensp
 pkgver=1.5.2
-pkgrel=4
+pkgrel=5
 pkgdesc="A library and a set of tools for validating, parsing and manipulating SGML and XML documents"
 arch=('i686' 'x86_64')
 url="http://openjade.sourceforge.net/"

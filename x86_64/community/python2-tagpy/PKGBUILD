@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 144622 2015-10-21 21:57:00Z foutrelis $
+# $Id: PKGBUILD 151864 2015-12-10 04:06:59Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Callan Barrett <wizzomafizzo@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=python2-tagpy
 pkgver=2013.1
-pkgrel=5
+pkgrel=6
 pkgdesc='Python bindings for TagLib'
 arch=('x86_64' 'i686')
 url='http://pypi.python.org/pypi/tagpy'

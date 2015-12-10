@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 138578 2015-08-20 21:22:30Z idevolder $
+# $Id: PKGBUILD 151610 2015-12-10 03:58:35Z foutrelis $
 # Maintainer: BlackEagle <ike.devolder@gmail.com>>
 
 pkgname=kodi-audioencoder-lame
 _commit=5591a68
 pkgver=20150810.5591a68
-pkgrel=2
+pkgrel=3
 pkgdesc="kodi audioencoder addon for lame (mp3)"
 arch=('i686' 'x86_64')
 url='https://github.com/xbmc/audioencoder.lame'

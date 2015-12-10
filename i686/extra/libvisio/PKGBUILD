@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 250076 2015-11-03 15:34:58Z foutrelis $
+# $Id: PKGBUILD 255528 2015-12-10 04:59:07Z foutrelis $
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Contributor: ponsfoot <cabezon dot hashimoto at gmail dot com>
@@ -6,7 +6,7 @@
 
 pkgname=libvisio
 pkgver=0.1.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Library providing ability to interpret and import visio diagrams'
 arch=('i686' 'x86_64')
 url="https://wiki.documentfoundation.org/DLP/Libraries/libvisio"

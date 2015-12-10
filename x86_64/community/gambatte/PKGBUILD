@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 125566 2015-01-07 17:09:57Z bpiotrowski $
+# $Id: PKGBUILD 151489 2015-12-10 03:54:33Z foutrelis $
 # Maintainer: Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 
 pkgbase=gambatte
 pkgname=('gambatte-qt' 'gambatte-sdl')
 pkgver=r572
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url='https://github.com/sinamas/gambatte'
 license=('GPL2')

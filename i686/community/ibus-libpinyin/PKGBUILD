@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 147596 2015-11-24 06:02:26Z fyan $
+# $Id: PKGBUILD 151564 2015-12-10 03:56:40Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor:  Yangtse Su<yangtsesu@gmail.com>
 # Contributor:  Jekyll Wu<adaptee [at] gmail [dot] com>
@@ -8,7 +8,7 @@
 
 pkgname=ibus-libpinyin
 pkgver=1.7.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Intelligent Pinyin engine based on libpinyin for IBus"
 arch=('i686' 'x86_64')
 license=('LGPL')

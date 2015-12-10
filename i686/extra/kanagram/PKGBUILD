@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250351 2015-11-09 21:37:18Z arojas $
+# $Id: PKGBUILD 255215 2015-12-10 04:48:10Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kanagram
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Letter Order Game"
 url="http://kde.org/applications/education/kanagram/"
 arch=('i686' 'x86_64')

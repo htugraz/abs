@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 128087 2015-02-22 03:31:55Z eric $
+# $Id: PKGBUILD 151405 2015-12-10 03:52:13Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Maxim Vuets <maxim.vuets@gmail.com>
 
 pkgname=cuneiform
 pkgver=1.1.0
 _dpkgver=1.1
-pkgrel=13
+pkgrel=14
 pkgdesc="Linux port of an OCR system developed in Russia. Supports more than 20 languages."
 arch=('i686' 'x86_64')
 url="https://launchpad.net/cuneiform-linux"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 107095 2014-03-12 11:37:07Z speps $
+# $Id: PKGBUILD 152032 2015-12-10 04:12:29Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Renato Budinich <rennabh at gmail dot com>
 
 pkgname=wah-plugins
 pkgver=0.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="LADSPA Wah filter plugin"
 arch=('i686' 'x86_64')
 url="http://kokkinizita.linuxaudio.org/linuxaudio/ladspa/"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 242232 2015-07-14 23:41:08Z eric $
+# $Id: PKGBUILD 255663 2015-12-10 05:10:12Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=soundtouch
 pkgver=1.9.0
-pkgrel=1
+pkgrel=3
 pkgdesc="An audio processing library"
 arch=('i686' 'x86_64')
 url="http://www.surina.net/soundtouch/"

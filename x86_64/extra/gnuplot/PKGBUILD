@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 246433 2015-09-17 14:41:04Z heftig $
+# $Id: PKGBUILD 255161 2015-12-10 04:46:13Z foutrelis $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: damir <damir@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=gnuplot
 pkgver=5.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Plotting package which outputs to X11, PostScript, PNG, GIF, and others" 
 arch=('i686' 'x86_64') 
 url="http://www.gnuplot.info" 

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 110205 2014-04-26 22:57:34Z dwallace $
+# $Id: PKGBUILD 151804 2015-12-10 04:05:09Z foutrelis $
 # Maintainer: Daniel Wallace <danielwallace at gtmanfred dot com>
 # Contributor: xduugu
 
 pkgname=patchelf
 pkgver=0.8
-pkgrel=1
+pkgrel=2
 pkgdesc="A small utility to modify the dynamic linker and RPATH of ELF executables"
 arch=('i686' 'x86_64')
 url="http://nixos.org/patchelf.html"

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 144614 2015-10-21 21:56:24Z foutrelis $
+# $Id: PKGBUILD 151820 2015-12-10 04:05:41Z foutrelis $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Daniel Wallace <daniel.wallace@gatech.edu>
 
 pkgname=plex-home-theater
 pkgver=1.4.1.469
 _pkghash=47a90f01
-pkgrel=5
+pkgrel=6
 pkgdesc='Plex Home Theater'
 arch=('i686' 'x86_64')
 url='http://www.plexapp.com/'

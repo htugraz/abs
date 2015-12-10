@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 144594 2015-10-21 21:55:38Z foutrelis $
+# $Id: PKGBUILD 151665 2015-12-10 04:00:07Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: GONG Chen <chen dot sst at gmail dot com>
 # Contributor: 網軍總司令
 
 pkgname=librime
 pkgver=1.2.20141205
-pkgrel=4
+pkgrel=5
 pkgdesc="Rime input method engine"
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/rimeime/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250464 2015-11-09 22:17:52Z arojas $
+# $Id: PKGBUILD 255139 2015-12-10 04:45:23Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=filelight
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='View disk usage information'
 url='http://kde.org/applications/utilities/filelight'
 arch=('i686' 'x86_64')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 147110 2015-11-18 19:46:50Z jelle $
+# $Id: PKGBUILD 151398 2015-12-10 03:51:59Z foutrelis $
 # Maintainer: Stéphane Gaudreault <stephane@archlinux.org>
 
 pkgname=cppcheck
 pkgver=1.71
-pkgrel=1
+pkgrel=2
 pkgdesc="A tool for static C/C++ code analysis"
 arch=('i686' 'x86_64')
 url="http://cppcheck.wiki.sourceforge.net/"

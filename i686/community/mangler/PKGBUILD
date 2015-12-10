@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 134384 2015-05-30 18:50:46Z arcanis $
+# $Id: PKGBUILD 151706 2015-12-10 04:01:24Z foutrelis $
 # Maintainer: Evgeniy Alekseev <arcanis.arch at gmail dot com>
 # Contributor: Simon Perry <pezz at sanxion dot net>
 # Contributor: Sigitas Mazaliauskas <sigisnn at gmail dot com>
@@ -6,7 +6,7 @@
 
 pkgname=mangler
 pkgver=1.2.5
-pkgrel=5
+pkgrel=6
 pkgdesc="Ventrilo compatible VOIP client for Linux"
 arch=('i686' 'x86_64')
 url="http://www.mangler.org/"
@@ -21,6 +21,7 @@ changelog=ChangeLog
 
 build() {
   cd "${pkgname}-${pkgver}"
+  CXXFLAGS+=' -std=c++11 -Wno-narrowing'
   ./configure --prefix=/usr
   make
 }

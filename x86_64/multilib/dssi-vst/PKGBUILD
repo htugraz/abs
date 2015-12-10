@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 108585 2014-03-29 04:30:27Z speps $
+# $Id: PKGBUILD 152081 2015-12-10 05:32:58Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Ray Rashif <schivmeister@gmail.com>
 
 pkgname=dssi-vst
 pkgver=0.9.2
-pkgrel=4
+pkgrel=5
 pkgdesc="DSSI adapter/wrapper for win32 VST plug-ins"
 arch=('i686' 'x86_64')
 url="http://www.breakfastquay.com/dssi-vst/"

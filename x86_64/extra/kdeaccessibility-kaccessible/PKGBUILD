@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250335 2015-11-09 21:31:09Z arojas $
+# $Id: PKGBUILD 255248 2015-12-10 04:49:15Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdeaccessibility-kaccessible
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 pkgdesc='Provides accessibility services like focus tracking and a screenreader'
 url='https://projects.kde.org/projects/kde/kdeaccessibility/kaccessible'

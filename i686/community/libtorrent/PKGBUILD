@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 139240 2015-09-05 18:29:36Z jlichtblau $
+# $Id: PKGBUILD 151670 2015-12-10 04:00:17Z foutrelis $
 # Maintainer: Gaetan Bisson <bisson@archlinux.org>
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: Daenyth <Daenyth+Arch [at] gmail [dot] com>
@@ -7,7 +7,7 @@
 
 pkgname=libtorrent
 pkgver=0.13.6
-pkgrel=1
+pkgrel=2
 pkgdesc='BitTorrent library with a focus on high performance and good code'
 url='http://rakshasa.github.io/rtorrent/'
 arch=('i686' 'x86_64')

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 113957 2014-07-01 10:48:23Z spupykin $
+# $Id: PKGBUILD 151409 2015-12-10 03:52:21Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=dangerdeep
 pkgver=0.3.0
-pkgrel=8
+pkgrel=9
 pkgdesc="submarine simulator"
 arch=(i686 x86_64)
 url="http://dangerdeep.sourceforge.net"

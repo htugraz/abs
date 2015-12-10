@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 244897 2015-08-27 13:50:34Z tpowa $
+# $Id: PKGBUILD 255750 2015-12-10 14:29:35Z tpowa $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Christian Hesse <mail@eworm.de>
 # Contributor: Marco A Rojas <marquicus at gmail dot com>
 
 pkgname=ldb
-pkgver=1.1.21
+pkgver=1.1.23
 pkgrel=1
 pkgdesc="A schema-less, ldap like, API and database"
 arch=('i686' 'x86_64')
@@ -39,5 +39,5 @@ package() {
 
 	make DESTDIR=${pkgdir}/ install
 }
-md5sums=('94ba09c7452fff68df3481686c56677e'
+md5sums=('93bd52b5e90a6f7dd30c7b08d2fa5e3a'
          'SKIP')

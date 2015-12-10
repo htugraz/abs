@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 244187 2015-08-19 17:08:06Z arojas $
+# $Id: PKGBUILD 255311 2015-12-10 04:51:23Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
@@ -23,7 +23,7 @@ pkgname=('kdepim-akonadiconsole'
          'kdepim-libkdepim')
 pkgver=4.14.10
 _kdeappver=15.04.3
-pkgrel=3
+pkgrel=4
 arch=('i686' 'x86_64')
 url='http://pim.kde.org'
 license=('GPL' 'LGPL' 'FDL')

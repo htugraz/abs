@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 147597 2015-11-24 06:02:28Z fyan $
+# $Id: PKGBUILD 151459 2015-12-10 03:53:48Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: poplarch <poplarch@gmail.com>
 
 pkgname=fcitx-libpinyin
 pkgver=0.3.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Fcitx Wrapper for libpinyin, Library to deal with pinyin"
 arch=('i686' 'x86_64')
 url="https://github.com/fcitx/fcitx-libpinyin"

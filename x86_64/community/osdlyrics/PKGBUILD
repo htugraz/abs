@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 113870 2014-07-01 07:37:35Z fyan $
+# $Id: PKGBUILD 151793 2015-12-10 04:04:48Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Auguste Pop <auguste [at] gmail [dot] com>
 
 pkgname=osdlyrics
 pkgver=0.4.3
-pkgrel=3
+pkgrel=4
 pkgdesc="A lyric show compatible with various media players"
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/osd-lyrics/"
 license=('GPL3')
 depends=('gtk2' 'dbus-glib' 'curl' 'libnotify' 'libmpd' 'xmms2'
-         'desktop-file-utils' 'hicolor-icon-theme')
+         'desktop-file-utils' 'hicolor-icon-theme' 'sqlite')
 makedepends=('intltool')
 install=$pkgname.install
 source=("http://osd-lyrics.googlecode.com/files/$pkgname-$pkgver.tar.gz")

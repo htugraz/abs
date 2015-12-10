@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 124297 2014-12-21 12:40:39Z foutrelis $
+# $Id: PKGBUILD 151805 2015-12-10 04:05:11Z foutrelis $
 # Contributor: Vasco Costa <vasco dot costa at geekslot dot com>
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 
 pkgname=pbzip2
 pkgver=1.1.12
-pkgrel=1
+pkgrel=2
 pkgdesc="Parallel implementation of the bzip2 block-sorting file compressor"
 arch=('i686' 'x86_64')
 url="http://compression.ca/pbzip2/"

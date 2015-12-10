@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 146296 2015-11-06 12:17:30Z jleclanche $
+# $Id: PKGBUILD 151698 2015-12-10 04:01:10Z foutrelis $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=lxqt-policykit
 pkgver=0.10.0
-pkgrel=2
+pkgrel=3
 pkgdesc="The LXQt policykit authentication agent"
 arch=("i686" "x86_64")
 groups=("lxqt")

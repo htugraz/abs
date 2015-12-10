@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 131018 2015-04-09 09:18:00Z alucryd $
+# $Id: PKGBUILD 152084 2015-12-10 05:33:07Z foutrelis $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: trya <tryagainprod@gmail.com>
 # Contributor: Yvan <madridista40@orange.fr>
 
 pkgname=gens-gs
 pkgver=2.16.7
-pkgrel=5
+pkgrel=6
 pkgdesc='An emulator of Sega Genesis, Sega CD and 32X, combining features from various forks of Gens'
 arch=('i686' 'x86_64')
 url='http://segaretro.org/Gens/GS'

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 238027 2015-04-24 20:41:18Z foutrelis $
+# $Id: PKGBUILD 255707 2015-12-10 05:13:03Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=wxgtk2.8
 pkgver=2.8.12.1
-pkgrel=3
+pkgrel=4
 pkgdesc="GTK+ implementation of wxWidgets API for GUI"
 arch=('i686' 'x86_64')
 url="http://wxwidgets.org"

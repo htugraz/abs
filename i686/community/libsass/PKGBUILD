@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 145590 2015-11-02 11:37:44Z jleclanche $
+# $Id: PKGBUILD 151666 2015-12-10 04:00:10Z foutrelis $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 # Contributor: Isaac Dupree <antispam@idupree.com>
 
 pkgname=libsass
 pkgver=3.3.1
-pkgrel=1
+pkgrel=2
 pkgdesc="C implementation of Sass CSS preprocessor (library)."
 arch=("i686" "x86_64")
 url="http://libsass.org/"

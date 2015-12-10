@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 147065 2015-11-18 11:46:57Z spupykin $
+# $Id: PKGBUILD 152074 2015-12-10 04:13:56Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: SpepS <dreamspepser at yahoo dot it>
 # Contributor: Ionut Biru <ibiru@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=zynaddsubfx
 pkgver=2.5.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Opensource software synthesizer capable of making a countless number of instruments."
 arch=('i686' 'x86_64')
 url="http://zynaddsubfx.sourceforge.net"

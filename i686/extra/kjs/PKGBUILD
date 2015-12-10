@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251186 2015-11-18 07:34:30Z fyan $
+# $Id: PKGBUILD 255378 2015-12-10 04:53:25Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kjs
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Support for JS scripting in applications'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kjs'

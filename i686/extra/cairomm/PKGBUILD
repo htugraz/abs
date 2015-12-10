@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 248529 2015-10-08 19:49:45Z heftig $
+# $Id: PKGBUILD 255092 2015-12-10 04:43:28Z foutrelis $
 # Maintainer: Kevin <kevin@archlinux.org>
 # Contributor: criminy <criminy@gmail.com>
 
 pkgname=cairomm
 pkgver=1.12.0
-pkgrel=1
+pkgrel=2
 pkgdesc="C++ bindings to Cairo vector graphics library"
 arch=('i686' 'x86_64')
 url="http://www.cairographics.org"

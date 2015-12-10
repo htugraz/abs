@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 145814 2015-11-03 15:31:57Z foutrelis $
+# $Id: PKGBUILD 151396 2015-12-10 03:51:55Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Vitaliy Berdinskikh ur6lad[at]i.ua
 # Contributor: Michael Fellinger <m.fellinger@gmail.com>
 
 pkgname=couchdb
 pkgver=1.6.1
-pkgrel=5
+pkgrel=6
 pkgdesc="A document-oriented database that can be queried and indexed in a MapReduce fashion using JSON"
 arch=('i686' 'x86_64')
 url="http://couchdb.apache.org"

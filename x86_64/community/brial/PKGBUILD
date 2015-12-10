@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 143807 2015-10-12 20:51:00Z arojas $
+# $Id: PKGBUILD 151353 2015-12-10 03:50:29Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=brial
 pkgver=0.8.4.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Library for polynomials over boolean rings"
 arch=(i686 x86_64)
 url="https://github.com/BRiAl/BRiAl"

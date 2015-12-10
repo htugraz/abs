@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 197761 2013-10-29 19:12:18Z eric $
+# $Id: PKGBUILD 255203 2015-12-10 04:47:46Z foutrelis $
 # Maintainer:
 # Contributor: dorphell <dorphell@archlinux.org>
 # Contributor: Tom Newsom <Jeepster@gmx.co.uk>
 
 pkgname=jade
 pkgver=1.2.1
-pkgrel=9
+pkgrel=10
 _debpatch=47.3
 pkgdesc="James Clark's DSSSL Engine"
 url='http://www.jclark.com/jade/'

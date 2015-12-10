@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 252015 2015-11-28 07:44:45Z alucryd $
+# $Id: PKGBUILD 255536 2015-12-10 04:59:24Z foutrelis $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Morfeo <morfeo89@hotmail.it>
 
 pkgbase=lightdm
 pkgname=('lightdm' 'liblightdm-qt4' 'liblightdm-qt5')
 pkgver=1.16.6
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc='A lightweight display manager'
 arch=('i686' 'x86_64')

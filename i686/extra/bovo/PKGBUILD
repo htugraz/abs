@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250368 2015-11-09 21:44:25Z arojas $
+# $Id: PKGBUILD 255088 2015-12-10 04:43:20Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=bovo
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A Gomoku like game for two players"
 url="http://kde.org/applications/games/bovo/"
 arch=('i686' 'x86_64')

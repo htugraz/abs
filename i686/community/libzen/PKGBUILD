@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 145802 2015-11-03 15:03:34Z spupykin $
+# $Id: PKGBUILD 151673 2015-12-10 04:00:23Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: hydro <hydro@freenet.de>
 
 pkgname=libzen
 pkgver=0.4.32
-pkgrel=1
+pkgrel=2
 pkgdesc="shared library for libmediainfo and mediainfo"
 arch=('i686' 'x86_64')
 url="http://mediainfo.sourceforge.net"

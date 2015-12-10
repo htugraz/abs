@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 145335 2015-10-30 21:39:13Z arojas $
+# $Id: PKGBUILD 151998 2015-12-10 04:11:21Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Federico Cinelli <cinelli@aur.archlinux.org>
 
 pkgname=texmaker
 pkgver=4.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Free cross-platform LaTeX editor'
 arch=(i686 x86_64)
 url="http://www.xm1math.net/texmaker/index.html"

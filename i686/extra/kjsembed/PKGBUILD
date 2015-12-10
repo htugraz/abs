@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251206 2015-11-18 07:35:11Z fyan $
+# $Id: PKGBUILD 255379 2015-12-10 04:53:28Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kjsembed
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Embedded JS'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kjsembed'

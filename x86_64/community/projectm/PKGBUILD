@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 142780 2015-10-02 13:12:48Z foutrelis $
+# $Id: PKGBUILD 151835 2015-12-10 04:06:09Z foutrelis $
 # Maintainer: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Lukas Fleischer <lfleischer@archlinux.org>
 # Contributor: Alexander Baldeck <alexander@archlinux.org>
@@ -7,7 +7,7 @@
 pkgbase=projectm
 pkgname=('projectm' 'projectm-libvisual' 'projectm-pulseaudio' 'projectm-jack' 'projectm-qt' 'projectm-test')
 pkgver=2.1.0
-pkgrel=11
+pkgrel=13
 arch=('x86_64' 'i686')
 url='http://projectm.sourceforge.net/'
 license=('LGPL')

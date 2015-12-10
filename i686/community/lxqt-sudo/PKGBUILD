@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 146288 2015-11-06 12:11:28Z jleclanche $
+# $Id: PKGBUILD 151703 2015-12-10 04:01:19Z foutrelis $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=lxqt-sudo
 pkgver=0.10.0
-pkgrel=2
+pkgrel=3
 pkgdesc="LXQt privilege program (lxsu)."
 arch=("i686" "x86_64")
 groups=("lxqt")

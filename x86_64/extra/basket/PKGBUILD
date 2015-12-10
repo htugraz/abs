@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 223960 2014-10-07 07:03:35Z andrea $
+# $Id: PKGBUILD 255081 2015-12-10 04:43:05Z foutrelis $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 # Contributor: James Rayner <james@archlinux.org>
 # Contributor: lucke <lucke at o2 dot pl>
 
 pkgname=basket
 pkgver=1.81
-pkgrel=5
+pkgrel=6
 pkgdesc="All-purpose notes taker for KDE."
 arch=('i686' 'x86_64')
 url="http://basket.kde.org/"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 197001 2013-10-21 12:35:19Z andrea $
+# $Id: PKGBUILD 255190 2015-12-10 04:47:14Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Giovanni Scafora <giovanni@archlinux.org>
 
 pkgname=htdig
 pkgver=3.2.0b6
-pkgrel=9
+pkgrel=10
 pkgdesc="Scripts and HTML code needed for using ht://Dig as a web search engine"
 url="http://www.htdig.org/"
 arch=('i686' 'x86_64')

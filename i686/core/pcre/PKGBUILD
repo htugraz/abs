@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 253585 2015-12-07 22:07:39Z seblu $
+# $Id: PKGBUILD 255044 2015-12-10 04:37:09Z foutrelis $
 # Maintainer: Sébastien "Seblu" Luttringer
 # Contributor: Allan McRae <allan@archlinux.org>
 # Contributor: Eric Belanger <eric@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=pcre
 pkgver=8.38
-pkgrel=1
+pkgrel=2
 pkgdesc='A library that implements Perl 5-style regular expressions'
 arch=('i686' 'x86_64')
 url='http://www.pcre.org/'

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 251928 2015-11-24 02:10:05Z anatolik $
+# $Id: PKGBUILD 255072 2015-12-10 04:42:48Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=audacity
 pkgver=2.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A program that lets you manipulate digital audio waveforms"
 arch=('i686' 'x86_64')
 url="http://audacityteam.org"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 150223 2015-12-08 10:33:20Z spupykin $
+# $Id: PKGBUILD 151715 2015-12-10 04:01:41Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: hydro <hydro@freenet.de>
 
 pkgname=mediainfo
 pkgver=0.7.80
-pkgrel=1
+pkgrel=2
 pkgdesc="supplies technical and tag information about a video or audio file"
 arch=('i686' 'x86_64')
 url="http://mediainfo.sourceforge.net"

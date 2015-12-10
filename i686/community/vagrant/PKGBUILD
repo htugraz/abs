@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 140603 2015-09-17 20:54:43Z foutrelis $
+# $Id: PKGBUILD 152015 2015-12-10 04:11:53Z foutrelis $
 # Maintainer: Jonathan Steel <jsteel at archlinux.org>
 # Contributor: Ido Rosen <ido@kernel.org>
 # Contributor: Brett Hoerner <brett@bretthoerner.com>
@@ -11,7 +11,7 @@
 
 pkgname=vagrant
 pkgver=1.7.4
-pkgrel=3
+pkgrel=4
 _subver=3
 pkgdesc="Build and distribute virtualized development environments"
 arch=('i686' 'x86_64')

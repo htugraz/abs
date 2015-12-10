@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 239400 2015-05-15 12:16:41Z pierre $
+# $Id: PKGBUILD 255188 2015-12-10 04:47:10Z foutrelis $
 # Maintainer: Pierre Schmitz <pierre@archlinux.de>
 # Contributor: Alexandre Bique <bique.alexandre@gmail.com>
 
 pkgname=hefur
 pkgver=0.4
-pkgrel=7
+pkgrel=8
 pkgdesc='A standalone and lightweight BitTorrent tracker'
 arch=('i686' 'x86_64')
 url='http://github.com/abique/hefur'

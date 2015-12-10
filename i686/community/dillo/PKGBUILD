@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 136309 2015-07-03 10:52:55Z spupykin $
+# $Id: PKGBUILD 151426 2015-12-10 03:52:52Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: dorphell <dorphell@archlinux.org>
 
 pkgname=dillo
 pkgver=3.0.5
-pkgrel=1
+pkgrel=2
 pkgdesc="A small, fast graphical web browser built on FLTK"
 arch=(i686 x86_64)
 url="http://www.dillo.org"

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 147508 2015-11-23 23:41:25Z arojas $
+# $Id: PKGBUILD 151440 2015-12-10 03:53:14Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=eclib
 pkgver=20150827
-pkgrel=4
+pkgrel=5
 pkgdesc="Includes mwrank (for 2-descent on elliptic curves over Q) and modular symbol code used to create the elliptic curve database"
 arch=(i686 x86_64)
 url="https://github.com/JohnCremona/eclib/"

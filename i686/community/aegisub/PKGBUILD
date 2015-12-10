@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 145812 2015-11-03 15:31:54Z foutrelis $
+# $Id: PKGBUILD 151308 2015-12-10 03:48:57Z foutrelis $
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: kozec <kozec@kozec.com>
 # Contributor: Limao Luo <luolimao+AUR@gmail.com>
 
 pkgname=aegisub
 pkgver=3.2.2
-pkgrel=6
+pkgrel=7
 pkgdesc='A general-purpose subtitle editor with ASS/SSA support'
 arch=('i686' 'x86_64')
 url='http://www.aegisub.org'

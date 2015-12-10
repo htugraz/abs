@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 109717 2014-04-18 09:35:35Z fyan $
+# $Id: PKGBUILD 151565 2015-12-10 03:56:43Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Rainy <rainylau(at)gmail(dot)com>
 # Contributor: Lee.maRS<leemars at gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=ibus-pinyin
 pkgver=1.5.0
-pkgrel=4
+pkgrel=5
 pkgdesc='Pinyin (Chinese) input method for the IBus framework'
 arch=('i686' 'x86_64')
 license=('GPL')

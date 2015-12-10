@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 100932 2013-11-13 12:48:37Z heftig $
+# $Id: PKGBUILD 151676 2015-12-10 04:00:29Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=lincity-ng
 pkgver=2.0
-pkgrel=6
+pkgrel=7
 pkgdesc="A city simulation game"
 arch=('i686' 'x86_64')
 url="http://sourceforge.net/projects/lincity-ng.berlios/"

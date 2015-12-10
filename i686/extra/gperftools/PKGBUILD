@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 228975 2015-01-13 15:48:05Z dreisner $
+# $Id: PKGBUILD 255164 2015-12-10 04:46:20Z foutrelis $
 # Maintainer: Dave Reisner <dreisner@archlinux.org>
 # Contributor: Alexander Rødseth <rodseth@gmail.com>
 # Contributor: Thomas Jost <schnouki@schnouki.net>
@@ -8,7 +8,7 @@
 
 pkgname=gperftools
 pkgver=2.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Fast, multi-threaded malloc and nifty performance analysis tools"
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/gperftools/"

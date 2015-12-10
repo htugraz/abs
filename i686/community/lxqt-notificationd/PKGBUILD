@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 146325 2015-11-06 17:57:50Z jleclanche $
+# $Id: PKGBUILD 151695 2015-12-10 04:01:05Z foutrelis $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=lxqt-notificationd
 pkgver=0.10.0
-pkgrel=2
+pkgrel=3
 pkgdesc="LXQt notification daemon and library."
 arch=("i686" "x86_64")
 groups=("lxqt")

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 251881 2015-11-22 11:57:21Z andyrtr $
+# $Id: PKGBUILD 255189 2015-12-10 04:47:12Z foutrelis $
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 # Maintainer: Tom Gundersen <teg@jklm.no>
 # Contributor : Rémy Oudompheng <remy@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=hplip
 pkgver=3.15.11
-pkgrel=1
+pkgrel=2
 pkgdesc="Drivers for HP DeskJet, OfficeJet, Photosmart, Business Inkjet and some LaserJet"
 arch=('i686' 'x86_64')
 url="http://hplipopensource.com"

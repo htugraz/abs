@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 240391 2015-06-07 06:11:13Z giovanni $
+# $Id: PKGBUILD 255654 2015-12-10 05:09:31Z foutrelis $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Jeff Mickey <jeff@archlinux.org>
 # Contributor: Jani Talikka <jani.talikka@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=smartmontools
 pkgver=6.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives"
 url="http://smartmontools.sourceforge.net"
 license=('GPL')

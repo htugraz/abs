@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 113335 2014-06-18 14:57:49Z anatolik $
+# $Id: PKGBUILD 151909 2015-12-10 04:08:27Z foutrelis $
 # Maintainer: Anatol Pomozov <anatol.pomozov@gmail.com>
 # Contributor: Gustavo Alvarez <sl1pkn07@gmail.com>
 # Contributor: Alexandre Bique <bique.alexandre@gmail.com>
 
 pkgname=re2
 pkgver=20140304
-pkgrel=1
+pkgrel=2
 pkgdesc='C++ library for fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python'
 url='http://code.google.com/p/re2/'
 depends=(gcc-libs)

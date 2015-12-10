@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 238570 2015-05-07 08:03:37Z ronald $
+# $Id: PKGBUILD 255630 2015-12-10 05:07:06Z foutrelis $
 # Maintainer: Ronald van Haren <ronald.archlinux.org>
 
 pkgname=qwt
 pkgver=6.1.2
-pkgrel=2
+pkgrel=3
 pkgdesc="Qt Widgets for Technical Applications"
 arch=('i686' 'x86_64')
 url="http://qwt.sourceforge.net/"

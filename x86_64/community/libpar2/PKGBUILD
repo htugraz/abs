@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 103025 2013-12-25 17:18:28Z jlichtblau $
+# $Id: PKGBUILD 151658 2015-12-10 03:59:54Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Paul Bredbury <brebs@sent.com>
 # Contributor: Matt McDonald <metzen@gmail.com>
 
 pkgname=libpar2
 pkgver=0.2
-pkgrel=7
+pkgrel=8
 pkgdesc="Parity checking library"
 arch=('i686' 'x86_64')
 url="http://parchive.sourceforge.net/"
@@ -24,6 +24,7 @@ build() {
   patch -p2 < ${srcdir}/libpar2-0.2-bugfixes.patch
   patch -p2 < ${srcdir}/libpar2-0.2-cancel.patch
 
+  export CXXFLAGS="$CXXFLAGS -std=gnu++11"
   ./configure --prefix=/usr
 
   make

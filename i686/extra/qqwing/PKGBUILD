@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 245766 2015-09-11 10:23:57Z jgc $
+# $Id: PKGBUILD 255617 2015-12-10 05:05:43Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=qqwing
 pkgver=1.3.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Sudoku generating and solving software"
 arch=('i686' 'x86_64')
 url='http://qqwing.com/'

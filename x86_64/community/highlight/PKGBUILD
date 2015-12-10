@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 138122 2015-08-08 12:23:06Z bluewind $
+# $Id: PKGBUILD 151560 2015-12-10 03:56:29Z foutrelis $
 # Maintainer: Florian Pritz <flo@xinu.at>
 # Contributor: Jan Fader <jan.fader@web.de>
 pkgbase=highlight
 pkgname=(highlight highlight-gui)
 pkgver=3.23
-pkgrel=1
+pkgrel=2
 url="http://www.andre-simon.de/doku/highlight/highlight.html"
 license=('GPL')
 arch=('i686' 'x86_64')

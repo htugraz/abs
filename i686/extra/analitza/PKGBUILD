@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250299 2015-11-09 21:18:55Z arojas $
+# $Id: PKGBUILD 255058 2015-12-10 04:42:18Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=analitza
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A library to add mathematical features to your program"
 url="https://projects.kde.org/projects/kde/kdeedu/analitza"
 arch=('i686' 'x86_64')

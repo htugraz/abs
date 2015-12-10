@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 215746 2014-06-30 11:24:04Z fyan $
+# $Id: PKGBUILD 255627 2015-12-10 05:06:49Z foutrelis $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=qtscriptgenerator
 pkgver=0.2.0
-pkgrel=3
+pkgrel=4
 pkgdesc="A tool that generates Qt bindings for Qt Script"
 arch=("i686" "x86_64")
 url="https://code.google.com/p/qtscriptgenerator/"

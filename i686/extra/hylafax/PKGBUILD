@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 230734 2015-02-04 09:14:47Z tpowa $
+# $Id: PKGBUILD 255194 2015-12-10 04:47:26Z foutrelis $
 # Maintainer: Paul Mattal <paul@archlinux.org>
 pkgname=hylafax
 pkgver=6.0.6
-pkgrel=6
+pkgrel=7
 pkgdesc="Fax Server"
 arch=('i686' 'x86_64')
 install='hylafax.install'

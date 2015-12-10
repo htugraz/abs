@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 250639 2015-11-10 23:45:07Z arojas $
+# $Id: PKGBUILD 255254 2015-12-10 04:49:26Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
@@ -13,14 +13,21 @@ pkgname=('kdeartwork-colorschemes'
          'kdeartwork-wallpapers'
          'kdeartwork-weatherwallpapers')
 pkgver=15.08.3
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 url='http://www.kde.org'
 license=('GPL' 'LGPL' 'FDL')
 groups=('kdeartwork')
 makedepends=('cmake' 'automoc4' 'xscreensaver' 'eigen' 'kdebase-workspace' 'libkexiv2_4')
-source=("http://download.kde.org/stable/applications/${pkgver}/src/${pkgbase}-${pkgver}.tar.xz")
-sha1sums=('e9fbf14feba2ae1e4cad82179ad994a917c11dd4')
+source=("http://download.kde.org/stable/applications/${pkgver}/src/${pkgbase}-${pkgver}.tar.xz" kdeartwork-cmake-3.4.patch)
+sha1sums=('e9fbf14feba2ae1e4cad82179ad994a917c11dd4'
+          '494253df5c0c170ad3df4ac83c3165313b20318b')
+
+prepare() {
+	cd $pkgbase-$pkgver
+	# Fix build with cmake 3.4
+	patch -p1 -i ../kdeartwork-cmake-3.4.patch
+}
 
 build() {
 	cd $srcdir

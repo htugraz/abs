@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 208526 2014-03-23 21:51:07Z eric $
+# $Id: PKGBUILD 255496 2015-12-10 04:58:06Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=libmodplug
 pkgver=0.8.8.5
-pkgrel=1
+pkgrel=2
 pkgdesc="A MOD playing library"
 arch=('i686' 'x86_64')
 url="http://modplug-xmms.sourceforge.net/"

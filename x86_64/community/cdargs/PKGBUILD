@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 140452 2015-09-17 20:51:20Z foutrelis $
+# $Id: PKGBUILD 151366 2015-12-10 03:50:58Z foutrelis $
 # Maintainer: Aaron Griffin <aaron@archlinux.org>
 # Contributor: Damir Perisa <damir.perisa@bluewin.ch>
 
 pkgname=cdargs
 pkgver=1.35
-pkgrel=5
+pkgrel=6
 pkgdesc="A replacement for 'cd' that includes bookmarks/browsing for faster navigation"
 arch=('i686' 'x86_64')
 license=('GPL')

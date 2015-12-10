@@ -1,8 +1,8 @@
-# $Id: PKGBUILD 135798 2015-06-24 04:14:26Z foutrelis $
+# $Id: PKGBUILD 152045 2015-12-10 04:12:58Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 pkgname=wxcam
 pkgver=1.1
-pkgrel=8
+pkgrel=9
 arch=('i686' 'x86_64')
 license=(GPL)
 pkgdesc="Webcam application for linux"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251210 2015-11-18 07:35:22Z fyan $
+# $Id: PKGBUILD 255078 2015-12-10 04:43:00Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=baloo
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A framework for searching and managing metadata"
 arch=('i686' 'x86_64')
 url='https://community.kde.org/Baloo'

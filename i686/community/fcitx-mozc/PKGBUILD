@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 136808 2015-07-14 03:18:06Z fyan $
+# $Id: PKGBUILD 151460 2015-12-10 03:53:49Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: ponsfoot <cabezon dot hashimoto at gmail dot com>
 # Contributor: UTUMI Hirosi <utuhiro78 at yahoo dot co dot jp>
@@ -20,7 +20,7 @@ pkgname=fcitx-mozc
 pkgdesc="Fcitx Module of A Japanese Input Method for Chromium OS, Windows, Mac and Linux (the Open Source Edition of Google Japanese Input)"
 pkgver=2.17.2106.102
 _fcitx_patchver=2.17.2102.102.1
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url="https://github.com/google/mozc"
 license=('custom')

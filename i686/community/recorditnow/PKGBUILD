@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 120341 2014-10-07 07:02:20Z andrea $
+# $Id: PKGBUILD 151911 2015-12-10 04:08:31Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Yichao Yu <yyc1992@gmail.com>
 # Contributor: Weng Xuetian <wengxt@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=recorditnow
 pkgver=0.8.1
-pkgrel=8
+pkgrel=9
 pkgdesc="A plugin based desktop recorder for KDE SC 4"
 arch=('i686' 'x86_64')
 url="http://kde-apps.org/content/show.php/RecordItNow?content=114610"

@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 237197 2015-04-15 21:18:37Z foutrelis $
+# $Id: PKGBUILD 255573 2015-12-10 05:01:27Z foutrelis $
 # Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
 # Contributor: Gaetan Bisson <bisson@archlinux.org>
 # Contributor: Thayer Williams <thayer@archlinux.org>
@@ -8,7 +8,7 @@
 
 pkgname=p7zip
 pkgver=9.38.1
-pkgrel=3
+pkgrel=4
 pkgdesc="Command-line file archiver with high compression ratio"
 arch=('i686' 'x86_64')
 url="http://p7zip.sourceforge.net/"

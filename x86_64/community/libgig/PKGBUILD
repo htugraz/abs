@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 137567 2015-07-28 19:12:01Z schiv $
+# $Id: PKGBUILD 151647 2015-12-10 03:59:36Z foutrelis $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Contributor: svoufff <svoufff at gmail dot com>
 # Contributor: Shinlun Hsieh <yngwiexx@yahoo.com.tw>
 
 pkgname=libgig
 pkgver=4.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc="C++ library for loading Gigasampler and DLS files"
 arch=('i686' 'x86_64')
 url="http://www.linuxsampler.org/libgig/"

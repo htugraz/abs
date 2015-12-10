@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 90030 2013-05-06 19:37:02Z foutrelis $
+# $Id: PKGBUILD 151486 2015-12-10 03:54:28Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Sander Jansen <sander@knology.net>
 
 pkgname=fxprocessview
 pkgver=0.5.0
-pkgrel=6
+pkgrel=7
 pkgdesc="Process Viewer"
 arch=('i686' 'x86_64')
 license=('GPL')

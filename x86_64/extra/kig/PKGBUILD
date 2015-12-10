@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250355 2015-11-09 21:38:56Z arojas $
+# $Id: PKGBUILD 255363 2015-12-10 04:52:59Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kig
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Interactive Geometry"
 url="http://kde.org/applications/education/kig/"
 arch=('i686' 'x86_64')

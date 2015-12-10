@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 142363 2015-10-01 16:02:56Z fyan $
+# $Id: PKGBUILD 151623 2015-12-10 03:58:56Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Philipp Sandhaus <philipp.sandhaus@gmx.de>
 
 pkgname=ktoblzcheck
 pkgver=1.48
-pkgrel=2
+pkgrel=3
 pkgdesc="A library to check account numbers and bank codes of German banks"
 arch=(i686 x86_64)
 url="http://ktoblzcheck.sourceforge.net"

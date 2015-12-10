@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 235751 2015-04-08 18:36:38Z arojas $
+# $Id: PKGBUILD 255399 2015-12-10 04:54:14Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=konsolepart4
 pkgver=4.14.3
-pkgrel=6
+pkgrel=7
 arch=('i686' 'x86_64')
 url='http://kde.org/applications/system/konsole/'
 pkgdesc="KDE terminal part"

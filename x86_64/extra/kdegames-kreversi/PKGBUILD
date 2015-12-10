@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250394 2015-11-09 21:53:09Z arojas $
+# $Id: PKGBUILD 255273 2015-12-10 04:50:03Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegames-kreversi
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A simple one player strategy game played against the computer"
 url="http://kde.org/applications/games/kreversi/"
 arch=('i686' 'x86_64')

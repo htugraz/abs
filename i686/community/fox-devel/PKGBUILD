@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 136455 2015-07-06 09:38:08Z spupykin $
+# $Id: PKGBUILD 151478 2015-12-10 03:54:16Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Dany Martineau <dany.luc.martineau@gmail.com>
 
 pkgname=fox-devel
 pkgver=1.7.52
-pkgrel=1
+pkgrel=2
 pkgdesc="Free Objects for X: GUI Toolkit for C++, development version."
 arch=('i686' 'x86_64')
 url="http://www.fox-toolkit.org/"

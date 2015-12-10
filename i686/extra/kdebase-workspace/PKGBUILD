@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 247496 2015-09-25 19:11:07Z heftig $
+# $Id: PKGBUILD 255257 2015-12-10 04:49:33Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
@@ -7,7 +7,7 @@ pkgname=kdebase-workspace
 _pkgname=kde-workspace
 pkgver=4.11.22
 _pkgver=15.08.0
-pkgrel=3
+pkgrel=4
 pkgdesc="Provides the interface and basic tools for the KDE workspace"
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/kde/kde-workspace'

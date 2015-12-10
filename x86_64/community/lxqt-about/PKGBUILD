@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 146286 2015-11-06 12:10:38Z jleclanche $
+# $Id: PKGBUILD 151692 2015-12-10 04:00:59Z foutrelis $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=lxqt-about
 pkgver=0.10.0
-pkgrel=3
+pkgrel=4
 pkgdesc="LXQt about dialog."
 arch=("i686" "x86_64")
 groups=("lxqt")

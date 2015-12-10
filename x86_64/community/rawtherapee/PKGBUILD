@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 144892 2015-10-24 12:09:31Z stativ $
+# $Id: PKGBUILD 151907 2015-12-10 04:08:24Z foutrelis $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky AT gmail.com>
 # Contributor: Bogdan Szczurek <thebodzio(at)gmail.com>
 # Contributor: Vaclav Kramar <vaclav.kramar@tiscali.cz>
@@ -7,7 +7,7 @@
 pkgname=rawtherapee
 pkgver=4.2+448.g26d182d
 _pkgver=26d182dabc6f133c27bffa3aac3f91b7ae55d578
-pkgrel=1
+pkgrel=2
 epoch=1
 pkgdesc="Raw photo editor"
 arch=('i686' 'x86_64')

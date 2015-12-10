@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 117804 2014-08-23 10:57:39Z jelle $
+# $Id: PKGBUILD 151468 2015-12-10 03:54:01Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 
 pkgname=fillets-ng
 pkgver=1.0.1
-pkgrel=5
+pkgrel=6
 pkgdesc="Port of the wonderful puzzle game Fish Fillets"
 url="http://fillets.sf.net/"
 arch=('i686' 'x86_64')

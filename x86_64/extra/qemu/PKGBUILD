@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 250126 2015-11-05 11:39:36Z tpowa $
+# $Id: PKGBUILD 255611 2015-12-10 05:05:14Z foutrelis $
 # Maintainer: Tobias Powalowski <tpowa@archlinux.org>
 # Contributor: Sébastien "Seblu" Luttringer <seblu@seblu.net>
 
@@ -11,7 +11,7 @@ pkgname=('qemu'
          'qemu-guest-agent'
          'libcacard')
 pkgver=2.4.1
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 license=('GPL2' 'LGPL2.1')
 url='http://wiki.qemu.org/'

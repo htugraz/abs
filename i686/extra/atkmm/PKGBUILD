@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252137 2015-12-02 21:32:00Z heftig $
+# $Id: PKGBUILD 255067 2015-12-10 04:42:37Z foutrelis $
 # Maintainer: Jan "heftig" Steffens <jan.steffens@gmail.com>
 
 pkgbase=atkmm
 pkgname=(atkmm atkmm-docs)
 pkgver=2.24.2
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 makedepends=('atk' 'glibmm' 'glibmm-docs' 'libsigc++')
 license=('LGPL')

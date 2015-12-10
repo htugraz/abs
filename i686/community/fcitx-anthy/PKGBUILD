@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 134109 2015-05-26 03:26:28Z fyan $
+# $Id: PKGBUILD 151457 2015-12-10 03:53:45Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: lh <jason52lh@gmail.com>
 
 pkgname=fcitx-anthy
 pkgver=0.2.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Fcitx Wrapper for anthy."
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/fcitx"

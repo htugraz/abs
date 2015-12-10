@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 102767 2013-12-19 14:04:47Z stativ $
+# $Id: PKGBUILD 151682 2015-12-10 04:00:42Z foutrelis $
 # Maintainer: Lukas Jirkovsky <l.jirkovsky@gmail.com>
 # Contributor : Geraud Le Falher <daureg@gmail.com>
 
 pkgname=log4cpp
 pkgver=1.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A library of C++ classes for flexible logging to files, syslog, IDSA and other destinations."
 arch=('i686' 'x86_64')
 url="http://log4cpp.sourceforge.net/"

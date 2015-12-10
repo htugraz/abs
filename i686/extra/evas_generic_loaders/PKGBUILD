@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250065 2015-11-03 15:34:35Z foutrelis $
+# $Id: PKGBUILD 255130 2015-12-10 04:45:01Z foutrelis $
 # Maintainer: Ronald van Haren <ronald@archlinux.org>
 # Contributor: Gustavo Sverzut Barbieri <barbieri@gmail.com>
 
 pkgname=evas_generic_loaders
 pkgver=1.15.0
-pkgrel=3
+pkgrel=4
 pkgdesc="Additional generic loaders for Evas"
 arch=('i686' 'x86_64')
 url="http://www.enlightenment.org"

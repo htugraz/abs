@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 251150 2015-11-18 07:33:37Z fyan $
+# $Id: PKGBUILD 255235 2015-12-10 04:48:52Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kcodecs
 pkgver=5.16.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Provide a collection of methods to manipulate strings using various encodings'
 arch=('i686' 'x86_64')
 url='https://projects.kde.org/projects/frameworks/kcodecs'

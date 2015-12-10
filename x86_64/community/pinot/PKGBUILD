@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 144612 2015-10-21 21:56:13Z foutrelis $
+# $Id: PKGBUILD 151817 2015-12-10 04:05:35Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Alexander Fehr <pizzapunk gmail com>
 # Contributor: William Rea <sillywilly@gmail.com>
@@ -7,7 +7,7 @@
 
 pkgname=pinot
 pkgver=1.08
-pkgrel=5
+pkgrel=6
 pkgdesc='Personal search and metasearch tool'
 arch=('i686' 'x86_64')
 url='http://code.google.com/p/pinot-search/'

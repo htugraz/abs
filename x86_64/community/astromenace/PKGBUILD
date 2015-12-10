@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 94294 2013-07-18 23:41:16Z svenstaro $
+# $Id: PKGBUILD 151328 2015-12-10 03:49:40Z foutrelis $
 # Maintainer: Sven-Hendrik Haase <sh@lutzhaase.com>
 # Contributor: Arkham <arkham at archlinux dot us>
 # Contributor: Ivan Bobrov <ibobrik at gmail dot com>
@@ -6,7 +6,7 @@
 
 pkgname=astromenace
 pkgver=1.3.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Hardcore 3D space shooter with spaceship upgrade possibilities"
 arch=('i686' 'x86_64')
 url="http://www.viewizard.com/astromenace/index_linux.php"

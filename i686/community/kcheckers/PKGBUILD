@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 107828 2014-03-20 05:16:24Z eric $
+# $Id: PKGBUILD 151592 2015-12-10 03:58:01Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=kcheckers
 pkgver=0.8.1
-pkgrel=9
+pkgrel=10
 pkgdesc="Qt4-based checkers boardgame"
 arch=('i686' 'x86_64')
 url="http://qcheckers.sourceforge.net/"

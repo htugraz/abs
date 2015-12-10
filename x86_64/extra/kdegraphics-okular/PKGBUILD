@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250636 2015-11-10 23:44:59Z arojas $
+# $Id: PKGBUILD 255288 2015-12-10 04:50:35Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-okular
 pkgver=15.08.3
-pkgrel=2
+pkgrel=3
 pkgdesc='Document Viewer'
 arch=('i686' 'x86_64')
 url="http://kde.org/applications/graphics/okular/"

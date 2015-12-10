@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 134474 2015-06-01 13:26:04Z spupykin $
+# $Id: PKGBUILD 151359 2015-12-10 03:50:44Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Arch Linux Pro Audio <dev@archaudio.org>
 # Contributor: Coenraad van der Westhuizen <chwesthuizen@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=canorus
 pkgver=0.7.2rc1
-pkgrel=1
+pkgrel=2
 pkgdesc="A free music score editor"
 arch=('i686' 'x86_64')
 url="http://www.canorus.org/"

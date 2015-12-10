@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 145199 2015-10-28 14:28:12Z speps $
+# $Id: PKGBUILD 152046 2015-12-10 04:13:00Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: napa3um <napa3um@gmail.com>
 
 pkgname=wxsqlite3
 pkgver=3.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="wxWidgets wrapper for SQLite3"
 arch=('i686' 'x86_64')
 url="http://wxcode.sourceforge.net/components/wxsqlite3/"

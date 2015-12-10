@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 130305 2015-03-30 15:10:42Z tredaelli $
+# $Id: PKGBUILD 152023 2015-12-10 04:12:07Z foutrelis $
 # Maintainer: Timothy Redaelli <timothy.redaelli@gmail.com>
 # Contributor: Aaron Plattner <aplattner@nvidia.com>
 # Contributor: Bart Verhoeven <bartverhoeven@live.com>
 
 pkgname=vdpauinfo
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Command line utility for querying the capabilities of a VDPAU device."
 arch=('i686' 'x86_64')
 url="http://cgit.freedesktop.org/~aplattner/vdpauinfo"

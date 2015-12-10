@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 131671 2015-04-19 09:06:00Z giovanni $
+# $Id: PKGBUILD 151768 2015-12-10 04:04:01Z foutrelis $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 
 pkgname=ocrad
 pkgver=0.25
-pkgrel=1
+pkgrel=2
 pkgdesc="An Optical Character Recognition program"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/ocrad/ocrad.html"

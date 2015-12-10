@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 241270 2015-06-25 05:00:02Z jgc $
+# $Id: PKGBUILD 255604 2015-12-10 05:04:22Z foutrelis $
 # Maintainer: Jan de Groot <jgc@archlinux.org>
 
 pkgname=ptlib
 pkgver=2.10.11
-pkgrel=2
+pkgrel=3
 pkgdesc="Portable Windows Library"
 arch=('i686' 'x86_64')
 url="http://www.opalvoip.org"

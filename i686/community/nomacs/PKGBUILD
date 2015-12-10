@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 138996 2015-08-30 20:09:14Z arojas $
+# $Id: PKGBUILD 151761 2015-12-10 04:03:41Z foutrelis $
 # Maintainer: speps <speps at aur dot archlinux dot org>
 
 pkgname=nomacs
 pkgver=2.4.6
-pkgrel=2
+pkgrel=3
 pkgdesc="A Qt image viewer"
 arch=(i686 x86_64)
 url="http://www.nomacs.org/"

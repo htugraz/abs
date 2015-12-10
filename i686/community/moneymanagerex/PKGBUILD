@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 146828 2015-11-14 19:16:46Z jlichtblau $
+# $Id: PKGBUILD 151730 2015-12-10 04:02:11Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <svetlemodry@archlinux.org>
 # Contributor: TDY <tdy@gmx.com>
 
 pkgname=moneymanagerex
 pkgver=1.2.3
-pkgrel=2
+pkgrel=3
 pkgdesc="An easy-to-use personal finance suite"
 arch=('i686' 'x86_64')
 url="http://www.moneymanagerex.org/"

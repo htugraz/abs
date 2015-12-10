@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 95491 2013-08-13 03:21:30Z speps $
+# $Id: PKGBUILD 151839 2015-12-10 04:06:15Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 
 pkgname=pvoc
 pkgver=0.1.12
-pkgrel=1
+pkgrel=2
 pkgdesc="LADSPLA plugins and a tool for time compression/expansion using phase-vocoding"
 arch=('i686' 'x86_64')
 url="http://quitte.de/dsp/pvoc.html"

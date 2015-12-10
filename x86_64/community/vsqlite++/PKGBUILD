@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 127413 2015-02-09 16:15:52Z eworm $
+# $Id: PKGBUILD 152029 2015-12-10 04:12:24Z foutrelis $
 # Maintainer: Christian Hesse <mail@eworm.de>
 
 pkgname=vsqlite++
 pkgver=0.3.13
-pkgrel=3
+pkgrel=4
 pkgdesc='SQLite wrapper library for C++'
 arch=('i686' 'x86_64')
 url='http://sourceforge.net/projects/sqlitepp/'

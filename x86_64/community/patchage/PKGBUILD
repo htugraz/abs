@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 111582 2014-05-20 17:26:05Z speps $
+# $Id: PKGBUILD 151803 2015-12-10 04:05:07Z foutrelis $
 # Maintainer: Ray Rashif <schiv@archlinux.org>
 # Maintainer: speps <speps at aur dot archlinux dot org>
 # Contributor: Max Pray a.k.a. Synthead <synthead@gmail.com>
@@ -6,7 +6,7 @@
 
 pkgname=patchage
 pkgver=1.0.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A modular patch bay for audio and MIDI systems based on Jack and Alsa"
 arch=('i686' 'x86_64')
 url="http://drobilla.net/software/patchage"

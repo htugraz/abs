@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 249986 2015-11-02 09:48:59Z alucryd $
+# $Id: PKGBUILD 255550 2015-12-10 04:59:55Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Fabian Schoelzel <myfirstname.mylastname@googlemail.com>
@@ -10,7 +10,7 @@
 pkgbase=mlt
 pkgname=(mlt mlt-python-bindings)
 pkgver=0.9.8
-pkgrel=3
+pkgrel=4
 pkgdesc="An open source multimedia framework"
 arch=(i686 x86_64)
 url="http://www.mltframework.org"

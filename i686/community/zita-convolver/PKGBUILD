@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 94626 2013-07-29 00:15:08Z speps $
+# $Id: PKGBUILD 152071 2015-12-10 04:13:50Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Philipp Überbacher <murks at lavabit dot com>
 # Contributor: Stefan Husmann <stefan-husmann@t-online.de>
@@ -6,7 +6,7 @@
 
 pkgname=zita-convolver
 pkgver=3.1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="A fast, partitioned convolution engine library."
 arch=('i686' 'x86_64')
 url="http://kokkinizita.linuxaudio.org/linuxaudio/"

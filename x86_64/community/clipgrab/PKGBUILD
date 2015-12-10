@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 146733 2015-11-13 20:06:09Z arojas $
+# $Id: PKGBUILD 151381 2015-12-10 03:51:29Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Stefan Husmann <stefan-husmann@t-online.de>
 # Contributor: thacrazze <thacrazze|googlemail|com>
 
 pkgname=clipgrab
 pkgver=3.5.5
-pkgrel=1
+pkgrel=2
 pkgdesc='A video downloader and converter for YouTube, Veoh, DailyMotion, MyVideo, ...'
 arch=(i686 x86_64)
 url='http://clipgrab.de/en'

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 143025 2015-10-06 02:02:08Z fyan $
+# $Id: PKGBUILD 151594 2015-12-10 03:58:07Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: poplarch <poplarch@gmail.com>
 
 pkgname=kcm-fcitx
 pkgver=0.5.2
-pkgrel=1
+pkgrel=2
 pkgdesc="KDE Config Module for Fcitx"
 arch=('i686' 'x86_64')
 url="https://github.com/fcitx/kcm-fcitx"

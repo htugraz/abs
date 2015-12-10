@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 137746 2015-08-02 17:57:51Z arodseth $
+# $Id: PKGBUILD 151732 2015-12-10 04:02:16Z foutrelis $
 # Maintainer: Alexander F Rødseth <rodseth@gmail.com>
 # Contributor: tobias <tobias@archlinux.org>
 # Contributor: Tobias Kieslich <tobias@justdreams.de>
 
 pkgname=monica
 pkgver=3.7
-pkgrel=4
+pkgrel=5
 pkgdesc='Monitor calibration tool'
 arch=('x86_64' 'i686')
 url='https://sources.archlinux.org/other/monica/'

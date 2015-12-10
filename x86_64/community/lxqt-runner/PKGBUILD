@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 146315 2015-11-06 17:47:02Z jleclanche $
+# $Id: PKGBUILD 151701 2015-12-10 04:01:15Z foutrelis $
 # Maintainer: Jerome Leclanche <jerome@leclan.ch>
 
 pkgname=lxqt-runner
 pkgver=0.10.0
-pkgrel=3
+pkgrel=4
 pkgdesc="The LXQt application launcher"
 arch=("i686" "x86_64")
 groups=("lxqt")

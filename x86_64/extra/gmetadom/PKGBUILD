@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 203072 2014-01-03 09:38:06Z bpiotrowski $
+# $Id: PKGBUILD 255154 2015-12-10 04:45:57Z foutrelis $
 # Maintainer: Giovanni Scafora <giovanni@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 
 pkgname=gmetadom
 pkgver=0.2.6
-pkgrel=4
+pkgrel=5
 pkgdesc="C++ bindings for GDome2 DOM implementation"
 arch=('i686' 'x86_64')
 url="http://gmetadom.sourceforge.net/"

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 248492 2015-10-08 06:37:56Z remy $
+# $Id: PKGBUILD 255066 2015-12-10 04:42:33Z foutrelis $
 # Maintainer: Rémy Oudompheng <remy@archlinux.org>
 # Contributor: Firmicus <francois.archlinux.org>
 # Contributor: bender02 at gmx dot com
 
 pkgname=asymptote
 pkgver=2.35
-pkgrel=1
+pkgrel=2
 pkgdesc="A vector graphics language (like metapost)"
 arch=('i686' 'x86_64')
 url="http://asymptote.sourceforge.net/"

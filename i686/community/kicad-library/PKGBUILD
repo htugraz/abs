@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 148199 2015-12-03 11:15:23Z kkeen $
+# $Id: PKGBUILD 152161 2015-12-10 13:28:41Z kkeen $
 # Maintainer: Kyle Keen <keenerd@gmail.com>
 
 pkgbase=kicad-library

@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 248883 2015-10-11 12:36:54Z alucryd $
+# $Id: PKGBUILD 255711 2015-12-10 05:13:21Z foutrelis $
 # Maintainer:  Bartłomiej Piotrowski <bpiotrowski@archlinux.org>
 # Maintainer: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: kfgz <kfgz@interia.pl>
 
 pkgname=x265
 pkgver=1.8
-pkgrel=1
+pkgrel=3
 pkgdesc='Open Source H265/HEVC video encoder'
 arch=('i686' 'x86_64')
 url='https://bitbucket.org/multicoreware/x265'

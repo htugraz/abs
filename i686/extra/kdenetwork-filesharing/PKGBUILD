@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250427 2015-11-09 22:04:37Z arojas $
+# $Id: PKGBUILD 255300 2015-12-10 04:50:59Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdenetwork-filesharing
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc='Properties dialog plugin to share a directory with the local network'
 url='https://projects.kde.org/projects/kde/kdenetwork/kdenetwork-filesharing'
 arch=('i686' 'x86_64')

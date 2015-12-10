@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 147850 2015-11-26 13:39:58Z speps $
+# $Id: PKGBUILD 151953 2015-12-10 04:09:54Z foutrelis $
 # Maintainer : speps <speps at aur dot archlinux dot org>
 # Contributor: Andreas Schnaiter <rc.poison@gmail.com>
 
 pkgname=smtube
 pkgver=15.11.0
-pkgrel=1
+pkgrel=2
 pkgdesc="A small youtube browser"
 arch=('i686' 'x86_64')
 url="http://www.smtube.org/"

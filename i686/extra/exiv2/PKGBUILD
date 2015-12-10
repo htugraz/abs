@@ -1,9 +1,9 @@
-#$Id: PKGBUILD 244429 2015-08-20 10:58:55Z jgc $
+#$Id: PKGBUILD 255134 2015-12-10 04:45:12Z foutrelis $
 # Maintainer: tobias <tobias@arhlinux.org>
 
 pkgname=exiv2
 pkgver=0.25
-pkgrel=2
+pkgrel=3
 pkgdesc="Exif, Iptc and XMP metadata manipulation library and tools"
 arch=('i686' 'x86_64')
 url="http://exiv2.org"

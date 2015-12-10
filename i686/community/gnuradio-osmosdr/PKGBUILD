@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 145873 2015-11-03 18:19:58Z kkeen $
+# $Id: PKGBUILD 151525 2015-12-10 03:55:30Z foutrelis $
 # Maintainer: Kyle Keen <keenerd@gmail.com?>
 # Contributor: Dominik Heidler <dheidler@gmail.com>
 pkgname=gnuradio-osmosdr
 _pkgname=gr-osmosdr
 pkgver=0.1.4
-pkgrel=9
+pkgrel=10
 pkgdesc="Source block for Funcube Dongle, RTL-SDR, USRP, OsmoSDR, BladeRF, HackRF and AirSpy devices"
 url="http://sdr.osmocom.org/trac/"
 arch=('i686' 'x86_64')

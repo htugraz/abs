@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 252073 2015-11-30 16:14:25Z anatolik $
+# $Id: PKGBUILD 255557 2015-12-10 05:00:15Z foutrelis $
 # Maintainer: Anatol Pomozov
 # Contributor: Zhuoyun Wei <wzyboy@wzyboy.org>
 
 pkgname=nghttp2
 pkgver=1.5.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Framing layer of HTTP/2 is implemented as a reusable C library'
 arch=(i686 x86_64)
 url='https://nghttp2.org/'

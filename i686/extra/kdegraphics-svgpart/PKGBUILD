@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250417 2015-11-09 22:01:17Z arojas $
+# $Id: PKGBUILD 255290 2015-12-10 04:50:38Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=kdegraphics-svgpart
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A KPart for viewing SVGs"
 url="https://projects.kde.org/projects/kde/kdegraphics/svgpart"
 arch=('i686' 'x86_64')

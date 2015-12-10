@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 113874 2014-07-01 07:48:10Z fyan $
+# $Id: PKGBUILD 151865 2015-12-10 04:07:00Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@gmail.com>
 # Contributor: Kerrick Staley <mail@kerrickstaley.com>
 
 pkgname=pyzy
 pkgver=1.0
 _commit="d7747466562cb8b4bc2934708e29b7643c7bedbc"
-pkgrel=2
+pkgrel=3
 pkgdesc='The Chinese PinYin and Bopomofo conversion library'
 arch=('i686' 'x86_64')
 url='https://github.com/pyzy/pyzy'

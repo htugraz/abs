@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 98144 2013-10-06 16:29:33Z jlichtblau $
+# $Id: PKGBUILD 151432 2015-12-10 03:53:01Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Jelle van der Waa <jelle@vdwaa.nl>
 # Contributor: James Rayner <james@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=dosbox
 pkgver=0.74
-pkgrel=6
+pkgrel=7
 pkgdesc='Emulator with builtin DOS for running DOS Games'
 arch=('i686' 'x86_64')
 url='http://dosbox.sourceforge.net/'

@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 214111 2014-06-03 20:37:30Z eric $
+# $Id: PKGBUILD 255195 2015-12-10 04:47:28Z foutrelis $
 # Maintainer: Eric Bélanger <eric@archlinux.org>
 
 pkgname=icewm
 pkgver=1.3.8
-pkgrel=3
+pkgrel=4
 pkgdesc="A Window Manager designed for speed, usability, and consistency"
 arch=('i686' 'x86_64')
 url="http://www.icewm.org/"

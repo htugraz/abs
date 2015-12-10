@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 146870 2015-11-15 15:53:09Z arojas $
+# $Id: PKGBUILD 151319 2015-12-10 03:49:22Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 # Contributor: Jameson Pugh <imntreal@gmail.com>
 # Contributor: Tim Jester-Pfadt <t.jp<at>gmx.de>
@@ -6,7 +6,7 @@
 pkgbase=appstream
 pkgname=(appstream appstream-qt)
 pkgver=0.8.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Provides a standard for creating app stores across distributions"
 arch=(i686 x86_64)
 url="http://distributions.freedesktop.org/wiki/AppStream"

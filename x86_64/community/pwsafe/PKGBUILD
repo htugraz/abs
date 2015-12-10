@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 139593 2015-09-08 10:21:06Z spupykin $
+# $Id: PKGBUILD 151840 2015-12-10 04:06:17Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: Vesa Kaihlavirta <vegai@iki.fi>
 
 pkgname=pwsafe
 pkgver=20150908
-pkgrel=1
+pkgrel=2
 pkgdesc="A commandline program for managing encrypted password databases"
 arch=('i686' 'x86_64')
 url="https://github.com/nsd20463/pwsafe"

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 197670 2013-10-28 02:51:05Z eric $
+# $Id: PKGBUILD 255506 2015-12-10 04:58:23Z foutrelis $
 # Maintainer: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Tobias Powalowski <tpowa@archlinux.org>
 
 pkgname=libofa
 pkgver=0.9.3
-pkgrel=5
+pkgrel=6
 pkgdesc="An open-source audio fingerprint by MusicIP"
 arch=('i686' 'x86_64')
 url="http://code.google.com/p/musicip-libofa/"

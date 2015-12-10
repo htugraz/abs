@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 244877 2015-08-26 18:29:11Z anatolik $
+# $Id: PKGBUILD 255146 2015-12-10 04:45:40Z foutrelis $
 # Maintainer: Daniel Isenmann <daniel [at] archlinux.org>
 # Contributor: dorphell <dorphell@gmx.net>
 
 pkgname=gc
 pkgver=7.4.2
-pkgrel=3
+pkgrel=4
 pkgdesc="A garbage collector for C and C++"
 arch=('i686' 'x86_64')
 url="http://www.hboehm.info/gc/"

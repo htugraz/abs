@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 250168 2015-11-06 19:03:18Z arojas $
+# $Id: PKGBUILD 255647 2015-12-10 05:08:59Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 
 pkgname=sddm
 pkgver=0.13.0
-pkgrel=1
+pkgrel=2
 pkgdesc='QML based X11 display manager'
 arch=('i686' 'x86_64')
 url='http://github.com/sddm/sddm'

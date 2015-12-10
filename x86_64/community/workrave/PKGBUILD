@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 145103 2015-10-27 10:42:27Z spupykin $
+# $Id: PKGBUILD 152041 2015-12-10 04:12:49Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Maintainer: William Rea <sillywilly@gmail.com>
 
 pkgname=workrave
 pkgver=1.10.8
-pkgrel=1
+pkgrel=2
 pkgdesc="a tool to help RSI"
 arch=('i686' 'x86_64')
 license=('GPL2')

@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 137369 2015-07-24 12:34:17Z idevolder $
+# $Id: PKGBUILD 151660 2015-12-10 03:59:57Z foutrelis $
 # Maintainer: BlackIkeEagle <ike DOT devolder AT gmail DOT com>
 # Contributor: Cedric Girard <girard.cedric@gmail.com>
 
 pkgname=libplatform
 pkgver=1.0.10
-pkgrel=1
+pkgrel=2
 pkgdesc="Platform support library used by libCEC and binary add-ons for Kodi"
 arch=('i686' 'x86_64')
 url="https://github.com/Pulse-Eight/platform"

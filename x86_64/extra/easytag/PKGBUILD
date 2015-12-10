@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 245127 2015-09-01 08:11:47Z guillaume $
+# $Id: PKGBUILD 255124 2015-12-10 04:44:49Z foutrelis $
 # Maintainer: Guillaume ALAUX <guillaume@archlinux.org>
 # Contributor: Kevin Piche <kevin@archlinux.org>
 # Contributor: Aaron Griffin <aaron@archlinux.org>
@@ -6,7 +6,7 @@
 
 pkgname=easytag
 pkgver=2.4.0
-pkgrel=2
+pkgrel=3
 pkgdesc='Simple application for viewing and editing tags in audio files'
 arch=('i686' 'x86_64')
 license=('GPL')

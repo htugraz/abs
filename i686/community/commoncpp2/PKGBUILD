@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 100142 2013-11-01 20:22:25Z spupykin $
+# $Id: PKGBUILD 151392 2015-12-10 03:51:46Z foutrelis $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Franco Tortoriello <franco.tortoriello@gmail.com>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
@@ -8,7 +8,7 @@
 
 pkgname=commoncpp2
 pkgver=1.8.1
-pkgrel=4
+pkgrel=5
 pkgdesc="GNU Common C++ 2"
 arch=('x86_64' 'i686')
 url='http://www.gnu.org/software/commoncpp/'

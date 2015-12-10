@@ -1,14 +1,14 @@
-# $Id: PKGBUILD 197172 2013-10-23 13:52:00Z pierre $
+# $Id: PKGBUILD 255602 2015-12-10 05:04:12Z foutrelis $
 # Maintainer: Pierre Schmitz <pierre@archlinux.de>
 
 pkgname=psi
 pkgver=0.15
-pkgrel=2
+pkgrel=3
 pkgdesc='Instant messaging application designed for the Jabber IM'
 url='http://psi-im.org/'
 license=('GPL')
 arch=('i686' 'x86_64')
-depends=('qca-ossl' 'qca-gnupg' 'enchant' 'libxss' 'xdg-utils')
+depends=('qca-qt4' 'enchant' 'libxss' 'xdg-utils')
 makedepends=('icu')
 install='psi.install'
 source=("http://downloads.sourceforge.net/psi/psi-${pkgver}.tar.bz2"

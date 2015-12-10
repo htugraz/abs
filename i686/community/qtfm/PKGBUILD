@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 92819 2013-06-15 13:06:25Z jlichtblau $
+# $Id: PKGBUILD 151892 2015-12-10 04:07:51Z foutrelis $
 # Maintainer: Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
 # Contributor: Wittfella <wittfella@wittfella.com>
 
 pkgname=qtfm
 pkgver=5.9
-pkgrel=1
+pkgrel=2
 pkgdesc="A lightweight file manager"
 arch=('i686' 'x86_64')
 url="http://qt-apps.org/content/show.php/QtFM?content=158787"

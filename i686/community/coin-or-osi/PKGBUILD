@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 141524 2015-09-23 09:16:42Z arojas $
+# $Id: PKGBUILD 151391 2015-12-10 03:51:44Z foutrelis $
 # Maintainer: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=coin-or-osi
 pkgver=0.107.6
-pkgrel=1
+pkgrel=2
 pkgdesc="COIN-OR Open Solver Interface"
 arch=(i686 x86_64)
 url="https://projects.coin-or.org/Osi"

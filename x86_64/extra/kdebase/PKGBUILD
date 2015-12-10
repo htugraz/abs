@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 250293 2015-11-09 21:16:56Z arojas $
+# $Id: PKGBUILD 255255 2015-12-10 04:49:29Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Andrea Scarpino <andrea@archlinux.org>
 # Contributor: Pierre Schmitz <pierre@archlinux.de>
@@ -15,7 +15,7 @@ pkgname=('kdebase-kdepasswd'
 	 'dolphinpart4'
 	 'kde-templates')
 pkgver=15.08.3
-pkgrel=1
+pkgrel=2
 arch=('i686' 'x86_64')
 url='http://www.kde.org'
 license=('GPL' 'LGPL' 'FDL')

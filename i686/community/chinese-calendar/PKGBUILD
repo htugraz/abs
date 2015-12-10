@@ -1,10 +1,10 @@
-# $Id: PKGBUILD 147889 2015-11-28 00:27:50Z fyan $
+# $Id: PKGBUILD 151371 2015-12-10 03:51:06Z foutrelis $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: allencch at hotmail dot com
 
 pkgname=chinese-calendar
 pkgver=1.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Chinese traditional calendar for Ubuntu Kylin"
 arch=('i686' 'x86_64')
 url="https://launchpad.net/chinese-calendar/"
