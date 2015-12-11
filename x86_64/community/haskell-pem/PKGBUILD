@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 143744 2015-10-12 03:54:41Z fyan $
+# $Id: PKGBUILD 152930 2015-12-11 12:15:06Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Daniel Nagy <danielnagy at gmx de>
 # Contributor: hauzer <hauzer@gmx.com>
@@ -6,12 +6,12 @@
 _hkgname=pem
 pkgname=haskell-pem
 pkgver=0.2.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Privacy Enhanced Mail (PEM) format reader and writer."
 url="http://hackage.haskell.org/package/${_hkgname}"
 license=('custom:BSD3')
 arch=('i686' 'x86_64')
-depends=('ghc=7.10.2' 'haskell-base64-bytestring' 'haskell-mtl')
+depends=('ghc=7.10.3' 'haskell-base64-bytestring' 'haskell-mtl')
 options=('staticlibs')
 source=(http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz)
 install=${pkgname}.install

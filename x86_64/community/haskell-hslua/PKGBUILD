@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 143481 2015-10-09 08:41:58Z fyan $
+# $Id: PKGBUILD 152892 2015-12-11 12:13:55Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=hslua
 pkgname=haskell-hslua
 pkgver=0.4.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A Lua language interpreter embedding in Haskell"
 url="http://hackage.haskell.org/package/${_hkgname}"
 license=("MIT")
 arch=('i686' 'x86_64')
-depends=("ghc=7.10.2")
+depends=("ghc=7.10.3")
 options=('staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"

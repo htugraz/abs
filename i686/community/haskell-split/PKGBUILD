@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 143723 2015-10-12 01:08:01Z fyan $
+# $Id: PKGBUILD 152957 2015-12-11 12:15:51Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=split
 pkgname=haskell-split
 pkgver=0.2.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Combinator library for splitting lists."
 url="http://hackage.haskell.org/package/${_hkgname}"
 license=("custom:BSD3")
 arch=('i686' 'x86_64')
-depends=("ghc=7.10.2")
+depends=("ghc=7.10.3")
 options=('staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"

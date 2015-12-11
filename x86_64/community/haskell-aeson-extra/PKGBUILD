@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 150316 2015-12-08 13:23:41Z fyan $
+# $Id: PKGBUILD 152826 2015-12-11 12:11:43Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=aeson-extra
 pkgname=haskell-aeson-extra
 pkgver=0.2.3.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Extra goodies for aeson"
 url="https://github.com/phadej/aeson-extra#readme"
 license=("custom:BSD3")
 arch=('i686' 'x86_64')
-depends=("ghc=7.10.2" "haskell-aeson" "haskell-attoparsec" "haskell-exceptions"
+depends=("ghc=7.10.3" "haskell-aeson" "haskell-attoparsec" "haskell-exceptions"
          "haskell-hashable" "haskell-scientific" "haskell-text"
          "haskell-unordered-containers" "haskell-vector")
 options=('staticlibs')

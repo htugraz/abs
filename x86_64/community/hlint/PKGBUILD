@@ -1,15 +1,15 @@
-# $Id: PKGBUILD 148423 2015-12-05 04:03:57Z fyan $
+# $Id: PKGBUILD 152999 2015-12-11 12:17:20Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 pkgname=hlint
 pkgver=1.9.25
-pkgrel=2
+pkgrel=3
 pkgdesc="Source code suggestions"
 url="http://community.haskell.org/~ndm/hlint/"
 license=("custom:BSD3")
 arch=('i686' 'x86_64')
-depends=("ghc=7.10.2" "haskell-ansi-terminal" "haskell-cmdargs" "haskell-cpphs"
+depends=("ghc=7.10.3" "haskell-ansi-terminal" "haskell-cmdargs" "haskell-cpphs"
          "haskell-extra" "haskell-src-exts" "haskell-hscolour" "haskell-uniplate"
          "haskell-refact")
 options=('staticlibs')

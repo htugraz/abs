@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 148005 2015-11-30 07:37:30Z fyan $
+# $Id: PKGBUILD 152849 2015-12-11 12:12:21Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=conduit
 pkgname=haskell-conduit
 pkgver=1.2.6
-pkgrel=1
+pkgrel=2
 pkgdesc="Streaming data processing library."
 url="http://github.com/snoyberg/conduit"
 license=("MIT")
 arch=('i686' 'x86_64')
-depends=("ghc=7.10.2" "haskell-exceptions" "haskell-lifted-base" "haskell-mmorph"
+depends=("ghc=7.10.3" "haskell-exceptions" "haskell-lifted-base" "haskell-mmorph"
          "haskell-mtl" "haskell-resourcet" "haskell-transformers-base")
 options=('staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")

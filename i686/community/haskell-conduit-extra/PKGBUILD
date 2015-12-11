@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 148029 2015-11-30 07:48:58Z fyan $
+# $Id: PKGBUILD 152850 2015-12-11 12:12:24Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=conduit-extra
 pkgname=haskell-conduit-extra
 pkgver=1.1.9.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Batteries included conduit: adapters for common libraries."
 url="http://github.com/snoyberg/conduit"
 license=("MIT")
 arch=('i686' 'x86_64')
-depends=("ghc=7.10.2" "haskell-attoparsec" "haskell-blaze-builder" "haskell-conduit"
+depends=("ghc=7.10.3" "haskell-attoparsec" "haskell-blaze-builder" "haskell-conduit"
          "haskell-monad-control" "haskell-network" "haskell-primitive" "haskell-resourcet"
          "haskell-stm" "haskell-streaming-commons" "haskell-text" "haskell-transformers-base")
 options=('staticlibs')

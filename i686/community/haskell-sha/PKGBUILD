@@ -1,11 +1,11 @@
-# $Id: PKGBUILD 143368 2015-10-08 02:09:59Z foutrelis $
+# $Id: PKGBUILD 152954 2015-12-11 12:15:46Z fyan $
 # Maintainer: Sergej Pupykin <arch+pub@sergej.pp.ru>
 # Contributor: Lex Black <autumn-wind at web dot de>
 # Contributor: Arch Haskell Team <>
 
 pkgname=haskell-sha
 pkgver=1.6.4.2
-pkgrel=3
+pkgrel=4
 pkgdesc="Implementations of the SHA suite of message digest functions"
 url="http://hackage.haskell.org/package/SHA"
 license=('BSD3')

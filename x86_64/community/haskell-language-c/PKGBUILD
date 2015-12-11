@@ -1,17 +1,17 @@
-# $Id: PKGBUILD 146785 2015-11-14 08:04:39Z fyan $
+# $Id: PKGBUILD 152904 2015-12-11 12:14:16Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=language-c
 pkgname=haskell-language-c
 pkgver=0.4.7
-pkgrel=1
+pkgrel=2
 pkgdesc="Analysis and generation of C code"
 url="http://www.sivity.net/projects/language.c/"
 license=("custom:BSD3")
 arch=('i686' 'x86_64')
 makedepends=('happy' 'alex')
-depends=("ghc=7.10.2" "haskell-syb")
+depends=("ghc=7.10.3" "haskell-syb")
 options=('staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"

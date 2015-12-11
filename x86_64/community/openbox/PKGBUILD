@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 136251 2015-07-02 09:09:55Z bluewind $
+# $Id: PKGBUILD 153034 2015-12-11 15:49:49Z arojas $
 # Maintainer: Florian pritz <bluewind@xinu.at>
 # Contributor: Bartłomiej Piotrowski <nospam@bpiotrowski.pl>
 # Contributor: Brad Fanella <bradfanella@archlinux.us>
@@ -7,7 +7,7 @@
 
 pkgname=openbox
 pkgver=3.6.1
-pkgrel=1
+pkgrel=2
 pkgdesc='Highly configurable and lightweight X11 window manager'
 arch=('i686' 'x86_64')
 url='http://openbox.org'
@@ -15,7 +15,7 @@ license=('GPL')
 provides=(libobrender.so)
 depends=('startup-notification' 'libxml2' 'libxinerama' 'libxrandr'
          'libxcursor' 'pango' 'imlib2' 'librsvg' 'libsm')
-optdepends=('kdebase-workspace: for the KDE/Openbox xsession'
+optdepends=('plasma-workspace: for the KDE/Openbox xsession'
             'python2-xdg: for the openbox-xdg-autostart script')
 groups=('lxde' 'lxqt')
 backup=('etc/xdg/openbox/menu.xml' 'etc/xdg/openbox/rc.xml'

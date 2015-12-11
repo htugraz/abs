@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 147476 2015-11-23 15:51:44Z fyan $
+# $Id: PKGBUILD 152955 2015-12-11 12:15:48Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=silently
 pkgname=haskell-silently
 pkgver=1.2.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Prevent or capture writing to stdout and other handles."
 url="https://github.com/hspec/silently"
 license=("custom:BSD3")
 arch=('i686' 'x86_64')
-depends=("ghc=7.10.2")
+depends=("ghc=7.10.3")
 options=('staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"

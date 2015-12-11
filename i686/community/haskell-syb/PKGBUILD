@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 143370 2015-10-08 02:10:01Z foutrelis $
+# $Id: PKGBUILD 152962 2015-12-11 12:16:00Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Aaron Peschel <aaron.peschel via gmail dot com>
 # Contributor: Rémy Oudompheng <remy@archlinux.org>
@@ -7,12 +7,12 @@
 _hkgname=syb
 pkgname=haskell-syb
 pkgver=0.6
-pkgrel=2
+pkgrel=3
 pkgdesc="A library for client-side HTTP"
 url="http://hackage.haskell.org/package/${_hkgname}"
 license=('custom:BSD3')
 arch=('i686' 'x86_64')
-depends=('ghc=7.10.2'
+depends=('ghc=7.10.3'
          'haskell-base>=4.0'
          'haskell-base<5.0')
 options=('strip')

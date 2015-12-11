@@ -1,9 +1,9 @@
-# $Id: PKGBUILD 143361 2015-10-08 02:09:52Z foutrelis $
+# $Id: PKGBUILD 152935 2015-12-11 12:15:14Z fyan $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 
 pkgname=haskell-primitive
 pkgver=0.6
-pkgrel=3
+pkgrel=4
 pkgdesc="Wrappers for primitive operations"
 url="http://hackage.haskell.org/package/primitive"
 license=("custom:BSD3")

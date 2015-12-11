@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 145889 2015-11-04 03:02:14Z fyan $
+# $Id: PKGBUILD 152964 2015-12-11 12:16:04Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=tagsoup
 pkgname=haskell-tagsoup
 pkgver=0.13.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Parsing and extracting information from (possibly malformed) HTML/XML documents"
 url="http://community.haskell.org/~ndm/tagsoup/"
 license=("custom:BSD3")
 arch=('i686' 'x86_64')
-depends=("ghc=7.10.2" "haskell-text")
+depends=("ghc=7.10.3" "haskell-text")
 options=('staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"

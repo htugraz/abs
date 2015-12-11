@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 143727 2015-10-12 02:06:31Z fyan $
+# $Id: PKGBUILD 152828 2015-12-11 12:11:46Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=ansi-terminal
 pkgname=haskell-ansi-terminal
 pkgver=0.6.2.3
-pkgrel=1
+pkgrel=2
 pkgdesc="Simple ANSI terminal support, with Windows compatibility"
 url="https://github.com/feuerbach/ansi-terminal"
 license=("custom:BSD3")
 arch=('i686' 'x86_64')
-depends=("ghc=7.10.2")
+depends=("ghc=7.10.3")
 options=('staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"

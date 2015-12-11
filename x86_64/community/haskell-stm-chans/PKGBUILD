@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 147299 2015-11-21 09:24:22Z fyan $
+# $Id: PKGBUILD 152960 2015-12-11 12:15:57Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=stm-chans
 pkgname=haskell-stm-chans
 pkgver=3.0.0.4
-pkgrel=1
+pkgrel=2
 pkgdesc="Additional types of channels for STM."
 url="http://code.haskell.org/~wren/"
 license=("custom:BSD3")
 arch=('i686' 'x86_64')
-depends=("ghc=7.10.2" "haskell-stm")
+depends=("ghc=7.10.3" "haskell-stm")
 options=('staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"

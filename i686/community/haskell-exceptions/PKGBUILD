@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 143489 2015-10-09 09:14:25Z fyan $
+# $Id: PKGBUILD 152871 2015-12-11 12:13:09Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=exceptions
 pkgname=haskell-exceptions
 pkgver=0.8.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Extensible optionally-pure exceptions"
 url="http://github.com/ekmett/exceptions/"
 license=("custom:BSD3")
 arch=('i686' 'x86_64')
-depends=("ghc=7.10.2" "haskell-mtl" "haskell-stm" "haskell-transformers-compat")
+depends=("ghc=7.10.3" "haskell-mtl" "haskell-stm" "haskell-transformers-compat")
 options=('staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"

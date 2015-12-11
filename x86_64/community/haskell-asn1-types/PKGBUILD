@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 143672 2015-10-11 15:34:38Z fyan $
+# $Id: PKGBUILD 152832 2015-12-11 12:11:52Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=asn1-types
 pkgname=haskell-asn1-types
 pkgver=0.3.1
-pkgrel=1
+pkgrel=2
 pkgdesc="ASN.1 types"
 url="http://github.com/vincenthz/hs-asn1-types"
 license=("custom:BSD3")
 arch=('i686' 'x86_64')
-depends=("ghc=7.10.2" "haskell-hourglass" "haskell-memory")
+depends=("ghc=7.10.3" "haskell-hourglass" "haskell-memory")
 options=('staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"

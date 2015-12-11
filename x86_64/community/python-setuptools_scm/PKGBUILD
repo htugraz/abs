@@ -1,11 +1,12 @@
-# $Id: PKGBUILD 150139 2015-12-08 01:56:07Z fyan $
+# $Id: PKGBUILD 152797 2015-12-11 03:23:18Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Hugo Osvaldo Barrera <hugo@barrera.io>
 
 pkgbase=python-setuptools_scm
 pkgname=(python-setuptools_scm python2-setuptools_scm)
 _pkgname=setuptools_scm
-pkgver=1.10.0
+pkgver=1.10.1
+_commit=3649c15317a8d533fb7ba6eebabdaaa798945452
 pkgrel=1
 pkgdesc="Handles managing your python package versions in scm metadata."
 arch=('any')
@@ -13,7 +14,7 @@ url="https://github.com/pypa/setuptools_scm"
 license=('MIT')
 makedepends=('python-setuptools' 'python2-setuptools' 'git')
 checkdepends=('python-pytest-runner' 'python2-pytest-runner' 'mercurial')
-source=("git+https://github.com/pypa/setuptools_scm.git#tag=v$pkgver")
+source=("git+https://github.com/pypa/setuptools_scm.git#commit=$_commit")
 md5sums=('SKIP')
 
 prepare() {

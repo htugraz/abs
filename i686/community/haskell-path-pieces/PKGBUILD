@@ -1,16 +1,16 @@
-# $Id: PKGBUILD 147305 2015-11-21 09:57:19Z fyan $
+# $Id: PKGBUILD 152929 2015-12-11 12:15:04Z fyan $
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 # Contributor: Arch Haskell Team <arch-haskell@haskell.org>
 
 _hkgname=path-pieces
 pkgname=haskell-path-pieces
 pkgver=0.2.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Components of paths"
 url="http://hackage.haskell.org/package/${_hkgname}"
 license=("custom:BSD3")
 arch=('i686' 'x86_64')
-depends=("ghc=7.10.2" "haskell-text")
+depends=("ghc=7.10.3" "haskell-text")
 options=('staticlibs')
 source=("http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz")
 install="${pkgname}.install"
